@@ -1,0 +1,586 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="_property_8hpp" kind="file" language="C++">
+    <compoundname>Property.hpp</compoundname>
+    <includes refid="_field_8hpp" local="yes">../query/Field.hpp</includes>
+    <includes refid="_field_info_8hpp" local="yes">../reflection/FieldInfo.hpp</includes>
+    <includes local="no">type_traits</includes>
+    <includes local="no">string</includes>
+    <includes local="no">tuple</includes>
+    <includes local="no">vector</includes>
+    <includedby refid="_learn_q_l_8hpp" local="yes">/Users/tolgaberber/Work/CPP/LearnQL/learnql/LearnQL.hpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/Property.hpp</label>
+        <link refid="_property_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>../query/Field.hpp</label>
+        <link refid="_field_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>expressions/BinaryExpr.hpp</label>
+        <link refid="_binary_expr_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>expressions/ConstExpr.hpp</label>
+        <link refid="_const_expr_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Expr.hpp</label>
+        <link refid="_expr_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>expressions/FieldExpr.hpp</label>
+        <link refid="_field_expr_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>expressions/LogicalExpr.hpp</label>
+        <link refid="_logical_expr_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>../reflection/FieldInfo.hpp</label>
+        <link refid="_field_info_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>cstdint</label>
+      </node>
+      <node id="6">
+        <label>functional</label>
+      </node>
+      <node id="9">
+        <label>sstream</label>
+      </node>
+      <node id="7">
+        <label>string</label>
+      </node>
+      <node id="14">
+        <label>tuple</label>
+      </node>
+      <node id="5">
+        <label>type_traits</label>
+      </node>
+      <node id="15">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/LearnQL.hpp</label>
+        <link refid="_learn_q_l_8hpp"/>
+      </node>
+      <node id="1">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/Property.hpp</label>
+        <link refid="_property_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structlearnql_1_1meta_1_1_property_meta" prot="public">learnql::meta::PropertyMeta</innerclass>
+    <innernamespace refid="namespacelearnql">learnql</innernamespace>
+    <innernamespace refid="namespacelearnql_1_1meta">learnql::meta</innernamespace>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="_property_8hpp_1aeda21bfeb55820f10e5279dd0720d080" prot="public" static="no">
+        <name>LEARNQL_PROPERTIES_BEGIN</name>
+        <param><defname>ClassName</defname></param>
+        <initializer>private: \
+    enum { _LEARNQL_PROP_COUNTER_START = __COUNTER__ }; \
+public:</initializer>
+        <briefdescription>
+<para>Begin property block for a class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Usage: <programlisting><codeline><highlight class="normal">class<sp/>Student<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LEARNQL_PROPERTIES_BEGIN(Student)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LEARNQL_PROPERTY(int,<sp/>student_id,<sp/>PK)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LEARNQL_PROPERTY(std::string,<sp/>name)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LEARNQL_PROPERTIES_END(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PROP(int,<sp/>student_id,<sp/>PK),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PROP(std::string,<sp/>name)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/Property.hpp" line="144" column="9" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/Property.hpp" bodystart="144" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="define" id="_property_8hpp_1a79adefc15ab3aeeb532fe6db17c96bd2" prot="public" static="no">
+        <name>LEARNQL_PROPERTY</name>
+        <param><defname>Type</defname></param>
+        <param><defname>name</defname></param>
+        <param><defname>...</defname></param>
+        <initializer>private: \
+    Type name##_; \
+public: \
+    [[nodiscard]] <ref refid="namespacelearnql_1_1meta_1ae81b67158e178c2800424a200f37dd89" kindref="member">::learnql::meta::property_return_type</ref>&lt;Type&gt; get_##name() const { \
+        return name##_; \
+    } \
+    void set_##name(<ref refid="namespacelearnql_1_1meta_1a53f585cfa9be97b6719d45ab4d2ab669" kindref="member">::learnql::meta::property_param_type</ref>&lt;Type&gt; value) { \
+        name##_ = value; \
+    } \
+    static inline const <ref refid="classlearnql_1_1query_1_1_field" kindref="compound">::learnql::query::Field</ref>&lt;<ref refid="_property_8hpp_1ae4de43178c03670dc1b752e7e0eab41b" kindref="member">_LEARNQL_CLASS</ref>, Type&gt; name{ \
+        #name, &amp;_LEARNQL_CLASS::get_##name \
+    };</initializer>
+        <briefdescription>
+<para>Define a single property. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Generates:<itemizedlist>
+<listitem><para>Private member variable (Type name_)</para>
+</listitem><listitem><para>Public getter (get_name())</para>
+</listitem><listitem><para>Public setter (set_name())</para>
+</listitem><listitem><para>Static Field object for queries (name)</para>
+</listitem></itemizedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The property type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The property name </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>...</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional: PK to mark as primary key </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/Property.hpp" line="162" column="9" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/Property.hpp" bodystart="162" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="define" id="_property_8hpp_1a838a878cb35327ef8200e07fad06435d" prot="public" static="no">
+        <name>_LEARNQL_IS_PK_3</name>
+        <param><defname>a</defname></param>
+        <param><defname>b</defname></param>
+        <param><defname>c</defname></param>
+        <initializer>true</initializer>
+        <briefdescription>
+<para>Helper macro to detect if PK flag is present. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/Property.hpp" line="179" column="9" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/Property.hpp" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_property_8hpp_1a3ec49e454704c0735347a3d12fd6c02d" prot="public" static="no">
+        <name>_LEARNQL_IS_PK_2</name>
+        <param><defname>a</defname></param>
+        <param><defname>b</defname></param>
+        <initializer>false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/Property.hpp" line="180" column="9" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/Property.hpp" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_property_8hpp_1a08a37269efeaa30941796381de12d2b0" prot="public" static="no">
+        <name>_LEARNQL_IS_PK_1</name>
+        <param><defname>a</defname></param>
+        <initializer>false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/Property.hpp" line="181" column="9" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/Property.hpp" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_property_8hpp_1abdfb27d0e70af13eda0793e4e9d38849" prot="public" static="no">
+        <name>_LEARNQL_GET_4TH_ARG</name>
+        <param><defname>a</defname></param>
+        <param><defname>b</defname></param>
+        <param><defname>c</defname></param>
+        <param><defname>d</defname></param>
+        <param><defname>...</defname></param>
+        <initializer>d</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/Property.hpp" line="182" column="9" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/Property.hpp" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_property_8hpp_1a1900ce35f4a76232365ba689b538973c" prot="public" static="no">
+        <name>_LEARNQL_IS_PK</name>
+        <param><defname>...</defname></param>
+        <initializer>    <ref refid="_property_8hpp_1abdfb27d0e70af13eda0793e4e9d38849" kindref="member">_LEARNQL_GET_4TH_ARG</ref>(__VA_ARGS__, <ref refid="_property_8hpp_1a838a878cb35327ef8200e07fad06435d" kindref="member">_LEARNQL_IS_PK_3</ref>, <ref refid="_property_8hpp_1a3ec49e454704c0735347a3d12fd6c02d" kindref="member">_LEARNQL_IS_PK_2</ref>, <ref refid="_property_8hpp_1a08a37269efeaa30941796381de12d2b0" kindref="member">_LEARNQL_IS_PK_1</ref>)(__VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/Property.hpp" line="183" column="9" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/Property.hpp" bodystart="183" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="define" id="_property_8hpp_1a820cdc19ace1c096a6f2f90777ad68b7" prot="public" static="no">
+        <name>PROP</name>
+        <param><defname>Type</defname></param>
+        <param><defname>name</defname></param>
+        <param><defname>...</defname></param>
+        <initializer>    <ref refid="structlearnql_1_1meta_1_1_property_meta" kindref="compound">::learnql::meta::PropertyMeta</ref>&lt;<ref refid="_property_8hpp_1ae4de43178c03670dc1b752e7e0eab41b" kindref="member">_LEARNQL_CLASS</ref>, Type, <ref refid="_property_8hpp_1a1900ce35f4a76232365ba689b538973c" kindref="member">_LEARNQL_IS_PK</ref>(Type, name __VA_OPT__(,) __VA_ARGS__)&gt;{ \
+        #name, \
+        &amp;_LEARNQL_CLASS::name##_, \
+        static_cast&lt;uint16_t&gt;(__COUNTER__ - _LEARNQL_PROP_COUNTER_START - 1) \
+    }</initializer>
+        <briefdescription>
+<para>Property descriptor for PROPERTIES_END Each property must be listed here to enable code generation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/Property.hpp" line="190" column="9" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/Property.hpp" bodystart="190" bodyend="195"/>
+      </memberdef>
+      <memberdef kind="define" id="_property_8hpp_1a99b774f95a44e756ee611e2f44c316e2" prot="public" static="no">
+        <name>LEARNQL_PROPERTIES_END</name>
+        <param><defname>...</defname></param>
+        <briefdescription>
+<para>End property block and generate all boilerplate code. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Auto-generates:<itemizedlist>
+<listitem><para>primary_key_type typedef</para>
+</listitem><listitem><para>get_primary_key() method</para>
+</listitem><listitem><para>_properties() tuple</para>
+</listitem><listitem><para>serialize() method</para>
+</listitem><listitem><para>deserialize() method</para>
+</listitem><listitem><para>reflect_fields() for system catalog</para>
+</listitem></itemizedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>...</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of <ref refid="_property_8hpp_1a820cdc19ace1c096a6f2f90777ad68b7" kindref="member">PROP()</ref> descriptors for all properties </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/Property.hpp" line="210" column="9" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/Property.hpp" bodystart="210" bodyend="272"/>
+      </memberdef>
+      <memberdef kind="define" id="_property_8hpp_1ae4de43178c03670dc1b752e7e0eab41b" prot="public" static="no">
+        <name>_LEARNQL_CLASS</name>
+        <initializer>_LearnQL_Current_Class</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/Property.hpp" line="275" column="9" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/Property.hpp" bodystart="275" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_property_8hpp_1a607b50a9d2317dd34ff4eb64d00bb8e4" prot="public" static="no">
+        <name>LEARNQL_PROPERTIES_BEGIN</name>
+        <param><defname>ClassName</defname></param>
+        <initializer>    using _LearnQL_Current_Class = ClassName; \
+private: \
+    enum { _LEARNQL_PROP_COUNTER_START = __COUNTER__ }; \
+public:</initializer>
+        <briefdescription>
+<para>Begin property block for a class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Usage: <programlisting><codeline><highlight class="normal">class<sp/>Student<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LEARNQL_PROPERTIES_BEGIN(Student)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LEARNQL_PROPERTY(int,<sp/>student_id,<sp/>PK)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LEARNQL_PROPERTY(std::string,<sp/>name)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LEARNQL_PROPERTIES_END(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PROP(int,<sp/>student_id,<sp/>PK),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PROP(std::string,<sp/>name)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/Property.hpp" line="279" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/Property.hpp" bodystart="144" bodyend="147"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>LEARNQL_META_PROPERTY_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LEARNQL_META_PROPERTY_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_field_8hpp" kindref="compound">../query/Field.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_field_info_8hpp" kindref="compound">../reflection/FieldInfo.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;type_traits&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;tuple&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="namespacelearnql_1_1meta" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacelearnql_1_1meta" kindref="compound">learnql::meta</ref><sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="22" refid="namespacelearnql_1_1meta_1ae81b67158e178c2800424a200f37dd89" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespacelearnql_1_1meta_1ae81b67158e178c2800424a200f37dd89" kindref="member">property_return_type</ref><sp/>=<sp/>std::conditional_t&lt;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>std::is_fundamental_v&lt;T&gt;<sp/>||<sp/>(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(T)<sp/>&lt;=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)<sp/>&amp;&amp;<sp/>std::is_trivially_copyable_v&lt;T&gt;),</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>T,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Return<sp/>by<sp/>value<sp/>for<sp/>small<sp/>types</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Return<sp/>by<sp/>const&amp;<sp/>for<sp/>large<sp/>types</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal">&gt;;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="37" refid="namespacelearnql_1_1meta_1a53f585cfa9be97b6719d45ab4d2ab669" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespacelearnql_1_1meta_1a53f585cfa9be97b6719d45ab4d2ab669" kindref="member">property_param_type</ref><sp/>=<sp/>std::conditional_t&lt;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>std::is_fundamental_v&lt;T&gt;,</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>T,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Pass<sp/>by<sp/>value<sp/>for<sp/>fundamentals</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Pass<sp/>by<sp/>const&amp;<sp/>for<sp/>objects</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal">&gt;;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Reader&gt;</highlight></codeline>
+<codeline lineno="57" refid="namespacelearnql_1_1meta_1a3cc4b01a05c4fc2a73f7df691f9f2b34" refkind="member"><highlight class="normal">T<sp/><ref refid="namespacelearnql_1_1meta_1a3cc4b01a05c4fc2a73f7df691f9f2b34" kindref="member">deserialize_property</ref>(Reader&amp;<sp/>reader)<sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>(std::is_same_v&lt;T,<sp/>std::string&gt;)<sp/>{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>reader.read_string();</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>(std::is_arithmetic_v&lt;T&gt;)<sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>reader.template<sp/>read&lt;T&gt;();</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>For<sp/>custom<sp/>types<sp/>that<sp/>have<sp/>serialize/deserialize<sp/>methods</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>reader.template<sp/>read_custom&lt;T&gt;();</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="73" refid="namespacelearnql_1_1meta_1ac36876119db8ef099fb80808580cba84" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="namespacelearnql_1_1meta_1ac36876119db8ef099fb80808580cba84" kindref="member">type_name</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>(std::is_same_v&lt;T,<sp/>int&gt;)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;int&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>(std::is_same_v&lt;T,<sp/>unsigned<sp/>int&gt;)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;unsigned<sp/>int&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>(std::is_same_v&lt;T,<sp/>long&gt;)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;long&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>(std::is_same_v&lt;T,<sp/>unsigned<sp/>long&gt;)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;unsigned<sp/>long&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>(std::is_same_v&lt;T,<sp/>long<sp/>long&gt;)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;long<sp/>long&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>(std::is_same_v&lt;T,<sp/>unsigned<sp/>long<sp/>long&gt;)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;unsigned<sp/>long<sp/>long&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>(std::is_same_v&lt;T,<sp/>short&gt;)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;short&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>(std::is_same_v&lt;T,<sp/>unsigned<sp/>short&gt;)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;unsigned<sp/>short&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>(std::is_same_v&lt;T,<sp/>char&gt;)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;char&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>(std::is_same_v&lt;T,<sp/>unsigned<sp/>char&gt;)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;unsigned<sp/>char&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>(std::is_same_v&lt;T,<sp/>bool&gt;)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;bool&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>(std::is_same_v&lt;T,<sp/>float&gt;)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;float&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>(std::is_same_v&lt;T,<sp/>double&gt;)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;double&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>(std::is_same_v&lt;T,<sp/>long<sp/>double&gt;)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;long<sp/>double&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>(std::is_same_v&lt;T,<sp/>std::string&gt;)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;std::string&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;unknown&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Class,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Type,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>IsPK<sp/>=<sp/>false&gt;</highlight></codeline>
+<codeline lineno="97" refid="structlearnql_1_1meta_1_1_property_meta" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structlearnql_1_1meta_1_1_property_meta" kindref="compound">PropertyMeta</ref><sp/>{</highlight></codeline>
+<codeline lineno="98" refid="structlearnql_1_1meta_1_1_property_meta_1aabf447033d228db3c71f6d2e016da6e8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="structlearnql_1_1meta_1_1_property_meta_1aabf447033d228db3c71f6d2e016da6e8" kindref="member">name</ref>;</highlight></codeline>
+<codeline lineno="99" refid="structlearnql_1_1meta_1_1_property_meta_1a02d0f2b511d8dc175e4bc8012ca9d274" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Type<sp/>Class::*<ref refid="structlearnql_1_1meta_1_1_property_meta_1a02d0f2b511d8dc175e4bc8012ca9d274" kindref="member">member_ptr</ref>;</highlight></codeline>
+<codeline lineno="100" refid="structlearnql_1_1meta_1_1_property_meta_1a26b231c01d2b55d4b16e60d2907719e2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="structlearnql_1_1meta_1_1_property_meta_1a26b231c01d2b55d4b16e60d2907719e2" kindref="member">index</ref>;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="structlearnql_1_1meta_1_1_property_meta_1a5a332d5a3408cd5e1c238979e8efed06" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structlearnql_1_1meta_1_1_property_meta_1a5a332d5a3408cd5e1c238979e8efed06" kindref="member">is_primary_key</ref><sp/>=<sp/>IsPK;</highlight></codeline>
+<codeline lineno="103" refid="structlearnql_1_1meta_1_1_property_meta_1ad1da7def587afbf266165a8ed3ab0f39" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="structlearnql_1_1meta_1_1_property_meta_1ad1da7def587afbf266165a8ed3ab0f39" kindref="member">value_type</ref><sp/>=<sp/>Type;</highlight></codeline>
+<codeline lineno="104" refid="structlearnql_1_1meta_1_1_property_meta_1a0f43fe96cfb00d686b39a654c10b3ce5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="structlearnql_1_1meta_1_1_property_meta_1a0f43fe96cfb00d686b39a654c10b3ce5" kindref="member">class_type</ref><sp/>=<sp/>Class;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Get<sp/>property<sp/>value<sp/>from<sp/>object<sp/>instance</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107" refid="structlearnql_1_1meta_1_1_property_meta_1ae71fa0e94a431a38ec99fe1936648e56" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="structlearnql_1_1meta_1_1_property_meta_1ae71fa0e94a431a38ec99fe1936648e56" kindref="member">get</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Class&amp;<sp/>obj)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>-&gt;<sp/><ref refid="namespacelearnql_1_1meta_1ae81b67158e178c2800424a200f37dd89" kindref="member">property_return_type&lt;Type&gt;</ref><sp/>{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>obj.*<ref refid="structlearnql_1_1meta_1_1_property_meta_1a02d0f2b511d8dc175e4bc8012ca9d274" kindref="member">member_ptr</ref>;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>property<sp/>value<sp/>on<sp/>object<sp/>instance</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112" refid="structlearnql_1_1meta_1_1_property_meta_1a572aa254f6f432972debb635cd4f8dea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structlearnql_1_1meta_1_1_property_meta_1a572aa254f6f432972debb635cd4f8dea" kindref="member">set</ref>(Class&amp;<sp/>obj,<sp/><ref refid="namespacelearnql_1_1meta_1a53f585cfa9be97b6719d45ab4d2ab669" kindref="member">property_param_type&lt;Type&gt;</ref><sp/>value)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>obj.*<ref refid="structlearnql_1_1meta_1_1_property_meta_1a02d0f2b511d8dc175e4bc8012ca9d274" kindref="member">member_ptr</ref><sp/>=<sp/>value;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Get<sp/>compile-time<sp/>type<sp/>name</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117" refid="structlearnql_1_1meta_1_1_property_meta_1a1feff6ee4d228fea56dedaa263a62003" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="structlearnql_1_1meta_1_1_property_meta_1a1feff6ee4d228fea56dedaa263a62003" kindref="member">type_string</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacelearnql_1_1meta_1ac36876119db8ef099fb80808580cba84" kindref="member">type_name&lt;Type&gt;</ref>();</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>learnql::meta</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="comment">//<sp/>NEW<sp/>PROPERTY<sp/>MACRO<sp/>SYSTEM<sp/>-<sp/>Single<sp/>Definition,<sp/>Everything<sp/>Auto-Generated</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="comment">//<sp/>============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144" refid="_property_8hpp_1aeda21bfeb55820f10e5279dd0720d080" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LEARNQL_PROPERTIES_BEGIN(ClassName)<sp/>\</highlight></codeline>
+<codeline lineno="145"><highlight class="preprocessor">private:<sp/>\</highlight></codeline>
+<codeline lineno="146"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>enum<sp/>{<sp/>_LEARNQL_PROP_COUNTER_START<sp/>=<sp/>__COUNTER__<sp/>};<sp/>\</highlight></codeline>
+<codeline lineno="147"><highlight class="preprocessor">public:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162" refid="_property_8hpp_1a79adefc15ab3aeeb532fe6db17c96bd2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LEARNQL_PROPERTY(Type,<sp/>name,<sp/>...)<sp/>\</highlight></codeline>
+<codeline lineno="163"><highlight class="preprocessor">private:<sp/>\</highlight></codeline>
+<codeline lineno="164"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>Type<sp/>name##_;<sp/>\</highlight></codeline>
+<codeline lineno="165"><highlight class="preprocessor">public:<sp/>\</highlight></codeline>
+<codeline lineno="166"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/>::learnql::meta::property_return_type&lt;Type&gt;<sp/>get_##name()<sp/>const<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="167"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>name##_;<sp/>\</highlight></codeline>
+<codeline lineno="168"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/>\</highlight></codeline>
+<codeline lineno="169"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>void<sp/>set_##name(::learnql::meta::property_param_type&lt;Type&gt;<sp/>value)<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="170"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name##_<sp/>=<sp/>value;<sp/>\</highlight></codeline>
+<codeline lineno="171"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/>\</highlight></codeline>
+<codeline lineno="172"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>static<sp/>inline<sp/>const<sp/>::learnql::query::Field&lt;_LEARNQL_CLASS,<sp/>Type&gt;<sp/>name{<sp/>\</highlight></codeline>
+<codeline lineno="173"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#name,<sp/>&amp;_LEARNQL_CLASS::get_##name<sp/>\</highlight></codeline>
+<codeline lineno="174"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>};</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179" refid="_property_8hpp_1a838a878cb35327ef8200e07fad06435d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_LEARNQL_IS_PK_3(a,<sp/>b,<sp/>c)<sp/>true</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180" refid="_property_8hpp_1a3ec49e454704c0735347a3d12fd6c02d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_LEARNQL_IS_PK_2(a,<sp/>b)<sp/>false</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181" refid="_property_8hpp_1a08a37269efeaa30941796381de12d2b0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_LEARNQL_IS_PK_1(a)<sp/>false</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182" refid="_property_8hpp_1abdfb27d0e70af13eda0793e4e9d38849" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_LEARNQL_GET_4TH_ARG(a,<sp/>b,<sp/>c,<sp/>d,<sp/>...)<sp/>d</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183" refid="_property_8hpp_1a1900ce35f4a76232365ba689b538973c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_LEARNQL_IS_PK(...)<sp/>\</highlight></codeline>
+<codeline lineno="184"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>_LEARNQL_GET_4TH_ARG(__VA_ARGS__,<sp/>_LEARNQL_IS_PK_3,<sp/>_LEARNQL_IS_PK_2,<sp/>_LEARNQL_IS_PK_1)(__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190" refid="_property_8hpp_1a820cdc19ace1c096a6f2f90777ad68b7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PROP(Type,<sp/>name,<sp/>...)<sp/>\</highlight></codeline>
+<codeline lineno="191"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>::learnql::meta::PropertyMeta&lt;_LEARNQL_CLASS,<sp/>Type,<sp/>_LEARNQL_IS_PK(Type,<sp/>name<sp/>__VA_OPT__(,)<sp/>__VA_ARGS__)&gt;{<sp/>\</highlight></codeline>
+<codeline lineno="192"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#name,<sp/>\</highlight></codeline>
+<codeline lineno="193"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;_LEARNQL_CLASS::name##_,<sp/>\</highlight></codeline>
+<codeline lineno="194"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>static_cast&lt;uint16_t&gt;(__COUNTER__<sp/>-<sp/>_LEARNQL_PROP_COUNTER_START<sp/>-<sp/>1)<sp/>\</highlight></codeline>
+<codeline lineno="195"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210" refid="_property_8hpp_1a99b774f95a44e756ee611e2f44c316e2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LEARNQL_PROPERTIES_END(...)<sp/>\</highlight></codeline>
+<codeline lineno="211"><highlight class="preprocessor">private:<sp/>\</highlight></codeline>
+<codeline lineno="212"><highlight class="preprocessor"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Helper<sp/>to<sp/>get<sp/>first<sp/>property&apos;s<sp/>type<sp/>for<sp/>primary<sp/>key<sp/>detection<sp/>*/</highlight><highlight class="preprocessor"><sp/>\</highlight></codeline>
+<codeline lineno="213"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>using<sp/>_first_prop_type<sp/>=<sp/>std::tuple_element_t&lt;0,<sp/>decltype(std::make_tuple(__VA_ARGS__))&gt;;<sp/>\</highlight></codeline>
+<codeline lineno="214"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="215"><highlight class="preprocessor">public:<sp/>\</highlight></codeline>
+<codeline lineno="216"><highlight class="preprocessor"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Primary<sp/>key<sp/>type<sp/>typedef<sp/>-<sp/>from<sp/>first<sp/>property<sp/>marked<sp/>as<sp/>PK<sp/>*/</highlight><highlight class="preprocessor"><sp/>\</highlight></codeline>
+<codeline lineno="217"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>using<sp/>primary_key_type<sp/>=<sp/>typename<sp/>_first_prop_type::value_type;<sp/>\</highlight></codeline>
+<codeline lineno="218"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="219"><highlight class="preprocessor"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Primary<sp/>key<sp/>getter<sp/>*/</highlight><highlight class="preprocessor"><sp/>\</highlight></codeline>
+<codeline lineno="220"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>primary_key_type<sp/>get_primary_key()<sp/>const<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="221"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>constexpr<sp/>auto<sp/>props<sp/>=<sp/>std::make_tuple(__VA_ARGS__);<sp/>\</highlight></codeline>
+<codeline lineno="222"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>primary_key_type<sp/>pk{};<sp/>\</highlight></codeline>
+<codeline lineno="223"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::apply([this,<sp/>&amp;pk](const<sp/>auto&amp;...<sp/>p)<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="224"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(([this,<sp/>&amp;pk](const<sp/>auto&amp;<sp/>prop)<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="225"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>constexpr<sp/>(std::remove_cvref_t&lt;decltype(prop)&gt;::is_primary_key)<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="226"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pk<sp/>=<sp/>prop.get(*this);<sp/>\</highlight></codeline>
+<codeline lineno="227"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/>\</highlight></codeline>
+<codeline lineno="228"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}(p)),<sp/>...);<sp/>\</highlight></codeline>
+<codeline lineno="229"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},<sp/>props);<sp/>\</highlight></codeline>
+<codeline lineno="230"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>pk;<sp/>\</highlight></codeline>
+<codeline lineno="231"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/>\</highlight></codeline>
+<codeline lineno="232"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="233"><highlight class="preprocessor"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Property<sp/>metadata<sp/>tuple<sp/>(compile-time)<sp/>*/</highlight><highlight class="preprocessor"><sp/>\</highlight></codeline>
+<codeline lineno="234"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>static<sp/>constexpr<sp/>auto<sp/>_properties()<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="235"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>std::make_tuple(__VA_ARGS__);<sp/>\</highlight></codeline>
+<codeline lineno="236"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/>\</highlight></codeline>
+<codeline lineno="237"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="238"><highlight class="preprocessor"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Auto-generated<sp/>serialization<sp/>*/</highlight><highlight class="preprocessor"><sp/>\</highlight></codeline>
+<codeline lineno="239"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>template&lt;typename<sp/>Writer&gt;<sp/>\</highlight></codeline>
+<codeline lineno="240"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>void<sp/>serialize(Writer&amp;<sp/>writer)<sp/>const<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="241"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>constexpr<sp/>auto<sp/>props<sp/>=<sp/>_properties();<sp/>\</highlight></codeline>
+<codeline lineno="242"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::apply([this,<sp/>&amp;writer](const<sp/>auto&amp;...<sp/>p)<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="243"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((writer.write(p.get(*this))),<sp/>...);<sp/>\</highlight></codeline>
+<codeline lineno="244"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},<sp/>props);<sp/>\</highlight></codeline>
+<codeline lineno="245"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/>\</highlight></codeline>
+<codeline lineno="246"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="247"><highlight class="preprocessor"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Auto-generated<sp/>deserialization<sp/>*/</highlight><highlight class="preprocessor"><sp/>\</highlight></codeline>
+<codeline lineno="248"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>template&lt;typename<sp/>Reader&gt;<sp/>\</highlight></codeline>
+<codeline lineno="249"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>void<sp/>deserialize(Reader&amp;<sp/>reader)<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="250"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>constexpr<sp/>auto<sp/>props<sp/>=<sp/>_properties();<sp/>\</highlight></codeline>
+<codeline lineno="251"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::apply([this,<sp/>&amp;reader](const<sp/>auto&amp;...<sp/>p)<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="252"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((p.set(*this,<sp/>::learnql::meta::deserialize_property&lt;<sp/>\</highlight></codeline>
+<codeline lineno="253"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::remove_cvref_t&lt;decltype(p.get(*this))&gt;<sp/>\</highlight></codeline>
+<codeline lineno="254"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&gt;(reader))),<sp/>...);<sp/>\</highlight></codeline>
+<codeline lineno="255"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},<sp/>props);<sp/>\</highlight></codeline>
+<codeline lineno="256"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/>\</highlight></codeline>
+<codeline lineno="257"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="258"><highlight class="preprocessor"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Auto-generated<sp/>reflection<sp/>for<sp/>system<sp/>catalog<sp/>*/</highlight><highlight class="preprocessor"><sp/>\</highlight></codeline>
+<codeline lineno="259"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>static<sp/>auto<sp/>reflect_fields()<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="260"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>using<sp/>namespace<sp/>learnql::reflection;<sp/>\</highlight></codeline>
+<codeline lineno="261"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;FieldInfo&gt;<sp/>fields;<sp/>\</highlight></codeline>
+<codeline lineno="262"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>constexpr<sp/>auto<sp/>props<sp/>=<sp/>_properties();<sp/>\</highlight></codeline>
+<codeline lineno="263"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::apply([&amp;fields](const<sp/>auto&amp;...<sp/>p)<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="264"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((fields.push_back(FieldInfo{<sp/>\</highlight></codeline>
+<codeline lineno="265"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p.name,<sp/>\</highlight></codeline>
+<codeline lineno="266"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::remove_cvref_t&lt;decltype(p)&gt;::type_string(),<sp/>\</highlight></codeline>
+<codeline lineno="267"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p.index,<sp/>\</highlight></codeline>
+<codeline lineno="268"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::remove_cvref_t&lt;decltype(p)&gt;::is_primary_key<sp/>\</highlight></codeline>
+<codeline lineno="269"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>})),<sp/>...);<sp/>\</highlight></codeline>
+<codeline lineno="270"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},<sp/>props);<sp/>\</highlight></codeline>
+<codeline lineno="271"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>fields;<sp/>\</highlight></codeline>
+<codeline lineno="272"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Store<sp/>class<sp/>name<sp/>for<sp/>use<sp/>in<sp/>LEARNQL_PROPERTY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="275" refid="_property_8hpp_1ae4de43178c03670dc1b752e7e0eab41b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_LEARNQL_CLASS<sp/>_LearnQL_Current_Class</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Redefine<sp/>PROPERTIES_BEGIN<sp/>to<sp/>also<sp/>set<sp/>the<sp/>class<sp/>name</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>LEARNQL_PROPERTIES_BEGIN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LEARNQL_PROPERTIES_BEGIN(ClassName)<sp/>\</highlight></codeline>
+<codeline lineno="280"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>using<sp/>_LearnQL_Current_Class<sp/>=<sp/>ClassName;<sp/>\</highlight></codeline>
+<codeline lineno="281"><highlight class="preprocessor">private:<sp/>\</highlight></codeline>
+<codeline lineno="282"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>enum<sp/>{<sp/>_LEARNQL_PROP_COUNTER_START<sp/>=<sp/>__COUNTER__<sp/>};<sp/>\</highlight></codeline>
+<codeline lineno="283"><highlight class="preprocessor">public:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>LEARNQL_META_PROPERTY_HPP</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/Property.hpp"/>
+  </compounddef>
+</doxygen>

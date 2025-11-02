@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="namespacelearnql_1_1reflection" kind="namespace" language="C++">
+    <compoundname>learnql::reflection</compoundname>
+    <innerclass refid="structlearnql_1_1reflection_1_1_field_info" prot="public">learnql::reflection::FieldInfo</innerclass>
+    <innerconcept refid="conceptlearnql_1_1reflection_1_1_reflectable">learnql::reflection::Reflectable</innerconcept>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacelearnql_1_1reflection_1a6246dbcce40da581bfb13e2b9220c312" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::vector&lt; <ref refid="structlearnql_1_1catalog_1_1_field_metadata" kindref="compound">catalog::FieldMetadata</ref> &gt;</type>
+        <definition>std::vector&lt; catalog::FieldMetadata &gt; learnql::reflection::extract_field_metadata</definition>
+        <argsstring>(const std::string &amp;table_name, uint64_t start_id=1)</argsstring>
+        <name>extract_field_metadata</name>
+        <qualifiedname>learnql::reflection::extract_field_metadata</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>table_name</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>start_id</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+<para>Extract field metadata from a reflectable type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type to extract fields from (must be <ref refid="conceptlearnql_1_1reflection_1_1_reflectable" kindref="compound">Reflectable</ref>) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>table_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the table </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>start_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Starting field ID for generated metadata </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Vector of FieldMetadata for all fields in T</para>
+</simplesect>
+Example: <programlisting><codeline><highlight class="keyword">class<sp/></highlight><highlight class="normal">Student<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_property_8hpp_1aeda21bfeb55820f10e5279dd0720d080" kindref="member">LEARNQL_PROPERTIES_BEGIN</ref>(Student)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_property_8hpp_1a79adefc15ab3aeeb532fe6db17c96bd2" kindref="member">LEARNQL_PROPERTY</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>PK)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_property_8hpp_1a79adefc15ab3aeeb532fe6db17c96bd2" kindref="member">LEARNQL_PROPERTY</ref>(std::string,<sp/>name)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_property_8hpp_1a79adefc15ab3aeeb532fe6db17c96bd2" kindref="member">LEARNQL_PROPERTY</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/>gpa)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_property_8hpp_1a99b774f95a44e756ee611e2f44c316e2" kindref="member">LEARNQL_PROPERTIES_END</ref>(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_property_8hpp_1a820cdc19ace1c096a6f2f90777ad68b7" kindref="member">PROP</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>PK),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_property_8hpp_1a820cdc19ace1c096a6f2f90777ad68b7" kindref="member">PROP</ref>(std::string,<sp/>name),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_property_8hpp_1a820cdc19ace1c096a6f2f90777ad68b7" kindref="member">PROP</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/>gpa)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>fields<sp/>=<sp/><ref refid="namespacelearnql_1_1reflection_1a6246dbcce40da581bfb13e2b9220c312" kindref="member">extract_field_metadata&lt;Student&gt;</ref>(</highlight><highlight class="stringliteral">&quot;students&quot;</highlight><highlight class="normal">,<sp/>1);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Returns<sp/>3<sp/>FieldMetadata<sp/>objects<sp/>with<sp/>IDs<sp/>1,<sp/>2,<sp/>3</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/reflection/FieldExtractor.hpp" line="49" column="13" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/reflection/FieldExtractor.hpp" bodystart="49" bodyend="74"/>
+        <referencedby refid="classlearnql_1_1core_1_1_database_1a88af9aa0a39c957674e2200ee6d45787" compoundref="_database_8hpp" startline="136" endline="184">learnql::core::Database::table</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacelearnql_1_1reflection_1a53ce71e0824f3a0ff74bf1735cad596f" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool learnql::reflection::is_reflectable</definition>
+        <argsstring>()</argsstring>
+        <name>is_reflectable</name>
+        <qualifiedname>learnql::reflection::is_reflectable</qualifiedname>
+        <briefdescription>
+<para>Check if a type supports field reflection at compile-time. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type to check </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if T is <ref refid="conceptlearnql_1_1reflection_1_1_reflectable" kindref="compound">Reflectable</ref>, false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/reflection/FieldExtractor.hpp" line="82" column="16" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/reflection/FieldExtractor.hpp" bodystart="82" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelearnql_1_1reflection_1a91b674aedc6a77e256dccb4fbb78c1c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>Reflectable</type>
+            <declname>T</declname>
+            <defname>T</defname>
+          </param>
+        </templateparamlist>
+        <type>std::size_t</type>
+        <definition>std::size_t learnql::reflection::field_count</definition>
+        <argsstring>()</argsstring>
+        <name>field_count</name>
+        <qualifiedname>learnql::reflection::field_count</qualifiedname>
+        <briefdescription>
+<para>Get number of fields in a reflectable type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type to inspect (must be <ref refid="conceptlearnql_1_1reflection_1_1_reflectable" kindref="compound">Reflectable</ref>) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of fields </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/reflection/FieldExtractor.hpp" line="92" column="13" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/reflection/FieldExtractor.hpp" bodystart="92" bodyend="94"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/reflection/FieldExtractor.hpp" line="10" column="1"/>
+  </compounddef>
+</doxygen>

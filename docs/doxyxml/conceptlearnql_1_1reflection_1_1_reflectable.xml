@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="conceptlearnql_1_1reflection_1_1_reflectable" kind="concept">
+    <compoundname>learnql::reflection::Reflectable</compoundname>
+    <includes refid="_field_extractor_8hpp" local="no">FieldExtractor.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <initializer>template&lt;typename T&gt;
+concept <ref refid="conceptlearnql_1_1reflection_1_1_reflectable" kindref="compound">learnql::reflection::Reflectable</ref> =  requires {
+    { T::reflect_fields() };
+}    </initializer>
+    <briefdescription>
+<para>Concept for types that support field reflection. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>A type is Reflectable if it has a static reflect_fields() method that returns a tuple of FieldInfo objects. </para>
+    </detaileddescription>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/reflection/FieldExtractor.hpp" line="19" column="1"/>
+  </compounddef>
+</doxygen>

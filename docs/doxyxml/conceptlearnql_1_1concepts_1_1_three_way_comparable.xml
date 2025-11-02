@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="conceptlearnql_1_1concepts_1_1_three_way_comparable" kind="concept">
+    <compoundname>learnql::concepts::ThreeWayComparable</compoundname>
+    <includes refid="_serializable_8hpp" local="no">Serializable.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <initializer>template&lt;typename T&gt;
+concept <ref refid="conceptlearnql_1_1concepts_1_1_three_way_comparable" kindref="compound">learnql::concepts::ThreeWayComparable</ref> =  requires(const T&amp; a, const T&amp; b) {
+    { a &lt;=&gt; b } -&gt; std::convertible_to&lt;std::partial_ordering&gt;;
+}    </initializer>
+    <briefdescription>
+<para>Concept for types that support three-way comparison (C++20 spaceship operator). </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/concepts/Serializable.hpp" line="108" column="1"/>
+  </compounddef>
+</doxygen>

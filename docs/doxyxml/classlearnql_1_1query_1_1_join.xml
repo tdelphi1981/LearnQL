@@ -1,0 +1,581 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classlearnql_1_1query_1_1_join" kind="class" language="C++" prot="public">
+    <compoundname>learnql::query::Join</compoundname>
+    <includes refid="_join_8hpp" local="no">Join.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename Left</type>
+      </param>
+      <param>
+        <type>typename Right</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classlearnql_1_1query_1_1_join_1a5f74f1658eb36c51a0bd29733fe6d6d7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename LeftContainer</type>
+          </param>
+          <param>
+            <type>typename RightContainer</type>
+          </param>
+          <param>
+            <type>typename LeftKeyExtractor</type>
+          </param>
+          <param>
+            <type>typename RightKeyExtractor</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>static auto learnql::query::Join&lt; Left, Right &gt;::inner_join</definition>
+        <argsstring>(const LeftContainer &amp;left_records, const RightContainer &amp;right_records, LeftKeyExtractor &amp;&amp;left_key_extractor, RightKeyExtractor &amp;&amp;right_key_extractor)</argsstring>
+        <name>inner_join</name>
+        <qualifiedname>learnql::query::Join::inner_join</qualifiedname>
+        <param>
+          <type>const LeftContainer &amp;</type>
+          <declname>left_records</declname>
+        </param>
+        <param>
+          <type>const RightContainer &amp;</type>
+          <declname>right_records</declname>
+        </param>
+        <param>
+          <type>LeftKeyExtractor &amp;&amp;</type>
+          <declname>left_key_extractor</declname>
+        </param>
+        <param>
+          <type>RightKeyExtractor &amp;&amp;</type>
+          <declname>right_key_extractor</declname>
+        </param>
+        <briefdescription>
+<para>Performs an inner join. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>LeftContainer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Left container type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>RightContainer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Right container type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>LeftKeyExtractor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Left key extractor callable type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>RightKeyExtractor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Right key extractor callable type </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>left_records</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Left table records </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>right_records</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Right table records </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>left_key_extractor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Function to extract key from left record </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>right_key_extractor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Function to extract key from right record </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Vector of join results (only matching records) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Join.hpp" line="73" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Join.hpp" bodystart="73" bodyend="105"/>
+        <referencedby refid="namespacelearnql_1_1query_1a7faa8715ba3cce81b3bfa5a10bfb65dd" compoundref="_join_8hpp" startline="280" endline="290">learnql::query::inner_join</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1query_1_1_join_1aaedb4c628088798909cd1e38960114d1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename LeftContainer</type>
+          </param>
+          <param>
+            <type>typename RightContainer</type>
+          </param>
+          <param>
+            <type>typename LeftKeyExtractor</type>
+          </param>
+          <param>
+            <type>typename RightKeyExtractor</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>static auto learnql::query::Join&lt; Left, Right &gt;::left_join</definition>
+        <argsstring>(const LeftContainer &amp;left_records, const RightContainer &amp;right_records, LeftKeyExtractor &amp;&amp;left_key_extractor, RightKeyExtractor &amp;&amp;right_key_extractor)</argsstring>
+        <name>left_join</name>
+        <qualifiedname>learnql::query::Join::left_join</qualifiedname>
+        <param>
+          <type>const LeftContainer &amp;</type>
+          <declname>left_records</declname>
+        </param>
+        <param>
+          <type>const RightContainer &amp;</type>
+          <declname>right_records</declname>
+        </param>
+        <param>
+          <type>LeftKeyExtractor &amp;&amp;</type>
+          <declname>left_key_extractor</declname>
+        </param>
+        <param>
+          <type>RightKeyExtractor &amp;&amp;</type>
+          <declname>right_key_extractor</declname>
+        </param>
+        <briefdescription>
+<para>Performs a left outer join. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>LeftContainer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Left container type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>RightContainer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Right container type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>LeftKeyExtractor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Left key extractor callable type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>RightKeyExtractor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Right key extractor callable type </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>left_records</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Left table records </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>right_records</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Right table records </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>left_key_extractor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Function to extract key from left record </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>right_key_extractor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Function to extract key from right record </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Vector of join results (all left records, matching right records) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Join.hpp" line="121" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Join.hpp" bodystart="121" bodyend="159"/>
+        <referencedby refid="namespacelearnql_1_1query_1a8e95f6011e1d567fbca9b49ac27c73b0" compoundref="_join_8hpp" startline="297" endline="307">learnql::query::left_join</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1query_1_1_join_1a177ea45706ce40aabfffdc0e4f91b8e1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename LeftContainer</type>
+          </param>
+          <param>
+            <type>typename RightContainer</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>static auto learnql::query::Join&lt; Left, Right &gt;::cross_join</definition>
+        <argsstring>(const LeftContainer &amp;left_records, const RightContainer &amp;right_records)</argsstring>
+        <name>cross_join</name>
+        <qualifiedname>learnql::query::Join::cross_join</qualifiedname>
+        <param>
+          <type>const LeftContainer &amp;</type>
+          <declname>left_records</declname>
+        </param>
+        <param>
+          <type>const RightContainer &amp;</type>
+          <declname>right_records</declname>
+        </param>
+        <briefdescription>
+<para>Performs a cross join (Cartesian product). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>LeftContainer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Left container type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>RightContainer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Right container type </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>left_records</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Left table records </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>right_records</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Right table records </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Vector of all combinations </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Join.hpp" line="170" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Join.hpp" bodystart="170" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1query_1_1_join_1a68c0d093e295f71db278a405213bef6f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename LeftContainer</type>
+          </param>
+          <param>
+            <type>typename RightContainer</type>
+          </param>
+          <param>
+            <type>typename LeftKeyExtractor</type>
+          </param>
+          <param>
+            <type>typename RightKeyExtractor</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>static auto learnql::query::Join&lt; Left, Right &gt;::semi_join</definition>
+        <argsstring>(const LeftContainer &amp;left_records, const RightContainer &amp;right_records, LeftKeyExtractor &amp;&amp;left_key_extractor, RightKeyExtractor &amp;&amp;right_key_extractor)</argsstring>
+        <name>semi_join</name>
+        <qualifiedname>learnql::query::Join::semi_join</qualifiedname>
+        <param>
+          <type>const LeftContainer &amp;</type>
+          <declname>left_records</declname>
+        </param>
+        <param>
+          <type>const RightContainer &amp;</type>
+          <declname>right_records</declname>
+        </param>
+        <param>
+          <type>LeftKeyExtractor &amp;&amp;</type>
+          <declname>left_key_extractor</declname>
+        </param>
+        <param>
+          <type>RightKeyExtractor &amp;&amp;</type>
+          <declname>right_key_extractor</declname>
+        </param>
+        <briefdescription>
+<para>Performs a semi join. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>LeftContainer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Left container type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>RightContainer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Right container type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>LeftKeyExtractor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Left key extractor callable type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>RightKeyExtractor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Right key extractor callable type </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>left_records</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Left table records </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>right_records</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Right table records </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>left_key_extractor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Function to extract key from left record </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>right_key_extractor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Function to extract key from right record </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Vector of left records that have a match in right table </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Join.hpp" line="200" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Join.hpp" bodystart="200" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1query_1_1_join_1a8f3814a91efbbcb6874dd64253c4d79d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename LeftContainer</type>
+          </param>
+          <param>
+            <type>typename RightContainer</type>
+          </param>
+          <param>
+            <type>typename LeftKeyExtractor</type>
+          </param>
+          <param>
+            <type>typename RightKeyExtractor</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>static auto learnql::query::Join&lt; Left, Right &gt;::anti_join</definition>
+        <argsstring>(const LeftContainer &amp;left_records, const RightContainer &amp;right_records, LeftKeyExtractor &amp;&amp;left_key_extractor, RightKeyExtractor &amp;&amp;right_key_extractor)</argsstring>
+        <name>anti_join</name>
+        <qualifiedname>learnql::query::Join::anti_join</qualifiedname>
+        <param>
+          <type>const LeftContainer &amp;</type>
+          <declname>left_records</declname>
+        </param>
+        <param>
+          <type>const RightContainer &amp;</type>
+          <declname>right_records</declname>
+        </param>
+        <param>
+          <type>LeftKeyExtractor &amp;&amp;</type>
+          <declname>left_key_extractor</declname>
+        </param>
+        <param>
+          <type>RightKeyExtractor &amp;&amp;</type>
+          <declname>right_key_extractor</declname>
+        </param>
+        <briefdescription>
+<para>Performs an anti join. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>LeftContainer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Left container type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>RightContainer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Right container type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>LeftKeyExtractor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Left key extractor callable type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>RightKeyExtractor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Right key extractor callable type </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>left_records</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Left table records </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>right_records</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Right table records </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>left_key_extractor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Function to extract key from left record </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>right_key_extractor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Function to extract key from right record </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Vector of left records that DON&apos;T have a match in right table </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Join.hpp" line="244" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Join.hpp" bodystart="244" bodyend="272"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para><ref refid="classlearnql_1_1query_1_1_join" kindref="compound">Join</ref> operations for combining data from multiple tables. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Left</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Left table record type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Right</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Right table record type</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Provides SQL-like join operations.</para>
+<para>Example: <programlisting><codeline><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>results<sp/>=<sp/><ref refid="classlearnql_1_1query_1_1_join_1a5f74f1658eb36c51a0bd29733fe6d6d7" kindref="member">Join::inner_join</ref>(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>students,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>enrollments,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>[](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>s)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>s.id;<sp/>},<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Left<sp/>key</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>[](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>e)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>e.student_id;<sp/>}<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Right<sp/>key</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">);</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Join.hpp" line="57" column="1" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Join.hpp" bodystart="57" bodyend="273"/>
+    <listofallmembers>
+      <member refid="classlearnql_1_1query_1_1_join_1a8f3814a91efbbcb6874dd64253c4d79d" prot="public" virt="non-virtual"><scope>learnql::query::Join</scope><name>anti_join</name></member>
+      <member refid="classlearnql_1_1query_1_1_join_1a177ea45706ce40aabfffdc0e4f91b8e1" prot="public" virt="non-virtual"><scope>learnql::query::Join</scope><name>cross_join</name></member>
+      <member refid="classlearnql_1_1query_1_1_join_1a5f74f1658eb36c51a0bd29733fe6d6d7" prot="public" virt="non-virtual"><scope>learnql::query::Join</scope><name>inner_join</name></member>
+      <member refid="classlearnql_1_1query_1_1_join_1aaedb4c628088798909cd1e38960114d1" prot="public" virt="non-virtual"><scope>learnql::query::Join</scope><name>left_join</name></member>
+      <member refid="classlearnql_1_1query_1_1_join_1a68c0d093e295f71db278a405213bef6f" prot="public" virt="non-virtual"><scope>learnql::query::Join</scope><name>semi_join</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

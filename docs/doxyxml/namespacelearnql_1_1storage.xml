@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="namespacelearnql_1_1storage" kind="namespace" language="C++">
+    <compoundname>learnql::storage</compoundname>
+    <innerclass refid="structlearnql_1_1storage_1_1_page_header" prot="public">learnql::storage::PageHeader</innerclass>
+    <innerclass refid="classlearnql_1_1storage_1_1_page" prot="public">learnql::storage::Page</innerclass>
+    <innerclass refid="classlearnql_1_1storage_1_1_storage_engine" prot="public">learnql::storage::StorageEngine</innerclass>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespacelearnql_1_1storage_1ae05b45a9b02a6b9290c9867f77f420b7" prot="public" static="no" strong="yes">
+        <type>uint8_t</type>
+        <name>PageType</name>
+        <qualifiedname>learnql::storage::PageType</qualifiedname>
+        <enumvalue id="namespacelearnql_1_1storage_1ae05b45a9b02a6b9290c9867f77f420b7a88c189a42c87aa49d667fc8ab76bc323" prot="public">
+          <name>FREE</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Unused page. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacelearnql_1_1storage_1ae05b45a9b02a6b9290c9867f77f420b7ae44f9e348e41cb272efa87387728571b" prot="public">
+          <name>DATA</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>Contains record data. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacelearnql_1_1storage_1ae05b45a9b02a6b9290c9867f77f420b7acb4ae3b37047fb4b2c0d16f8bf84f076" prot="public">
+          <name>INDEX</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>Contains index data (future use). </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacelearnql_1_1storage_1ae05b45a9b02a6b9290c9867f77f420b7a8a9c0818e0622aadfcb2e59cfe5299b4" prot="public">
+          <name>METADATA</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+<para>Contains database metadata. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacelearnql_1_1storage_1ae05b45a9b02a6b9290c9867f77f420b7a6019cbff128b1f75f0664d83ea8aefeb" prot="public">
+          <name>OVERFLOW_DATA</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+<para>Contains overflow data for large records (renamed to avoid macro conflict). </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Types of pages in the storage system. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" line="28" column="1" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" bodystart="28" bodyend="34"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacelearnql_1_1storage_1aa7e8d66da1715ae9da7740911fdfeac6" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>std::array&lt; char, 4 &gt;</type>
+        <definition>std::array&lt;char, 4&gt; learnql::storage::MAGIC_NUMBER</definition>
+        <argsstring></argsstring>
+        <name>MAGIC_NUMBER</name>
+        <qualifiedname>learnql::storage::MAGIC_NUMBER</qualifiedname>
+        <initializer>= {&apos;L&apos;, &apos;Q&apos;, &apos;L&apos;, &apos;1&apos;}</initializer>
+        <briefdescription>
+<para>Magic number for LearnQL database files. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>&quot;LQL&quot; + version marker </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" line="17" column="22" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" bodystart="17" bodyend="17"/>
+        <referencedby refid="structlearnql_1_1storage_1_1_page_header_1a60987033234dd199f8f9d51dfcf9a9a6" compoundref="_page_8hpp" startline="81" endline="83">learnql::storage::PageHeader::is_valid</referencedby>
+        <referencedby refid="structlearnql_1_1storage_1_1_page_header_1a732ae3232b4112d4f424fe7e98ca9f87" compoundref="_page_8hpp" startline="66" endline="75">learnql::storage::PageHeader::PageHeader</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="namespacelearnql_1_1storage_1ae36f10f66bb5104ebab3a7cd143e444a" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t learnql::storage::PAGE_SIZE</definition>
+        <argsstring></argsstring>
+        <name>PAGE_SIZE</name>
+        <qualifiedname>learnql::storage::PAGE_SIZE</qualifiedname>
+        <initializer>= 4096</initializer>
+        <briefdescription>
+<para>Standard page size (4KB). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Common page size for efficient disk I/O </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" line="23" column="23" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" bodystart="23" bodyend="-1"/>
+        <referencedby refid="classlearnql_1_1storage_1_1_storage_engine_1ac0fbe07cbe28db28214acbb17116195f" compoundref="_storage_engine_8hpp" startline="198" endline="230">learnql::storage::StorageEngine::flush_all</referencedby>
+        <referencedby refid="classlearnql_1_1storage_1_1_storage_engine_1a5ad865c5f01c699003f7d0dedbfe59ff" compoundref="_storage_engine_8hpp" startline="236" endline="262">learnql::storage::StorageEngine::flush_page</referencedby>
+        <referencedby refid="classlearnql_1_1storage_1_1_storage_engine_1ac93edcca8ac34e0d45ecebdf6072cc43" compoundref="_storage_engine_8hpp" startline="139" endline="177">learnql::storage::StorageEngine::read_page</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" line="11" column="1"/>
+  </compounddef>
+</doxygen>

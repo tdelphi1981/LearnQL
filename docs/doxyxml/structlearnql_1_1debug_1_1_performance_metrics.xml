@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="structlearnql_1_1debug_1_1_performance_metrics" kind="struct" language="C++" prot="public">
+    <compoundname>learnql::debug::PerformanceMetrics</compoundname>
+    <includes refid="_profiler_8hpp" local="no">Profiler.hpp</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlearnql_1_1debug_1_1_performance_metrics_1a632463e0d17f1ebc0ddfa892bab9abbb" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string learnql::debug::PerformanceMetrics::operation_name</definition>
+        <argsstring></argsstring>
+        <name>operation_name</name>
+        <qualifiedname>learnql::debug::PerformanceMetrics::operation_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" line="18" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1debug_1_1_performance_metrics_1a546eaf72a6d2b1eb152c339acbadd842" prot="public" static="no" mutable="no">
+        <type>std::chrono::microseconds</type>
+        <definition>std::chrono::microseconds learnql::debug::PerformanceMetrics::duration</definition>
+        <argsstring></argsstring>
+        <name>duration</name>
+        <qualifiedname>learnql::debug::PerformanceMetrics::duration</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" line="19" column="31" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" bodystart="19" bodyend="-1"/>
+        <referencedby refid="structlearnql_1_1debug_1_1_performance_metrics_1a4b83aee9ecbadca6296b78ea5f2546ad" compoundref="_profiler_8hpp" startline="23" endline="25">duration_ms</referencedby>
+        <referencedby refid="structlearnql_1_1debug_1_1_performance_metrics_1a85839b27ca683d9f14bb30a3d7c2ebb5" compoundref="_profiler_8hpp" startline="27" endline="30">rows_per_second</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1debug_1_1_performance_metrics_1a8d8c1db43f390cd90e0fe6d4c8e96bae" prot="public" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t learnql::debug::PerformanceMetrics::rows_processed</definition>
+        <argsstring></argsstring>
+        <name>rows_processed</name>
+        <qualifiedname>learnql::debug::PerformanceMetrics::rows_processed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" line="20" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" bodystart="20" bodyend="-1"/>
+        <referencedby refid="structlearnql_1_1debug_1_1_performance_metrics_1a85839b27ca683d9f14bb30a3d7c2ebb5" compoundref="_profiler_8hpp" startline="27" endline="30">rows_per_second</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1debug_1_1_performance_metrics_1ad3494eef32eda2b4e5c459d4393a768c" prot="public" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t learnql::debug::PerformanceMetrics::memory_used</definition>
+        <argsstring></argsstring>
+        <name>memory_used</name>
+        <qualifiedname>learnql::debug::PerformanceMetrics::memory_used</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" line="21" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structlearnql_1_1debug_1_1_performance_metrics_1a4b83aee9ecbadca6296b78ea5f2546ad" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double learnql::debug::PerformanceMetrics::duration_ms</definition>
+        <argsstring>() const</argsstring>
+        <name>duration_ms</name>
+        <qualifiedname>learnql::debug::PerformanceMetrics::duration_ms</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" line="23" column="13" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" bodystart="23" bodyend="25"/>
+        <references refid="structlearnql_1_1debug_1_1_performance_metrics_1a546eaf72a6d2b1eb152c339acbadd842" compoundref="_profiler_8hpp" startline="19">duration</references>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1debug_1_1_performance_metrics_1a85839b27ca683d9f14bb30a3d7c2ebb5" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double learnql::debug::PerformanceMetrics::rows_per_second</definition>
+        <argsstring>() const</argsstring>
+        <name>rows_per_second</name>
+        <qualifiedname>learnql::debug::PerformanceMetrics::rows_per_second</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" line="27" column="13" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" bodystart="27" bodyend="30"/>
+        <references refid="structlearnql_1_1debug_1_1_performance_metrics_1a546eaf72a6d2b1eb152c339acbadd842" compoundref="_profiler_8hpp" startline="19">duration</references>
+        <references refid="structlearnql_1_1debug_1_1_performance_metrics_1a8d8c1db43f390cd90e0fe6d4c8e96bae" compoundref="_profiler_8hpp" startline="20">rows_processed</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Performance metrics for a query or operation. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>learnql::debug::PerformanceMetrics</label>
+        <link refid="structlearnql_1_1debug_1_1_performance_metrics"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>operation_name</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="2">
+        <label>std::string</label>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" line="17" column="1" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" bodystart="17" bodyend="31"/>
+    <listofallmembers>
+      <member refid="structlearnql_1_1debug_1_1_performance_metrics_1a546eaf72a6d2b1eb152c339acbadd842" prot="public" virt="non-virtual"><scope>learnql::debug::PerformanceMetrics</scope><name>duration</name></member>
+      <member refid="structlearnql_1_1debug_1_1_performance_metrics_1a4b83aee9ecbadca6296b78ea5f2546ad" prot="public" virt="non-virtual"><scope>learnql::debug::PerformanceMetrics</scope><name>duration_ms</name></member>
+      <member refid="structlearnql_1_1debug_1_1_performance_metrics_1ad3494eef32eda2b4e5c459d4393a768c" prot="public" virt="non-virtual"><scope>learnql::debug::PerformanceMetrics</scope><name>memory_used</name></member>
+      <member refid="structlearnql_1_1debug_1_1_performance_metrics_1a632463e0d17f1ebc0ddfa892bab9abbb" prot="public" virt="non-virtual"><scope>learnql::debug::PerformanceMetrics</scope><name>operation_name</name></member>
+      <member refid="structlearnql_1_1debug_1_1_performance_metrics_1a85839b27ca683d9f14bb30a3d7c2ebb5" prot="public" virt="non-virtual"><scope>learnql::debug::PerformanceMetrics</scope><name>rows_per_second</name></member>
+      <member refid="structlearnql_1_1debug_1_1_performance_metrics_1a8d8c1db43f390cd90e0fe6d4c8e96bae" prot="public" virt="non-virtual"><scope>learnql::debug::PerformanceMetrics</scope><name>rows_processed</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

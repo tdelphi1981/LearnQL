@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="structlearnql_1_1query_1_1_group_by_result" kind="struct" language="C++" prot="public">
+    <compoundname>learnql::query::GroupByResult</compoundname>
+    <includes refid="_group_by_8hpp" local="no">GroupBy.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename GroupKey</type>
+      </param>
+      <param>
+        <type>typename AggValue</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlearnql_1_1query_1_1_group_by_result_1ad7c67ecc21e5d6407cb44b29e07fe0b6" prot="public" static="no" mutable="no">
+        <type>GroupKey</type>
+        <definition>GroupKey learnql::query::GroupByResult&lt; GroupKey, AggValue &gt;::key</definition>
+        <argsstring></argsstring>
+        <name>key</name>
+        <qualifiedname>learnql::query::GroupByResult::key</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/GroupBy.hpp" line="20" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/GroupBy.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1query_1_1_group_by_result_1a0606cf43a840df7346d19275df2730b0" prot="public" static="no" mutable="no">
+        <type>AggValue</type>
+        <definition>AggValue learnql::query::GroupByResult&lt; GroupKey, AggValue &gt;::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <qualifiedname>learnql::query::GroupByResult::value</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/GroupBy.hpp" line="21" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/GroupBy.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1query_1_1_group_by_result_1a5122c0c3f59a7b36cd4d15096dcb2e46" prot="public" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t learnql::query::GroupByResult&lt; GroupKey, AggValue &gt;::count</definition>
+        <argsstring></argsstring>
+        <name>count</name>
+        <qualifiedname>learnql::query::GroupByResult::count</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/GroupBy.hpp" line="22" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/GroupBy.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Result of a group-by operation. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>GroupKey</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of the grouping key </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>AggValue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of the aggregated value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+    </detaileddescription>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/GroupBy.hpp" line="19" column="1" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/GroupBy.hpp" bodystart="19" bodyend="23"/>
+    <listofallmembers>
+      <member refid="structlearnql_1_1query_1_1_group_by_result_1a5122c0c3f59a7b36cd4d15096dcb2e46" prot="public" virt="non-virtual"><scope>learnql::query::GroupByResult</scope><name>count</name></member>
+      <member refid="structlearnql_1_1query_1_1_group_by_result_1ad7c67ecc21e5d6407cb44b29e07fe0b6" prot="public" virt="non-virtual"><scope>learnql::query::GroupByResult</scope><name>key</name></member>
+      <member refid="structlearnql_1_1query_1_1_group_by_result_1a0606cf43a840df7346d19275df2730b0" prot="public" virt="non-virtual"><scope>learnql::query::GroupByResult</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

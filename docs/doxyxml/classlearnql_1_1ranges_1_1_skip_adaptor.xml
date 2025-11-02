@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classlearnql_1_1ranges_1_1_skip_adaptor" kind="class" language="C++" prot="public">
+    <compoundname>learnql::ranges::SkipAdaptor</compoundname>
+    <includes refid="_adaptors_8hpp" local="no">Adaptors.hpp</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classlearnql_1_1ranges_1_1_skip_adaptor_1aec759a1a7ec1dc0ef03e73c30ab45d2d" prot="private" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t learnql::ranges::SkipAdaptor::n_</definition>
+        <argsstring></argsstring>
+        <name>n_</name>
+        <qualifiedname>learnql::ranges::SkipAdaptor::n_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/Adaptors.hpp" line="207" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/Adaptors.hpp" bodystart="207" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlearnql_1_1ranges_1_1_skip_adaptor_1ad35ab44d15912878d83de48cf78a2308" prot="public" static="no" constexpr="yes" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type>constexpr</type>
+        <definition>learnql::ranges::SkipAdaptor::SkipAdaptor</definition>
+        <argsstring>(std::size_t n)</argsstring>
+        <name>SkipAdaptor</name>
+        <qualifiedname>learnql::ranges::SkipAdaptor::SkipAdaptor</qualifiedname>
+        <param>
+          <type>std::size_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/Adaptors.hpp" line="198" column="24" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/Adaptors.hpp" bodystart="198" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1ranges_1_1_skip_adaptor_1a23cb40b4d01f8a664d7e1ba31acc52d7" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>std::ranges::input_range</type>
+            <declname>R</declname>
+            <defname>R</defname>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto learnql::ranges::SkipAdaptor::operator()</definition>
+        <argsstring>(R &amp;&amp;range) const</argsstring>
+        <name>operator()</name>
+        <qualifiedname>learnql::ranges::SkipAdaptor::operator()</qualifiedname>
+        <param>
+          <type>R &amp;&amp;</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/Adaptors.hpp" line="202" column="11" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/Adaptors.hpp" bodystart="202" bodyend="204"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Custom range adaptor for skipping results. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This is similar to SQL&apos;s OFFSET clause.</para>
+<para>Example: <programlisting><codeline><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>page2<sp/>=<sp/>students.view()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>|<sp/><ref refid="namespacelearnql_1_1ranges_1a80316e88998a8e9b1465dc581a77a51f" kindref="member">skip</ref>(10)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>|<sp/><ref refid="namespacelearnql_1_1ranges_1a2bbd315971ac7f77ad01ca24bb06b37f" kindref="member">limit</ref>(10);</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/Adaptors.hpp" line="196" column="1" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/Adaptors.hpp" bodystart="196" bodyend="208"/>
+    <listofallmembers>
+      <member refid="classlearnql_1_1ranges_1_1_skip_adaptor_1aec759a1a7ec1dc0ef03e73c30ab45d2d" prot="private" virt="non-virtual"><scope>learnql::ranges::SkipAdaptor</scope><name>n_</name></member>
+      <member refid="classlearnql_1_1ranges_1_1_skip_adaptor_1a23cb40b4d01f8a664d7e1ba31acc52d7" prot="public" virt="non-virtual"><scope>learnql::ranges::SkipAdaptor</scope><name>operator()</name></member>
+      <member refid="classlearnql_1_1ranges_1_1_skip_adaptor_1ad35ab44d15912878d83de48cf78a2308" prot="public" virt="non-virtual"><scope>learnql::ranges::SkipAdaptor</scope><name>SkipAdaptor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

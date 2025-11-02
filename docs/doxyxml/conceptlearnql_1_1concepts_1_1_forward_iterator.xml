@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="conceptlearnql_1_1concepts_1_1_forward_iterator" kind="concept">
+    <compoundname>learnql::concepts::ForwardIterator</compoundname>
+    <includes refid="_queryable_8hpp" local="no">Queryable.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename It</type>
+      </param>
+    </templateparamlist>
+    <initializer>template&lt;typename It&gt;
+concept <ref refid="conceptlearnql_1_1concepts_1_1_forward_iterator" kindref="compound">learnql::concepts::ForwardIterator</ref> =  Iterator&lt;It&gt; &amp;&amp; requires(It it1, It it2) {
+    { it1 == it2 } -&gt; std::convertible_to&lt;bool&gt;;
+    { it1 != it2 } -&gt; std::convertible_to&lt;bool&gt;;
+}    </initializer>
+    <briefdescription>
+<para>Concept for forward iterator types. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/concepts/Queryable.hpp" line="97" column="1"/>
+  </compounddef>
+</doxygen>

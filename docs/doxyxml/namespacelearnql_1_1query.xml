@@ -1,0 +1,392 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="namespacelearnql_1_1query" kind="namespace" language="C++">
+    <compoundname>learnql::query</compoundname>
+    <innerclass refid="classlearnql_1_1query_1_1_field" prot="public">learnql::query::Field</innerclass>
+    <innerclass refid="structlearnql_1_1query_1_1_group_by_result" prot="public">learnql::query::GroupByResult</innerclass>
+    <innerclass refid="classlearnql_1_1query_1_1_group_by" prot="public">learnql::query::GroupBy</innerclass>
+    <innerclass refid="structlearnql_1_1query_1_1_join_result" prot="public">learnql::query::JoinResult</innerclass>
+    <innerclass refid="classlearnql_1_1query_1_1_join" prot="public">learnql::query::Join</innerclass>
+    <innerclass refid="classlearnql_1_1query_1_1_query" prot="public">learnql::query::Query</innerclass>
+    <innernamespace refid="namespacelearnql_1_1query_1_1expressions">learnql::query::expressions</innernamespace>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespacelearnql_1_1query_1a3529d89b2d2491c2b35082ffe78ec973" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>JoinType</name>
+        <qualifiedname>learnql::query::JoinType</qualifiedname>
+        <enumvalue id="namespacelearnql_1_1query_1a3529d89b2d2491c2b35082ffe78ec973aa1684698ac3d8ffda353d0458c30b1e7" prot="public">
+          <name>Inner</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacelearnql_1_1query_1a3529d89b2d2491c2b35082ffe78ec973a041d4f8b374671b8696650eb4c3454a0" prot="public">
+          <name>LeftOuter</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacelearnql_1_1query_1a3529d89b2d2491c2b35082ffe78ec973aaf50bf850a3953b8c40b8810ef1b594b" prot="public">
+          <name>RightOuter</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacelearnql_1_1query_1a3529d89b2d2491c2b35082ffe78ec973a2b4117aebb079d6f860d26c21cead67e" prot="public">
+          <name>FullOuter</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para><ref refid="classlearnql_1_1query_1_1_join" kindref="compound">Join</ref> types. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Join.hpp" line="32" column="1" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Join.hpp" bodystart="32" bodyend="37"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacelearnql_1_1query_1ad77882d436b612192d099574176a8d5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename FieldType</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>learnql::query::Field</definition>
+        <argsstring>(std::string, FieldType(T::*)() const) -&gt; Field&lt; T, FieldType &gt;</argsstring>
+        <name>Field</name>
+        <qualifiedname>learnql::query::Field</qualifiedname>
+        <param>
+          <type>std::string</type>
+        </param>
+        <param>
+          <type>FieldType(T::*)() const</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Field.hpp" line="216" column="1" declfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Field.hpp" declline="216" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelearnql_1_1query_1aa0777d52761bad0c7708ac6c521c02c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename FieldType</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>learnql::query::Field</definition>
+        <argsstring>(std::string, std::function&lt; FieldType(const T &amp;)&gt;) -&gt; Field&lt; T, FieldType &gt;</argsstring>
+        <name>Field</name>
+        <qualifiedname>learnql::query::Field</qualifiedname>
+        <param>
+          <type>std::string</type>
+        </param>
+        <param>
+          <type>std::function&lt; FieldType(const T &amp;)&gt;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Field.hpp" line="219" column="1" declfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Field.hpp" declline="219" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelearnql_1_1query_1adffda967514a237d7da798a04487cca3" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Left</type>
+          </param>
+          <param>
+            <type>typename Right</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto learnql::query::operator&amp;&amp;</definition>
+        <argsstring>(const Expr&lt; Left &gt; &amp;left, const Expr&lt; Right &gt; &amp;right)</argsstring>
+        <name>operator&amp;&amp;</name>
+        <qualifiedname>learnql::query::operator&amp;&amp;</qualifiedname>
+        <param>
+          <type>const <ref refid="classlearnql_1_1query_1_1expressions_1_1_expr" kindref="compound">Expr</ref>&lt; Left &gt; &amp;</type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classlearnql_1_1query_1_1expressions_1_1_expr" kindref="compound">Expr</ref>&lt; Right &gt; &amp;</type>
+          <declname>right</declname>
+        </param>
+    <requiresclause>Expression&lt;Left&gt; &amp;&amp; Expression&lt;Right&gt;    </requiresclause>
+        <briefdescription>
+<para>Logical AND operator: expr1 &amp;&amp; expr2. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Field.hpp" line="226" column="7" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Field.hpp" bodystart="226" bodyend="230"/>
+        <references refid="classlearnql_1_1query_1_1expressions_1_1_expr_1ab3afaf7bba10da4cd15df3713a77974f" compoundref="_expr_8hpp" startline="29" endline="31">learnql::query::expressions::Expr&lt; Derived &gt;::derived</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacelearnql_1_1query_1a9352974dbb8619a6f462761b92a78957" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Left</type>
+          </param>
+          <param>
+            <type>typename Right</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto learnql::query::operator||</definition>
+        <argsstring>(const Expr&lt; Left &gt; &amp;left, const Expr&lt; Right &gt; &amp;right)</argsstring>
+        <name>operator||</name>
+        <qualifiedname>learnql::query::operator||</qualifiedname>
+        <param>
+          <type>const <ref refid="classlearnql_1_1query_1_1expressions_1_1_expr" kindref="compound">Expr</ref>&lt; Left &gt; &amp;</type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classlearnql_1_1query_1_1expressions_1_1_expr" kindref="compound">Expr</ref>&lt; Right &gt; &amp;</type>
+          <declname>right</declname>
+        </param>
+    <requiresclause>Expression&lt;Left&gt; &amp;&amp; Expression&lt;Right&gt;    </requiresclause>
+        <briefdescription>
+<para>Logical OR operator: expr1 || expr2. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Field.hpp" line="237" column="7" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Field.hpp" bodystart="237" bodyend="241"/>
+        <references refid="classlearnql_1_1query_1_1expressions_1_1_expr_1ab3afaf7bba10da4cd15df3713a77974f" compoundref="_expr_8hpp" startline="29" endline="31">learnql::query::expressions::Expr&lt; Derived &gt;::derived</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacelearnql_1_1query_1a7da159c5a4fc69bc9b9e11e08bbdb454" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename GroupKey</type>
+          </param>
+          <param>
+            <type>typename Container</type>
+          </param>
+          <param>
+            <type>typename AggFunc</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto learnql::query::group_by</definition>
+        <argsstring>(const Container &amp;records, std::function&lt; GroupKey(const T &amp;)&gt; key_extractor, AggFunc agg_func)</argsstring>
+        <name>group_by</name>
+        <qualifiedname>learnql::query::group_by</qualifiedname>
+        <param>
+          <type>const Container &amp;</type>
+          <declname>records</declname>
+        </param>
+        <param>
+          <type>std::function&lt; GroupKey(const T &amp;)&gt;</type>
+          <declname>key_extractor</declname>
+        </param>
+        <param>
+          <type>AggFunc</type>
+          <declname>agg_func</declname>
+        </param>
+        <briefdescription>
+<para>Helper function to create a group-by operation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Record type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>GroupKey</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Group key type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Container</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Container type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>AggFunc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Aggregation function type </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>records</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Records to group </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key_extractor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Function to extract group key </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>agg_func</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Aggregation function </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Vector of group-by results </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/GroupBy.hpp" line="254" column="6" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/GroupBy.hpp" bodystart="254" bodyend="260"/>
+        <references refid="classlearnql_1_1query_1_1_group_by_1a9f48104265459c522c425fa1c4426f52" compoundref="_group_by_8hpp" startline="62" endline="89">learnql::query::GroupBy&lt; T, GroupKey &gt;::group_by</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacelearnql_1_1query_1a7faa8715ba3cce81b3bfa5a10bfb65dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Left</type>
+          </param>
+          <param>
+            <type>typename Right</type>
+          </param>
+          <param>
+            <type>typename LeftContainer</type>
+          </param>
+          <param>
+            <type>typename RightContainer</type>
+          </param>
+          <param>
+            <type>typename LeftKey</type>
+          </param>
+          <param>
+            <type>typename RightKey</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto learnql::query::inner_join</definition>
+        <argsstring>(const LeftContainer &amp;left_records, const RightContainer &amp;right_records, std::function&lt; LeftKey(const Left &amp;)&gt; left_key_extractor, std::function&lt; RightKey(const Right &amp;)&gt; right_key_extractor)</argsstring>
+        <name>inner_join</name>
+        <qualifiedname>learnql::query::inner_join</qualifiedname>
+        <param>
+          <type>const LeftContainer &amp;</type>
+          <declname>left_records</declname>
+        </param>
+        <param>
+          <type>const RightContainer &amp;</type>
+          <declname>right_records</declname>
+        </param>
+        <param>
+          <type>std::function&lt; LeftKey(const Left &amp;)&gt;</type>
+          <declname>left_key_extractor</declname>
+        </param>
+        <param>
+          <type>std::function&lt; RightKey(const Right &amp;)&gt;</type>
+          <declname>right_key_extractor</declname>
+        </param>
+        <briefdescription>
+<para>Helper function for inner join. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Join.hpp" line="280" column="6" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Join.hpp" bodystart="280" bodyend="290"/>
+        <references refid="classlearnql_1_1query_1_1_join_1a5f74f1658eb36c51a0bd29733fe6d6d7" compoundref="_join_8hpp" startline="73" endline="105">learnql::query::Join&lt; Left, Right &gt;::inner_join</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacelearnql_1_1query_1a8e95f6011e1d567fbca9b49ac27c73b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Left</type>
+          </param>
+          <param>
+            <type>typename Right</type>
+          </param>
+          <param>
+            <type>typename LeftContainer</type>
+          </param>
+          <param>
+            <type>typename RightContainer</type>
+          </param>
+          <param>
+            <type>typename LeftKey</type>
+          </param>
+          <param>
+            <type>typename RightKey</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto learnql::query::left_join</definition>
+        <argsstring>(const LeftContainer &amp;left_records, const RightContainer &amp;right_records, std::function&lt; LeftKey(const Left &amp;)&gt; left_key_extractor, std::function&lt; RightKey(const Right &amp;)&gt; right_key_extractor)</argsstring>
+        <name>left_join</name>
+        <qualifiedname>learnql::query::left_join</qualifiedname>
+        <param>
+          <type>const LeftContainer &amp;</type>
+          <declname>left_records</declname>
+        </param>
+        <param>
+          <type>const RightContainer &amp;</type>
+          <declname>right_records</declname>
+        </param>
+        <param>
+          <type>std::function&lt; LeftKey(const Left &amp;)&gt;</type>
+          <declname>left_key_extractor</declname>
+        </param>
+        <param>
+          <type>std::function&lt; RightKey(const Right &amp;)&gt;</type>
+          <declname>right_key_extractor</declname>
+        </param>
+        <briefdescription>
+<para>Helper function for left join. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Join.hpp" line="297" column="6" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Join.hpp" bodystart="297" bodyend="307"/>
+        <references refid="classlearnql_1_1query_1_1_join_1aaedb4c628088798909cd1e38960114d1" compoundref="_join_8hpp" startline="121" endline="159">learnql::query::Join&lt; Left, Right &gt;::left_join</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/BinaryExpr.hpp" line="9" column="1"/>
+  </compounddef>
+</doxygen>

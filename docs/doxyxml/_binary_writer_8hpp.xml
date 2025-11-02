@@ -1,0 +1,329 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="_binary_writer_8hpp" kind="file" language="C++">
+    <compoundname>BinaryWriter.hpp</compoundname>
+    <includes refid="_serializable_8hpp" local="yes">../concepts/Serializable.hpp</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">cstring</includes>
+    <includes local="no">span</includes>
+    <includes local="no">bit</includes>
+    <includedby refid="_learn_q_l_8hpp" local="yes">/Users/tolgaberber/Work/CPP/LearnQL/learnql/LearnQL.hpp</includedby>
+    <includedby refid="_field_metadata_8hpp" local="yes">/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/FieldMetadata.hpp</includedby>
+    <includedby refid="_index_metadata_8hpp" local="yes">/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/IndexMetadata.hpp</includedby>
+    <includedby refid="_table_metadata_8hpp" local="yes">/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/TableMetadata.hpp</includedby>
+    <includedby refid="_table_8hpp" local="yes">/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp</includedby>
+    <includedby refid="_persistent_b_tree_index_8hpp" local="yes">/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>../concepts/Serializable.hpp</label>
+        <link refid="_serializable_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/serialization/BinaryWriter.hpp</label>
+        <link refid="_binary_writer_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>bit</label>
+      </node>
+      <node id="3">
+        <label>concepts</label>
+      </node>
+      <node id="8">
+        <label>cstring</label>
+      </node>
+      <node id="7">
+        <label>memory</label>
+      </node>
+      <node id="9">
+        <label>span</label>
+      </node>
+      <node id="5">
+        <label>string</label>
+      </node>
+      <node id="4">
+        <label>type_traits</label>
+      </node>
+      <node id="6">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/LearnQL.hpp</label>
+        <link refid="_learn_q_l_8hpp"/>
+      </node>
+      <node id="3">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/FieldMetadata.hpp</label>
+        <link refid="_field_metadata_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/IndexMetadata.hpp</label>
+        <link refid="_index_metadata_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/SystemCatalog.hpp</label>
+        <link refid="_system_catalog_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/TableMetadata.hpp</label>
+        <link refid="_table_metadata_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Database.hpp</label>
+        <link refid="_database_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/ReadOnlyTable.hpp</label>
+        <link refid="_read_only_table_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp</label>
+        <link refid="_table_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp</label>
+        <link refid="_persistent_b_tree_index_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp</label>
+        <link refid="_persistent_multi_value_secondary_index_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentSecondaryIndex.hpp</label>
+        <link refid="_persistent_secondary_index_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp</label>
+        <link refid="_query_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/reflection/FieldExtractor.hpp</label>
+        <link refid="_field_extractor_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/serialization/BinaryWriter.hpp</label>
+        <link refid="_binary_writer_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classlearnql_1_1serialization_1_1_binary_writer" prot="public">learnql::serialization::BinaryWriter</innerclass>
+    <innernamespace refid="namespacelearnql">learnql</innernamespace>
+    <innernamespace refid="namespacelearnql_1_1serialization">learnql::serialization</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>LEARNQL_SERIALIZATION_BINARY_WRITER_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LEARNQL_SERIALIZATION_BINARY_WRITER_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_serializable_8hpp" kindref="compound">../concepts/Serializable.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstring&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;span&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;bit&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacelearnql_1_1serialization" kindref="compound">learnql::serialization</ref><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Forward<sp/>declaration</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classlearnql_1_1serialization_1_1_binary_reader" kindref="compound">BinaryReader</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="classlearnql_1_1serialization_1_1_binary_writer" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classlearnql_1_1serialization_1_1_binary_writer_1afc78852afe524ae88f6e58e7cc280bb7" kindref="member">BinaryWriter</ref><sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="40" refid="classlearnql_1_1serialization_1_1_binary_writer_1afc78852afe524ae88f6e58e7cc280bb7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classlearnql_1_1serialization_1_1_binary_writer_1afc78852afe524ae88f6e58e7cc280bb7" kindref="member">BinaryWriter</ref>(std::size_t<sp/>initial_capacity<sp/>=<sp/>1024)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>buffer_{}<sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>buffer_.reserve(initial_capacity);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;concepts::Arithmetic<sp/>T&gt;</highlight></codeline>
+<codeline lineno="52" refid="classlearnql_1_1serialization_1_1_binary_writer_1a7343d36f8a9adc28f9ab78826055cda7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlearnql_1_1serialization_1_1_binary_writer_1a7343d36f8a9adc28f9ab78826055cda7" kindref="member">write</ref>(T<sp/>value)<sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>For<sp/>educational<sp/>purposes:<sp/>demonstrate<sp/>endianness<sp/>handling</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>In<sp/>production,<sp/>you<sp/>might<sp/>want<sp/>to<sp/>always<sp/>use<sp/>little-endian</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>(std::endian::native<sp/>==<sp/>std::endian::little)<sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classlearnql_1_1serialization_1_1_binary_writer_1a4cc70a3864a97c30ede837a14b94a9c2" kindref="member">write_raw</ref>(&amp;value,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(T));</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Convert<sp/>to<sp/>little-endian<sp/>if<sp/>needed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T<sp/>converted<sp/>=<sp/>value;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::reverse(</highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal">uint8_t*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(&amp;converted),</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal">uint8_t*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(&amp;converted)<sp/>+<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(T));</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classlearnql_1_1serialization_1_1_binary_writer_1a4cc70a3864a97c30ede837a14b94a9c2" kindref="member">write_raw</ref>(&amp;converted,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(T));</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;concepts::StringLike<sp/>T&gt;</highlight></codeline>
+<codeline lineno="74" refid="classlearnql_1_1serialization_1_1_binary_writer_1a447fff390608076cea2caa2ece868388" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlearnql_1_1serialization_1_1_binary_writer_1a447fff390608076cea2caa2ece868388" kindref="member">write</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>str)<sp/>{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>s<sp/>=<sp/>str;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Write<sp/>length<sp/>first</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>length<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">uint32_t</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(s.size());</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classlearnql_1_1serialization_1_1_binary_writer_1a7343d36f8a9adc28f9ab78826055cda7" kindref="member">write</ref>(length);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Write<sp/>string<sp/>data</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(length<sp/>&gt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classlearnql_1_1serialization_1_1_binary_writer_1a4cc70a3864a97c30ede837a14b94a9c2" kindref="member">write_raw</ref>(s.data(),<sp/>length);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;concepts::Container<sp/>Container&gt;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">requires</highlight><highlight class="normal"><sp/>(!<ref refid="conceptlearnql_1_1concepts_1_1_string_like" kindref="compound">concepts::StringLike&lt;Container&gt;</ref>)</highlight></codeline>
+<codeline lineno="94" refid="classlearnql_1_1serialization_1_1_binary_writer_1a2bf0d3ef49884234c0c8ab36252dfcab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlearnql_1_1serialization_1_1_binary_writer_1a2bf0d3ef49884234c0c8ab36252dfcab" kindref="member">write</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Container&amp;<sp/>container)<sp/>{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Write<sp/>container<sp/>size</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="classlearnql_1_1serialization_1_1_binary_writer_1ad8f0159b0f114e4a9ba550be037c1b96" kindref="member">size</ref><sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">uint32_t</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(container.size());</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classlearnql_1_1serialization_1_1_binary_writer_1a7343d36f8a9adc28f9ab78826055cda7" kindref="member">write</ref>(<ref refid="classlearnql_1_1serialization_1_1_binary_writer_1ad8f0159b0f114e4a9ba550be037c1b96" kindref="member">size</ref>);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Write<sp/>each<sp/>element</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>element<sp/>:<sp/>container)<sp/>{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classlearnql_1_1serialization_1_1_binary_writer_1a7343d36f8a9adc28f9ab78826055cda7" kindref="member">write</ref>(element);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">requires</highlight><highlight class="normal"><sp/><ref refid="conceptlearnql_1_1concepts_1_1_custom_serializable" kindref="compound">concepts::CustomSerializable&lt;T, BinaryWriter, BinaryReader&gt;</ref></highlight></codeline>
+<codeline lineno="112" refid="classlearnql_1_1serialization_1_1_binary_writer_1aeac789d254b7cbc3f270f72a223c8101" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlearnql_1_1serialization_1_1_binary_writer_1aeac789d254b7cbc3f270f72a223c8101" kindref="member">write</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>obj)<sp/>{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>obj.serialize(*</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;concepts::SmartPo</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">er<sp/>T&gt;</highlight></codeline>
+<codeline lineno="124" refid="classlearnql_1_1serialization_1_1_binary_writer_1ac6573701b83af18fbd8411fb03ecc2aa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlearnql_1_1serialization_1_1_binary_writer_1ac6573701b83af18fbd8411fb03ecc2aa" kindref="member">write</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>ptr)<sp/>{</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>is_null<sp/>=<sp/>(ptr<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classlearnql_1_1serialization_1_1_binary_writer_1a7343d36f8a9adc28f9ab78826055cda7" kindref="member">write</ref>(is_null);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!is_null)<sp/>{</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classlearnql_1_1serialization_1_1_binary_writer_1a7343d36f8a9adc28f9ab78826055cda7" kindref="member">write</ref>(*ptr);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137" refid="classlearnql_1_1serialization_1_1_binary_writer_1a4cc70a3864a97c30ede837a14b94a9c2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlearnql_1_1serialization_1_1_binary_writer_1a4cc70a3864a97c30ede837a14b94a9c2" kindref="member">write_raw</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>data,<sp/>std::size_t<sp/><ref refid="classlearnql_1_1serialization_1_1_binary_writer_1ad8f0159b0f114e4a9ba550be037c1b96" kindref="member">size</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">*<sp/>bytes<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keyword">const<sp/></highlight><highlight class="normal">uint8_t*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(data);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>buffer_.insert(buffer_.end(),<sp/>bytes,<sp/>bytes<sp/>+<sp/><ref refid="classlearnql_1_1serialization_1_1_binary_writer_1ad8f0159b0f114e4a9ba550be037c1b96" kindref="member">size</ref>);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146" refid="classlearnql_1_1serialization_1_1_binary_writer_1ae94bd3dc9ff0ac8bde96662afa9f6b0f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlearnql_1_1serialization_1_1_binary_writer_1ae94bd3dc9ff0ac8bde96662afa9f6b0f" kindref="member">write_bytes</ref>(std::span&lt;const<sp/>uint8_t&gt;<sp/>data)<sp/>{</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>buffer_.insert(buffer_.end(),<sp/>data.begin(),<sp/>data.end());</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154" refid="classlearnql_1_1serialization_1_1_binary_writer_1acda94a75a28410004af394087980ab79" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/>std::span&lt;const<sp/>uint8_t&gt;<sp/><ref refid="classlearnql_1_1serialization_1_1_binary_writer_1acda94a75a28410004af394087980ab79" kindref="member">get_buffer</ref>()<sp/>const<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::span&lt;const<sp/>uint8_t&gt;(buffer_.data(),<sp/>buffer_.size());</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162" refid="classlearnql_1_1serialization_1_1_binary_writer_1ae7e363f938bbf28d9894ae05b0e60e5f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/>std::vector&lt;uint8_t&gt;<sp/><ref refid="classlearnql_1_1serialization_1_1_binary_writer_1ae7e363f938bbf28d9894ae05b0e60e5f" kindref="member">take_buffer</ref>()<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::move(buffer_);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170" refid="classlearnql_1_1serialization_1_1_binary_writer_1ad8f0159b0f114e4a9ba550be037c1b96" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/>std::size_t<sp/><ref refid="classlearnql_1_1serialization_1_1_binary_writer_1ad8f0159b0f114e4a9ba550be037c1b96" kindref="member">size</ref>()<sp/>const<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>buffer_.size();</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177" refid="classlearnql_1_1serialization_1_1_binary_writer_1a39f5cc80e1134e7e13cb1d2b050421ab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlearnql_1_1serialization_1_1_binary_writer_1a39f5cc80e1134e7e13cb1d2b050421ab" kindref="member">clear</ref>()<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>buffer_.clear();</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185" refid="classlearnql_1_1serialization_1_1_binary_writer_1aa3430d056af31ab9c7c71bbdf5dfa1b2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlearnql_1_1serialization_1_1_binary_writer_1aa3430d056af31ab9c7c71bbdf5dfa1b2" kindref="member">reset</ref>(std::size_t<sp/>capacity<sp/>=<sp/>1024)<sp/>{</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>buffer_.clear();</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>buffer_.reserve(capacity);</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194" refid="classlearnql_1_1serialization_1_1_binary_writer_1a2a8bed3e07e43c7ff8ba4bc87908fbee" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/>std::size_t<sp/><ref refid="classlearnql_1_1serialization_1_1_binary_writer_1a2a8bed3e07e43c7ff8ba4bc87908fbee" kindref="member">position</ref>()<sp/>const<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>buffer_.size();</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;uint8_t&gt;<sp/>buffer_;<sp/></highlight></codeline>
+<codeline lineno="200"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>learnql::serialization</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>LEARNQL_SERIALIZATION_BINARY_WRITER_HPP</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/serialization/BinaryWriter.hpp"/>
+  </compounddef>
+</doxygen>

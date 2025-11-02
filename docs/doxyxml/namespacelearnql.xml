@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="namespacelearnql" kind="namespace" language="C++">
+    <compoundname>learnql</compoundname>
+    <innernamespace refid="namespacelearnql_1_1catalog">learnql::catalog</innernamespace>
+    <innernamespace refid="namespacelearnql_1_1core">learnql::core</innernamespace>
+    <innernamespace refid="namespacelearnql_1_1concepts">learnql::concepts</innernamespace>
+    <innernamespace refid="namespacelearnql_1_1coroutines">learnql::coroutines</innernamespace>
+    <innernamespace refid="namespacelearnql_1_1debug">learnql::debug</innernamespace>
+    <innernamespace refid="namespacelearnql_1_1index">learnql::index</innernamespace>
+    <innernamespace refid="namespacelearnql_1_1meta">learnql::meta</innernamespace>
+    <innernamespace refid="namespacelearnql_1_1query">learnql::query</innernamespace>
+    <innernamespace refid="namespacelearnql_1_1ranges">learnql::ranges</innernamespace>
+    <innernamespace refid="namespacelearnql_1_1reflection">learnql::reflection</innernamespace>
+    <innernamespace refid="namespacelearnql_1_1serialization">learnql::serialization</innernamespace>
+    <innernamespace refid="namespacelearnql_1_1storage">learnql::storage</innernamespace>
+    <innernamespace refid="namespacelearnql_1_1utils">learnql::utils</innernamespace>
+    <briefdescription>
+<para>Root namespace for all LearnQL components. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Sub-namespaces:<itemizedlist>
+<listitem><para><ref refid="namespacelearnql_1_1core" kindref="compound">learnql::core</ref> - Core database and table classes</para>
+</listitem><listitem><para><ref refid="namespacelearnql_1_1storage" kindref="compound">learnql::storage</ref> - Page-based storage engine</para>
+</listitem><listitem><para><ref refid="namespacelearnql_1_1serialization" kindref="compound">learnql::serialization</ref> - Binary serialization utilities</para>
+</listitem><listitem><para><ref refid="namespacelearnql_1_1concepts" kindref="compound">learnql::concepts</ref> - C++20 concepts for type validation</para>
+</listitem><listitem><para><ref refid="namespacelearnql_1_1meta" kindref="compound">learnql::meta</ref> - Type metadata and property macros</para>
+</listitem><listitem><para><ref refid="namespacelearnql_1_1reflection" kindref="compound">learnql::reflection</ref> - Compile-time reflection system</para>
+</listitem><listitem><para><ref refid="namespacelearnql_1_1catalog" kindref="compound">learnql::catalog</ref> - System catalog for queryable metadata</para>
+</listitem><listitem><para><ref refid="namespacelearnql_1_1index" kindref="compound">learnql::index</ref> - B-tree and secondary indexes</para>
+</listitem><listitem><para><ref refid="namespacelearnql_1_1query" kindref="compound">learnql::query</ref> - Query DSL and expression templates</para>
+</listitem><listitem><para><ref refid="namespacelearnql_1_1ranges" kindref="compound">learnql::ranges</ref> - C++20 ranges integration</para>
+</listitem><listitem><para><ref refid="namespacelearnql_1_1coroutines" kindref="compound">learnql::coroutines</ref> - Coroutine-based async queries</para>
+</listitem><listitem><para><ref refid="namespacelearnql_1_1debug" kindref="compound">learnql::debug</ref> - Debugging and profiling utilities</para>
+</listitem><listitem><para><ref refid="namespacelearnql_1_1utils" kindref="compound">learnql::utils</ref> - Utility functions and helpers </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/FieldMetadata.hpp" line="11" column="1"/>
+  </compounddef>
+</doxygen>

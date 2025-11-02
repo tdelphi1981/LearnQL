@@ -1,0 +1,1350 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classlearnql_1_1core_1_1_table" kind="class" language="C++" prot="public">
+    <compoundname>learnql::core::Table</compoundname>
+    <includes refid="_table_8hpp" local="no">Table.hpp</includes>
+    <innerclass refid="classlearnql_1_1core_1_1_table_1_1_iterator" prot="public">learnql::core::Table::Iterator</innerclass>
+    <innerclass refid="structlearnql_1_1core_1_1_table_1_1_secondary_index_base" prot="private">learnql::core::Table::SecondaryIndexBase</innerclass>
+    <innerclass refid="structlearnql_1_1core_1_1_table_1_1_secondary_index_wrapper" prot="private">learnql::core::Table::SecondaryIndexWrapper</innerclass>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+      <param>
+        <type>std::size_t</type>
+        <declname>BatchSize</declname>
+        <defname>BatchSize</defname>
+        <defval>10</defval>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classlearnql_1_1core_1_1_table_1a7de8c5ab0d7015cee3eaaaeaa81246ec" prot="public" static="no">
+        <type>T</type>
+        <definition>using learnql::core::Table&lt; T, BatchSize &gt;::value_type =  T</definition>
+        <argsstring></argsstring>
+        <name>value_type</name>
+        <qualifiedname>learnql::core::Table::value_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="68" column="5" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classlearnql_1_1core_1_1_table_1abb8fc1ea0d7a8f4bac470a71d14f3f31" prot="public" static="no">
+        <type>typename T::primary_key_type</type>
+        <definition>using learnql::core::Table&lt; T, BatchSize &gt;::primary_key_type =  typename T::primary_key_type</definition>
+        <argsstring></argsstring>
+        <name>primary_key_type</name>
+        <qualifiedname>learnql::core::Table::primary_key_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="69" column="5" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classlearnql_1_1core_1_1_table_1af2757ace205d9226717e0e63c0415e00" prot="public" static="no">
+        <type><ref refid="classlearnql_1_1index_1_1_persistent_b_tree_index" kindref="compound">index::PersistentBTreeIndex</ref>&lt; <ref refid="classlearnql_1_1core_1_1_table_1abb8fc1ea0d7a8f4bac470a71d14f3f31" kindref="member">primary_key_type</ref>, <ref refid="structlearnql_1_1core_1_1_record_id" kindref="compound">RecordId</ref> &gt;</type>
+        <definition>using learnql::core::Table&lt; T, BatchSize &gt;::index_type =  index::PersistentBTreeIndex&lt;primary_key_type, RecordId&gt;</definition>
+        <argsstring></argsstring>
+        <name>index_type</name>
+        <qualifiedname>learnql::core::Table::index_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="70" column="5" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="70" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classlearnql_1_1core_1_1_table_1ab5865499dbf94d8f46a0c2921dc51284" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classlearnql_1_1storage_1_1_storage_engine" kindref="compound">storage::StorageEngine</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;storage::StorageEngine&gt; learnql::core::Table&lt; T, BatchSize &gt;::storage_</definition>
+        <argsstring></argsstring>
+        <name>storage_</name>
+        <qualifiedname>learnql::core::Table::storage_</qualifiedname>
+        <briefdescription>
+<para>Storage engine (shared). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="1003" column="21" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="1003" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlearnql_1_1core_1_1_table_1ac135f0894e8be809f63fe5abcac9ccad" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string learnql::core::Table&lt; T, BatchSize &gt;::table_name_</definition>
+        <argsstring></argsstring>
+        <name>table_name_</name>
+        <qualifiedname>learnql::core::Table::table_name_</qualifiedname>
+        <briefdescription>
+<para><ref refid="classlearnql_1_1core_1_1_table" kindref="compound">Table</ref> name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="1004" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="1004" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlearnql_1_1core_1_1_table_1a9fa11f6a0feec59290c193c25337ffce" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="classlearnql_1_1core_1_1_table_1af2757ace205d9226717e0e63c0415e00" kindref="member">index_type</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;index_type&gt; learnql::core::Table&lt; T, BatchSize &gt;::index_</definition>
+        <argsstring></argsstring>
+        <name>index_</name>
+        <qualifiedname>learnql::core::Table::index_</qualifiedname>
+        <briefdescription>
+<para>Persistent B-Tree index (primary key). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="1005" column="21" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="1005" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlearnql_1_1core_1_1_table_1ab43b4b72da042e03c5e644abf2fe141e" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::unique_ptr&lt; SecondaryIndexBase &gt; &gt;</type>
+        <definition>std::vector&lt;std::unique_ptr&lt;SecondaryIndexBase&gt; &gt; learnql::core::Table&lt; T, BatchSize &gt;::secondary_indexes_</definition>
+        <argsstring></argsstring>
+        <name>secondary_indexes_</name>
+        <qualifiedname>learnql::core::Table::secondary_indexes_</qualifiedname>
+        <briefdescription>
+<para>Secondary indexes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="1006" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="1006" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlearnql_1_1core_1_1_table_1a79d9c29d85129369afb3228571c181df" prot="private" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t learnql::core::Table&lt; T, BatchSize &gt;::count_</definition>
+        <argsstring></argsstring>
+        <name>count_</name>
+        <qualifiedname>learnql::core::Table::count_</qualifiedname>
+        <briefdescription>
+<para>Record count. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="1007" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="1007" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlearnql_1_1core_1_1_table_1a65e62a415669ce36296fa58aa8e495c8" prot="private" static="no" mutable="no">
+        <type><ref refid="classlearnql_1_1catalog_1_1_system_catalog" kindref="compound">catalog::SystemCatalog</ref> *</type>
+        <definition>catalog::SystemCatalog* learnql::core::Table&lt; T, BatchSize &gt;::catalog_</definition>
+        <argsstring></argsstring>
+        <name>catalog_</name>
+        <qualifiedname>learnql::core::Table::catalog_</qualifiedname>
+        <briefdescription>
+<para>System catalog (not owned). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="1008" column="28" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="1008" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlearnql_1_1core_1_1_table_1a5005a87f9bdff39c3f8ad236816ad825" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>learnql::core::Table&lt; T, BatchSize &gt;::Table</definition>
+        <argsstring>(std::shared_ptr&lt; storage::StorageEngine &gt; storage, std::string table_name, uint64_t root_page_id=0)</argsstring>
+        <name>Table</name>
+        <qualifiedname>learnql::core::Table::Table</qualifiedname>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classlearnql_1_1storage_1_1_storage_engine" kindref="compound">storage::StorageEngine</ref> &gt;</type>
+          <declname>storage</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>table_name</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>root_page_id</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Constructs a table. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>storage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Shared pointer to storage engine </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>table_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the table </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>root_page_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Root page ID for the B-tree index (0 for new table) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="206" column="5" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="206" bodyend="219"/>
+        <referencedby refid="classlearnql_1_1core_1_1_table_1_1_iterator_1aa3e85983154b0dc9d6d3d4c1cf8953d5" compoundref="_table_8hpp" startline="123" endline="140">learnql::core::Table&lt; T, BatchSize &gt;::Iterator::Iterator</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1core_1_1_table_1a82b606785a105b5c9dda50c365815e9b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>learnql::core::Table&lt; T, BatchSize &gt;::~Table</definition>
+        <argsstring>()</argsstring>
+        <name>~Table</name>
+        <qualifiedname>learnql::core::Table::~Table</qualifiedname>
+        <briefdescription>
+<para>Destructor - flushes index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="224" column="5" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="224" bodyend="232"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1core_1_1_table_1a7b24f9b4a5136e437e596838a7f4f2f1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::core::Table&lt; T, BatchSize &gt;::insert</definition>
+        <argsstring>(const T &amp;record)</argsstring>
+        <name>insert</name>
+        <qualifiedname>learnql::core::Table::insert</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>record</declname>
+        </param>
+        <briefdescription>
+<para>Inserts a new record. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>record</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Record to insert </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::runtime_error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if a record with this primary key already exists </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="239" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="239" bodyend="279"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1core_1_1_table_1ae733db6ab4ce469fc71526d596441761" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::core::Table&lt; T, BatchSize &gt;::update</definition>
+        <argsstring>(const T &amp;record)</argsstring>
+        <name>update</name>
+        <qualifiedname>learnql::core::Table::update</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>record</declname>
+        </param>
+        <briefdescription>
+<para>Updates an existing record. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>record</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Record with updated data </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::runtime_error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if record not found </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="286" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="286" bodyend="318"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1core_1_1_table_1a8c07ea66a829bed3bbf7b10fc20c41b8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool learnql::core::Table&lt; T, BatchSize &gt;::remove</definition>
+        <argsstring>(const primary_key_type &amp;key)</argsstring>
+        <name>remove</name>
+        <qualifiedname>learnql::core::Table::remove</qualifiedname>
+        <param>
+          <type>const <ref refid="classlearnql_1_1core_1_1_table_1abb8fc1ea0d7a8f4bac470a71d14f3f31" kindref="member">primary_key_type</ref> &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Removes a record by primary key. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Primary key of record to remove </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if record was removed, false if not found </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="325" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="325" bodyend="350"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1core_1_1_table_1a2ed0b6ab21b386d7ed0c18f65a91f111" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::unique_ptr&lt; T &gt;</type>
+        <definition>std::unique_ptr&lt; T &gt; learnql::core::Table&lt; T, BatchSize &gt;::find</definition>
+        <argsstring>(const primary_key_type &amp;key) const</argsstring>
+        <name>find</name>
+        <qualifiedname>learnql::core::Table::find</qualifiedname>
+        <param>
+          <type>const <ref refid="classlearnql_1_1core_1_1_table_1abb8fc1ea0d7a8f4bac470a71d14f3f31" kindref="member">primary_key_type</ref> &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Finds a record by primary key. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Primary key to search for </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to record, or nullptr if not found </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="357" column="22" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="357" bodyend="368"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1core_1_1_table_1a4da366825bc4f61f49648686dd7e04dc" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool learnql::core::Table&lt; T, BatchSize &gt;::contains</definition>
+        <argsstring>(const primary_key_type &amp;key) const</argsstring>
+        <name>contains</name>
+        <qualifiedname>learnql::core::Table::contains</qualifiedname>
+        <param>
+          <type>const <ref refid="classlearnql_1_1core_1_1_table_1abb8fc1ea0d7a8f4bac470a71d14f3f31" kindref="member">primary_key_type</ref> &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Checks if a record exists. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Primary key to check </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if record exists </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="375" column="11" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="375" bodyend="377"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1core_1_1_table_1a1d7084e74f821b1ac501effc227378c4" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::optional&lt; <ref refid="structlearnql_1_1core_1_1_record_id" kindref="compound">RecordId</ref> &gt;</type>
+        <definition>std::optional&lt; RecordId &gt; learnql::core::Table&lt; T, BatchSize &gt;::get_record_id</definition>
+        <argsstring>(const primary_key_type &amp;key) const</argsstring>
+        <name>get_record_id</name>
+        <qualifiedname>learnql::core::Table::get_record_id</qualifiedname>
+        <param>
+          <type>const <ref refid="classlearnql_1_1core_1_1_table_1abb8fc1ea0d7a8f4bac470a71d14f3f31" kindref="member">primary_key_type</ref> &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Gets the <ref refid="structlearnql_1_1core_1_1_record_id" kindref="compound">RecordId</ref> for a given primary key. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Primary key to look up </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Optional <ref refid="structlearnql_1_1core_1_1_record_id" kindref="compound">RecordId</ref> if the key exists</para>
+</simplesect>
+This is useful for:<itemizedlist>
+<listitem><para>Populating secondary indexes from existing data</para>
+</listitem><listitem><para>Direct page-level operations</para>
+</listitem><listitem><para>Custom index implementations</para>
+</listitem></itemizedlist>
+</para>
+<para>Example: <programlisting><codeline><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>rid<sp/>=<sp/>students.get_record_id(1001);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(rid)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>secondary_index.insert(student,<sp/>*rid);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="397" column="20" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="397" bodyend="399"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1core_1_1_table_1ae1b20aff372531934f72a5768845b225" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename FieldType</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classlearnql_1_1core_1_1_table_1a5005a87f9bdff39c3f8ad236816ad825" kindref="member">Table</ref> &amp;</type>
+        <definition>Table &amp; learnql::core::Table&lt; T, BatchSize &gt;::add_index</definition>
+        <argsstring>(const query::Field&lt; T, FieldType &gt; &amp;field, IndexType type)</argsstring>
+        <name>add_index</name>
+        <qualifiedname>learnql::core::Table::add_index</qualifiedname>
+        <param>
+          <type>const <ref refid="classlearnql_1_1query_1_1_field" kindref="compound">query::Field</ref>&lt; T, FieldType &gt; &amp;</type>
+          <declname>field</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacelearnql_1_1core_1a4f22da0836f46f8e38c37d2db9f4c317" kindref="member">IndexType</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Adds a secondary index on a field. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>FieldType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of the indexed field </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>field</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Static Field object (auto-generated by LEARNQL_PROPERTY) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index type (Unique or MultiValue) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reference to this table for method chaining</para>
+</simplesect>
+Creates a persistent secondary index on the specified field. The index is automatically synchronized on all CRUD operations.</para>
+<para>Example: <programlisting><codeline><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>students<sp/>=<sp/>db.table&lt;Student&gt;(</highlight><highlight class="stringliteral">&quot;students&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.<ref refid="classlearnql_1_1core_1_1_table_1ae1b20aff372531934f72a5768845b225" kindref="member">add_index</ref>(Student::email,<sp/><ref refid="namespacelearnql_1_1core_1a4f22da0836f46f8e38c37d2db9f4c317ad019979a29c88c8d69bab3a63388da97" kindref="member">IndexType::Unique</ref>)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.<ref refid="classlearnql_1_1core_1_1_table_1ae1b20aff372531934f72a5768845b225" kindref="member">add_index</ref>(Student::department,<sp/><ref refid="namespacelearnql_1_1core_1a4f22da0836f46f8e38c37d2db9f4c317a53bb6d143f96678b6a429b3bbda948ae" kindref="member">IndexType::MultiValue</ref>);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Now<sp/>you<sp/>can<sp/>use<sp/>find_by():</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>alice<sp/>=<sp/>students.<ref refid="classlearnql_1_1core_1_1_table_1afc1c9919edc0c673294ac306a7a51842" kindref="member">find_by</ref>(Student::email,<sp/></highlight><highlight class="stringliteral">&quot;alice@uni.edu&quot;</highlight><highlight class="normal">);</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="426" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1core_1_1_table_1a5a3bcddb65016955e9df1712cfc180f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename FieldType</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool learnql::core::Table&lt; T, BatchSize &gt;::drop_index</definition>
+        <argsstring>(const query::Field&lt; T, FieldType &gt; &amp;field)</argsstring>
+        <name>drop_index</name>
+        <qualifiedname>learnql::core::Table::drop_index</qualifiedname>
+        <param>
+          <type>const <ref refid="classlearnql_1_1query_1_1_field" kindref="compound">query::Field</ref>&lt; T, FieldType &gt; &amp;</type>
+          <declname>field</declname>
+        </param>
+    <requiresclause>concepts::Queryable&lt;T, <ref refid="classlearnql_1_1serialization_1_1_binary_writer" kindref="compound">serialization::BinaryWriter</ref>, <ref refid="classlearnql_1_1serialization_1_1_binary_reader" kindref="compound">serialization::BinaryReader</ref>&gt;    </requiresclause>
+        <briefdescription>
+<para>Removes a secondary index on a field. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Implementation of <ref refid="classlearnql_1_1core_1_1_table_1a5a3bcddb65016955e9df1712cfc180f5" kindref="member">Table::drop_index()</ref>.</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>FieldType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of the indexed field </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>field</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Static Field object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if index was found and removed</para>
+</simplesect>
+Example: <programlisting><codeline><highlight class="normal">students.drop_index(Student::email);</highlight></codeline>
+</programlisting></para>
+<para>Must be defined after SystemCatalog is fully defined </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="440" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="1127" bodyend="1148"/>
+        <references refid="classlearnql_1_1query_1_1_field_1a3b07a80f4cc7a476db80804638d4949e" compoundref="_field_8hpp" startline="57" endline="59">learnql::query::Field&lt; T, FieldType &gt;::expr</references>
+        <references refid="classlearnql_1_1query_1_1expressions_1_1_field_expr_1ac2cdbce1693d9235b6d0fd424c883f2c" compoundref="_field_expr_8hpp" startline="65" endline="67">learnql::query::expressions::FieldExpr&lt; T, FieldType &gt;::name</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1core_1_1_table_1afc1c9919edc0c673294ac306a7a51842" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename FieldType</type>
+          </param>
+        </templateparamlist>
+        <type>std::optional&lt; T &gt;</type>
+        <definition>std::optional&lt; T &gt; learnql::core::Table&lt; T, BatchSize &gt;::find_by</definition>
+        <argsstring>(const query::Field&lt; T, FieldType &gt; &amp;field, const FieldType &amp;value) const</argsstring>
+        <name>find_by</name>
+        <qualifiedname>learnql::core::Table::find_by</qualifiedname>
+        <param>
+          <type>const <ref refid="classlearnql_1_1query_1_1_field" kindref="compound">query::Field</ref>&lt; T, FieldType &gt; &amp;</type>
+          <declname>field</declname>
+        </param>
+        <param>
+          <type>const FieldType &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Finds a single record by indexed field value (unique index). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>FieldType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of the indexed field </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>field</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Static Field object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to search for </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Optional record if found</para>
+</simplesect>
+This method uses a unique secondary index for O(log n) lookup.</para>
+<para>Example: <programlisting><codeline><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>alice<sp/>=<sp/>students.find_by(Student::email,<sp/></highlight><highlight class="stringliteral">&quot;alice@uni.edu&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(alice)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>alice-&gt;get_name()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="464" column="20" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="464" bodyend="484"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1core_1_1_table_1ad13285b25ac20eb2e6e2d6485c1448c6" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename FieldType</type>
+          </param>
+        </templateparamlist>
+        <type>std::vector&lt; T &gt;</type>
+        <definition>std::vector&lt; T &gt; learnql::core::Table&lt; T, BatchSize &gt;::find_all_by</definition>
+        <argsstring>(const query::Field&lt; T, FieldType &gt; &amp;field, const FieldType &amp;value) const</argsstring>
+        <name>find_all_by</name>
+        <qualifiedname>learnql::core::Table::find_all_by</qualifiedname>
+        <param>
+          <type>const <ref refid="classlearnql_1_1query_1_1_field" kindref="compound">query::Field</ref>&lt; T, FieldType &gt; &amp;</type>
+          <declname>field</declname>
+        </param>
+        <param>
+          <type>const FieldType &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Finds all records by indexed field value (multi-value index). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>FieldType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of the indexed field </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>field</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Static Field object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to search for </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Vector of matching records</para>
+</simplesect>
+This method uses a multi-value secondary index for O(log n) lookup.</para>
+<para>Example: <programlisting><codeline><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>cs_students<sp/>=<sp/>students.find_all_by(Student::department,<sp/></highlight><highlight class="stringliteral">&quot;CS&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>student<sp/>:<sp/>cs_students)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>student.get_name()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="504" column="18" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="504" bodyend="531"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1core_1_1_table_1ab418b7c455cc0ffffc46b2343ad55254" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename FieldType</type>
+          </param>
+        </templateparamlist>
+        <type>std::vector&lt; FieldType &gt;</type>
+        <definition>std::vector&lt; FieldType &gt; learnql::core::Table&lt; T, BatchSize &gt;::get_unique_values</definition>
+        <argsstring>(const query::Field&lt; T, FieldType &gt; &amp;field) const</argsstring>
+        <name>get_unique_values</name>
+        <qualifiedname>learnql::core::Table::get_unique_values</qualifiedname>
+        <param>
+          <type>const <ref refid="classlearnql_1_1query_1_1_field" kindref="compound">query::Field</ref>&lt; T, FieldType &gt; &amp;</type>
+          <declname>field</declname>
+        </param>
+        <briefdescription>
+<para>Gets all unique values from a multi-value indexed field. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>FieldType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of the indexed field </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>field</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Static Field object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Vector of unique field values</para>
+</simplesect>
+Example: <programlisting><codeline><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>departments<sp/>=<sp/>students.get_unique_values(Student::department);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>dept<sp/>:<sp/>departments)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>dept<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="548" column="18" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="548" bodyend="561"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1core_1_1_table_1a7bb0b9d084875fbbdeee7ae6152a3c7a" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename FieldType</type>
+          </param>
+        </templateparamlist>
+        <type>std::vector&lt; T &gt;</type>
+        <definition>std::vector&lt; T &gt; learnql::core::Table&lt; T, BatchSize &gt;::range_query</definition>
+        <argsstring>(const query::Field&lt; T, FieldType &gt; &amp;field, const FieldType &amp;min_value, const FieldType &amp;max_value) const</argsstring>
+        <name>range_query</name>
+        <qualifiedname>learnql::core::Table::range_query</qualifiedname>
+        <param>
+          <type>const <ref refid="classlearnql_1_1query_1_1_field" kindref="compound">query::Field</ref>&lt; T, FieldType &gt; &amp;</type>
+          <declname>field</declname>
+        </param>
+        <param>
+          <type>const FieldType &amp;</type>
+          <declname>min_value</declname>
+        </param>
+        <param>
+          <type>const FieldType &amp;</type>
+          <declname>max_value</declname>
+        </param>
+        <briefdescription>
+<para>Performs a range query on an indexed field. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>FieldType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of the indexed field </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>field</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Static Field object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>min_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Minimum value (inclusive) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum value (exclusive) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Vector of matching records</para>
+</simplesect>
+Example: <programlisting><codeline><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>names_a_m<sp/>=<sp/>students.range_query(Student::name,<sp/></highlight><highlight class="stringliteral">&quot;A&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;M&quot;</highlight><highlight class="normal">);</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="577" column="18" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="577" bodyend="608"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1core_1_1_table_1a2b941e217c0a4923dee333360d6f5b11" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>std::size_t learnql::core::Table&lt; T, BatchSize &gt;::size</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>size</name>
+        <qualifiedname>learnql::core::Table::size</qualifiedname>
+        <briefdescription>
+<para>Gets the number of records in the table. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="613" column="18" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="613" bodyend="615"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1core_1_1_table_1a5c67acef00777c6962f1e5872c9d43c1" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool learnql::core::Table&lt; T, BatchSize &gt;::empty</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>empty</name>
+        <qualifiedname>learnql::core::Table::empty</qualifiedname>
+        <briefdescription>
+<para>Checks if the table is empty. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="620" column="11" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="620" bodyend="622"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1core_1_1_table_1a67ee2a008791927d7f953da143be8f6c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::core::Table&lt; T, BatchSize &gt;::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <qualifiedname>learnql::core::Table::clear</qualifiedname>
+        <briefdescription>
+<para>Clears all records from the table. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="627" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="627" bodyend="644"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1core_1_1_table_1a12b6a9df9e60b8c0f4c66b3c28943f45" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>concepts::Predicate&lt; T &gt;</type>
+            <declname>Predicate</declname>
+            <defname>Predicate</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classlearnql_1_1ranges_1_1_proxy_vector" kindref="compound">ranges::ProxyVector</ref>&lt; T, BatchSize &gt;</type>
+        <definition>ranges::ProxyVector&lt; T, BatchSize &gt; learnql::core::Table&lt; T, BatchSize &gt;::find_if</definition>
+        <argsstring>(Predicate pred) const</argsstring>
+        <name>find_if</name>
+        <qualifiedname>learnql::core::Table::find_if</qualifiedname>
+        <param>
+          <type>Predicate</type>
+          <declname>pred</declname>
+        </param>
+        <briefdescription>
+<para>Finds all records matching a predicate. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Predicate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Function type (bool(const T&amp;)) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pred</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Predicate function </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>ProxyVector of matching records (loaded in batches) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="653" column="26" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="653" bodyend="686"/>
+        <referencedby refid="classlearnql_1_1core_1_1_table_1a8ceccb8d0e92cc9ba552de7a2ec56ccf" compoundref="_table_8hpp" startline="692" endline="694">learnql::core::Table&lt; T, BatchSize &gt;::get_all</referencedby>
+        <referencedby refid="classlearnql_1_1core_1_1_table_1a09902a2fadbeaf72b3ceb27170f78533" compoundref="_table_8hpp" startline="1023" endline="1028">learnql::core::Table&lt; T, BatchSize &gt;::where</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1core_1_1_table_1a8ceccb8d0e92cc9ba552de7a2ec56ccf" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classlearnql_1_1ranges_1_1_proxy_vector" kindref="compound">ranges::ProxyVector</ref>&lt; T, BatchSize &gt;</type>
+        <definition>ranges::ProxyVector&lt; T, BatchSize &gt; learnql::core::Table&lt; T, BatchSize &gt;::get_all</definition>
+        <argsstring>() const</argsstring>
+        <name>get_all</name>
+        <qualifiedname>learnql::core::Table::get_all</qualifiedname>
+        <briefdescription>
+<para>Gets all records. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>ProxyVector of all records (loaded in batches) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="692" column="26" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="692" bodyend="694"/>
+        <referencedby refid="classlearnql_1_1core_1_1_table_1abf144135f027702e790d9f22aa545300" compoundref="_table_8hpp" startline="715" endline="717">learnql::core::Table&lt; T, BatchSize &gt;::view</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1core_1_1_table_1a09902a2fadbeaf72b3ceb27170f78533" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename ExprType</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto learnql::core::Table&lt; T, BatchSize &gt;::where</definition>
+        <argsstring>(const ExprType &amp;expr) const</argsstring>
+        <name>where</name>
+        <qualifiedname>learnql::core::Table::where</qualifiedname>
+        <param>
+          <type>const ExprType &amp;</type>
+          <declname>expr</declname>
+        </param>
+    <requiresclause>concepts::Queryable&lt;T, <ref refid="classlearnql_1_1serialization_1_1_binary_writer" kindref="compound">serialization::BinaryWriter</ref>, <ref refid="classlearnql_1_1serialization_1_1_binary_reader" kindref="compound">serialization::BinaryReader</ref>&gt;    </requiresclause>
+        <briefdescription>
+<para>Creates a query builder for this table (for Phase 3). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Implementation of <ref refid="classlearnql_1_1core_1_1_table_1a09902a2fadbeaf72b3ceb27170f78533" kindref="member">Table::where()</ref> for expression templates.</para>
+<para><simplesect kind="return"><para><ref refid="classlearnql_1_1core_1_1_query" kindref="compound">Query</ref> builder </para>
+</simplesect>
+<simplesect kind="note"><para>Forward declaration - implementation requires <ref refid="_query_8hpp" kindref="compound">Query.hpp</ref></para>
+</simplesect>
+This needs to be defined after <ref refid="classlearnql_1_1core_1_1_query" kindref="compound">Query</ref> is fully defined <simplesect kind="note"><para>Include <ref refid="_query_8hpp" kindref="compound">Query.hpp</ref> before using this method </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="702" column="11" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="1023" bodyend="1028"/>
+        <references refid="classlearnql_1_1core_1_1_table_1a12b6a9df9e60b8c0f4c66b3c28943f45" compoundref="_table_8hpp" startline="653" endline="686">learnql::core::Table&lt; T, BatchSize &gt;::find_if</references>
+        <referencedby refid="classlearnql_1_1core_1_1_table_1a017434d424c8c41073ba10cdf1df87b3" compoundref="_table_8hpp" startline="740" endline="742">learnql::core::Table&lt; T, BatchSize &gt;::view_where</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1core_1_1_table_1abf144135f027702e790d9f22aa545300" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto learnql::core::Table&lt; T, BatchSize &gt;::view</definition>
+        <argsstring>() const</argsstring>
+        <name>view</name>
+        <qualifiedname>learnql::core::Table::view</qualifiedname>
+        <briefdescription>
+<para>Creates a range view of all records (Phase 4). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>QueryView of all records</para>
+</simplesect>
+This enables using C++20 ranges with the table: <programlisting><codeline><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>names<sp/>=<sp/>students.view()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>|<sp/>std::views::filter([](</highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>s)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>s.age<sp/>&gt;<sp/>20;<sp/>})</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>|<sp/>std::views::transform([](</highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>s)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>s.name;<sp/>});</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="715" column="11" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="715" bodyend="717"/>
+        <referencedby refid="classlearnql_1_1core_1_1_table_1a628edbfebc7d852dc3dd70edbfb8cdcd" compoundref="_table_8hpp" startline="723" endline="725">learnql::core::Table&lt; T, BatchSize &gt;::all</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1core_1_1_table_1a628edbfebc7d852dc3dd70edbfb8cdcd" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto learnql::core::Table&lt; T, BatchSize &gt;::all</definition>
+        <argsstring>() const</argsstring>
+        <name>all</name>
+        <qualifiedname>learnql::core::Table::all</qualifiedname>
+        <briefdescription>
+<para>Alias for <ref refid="classlearnql_1_1core_1_1_table_1abf144135f027702e790d9f22aa545300" kindref="member">view()</ref> - returns all records as a range. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>QueryView of all records </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="723" column="11" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="723" bodyend="725"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1core_1_1_table_1a017434d424c8c41073ba10cdf1df87b3" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename ExprType</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto learnql::core::Table&lt; T, BatchSize &gt;::view_where</definition>
+        <argsstring>(const ExprType &amp;expr) const</argsstring>
+        <name>view_where</name>
+        <qualifiedname>learnql::core::Table::view_where</qualifiedname>
+        <param>
+          <type>const ExprType &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+<para>Creates a range view of records matching an expression. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>ExprType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Expression type </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Expression to filter with </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>QueryView of matching records</para>
+</simplesect>
+Example: <programlisting><codeline><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>results<sp/>=<sp/>students.view_where(age<sp/>&gt;<sp/>20)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>|<sp/>std::views::transform([](</highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>s)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>s.name;<sp/>});</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="740" column="11" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="740" bodyend="742"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1core_1_1_table_1a80a5715d651b6c8e308c234f514a7593" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string &amp; learnql::core::Table&lt; T, BatchSize &gt;::name</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>name</name>
+        <qualifiedname>learnql::core::Table::name</qualifiedname>
+        <briefdescription>
+<para>Gets the table name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="747" column="24" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="747" bodyend="749"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1core_1_1_table_1a689956cf9e6d4bd21135f4819ead41c1" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classlearnql_1_1core_1_1_table_1_1_iterator" kindref="compound">Iterator</ref></type>
+        <definition>Iterator learnql::core::Table&lt; T, BatchSize &gt;::begin</definition>
+        <argsstring>() const</argsstring>
+        <name>begin</name>
+        <qualifiedname>learnql::core::Table::begin</qualifiedname>
+        <briefdescription>
+<para><ref refid="classlearnql_1_1core_1_1_table_1_1_iterator" kindref="compound">Iterator</ref> to beginning (with batched loading). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns an iterator that loads record IDs in batches, making iteration memory-efficient for large tables. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="757" column="15" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="757" bodyend="762"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1core_1_1_table_1af8bff71cf619e6341da47aa0a1f28dd0" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classlearnql_1_1core_1_1_table_1_1_iterator" kindref="compound">Iterator</ref></type>
+        <definition>Iterator learnql::core::Table&lt; T, BatchSize &gt;::end</definition>
+        <argsstring>() const</argsstring>
+        <name>end</name>
+        <qualifiedname>learnql::core::Table::end</qualifiedname>
+        <briefdescription>
+<para><ref refid="classlearnql_1_1core_1_1_table_1_1_iterator" kindref="compound">Iterator</ref> to end. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="767" column="15" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="767" bodyend="769"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1core_1_1_table_1a5fea2656268908fed51a205dcfc01096" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::core::Table&lt; T, BatchSize &gt;::flush</definition>
+        <argsstring>()</argsstring>
+        <name>flush</name>
+        <qualifiedname>learnql::core::Table::flush</qualifiedname>
+        <briefdescription>
+<para>Flushes all changes to disk. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Flushes primary index, all secondary indexes, and storage engine. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="776" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="776" bodyend="787"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1core_1_1_table_1a5b5600407474c3bb6176b3c240a2d105" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t learnql::core::Table&lt; T, BatchSize &gt;::get_root_page</definition>
+        <argsstring>() const</argsstring>
+        <name>get_root_page</name>
+        <qualifiedname>learnql::core::Table::get_root_page</qualifiedname>
+        <briefdescription>
+<para>Gets the root page ID of the table&apos;s B-tree index. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Root page ID </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="793" column="15" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="793" bodyend="795"/>
+        <referencedby refid="classlearnql_1_1core_1_1_database_1a88af9aa0a39c957674e2200ee6d45787" compoundref="_database_8hpp" startline="136" endline="184">learnql::core::Database::table</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1core_1_1_table_1a5868f6ca975977ff0c40ace8915124da" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::core::Table&lt; T, BatchSize &gt;::set_catalog</definition>
+        <argsstring>(catalog::SystemCatalog *catalog)</argsstring>
+        <name>set_catalog</name>
+        <qualifiedname>learnql::core::Table::set_catalog</qualifiedname>
+        <param>
+          <type><ref refid="classlearnql_1_1catalog_1_1_system_catalog" kindref="compound">catalog::SystemCatalog</ref> *</type>
+          <declname>catalog</declname>
+        </param>
+        <briefdescription>
+<para>Sets the system catalog for metadata sync. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>catalog</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to system catalog (not owned)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Called by <ref refid="classlearnql_1_1core_1_1_database" kindref="compound">Database</ref> after table creation to enable automatic record count synchronization. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="804" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="804" bodyend="806"/>
+        <referencedby refid="classlearnql_1_1core_1_1_database_1a88af9aa0a39c957674e2200ee6d45787" compoundref="_database_8hpp" startline="136" endline="184">learnql::core::Database::table</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1core_1_1_table_1ac85baaf921b5cd20dc717375893edf3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename FieldType</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classlearnql_1_1core_1_1_table_1a5005a87f9bdff39c3f8ad236816ad825" kindref="member">Table</ref>&lt; T, BatchSize &gt; &amp;</type>
+        <definition>Table&lt; T, BatchSize &gt; &amp; learnql::core::Table&lt; T, BatchSize &gt;::add_index</definition>
+        <argsstring>(const query::Field&lt; T, FieldType &gt; &amp;field, IndexType type)</argsstring>
+        <name>add_index</name>
+        <qualifiedname>learnql::core::Table::add_index</qualifiedname>
+        <param>
+          <type>const <ref refid="classlearnql_1_1query_1_1_field" kindref="compound">query::Field</ref>&lt; T, FieldType &gt; &amp;</type>
+          <declname>field</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacelearnql_1_1core_1a4f22da0836f46f8e38c37d2db9f4c317" kindref="member">IndexType</ref></type>
+          <declname>type</declname>
+        </param>
+    <requiresclause>concepts::Queryable&lt;T, <ref refid="classlearnql_1_1serialization_1_1_binary_writer" kindref="compound">serialization::BinaryWriter</ref>, <ref refid="classlearnql_1_1serialization_1_1_binary_reader" kindref="compound">serialization::BinaryReader</ref>&gt;    </requiresclause>
+        <briefdescription>
+<para>Implementation of <ref refid="classlearnql_1_1core_1_1_table_1ae1b20aff372531934f72a5768845b225" kindref="member">Table::add_index()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Must be defined after SystemCatalog is fully defined </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="1056" column="13" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="1056" bodyend="1118"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classlearnql_1_1core_1_1_table_1a39e29f50288fbaf995162f0e5dfc0bf0" prot="private" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T learnql::core::Table&lt; T, BatchSize &gt;::load_record</definition>
+        <argsstring>(const RecordId &amp;rid) const</argsstring>
+        <name>load_record</name>
+        <qualifiedname>learnql::core::Table::load_record</qualifiedname>
+        <param>
+          <type>const <ref refid="structlearnql_1_1core_1_1_record_id" kindref="compound">RecordId</ref> &amp;</type>
+          <declname>rid</declname>
+        </param>
+        <briefdescription>
+<para>Loads a record from storage. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Record ID </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Loaded record </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::runtime_error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if record cannot be loaded </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="983" column="8" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="983" bodyend="994"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1core_1_1_table_1a8fa2cc1a5a646cc07dd10182abe27f6e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::core::Table&lt; T, BatchSize &gt;::sync_catalog_count</definition>
+        <argsstring>()</argsstring>
+        <name>sync_catalog_count</name>
+        <qualifiedname>learnql::core::Table::sync_catalog_count</qualifiedname>
+    <requiresclause>concepts::Queryable&lt;T, <ref refid="classlearnql_1_1serialization_1_1_binary_writer" kindref="compound">serialization::BinaryWriter</ref>, <ref refid="classlearnql_1_1serialization_1_1_binary_reader" kindref="compound">serialization::BinaryReader</ref>&gt;    </requiresclause>
+        <briefdescription>
+<para>Synchronize record count with system catalog. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Implementation of Table::sync_catalog_count().</para>
+<para>Defined after SystemCatalog include to avoid incomplete type error</para>
+<para>Must be defined after SystemCatalog is fully defined </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="1000" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="1043" bodyend="1047"/>
+      </memberdef>
+    </sectiondef>
+    <requiresclause>concepts::Queryable&lt;T, <ref refid="classlearnql_1_1serialization_1_1_binary_writer" kindref="compound">serialization::BinaryWriter</ref>, <ref refid="classlearnql_1_1serialization_1_1_binary_reader" kindref="compound">serialization::BinaryReader</ref>&gt;    </requiresclause>
+    <briefdescription>
+<para>Type-safe table for storing objects of type T. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of objects to store (must satisfy Queryable concept) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>BatchSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of record IDs to load per batch (default: 10)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Features:<itemizedlist>
+<listitem><para>Compile-time type checking via concepts</para>
+</listitem><listitem><para>CRUD operations: insert, update, remove, find</para>
+</listitem><listitem><para>Primary key-based indexing</para>
+</listitem><listitem><para>Secondary indexes with automatic synchronization (NEW!)</para>
+</listitem><listitem><para><ref refid="classlearnql_1_1core_1_1_table_1_1_iterator" kindref="compound">Iterator</ref> support for range-based loops</para>
+</listitem><listitem><para>Integration with storage engine</para>
+</listitem><listitem><para>Lazy batch loading (records loaded in configurable batches)</para>
+</listitem><listitem><para>Memory-efficient traversal</para>
+</listitem></itemizedlist>
+</para>
+<para>Example: <programlisting><codeline><highlight class="normal"><ref refid="classlearnql_1_1core_1_1_table_1a5005a87f9bdff39c3f8ad236816ad825" kindref="member">Table&lt;Student&gt;</ref><sp/>students(storage_engine,<sp/></highlight><highlight class="stringliteral">&quot;students&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal">students.add_index(Student::email,<sp/><ref refid="namespacelearnql_1_1core_1a4f22da0836f46f8e38c37d2db9f4c317ad019979a29c88c8d69bab3a63388da97" kindref="member">IndexType::Unique</ref>);</highlight></codeline>
+<codeline><highlight class="normal">students.insert(alice);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>student<sp/>=<sp/>students.find_by(Student::email,<sp/></highlight><highlight class="stringliteral">&quot;alice@uni.edu&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>s<sp/>:<sp/>students)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>s.get_name()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>learnql::core::Table&lt; T, BatchSize &gt;</label>
+        <link refid="classlearnql_1_1core_1_1_table"/>
+        <childnode refid="1" relation="template-instance">
+          <edgelabel>&lt; T, BatchSize &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>learnql::core::Table&lt; learnql::catalog::FieldMetadata, 10 &gt;</label>
+        <link refid="classlearnql_1_1core_1_1_table"/>
+        <childnode refid="1" relation="template-instance">
+          <edgelabel>&lt; learnql::catalog::FieldMetadata, 10 &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>learnql::core::Table&lt; learnql::catalog::IndexMetadata, 10 &gt;</label>
+        <link refid="classlearnql_1_1core_1_1_table"/>
+        <childnode refid="1" relation="template-instance">
+          <edgelabel>&lt; learnql::catalog::IndexMetadata, 10 &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>learnql::core::Table&lt; learnql::catalog::TableMetadata, 10 &gt;</label>
+        <link refid="classlearnql_1_1core_1_1_table"/>
+        <childnode refid="1" relation="template-instance">
+          <edgelabel>&lt; learnql::catalog::TableMetadata, 10 &gt;</edgelabel>
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="66" column="1" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="66" bodyend="1009"/>
+    <listofallmembers>
+      <member refid="classlearnql_1_1core_1_1_table_1ae1b20aff372531934f72a5768845b225" prot="public" virt="non-virtual"><scope>learnql::core::Table</scope><name>add_index</name></member>
+      <member refid="classlearnql_1_1core_1_1_table_1ac85baaf921b5cd20dc717375893edf3d" prot="public" virt="non-virtual"><scope>learnql::core::Table</scope><name>add_index</name></member>
+      <member refid="classlearnql_1_1core_1_1_table_1a628edbfebc7d852dc3dd70edbfb8cdcd" prot="public" virt="non-virtual"><scope>learnql::core::Table</scope><name>all</name></member>
+      <member refid="classlearnql_1_1core_1_1_table_1a689956cf9e6d4bd21135f4819ead41c1" prot="public" virt="non-virtual"><scope>learnql::core::Table</scope><name>begin</name></member>
+      <member refid="classlearnql_1_1core_1_1_table_1a65e62a415669ce36296fa58aa8e495c8" prot="private" virt="non-virtual"><scope>learnql::core::Table</scope><name>catalog_</name></member>
+      <member refid="classlearnql_1_1core_1_1_table_1a67ee2a008791927d7f953da143be8f6c" prot="public" virt="non-virtual"><scope>learnql::core::Table</scope><name>clear</name></member>
+      <member refid="classlearnql_1_1core_1_1_table_1a4da366825bc4f61f49648686dd7e04dc" prot="public" virt="non-virtual"><scope>learnql::core::Table</scope><name>contains</name></member>
+      <member refid="classlearnql_1_1core_1_1_table_1a79d9c29d85129369afb3228571c181df" prot="private" virt="non-virtual"><scope>learnql::core::Table</scope><name>count_</name></member>
+      <member refid="classlearnql_1_1core_1_1_table_1a5a3bcddb65016955e9df1712cfc180f5" prot="public" virt="non-virtual"><scope>learnql::core::Table</scope><name>drop_index</name></member>
+      <member refid="classlearnql_1_1core_1_1_table_1a5c67acef00777c6962f1e5872c9d43c1" prot="public" virt="non-virtual"><scope>learnql::core::Table</scope><name>empty</name></member>
+      <member refid="classlearnql_1_1core_1_1_table_1af8bff71cf619e6341da47aa0a1f28dd0" prot="public" virt="non-virtual"><scope>learnql::core::Table</scope><name>end</name></member>
+      <member refid="classlearnql_1_1core_1_1_table_1a2ed0b6ab21b386d7ed0c18f65a91f111" prot="public" virt="non-virtual"><scope>learnql::core::Table</scope><name>find</name></member>
+      <member refid="classlearnql_1_1core_1_1_table_1ad13285b25ac20eb2e6e2d6485c1448c6" prot="public" virt="non-virtual"><scope>learnql::core::Table</scope><name>find_all_by</name></member>
+      <member refid="classlearnql_1_1core_1_1_table_1afc1c9919edc0c673294ac306a7a51842" prot="public" virt="non-virtual"><scope>learnql::core::Table</scope><name>find_by</name></member>
+      <member refid="classlearnql_1_1core_1_1_table_1a12b6a9df9e60b8c0f4c66b3c28943f45" prot="public" virt="non-virtual"><scope>learnql::core::Table</scope><name>find_if</name></member>
+      <member refid="classlearnql_1_1core_1_1_table_1a5fea2656268908fed51a205dcfc01096" prot="public" virt="non-virtual"><scope>learnql::core::Table</scope><name>flush</name></member>
+      <member refid="classlearnql_1_1core_1_1_table_1a8ceccb8d0e92cc9ba552de7a2ec56ccf" prot="public" virt="non-virtual"><scope>learnql::core::Table</scope><name>get_all</name></member>
+      <member refid="classlearnql_1_1core_1_1_table_1a1d7084e74f821b1ac501effc227378c4" prot="public" virt="non-virtual"><scope>learnql::core::Table</scope><name>get_record_id</name></member>
+      <member refid="classlearnql_1_1core_1_1_table_1a5b5600407474c3bb6176b3c240a2d105" prot="public" virt="non-virtual"><scope>learnql::core::Table</scope><name>get_root_page</name></member>
+      <member refid="classlearnql_1_1core_1_1_table_1ab418b7c455cc0ffffc46b2343ad55254" prot="public" virt="non-virtual"><scope>learnql::core::Table</scope><name>get_unique_values</name></member>
+      <member refid="classlearnql_1_1core_1_1_table_1a9fa11f6a0feec59290c193c25337ffce" prot="private" virt="non-virtual"><scope>learnql::core::Table</scope><name>index_</name></member>
+      <member refid="classlearnql_1_1core_1_1_table_1af2757ace205d9226717e0e63c0415e00" prot="public" virt="non-virtual"><scope>learnql::core::Table</scope><name>index_type</name></member>
+      <member refid="classlearnql_1_1core_1_1_table_1a7b24f9b4a5136e437e596838a7f4f2f1" prot="public" virt="non-virtual"><scope>learnql::core::Table</scope><name>insert</name></member>
+      <member refid="classlearnql_1_1core_1_1_table_1a39e29f50288fbaf995162f0e5dfc0bf0" prot="private" virt="non-virtual"><scope>learnql::core::Table</scope><name>load_record</name></member>
+      <member refid="classlearnql_1_1core_1_1_table_1a80a5715d651b6c8e308c234f514a7593" prot="public" virt="non-virtual"><scope>learnql::core::Table</scope><name>name</name></member>
+      <member refid="classlearnql_1_1core_1_1_table_1abb8fc1ea0d7a8f4bac470a71d14f3f31" prot="public" virt="non-virtual"><scope>learnql::core::Table</scope><name>primary_key_type</name></member>
+      <member refid="classlearnql_1_1core_1_1_table_1a7bb0b9d084875fbbdeee7ae6152a3c7a" prot="public" virt="non-virtual"><scope>learnql::core::Table</scope><name>range_query</name></member>
+      <member refid="classlearnql_1_1core_1_1_table_1a8c07ea66a829bed3bbf7b10fc20c41b8" prot="public" virt="non-virtual"><scope>learnql::core::Table</scope><name>remove</name></member>
+      <member refid="classlearnql_1_1core_1_1_table_1ab43b4b72da042e03c5e644abf2fe141e" prot="private" virt="non-virtual"><scope>learnql::core::Table</scope><name>secondary_indexes_</name></member>
+      <member refid="classlearnql_1_1core_1_1_table_1a5868f6ca975977ff0c40ace8915124da" prot="public" virt="non-virtual"><scope>learnql::core::Table</scope><name>set_catalog</name></member>
+      <member refid="classlearnql_1_1core_1_1_table_1a2b941e217c0a4923dee333360d6f5b11" prot="public" virt="non-virtual"><scope>learnql::core::Table</scope><name>size</name></member>
+      <member refid="classlearnql_1_1core_1_1_table_1ab5865499dbf94d8f46a0c2921dc51284" prot="private" virt="non-virtual"><scope>learnql::core::Table</scope><name>storage_</name></member>
+      <member refid="classlearnql_1_1core_1_1_table_1a8fa2cc1a5a646cc07dd10182abe27f6e" prot="private" virt="non-virtual"><scope>learnql::core::Table</scope><name>sync_catalog_count</name></member>
+      <member refid="classlearnql_1_1core_1_1_table_1a5005a87f9bdff39c3f8ad236816ad825" prot="public" virt="non-virtual"><scope>learnql::core::Table</scope><name>Table</name></member>
+      <member refid="classlearnql_1_1core_1_1_table_1ac135f0894e8be809f63fe5abcac9ccad" prot="private" virt="non-virtual"><scope>learnql::core::Table</scope><name>table_name_</name></member>
+      <member refid="classlearnql_1_1core_1_1_table_1ae733db6ab4ce469fc71526d596441761" prot="public" virt="non-virtual"><scope>learnql::core::Table</scope><name>update</name></member>
+      <member refid="classlearnql_1_1core_1_1_table_1a7de8c5ab0d7015cee3eaaaeaa81246ec" prot="public" virt="non-virtual"><scope>learnql::core::Table</scope><name>value_type</name></member>
+      <member refid="classlearnql_1_1core_1_1_table_1abf144135f027702e790d9f22aa545300" prot="public" virt="non-virtual"><scope>learnql::core::Table</scope><name>view</name></member>
+      <member refid="classlearnql_1_1core_1_1_table_1a017434d424c8c41073ba10cdf1df87b3" prot="public" virt="non-virtual"><scope>learnql::core::Table</scope><name>view_where</name></member>
+      <member refid="classlearnql_1_1core_1_1_table_1a09902a2fadbeaf72b3ceb27170f78533" prot="public" virt="non-virtual"><scope>learnql::core::Table</scope><name>where</name></member>
+      <member refid="classlearnql_1_1core_1_1_table_1a82b606785a105b5c9dda50c365815e9b" prot="public" virt="non-virtual"><scope>learnql::core::Table</scope><name>~Table</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

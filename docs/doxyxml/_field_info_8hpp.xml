@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="_field_info_8hpp" kind="file" language="C++">
+    <compoundname>FieldInfo.hpp</compoundname>
+    <includes local="no">string</includes>
+    <includes local="no">cstdint</includes>
+    <includedby refid="_learn_q_l_8hpp" local="yes">/Users/tolgaberber/Work/CPP/LearnQL/learnql/LearnQL.hpp</includedby>
+    <includedby refid="_field_metadata_8hpp" local="yes">/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/FieldMetadata.hpp</includedby>
+    <includedby refid="_table_metadata_8hpp" local="yes">/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/TableMetadata.hpp</includedby>
+    <includedby refid="_property_8hpp" local="yes">/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/Property.hpp</includedby>
+    <includedby refid="_field_extractor_8hpp" local="yes">/Users/tolgaberber/Work/CPP/LearnQL/learnql/reflection/FieldExtractor.hpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/reflection/FieldInfo.hpp</label>
+        <link refid="_field_info_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>cstdint</label>
+      </node>
+      <node id="2">
+        <label>string</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/LearnQL.hpp</label>
+        <link refid="_learn_q_l_8hpp"/>
+      </node>
+      <node id="3">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/FieldMetadata.hpp</label>
+        <link refid="_field_metadata_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/SystemCatalog.hpp</label>
+        <link refid="_system_catalog_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/TableMetadata.hpp</label>
+        <link refid="_table_metadata_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Database.hpp</label>
+        <link refid="_database_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/ReadOnlyTable.hpp</label>
+        <link refid="_read_only_table_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp</label>
+        <link refid="_table_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/Property.hpp</label>
+        <link refid="_property_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp</label>
+        <link refid="_query_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/reflection/FieldExtractor.hpp</label>
+        <link refid="_field_extractor_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/reflection/FieldInfo.hpp</label>
+        <link refid="_field_info_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structlearnql_1_1reflection_1_1_field_info" prot="public">learnql::reflection::FieldInfo</innerclass>
+    <innernamespace refid="namespacelearnql">learnql</innernamespace>
+    <innernamespace refid="namespacelearnql_1_1reflection">learnql::reflection</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>LEARNQL_REFLECTION_FIELDINFO_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LEARNQL_REFLECTION_FIELDINFO_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdint&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacelearnql_1_1reflection" kindref="compound">learnql::reflection</ref><sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="structlearnql_1_1reflection_1_1_field_info" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structlearnql_1_1reflection_1_1_field_info_1a86aa63a8d07e68649890df025d3f33a3" kindref="member">FieldInfo</ref><sp/>{</highlight></codeline>
+<codeline lineno="33" refid="structlearnql_1_1reflection_1_1_field_info_1a148b13acc2eac3377a7cd4a6149bc494" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="structlearnql_1_1reflection_1_1_field_info_1a148b13acc2eac3377a7cd4a6149bc494" kindref="member">name</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="34" refid="structlearnql_1_1reflection_1_1_field_info_1a7495b130b3360fc78185afc791fd66e2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="structlearnql_1_1reflection_1_1_field_info_1a7495b130b3360fc78185afc791fd66e2" kindref="member">type</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="35" refid="structlearnql_1_1reflection_1_1_field_info_1a70dbfd3bbb2be4ffa91672cec1f5b9bc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="structlearnql_1_1reflection_1_1_field_info_1a70dbfd3bbb2be4ffa91672cec1f5b9bc" kindref="member">order</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="36" refid="structlearnql_1_1reflection_1_1_field_info_1a6cbb7320d42090412aa79acf93da0a77" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structlearnql_1_1reflection_1_1_field_info_1a6cbb7320d42090412aa79acf93da0a77" kindref="member">is_primary_key</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="structlearnql_1_1reflection_1_1_field_info_1a86aa63a8d07e68649890df025d3f33a3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structlearnql_1_1reflection_1_1_field_info_1a86aa63a8d07e68649890df025d3f33a3" kindref="member">FieldInfo</ref>(std::string<sp/>field_name,</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>field_type,</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint16_t<sp/>field_order,</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>is_pk<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="structlearnql_1_1reflection_1_1_field_info_1a148b13acc2eac3377a7cd4a6149bc494" kindref="member">name</ref>(std::move(field_name)),</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlearnql_1_1reflection_1_1_field_info_1a7495b130b3360fc78185afc791fd66e2" kindref="member">type</ref>(std::move(field_type)),</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlearnql_1_1reflection_1_1_field_info_1a70dbfd3bbb2be4ffa91672cec1f5b9bc" kindref="member">order</ref>(field_order),</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlearnql_1_1reflection_1_1_field_info_1a6cbb7320d42090412aa79acf93da0a77" kindref="member">is_primary_key</ref>(is_pk)<sp/>{}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>learnql::reflection</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>LEARNQL_REFLECTION_FIELDINFO_HPP</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/reflection/FieldInfo.hpp"/>
+  </compounddef>
+</doxygen>

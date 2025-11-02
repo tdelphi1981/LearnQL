@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="structlearnql_1_1coroutines_1_1_generator_1_1promise__type" kind="struct" language="C++" prot="public">
+    <compoundname>learnql::coroutines::Generator::promise_type</compoundname>
+    <includes refid="_generator_8hpp" local="no">Generator.hpp</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlearnql_1_1coroutines_1_1_generator_1_1promise__type_1ade83c449c8425eae253d53ec6d7ccbce" prot="public" static="no" mutable="no">
+        <type>std::optional&lt; T &gt;</type>
+        <definition>std::optional&lt;T&gt; learnql::coroutines::Generator&lt; T &gt;::promise_type::current_value</definition>
+        <argsstring></argsstring>
+        <name>current_value</name>
+        <qualifiedname>learnql::coroutines::Generator::promise_type::current_value</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/Generator.hpp" line="44" column="23" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/Generator.hpp" bodystart="44" bodyend="-1"/>
+        <referencedby refid="structlearnql_1_1coroutines_1_1_generator_1_1promise__type_1aba855717934f5de3a2e940bdc5e79233" compoundref="_generator_8hpp" startline="71" endline="74">learnql::coroutines::Generator&lt; T &gt;::promise_type::yield_value</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1coroutines_1_1_generator_1_1promise__type_1ac1bb7278edc4ea0d04bc41d6875c172c" prot="public" static="no" mutable="no">
+        <type>std::exception_ptr</type>
+        <definition>std::exception_ptr learnql::coroutines::Generator&lt; T &gt;::promise_type::exception</definition>
+        <argsstring></argsstring>
+        <name>exception</name>
+        <qualifiedname>learnql::coroutines::Generator::promise_type::exception</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/Generator.hpp" line="45" column="28" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/Generator.hpp" bodystart="45" bodyend="-1"/>
+        <referencedby refid="structlearnql_1_1coroutines_1_1_generator_1_1promise__type_1a86d92a6e5225a25e61f6782080ca0694" compoundref="_generator_8hpp" startline="84" endline="86">learnql::coroutines::Generator&lt; T &gt;::promise_type::unhandled_exception</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structlearnql_1_1coroutines_1_1_generator_1_1promise__type_1a2e92b4247d3497a921bdf77813bc7ae1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classlearnql_1_1coroutines_1_1_generator_1a016c54f206f3c05dd782988a8ce4257f" kindref="member">Generator</ref></type>
+        <definition>Generator learnql::coroutines::Generator&lt; T &gt;::promise_type::get_return_object</definition>
+        <argsstring>()</argsstring>
+        <name>get_return_object</name>
+        <qualifiedname>learnql::coroutines::Generator::promise_type::get_return_object</qualifiedname>
+        <briefdescription>
+<para>Called when coroutine is created. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/Generator.hpp" line="50" column="19" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/Generator.hpp" bodystart="50" bodyend="52"/>
+        <references refid="classlearnql_1_1coroutines_1_1_generator_1a016c54f206f3c05dd782988a8ce4257f" compoundref="_generator_8hpp" startline="94" endline="94">learnql::coroutines::Generator&lt; T &gt;::Generator</references>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1coroutines_1_1_generator_1_1promise__type_1a6da183d33ff3be99d6963af6b5766cda" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>std::suspend_always</type>
+        <definition>std::suspend_always learnql::coroutines::Generator&lt; T &gt;::promise_type::initial_suspend</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>initial_suspend</name>
+        <qualifiedname>learnql::coroutines::Generator::promise_type::initial_suspend</qualifiedname>
+        <briefdescription>
+<para>Initial suspend - suspend immediately. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/Generator.hpp" line="57" column="29" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/Generator.hpp" bodystart="57" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1coroutines_1_1_generator_1_1promise__type_1aab5216e7528a6aceca5ad4389b1bd6c1" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>std::suspend_always</type>
+        <definition>std::suspend_always learnql::coroutines::Generator&lt; T &gt;::promise_type::final_suspend</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>final_suspend</name>
+        <qualifiedname>learnql::coroutines::Generator::promise_type::final_suspend</qualifiedname>
+        <briefdescription>
+<para>Final suspend - suspend at end. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/Generator.hpp" line="64" column="29" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/Generator.hpp" bodystart="64" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1coroutines_1_1_generator_1_1promise__type_1aba855717934f5de3a2e940bdc5e79233" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>std::suspend_always</type>
+        <definition>std::suspend_always learnql::coroutines::Generator&lt; T &gt;::promise_type::yield_value</definition>
+        <argsstring>(T value) noexcept</argsstring>
+        <name>yield_value</name>
+        <qualifiedname>learnql::coroutines::Generator::promise_type::yield_value</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Handle co_yield expressions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/Generator.hpp" line="71" column="29" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/Generator.hpp" bodystart="71" bodyend="74"/>
+        <references refid="structlearnql_1_1coroutines_1_1_generator_1_1promise__type_1ade83c449c8425eae253d53ec6d7ccbce" compoundref="_generator_8hpp" startline="44">learnql::coroutines::Generator&lt; T &gt;::promise_type::current_value</references>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1coroutines_1_1_generator_1_1promise__type_1ad2de08b9044fcfb82bb17dd6fd3ea3fc" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::coroutines::Generator&lt; T &gt;::promise_type::return_void</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>return_void</name>
+        <qualifiedname>learnql::coroutines::Generator::promise_type::return_void</qualifiedname>
+        <briefdescription>
+<para>Handle co_return. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/Generator.hpp" line="79" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/Generator.hpp" bodystart="79" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1coroutines_1_1_generator_1_1promise__type_1a86d92a6e5225a25e61f6782080ca0694" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::coroutines::Generator&lt; T &gt;::promise_type::unhandled_exception</definition>
+        <argsstring>()</argsstring>
+        <name>unhandled_exception</name>
+        <qualifiedname>learnql::coroutines::Generator::promise_type::unhandled_exception</qualifiedname>
+        <briefdescription>
+<para>Handle exceptions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/Generator.hpp" line="84" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/Generator.hpp" bodystart="84" bodyend="86"/>
+        <references refid="structlearnql_1_1coroutines_1_1_generator_1_1promise__type_1ac1bb7278edc4ea0d04bc41d6875c172c" compoundref="_generator_8hpp" startline="45">learnql::coroutines::Generator&lt; T &gt;::promise_type::exception</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Promise type for the coroutine. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/Generator.hpp" line="43" column="5" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/Generator.hpp" bodystart="43" bodyend="87"/>
+    <listofallmembers>
+      <member refid="structlearnql_1_1coroutines_1_1_generator_1_1promise__type_1ade83c449c8425eae253d53ec6d7ccbce" prot="public" virt="non-virtual"><scope>learnql::coroutines::Generator::promise_type</scope><name>current_value</name></member>
+      <member refid="structlearnql_1_1coroutines_1_1_generator_1_1promise__type_1ac1bb7278edc4ea0d04bc41d6875c172c" prot="public" virt="non-virtual"><scope>learnql::coroutines::Generator::promise_type</scope><name>exception</name></member>
+      <member refid="structlearnql_1_1coroutines_1_1_generator_1_1promise__type_1aab5216e7528a6aceca5ad4389b1bd6c1" prot="public" virt="non-virtual"><scope>learnql::coroutines::Generator::promise_type</scope><name>final_suspend</name></member>
+      <member refid="structlearnql_1_1coroutines_1_1_generator_1_1promise__type_1a2e92b4247d3497a921bdf77813bc7ae1" prot="public" virt="non-virtual"><scope>learnql::coroutines::Generator::promise_type</scope><name>get_return_object</name></member>
+      <member refid="structlearnql_1_1coroutines_1_1_generator_1_1promise__type_1a6da183d33ff3be99d6963af6b5766cda" prot="public" virt="non-virtual"><scope>learnql::coroutines::Generator::promise_type</scope><name>initial_suspend</name></member>
+      <member refid="structlearnql_1_1coroutines_1_1_generator_1_1promise__type_1ad2de08b9044fcfb82bb17dd6fd3ea3fc" prot="public" virt="non-virtual"><scope>learnql::coroutines::Generator::promise_type</scope><name>return_void</name></member>
+      <member refid="structlearnql_1_1coroutines_1_1_generator_1_1promise__type_1a86d92a6e5225a25e61f6782080ca0694" prot="public" virt="non-virtual"><scope>learnql::coroutines::Generator::promise_type</scope><name>unhandled_exception</name></member>
+      <member refid="structlearnql_1_1coroutines_1_1_generator_1_1promise__type_1aba855717934f5de3a2e940bdc5e79233" prot="public" virt="non-virtual"><scope>learnql::coroutines::Generator::promise_type</scope><name>yield_value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

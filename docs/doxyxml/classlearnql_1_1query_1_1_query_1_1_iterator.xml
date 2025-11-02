@@ -1,0 +1,298 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classlearnql_1_1query_1_1_query_1_1_iterator" kind="class" language="C++" prot="public">
+    <compoundname>learnql::query::Query::Iterator</compoundname>
+    <includes refid="_query_8hpp" local="no">Query.hpp</includes>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classlearnql_1_1query_1_1_query_1_1_iterator_1a6abc9b60bb85acd730c03856114833a0" prot="public" static="no">
+        <type>std::forward_iterator_tag</type>
+        <definition>using learnql::query::Query&lt; T, BatchSize &gt;::Iterator::iterator_category =  std::forward_iterator_tag</definition>
+        <argsstring></argsstring>
+        <name>iterator_category</name>
+        <qualifiedname>learnql::query::Query::Iterator::iterator_category</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp" line="158" column="9" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classlearnql_1_1query_1_1_query_1_1_iterator_1a09d52f38997cc6d894113f06d4fe94d8" prot="public" static="no">
+        <type>T</type>
+        <definition>using learnql::query::Query&lt; T, BatchSize &gt;::Iterator::value_type =  T</definition>
+        <argsstring></argsstring>
+        <name>value_type</name>
+        <qualifiedname>learnql::query::Query::Iterator::value_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp" line="159" column="9" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classlearnql_1_1query_1_1_query_1_1_iterator_1af5a577fc3d2ba4c35622fa85ce36a89a" prot="public" static="no">
+        <type>std::ptrdiff_t</type>
+        <definition>using learnql::query::Query&lt; T, BatchSize &gt;::Iterator::difference_type =  std::ptrdiff_t</definition>
+        <argsstring></argsstring>
+        <name>difference_type</name>
+        <qualifiedname>learnql::query::Query::Iterator::difference_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp" line="160" column="9" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classlearnql_1_1query_1_1_query_1_1_iterator_1a4b4ceb2dafde6d17d524f5830e9079c8" prot="public" static="no">
+        <type>const T *</type>
+        <definition>using learnql::query::Query&lt; T, BatchSize &gt;::Iterator::pointer =  const T*</definition>
+        <argsstring></argsstring>
+        <name>pointer</name>
+        <qualifiedname>learnql::query::Query::Iterator::pointer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp" line="161" column="9" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classlearnql_1_1query_1_1_query_1_1_iterator_1af500794147a3009245989ed29ae17200" prot="public" static="no">
+        <type>const T &amp;</type>
+        <definition>using learnql::query::Query&lt; T, BatchSize &gt;::Iterator::reference =  const T&amp;</definition>
+        <argsstring></argsstring>
+        <name>reference</name>
+        <qualifiedname>learnql::query::Query::Iterator::reference</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp" line="162" column="9" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp" bodystart="162" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classlearnql_1_1query_1_1_query_1_1_iterator_1a83a00567b5f597c6678f00f56d967f3d" prot="private" static="no" mutable="no">
+        <type>table_type::Iterator</type>
+        <definition>table_type::Iterator learnql::query::Query&lt; T, BatchSize &gt;::Iterator::it_</definition>
+        <argsstring></argsstring>
+        <name>it_</name>
+        <qualifiedname>learnql::query::Query::Iterator::it_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp" line="206" column="39" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlearnql_1_1query_1_1_query_1_1_iterator_1a6a15888d720d76f2337964c33e29fc93" prot="private" static="no" mutable="no">
+        <type>table_type::Iterator</type>
+        <definition>table_type::Iterator learnql::query::Query&lt; T, BatchSize &gt;::Iterator::end_</definition>
+        <argsstring></argsstring>
+        <name>end_</name>
+        <qualifiedname>learnql::query::Query::Iterator::end_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp" line="207" column="39" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlearnql_1_1query_1_1_query_1_1_iterator_1a2a2406381f83e411660f8bf779892fe4" prot="private" static="no" mutable="no">
+        <type>std::function&lt; bool(const T &amp;)&gt;</type>
+        <definition>std::function&lt;bool(const T&amp;)&gt; learnql::query::Query&lt; T, BatchSize &gt;::Iterator::predicate_</definition>
+        <argsstring></argsstring>
+        <name>predicate_</name>
+        <qualifiedname>learnql::query::Query::Iterator::predicate_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp" line="208" column="23" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp" bodystart="208" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlearnql_1_1query_1_1_query_1_1_iterator_1a00fb405ec82e6f60c03cefd33fc4b283" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>learnql::query::Query&lt; T, BatchSize &gt;::Iterator::Iterator</definition>
+        <argsstring>(typename table_type::Iterator it, typename table_type::Iterator end, std::function&lt; bool(const T &amp;)&gt; pred)</argsstring>
+        <name>Iterator</name>
+        <qualifiedname>learnql::query::Query::Iterator::Iterator</qualifiedname>
+        <param>
+          <type>typename table_type::Iterator</type>
+          <declname>it</declname>
+        </param>
+        <param>
+          <type>typename table_type::Iterator</type>
+          <declname>end</declname>
+        </param>
+        <param>
+          <type>std::function&lt; bool(const T &amp;)&gt;</type>
+          <declname>pred</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp" line="164" column="9" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp" bodystart="164" bodyend="169"/>
+        <references refid="classlearnql_1_1query_1_1_query_1aa25cc9c67c9dc306552fb63480ac63bc" compoundref="_query_8hpp" startline="215" endline="217">learnql::query::Query&lt; T, BatchSize &gt;::end</references>
+        <referencedby refid="classlearnql_1_1query_1_1_query_1_1_iterator_1a736a19a11e8fc270f1b6ad5511a10c39" compoundref="_query_8hpp" startline="195" endline="197">learnql::query::Query&lt; T, BatchSize &gt;::Iterator::operator!=</referencedby>
+        <referencedby refid="classlearnql_1_1query_1_1_query_1_1_iterator_1a43edf828411433e3bb6b3a7edd195944" compoundref="_query_8hpp" startline="179" endline="183">learnql::query::Query&lt; T, BatchSize &gt;::Iterator::operator++</referencedby>
+        <referencedby refid="classlearnql_1_1query_1_1_query_1_1_iterator_1a0d6827f2bf447c804a57d4573f0f6df4" compoundref="_query_8hpp" startline="185" endline="189">learnql::query::Query&lt; T, BatchSize &gt;::Iterator::operator++</referencedby>
+        <referencedby refid="classlearnql_1_1query_1_1_query_1_1_iterator_1acb9e9e6e85bcce059a40f7d3333789b9" compoundref="_query_8hpp" startline="191" endline="193">learnql::query::Query&lt; T, BatchSize &gt;::Iterator::operator==</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1query_1_1_query_1_1_iterator_1a9182a0f0b862c1891e07e75ddeec7da8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classlearnql_1_1query_1_1_query_1_1_iterator_1af500794147a3009245989ed29ae17200" kindref="member">reference</ref></type>
+        <definition>reference learnql::query::Query&lt; T, BatchSize &gt;::Iterator::operator*</definition>
+        <argsstring>() const</argsstring>
+        <name>operator*</name>
+        <qualifiedname>learnql::query::Query::Iterator::operator*</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp" line="171" column="19" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp" bodystart="171" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1query_1_1_query_1_1_iterator_1a6d5d8fdba726475c0993923136cdbd76" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classlearnql_1_1query_1_1_query_1_1_iterator_1a4b4ceb2dafde6d17d524f5830e9079c8" kindref="member">pointer</ref></type>
+        <definition>pointer learnql::query::Query&lt; T, BatchSize &gt;::Iterator::operator-&gt;</definition>
+        <argsstring>() const</argsstring>
+        <name>operator-&gt;</name>
+        <qualifiedname>learnql::query::Query::Iterator::operator-&gt;</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp" line="175" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp" bodystart="175" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1query_1_1_query_1_1_iterator_1a43edf828411433e3bb6b3a7edd195944" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classlearnql_1_1query_1_1_query_1_1_iterator_1a00fb405ec82e6f60c03cefd33fc4b283" kindref="member">Iterator</ref> &amp;</type>
+        <definition>Iterator &amp; learnql::query::Query&lt; T, BatchSize &gt;::Iterator::operator++</definition>
+        <argsstring>()</argsstring>
+        <name>operator++</name>
+        <qualifiedname>learnql::query::Query::Iterator::operator++</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp" line="179" column="18" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp" bodystart="179" bodyend="183"/>
+        <references refid="classlearnql_1_1query_1_1_query_1_1_iterator_1a00fb405ec82e6f60c03cefd33fc4b283" compoundref="_query_8hpp" startline="164" endline="169">learnql::query::Query&lt; T, BatchSize &gt;::Iterator::Iterator</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1query_1_1_query_1_1_iterator_1a0d6827f2bf447c804a57d4573f0f6df4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classlearnql_1_1query_1_1_query_1_1_iterator_1a00fb405ec82e6f60c03cefd33fc4b283" kindref="member">Iterator</ref></type>
+        <definition>Iterator learnql::query::Query&lt; T, BatchSize &gt;::Iterator::operator++</definition>
+        <argsstring>(int)</argsstring>
+        <name>operator++</name>
+        <qualifiedname>learnql::query::Query::Iterator::operator++</qualifiedname>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp" line="185" column="18" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp" bodystart="185" bodyend="189"/>
+        <references refid="classlearnql_1_1query_1_1_query_1_1_iterator_1a00fb405ec82e6f60c03cefd33fc4b283" compoundref="_query_8hpp" startline="164" endline="169">learnql::query::Query&lt; T, BatchSize &gt;::Iterator::Iterator</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1query_1_1_query_1_1_iterator_1acb9e9e6e85bcce059a40f7d3333789b9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool learnql::query::Query&lt; T, BatchSize &gt;::Iterator::operator==</definition>
+        <argsstring>(const Iterator &amp;other) const</argsstring>
+        <name>operator==</name>
+        <qualifiedname>learnql::query::Query::Iterator::operator==</qualifiedname>
+        <param>
+          <type>const <ref refid="classlearnql_1_1query_1_1_query_1_1_iterator_1a00fb405ec82e6f60c03cefd33fc4b283" kindref="member">Iterator</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp" line="191" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp" bodystart="191" bodyend="193"/>
+        <references refid="classlearnql_1_1query_1_1_query_1_1_iterator_1a00fb405ec82e6f60c03cefd33fc4b283" compoundref="_query_8hpp" startline="164" endline="169">learnql::query::Query&lt; T, BatchSize &gt;::Iterator::Iterator</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1query_1_1_query_1_1_iterator_1a736a19a11e8fc270f1b6ad5511a10c39" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool learnql::query::Query&lt; T, BatchSize &gt;::Iterator::operator!=</definition>
+        <argsstring>(const Iterator &amp;other) const</argsstring>
+        <name>operator!=</name>
+        <qualifiedname>learnql::query::Query::Iterator::operator!=</qualifiedname>
+        <param>
+          <type>const <ref refid="classlearnql_1_1query_1_1_query_1_1_iterator_1a00fb405ec82e6f60c03cefd33fc4b283" kindref="member">Iterator</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp" line="195" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp" bodystart="195" bodyend="197"/>
+        <references refid="classlearnql_1_1query_1_1_query_1_1_iterator_1a00fb405ec82e6f60c03cefd33fc4b283" compoundref="_query_8hpp" startline="164" endline="169">learnql::query::Query&lt; T, BatchSize &gt;::Iterator::Iterator</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classlearnql_1_1query_1_1_query_1_1_iterator_1a0e6fe9b931eedbb9b6f38e7e6ea0629a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::query::Query&lt; T, BatchSize &gt;::Iterator::advance_to_next_match</definition>
+        <argsstring>()</argsstring>
+        <name>advance_to_next_match</name>
+        <qualifiedname>learnql::query::Query::Iterator::advance_to_next_match</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp" line="200" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp" bodystart="200" bodyend="204"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Provides <ref refid="classlearnql_1_1query_1_1_query_1a276fcfc0bc9a2f11140372804261e639" kindref="member">begin()</ref> for range-based for loops. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="classlearnql_1_1query_1_1_query_1_1_iterator" kindref="compound">Iterator</ref> to matching elements </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp" line="156" column="5" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp" bodystart="156" bodyend="209"/>
+    <listofallmembers>
+      <member refid="classlearnql_1_1query_1_1_query_1_1_iterator_1a0e6fe9b931eedbb9b6f38e7e6ea0629a" prot="private" virt="non-virtual"><scope>learnql::query::Query::Iterator</scope><name>advance_to_next_match</name></member>
+      <member refid="classlearnql_1_1query_1_1_query_1_1_iterator_1af5a577fc3d2ba4c35622fa85ce36a89a" prot="public" virt="non-virtual"><scope>learnql::query::Query::Iterator</scope><name>difference_type</name></member>
+      <member refid="classlearnql_1_1query_1_1_query_1_1_iterator_1a6a15888d720d76f2337964c33e29fc93" prot="private" virt="non-virtual"><scope>learnql::query::Query::Iterator</scope><name>end_</name></member>
+      <member refid="classlearnql_1_1query_1_1_query_1_1_iterator_1a83a00567b5f597c6678f00f56d967f3d" prot="private" virt="non-virtual"><scope>learnql::query::Query::Iterator</scope><name>it_</name></member>
+      <member refid="classlearnql_1_1query_1_1_query_1_1_iterator_1a00fb405ec82e6f60c03cefd33fc4b283" prot="public" virt="non-virtual"><scope>learnql::query::Query::Iterator</scope><name>Iterator</name></member>
+      <member refid="classlearnql_1_1query_1_1_query_1_1_iterator_1a6abc9b60bb85acd730c03856114833a0" prot="public" virt="non-virtual"><scope>learnql::query::Query::Iterator</scope><name>iterator_category</name></member>
+      <member refid="classlearnql_1_1query_1_1_query_1_1_iterator_1a736a19a11e8fc270f1b6ad5511a10c39" prot="public" virt="non-virtual"><scope>learnql::query::Query::Iterator</scope><name>operator!=</name></member>
+      <member refid="classlearnql_1_1query_1_1_query_1_1_iterator_1a9182a0f0b862c1891e07e75ddeec7da8" prot="public" virt="non-virtual"><scope>learnql::query::Query::Iterator</scope><name>operator*</name></member>
+      <member refid="classlearnql_1_1query_1_1_query_1_1_iterator_1a43edf828411433e3bb6b3a7edd195944" prot="public" virt="non-virtual"><scope>learnql::query::Query::Iterator</scope><name>operator++</name></member>
+      <member refid="classlearnql_1_1query_1_1_query_1_1_iterator_1a0d6827f2bf447c804a57d4573f0f6df4" prot="public" virt="non-virtual"><scope>learnql::query::Query::Iterator</scope><name>operator++</name></member>
+      <member refid="classlearnql_1_1query_1_1_query_1_1_iterator_1a6d5d8fdba726475c0993923136cdbd76" prot="public" virt="non-virtual"><scope>learnql::query::Query::Iterator</scope><name>operator-&gt;</name></member>
+      <member refid="classlearnql_1_1query_1_1_query_1_1_iterator_1acb9e9e6e85bcce059a40f7d3333789b9" prot="public" virt="non-virtual"><scope>learnql::query::Query::Iterator</scope><name>operator==</name></member>
+      <member refid="classlearnql_1_1query_1_1_query_1_1_iterator_1a4b4ceb2dafde6d17d524f5830e9079c8" prot="public" virt="non-virtual"><scope>learnql::query::Query::Iterator</scope><name>pointer</name></member>
+      <member refid="classlearnql_1_1query_1_1_query_1_1_iterator_1a2a2406381f83e411660f8bf779892fe4" prot="private" virt="non-virtual"><scope>learnql::query::Query::Iterator</scope><name>predicate_</name></member>
+      <member refid="classlearnql_1_1query_1_1_query_1_1_iterator_1af500794147a3009245989ed29ae17200" prot="public" virt="non-virtual"><scope>learnql::query::Query::Iterator</scope><name>reference</name></member>
+      <member refid="classlearnql_1_1query_1_1_query_1_1_iterator_1a09d52f38997cc6d894113f06d4fe94d8" prot="public" virt="non-virtual"><scope>learnql::query::Query::Iterator</scope><name>value_type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

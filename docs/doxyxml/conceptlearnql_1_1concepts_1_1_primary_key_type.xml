@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="conceptlearnql_1_1concepts_1_1_primary_key_type" kind="concept">
+    <compoundname>learnql::concepts::PrimaryKeyType</compoundname>
+    <includes refid="_queryable_8hpp" local="no">Queryable.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <initializer>template&lt;typename T&gt;
+concept <ref refid="conceptlearnql_1_1concepts_1_1_primary_key_type" kindref="compound">learnql::concepts::PrimaryKeyType</ref> =  Comparable&lt;T&gt; &amp;&amp;
+                         std::is_default_constructible_v&lt;T&gt; &amp;&amp;
+                         std::is_copy_constructible_v&lt;T&gt; &amp;&amp;
+                         requires(const T&amp; key) {
+    { std::hash&lt;T&gt;{}(key) } -&gt; std::convertible_to&lt;std::size_t&gt;;
+}    </initializer>
+    <briefdescription>
+<para>Concept for types that can be used as primary keys. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Keys must be comparable and hashable </para>
+    </detaileddescription>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/concepts/Queryable.hpp" line="37" column="1"/>
+  </compounddef>
+</doxygen>

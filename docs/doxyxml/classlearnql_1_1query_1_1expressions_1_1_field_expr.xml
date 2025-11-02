@@ -1,0 +1,425 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classlearnql_1_1query_1_1expressions_1_1_field_expr" kind="class" language="C++" prot="public">
+    <compoundname>learnql::query::expressions::FieldExpr</compoundname>
+    <basecompoundref refid="classlearnql_1_1query_1_1expressions_1_1_expr" prot="public" virt="non-virtual">learnql::query::expressions::Expr&lt; FieldExpr&lt; T, FieldType &gt; &gt;</basecompoundref>
+    <includes refid="_field_expr_8hpp" local="no">FieldExpr.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+      <param>
+        <type>typename FieldType</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classlearnql_1_1query_1_1expressions_1_1_field_expr_1ac281a616cabc71a1d2483cbed46041cb" prot="public" static="no">
+        <type>T</type>
+        <definition>using learnql::query::expressions::FieldExpr&lt; T, FieldType &gt;::object_type =  T</definition>
+        <argsstring></argsstring>
+        <name>object_type</name>
+        <qualifiedname>learnql::query::expressions::FieldExpr::object_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/FieldExpr.hpp" line="24" column="5" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/FieldExpr.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classlearnql_1_1query_1_1expressions_1_1_field_expr_1a5191b60746b7fc625862860dce4fb3cd" prot="public" static="no">
+        <type>FieldType</type>
+        <definition>using learnql::query::expressions::FieldExpr&lt; T, FieldType &gt;::value_type =  FieldType</definition>
+        <argsstring></argsstring>
+        <name>value_type</name>
+        <qualifiedname>learnql::query::expressions::FieldExpr::value_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/FieldExpr.hpp" line="25" column="5" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/FieldExpr.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classlearnql_1_1query_1_1expressions_1_1_field_expr_1a93e06f35043b8c1a4080ddb05b4124e1" prot="public" static="no">
+        <type>std::function&lt; FieldType(const T &amp;)&gt;</type>
+        <definition>using learnql::query::expressions::FieldExpr&lt; T, FieldType &gt;::getter_type =  std::function&lt;FieldType(const T&amp;)&gt;</definition>
+        <argsstring></argsstring>
+        <name>getter_type</name>
+        <qualifiedname>learnql::query::expressions::FieldExpr::getter_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/FieldExpr.hpp" line="26" column="5" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/FieldExpr.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classlearnql_1_1query_1_1expressions_1_1_field_expr_1a54706803b7aaedceeb9c7959da84cb9b" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string learnql::query::expressions::FieldExpr&lt; T, FieldType &gt;::name_</definition>
+        <argsstring></argsstring>
+        <name>name_</name>
+        <qualifiedname>learnql::query::expressions::FieldExpr::name_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/FieldExpr.hpp" line="84" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/FieldExpr.hpp" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlearnql_1_1query_1_1expressions_1_1_field_expr_1ac93cd2d8d1a13d748518eb3c55b2a166" prot="private" static="no" mutable="no">
+        <type><ref refid="classlearnql_1_1query_1_1expressions_1_1_field_expr_1a93e06f35043b8c1a4080ddb05b4124e1" kindref="member">getter_type</ref></type>
+        <definition>getter_type learnql::query::expressions::FieldExpr&lt; T, FieldType &gt;::getter_</definition>
+        <argsstring></argsstring>
+        <name>getter_</name>
+        <qualifiedname>learnql::query::expressions::FieldExpr::getter_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/FieldExpr.hpp" line="85" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/FieldExpr.hpp" bodystart="85" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlearnql_1_1query_1_1expressions_1_1_field_expr_1a6eb730cba507a37a675660f6810ada8d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename MemberFunc</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>learnql::query::expressions::FieldExpr&lt; T, FieldType &gt;::FieldExpr</definition>
+        <argsstring>(std::string name, MemberFunc getter)</argsstring>
+        <name>FieldExpr</name>
+        <qualifiedname>learnql::query::expressions::FieldExpr::FieldExpr</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>MemberFunc</type>
+          <declname>getter</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a field expression from a member function pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classlearnql_1_1query_1_1_field" kindref="compound">Field</ref> name (for debugging) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>getter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Member function pointer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/FieldExpr.hpp" line="34" column="5" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/FieldExpr.hpp" bodystart="34" bodyend="42"/>
+        <references refid="classlearnql_1_1query_1_1expressions_1_1_field_expr_1ac39db9d1c97e8a45ff46823378a92485" compoundref="_field_expr_8hpp" startline="79" endline="81">learnql::query::expressions::FieldExpr&lt; T, FieldType &gt;::getter</references>
+        <references refid="classlearnql_1_1query_1_1expressions_1_1_field_expr_1ac2cdbce1693d9235b6d0fd424c883f2c" compoundref="_field_expr_8hpp" startline="65" endline="67">learnql::query::expressions::FieldExpr&lt; T, FieldType &gt;::name</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1query_1_1expressions_1_1_field_expr_1a600a8bb1f543153128935af7fc0e136f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>learnql::query::expressions::FieldExpr&lt; T, FieldType &gt;::FieldExpr</definition>
+        <argsstring>(std::string name, getter_type getter)</argsstring>
+        <name>FieldExpr</name>
+        <qualifiedname>learnql::query::expressions::FieldExpr::FieldExpr</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="classlearnql_1_1query_1_1expressions_1_1_field_expr_1a93e06f35043b8c1a4080ddb05b4124e1" kindref="member">getter_type</ref></type>
+          <declname>getter</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a field expression from a getter function. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classlearnql_1_1query_1_1_field" kindref="compound">Field</ref> name </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>getter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Getter function </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/FieldExpr.hpp" line="49" column="5" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/FieldExpr.hpp" bodystart="49" bodyend="51"/>
+        <references refid="classlearnql_1_1query_1_1expressions_1_1_field_expr_1ac39db9d1c97e8a45ff46823378a92485" compoundref="_field_expr_8hpp" startline="79" endline="81">learnql::query::expressions::FieldExpr&lt; T, FieldType &gt;::getter</references>
+        <references refid="classlearnql_1_1query_1_1expressions_1_1_field_expr_1ac2cdbce1693d9235b6d0fd424c883f2c" compoundref="_field_expr_8hpp" startline="65" endline="67">learnql::query::expressions::FieldExpr&lt; T, FieldType &gt;::name</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1query_1_1expressions_1_1_field_expr_1a7fbf9523a5c99085bfc7e7f7c6718bc6" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>FieldType</type>
+        <definition>FieldType learnql::query::expressions::FieldExpr&lt; T, FieldType &gt;::evaluate</definition>
+        <argsstring>(const T &amp;obj) const</argsstring>
+        <name>evaluate</name>
+        <qualifiedname>learnql::query::expressions::FieldExpr::evaluate</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+<para>Evaluates the field for a given object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Object to extract field from </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classlearnql_1_1query_1_1_field" kindref="compound">Field</ref> value </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/FieldExpr.hpp" line="58" column="16" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/FieldExpr.hpp" bodystart="58" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1query_1_1expressions_1_1_field_expr_1ac2cdbce1693d9235b6d0fd424c883f2c" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string &amp; learnql::query::expressions::FieldExpr&lt; T, FieldType &gt;::name</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>name</name>
+        <qualifiedname>learnql::query::expressions::FieldExpr::name</qualifiedname>
+        <briefdescription>
+<para>Gets the field name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/FieldExpr.hpp" line="65" column="24" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/FieldExpr.hpp" bodystart="65" bodyend="67"/>
+        <referencedby refid="classlearnql_1_1core_1_1_table_1ac85baaf921b5cd20dc717375893edf3d" compoundref="_table_8hpp" startline="1056" endline="1118">learnql::core::Table&lt; T, BatchSize &gt;::add_index</referencedby>
+        <referencedby refid="classlearnql_1_1core_1_1_table_1a5a3bcddb65016955e9df1712cfc180f5" compoundref="_table_8hpp" startline="1127" endline="1148">learnql::core::Table&lt; T, BatchSize &gt;::drop_index</referencedby>
+        <referencedby refid="classlearnql_1_1query_1_1expressions_1_1_field_expr_1a600a8bb1f543153128935af7fc0e136f" compoundref="_field_expr_8hpp" startline="49" endline="51">learnql::query::expressions::FieldExpr&lt; T, FieldType &gt;::FieldExpr</referencedby>
+        <referencedby refid="classlearnql_1_1query_1_1expressions_1_1_field_expr_1a6eb730cba507a37a675660f6810ada8d" compoundref="_field_expr_8hpp" startline="34" endline="42">learnql::query::expressions::FieldExpr&lt; T, FieldType &gt;::FieldExpr</referencedby>
+        <referencedby refid="classlearnql_1_1core_1_1_table_1ad13285b25ac20eb2e6e2d6485c1448c6" compoundref="_table_8hpp" startline="504" endline="531">learnql::core::Table&lt; T, BatchSize &gt;::find_all_by</referencedby>
+        <referencedby refid="classlearnql_1_1core_1_1_table_1afc1c9919edc0c673294ac306a7a51842" compoundref="_table_8hpp" startline="464" endline="484">learnql::core::Table&lt; T, BatchSize &gt;::find_by</referencedby>
+        <referencedby refid="classlearnql_1_1core_1_1_table_1ab418b7c455cc0ffffc46b2343ad55254" compoundref="_table_8hpp" startline="548" endline="561">learnql::core::Table&lt; T, BatchSize &gt;::get_unique_values</referencedby>
+        <referencedby refid="classlearnql_1_1core_1_1_table_1a7bb0b9d084875fbbdeee7ae6152a3c7a" compoundref="_table_8hpp" startline="577" endline="608">learnql::core::Table&lt; T, BatchSize &gt;::range_query</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1query_1_1expressions_1_1_field_expr_1ad50338be8354c459a56217149b99d939" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string learnql::query::expressions::FieldExpr&lt; T, FieldType &gt;::to_string</definition>
+        <argsstring>() const</argsstring>
+        <name>to_string</name>
+        <qualifiedname>learnql::query::expressions::FieldExpr::to_string</qualifiedname>
+        <briefdescription>
+<para>Converts to string representation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/FieldExpr.hpp" line="72" column="18" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/FieldExpr.hpp" bodystart="72" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1query_1_1expressions_1_1_field_expr_1ac39db9d1c97e8a45ff46823378a92485" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>const <ref refid="classlearnql_1_1query_1_1expressions_1_1_field_expr_1a93e06f35043b8c1a4080ddb05b4124e1" kindref="member">getter_type</ref> &amp;</type>
+        <definition>const getter_type &amp; learnql::query::expressions::FieldExpr&lt; T, FieldType &gt;::getter</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>getter</name>
+        <qualifiedname>learnql::query::expressions::FieldExpr::getter</qualifiedname>
+        <briefdescription>
+<para>Gets the getter function (for advanced use). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/FieldExpr.hpp" line="79" column="24" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/FieldExpr.hpp" bodystart="79" bodyend="81"/>
+        <referencedby refid="classlearnql_1_1core_1_1_table_1ac85baaf921b5cd20dc717375893edf3d" compoundref="_table_8hpp" startline="1056" endline="1118">learnql::core::Table&lt; T, BatchSize &gt;::add_index</referencedby>
+        <referencedby refid="classlearnql_1_1query_1_1expressions_1_1_field_expr_1a600a8bb1f543153128935af7fc0e136f" compoundref="_field_expr_8hpp" startline="49" endline="51">learnql::query::expressions::FieldExpr&lt; T, FieldType &gt;::FieldExpr</referencedby>
+        <referencedby refid="classlearnql_1_1query_1_1expressions_1_1_field_expr_1a6eb730cba507a37a675660f6810ada8d" compoundref="_field_expr_8hpp" startline="34" endline="42">learnql::query::expressions::FieldExpr&lt; T, FieldType &gt;::FieldExpr</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para><ref refid="conceptlearnql_1_1query_1_1expressions_1_1_expression" kindref="compound">Expression</ref> representing a field access. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Object type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>FieldType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of the field</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Example: <programlisting><codeline><highlight class="normal"><ref refid="classlearnql_1_1query_1_1expressions_1_1_field_expr_1a6eb730cba507a37a675660f6810ada8d" kindref="member">FieldExpr&lt;Student, int&gt;</ref><sp/>age_field{</highlight><highlight class="stringliteral">&quot;age&quot;</highlight><highlight class="normal">,<sp/>&amp;Student::getAge};</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>result<sp/>=<sp/>age_field.evaluate(student);<sp/><sp/></highlight><highlight class="comment">//<sp/>Calls<sp/>student.getAge()</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>learnql::query::expressions::Expr&lt; Derived &gt;</label>
+        <link refid="classlearnql_1_1query_1_1expressions_1_1_expr"/>
+      </node>
+      <node id="2">
+        <label>learnql::query::expressions::Expr&lt; FieldExpr&lt; T, FieldType &gt; &gt;</label>
+        <link refid="classlearnql_1_1query_1_1expressions_1_1_expr"/>
+        <childnode refid="3" relation="template-instance">
+          <edgelabel>&lt; FieldExpr&lt; T, FieldType &gt; &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>learnql::query::expressions::FieldExpr&lt; T, FieldType &gt;</label>
+        <link refid="classlearnql_1_1query_1_1expressions_1_1_field_expr"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>learnql::query::expressions::FieldExpr&lt; learnql::catalog::FieldMetadata, bool &gt;</label>
+        <link refid="classlearnql_1_1query_1_1expressions_1_1_field_expr"/>
+        <childnode refid="1" relation="template-instance">
+          <edgelabel>&lt; learnql::catalog::FieldMetadata, bool &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>learnql::query::expressions::FieldExpr&lt; learnql::catalog::FieldMetadata, std::string &gt;</label>
+        <link refid="classlearnql_1_1query_1_1expressions_1_1_field_expr"/>
+        <childnode refid="1" relation="template-instance">
+          <edgelabel>&lt; learnql::catalog::FieldMetadata, std::string &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>learnql::query::expressions::FieldExpr&lt; learnql::catalog::FieldMetadata, uint16_t &gt;</label>
+        <link refid="classlearnql_1_1query_1_1expressions_1_1_field_expr"/>
+        <childnode refid="1" relation="template-instance">
+          <edgelabel>&lt; learnql::catalog::FieldMetadata, uint16_t &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>learnql::query::expressions::FieldExpr&lt; learnql::catalog::FieldMetadata, uint64_t &gt;</label>
+        <link refid="classlearnql_1_1query_1_1expressions_1_1_field_expr"/>
+        <childnode refid="1" relation="template-instance">
+          <edgelabel>&lt; learnql::catalog::FieldMetadata, uint64_t &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>learnql::query::expressions::FieldExpr&lt; learnql::catalog::IndexMetadata, bool &gt;</label>
+        <link refid="classlearnql_1_1query_1_1expressions_1_1_field_expr"/>
+        <childnode refid="1" relation="template-instance">
+          <edgelabel>&lt; learnql::catalog::IndexMetadata, bool &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>learnql::query::expressions::FieldExpr&lt; learnql::catalog::IndexMetadata, std::string &gt;</label>
+        <link refid="classlearnql_1_1query_1_1expressions_1_1_field_expr"/>
+        <childnode refid="1" relation="template-instance">
+          <edgelabel>&lt; learnql::catalog::IndexMetadata, std::string &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>learnql::query::expressions::FieldExpr&lt; learnql::catalog::IndexMetadata, uint64_t &gt;</label>
+        <link refid="classlearnql_1_1query_1_1expressions_1_1_field_expr"/>
+        <childnode refid="1" relation="template-instance">
+          <edgelabel>&lt; learnql::catalog::IndexMetadata, uint64_t &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>learnql::query::expressions::FieldExpr&lt; learnql::catalog::TableMetadata, bool &gt;</label>
+        <link refid="classlearnql_1_1query_1_1expressions_1_1_field_expr"/>
+        <childnode refid="1" relation="template-instance">
+          <edgelabel>&lt; learnql::catalog::TableMetadata, bool &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>learnql::query::expressions::FieldExpr&lt; learnql::catalog::TableMetadata, std::size_t &gt;</label>
+        <link refid="classlearnql_1_1query_1_1expressions_1_1_field_expr"/>
+        <childnode refid="1" relation="template-instance">
+          <edgelabel>&lt; learnql::catalog::TableMetadata, std::size_t &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>learnql::query::expressions::FieldExpr&lt; learnql::catalog::TableMetadata, std::string &gt;</label>
+        <link refid="classlearnql_1_1query_1_1expressions_1_1_field_expr"/>
+        <childnode refid="1" relation="template-instance">
+          <edgelabel>&lt; learnql::catalog::TableMetadata, std::string &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>learnql::query::expressions::FieldExpr&lt; learnql::catalog::TableMetadata, uint64_t &gt;</label>
+        <link refid="classlearnql_1_1query_1_1expressions_1_1_field_expr"/>
+        <childnode refid="1" relation="template-instance">
+          <edgelabel>&lt; learnql::catalog::TableMetadata, uint64_t &gt;</edgelabel>
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>learnql::query::expressions::Expr&lt; Derived &gt;</label>
+        <link refid="classlearnql_1_1query_1_1expressions_1_1_expr"/>
+      </node>
+      <node id="2">
+        <label>learnql::query::expressions::Expr&lt; FieldExpr&lt; T, FieldType &gt; &gt;</label>
+        <link refid="classlearnql_1_1query_1_1expressions_1_1_expr"/>
+        <childnode refid="3" relation="template-instance">
+          <edgelabel>&lt; FieldExpr&lt; T, FieldType &gt; &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>learnql::query::expressions::FieldExpr&lt; T, FieldType &gt;</label>
+        <link refid="classlearnql_1_1query_1_1expressions_1_1_field_expr"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/FieldExpr.hpp" line="22" column="1" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/FieldExpr.hpp" bodystart="22" bodyend="86"/>
+    <listofallmembers>
+      <member refid="classlearnql_1_1query_1_1expressions_1_1_expr_1ab3afaf7bba10da4cd15df3713a77974f" prot="public" virt="non-virtual"><scope>learnql::query::expressions::FieldExpr</scope><name>derived</name></member>
+      <member refid="classlearnql_1_1query_1_1expressions_1_1_field_expr_1a7fbf9523a5c99085bfc7e7f7c6718bc6" prot="public" virt="non-virtual"><scope>learnql::query::expressions::FieldExpr</scope><name>evaluate</name></member>
+      <member refid="classlearnql_1_1query_1_1expressions_1_1_field_expr_1a6eb730cba507a37a675660f6810ada8d" prot="public" virt="non-virtual"><scope>learnql::query::expressions::FieldExpr</scope><name>FieldExpr</name></member>
+      <member refid="classlearnql_1_1query_1_1expressions_1_1_field_expr_1a600a8bb1f543153128935af7fc0e136f" prot="public" virt="non-virtual"><scope>learnql::query::expressions::FieldExpr</scope><name>FieldExpr</name></member>
+      <member refid="classlearnql_1_1query_1_1expressions_1_1_field_expr_1ac39db9d1c97e8a45ff46823378a92485" prot="public" virt="non-virtual"><scope>learnql::query::expressions::FieldExpr</scope><name>getter</name></member>
+      <member refid="classlearnql_1_1query_1_1expressions_1_1_field_expr_1ac93cd2d8d1a13d748518eb3c55b2a166" prot="private" virt="non-virtual"><scope>learnql::query::expressions::FieldExpr</scope><name>getter_</name></member>
+      <member refid="classlearnql_1_1query_1_1expressions_1_1_field_expr_1a93e06f35043b8c1a4080ddb05b4124e1" prot="public" virt="non-virtual"><scope>learnql::query::expressions::FieldExpr</scope><name>getter_type</name></member>
+      <member refid="classlearnql_1_1query_1_1expressions_1_1_field_expr_1ac2cdbce1693d9235b6d0fd424c883f2c" prot="public" virt="non-virtual"><scope>learnql::query::expressions::FieldExpr</scope><name>name</name></member>
+      <member refid="classlearnql_1_1query_1_1expressions_1_1_field_expr_1a54706803b7aaedceeb9c7959da84cb9b" prot="private" virt="non-virtual"><scope>learnql::query::expressions::FieldExpr</scope><name>name_</name></member>
+      <member refid="classlearnql_1_1query_1_1expressions_1_1_field_expr_1ac281a616cabc71a1d2483cbed46041cb" prot="public" virt="non-virtual"><scope>learnql::query::expressions::FieldExpr</scope><name>object_type</name></member>
+      <member refid="classlearnql_1_1query_1_1expressions_1_1_field_expr_1ad50338be8354c459a56217149b99d939" prot="public" virt="non-virtual"><scope>learnql::query::expressions::FieldExpr</scope><name>to_string</name></member>
+      <member refid="classlearnql_1_1query_1_1expressions_1_1_field_expr_1a5191b60746b7fc625862860dce4fb3cd" prot="public" virt="non-virtual"><scope>learnql::query::expressions::FieldExpr</scope><name>value_type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,690 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index" kind="class" language="C++" prot="public">
+    <compoundname>learnql::index::PersistentMultiValueSecondaryIndex</compoundname>
+    <includes refid="_persistent_multi_value_secondary_index_8hpp" local="no">PersistentMultiValueSecondaryIndex.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+      <param>
+        <type>typename FieldType</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1aa38b9609f0beecb7fe0266e14193c6a8" prot="public" static="no">
+        <type>std::function&lt; FieldType(const T &amp;)&gt;</type>
+        <definition>using learnql::index::PersistentMultiValueSecondaryIndex&lt; T, FieldType &gt;::getter_type =  std::function&lt;FieldType(const T&amp;)&gt;</definition>
+        <argsstring></argsstring>
+        <name>getter_type</name>
+        <qualifiedname>learnql::index::PersistentMultiValueSecondaryIndex::getter_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" line="144" column="5" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a4436d001e5a31009de3507fe0c1624ff" prot="public" static="no">
+        <type><ref refid="structlearnql_1_1index_1_1_composite_key" kindref="compound">CompositeKey</ref>&lt; FieldType &gt;</type>
+        <definition>using learnql::index::PersistentMultiValueSecondaryIndex&lt; T, FieldType &gt;::composite_key_type =  CompositeKey&lt;FieldType&gt;</definition>
+        <argsstring></argsstring>
+        <name>composite_key_type</name>
+        <qualifiedname>learnql::index::PersistentMultiValueSecondaryIndex::composite_key_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" line="145" column="5" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a0320cde8e42bbb82356fe2b3aa25f733" prot="public" static="no">
+        <type><ref refid="classlearnql_1_1index_1_1_persistent_b_tree_index" kindref="compound">PersistentBTreeIndex</ref>&lt; <ref refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a4436d001e5a31009de3507fe0c1624ff" kindref="member">composite_key_type</ref>, <ref refid="structlearnql_1_1core_1_1_record_id" kindref="compound">core::RecordId</ref> &gt;</type>
+        <definition>using learnql::index::PersistentMultiValueSecondaryIndex&lt; T, FieldType &gt;::index_type =  PersistentBTreeIndex&lt;composite_key_type, core::RecordId&gt;</definition>
+        <argsstring></argsstring>
+        <name>index_type</name>
+        <qualifiedname>learnql::index::PersistentMultiValueSecondaryIndex::index_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" line="146" column="5" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" bodystart="146" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a9b647d5ee6b69805e2bd615e8c9373bf" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string learnql::index::PersistentMultiValueSecondaryIndex&lt; T, FieldType &gt;::field_name_</definition>
+        <argsstring></argsstring>
+        <name>field_name_</name>
+        <qualifiedname>learnql::index::PersistentMultiValueSecondaryIndex::field_name_</qualifiedname>
+        <briefdescription>
+<para>Name of the indexed field. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" line="374" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" bodystart="374" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a37f2bd74d169d11f041f0161bce23cd4" prot="private" static="no" mutable="no">
+        <type><ref refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1aa38b9609f0beecb7fe0266e14193c6a8" kindref="member">getter_type</ref></type>
+        <definition>getter_type learnql::index::PersistentMultiValueSecondaryIndex&lt; T, FieldType &gt;::getter_</definition>
+        <argsstring></argsstring>
+        <name>getter_</name>
+        <qualifiedname>learnql::index::PersistentMultiValueSecondaryIndex::getter_</qualifiedname>
+        <briefdescription>
+<para>Function to extract field value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" line="375" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" bodystart="375" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1ab75ec5df02a61099f559ec0a15661991" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a0320cde8e42bbb82356fe2b3aa25f733" kindref="member">index_type</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;index_type&gt; learnql::index::PersistentMultiValueSecondaryIndex&lt; T, FieldType &gt;::index_</definition>
+        <argsstring></argsstring>
+        <name>index_</name>
+        <qualifiedname>learnql::index::PersistentMultiValueSecondaryIndex::index_</qualifiedname>
+        <briefdescription>
+<para>Underlying B+Tree index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" line="376" column="21" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" bodystart="376" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1ac1200d9a2c9309e35421023e8940eca7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>learnql::index::PersistentMultiValueSecondaryIndex&lt; T, FieldType &gt;::PersistentMultiValueSecondaryIndex</definition>
+        <argsstring>(std::string field_name, getter_type getter, std::shared_ptr&lt; storage::StorageEngine &gt; storage, uint64_t root_page_id=0)</argsstring>
+        <name>PersistentMultiValueSecondaryIndex</name>
+        <qualifiedname>learnql::index::PersistentMultiValueSecondaryIndex::PersistentMultiValueSecondaryIndex</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>field_name</declname>
+        </param>
+        <param>
+          <type><ref refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1aa38b9609f0beecb7fe0266e14193c6a8" kindref="member">getter_type</ref></type>
+          <declname>getter</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classlearnql_1_1storage_1_1_storage_engine" kindref="compound">storage::StorageEngine</ref> &gt;</type>
+          <declname>storage</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>root_page_id</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Constructs a persistent multi-value secondary index. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>field_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the indexed field </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>getter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Function to extract field value from record </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>storage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Shared pointer to storage engine </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>root_page_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Root page ID (0 for new index) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" line="155" column="5" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" bodystart="155" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a2743930dab02b7ade766cbb64187ba7b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool learnql::index::PersistentMultiValueSecondaryIndex&lt; T, FieldType &gt;::insert</definition>
+        <argsstring>(const T &amp;record, const core::RecordId &amp;rid)</argsstring>
+        <name>insert</name>
+        <qualifiedname>learnql::index::PersistentMultiValueSecondaryIndex::insert</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>record</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structlearnql_1_1core_1_1_record_id" kindref="compound">core::RecordId</ref> &amp;</type>
+          <declname>rid</declname>
+        </param>
+        <briefdescription>
+<para>Inserts a record into the index. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>record</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The record to index </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>RecordId of the record </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if inserted successfully</para>
+</simplesect>
+Uses composite key (field_value, page_id) to ensure uniqueness. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" line="173" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" bodystart="173" bodyend="177"/>
+        <references refid="structlearnql_1_1core_1_1_record_id_1a83061170039ebaa5ec4e333c1c3237af" compoundref="_record_id_8hpp" startline="32">learnql::core::RecordId::page_id</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a576b15d7b905d992a236dd6e7ae99a5b" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="structlearnql_1_1core_1_1_record_id" kindref="compound">core::RecordId</ref> &gt;</type>
+        <definition>std::vector&lt; core::RecordId &gt; learnql::index::PersistentMultiValueSecondaryIndex&lt; T, FieldType &gt;::find</definition>
+        <argsstring>(const FieldType &amp;value) const</argsstring>
+        <name>find</name>
+        <qualifiedname>learnql::index::PersistentMultiValueSecondaryIndex::find</qualifiedname>
+        <param>
+          <type>const FieldType &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Finds all records with a given field value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Field value to search for </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Vector of RecordIds with matching field value</para>
+</simplesect>
+Uses B+Tree range query to find all composite keys with this field value. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" line="186" column="18" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" bodystart="186" bodyend="192"/>
+        <referencedby refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a9f839ee942b3a7c4ca8e0282c7e8c07f" compoundref="_persistent_multi_value_secondary_index_8hpp" startline="199" endline="202">learnql::index::PersistentMultiValueSecondaryIndex&lt; T, FieldType &gt;::contains</referencedby>
+        <referencedby refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1abbfc70d66e3f0bf9c8c4f38cc3f519c3" compoundref="_persistent_multi_value_secondary_index_8hpp" startline="209" endline="212">learnql::index::PersistentMultiValueSecondaryIndex&lt; T, FieldType &gt;::count</referencedby>
+        <referencedby refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1ad71ebdd59de77d2509c144f11ca0362c" compoundref="_persistent_multi_value_secondary_index_8hpp" startline="231" endline="243">learnql::index::PersistentMultiValueSecondaryIndex&lt; T, FieldType &gt;::remove_all</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a9f839ee942b3a7c4ca8e0282c7e8c07f" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool learnql::index::PersistentMultiValueSecondaryIndex&lt; T, FieldType &gt;::contains</definition>
+        <argsstring>(const FieldType &amp;value) const</argsstring>
+        <name>contains</name>
+        <qualifiedname>learnql::index::PersistentMultiValueSecondaryIndex::contains</qualifiedname>
+        <param>
+          <type>const FieldType &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Checks if any record has the given field value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Field value to check </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if at least one record has this value </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" line="199" column="11" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" bodystart="199" bodyend="202"/>
+        <references refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a576b15d7b905d992a236dd6e7ae99a5b" compoundref="_persistent_multi_value_secondary_index_8hpp" startline="186" endline="192">learnql::index::PersistentMultiValueSecondaryIndex&lt; T, FieldType &gt;::find</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1abbfc70d66e3f0bf9c8c4f38cc3f519c3" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>std::size_t learnql::index::PersistentMultiValueSecondaryIndex&lt; T, FieldType &gt;::count</definition>
+        <argsstring>(const FieldType &amp;value) const</argsstring>
+        <name>count</name>
+        <qualifiedname>learnql::index::PersistentMultiValueSecondaryIndex::count</qualifiedname>
+        <param>
+          <type>const FieldType &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Counts how many records have the given field value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Field value to count </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of records with this value </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" line="209" column="18" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" bodystart="209" bodyend="212"/>
+        <references refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a576b15d7b905d992a236dd6e7ae99a5b" compoundref="_persistent_multi_value_secondary_index_8hpp" startline="186" endline="192">learnql::index::PersistentMultiValueSecondaryIndex&lt; T, FieldType &gt;::find</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1aeef5f8091acdfcfd7b677ca67e1e25c1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool learnql::index::PersistentMultiValueSecondaryIndex&lt; T, FieldType &gt;::remove</definition>
+        <argsstring>(const T &amp;record, const core::RecordId &amp;rid)</argsstring>
+        <name>remove</name>
+        <qualifiedname>learnql::index::PersistentMultiValueSecondaryIndex::remove</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>record</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structlearnql_1_1core_1_1_record_id" kindref="compound">core::RecordId</ref> &amp;</type>
+          <declname>rid</declname>
+        </param>
+        <briefdescription>
+<para>Removes a specific record from the index. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>record</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The record to remove </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>RecordId of the record </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if removed, false if not found </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" line="220" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" bodystart="220" bodyend="224"/>
+        <references refid="structlearnql_1_1core_1_1_record_id_1a83061170039ebaa5ec4e333c1c3237af" compoundref="_record_id_8hpp" startline="32">learnql::core::RecordId::page_id</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1ad71ebdd59de77d2509c144f11ca0362c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>std::size_t learnql::index::PersistentMultiValueSecondaryIndex&lt; T, FieldType &gt;::remove_all</definition>
+        <argsstring>(const FieldType &amp;value)</argsstring>
+        <name>remove_all</name>
+        <qualifiedname>learnql::index::PersistentMultiValueSecondaryIndex::remove_all</qualifiedname>
+        <param>
+          <type>const FieldType &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Removes all records with a given field value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Field value to remove </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of records removed </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" line="231" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" bodystart="231" bodyend="243"/>
+        <references refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a576b15d7b905d992a236dd6e7ae99a5b" compoundref="_persistent_multi_value_secondary_index_8hpp" startline="186" endline="192">learnql::index::PersistentMultiValueSecondaryIndex&lt; T, FieldType &gt;::find</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1aeb054a2c8102513522ab812fceec37cf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool learnql::index::PersistentMultiValueSecondaryIndex&lt; T, FieldType &gt;::update</definition>
+        <argsstring>(const T &amp;old_record, const T &amp;new_record, const core::RecordId &amp;rid)</argsstring>
+        <name>update</name>
+        <qualifiedname>learnql::index::PersistentMultiValueSecondaryIndex::update</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>old_record</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>new_record</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structlearnql_1_1core_1_1_record_id" kindref="compound">core::RecordId</ref> &amp;</type>
+          <declname>rid</declname>
+        </param>
+        <briefdescription>
+<para>Updates the index when a record is modified. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>old_record</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The old record state </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>new_record</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new record state </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>RecordId of the record </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if updated successfully</para>
+</simplesect>
+Handles the case where the indexed field value changes. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" line="254" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" bodystart="254" bodyend="272"/>
+        <references refid="structlearnql_1_1core_1_1_record_id_1a83061170039ebaa5ec4e333c1c3237af" compoundref="_record_id_8hpp" startline="32">learnql::core::RecordId::page_id</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a02f29d7186698502f31ce6f6db4523c8" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; FieldType &gt;</type>
+        <definition>std::vector&lt; FieldType &gt; learnql::index::PersistentMultiValueSecondaryIndex&lt; T, FieldType &gt;::get_unique_values</definition>
+        <argsstring>() const</argsstring>
+        <name>get_unique_values</name>
+        <qualifiedname>learnql::index::PersistentMultiValueSecondaryIndex::get_unique_values</qualifiedname>
+        <briefdescription>
+<para>Gets all unique field values. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Vector of unique field values in sorted order</para>
+</simplesect>
+This scans all entries and extracts unique field values. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" line="280" column="18" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" bodystart="280" bodyend="300"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a15f94c3dd2797bf43cd6709be2f5ce86" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; std::pair&lt; FieldType, <ref refid="structlearnql_1_1core_1_1_record_id" kindref="compound">core::RecordId</ref> &gt; &gt;</type>
+        <definition>std::vector&lt; std::pair&lt; FieldType, core::RecordId &gt; &gt; learnql::index::PersistentMultiValueSecondaryIndex&lt; T, FieldType &gt;::get_all</definition>
+        <argsstring>() const</argsstring>
+        <name>get_all</name>
+        <qualifiedname>learnql::index::PersistentMultiValueSecondaryIndex::get_all</qualifiedname>
+        <briefdescription>
+<para>Gets all indexed values and their RecordIds. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Vector of (field_value, RecordId) pairs </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" line="306" column="18" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" bodystart="306" bodyend="316"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1aba9766c6eb39206fcd9b15532e31cd07" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>std::size_t learnql::index::PersistentMultiValueSecondaryIndex&lt; T, FieldType &gt;::size</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>size</name>
+        <qualifiedname>learnql::index::PersistentMultiValueSecondaryIndex::size</qualifiedname>
+        <briefdescription>
+<para>Gets the total number of entries in the index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" line="321" column="18" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" bodystart="321" bodyend="323"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a4670f264a41948dc31da3acd4babdac9" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool learnql::index::PersistentMultiValueSecondaryIndex&lt; T, FieldType &gt;::empty</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>empty</name>
+        <qualifiedname>learnql::index::PersistentMultiValueSecondaryIndex::empty</qualifiedname>
+        <briefdescription>
+<para>Checks if the index is empty. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" line="328" column="11" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" bodystart="328" bodyend="330"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a659af66d368d6fa58c85b07398fb03e0" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string &amp; learnql::index::PersistentMultiValueSecondaryIndex&lt; T, FieldType &gt;::get_field_name</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>get_field_name</name>
+        <qualifiedname>learnql::index::PersistentMultiValueSecondaryIndex::get_field_name</qualifiedname>
+        <briefdescription>
+<para>Gets the field name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" line="335" column="24" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" bodystart="335" bodyend="337"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a1b5f70cbe05ff0ebdc5528f86a7caf37" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t learnql::index::PersistentMultiValueSecondaryIndex&lt; T, FieldType &gt;::get_root_page_id</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>get_root_page_id</name>
+        <qualifiedname>learnql::index::PersistentMultiValueSecondaryIndex::get_root_page_id</qualifiedname>
+        <briefdescription>
+<para>Gets the root page ID for persistence. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Root page ID of the underlying B+Tree </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" line="343" column="15" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" bodystart="343" bodyend="345"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a75cd0c04ef34e745474a49e84d2439e4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::index::PersistentMultiValueSecondaryIndex&lt; T, FieldType &gt;::flush</definition>
+        <argsstring>()</argsstring>
+        <name>flush</name>
+        <qualifiedname>learnql::index::PersistentMultiValueSecondaryIndex::flush</qualifiedname>
+        <briefdescription>
+<para>Flushes all changes to disk. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" line="350" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" bodystart="350" bodyend="352"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1ab920716f03ec3d132f55393e21165938" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::index::PersistentMultiValueSecondaryIndex&lt; T, FieldType &gt;::clear_cache</definition>
+        <argsstring>()</argsstring>
+        <name>clear_cache</name>
+        <qualifiedname>learnql::index::PersistentMultiValueSecondaryIndex::clear_cache</qualifiedname>
+        <briefdescription>
+<para>Clears the node cache and flushes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" line="357" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" bodystart="357" bodyend="359"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1ad7da65bbcbac4c4939b6b4a3067da219" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>std::size_t</type>
+            <declname>BatchSize</declname>
+            <defname>BatchSize</defname>
+            <defval>10</defval>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto learnql::index::PersistentMultiValueSecondaryIndex&lt; T, FieldType &gt;::create_batch_iterator</definition>
+        <argsstring>() const</argsstring>
+        <name>create_batch_iterator</name>
+        <qualifiedname>learnql::index::PersistentMultiValueSecondaryIndex::create_batch_iterator</qualifiedname>
+        <briefdescription>
+<para>Creates a batch iterator for the index. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>BatchSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of entries per batch </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classlearnql_1_1index_1_1_batch_iterator" kindref="compound">BatchIterator</ref> for efficient traversal</para>
+</simplesect>
+Uses B+Tree leaf linking for optimal performance. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" line="369" column="11" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" bodystart="369" bodyend="371"/>
+        <references refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1ad7da65bbcbac4c4939b6b4a3067da219" compoundref="_persistent_multi_value_secondary_index_8hpp" startline="369" endline="371">learnql::index::PersistentMultiValueSecondaryIndex&lt; T, FieldType &gt;::create_batch_iterator</references>
+        <referencedby refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1ad7da65bbcbac4c4939b6b4a3067da219" compoundref="_persistent_multi_value_secondary_index_8hpp" startline="369" endline="371">learnql::index::PersistentMultiValueSecondaryIndex&lt; T, FieldType &gt;::create_batch_iterator</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Persistent multi-value secondary index using B+Tree storage. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Record type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>FieldType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of the indexed field</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+This class provides persistent secondary indexing for non-unique fields. Multiple records can have the same field value.</para>
+<para>Unlike the old memory-based <ref refid="classlearnql_1_1index_1_1_multi_value_secondary_index" kindref="compound">MultiValueSecondaryIndex</ref>, this version:<itemizedlist>
+<listitem><para>Persists to disk using B+Tree storage</para>
+</listitem><listitem><para>Survives database restarts</para>
+</listitem><listitem><para>Supports efficient range queries</para>
+</listitem><listitem><para>Uses composite keys to handle duplicates</para>
+</listitem></itemizedlist>
+</para>
+<para>For unique secondary indexes, use <ref refid="classlearnql_1_1index_1_1_persistent_secondary_index" kindref="compound">PersistentSecondaryIndex</ref>.</para>
+<para>Example: <programlisting><codeline><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>storage<sp/>=<sp/>std::make_shared&lt;StorageEngine&gt;(</highlight><highlight class="stringliteral">&quot;db.db&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Create<sp/>multi-value<sp/>index<sp/>on<sp/>department<sp/>field<sp/>(non-unique)</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1ac1200d9a2c9309e35421023e8940eca7" kindref="member">PersistentMultiValueSecondaryIndex&lt;Employee, std::string&gt;</ref><sp/>dept_index(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;department&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>[](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Employee&amp;<sp/>e)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>e.get_department();<sp/>},</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>storage</highlight></codeline>
+<codeline><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Insert<sp/>multiple<sp/>employees<sp/>in<sp/>same<sp/>department</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">dept_index.insert(alice,<sp/>RecordId{1,<sp/>0});<sp/><sp/></highlight><highlight class="comment">//<sp/>dept<sp/>=<sp/>&quot;Engineering&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">dept_index.insert(bob,<sp/>RecordId{2,<sp/>0});<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>dept<sp/>=<sp/>&quot;Engineering&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Find<sp/>all<sp/>employees<sp/>in<sp/>Engineering</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>rids<sp/>=<sp/>dept_index.find(</highlight><highlight class="stringliteral">&quot;Engineering&quot;</highlight><highlight class="normal">);<sp/><sp/></highlight><highlight class="comment">//<sp/>Returns<sp/>2<sp/>RecordIds</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Persist<sp/>to<sp/>disk</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">dept_index.flush();</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" line="142" column="1" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" bodystart="142" bodyend="377"/>
+    <listofallmembers>
+      <member refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1ab920716f03ec3d132f55393e21165938" prot="public" virt="non-virtual"><scope>learnql::index::PersistentMultiValueSecondaryIndex</scope><name>clear_cache</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a4436d001e5a31009de3507fe0c1624ff" prot="public" virt="non-virtual"><scope>learnql::index::PersistentMultiValueSecondaryIndex</scope><name>composite_key_type</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a9f839ee942b3a7c4ca8e0282c7e8c07f" prot="public" virt="non-virtual"><scope>learnql::index::PersistentMultiValueSecondaryIndex</scope><name>contains</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1abbfc70d66e3f0bf9c8c4f38cc3f519c3" prot="public" virt="non-virtual"><scope>learnql::index::PersistentMultiValueSecondaryIndex</scope><name>count</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1ad7da65bbcbac4c4939b6b4a3067da219" prot="public" virt="non-virtual"><scope>learnql::index::PersistentMultiValueSecondaryIndex</scope><name>create_batch_iterator</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a4670f264a41948dc31da3acd4babdac9" prot="public" virt="non-virtual"><scope>learnql::index::PersistentMultiValueSecondaryIndex</scope><name>empty</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a9b647d5ee6b69805e2bd615e8c9373bf" prot="private" virt="non-virtual"><scope>learnql::index::PersistentMultiValueSecondaryIndex</scope><name>field_name_</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a576b15d7b905d992a236dd6e7ae99a5b" prot="public" virt="non-virtual"><scope>learnql::index::PersistentMultiValueSecondaryIndex</scope><name>find</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a75cd0c04ef34e745474a49e84d2439e4" prot="public" virt="non-virtual"><scope>learnql::index::PersistentMultiValueSecondaryIndex</scope><name>flush</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a15f94c3dd2797bf43cd6709be2f5ce86" prot="public" virt="non-virtual"><scope>learnql::index::PersistentMultiValueSecondaryIndex</scope><name>get_all</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a659af66d368d6fa58c85b07398fb03e0" prot="public" virt="non-virtual"><scope>learnql::index::PersistentMultiValueSecondaryIndex</scope><name>get_field_name</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a1b5f70cbe05ff0ebdc5528f86a7caf37" prot="public" virt="non-virtual"><scope>learnql::index::PersistentMultiValueSecondaryIndex</scope><name>get_root_page_id</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a02f29d7186698502f31ce6f6db4523c8" prot="public" virt="non-virtual"><scope>learnql::index::PersistentMultiValueSecondaryIndex</scope><name>get_unique_values</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a37f2bd74d169d11f041f0161bce23cd4" prot="private" virt="non-virtual"><scope>learnql::index::PersistentMultiValueSecondaryIndex</scope><name>getter_</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1aa38b9609f0beecb7fe0266e14193c6a8" prot="public" virt="non-virtual"><scope>learnql::index::PersistentMultiValueSecondaryIndex</scope><name>getter_type</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1ab75ec5df02a61099f559ec0a15661991" prot="private" virt="non-virtual"><scope>learnql::index::PersistentMultiValueSecondaryIndex</scope><name>index_</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a0320cde8e42bbb82356fe2b3aa25f733" prot="public" virt="non-virtual"><scope>learnql::index::PersistentMultiValueSecondaryIndex</scope><name>index_type</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a2743930dab02b7ade766cbb64187ba7b" prot="public" virt="non-virtual"><scope>learnql::index::PersistentMultiValueSecondaryIndex</scope><name>insert</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1ac1200d9a2c9309e35421023e8940eca7" prot="public" virt="non-virtual"><scope>learnql::index::PersistentMultiValueSecondaryIndex</scope><name>PersistentMultiValueSecondaryIndex</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1aeef5f8091acdfcfd7b677ca67e1e25c1" prot="public" virt="non-virtual"><scope>learnql::index::PersistentMultiValueSecondaryIndex</scope><name>remove</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1ad71ebdd59de77d2509c144f11ca0362c" prot="public" virt="non-virtual"><scope>learnql::index::PersistentMultiValueSecondaryIndex</scope><name>remove_all</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1aba9766c6eb39206fcd9b15532e31cd07" prot="public" virt="non-virtual"><scope>learnql::index::PersistentMultiValueSecondaryIndex</scope><name>size</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1aeb054a2c8102513522ab812fceec37cf" prot="public" virt="non-virtual"><scope>learnql::index::PersistentMultiValueSecondaryIndex</scope><name>update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

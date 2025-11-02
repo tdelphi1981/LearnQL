@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="structlearnql_1_1debug_1_1_table_statistics" kind="struct" language="C++" prot="public">
+    <compoundname>learnql::debug::TableStatistics</compoundname>
+    <includes refid="_statistics_8hpp" local="no">Statistics.hpp</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlearnql_1_1debug_1_1_table_statistics_1ae8bf82b2fec86a7cf33650325a3c6d4e" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string learnql::debug::TableStatistics::table_name</definition>
+        <argsstring></argsstring>
+        <name>table_name</name>
+        <qualifiedname>learnql::debug::TableStatistics::table_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Statistics.hpp" line="17" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Statistics.hpp" bodystart="17" bodyend="-1"/>
+        <referencedby refid="structlearnql_1_1debug_1_1_table_statistics_1ab6715ece2303c1efb51cca968f1a1245" compoundref="_statistics_8hpp" startline="31" endline="41">print</referencedby>
+        <referencedby refid="classlearnql_1_1debug_1_1_statistics_collector_1a95b3939f6a072f57b194dc43bb871235" compoundref="_statistics_8hpp" startline="117" endline="119">learnql::debug::StatisticsCollector::record_table</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1debug_1_1_table_statistics_1a270365c55f8f8bcd8386779aada69280" prot="public" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t learnql::debug::TableStatistics::row_count</definition>
+        <argsstring></argsstring>
+        <name>row_count</name>
+        <qualifiedname>learnql::debug::TableStatistics::row_count</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Statistics.hpp" line="18" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Statistics.hpp" bodystart="18" bodyend="-1"/>
+        <referencedby refid="structlearnql_1_1debug_1_1_table_statistics_1a82c1db2471607a8aa0adb493b0dccbed" compoundref="_statistics_8hpp" startline="23" endline="25">avg_row_size</referencedby>
+        <referencedby refid="structlearnql_1_1debug_1_1_table_statistics_1a35aeb32ac47a071e27cdf7371bafd731" compoundref="_statistics_8hpp" startline="27" endline="29">avg_rows_per_page</referencedby>
+        <referencedby refid="structlearnql_1_1debug_1_1_table_statistics_1ab6715ece2303c1efb51cca968f1a1245" compoundref="_statistics_8hpp" startline="31" endline="41">print</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1debug_1_1_table_statistics_1a87628f5b4daaf8dae5f4e1bbcec2c601" prot="public" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t learnql::debug::TableStatistics::page_count</definition>
+        <argsstring></argsstring>
+        <name>page_count</name>
+        <qualifiedname>learnql::debug::TableStatistics::page_count</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Statistics.hpp" line="19" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Statistics.hpp" bodystart="19" bodyend="-1"/>
+        <referencedby refid="structlearnql_1_1debug_1_1_table_statistics_1a35aeb32ac47a071e27cdf7371bafd731" compoundref="_statistics_8hpp" startline="27" endline="29">avg_rows_per_page</referencedby>
+        <referencedby refid="structlearnql_1_1debug_1_1_table_statistics_1ab6715ece2303c1efb51cca968f1a1245" compoundref="_statistics_8hpp" startline="31" endline="41">print</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1debug_1_1_table_statistics_1a6f8bea41a884707effaa866c6727c9fb" prot="public" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t learnql::debug::TableStatistics::total_bytes</definition>
+        <argsstring></argsstring>
+        <name>total_bytes</name>
+        <qualifiedname>learnql::debug::TableStatistics::total_bytes</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Statistics.hpp" line="20" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Statistics.hpp" bodystart="20" bodyend="-1"/>
+        <referencedby refid="structlearnql_1_1debug_1_1_table_statistics_1a82c1db2471607a8aa0adb493b0dccbed" compoundref="_statistics_8hpp" startline="23" endline="25">avg_row_size</referencedby>
+        <referencedby refid="structlearnql_1_1debug_1_1_table_statistics_1ab6715ece2303c1efb51cca968f1a1245" compoundref="_statistics_8hpp" startline="31" endline="41">print</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1debug_1_1_table_statistics_1ac65b475a4741826cdd9090c472042621" prot="public" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t learnql::debug::TableStatistics::index_count</definition>
+        <argsstring></argsstring>
+        <name>index_count</name>
+        <qualifiedname>learnql::debug::TableStatistics::index_count</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Statistics.hpp" line="21" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Statistics.hpp" bodystart="21" bodyend="-1"/>
+        <referencedby refid="structlearnql_1_1debug_1_1_table_statistics_1ab6715ece2303c1efb51cca968f1a1245" compoundref="_statistics_8hpp" startline="31" endline="41">print</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structlearnql_1_1debug_1_1_table_statistics_1a82c1db2471607a8aa0adb493b0dccbed" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double learnql::debug::TableStatistics::avg_row_size</definition>
+        <argsstring>() const</argsstring>
+        <name>avg_row_size</name>
+        <qualifiedname>learnql::debug::TableStatistics::avg_row_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Statistics.hpp" line="23" column="13" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Statistics.hpp" bodystart="23" bodyend="25"/>
+        <references refid="structlearnql_1_1debug_1_1_table_statistics_1a270365c55f8f8bcd8386779aada69280" compoundref="_statistics_8hpp" startline="18">row_count</references>
+        <references refid="structlearnql_1_1debug_1_1_table_statistics_1a6f8bea41a884707effaa866c6727c9fb" compoundref="_statistics_8hpp" startline="20">total_bytes</references>
+        <referencedby refid="structlearnql_1_1debug_1_1_table_statistics_1ab6715ece2303c1efb51cca968f1a1245" compoundref="_statistics_8hpp" startline="31" endline="41">print</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1debug_1_1_table_statistics_1a35aeb32ac47a071e27cdf7371bafd731" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double learnql::debug::TableStatistics::avg_rows_per_page</definition>
+        <argsstring>() const</argsstring>
+        <name>avg_rows_per_page</name>
+        <qualifiedname>learnql::debug::TableStatistics::avg_rows_per_page</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Statistics.hpp" line="27" column="13" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Statistics.hpp" bodystart="27" bodyend="29"/>
+        <references refid="structlearnql_1_1debug_1_1_table_statistics_1a87628f5b4daaf8dae5f4e1bbcec2c601" compoundref="_statistics_8hpp" startline="19">page_count</references>
+        <references refid="structlearnql_1_1debug_1_1_table_statistics_1a270365c55f8f8bcd8386779aada69280" compoundref="_statistics_8hpp" startline="18">row_count</references>
+        <referencedby refid="structlearnql_1_1debug_1_1_table_statistics_1ab6715ece2303c1efb51cca968f1a1245" compoundref="_statistics_8hpp" startline="31" endline="41">print</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1debug_1_1_table_statistics_1ab6715ece2303c1efb51cca968f1a1245" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::debug::TableStatistics::print</definition>
+        <argsstring>() const</argsstring>
+        <name>print</name>
+        <qualifiedname>learnql::debug::TableStatistics::print</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Statistics.hpp" line="31" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Statistics.hpp" bodystart="31" bodyend="41"/>
+        <references refid="structlearnql_1_1debug_1_1_table_statistics_1a82c1db2471607a8aa0adb493b0dccbed" compoundref="_statistics_8hpp" startline="23" endline="25">avg_row_size</references>
+        <references refid="structlearnql_1_1debug_1_1_table_statistics_1a35aeb32ac47a071e27cdf7371bafd731" compoundref="_statistics_8hpp" startline="27" endline="29">avg_rows_per_page</references>
+        <references refid="structlearnql_1_1debug_1_1_table_statistics_1ac65b475a4741826cdd9090c472042621" compoundref="_statistics_8hpp" startline="21">index_count</references>
+        <references refid="structlearnql_1_1debug_1_1_table_statistics_1a87628f5b4daaf8dae5f4e1bbcec2c601" compoundref="_statistics_8hpp" startline="19">page_count</references>
+        <references refid="structlearnql_1_1debug_1_1_table_statistics_1a270365c55f8f8bcd8386779aada69280" compoundref="_statistics_8hpp" startline="18">row_count</references>
+        <references refid="structlearnql_1_1debug_1_1_table_statistics_1ae8bf82b2fec86a7cf33650325a3c6d4e" compoundref="_statistics_8hpp" startline="17">table_name</references>
+        <references refid="structlearnql_1_1debug_1_1_table_statistics_1a6f8bea41a884707effaa866c6727c9fb" compoundref="_statistics_8hpp" startline="20">total_bytes</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Statistics for a table. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>learnql::debug::TableStatistics</label>
+        <link refid="structlearnql_1_1debug_1_1_table_statistics"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>table_name</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="2">
+        <label>std::string</label>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Statistics.hpp" line="16" column="1" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Statistics.hpp" bodystart="16" bodyend="42"/>
+    <listofallmembers>
+      <member refid="structlearnql_1_1debug_1_1_table_statistics_1a82c1db2471607a8aa0adb493b0dccbed" prot="public" virt="non-virtual"><scope>learnql::debug::TableStatistics</scope><name>avg_row_size</name></member>
+      <member refid="structlearnql_1_1debug_1_1_table_statistics_1a35aeb32ac47a071e27cdf7371bafd731" prot="public" virt="non-virtual"><scope>learnql::debug::TableStatistics</scope><name>avg_rows_per_page</name></member>
+      <member refid="structlearnql_1_1debug_1_1_table_statistics_1ac65b475a4741826cdd9090c472042621" prot="public" virt="non-virtual"><scope>learnql::debug::TableStatistics</scope><name>index_count</name></member>
+      <member refid="structlearnql_1_1debug_1_1_table_statistics_1a87628f5b4daaf8dae5f4e1bbcec2c601" prot="public" virt="non-virtual"><scope>learnql::debug::TableStatistics</scope><name>page_count</name></member>
+      <member refid="structlearnql_1_1debug_1_1_table_statistics_1ab6715ece2303c1efb51cca968f1a1245" prot="public" virt="non-virtual"><scope>learnql::debug::TableStatistics</scope><name>print</name></member>
+      <member refid="structlearnql_1_1debug_1_1_table_statistics_1a270365c55f8f8bcd8386779aada69280" prot="public" virt="non-virtual"><scope>learnql::debug::TableStatistics</scope><name>row_count</name></member>
+      <member refid="structlearnql_1_1debug_1_1_table_statistics_1ae8bf82b2fec86a7cf33650325a3c6d4e" prot="public" virt="non-virtual"><scope>learnql::debug::TableStatistics</scope><name>table_name</name></member>
+      <member refid="structlearnql_1_1debug_1_1_table_statistics_1a6f8bea41a884707effaa866c6727c9fb" prot="public" virt="non-virtual"><scope>learnql::debug::TableStatistics</scope><name>total_bytes</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,369 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="_table_metadata_8hpp" kind="file" language="C++">
+    <compoundname>TableMetadata.hpp</compoundname>
+    <includes refid="_field_8hpp" local="yes">../query/Field.hpp</includes>
+    <includes refid="_binary_writer_8hpp" local="yes">../serialization/BinaryWriter.hpp</includes>
+    <includes refid="_binary_reader_8hpp" local="yes">../serialization/BinaryReader.hpp</includes>
+    <includes refid="_field_info_8hpp" local="yes">../reflection/FieldInfo.hpp</includes>
+    <includes local="no">string</includes>
+    <includes local="no">cstdint</includes>
+    <includedby refid="_learn_q_l_8hpp" local="yes">/Users/tolgaberber/Work/CPP/LearnQL/learnql/LearnQL.hpp</includedby>
+    <includedby refid="_system_catalog_8hpp" local="yes">/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/SystemCatalog.hpp</includedby>
+    <includedby refid="_database_8hpp" local="yes">/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Database.hpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/TableMetadata.hpp</label>
+        <link refid="_table_metadata_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>../concepts/Serializable.hpp</label>
+        <link refid="_serializable_8hpp"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>../query/Field.hpp</label>
+        <link refid="_field_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>expressions/BinaryExpr.hpp</label>
+        <link refid="_binary_expr_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>expressions/ConstExpr.hpp</label>
+        <link refid="_const_expr_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Expr.hpp</label>
+        <link refid="_expr_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>expressions/FieldExpr.hpp</label>
+        <link refid="_field_expr_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>expressions/LogicalExpr.hpp</label>
+        <link refid="_logical_expr_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>../reflection/FieldInfo.hpp</label>
+        <link refid="_field_info_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>../serialization/BinaryReader.hpp</label>
+        <link refid="_binary_reader_8hpp"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>../serialization/BinaryWriter.hpp</label>
+        <link refid="_binary_writer_8hpp"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>bit</label>
+      </node>
+      <node id="14">
+        <label>concepts</label>
+      </node>
+      <node id="23">
+        <label>cstdint</label>
+      </node>
+      <node id="17">
+        <label>cstring</label>
+      </node>
+      <node id="6">
+        <label>functional</label>
+      </node>
+      <node id="16">
+        <label>memory</label>
+      </node>
+      <node id="18">
+        <label>span</label>
+      </node>
+      <node id="9">
+        <label>sstream</label>
+      </node>
+      <node id="21">
+        <label>stdexcept</label>
+      </node>
+      <node id="7">
+        <label>string</label>
+      </node>
+      <node id="5">
+        <label>type_traits</label>
+      </node>
+      <node id="15">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/LearnQL.hpp</label>
+        <link refid="_learn_q_l_8hpp"/>
+      </node>
+      <node id="3">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/SystemCatalog.hpp</label>
+        <link refid="_system_catalog_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/TableMetadata.hpp</label>
+        <link refid="_table_metadata_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Database.hpp</label>
+        <link refid="_database_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/ReadOnlyTable.hpp</label>
+        <link refid="_read_only_table_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp</label>
+        <link refid="_table_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp</label>
+        <link refid="_query_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structlearnql_1_1catalog_1_1_table_metadata" prot="public">learnql::catalog::TableMetadata</innerclass>
+    <innernamespace refid="namespacelearnql">learnql</innernamespace>
+    <innernamespace refid="namespacelearnql_1_1catalog">learnql::catalog</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>LEARNQL_CATALOG_TABLEMETADATA_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LEARNQL_CATALOG_TABLEMETADATA_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_field_8hpp" kindref="compound">../query/Field.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_binary_writer_8hpp" kindref="compound">../serialization/BinaryWriter.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_binary_reader_8hpp" kindref="compound">../serialization/BinaryReader.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_field_info_8hpp" kindref="compound">../reflection/FieldInfo.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdint&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacelearnql_1_1catalog" kindref="compound">learnql::catalog</ref><sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="structlearnql_1_1catalog_1_1_table_metadata" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structlearnql_1_1catalog_1_1_table_metadata" kindref="compound">TableMetadata</ref><sp/>{</highlight></codeline>
+<codeline lineno="28" refid="structlearnql_1_1catalog_1_1_table_metadata_1a34c6807c13e30a2aabfeb68816450536" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="structlearnql_1_1catalog_1_1_table_metadata_1a34c6807c13e30a2aabfeb68816450536" kindref="member">primary_key_type</ref><sp/>=<sp/>std::string;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>=====<sp/>Data<sp/>Members<sp/>=====</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="structlearnql_1_1catalog_1_1_table_metadata_1addbe3adb705e67a23c3f9bb1303d481c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="structlearnql_1_1catalog_1_1_table_metadata_1addbe3adb705e67a23c3f9bb1303d481c" kindref="member">table_name</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="33" refid="structlearnql_1_1catalog_1_1_table_metadata_1aa5079bcbe30a8b48b1578f877024e894" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="structlearnql_1_1catalog_1_1_table_metadata_1aa5079bcbe30a8b48b1578f877024e894" kindref="member">type_name</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="34" refid="structlearnql_1_1catalog_1_1_table_metadata_1aaca15c72147da610f4c49b7a10b4f833" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/><ref refid="structlearnql_1_1catalog_1_1_table_metadata_1aaca15c72147da610f4c49b7a10b4f833" kindref="member">index_root_page</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="35" refid="structlearnql_1_1catalog_1_1_table_metadata_1a4e9a6cc96530b45f37f12a23b0526467" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::size_t<sp/><ref refid="structlearnql_1_1catalog_1_1_table_metadata_1a4e9a6cc96530b45f37f12a23b0526467" kindref="member">record_count</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="36" refid="structlearnql_1_1catalog_1_1_table_metadata_1ab1b9ae662845a2ec4351ed08d5634037" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/><ref refid="structlearnql_1_1catalog_1_1_table_metadata_1ab1b9ae662845a2ec4351ed08d5634037" kindref="member">created_timestamp</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="37" refid="structlearnql_1_1catalog_1_1_table_metadata_1aa89575c334f5d87bbd946564f7ca0207" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structlearnql_1_1catalog_1_1_table_metadata_1aa89575c334f5d87bbd946564f7ca0207" kindref="member">is_system_table</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>=====<sp/>Getters<sp/>(required<sp/>for<sp/>Field<sp/>template<sp/>construction)<sp/>=====</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="structlearnql_1_1catalog_1_1_table_metadata_1a351798866fb25f6068318667a264a98c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/><ref refid="structlearnql_1_1catalog_1_1_table_metadata_1a351798866fb25f6068318667a264a98c" kindref="member">get_table_name</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structlearnql_1_1catalog_1_1_table_metadata_1addbe3adb705e67a23c3f9bb1303d481c" kindref="member">table_name</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="42" refid="structlearnql_1_1catalog_1_1_table_metadata_1af9f7a9d778e2d039f706e5432e3ac59a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/><ref refid="structlearnql_1_1catalog_1_1_table_metadata_1af9f7a9d778e2d039f706e5432e3ac59a" kindref="member">get_type_name</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structlearnql_1_1catalog_1_1_table_metadata_1aa5079bcbe30a8b48b1578f877024e894" kindref="member">type_name</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="43" refid="structlearnql_1_1catalog_1_1_table_metadata_1ab268bd92cf32a8eacbbc6ecfbf7d2f70" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/><ref refid="structlearnql_1_1catalog_1_1_table_metadata_1ab268bd92cf32a8eacbbc6ecfbf7d2f70" kindref="member">get_index_root_page</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structlearnql_1_1catalog_1_1_table_metadata_1aaca15c72147da610f4c49b7a10b4f833" kindref="member">index_root_page</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="44" refid="structlearnql_1_1catalog_1_1_table_metadata_1a36c96b476f5c0935b751f9cff55d217e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::size_t<sp/><ref refid="structlearnql_1_1catalog_1_1_table_metadata_1a36c96b476f5c0935b751f9cff55d217e" kindref="member">get_record_count</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structlearnql_1_1catalog_1_1_table_metadata_1a4e9a6cc96530b45f37f12a23b0526467" kindref="member">record_count</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="45" refid="structlearnql_1_1catalog_1_1_table_metadata_1ad0122c71fc127add6f61baae22b1f4c0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/><ref refid="structlearnql_1_1catalog_1_1_table_metadata_1ad0122c71fc127add6f61baae22b1f4c0" kindref="member">get_created_timestamp</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structlearnql_1_1catalog_1_1_table_metadata_1ab1b9ae662845a2ec4351ed08d5634037" kindref="member">created_timestamp</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="46" refid="structlearnql_1_1catalog_1_1_table_metadata_1ae5666a426593f4d13a9c666a0f574684" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structlearnql_1_1catalog_1_1_table_metadata_1ae5666a426593f4d13a9c666a0f574684" kindref="member">get_is_system_table</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structlearnql_1_1catalog_1_1_table_metadata_1aa89575c334f5d87bbd946564f7ca0207" kindref="member">is_system_table</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>=====<sp/>Static<sp/>Fields<sp/>(pre-defined<sp/>for<sp/>user<sp/>queries)<sp/>=====</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="structlearnql_1_1catalog_1_1_table_metadata_1add8e828b1432b1d165bded8cc45727b7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classlearnql_1_1query_1_1_field" kindref="compound">query::Field&lt;TableMetadata, std::string&gt;</ref><sp/><ref refid="structlearnql_1_1catalog_1_1_table_metadata_1add8e828b1432b1d165bded8cc45727b7" kindref="member">name</ref>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;table_name&quot;</highlight><highlight class="normal">,<sp/>&amp;<ref refid="structlearnql_1_1catalog_1_1_table_metadata_1a351798866fb25f6068318667a264a98c" kindref="member">TableMetadata::get_table_name</ref></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="structlearnql_1_1catalog_1_1_table_metadata_1a73779e71f302a5f7d43aed7b717a3671" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classlearnql_1_1query_1_1_field" kindref="compound">query::Field&lt;TableMetadata, std::string&gt;</ref><sp/><ref refid="structlearnql_1_1catalog_1_1_table_metadata_1a73779e71f302a5f7d43aed7b717a3671" kindref="member">type</ref>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;type_name&quot;</highlight><highlight class="normal">,<sp/>&amp;<ref refid="structlearnql_1_1catalog_1_1_table_metadata_1af9f7a9d778e2d039f706e5432e3ac59a" kindref="member">TableMetadata::get_type_name</ref></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="structlearnql_1_1catalog_1_1_table_metadata_1a17887bb1c8d0141173433596ea7684d6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classlearnql_1_1query_1_1_field" kindref="compound">query::Field&lt;TableMetadata, uint64_t&gt;</ref><sp/><ref refid="structlearnql_1_1catalog_1_1_table_metadata_1a17887bb1c8d0141173433596ea7684d6" kindref="member">root_page</ref>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;index_root_page&quot;</highlight><highlight class="normal">,<sp/>&amp;<ref refid="structlearnql_1_1catalog_1_1_table_metadata_1ab268bd92cf32a8eacbbc6ecfbf7d2f70" kindref="member">TableMetadata::get_index_root_page</ref></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="structlearnql_1_1catalog_1_1_table_metadata_1ade7d6475a5db2892bdbb3c4097af2fb5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classlearnql_1_1query_1_1_field" kindref="compound">query::Field&lt;TableMetadata, std::size_t&gt;</ref><sp/><ref refid="structlearnql_1_1catalog_1_1_table_metadata_1ade7d6475a5db2892bdbb3c4097af2fb5" kindref="member">records</ref>{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;record_count&quot;</highlight><highlight class="normal">,<sp/>&amp;<ref refid="structlearnql_1_1catalog_1_1_table_metadata_1a36c96b476f5c0935b751f9cff55d217e" kindref="member">TableMetadata::get_record_count</ref></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="structlearnql_1_1catalog_1_1_table_metadata_1a7f0b8e4ccc75feab87e20174e936448f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classlearnql_1_1query_1_1_field" kindref="compound">query::Field&lt;TableMetadata, uint64_t&gt;</ref><sp/><ref refid="structlearnql_1_1catalog_1_1_table_metadata_1a7f0b8e4ccc75feab87e20174e936448f" kindref="member">created</ref>{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;created_timestamp&quot;</highlight><highlight class="normal">,<sp/>&amp;<ref refid="structlearnql_1_1catalog_1_1_table_metadata_1ad0122c71fc127add6f61baae22b1f4c0" kindref="member">TableMetadata::get_created_timestamp</ref></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="structlearnql_1_1catalog_1_1_table_metadata_1adbb80aeccd6f7c5928b8dbb726987748" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classlearnql_1_1query_1_1_field" kindref="compound">query::Field&lt;TableMetadata, bool&gt;</ref><sp/><ref refid="structlearnql_1_1catalog_1_1_table_metadata_1adbb80aeccd6f7c5928b8dbb726987748" kindref="member">is_system</ref>{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;is_system_table&quot;</highlight><highlight class="normal">,<sp/>&amp;<ref refid="structlearnql_1_1catalog_1_1_table_metadata_1ae5666a426593f4d13a9c666a0f574684" kindref="member">TableMetadata::get_is_system_table</ref></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>=====<sp/>Primary<sp/>Key<sp/>=====</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100" refid="structlearnql_1_1catalog_1_1_table_metadata_1a631a879a886a640af81aab7f11fd4389" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="structlearnql_1_1catalog_1_1_table_metadata_1a631a879a886a640af81aab7f11fd4389" kindref="member">get_primary_key</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structlearnql_1_1catalog_1_1_table_metadata_1addbe3adb705e67a23c3f9bb1303d481c" kindref="member">table_name</ref>;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>=====<sp/>Serialization<sp/>=====</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106" refid="structlearnql_1_1catalog_1_1_table_metadata_1aa684d6b048218d0ac16ea8832dae75ba" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structlearnql_1_1catalog_1_1_table_metadata_1aa684d6b048218d0ac16ea8832dae75ba" kindref="member">serialize</ref>(<ref refid="classlearnql_1_1serialization_1_1_binary_writer" kindref="compound">serialization::BinaryWriter</ref>&amp;<sp/>writer)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>writer.<ref refid="classlearnql_1_1serialization_1_1_binary_writer_1a7343d36f8a9adc28f9ab78826055cda7" kindref="member">write</ref>(<ref refid="structlearnql_1_1catalog_1_1_table_metadata_1addbe3adb705e67a23c3f9bb1303d481c" kindref="member">table_name</ref>);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>writer.<ref refid="classlearnql_1_1serialization_1_1_binary_writer_1a7343d36f8a9adc28f9ab78826055cda7" kindref="member">write</ref>(<ref refid="structlearnql_1_1catalog_1_1_table_metadata_1aa5079bcbe30a8b48b1578f877024e894" kindref="member">type_name</ref>);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>writer.<ref refid="classlearnql_1_1serialization_1_1_binary_writer_1a7343d36f8a9adc28f9ab78826055cda7" kindref="member">write</ref>(<ref refid="structlearnql_1_1catalog_1_1_table_metadata_1aaca15c72147da610f4c49b7a10b4f833" kindref="member">index_root_page</ref>);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>writer.<ref refid="classlearnql_1_1serialization_1_1_binary_writer_1a7343d36f8a9adc28f9ab78826055cda7" kindref="member">write</ref>(<ref refid="structlearnql_1_1catalog_1_1_table_metadata_1a4e9a6cc96530b45f37f12a23b0526467" kindref="member">record_count</ref>);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>writer.<ref refid="classlearnql_1_1serialization_1_1_binary_writer_1a7343d36f8a9adc28f9ab78826055cda7" kindref="member">write</ref>(<ref refid="structlearnql_1_1catalog_1_1_table_metadata_1ab1b9ae662845a2ec4351ed08d5634037" kindref="member">created_timestamp</ref>);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>writer.<ref refid="classlearnql_1_1serialization_1_1_binary_writer_1a7343d36f8a9adc28f9ab78826055cda7" kindref="member">write</ref>(<ref refid="structlearnql_1_1catalog_1_1_table_metadata_1aa89575c334f5d87bbd946564f7ca0207" kindref="member">is_system_table</ref>);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115" refid="structlearnql_1_1catalog_1_1_table_metadata_1aefed5155afa9a6e081aad81a44d00712" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structlearnql_1_1catalog_1_1_table_metadata_1aefed5155afa9a6e081aad81a44d00712" kindref="member">deserialize</ref>(<ref refid="classlearnql_1_1serialization_1_1_binary_reader" kindref="compound">serialization::BinaryReader</ref>&amp;<sp/>reader)<sp/>{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlearnql_1_1catalog_1_1_table_metadata_1addbe3adb705e67a23c3f9bb1303d481c" kindref="member">table_name</ref><sp/>=<sp/>reader.<ref refid="classlearnql_1_1serialization_1_1_binary_reader_1a2982ba819ac5c8897835d497c41bd861" kindref="member">read_string</ref>();</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlearnql_1_1catalog_1_1_table_metadata_1aa5079bcbe30a8b48b1578f877024e894" kindref="member">type_name</ref><sp/>=<sp/>reader.<ref refid="classlearnql_1_1serialization_1_1_binary_reader_1a2982ba819ac5c8897835d497c41bd861" kindref="member">read_string</ref>();</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlearnql_1_1catalog_1_1_table_metadata_1aaca15c72147da610f4c49b7a10b4f833" kindref="member">index_root_page</ref><sp/>=<sp/>reader.<ref refid="classlearnql_1_1serialization_1_1_binary_reader_1a5a262266f478e4dd3e7db03c46eff1b6" kindref="member">read</ref>&lt;uint64_t&gt;();</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlearnql_1_1catalog_1_1_table_metadata_1a4e9a6cc96530b45f37f12a23b0526467" kindref="member">record_count</ref><sp/>=<sp/>reader.<ref refid="classlearnql_1_1serialization_1_1_binary_reader_1a5a262266f478e4dd3e7db03c46eff1b6" kindref="member">read</ref>&lt;std::size_t&gt;();</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlearnql_1_1catalog_1_1_table_metadata_1ab1b9ae662845a2ec4351ed08d5634037" kindref="member">created_timestamp</ref><sp/>=<sp/>reader.<ref refid="classlearnql_1_1serialization_1_1_binary_reader_1a5a262266f478e4dd3e7db03c46eff1b6" kindref="member">read</ref>&lt;uint64_t&gt;();</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlearnql_1_1catalog_1_1_table_metadata_1aa89575c334f5d87bbd946564f7ca0207" kindref="member">is_system_table</ref><sp/>=<sp/>reader.<ref refid="classlearnql_1_1serialization_1_1_binary_reader_1a5a262266f478e4dd3e7db03c46eff1b6" kindref="member">read</ref>&lt;</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">&gt;();</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>=====<sp/>Comparison<sp/>(for<sp/>testing/debugging)<sp/>=====</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126" refid="structlearnql_1_1catalog_1_1_table_metadata_1a8d66b6d8d8217041f6026faea828ae8d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structlearnql_1_1catalog_1_1_table_metadata_1a8d66b6d8d8217041f6026faea828ae8d" kindref="member">operator==</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlearnql_1_1catalog_1_1_table_metadata" kindref="compound">TableMetadata</ref>&amp;<sp/>other)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structlearnql_1_1catalog_1_1_table_metadata_1addbe3adb705e67a23c3f9bb1303d481c" kindref="member">table_name</ref><sp/>==<sp/>other.<ref refid="structlearnql_1_1catalog_1_1_table_metadata_1addbe3adb705e67a23c3f9bb1303d481c" kindref="member">table_name</ref><sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlearnql_1_1catalog_1_1_table_metadata_1aa5079bcbe30a8b48b1578f877024e894" kindref="member">type_name</ref><sp/>==<sp/>other.<ref refid="structlearnql_1_1catalog_1_1_table_metadata_1aa5079bcbe30a8b48b1578f877024e894" kindref="member">type_name</ref><sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlearnql_1_1catalog_1_1_table_metadata_1aaca15c72147da610f4c49b7a10b4f833" kindref="member">index_root_page</ref><sp/>==<sp/>other.<ref refid="structlearnql_1_1catalog_1_1_table_metadata_1aaca15c72147da610f4c49b7a10b4f833" kindref="member">index_root_page</ref><sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlearnql_1_1catalog_1_1_table_metadata_1a4e9a6cc96530b45f37f12a23b0526467" kindref="member">record_count</ref><sp/>==<sp/>other.<ref refid="structlearnql_1_1catalog_1_1_table_metadata_1a4e9a6cc96530b45f37f12a23b0526467" kindref="member">record_count</ref><sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlearnql_1_1catalog_1_1_table_metadata_1ab1b9ae662845a2ec4351ed08d5634037" kindref="member">created_timestamp</ref><sp/>==<sp/>other.<ref refid="structlearnql_1_1catalog_1_1_table_metadata_1ab1b9ae662845a2ec4351ed08d5634037" kindref="member">created_timestamp</ref><sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlearnql_1_1catalog_1_1_table_metadata_1aa89575c334f5d87bbd946564f7ca0207" kindref="member">is_system_table</ref><sp/>==<sp/>other.<ref refid="structlearnql_1_1catalog_1_1_table_metadata_1aa89575c334f5d87bbd946564f7ca0207" kindref="member">is_system_table</ref>;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>=====<sp/>Reflection<sp/>(for<sp/>system<sp/>catalog<sp/>bootstrap)<sp/>=====</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137" refid="structlearnql_1_1catalog_1_1_table_metadata_1a27e210105501bdf01b38292a956b1a72" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="structlearnql_1_1catalog_1_1_table_metadata_1a27e210105501bdf01b38292a956b1a72" kindref="member">reflect_fields</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacelearnql_1_1reflection" kindref="compound">learnql::reflection</ref>;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;FieldInfo&gt;<sp/>fields;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fields.push_back(<ref refid="structlearnql_1_1reflection_1_1_field_info" kindref="compound">FieldInfo</ref>{</highlight><highlight class="stringliteral">&quot;table_name&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;std::string&quot;</highlight><highlight class="normal">,<sp/>0,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">});</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fields.push_back(<ref refid="structlearnql_1_1reflection_1_1_field_info" kindref="compound">FieldInfo</ref>{</highlight><highlight class="stringliteral">&quot;type_name&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;std::string&quot;</highlight><highlight class="normal">,<sp/>1,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">});</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fields.push_back(<ref refid="structlearnql_1_1reflection_1_1_field_info" kindref="compound">FieldInfo</ref>{</highlight><highlight class="stringliteral">&quot;index_root_page&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;uint64_t&quot;</highlight><highlight class="normal">,<sp/>2,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">});</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fields.push_back(<ref refid="structlearnql_1_1reflection_1_1_field_info" kindref="compound">FieldInfo</ref>{</highlight><highlight class="stringliteral">&quot;record_count&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;std::size_t&quot;</highlight><highlight class="normal">,<sp/>3,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">});</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fields.push_back(<ref refid="structlearnql_1_1reflection_1_1_field_info" kindref="compound">FieldInfo</ref>{</highlight><highlight class="stringliteral">&quot;created_timestamp&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;uint64_t&quot;</highlight><highlight class="normal">,<sp/>4,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">});</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fields.push_back(<ref refid="structlearnql_1_1reflection_1_1_field_info" kindref="compound">FieldInfo</ref>{</highlight><highlight class="stringliteral">&quot;is_system_table&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;bool&quot;</highlight><highlight class="normal">,<sp/>5,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">});</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>fields;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="148"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>learnql::catalog</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>LEARNQL_CATALOG_TABLEMETADATA_HPP</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/TableMetadata.hpp"/>
+  </compounddef>
+</doxygen>

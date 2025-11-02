@@ -1,0 +1,334 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="namespacelearnql_1_1ranges" kind="namespace" language="C++">
+    <compoundname>learnql::ranges</compoundname>
+    <innerclass refid="classlearnql_1_1ranges_1_1_order_by_adaptor" prot="public">learnql::ranges::OrderByAdaptor</innerclass>
+    <innerclass refid="classlearnql_1_1ranges_1_1_select_adaptor" prot="public">learnql::ranges::SelectAdaptor</innerclass>
+    <innerclass refid="classlearnql_1_1ranges_1_1_distinct_adaptor" prot="public">learnql::ranges::DistinctAdaptor</innerclass>
+    <innerclass refid="classlearnql_1_1ranges_1_1_limit_adaptor" prot="public">learnql::ranges::LimitAdaptor</innerclass>
+    <innerclass refid="classlearnql_1_1ranges_1_1_skip_adaptor" prot="public">learnql::ranges::SkipAdaptor</innerclass>
+    <innerclass refid="classlearnql_1_1ranges_1_1_proxy_vector" prot="public">learnql::ranges::ProxyVector</innerclass>
+    <innerclass refid="classlearnql_1_1ranges_1_1_query_view" prot="public">learnql::ranges::QueryView</innerclass>
+    <innernamespace refid="namespacelearnql_1_1ranges_1_1aggregates">learnql::ranges::aggregates</innernamespace>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacelearnql_1_1ranges_1adb0aac8d32b3bc0352902250c5c3ffeb" prot="public" static="no" nodiscard="yes" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Proj</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto learnql::ranges::order_by</definition>
+        <argsstring>(Proj &amp;&amp;proj, bool ascending=true)</argsstring>
+        <name>order_by</name>
+        <qualifiedname>learnql::ranges::order_by</qualifiedname>
+        <param>
+          <type>Proj &amp;&amp;</type>
+          <declname>proj</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>ascending</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Helper function to create an order_by adaptor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/Adaptors.hpp" line="51" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/Adaptors.hpp" bodystart="51" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelearnql_1_1ranges_1ae8e0b745576ffd628c1a7ad513abfad0" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>std::ranges::input_range</type>
+            <declname>R</declname>
+            <defname>R</defname>
+          </param>
+          <param>
+            <type>typename Proj</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto learnql::ranges::operator|</definition>
+        <argsstring>(R &amp;&amp;range, const OrderByAdaptor&lt; Proj &gt; &amp;adaptor)</argsstring>
+        <name>operator|</name>
+        <qualifiedname>learnql::ranges::operator|</qualifiedname>
+        <param>
+          <type>R &amp;&amp;</type>
+          <declname>range</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classlearnql_1_1ranges_1_1_order_by_adaptor" kindref="compound">OrderByAdaptor</ref>&lt; Proj &gt; &amp;</type>
+          <declname>adaptor</declname>
+        </param>
+        <briefdescription>
+<para>Pipe operator for order_by. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/Adaptors.hpp" line="59" column="7" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/Adaptors.hpp" bodystart="59" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelearnql_1_1ranges_1a72fdab88d2d6ba44ce9ac39f3c3ce9c7" prot="public" static="no" nodiscard="yes" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Proj</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto learnql::ranges::select</definition>
+        <argsstring>(Proj &amp;&amp;proj)</argsstring>
+        <name>select</name>
+        <qualifiedname>learnql::ranges::select</qualifiedname>
+        <param>
+          <type>Proj &amp;&amp;</type>
+          <declname>proj</declname>
+        </param>
+        <briefdescription>
+<para>Helper function to create a select adaptor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/Adaptors.hpp" line="92" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/Adaptors.hpp" bodystart="92" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelearnql_1_1ranges_1acc16a0c10a9083b8accf46c08b5b8976" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>std::ranges::input_range</type>
+            <declname>R</declname>
+            <defname>R</defname>
+          </param>
+          <param>
+            <type>typename Proj</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto learnql::ranges::operator|</definition>
+        <argsstring>(R &amp;&amp;range, const SelectAdaptor&lt; Proj &gt; &amp;adaptor)</argsstring>
+        <name>operator|</name>
+        <qualifiedname>learnql::ranges::operator|</qualifiedname>
+        <param>
+          <type>R &amp;&amp;</type>
+          <declname>range</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classlearnql_1_1ranges_1_1_select_adaptor" kindref="compound">SelectAdaptor</ref>&lt; Proj &gt; &amp;</type>
+          <declname>adaptor</declname>
+        </param>
+        <briefdescription>
+<para>Pipe operator for select. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/Adaptors.hpp" line="100" column="7" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/Adaptors.hpp" bodystart="100" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelearnql_1_1ranges_1a19b2b5f954e6fd2c36ed43563c1bed6d" prot="public" static="no" nodiscard="yes" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto learnql::ranges::distinct</definition>
+        <argsstring>()</argsstring>
+        <name>distinct</name>
+        <qualifiedname>learnql::ranges::distinct</qualifiedname>
+        <briefdescription>
+<para>Helper function to create a distinct adaptor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/Adaptors.hpp" line="131" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/Adaptors.hpp" bodystart="131" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelearnql_1_1ranges_1a8bba8fe7051ff09bd04f73e95de1c178" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>std::ranges::input_range</type>
+            <declname>R</declname>
+            <defname>R</defname>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto learnql::ranges::operator|</definition>
+        <argsstring>(R &amp;&amp;range, const DistinctAdaptor &amp;adaptor)</argsstring>
+        <name>operator|</name>
+        <qualifiedname>learnql::ranges::operator|</qualifiedname>
+        <param>
+          <type>R &amp;&amp;</type>
+          <declname>range</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classlearnql_1_1ranges_1_1_distinct_adaptor" kindref="compound">DistinctAdaptor</ref> &amp;</type>
+          <declname>adaptor</declname>
+        </param>
+        <briefdescription>
+<para>Pipe operator for distinct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/Adaptors.hpp" line="139" column="7" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/Adaptors.hpp" bodystart="139" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelearnql_1_1ranges_1a2bbd315971ac7f77ad01ca24bb06b37f" prot="public" static="no" nodiscard="yes" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto learnql::ranges::limit</definition>
+        <argsstring>(std::size_t n)</argsstring>
+        <name>limit</name>
+        <qualifiedname>learnql::ranges::limit</qualifiedname>
+        <param>
+          <type>std::size_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Helper function to create a limit adaptor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/Adaptors.hpp" line="172" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/Adaptors.hpp" bodystart="172" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelearnql_1_1ranges_1a409cd597bba7b754bb60a1c12206ee39" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>std::ranges::input_range</type>
+            <declname>R</declname>
+            <defname>R</defname>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto learnql::ranges::operator|</definition>
+        <argsstring>(R &amp;&amp;range, const LimitAdaptor &amp;adaptor)</argsstring>
+        <name>operator|</name>
+        <qualifiedname>learnql::ranges::operator|</qualifiedname>
+        <param>
+          <type>R &amp;&amp;</type>
+          <declname>range</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classlearnql_1_1ranges_1_1_limit_adaptor" kindref="compound">LimitAdaptor</ref> &amp;</type>
+          <declname>adaptor</declname>
+        </param>
+        <briefdescription>
+<para>Pipe operator for limit. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/Adaptors.hpp" line="180" column="7" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/Adaptors.hpp" bodystart="180" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelearnql_1_1ranges_1a80316e88998a8e9b1465dc581a77a51f" prot="public" static="no" nodiscard="yes" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto learnql::ranges::skip</definition>
+        <argsstring>(std::size_t n)</argsstring>
+        <name>skip</name>
+        <qualifiedname>learnql::ranges::skip</qualifiedname>
+        <param>
+          <type>std::size_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Helper function to create a skip adaptor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/Adaptors.hpp" line="213" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/Adaptors.hpp" bodystart="213" bodyend="215"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelearnql_1_1ranges_1ad5696ca98c5bd6cb181912652f119592" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>std::ranges::input_range</type>
+            <declname>R</declname>
+            <defname>R</defname>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto learnql::ranges::operator|</definition>
+        <argsstring>(R &amp;&amp;range, const SkipAdaptor &amp;adaptor)</argsstring>
+        <name>operator|</name>
+        <qualifiedname>learnql::ranges::operator|</qualifiedname>
+        <param>
+          <type>R &amp;&amp;</type>
+          <declname>range</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classlearnql_1_1ranges_1_1_skip_adaptor" kindref="compound">SkipAdaptor</ref> &amp;</type>
+          <declname>adaptor</declname>
+        </param>
+        <briefdescription>
+<para>Pipe operator for skip. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/Adaptors.hpp" line="221" column="7" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/Adaptors.hpp" bodystart="221" bodyend="223"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelearnql_1_1ranges_1ae9315046002161879c27aa284eacb469" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>learnql::ranges::QueryView</definition>
+        <argsstring>(std::vector&lt; T &gt;) -&gt; QueryView&lt; T &gt;</argsstring>
+        <name>QueryView</name>
+        <qualifiedname>learnql::ranges::QueryView</qualifiedname>
+        <param>
+          <type>std::vector&lt; T &gt;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/QueryView.hpp" line="151" column="1" declfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/QueryView.hpp" declline="151" declcolumn="1"/>
+        <referencedby refid="classlearnql_1_1core_1_1_table_1abf144135f027702e790d9f22aa545300" compoundref="_table_8hpp" startline="715" endline="717">learnql::core::Table&lt; T, BatchSize &gt;::view</referencedby>
+        <referencedby refid="classlearnql_1_1core_1_1_table_1a017434d424c8c41073ba10cdf1df87b3" compoundref="_table_8hpp" startline="740" endline="742">learnql::core::Table&lt; T, BatchSize &gt;::view_where</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacelearnql_1_1ranges_1ae501a306e1cb43f396caefced6992abd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>BatchSize</declname>
+            <defname>BatchSize</defname>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>learnql::ranges::QueryView</definition>
+        <argsstring>(ProxyVector&lt; T, BatchSize &gt;) -&gt; QueryView&lt; T &gt;</argsstring>
+        <name>QueryView</name>
+        <qualifiedname>learnql::ranges::QueryView</qualifiedname>
+        <param>
+          <type><ref refid="classlearnql_1_1ranges_1_1_proxy_vector" kindref="compound">ProxyVector</ref>&lt; T, BatchSize &gt;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/QueryView.hpp" line="154" column="1" declfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/QueryView.hpp" declline="154" declcolumn="1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/Adaptors.hpp" line="10" column="1"/>
+  </compounddef>
+</doxygen>

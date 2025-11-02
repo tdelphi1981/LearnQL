@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classlearnql_1_1ranges_1_1_select_adaptor" kind="class" language="C++" prot="public">
+    <compoundname>learnql::ranges::SelectAdaptor</compoundname>
+    <includes refid="_adaptors_8hpp" local="no">Adaptors.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename Proj</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classlearnql_1_1ranges_1_1_select_adaptor_1adc58647df7429edc9961a98587d4a5b4" prot="private" static="no" mutable="no">
+        <type>Proj</type>
+        <definition>Proj learnql::ranges::SelectAdaptor&lt; Proj &gt;::proj_</definition>
+        <argsstring></argsstring>
+        <name>proj_</name>
+        <qualifiedname>learnql::ranges::SelectAdaptor::proj_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/Adaptors.hpp" line="85" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/Adaptors.hpp" bodystart="85" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlearnql_1_1ranges_1_1_select_adaptor_1a24eb139677f71e6324f4d09ebb5f62da" prot="public" static="no" constexpr="yes" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type>constexpr</type>
+        <definition>learnql::ranges::SelectAdaptor&lt; Proj &gt;::SelectAdaptor</definition>
+        <argsstring>(Proj proj)</argsstring>
+        <name>SelectAdaptor</name>
+        <qualifiedname>learnql::ranges::SelectAdaptor::SelectAdaptor</qualifiedname>
+        <param>
+          <type>Proj</type>
+          <declname>proj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/Adaptors.hpp" line="76" column="24" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/Adaptors.hpp" bodystart="76" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1ranges_1_1_select_adaptor_1a66a2a0c8e72d87567dae957b2989c20b" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>std::ranges::input_range</type>
+            <declname>R</declname>
+            <defname>R</defname>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto learnql::ranges::SelectAdaptor&lt; Proj &gt;::operator()</definition>
+        <argsstring>(R &amp;&amp;range) const</argsstring>
+        <name>operator()</name>
+        <qualifiedname>learnql::ranges::SelectAdaptor::operator()</qualifiedname>
+        <param>
+          <type>R &amp;&amp;</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/Adaptors.hpp" line="80" column="11" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/Adaptors.hpp" bodystart="80" bodyend="82"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Custom range adaptor for selecting specific fields. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Proj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Projection function type</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Example: <programlisting><codeline><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>names<sp/>=<sp/>students.view()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>|<sp/><ref refid="namespacelearnql_1_1ranges_1a72fdab88d2d6ba44ce9ac39f3c3ce9c7" kindref="member">select</ref>(&amp;Student::get_name);</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/Adaptors.hpp" line="74" column="1" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/Adaptors.hpp" bodystart="74" bodyend="86"/>
+    <listofallmembers>
+      <member refid="classlearnql_1_1ranges_1_1_select_adaptor_1a66a2a0c8e72d87567dae957b2989c20b" prot="public" virt="non-virtual"><scope>learnql::ranges::SelectAdaptor</scope><name>operator()</name></member>
+      <member refid="classlearnql_1_1ranges_1_1_select_adaptor_1adc58647df7429edc9961a98587d4a5b4" prot="private" virt="non-virtual"><scope>learnql::ranges::SelectAdaptor</scope><name>proj_</name></member>
+      <member refid="classlearnql_1_1ranges_1_1_select_adaptor_1a24eb139677f71e6324f4d09ebb5f62da" prot="public" virt="non-virtual"><scope>learnql::ranges::SelectAdaptor</scope><name>SelectAdaptor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

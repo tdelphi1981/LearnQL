@@ -1,0 +1,605 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classlearnql_1_1serialization_1_1_binary_reader" kind="class" language="C++" prot="public">
+    <compoundname>learnql::serialization::BinaryReader</compoundname>
+    <includes refid="_binary_reader_8hpp" local="no">BinaryReader.hpp</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classlearnql_1_1serialization_1_1_binary_reader_1aa056b8ef624e2b664a5886c66eda2bbb" prot="private" static="no" mutable="no">
+        <type>std::span&lt; const uint8_t &gt;</type>
+        <definition>std::span&lt;const uint8_t&gt; learnql::serialization::BinaryReader::data_</definition>
+        <argsstring></argsstring>
+        <name>data_</name>
+        <qualifiedname>learnql::serialization::BinaryReader::data_</qualifiedname>
+        <briefdescription>
+<para>Data buffer (view). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/serialization/BinaryReader.hpp" line="263" column="15" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/serialization/BinaryReader.hpp" bodystart="263" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlearnql_1_1serialization_1_1_binary_reader_1a31c37239cc6e977b4d0adedd2a8aa099" prot="private" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t learnql::serialization::BinaryReader::position_</definition>
+        <argsstring></argsstring>
+        <name>position_</name>
+        <qualifiedname>learnql::serialization::BinaryReader::position_</qualifiedname>
+        <briefdescription>
+<para>Current read position. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/serialization/BinaryReader.hpp" line="264" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/serialization/BinaryReader.hpp" bodystart="264" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlearnql_1_1serialization_1_1_binary_reader_1a390b3763f414ba714b48e1247cff0631" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>learnql::serialization::BinaryReader::BinaryReader</definition>
+        <argsstring>(std::span&lt; const uint8_t &gt; data)</argsstring>
+        <name>BinaryReader</name>
+        <qualifiedname>learnql::serialization::BinaryReader::BinaryReader</qualifiedname>
+        <param>
+          <type>std::span&lt; const uint8_t &gt;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a reader from a span of bytes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Span of bytes to read from </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/serialization/BinaryReader.hpp" line="40" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/serialization/BinaryReader.hpp" bodystart="40" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1serialization_1_1_binary_reader_1a55092fb113bf56590885c580cb9838ee" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>learnql::serialization::BinaryReader::BinaryReader</definition>
+        <argsstring>(const std::vector&lt; uint8_t &gt; &amp;data)</argsstring>
+        <name>BinaryReader</name>
+        <qualifiedname>learnql::serialization::BinaryReader::BinaryReader</qualifiedname>
+        <param>
+          <type>const std::vector&lt; uint8_t &gt; &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a reader from a vector. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vector of bytes to read from </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/serialization/BinaryReader.hpp" line="47" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/serialization/BinaryReader.hpp" bodystart="47" bodyend="48"/>
+        <references refid="classlearnql_1_1serialization_1_1_binary_reader_1a024149c92297bab02d7885b71bea9201" compoundref="_binary_reader_8hpp" startline="211" endline="213">size</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1serialization_1_1_binary_reader_1a5a262266f478e4dd3e7db03c46eff1b6" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>concepts::Arithmetic</type>
+            <declname>T</declname>
+            <defname>T</defname>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T learnql::serialization::BinaryReader::read</definition>
+        <argsstring>()</argsstring>
+        <name>read</name>
+        <qualifiedname>learnql::serialization::BinaryReader::read</qualifiedname>
+        <briefdescription>
+<para>Reads an arithmetic type (int, float, etc.). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Arithmetic type </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Deserialized value </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::runtime_error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if not enough data @requires T must satisfy Arithmetic concept </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/serialization/BinaryReader.hpp" line="58" column="8" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/serialization/BinaryReader.hpp" bodystart="58" bodyend="71"/>
+        <references refid="classlearnql_1_1serialization_1_1_binary_reader_1a7af877082e540c8efd46ea52e2d7a5c0" compoundref="_binary_reader_8hpp" startline="174" endline="181">read_raw</references>
+        <referencedby refid="structlearnql_1_1catalog_1_1_field_metadata_1af9490982f31af015e014eef607f70993" compoundref="_field_metadata_8hpp" startline="115" endline="122">learnql::catalog::FieldMetadata::deserialize</referencedby>
+        <referencedby refid="structlearnql_1_1catalog_1_1_index_metadata_1a7351d8de5d84957a5be77fbf80e8204a" compoundref="_index_metadata_8hpp" startline="161" endline="170">learnql::catalog::IndexMetadata::deserialize</referencedby>
+        <referencedby refid="structlearnql_1_1catalog_1_1_table_metadata_1aefed5155afa9a6e081aad81a44d00712" compoundref="_table_metadata_8hpp" startline="115" endline="122">learnql::catalog::TableMetadata::deserialize</referencedby>
+        <referencedby refid="classlearnql_1_1serialization_1_1_binary_reader_1a935b9886348c40b8f198ddc37d60aa42" compoundref="_binary_reader_8hpp" startline="105" endline="126">read_container</referencedby>
+        <referencedby refid="classlearnql_1_1serialization_1_1_binary_reader_1a65138cc994b2c069b525444dee73cefc" compoundref="_binary_reader_8hpp" startline="149" endline="166">read_smart_ptr</referencedby>
+        <referencedby refid="classlearnql_1_1serialization_1_1_binary_reader_1a2982ba819ac5c8897835d497c41bd861" compoundref="_binary_reader_8hpp" startline="79" endline="95">read_string</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1serialization_1_1_binary_reader_1a2982ba819ac5c8897835d497c41bd861" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string learnql::serialization::BinaryReader::read_string</definition>
+        <argsstring>()</argsstring>
+        <name>read_string</name>
+        <qualifiedname>learnql::serialization::BinaryReader::read_string</qualifiedname>
+        <briefdescription>
+<para>Reads a string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Deserialized string </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::runtime_error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if not enough data</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Reads length (uint32_t) followed by string data </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/serialization/BinaryReader.hpp" line="79" column="18" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/serialization/BinaryReader.hpp" bodystart="79" bodyend="95"/>
+        <references refid="classlearnql_1_1serialization_1_1_binary_reader_1a5a262266f478e4dd3e7db03c46eff1b6" compoundref="_binary_reader_8hpp" startline="58" endline="71">read</references>
+        <references refid="classlearnql_1_1serialization_1_1_binary_reader_1a7af877082e540c8efd46ea52e2d7a5c0" compoundref="_binary_reader_8hpp" startline="174" endline="181">read_raw</references>
+        <references refid="classlearnql_1_1serialization_1_1_binary_reader_1a521b773006336c5b9c35913f83f306fc" compoundref="_binary_reader_8hpp" startline="219" endline="221">remaining</references>
+        <referencedby refid="structlearnql_1_1catalog_1_1_field_metadata_1af9490982f31af015e014eef607f70993" compoundref="_field_metadata_8hpp" startline="115" endline="122">learnql::catalog::FieldMetadata::deserialize</referencedby>
+        <referencedby refid="structlearnql_1_1catalog_1_1_index_metadata_1a7351d8de5d84957a5be77fbf80e8204a" compoundref="_index_metadata_8hpp" startline="161" endline="170">learnql::catalog::IndexMetadata::deserialize</referencedby>
+        <referencedby refid="structlearnql_1_1catalog_1_1_table_metadata_1aefed5155afa9a6e081aad81a44d00712" compoundref="_table_metadata_8hpp" startline="115" endline="122">learnql::catalog::TableMetadata::deserialize</referencedby>
+        <referencedby refid="classlearnql_1_1serialization_1_1_binary_reader_1a935b9886348c40b8f198ddc37d60aa42" compoundref="_binary_reader_8hpp" startline="105" endline="126">read_container</referencedby>
+        <referencedby refid="classlearnql_1_1serialization_1_1_binary_reader_1a65138cc994b2c069b525444dee73cefc" compoundref="_binary_reader_8hpp" startline="149" endline="166">read_smart_ptr</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1serialization_1_1_binary_reader_1a935b9886348c40b8f198ddc37d60aa42" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>concepts::Container</type>
+            <declname>Container</declname>
+            <defname>Container</defname>
+          </param>
+        </templateparamlist>
+        <type>Container</type>
+        <definition>Container learnql::serialization::BinaryReader::read_container</definition>
+        <argsstring>()</argsstring>
+        <name>read_container</name>
+        <qualifiedname>learnql::serialization::BinaryReader::read_container</qualifiedname>
+        <briefdescription>
+<para>Reads a container (vector, etc.). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Container</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Container type to read into </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Deserialized container </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::runtime_error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if not enough data @requires Container must satisfy Container concept </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/serialization/BinaryReader.hpp" line="105" column="16" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/serialization/BinaryReader.hpp" bodystart="105" bodyend="126"/>
+        <references refid="classlearnql_1_1serialization_1_1_binary_reader_1a5a262266f478e4dd3e7db03c46eff1b6" compoundref="_binary_reader_8hpp" startline="58" endline="71">read</references>
+        <references refid="classlearnql_1_1serialization_1_1_binary_reader_1a0ec0ac0da554135a623e38c5d79b3b98" compoundref="_binary_reader_8hpp" startline="136" endline="140">read_custom</references>
+        <references refid="classlearnql_1_1serialization_1_1_binary_reader_1a2982ba819ac5c8897835d497c41bd861" compoundref="_binary_reader_8hpp" startline="79" endline="95">read_string</references>
+        <references refid="classlearnql_1_1serialization_1_1_binary_reader_1a024149c92297bab02d7885b71bea9201" compoundref="_binary_reader_8hpp" startline="211" endline="213">size</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1serialization_1_1_binary_reader_1a0ec0ac0da554135a623e38c5d79b3b98" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T learnql::serialization::BinaryReader::read_custom</definition>
+        <argsstring>()</argsstring>
+        <name>read_custom</name>
+        <qualifiedname>learnql::serialization::BinaryReader::read_custom</qualifiedname>
+    <requiresclause>concepts::CustomSerializable&lt;T, <ref refid="classlearnql_1_1serialization_1_1_binary_writer" kindref="compound">BinaryWriter</ref>, <ref refid="classlearnql_1_1serialization_1_1_binary_reader_1a390b3763f414ba714b48e1247cff0631" kindref="member">BinaryReader</ref>&gt;    </requiresclause>
+        <briefdescription>
+<para>Reads a type with custom deserialization. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type with custom serialization </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Deserialized object @requires T must have deserialize(BinaryReader&amp;) method </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/serialization/BinaryReader.hpp" line="136" column="8" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/serialization/BinaryReader.hpp" bodystart="136" bodyend="140"/>
+        <referencedby refid="classlearnql_1_1serialization_1_1_binary_reader_1a935b9886348c40b8f198ddc37d60aa42" compoundref="_binary_reader_8hpp" startline="105" endline="126">read_container</referencedby>
+        <referencedby refid="classlearnql_1_1serialization_1_1_binary_reader_1a65138cc994b2c069b525444dee73cefc" compoundref="_binary_reader_8hpp" startline="149" endline="166">read_smart_ptr</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1serialization_1_1_binary_reader_1a65138cc994b2c069b525444dee73cefc" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>concepts::SmartPointer</type>
+            <declname>T</declname>
+            <defname>T</defname>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T learnql::serialization::BinaryReader::read_smart_ptr</definition>
+        <argsstring>()</argsstring>
+        <name>read_smart_ptr</name>
+        <qualifiedname>learnql::serialization::BinaryReader::read_smart_ptr</qualifiedname>
+        <briefdescription>
+<para>Reads a smart pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Smart pointer type </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Deserialized smart pointer (may be null) @requires T must satisfy SmartPointer concept </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/serialization/BinaryReader.hpp" line="149" column="8" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/serialization/BinaryReader.hpp" bodystart="149" bodyend="166"/>
+        <references refid="classlearnql_1_1serialization_1_1_binary_reader_1a5a262266f478e4dd3e7db03c46eff1b6" compoundref="_binary_reader_8hpp" startline="58" endline="71">read</references>
+        <references refid="classlearnql_1_1serialization_1_1_binary_reader_1a0ec0ac0da554135a623e38c5d79b3b98" compoundref="_binary_reader_8hpp" startline="136" endline="140">read_custom</references>
+        <references refid="classlearnql_1_1serialization_1_1_binary_reader_1a2982ba819ac5c8897835d497c41bd861" compoundref="_binary_reader_8hpp" startline="79" endline="95">read_string</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1serialization_1_1_binary_reader_1a7af877082e540c8efd46ea52e2d7a5c0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::serialization::BinaryReader::read_raw</definition>
+        <argsstring>(void *dest, std::size_t size)</argsstring>
+        <name>read_raw</name>
+        <qualifiedname>learnql::serialization::BinaryReader::read_raw</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Reads raw bytes from the buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dest</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Destination buffer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of bytes to read </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::runtime_error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if not enough data </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/serialization/BinaryReader.hpp" line="174" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/serialization/BinaryReader.hpp" bodystart="174" bodyend="181"/>
+        <references refid="classlearnql_1_1serialization_1_1_binary_reader_1a024149c92297bab02d7885b71bea9201" compoundref="_binary_reader_8hpp" startline="211" endline="213">size</references>
+        <referencedby refid="classlearnql_1_1serialization_1_1_binary_reader_1a5a262266f478e4dd3e7db03c46eff1b6" compoundref="_binary_reader_8hpp" startline="58" endline="71">read</referencedby>
+        <referencedby refid="classlearnql_1_1serialization_1_1_binary_reader_1a2982ba819ac5c8897835d497c41bd861" compoundref="_binary_reader_8hpp" startline="79" endline="95">read_string</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1serialization_1_1_binary_reader_1a0d8ba0ba52c1fc00ba9da9d55453d30d" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::span&lt; const uint8_t &gt;</type>
+        <definition>std::span&lt; const uint8_t &gt; learnql::serialization::BinaryReader::read_bytes</definition>
+        <argsstring>(std::size_t size)</argsstring>
+        <name>read_bytes</name>
+        <qualifiedname>learnql::serialization::BinaryReader::read_bytes</qualifiedname>
+        <param>
+          <type>std::size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Reads a span of bytes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of bytes to read </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Span of read bytes (view into original buffer) </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::runtime_error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if not enough data </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/serialization/BinaryReader.hpp" line="189" column="16" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/serialization/BinaryReader.hpp" bodystart="189" bodyend="197"/>
+        <references refid="classlearnql_1_1serialization_1_1_binary_reader_1a024149c92297bab02d7885b71bea9201" compoundref="_binary_reader_8hpp" startline="211" endline="213">size</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1serialization_1_1_binary_reader_1a76ed16007d3081cda5f1f2839dc6f17b" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>std::size_t learnql::serialization::BinaryReader::position</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>position</name>
+        <qualifiedname>learnql::serialization::BinaryReader::position</qualifiedname>
+        <briefdescription>
+<para>Gets the current read position. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Current position in bytes </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/serialization/BinaryReader.hpp" line="203" column="18" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/serialization/BinaryReader.hpp" bodystart="203" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1serialization_1_1_binary_reader_1a024149c92297bab02d7885b71bea9201" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>std::size_t learnql::serialization::BinaryReader::size</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>size</name>
+        <qualifiedname>learnql::serialization::BinaryReader::size</qualifiedname>
+        <briefdescription>
+<para>Gets the total size of the buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Size in bytes </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/serialization/BinaryReader.hpp" line="211" column="18" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/serialization/BinaryReader.hpp" bodystart="211" bodyend="213"/>
+        <referencedby refid="classlearnql_1_1serialization_1_1_binary_reader_1a55092fb113bf56590885c580cb9838ee" compoundref="_binary_reader_8hpp" startline="47" endline="48">BinaryReader</referencedby>
+        <referencedby refid="classlearnql_1_1serialization_1_1_binary_reader_1a0d8ba0ba52c1fc00ba9da9d55453d30d" compoundref="_binary_reader_8hpp" startline="189" endline="197">read_bytes</referencedby>
+        <referencedby refid="classlearnql_1_1serialization_1_1_binary_reader_1a935b9886348c40b8f198ddc37d60aa42" compoundref="_binary_reader_8hpp" startline="105" endline="126">read_container</referencedby>
+        <referencedby refid="classlearnql_1_1serialization_1_1_binary_reader_1a7af877082e540c8efd46ea52e2d7a5c0" compoundref="_binary_reader_8hpp" startline="174" endline="181">read_raw</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1serialization_1_1_binary_reader_1a521b773006336c5b9c35913f83f306fc" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>std::size_t learnql::serialization::BinaryReader::remaining</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>remaining</name>
+        <qualifiedname>learnql::serialization::BinaryReader::remaining</qualifiedname>
+        <briefdescription>
+<para>Gets the number of remaining bytes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Number of bytes remaining </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/serialization/BinaryReader.hpp" line="219" column="18" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/serialization/BinaryReader.hpp" bodystart="219" bodyend="221"/>
+        <referencedby refid="classlearnql_1_1serialization_1_1_binary_reader_1a2982ba819ac5c8897835d497c41bd861" compoundref="_binary_reader_8hpp" startline="79" endline="95">read_string</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1serialization_1_1_binary_reader_1a7593fcd8b1854729ed838ce8f759ea18" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool learnql::serialization::BinaryReader::has_more</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>has_more</name>
+        <qualifiedname>learnql::serialization::BinaryReader::has_more</qualifiedname>
+        <briefdescription>
+<para>Checks if there are more bytes to read. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if more data is available </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/serialization/BinaryReader.hpp" line="227" column="11" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/serialization/BinaryReader.hpp" bodystart="227" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1serialization_1_1_binary_reader_1aa649c8a931d1170f3603e0d49ed435d8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::serialization::BinaryReader::seek</definition>
+        <argsstring>(std::size_t pos)</argsstring>
+        <name>seek</name>
+        <qualifiedname>learnql::serialization::BinaryReader::seek</qualifiedname>
+        <param>
+          <type>std::size_t</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+<para>Seeks to a specific position. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Position to seek to </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::out_of_range</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if position is beyond buffer size </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/serialization/BinaryReader.hpp" line="236" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/serialization/BinaryReader.hpp" bodystart="236" bodyend="241"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1serialization_1_1_binary_reader_1a1cc2ff7b5591b3669c5dcacc5aa86d52" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::serialization::BinaryReader::reset</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>reset</name>
+        <qualifiedname>learnql::serialization::BinaryReader::reset</qualifiedname>
+        <briefdescription>
+<para>Resets the read position to the beginning. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/serialization/BinaryReader.hpp" line="246" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/serialization/BinaryReader.hpp" bodystart="246" bodyend="248"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1serialization_1_1_binary_reader_1a7f80a0988a6f6f5db96f0289b9b09815" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::serialization::BinaryReader::skip</definition>
+        <argsstring>(std::size_t count)</argsstring>
+        <name>skip</name>
+        <qualifiedname>learnql::serialization::BinaryReader::skip</qualifiedname>
+        <param>
+          <type>std::size_t</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+<para>Skips a number of bytes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of bytes to skip </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::runtime_error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if skip would exceed buffer size </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/serialization/BinaryReader.hpp" line="255" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/serialization/BinaryReader.hpp" bodystart="255" bodyend="260"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Type-safe binary reader using C++20 concepts. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Provides methods to deserialize different types from a binary buffer</para>
+<para>Features:<itemizedlist>
+<listitem><para>Concept-based type safety</para>
+</listitem><listitem><para>Automatic endianness handling</para>
+</listitem><listitem><para>Support for primitives, strings, containers</para>
+</listitem><listitem><para>Bounds checking</para>
+</listitem></itemizedlist>
+</para>
+<para>Example: <programlisting><codeline><highlight class="normal"><ref refid="classlearnql_1_1serialization_1_1_binary_reader_1a390b3763f414ba714b48e1247cff0631" kindref="member">BinaryReader</ref><sp/>reader(data);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>value<sp/>=<sp/>reader.read&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&gt;();</highlight></codeline>
+<codeline><highlight class="normal">std::string<sp/>str<sp/>=<sp/>reader.read&lt;std::string&gt;();</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>pi<sp/>=<sp/>reader.read&lt;</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&gt;();</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/serialization/BinaryReader.hpp" line="34" column="1" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/serialization/BinaryReader.hpp" bodystart="34" bodyend="265"/>
+    <listofallmembers>
+      <member refid="classlearnql_1_1serialization_1_1_binary_reader_1a390b3763f414ba714b48e1247cff0631" prot="public" virt="non-virtual"><scope>learnql::serialization::BinaryReader</scope><name>BinaryReader</name></member>
+      <member refid="classlearnql_1_1serialization_1_1_binary_reader_1a55092fb113bf56590885c580cb9838ee" prot="public" virt="non-virtual"><scope>learnql::serialization::BinaryReader</scope><name>BinaryReader</name></member>
+      <member refid="classlearnql_1_1serialization_1_1_binary_reader_1aa056b8ef624e2b664a5886c66eda2bbb" prot="private" virt="non-virtual"><scope>learnql::serialization::BinaryReader</scope><name>data_</name></member>
+      <member refid="classlearnql_1_1serialization_1_1_binary_reader_1a7593fcd8b1854729ed838ce8f759ea18" prot="public" virt="non-virtual"><scope>learnql::serialization::BinaryReader</scope><name>has_more</name></member>
+      <member refid="classlearnql_1_1serialization_1_1_binary_reader_1a76ed16007d3081cda5f1f2839dc6f17b" prot="public" virt="non-virtual"><scope>learnql::serialization::BinaryReader</scope><name>position</name></member>
+      <member refid="classlearnql_1_1serialization_1_1_binary_reader_1a31c37239cc6e977b4d0adedd2a8aa099" prot="private" virt="non-virtual"><scope>learnql::serialization::BinaryReader</scope><name>position_</name></member>
+      <member refid="classlearnql_1_1serialization_1_1_binary_reader_1a5a262266f478e4dd3e7db03c46eff1b6" prot="public" virt="non-virtual"><scope>learnql::serialization::BinaryReader</scope><name>read</name></member>
+      <member refid="classlearnql_1_1serialization_1_1_binary_reader_1a0d8ba0ba52c1fc00ba9da9d55453d30d" prot="public" virt="non-virtual"><scope>learnql::serialization::BinaryReader</scope><name>read_bytes</name></member>
+      <member refid="classlearnql_1_1serialization_1_1_binary_reader_1a935b9886348c40b8f198ddc37d60aa42" prot="public" virt="non-virtual"><scope>learnql::serialization::BinaryReader</scope><name>read_container</name></member>
+      <member refid="classlearnql_1_1serialization_1_1_binary_reader_1a0ec0ac0da554135a623e38c5d79b3b98" prot="public" virt="non-virtual"><scope>learnql::serialization::BinaryReader</scope><name>read_custom</name></member>
+      <member refid="classlearnql_1_1serialization_1_1_binary_reader_1a7af877082e540c8efd46ea52e2d7a5c0" prot="public" virt="non-virtual"><scope>learnql::serialization::BinaryReader</scope><name>read_raw</name></member>
+      <member refid="classlearnql_1_1serialization_1_1_binary_reader_1a65138cc994b2c069b525444dee73cefc" prot="public" virt="non-virtual"><scope>learnql::serialization::BinaryReader</scope><name>read_smart_ptr</name></member>
+      <member refid="classlearnql_1_1serialization_1_1_binary_reader_1a2982ba819ac5c8897835d497c41bd861" prot="public" virt="non-virtual"><scope>learnql::serialization::BinaryReader</scope><name>read_string</name></member>
+      <member refid="classlearnql_1_1serialization_1_1_binary_reader_1a521b773006336c5b9c35913f83f306fc" prot="public" virt="non-virtual"><scope>learnql::serialization::BinaryReader</scope><name>remaining</name></member>
+      <member refid="classlearnql_1_1serialization_1_1_binary_reader_1a1cc2ff7b5591b3669c5dcacc5aa86d52" prot="public" virt="non-virtual"><scope>learnql::serialization::BinaryReader</scope><name>reset</name></member>
+      <member refid="classlearnql_1_1serialization_1_1_binary_reader_1aa649c8a931d1170f3603e0d49ed435d8" prot="public" virt="non-virtual"><scope>learnql::serialization::BinaryReader</scope><name>seek</name></member>
+      <member refid="classlearnql_1_1serialization_1_1_binary_reader_1a024149c92297bab02d7885b71bea9201" prot="public" virt="non-virtual"><scope>learnql::serialization::BinaryReader</scope><name>size</name></member>
+      <member refid="classlearnql_1_1serialization_1_1_binary_reader_1a7f80a0988a6f6f5db96f0289b9b09815" prot="public" virt="non-virtual"><scope>learnql::serialization::BinaryReader</scope><name>skip</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="dir_7676d122234a8d5059bcc815006f12ac" kind="dir">
+    <compoundname>/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog</compoundname>
+    <innerfile refid="_field_metadata_8hpp">FieldMetadata.hpp</innerfile>
+    <innerfile refid="_index_metadata_8hpp">IndexMetadata.hpp</innerfile>
+    <innerfile refid="_system_catalog_8hpp">SystemCatalog.hpp</innerfile>
+    <innerfile refid="_table_metadata_8hpp">TableMetadata.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/"/>
+  </compounddef>
+</doxygen>

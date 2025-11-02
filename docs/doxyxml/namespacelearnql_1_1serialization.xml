@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="namespacelearnql_1_1serialization" kind="namespace" language="C++">
+    <compoundname>learnql::serialization</compoundname>
+    <innerclass refid="classlearnql_1_1serialization_1_1_binary_reader" prot="public">learnql::serialization::BinaryReader</innerclass>
+    <innerclass refid="classlearnql_1_1serialization_1_1_binary_writer" prot="public">learnql::serialization::BinaryWriter</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/serialization/BinaryReader.hpp" line="11" column="1"/>
+  </compounddef>
+</doxygen>

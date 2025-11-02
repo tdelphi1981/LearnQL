@@ -1,0 +1,249 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classlearnql_1_1debug_1_1_memory_tracker" kind="class" language="C++" prot="public">
+    <compoundname>learnql::debug::MemoryTracker</compoundname>
+    <includes refid="_debug_utils_8hpp" local="no">DebugUtils.hpp</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classlearnql_1_1debug_1_1_memory_tracker_1a965a7558f8fce6f023ecdafc7843c5a5" prot="private" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t learnql::debug::MemoryTracker::current_usage_</definition>
+        <argsstring></argsstring>
+        <name>current_usage_</name>
+        <qualifiedname>learnql::debug::MemoryTracker::current_usage_</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/DebugUtils.hpp" line="210" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/DebugUtils.hpp" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlearnql_1_1debug_1_1_memory_tracker_1af038037657267b7fa2a37b67480b4796" prot="private" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t learnql::debug::MemoryTracker::peak_usage_</definition>
+        <argsstring></argsstring>
+        <name>peak_usage_</name>
+        <qualifiedname>learnql::debug::MemoryTracker::peak_usage_</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/DebugUtils.hpp" line="211" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/DebugUtils.hpp" bodystart="211" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlearnql_1_1debug_1_1_memory_tracker_1a1dc37c978757b382b7f029c7aa67b995" prot="private" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t learnql::debug::MemoryTracker::total_allocated_</definition>
+        <argsstring></argsstring>
+        <name>total_allocated_</name>
+        <qualifiedname>learnql::debug::MemoryTracker::total_allocated_</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/DebugUtils.hpp" line="212" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/DebugUtils.hpp" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlearnql_1_1debug_1_1_memory_tracker_1a03ae83767659cc753281deb6c71ebcdf" prot="private" static="no" mutable="no">
+        <type>std::unordered_map&lt; std::string, std::size_t &gt;</type>
+        <definition>std::unordered_map&lt;std::string, std::size_t&gt; learnql::debug::MemoryTracker::allocations_</definition>
+        <argsstring></argsstring>
+        <name>allocations_</name>
+        <qualifiedname>learnql::debug::MemoryTracker::allocations_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/DebugUtils.hpp" line="213" column="24" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/DebugUtils.hpp" bodystart="213" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classlearnql_1_1debug_1_1_memory_tracker_1a3a0bafecb1a8abcd047fc91be40c97ff" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void learnql::debug::MemoryTracker::record_allocation</definition>
+        <argsstring>(std::size_t bytes, const std::string &amp;description=&quot;&quot;)</argsstring>
+        <name>record_allocation</name>
+        <qualifiedname>learnql::debug::MemoryTracker::record_allocation</qualifiedname>
+        <param>
+          <type>std::size_t</type>
+          <declname>bytes</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>description</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Records an allocation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/DebugUtils.hpp" line="119" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/DebugUtils.hpp" bodystart="119" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1debug_1_1_memory_tracker_1a3bfbcfd3d0692db93783c7e8cca4f78a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void learnql::debug::MemoryTracker::record_deallocation</definition>
+        <argsstring>(std::size_t bytes, const std::string &amp;description=&quot;&quot;)</argsstring>
+        <name>record_deallocation</name>
+        <qualifiedname>learnql::debug::MemoryTracker::record_deallocation</qualifiedname>
+        <param>
+          <type>std::size_t</type>
+          <declname>bytes</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>description</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Records a deallocation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/DebugUtils.hpp" line="132" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/DebugUtils.hpp" bodystart="132" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1debug_1_1_memory_tracker_1a5befb6b554ce98a16b0103e6b4726435" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>static std::size_t learnql::debug::MemoryTracker::current_usage</definition>
+        <argsstring>()</argsstring>
+        <name>current_usage</name>
+        <qualifiedname>learnql::debug::MemoryTracker::current_usage</qualifiedname>
+        <briefdescription>
+<para>Gets current memory usage. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/DebugUtils.hpp" line="143" column="24" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/DebugUtils.hpp" bodystart="143" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1debug_1_1_memory_tracker_1a48db2a6108bce63beed285acb2f549c4" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>static std::size_t learnql::debug::MemoryTracker::peak_usage</definition>
+        <argsstring>()</argsstring>
+        <name>peak_usage</name>
+        <qualifiedname>learnql::debug::MemoryTracker::peak_usage</qualifiedname>
+        <briefdescription>
+<para>Gets peak memory usage. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/DebugUtils.hpp" line="150" column="24" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/DebugUtils.hpp" bodystart="150" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1debug_1_1_memory_tracker_1abfe0dc831bf12b80d17beb4786d2be29" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void learnql::debug::MemoryTracker::print_summary</definition>
+        <argsstring>()</argsstring>
+        <name>print_summary</name>
+        <qualifiedname>learnql::debug::MemoryTracker::print_summary</qualifiedname>
+        <briefdescription>
+<para>Prints memory usage summary. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/DebugUtils.hpp" line="157" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/DebugUtils.hpp" bodystart="157" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1debug_1_1_memory_tracker_1aaac0977f04bd010b9295821b9b6bb8e1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void learnql::debug::MemoryTracker::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <qualifiedname>learnql::debug::MemoryTracker::reset</qualifiedname>
+        <briefdescription>
+<para>Resets the tracker. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/DebugUtils.hpp" line="179" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/DebugUtils.hpp" bodystart="179" bodyend="185"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classlearnql_1_1debug_1_1_memory_tracker_1aae2dbaf7879b29d1e17e6e433101bec5" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MemoryTracker &amp;</type>
+        <definition>static MemoryTracker &amp; learnql::debug::MemoryTracker::instance</definition>
+        <argsstring>()</argsstring>
+        <name>instance</name>
+        <qualifiedname>learnql::debug::MemoryTracker::instance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/DebugUtils.hpp" line="188" column="26" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/DebugUtils.hpp" bodystart="188" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1debug_1_1_memory_tracker_1a1a678794231880f6d048ab466c13fab7" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string learnql::debug::MemoryTracker::format_bytes</definition>
+        <argsstring>(std::size_t bytes)</argsstring>
+        <name>format_bytes</name>
+        <qualifiedname>learnql::debug::MemoryTracker::format_bytes</qualifiedname>
+        <param>
+          <type>std::size_t</type>
+          <declname>bytes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/DebugUtils.hpp" line="193" column="24" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/DebugUtils.hpp" bodystart="193" bodyend="206"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classlearnql_1_1debug_1_1_memory_tracker_1a329fa02671e549f954a790e8acba22ba" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>learnql::debug::MemoryTracker::MemoryTracker</definition>
+        <argsstring>()=default</argsstring>
+        <name>MemoryTracker</name>
+        <qualifiedname>learnql::debug::MemoryTracker::MemoryTracker</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/DebugUtils.hpp" line="208" column="5"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Memory usage tracker. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/DebugUtils.hpp" line="114" column="1" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/DebugUtils.hpp" bodystart="114" bodyend="214"/>
+    <listofallmembers>
+      <member refid="classlearnql_1_1debug_1_1_memory_tracker_1a03ae83767659cc753281deb6c71ebcdf" prot="private" virt="non-virtual"><scope>learnql::debug::MemoryTracker</scope><name>allocations_</name></member>
+      <member refid="classlearnql_1_1debug_1_1_memory_tracker_1a5befb6b554ce98a16b0103e6b4726435" prot="public" virt="non-virtual"><scope>learnql::debug::MemoryTracker</scope><name>current_usage</name></member>
+      <member refid="classlearnql_1_1debug_1_1_memory_tracker_1a965a7558f8fce6f023ecdafc7843c5a5" prot="private" virt="non-virtual"><scope>learnql::debug::MemoryTracker</scope><name>current_usage_</name></member>
+      <member refid="classlearnql_1_1debug_1_1_memory_tracker_1a1a678794231880f6d048ab466c13fab7" prot="private" virt="non-virtual"><scope>learnql::debug::MemoryTracker</scope><name>format_bytes</name></member>
+      <member refid="classlearnql_1_1debug_1_1_memory_tracker_1aae2dbaf7879b29d1e17e6e433101bec5" prot="private" virt="non-virtual"><scope>learnql::debug::MemoryTracker</scope><name>instance</name></member>
+      <member refid="classlearnql_1_1debug_1_1_memory_tracker_1a329fa02671e549f954a790e8acba22ba" prot="private" virt="non-virtual"><scope>learnql::debug::MemoryTracker</scope><name>MemoryTracker</name></member>
+      <member refid="classlearnql_1_1debug_1_1_memory_tracker_1a48db2a6108bce63beed285acb2f549c4" prot="public" virt="non-virtual"><scope>learnql::debug::MemoryTracker</scope><name>peak_usage</name></member>
+      <member refid="classlearnql_1_1debug_1_1_memory_tracker_1af038037657267b7fa2a37b67480b4796" prot="private" virt="non-virtual"><scope>learnql::debug::MemoryTracker</scope><name>peak_usage_</name></member>
+      <member refid="classlearnql_1_1debug_1_1_memory_tracker_1abfe0dc831bf12b80d17beb4786d2be29" prot="public" virt="non-virtual"><scope>learnql::debug::MemoryTracker</scope><name>print_summary</name></member>
+      <member refid="classlearnql_1_1debug_1_1_memory_tracker_1a3a0bafecb1a8abcd047fc91be40c97ff" prot="public" virt="non-virtual"><scope>learnql::debug::MemoryTracker</scope><name>record_allocation</name></member>
+      <member refid="classlearnql_1_1debug_1_1_memory_tracker_1a3bfbcfd3d0692db93783c7e8cca4f78a" prot="public" virt="non-virtual"><scope>learnql::debug::MemoryTracker</scope><name>record_deallocation</name></member>
+      <member refid="classlearnql_1_1debug_1_1_memory_tracker_1aaac0977f04bd010b9295821b9b6bb8e1" prot="public" virt="non-virtual"><scope>learnql::debug::MemoryTracker</scope><name>reset</name></member>
+      <member refid="classlearnql_1_1debug_1_1_memory_tracker_1a1dc37c978757b382b7f029c7aa67b995" prot="private" virt="non-virtual"><scope>learnql::debug::MemoryTracker</scope><name>total_allocated_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,261 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="_binary_expr_8hpp" kind="file" language="C++">
+    <compoundname>BinaryExpr.hpp</compoundname>
+    <includes refid="_expr_8hpp" local="yes">Expr.hpp</includes>
+    <includes refid="_const_expr_8hpp" local="yes">ConstExpr.hpp</includes>
+    <includes refid="_field_expr_8hpp" local="yes">FieldExpr.hpp</includes>
+    <includes local="no">sstream</includes>
+    <includedby refid="_learn_q_l_8hpp" local="yes">/Users/tolgaberber/Work/CPP/LearnQL/learnql/LearnQL.hpp</includedby>
+    <includedby refid="_field_8hpp" local="yes">/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Field.hpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/BinaryExpr.hpp</label>
+        <link refid="_binary_expr_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>ConstExpr.hpp</label>
+        <link refid="_const_expr_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Expr.hpp</label>
+        <link refid="_expr_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>FieldExpr.hpp</label>
+        <link refid="_field_expr_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>functional</label>
+      </node>
+      <node id="7">
+        <label>sstream</label>
+      </node>
+      <node id="5">
+        <label>string</label>
+      </node>
+      <node id="3">
+        <label>type_traits</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/LearnQL.hpp</label>
+        <link refid="_learn_q_l_8hpp"/>
+      </node>
+      <node id="4">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/FieldMetadata.hpp</label>
+        <link refid="_field_metadata_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/IndexMetadata.hpp</label>
+        <link refid="_index_metadata_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/SystemCatalog.hpp</label>
+        <link refid="_system_catalog_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/TableMetadata.hpp</label>
+        <link refid="_table_metadata_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Database.hpp</label>
+        <link refid="_database_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/ReadOnlyTable.hpp</label>
+        <link refid="_read_only_table_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp</label>
+        <link refid="_table_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/Property.hpp</label>
+        <link refid="_property_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Field.hpp</label>
+        <link refid="_field_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp</label>
+        <link refid="_query_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/BinaryExpr.hpp</label>
+        <link refid="_binary_expr_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/reflection/FieldExtractor.hpp</label>
+        <link refid="_field_extractor_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classlearnql_1_1query_1_1expressions_1_1_binary_expr" prot="public">learnql::query::expressions::BinaryExpr</innerclass>
+    <innernamespace refid="namespacelearnql">learnql</innernamespace>
+    <innernamespace refid="namespacelearnql_1_1query">learnql::query</innernamespace>
+    <innernamespace refid="namespacelearnql_1_1query_1_1expressions">learnql::query::expressions</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>LEARNQL_QUERY_EXPRESSIONS_BINARY_EXPR_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LEARNQL_QUERY_EXPRESSIONS_BINARY_EXPR_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_expr_8hpp" kindref="compound">Expr.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_const_expr_8hpp" kindref="compound">ConstExpr.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_field_expr_8hpp" kindref="compound">FieldExpr.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="namespacelearnql_1_1query" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacelearnql_1_1query_1_1expressions" kindref="compound">learnql::query::expressions</ref><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;BinaryOp<sp/>Op,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Left,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Right&gt;</highlight></codeline>
+<codeline lineno="24" refid="classlearnql_1_1query_1_1expressions_1_1_binary_expr" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classlearnql_1_1query_1_1expressions_1_1_binary_expr_1aed2290e24451ca7f0dec80c41e57636e" kindref="member">BinaryExpr</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classlearnql_1_1query_1_1expressions_1_1_expr" kindref="compound">Expr</ref>&lt;BinaryExpr&lt;Op,<sp/>Left,<sp/>Right&gt;&gt;<sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="31" refid="classlearnql_1_1query_1_1expressions_1_1_binary_expr_1aed2290e24451ca7f0dec80c41e57636e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlearnql_1_1query_1_1expressions_1_1_binary_expr_1aed2290e24451ca7f0dec80c41e57636e" kindref="member">BinaryExpr</ref>(Left<sp/><ref refid="classlearnql_1_1query_1_1expressions_1_1_binary_expr_1aef3ab9b3e78904dfbe6ee6d131861204" kindref="member">left</ref>,<sp/>Right<sp/><ref refid="classlearnql_1_1query_1_1expressions_1_1_binary_expr_1a4c310dae0edd2c130ecfe7bae6afdf55" kindref="member">right</ref>)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>left_(std::move(<ref refid="classlearnql_1_1query_1_1expressions_1_1_binary_expr_1aef3ab9b3e78904dfbe6ee6d131861204" kindref="member">left</ref>)),</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>right_(std::move(<ref refid="classlearnql_1_1query_1_1expressions_1_1_binary_expr_1a4c310dae0edd2c130ecfe7bae6afdf55" kindref="member">right</ref>))<sp/>{}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="42" refid="classlearnql_1_1query_1_1expressions_1_1_binary_expr_1a70e05327e537be83af5f0b91eedd592e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classlearnql_1_1query_1_1expressions_1_1_binary_expr_1a70e05327e537be83af5f0b91eedd592e" kindref="member">evaluate</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>obj)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>left_val<sp/>=<sp/>left_.evaluate(obj);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>right_val<sp/>=<sp/>right_.evaluate(obj);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>(Op<sp/>==<sp/><ref refid="namespacelearnql_1_1query_1_1expressions_1a00f9c30809237ff6d8247b7b93942052af5f286e73bda105e538310b3190f75c5" kindref="member">BinaryOp::Equal</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>left_val<sp/>==<sp/>right_val;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>(Op<sp/>==<sp/><ref refid="namespacelearnql_1_1query_1_1expressions_1a00f9c30809237ff6d8247b7b93942052a19bb0af2c3c530538cb41aff7f235b96" kindref="member">BinaryOp::NotEqual</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>left_val<sp/>!=<sp/>right_val;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>(Op<sp/>==<sp/><ref refid="namespacelearnql_1_1query_1_1expressions_1a00f9c30809237ff6d8247b7b93942052a1cfdf0e8d0c87a228c1f40d9bee7888b" kindref="member">BinaryOp::Less</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>left_val<sp/>&lt;<sp/>right_val;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>(Op<sp/>==<sp/><ref refid="namespacelearnql_1_1query_1_1expressions_1a00f9c30809237ff6d8247b7b93942052ad3e6fdac55bb7b0edd7834c968ba1f38" kindref="member">BinaryOp::LessEqual</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>left_val<sp/>&lt;=<sp/>right_val;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>(Op<sp/>==<sp/><ref refid="namespacelearnql_1_1query_1_1expressions_1a00f9c30809237ff6d8247b7b93942052a8768a6821cd735aea4f5b0df88c1fc6a" kindref="member">BinaryOp::Greater</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>left_val<sp/>&gt;<sp/>right_val;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>(Op<sp/>==<sp/><ref refid="namespacelearnql_1_1query_1_1expressions_1a00f9c30809237ff6d8247b7b93942052a758b05d899def79c9eb864ad4f96be1f" kindref="member">BinaryOp::GreaterEqual</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>left_val<sp/>&gt;=<sp/>right_val;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static_assert</highlight><highlight class="normal">(Op<sp/>==<sp/><ref refid="namespacelearnql_1_1query_1_1expressions_1a00f9c30809237ff6d8247b7b93942052af5f286e73bda105e538310b3190f75c5" kindref="member">BinaryOp::Equal</ref>,<sp/></highlight><highlight class="stringliteral">&quot;Unknown<sp/>binary<sp/>operator&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="classlearnql_1_1query_1_1expressions_1_1_binary_expr_1ac37dc1481f0452848d75a1a1efd0e5a7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/>std::string<sp/><ref refid="classlearnql_1_1query_1_1expressions_1_1_binary_expr_1ac37dc1481f0452848d75a1a1efd0e5a7" kindref="member">to_string</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::ostringstream<sp/>oss;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>oss<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;(&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>left_.to_string()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/><ref refid="namespacelearnql_1_1query_1_1expressions_1ae784ccbf3774781425bf12cc3a5be770" kindref="member">binary_op_to_string</ref>(Op)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>right_.to_string()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;)&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>oss.str();</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="classlearnql_1_1query_1_1expressions_1_1_binary_expr_1aef3ab9b3e78904dfbe6ee6d131861204" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Left&amp;<sp/><ref refid="classlearnql_1_1query_1_1expressions_1_1_binary_expr_1aef3ab9b3e78904dfbe6ee6d131861204" kindref="member">left</ref>()<sp/>const<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>left_;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="classlearnql_1_1query_1_1expressions_1_1_binary_expr_1a4c310dae0edd2c130ecfe7bae6afdf55" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Right&amp;<sp/><ref refid="classlearnql_1_1query_1_1expressions_1_1_binary_expr_1a4c310dae0edd2c130ecfe7bae6afdf55" kindref="member">right</ref>()<sp/>const<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>right_;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>Left<sp/>left_;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>Right<sp/>right_;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>learnql::query::expressions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>LEARNQL_QUERY_EXPRESSIONS_BINARY_EXPR_HPP</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/BinaryExpr.hpp"/>
+  </compounddef>
+</doxygen>

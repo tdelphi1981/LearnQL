@@ -1,0 +1,364 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classlearnql_1_1meta_1_1_type_info" kind="class" language="C++" prot="public">
+    <compoundname>learnql::meta::TypeInfo</compoundname>
+    <includes refid="_type_info_8hpp" local="no">TypeInfo.hpp</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classlearnql_1_1meta_1_1_type_info_1a73c10b4880a876292a7fb315d69bba3d" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string learnql::meta::TypeInfo::type_name_</definition>
+        <argsstring></argsstring>
+        <name>type_name_</name>
+        <qualifiedname>learnql::meta::TypeInfo::type_name_</qualifiedname>
+        <briefdescription>
+<para>Type name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/TypeInfo.hpp" line="194" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/TypeInfo.hpp" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlearnql_1_1meta_1_1_type_info_1a3ebafd9f5b8beef77ca300ef81267543" prot="private" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t learnql::meta::TypeInfo::type_size_</definition>
+        <argsstring></argsstring>
+        <name>type_size_</name>
+        <qualifiedname>learnql::meta::TypeInfo::type_size_</qualifiedname>
+        <briefdescription>
+<para>Type size in bytes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/TypeInfo.hpp" line="195" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/TypeInfo.hpp" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlearnql_1_1meta_1_1_type_info_1ae673374be8a0f0590771a3a8eb5191c9" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structlearnql_1_1meta_1_1_field_descriptor" kindref="compound">FieldDescriptor</ref> &gt;</type>
+        <definition>std::vector&lt;FieldDescriptor&gt; learnql::meta::TypeInfo::fields_</definition>
+        <argsstring></argsstring>
+        <name>fields_</name>
+        <qualifiedname>learnql::meta::TypeInfo::fields_</qualifiedname>
+        <briefdescription>
+<para>Field descriptors. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/TypeInfo.hpp" line="196" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/TypeInfo.hpp" bodystart="196" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlearnql_1_1meta_1_1_type_info_1a27b401b7e4998b9c161e083838bfe6dc" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string learnql::meta::TypeInfo::primary_key_field_</definition>
+        <argsstring></argsstring>
+        <name>primary_key_field_</name>
+        <qualifiedname>learnql::meta::TypeInfo::primary_key_field_</qualifiedname>
+        <briefdescription>
+<para>Primary key field name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/TypeInfo.hpp" line="197" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/TypeInfo.hpp" bodystart="197" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlearnql_1_1meta_1_1_type_info_1ad65c33e3ed67a1954d1bfe2b2ae913b9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>learnql::meta::TypeInfo::TypeInfo</definition>
+        <argsstring>()</argsstring>
+        <name>TypeInfo</name>
+        <qualifiedname>learnql::meta::TypeInfo::TypeInfo</qualifiedname>
+        <briefdescription>
+<para>Default constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/TypeInfo.hpp" line="95" column="5" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/TypeInfo.hpp" bodystart="95" bodyend="95"/>
+        <referencedby refid="classlearnql_1_1meta_1_1_type_info_1abfea5c8ecf989ecfeeb68777c928dfe1" compoundref="_type_info_8hpp" startline="117" endline="130">add_field</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1meta_1_1_type_info_1a5070ca2628c6c5af3f84b3a25c0083ac" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>learnql::meta::TypeInfo::TypeInfo</definition>
+        <argsstring>(std::string type_name, std::size_t type_size=0)</argsstring>
+        <name>TypeInfo</name>
+        <qualifiedname>learnql::meta::TypeInfo::TypeInfo</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>type_name</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>type_size</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Constructs type information. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of the type in bytes </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/TypeInfo.hpp" line="102" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/TypeInfo.hpp" bodystart="102" bodyend="106"/>
+        <references refid="namespacelearnql_1_1meta_1ac36876119db8ef099fb80808580cba84" compoundref="_property_8hpp" startline="73" endline="90">learnql::meta::type_name</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1meta_1_1_type_info_1abfea5c8ecf989ecfeeb68777c928dfe1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classlearnql_1_1meta_1_1_type_info_1ad65c33e3ed67a1954d1bfe2b2ae913b9" kindref="member">TypeInfo</ref> &amp;</type>
+        <definition>TypeInfo &amp; learnql::meta::TypeInfo::add_field</definition>
+        <argsstring>(const std::string &amp;name, FieldType type, std::size_t offset, std::size_t size, bool is_primary_key=false)</argsstring>
+        <name>add_field</name>
+        <qualifiedname>learnql::meta::TypeInfo::add_field</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacelearnql_1_1meta_1a8da5fbfe3fe249906be7f9784f4a7dc0" kindref="member">FieldType</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>is_primary_key</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Adds a field to the type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Field name </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Field type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Offset in bytes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size in bytes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>is_primary_key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether this is the primary key </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reference to this for chaining </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/TypeInfo.hpp" line="117" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/TypeInfo.hpp" bodystart="117" bodyend="130"/>
+        <references refid="classlearnql_1_1meta_1_1_type_info_1ad65c33e3ed67a1954d1bfe2b2ae913b9" compoundref="_type_info_8hpp" startline="95" endline="95">TypeInfo</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1meta_1_1_type_info_1a1239c26d0f13ee05d2ebf157cf421b67" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string &amp; learnql::meta::TypeInfo::get_type_name</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>learnql::meta::TypeInfo::get_type_name</qualifiedname>
+        <briefdescription>
+<para>Gets the type name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/TypeInfo.hpp" line="135" column="24" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/TypeInfo.hpp" bodystart="135" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1meta_1_1_type_info_1a102906f9218ccb761e5c633052cf7fe0" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>std::size_t learnql::meta::TypeInfo::get_type_size</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>get_type_size</name>
+        <qualifiedname>learnql::meta::TypeInfo::get_type_size</qualifiedname>
+        <briefdescription>
+<para>Gets the type size. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/TypeInfo.hpp" line="142" column="18" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/TypeInfo.hpp" bodystart="142" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1meta_1_1_type_info_1a5f29dd4f13619ac730d85145a76ab4ff" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>const std::vector&lt; <ref refid="structlearnql_1_1meta_1_1_field_descriptor" kindref="compound">FieldDescriptor</ref> &gt; &amp;</type>
+        <definition>const std::vector&lt; FieldDescriptor &gt; &amp; learnql::meta::TypeInfo::get_fields</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>get_fields</name>
+        <qualifiedname>learnql::meta::TypeInfo::get_fields</qualifiedname>
+        <briefdescription>
+<para>Gets all fields. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/TypeInfo.hpp" line="149" column="24" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/TypeInfo.hpp" bodystart="149" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1meta_1_1_type_info_1a24345c42e0b64971f3aab43c8dfb4040" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="structlearnql_1_1meta_1_1_field_descriptor" kindref="compound">FieldDescriptor</ref> &amp;</type>
+        <definition>const FieldDescriptor &amp; learnql::meta::TypeInfo::get_field</definition>
+        <argsstring>(const std::string &amp;name) const</argsstring>
+        <name>get_field</name>
+        <qualifiedname>learnql::meta::TypeInfo::get_field</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Gets a field by name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::runtime_error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if field not found </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/TypeInfo.hpp" line="157" column="28" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/TypeInfo.hpp" bodystart="157" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1meta_1_1_type_info_1a667d94adc3de7abfb668818c84071f62" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool learnql::meta::TypeInfo::has_field</definition>
+        <argsstring>(const std::string &amp;name) const noexcept</argsstring>
+        <name>has_field</name>
+        <qualifiedname>learnql::meta::TypeInfo::has_field</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Checks if a field exists. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/TypeInfo.hpp" line="169" column="11" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/TypeInfo.hpp" bodystart="169" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1meta_1_1_type_info_1a123ff000c26280043117a76c0a8b8e49" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string &amp; learnql::meta::TypeInfo::get_primary_key</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>get_primary_key</name>
+        <qualifiedname>learnql::meta::TypeInfo::get_primary_key</qualifiedname>
+        <briefdescription>
+<para>Gets the primary key field name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Primary key field name, or empty string if none </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/TypeInfo.hpp" line="182" column="24" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/TypeInfo.hpp" bodystart="182" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1meta_1_1_type_info_1a00a68a3d1d832c37f9a709808fdc06a4" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool learnql::meta::TypeInfo::has_primary_key</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>has_primary_key</name>
+        <qualifiedname>learnql::meta::TypeInfo::has_primary_key</qualifiedname>
+        <briefdescription>
+<para>Checks if the type has a primary key. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/TypeInfo.hpp" line="189" column="11" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/TypeInfo.hpp" bodystart="189" bodyend="191"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Runtime type information for a registered type. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Contains metadata about a type including its fields</para>
+<para>Example: <programlisting><codeline><highlight class="normal"><ref refid="classlearnql_1_1meta_1_1_type_info_1ad65c33e3ed67a1954d1bfe2b2ae913b9" kindref="member">TypeInfo</ref><sp/>info(</highlight><highlight class="stringliteral">&quot;Student&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal">info.add_field(</highlight><highlight class="stringliteral">&quot;id&quot;</highlight><highlight class="normal">,<sp/><ref refid="namespacelearnql_1_1meta_1a8da5fbfe3fe249906be7f9784f4a7dc0ac06129f6e6e15c09328365e553f1dc31" kindref="member">FieldType::Int32</ref>,<sp/>offsetof(Student,<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">),<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">),<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal">info.add_field(</highlight><highlight class="stringliteral">&quot;name&quot;</highlight><highlight class="normal">,<sp/><ref refid="namespacelearnql_1_1meta_1a8da5fbfe3fe249906be7f9784f4a7dc0a27118326006d3829667a400ad23d5d98" kindref="member">FieldType::String</ref>,<sp/>offsetof(Student,<sp/>name),<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(std::string));</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/TypeInfo.hpp" line="90" column="1" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/TypeInfo.hpp" bodystart="90" bodyend="198"/>
+    <listofallmembers>
+      <member refid="classlearnql_1_1meta_1_1_type_info_1abfea5c8ecf989ecfeeb68777c928dfe1" prot="public" virt="non-virtual"><scope>learnql::meta::TypeInfo</scope><name>add_field</name></member>
+      <member refid="classlearnql_1_1meta_1_1_type_info_1ae673374be8a0f0590771a3a8eb5191c9" prot="private" virt="non-virtual"><scope>learnql::meta::TypeInfo</scope><name>fields_</name></member>
+      <member refid="classlearnql_1_1meta_1_1_type_info_1a24345c42e0b64971f3aab43c8dfb4040" prot="public" virt="non-virtual"><scope>learnql::meta::TypeInfo</scope><name>get_field</name></member>
+      <member refid="classlearnql_1_1meta_1_1_type_info_1a5f29dd4f13619ac730d85145a76ab4ff" prot="public" virt="non-virtual"><scope>learnql::meta::TypeInfo</scope><name>get_fields</name></member>
+      <member refid="classlearnql_1_1meta_1_1_type_info_1a123ff000c26280043117a76c0a8b8e49" prot="public" virt="non-virtual"><scope>learnql::meta::TypeInfo</scope><name>get_primary_key</name></member>
+      <member refid="classlearnql_1_1meta_1_1_type_info_1a1239c26d0f13ee05d2ebf157cf421b67" prot="public" virt="non-virtual"><scope>learnql::meta::TypeInfo</scope><name>get_type_name</name></member>
+      <member refid="classlearnql_1_1meta_1_1_type_info_1a102906f9218ccb761e5c633052cf7fe0" prot="public" virt="non-virtual"><scope>learnql::meta::TypeInfo</scope><name>get_type_size</name></member>
+      <member refid="classlearnql_1_1meta_1_1_type_info_1a667d94adc3de7abfb668818c84071f62" prot="public" virt="non-virtual"><scope>learnql::meta::TypeInfo</scope><name>has_field</name></member>
+      <member refid="classlearnql_1_1meta_1_1_type_info_1a00a68a3d1d832c37f9a709808fdc06a4" prot="public" virt="non-virtual"><scope>learnql::meta::TypeInfo</scope><name>has_primary_key</name></member>
+      <member refid="classlearnql_1_1meta_1_1_type_info_1a27b401b7e4998b9c161e083838bfe6dc" prot="private" virt="non-virtual"><scope>learnql::meta::TypeInfo</scope><name>primary_key_field_</name></member>
+      <member refid="classlearnql_1_1meta_1_1_type_info_1a73c10b4880a876292a7fb315d69bba3d" prot="private" virt="non-virtual"><scope>learnql::meta::TypeInfo</scope><name>type_name_</name></member>
+      <member refid="classlearnql_1_1meta_1_1_type_info_1a3ebafd9f5b8beef77ca300ef81267543" prot="private" virt="non-virtual"><scope>learnql::meta::TypeInfo</scope><name>type_size_</name></member>
+      <member refid="classlearnql_1_1meta_1_1_type_info_1ad65c33e3ed67a1954d1bfe2b2ae913b9" prot="public" virt="non-virtual"><scope>learnql::meta::TypeInfo</scope><name>TypeInfo</name></member>
+      <member refid="classlearnql_1_1meta_1_1_type_info_1a5070ca2628c6c5af3f84b3a25c0083ac" prot="public" virt="non-virtual"><scope>learnql::meta::TypeInfo</scope><name>TypeInfo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,354 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classlearnql_1_1query_1_1expressions_1_1_expr" kind="class" language="C++" prot="public">
+    <compoundname>learnql::query::expressions::Expr</compoundname>
+    <includes refid="_expr_8hpp" local="no">Expr.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename Derived</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlearnql_1_1query_1_1expressions_1_1_expr_1ab3afaf7bba10da4cd15df3713a77974f" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>const Derived &amp;</type>
+        <definition>const Derived &amp; learnql::query::expressions::Expr&lt; Derived &gt;::derived</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>derived</name>
+        <qualifiedname>learnql::query::expressions::Expr::derived</qualifiedname>
+        <briefdescription>
+<para>CRTP accessor to derived class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/Expr.hpp" line="29" column="20" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/Expr.hpp" bodystart="29" bodyend="31"/>
+        <referencedby refid="classlearnql_1_1query_1_1expressions_1_1_expr_1a0d548fb13365c652003a26c2c6d23ade" compoundref="_expr_8hpp" startline="40" endline="42">learnql::query::expressions::Expr&lt; Derived &gt;::evaluate</referencedby>
+        <referencedby refid="namespacelearnql_1_1query_1adffda967514a237d7da798a04487cca3" compoundref="_field_8hpp" startline="226" endline="230">learnql::query::operator&amp;&amp;</referencedby>
+        <referencedby refid="namespacelearnql_1_1query_1a9352974dbb8619a6f462761b92a78957" compoundref="_field_8hpp" startline="237" endline="241">learnql::query::operator||</referencedby>
+        <referencedby refid="classlearnql_1_1query_1_1expressions_1_1_expr_1acb6feaf8a75ff83575511c117ad7eb89" compoundref="_expr_8hpp" startline="47" endline="49">learnql::query::expressions::Expr&lt; Derived &gt;::to_string</referencedby>
+        <referencedby refid="classlearnql_1_1query_1_1_query_1a397bb70fc53fdb90841a17aa7093edc1" compoundref="_query_8hpp" startline="54" endline="60">learnql::query::Query&lt; T, BatchSize &gt;::where</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1query_1_1expressions_1_1_expr_1a0d548fb13365c652003a26c2c6d23ade" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto learnql::query::expressions::Expr&lt; Derived &gt;::evaluate</definition>
+        <argsstring>(const T &amp;obj) const</argsstring>
+        <name>evaluate</name>
+        <qualifiedname>learnql::query::expressions::Expr::evaluate</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+<para>Evaluates the expression for a given object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Object type </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Object to evaluate against </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result of evaluation </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/Expr.hpp" line="40" column="11" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/Expr.hpp" bodystart="40" bodyend="42"/>
+        <references refid="classlearnql_1_1query_1_1expressions_1_1_expr_1ab3afaf7bba10da4cd15df3713a77974f" compoundref="_expr_8hpp" startline="29" endline="31">learnql::query::expressions::Expr&lt; Derived &gt;::derived</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1query_1_1expressions_1_1_expr_1acb6feaf8a75ff83575511c117ad7eb89" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string learnql::query::expressions::Expr&lt; Derived &gt;::to_string</definition>
+        <argsstring>() const</argsstring>
+        <name>to_string</name>
+        <qualifiedname>learnql::query::expressions::Expr::to_string</qualifiedname>
+        <briefdescription>
+<para>Converts expression to a string (for debugging). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/Expr.hpp" line="47" column="18" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/Expr.hpp" bodystart="47" bodyend="49"/>
+        <references refid="classlearnql_1_1query_1_1expressions_1_1_expr_1ab3afaf7bba10da4cd15df3713a77974f" compoundref="_expr_8hpp" startline="29" endline="31">learnql::query::expressions::Expr&lt; Derived &gt;::derived</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Base class for all expression types (CRTP pattern). </para>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Derived</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The derived expression type</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<ref refid="conceptlearnql_1_1query_1_1expressions_1_1_expression" kindref="compound">Expression</ref> templates allow us to build complex expressions at compile-time without evaluating them until necessary.</para>
+<para>Example: <programlisting><codeline><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>expr<sp/>=<sp/>(age<sp/>&gt;<sp/>18)<sp/>&amp;&amp;<sp/>(name<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;Alice&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>expr<sp/>is<sp/>an<sp/>expression<sp/>tree,<sp/>not<sp/>yet<sp/>evaluated</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>learnql::query::expressions::BinaryExpr&lt; Op, Left, Right &gt;</label>
+        <link refid="classlearnql_1_1query_1_1expressions_1_1_binary_expr"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>learnql::query::expressions::ConstExpr&lt; T &gt;</label>
+        <link refid="classlearnql_1_1query_1_1expressions_1_1_const_expr"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>learnql::query::expressions::Expr&lt; BinaryExpr&lt; Op, Left, Right &gt; &gt;</label>
+        <link refid="classlearnql_1_1query_1_1expressions_1_1_expr"/>
+        <childnode refid="1" relation="template-instance">
+          <edgelabel>&lt; BinaryExpr&lt; Op, Left, Right &gt; &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>learnql::query::expressions::Expr&lt; ConstExpr&lt; T &gt; &gt;</label>
+        <link refid="classlearnql_1_1query_1_1expressions_1_1_expr"/>
+        <childnode refid="1" relation="template-instance">
+          <edgelabel>&lt; ConstExpr&lt; T &gt; &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>learnql::query::expressions::Expr&lt; Derived &gt;</label>
+        <link refid="classlearnql_1_1query_1_1expressions_1_1_expr"/>
+      </node>
+      <node id="6">
+        <label>learnql::query::expressions::Expr&lt; FieldExpr&lt; T, FieldType &gt; &gt;</label>
+        <link refid="classlearnql_1_1query_1_1expressions_1_1_expr"/>
+        <childnode refid="1" relation="template-instance">
+          <edgelabel>&lt; FieldExpr&lt; T, FieldType &gt; &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="24">
+        <label>learnql::query::expressions::Expr&lt; FieldExpr&lt; learnql::catalog::FieldMetadata, bool &gt; &gt;</label>
+        <link refid="classlearnql_1_1query_1_1expressions_1_1_expr"/>
+        <childnode refid="1" relation="template-instance">
+          <edgelabel>&lt; FieldExpr&lt; learnql::catalog::FieldMetadata, bool &gt; &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="22">
+        <label>learnql::query::expressions::Expr&lt; FieldExpr&lt; learnql::catalog::FieldMetadata, std::string &gt; &gt;</label>
+        <link refid="classlearnql_1_1query_1_1expressions_1_1_expr"/>
+        <childnode refid="1" relation="template-instance">
+          <edgelabel>&lt; FieldExpr&lt; learnql::catalog::FieldMetadata, std::string &gt; &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="23">
+        <label>learnql::query::expressions::Expr&lt; FieldExpr&lt; learnql::catalog::FieldMetadata, uint16_t &gt; &gt;</label>
+        <link refid="classlearnql_1_1query_1_1expressions_1_1_expr"/>
+        <childnode refid="1" relation="template-instance">
+          <edgelabel>&lt; FieldExpr&lt; learnql::catalog::FieldMetadata, uint16_t &gt; &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="21">
+        <label>learnql::query::expressions::Expr&lt; FieldExpr&lt; learnql::catalog::FieldMetadata, uint64_t &gt; &gt;</label>
+        <link refid="classlearnql_1_1query_1_1expressions_1_1_expr"/>
+        <childnode refid="1" relation="template-instance">
+          <edgelabel>&lt; FieldExpr&lt; learnql::catalog::FieldMetadata, uint64_t &gt; &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="27">
+        <label>learnql::query::expressions::Expr&lt; FieldExpr&lt; learnql::catalog::IndexMetadata, bool &gt; &gt;</label>
+        <link refid="classlearnql_1_1query_1_1expressions_1_1_expr"/>
+        <childnode refid="1" relation="template-instance">
+          <edgelabel>&lt; FieldExpr&lt; learnql::catalog::IndexMetadata, bool &gt; &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="26">
+        <label>learnql::query::expressions::Expr&lt; FieldExpr&lt; learnql::catalog::IndexMetadata, std::string &gt; &gt;</label>
+        <link refid="classlearnql_1_1query_1_1expressions_1_1_expr"/>
+        <childnode refid="1" relation="template-instance">
+          <edgelabel>&lt; FieldExpr&lt; learnql::catalog::IndexMetadata, std::string &gt; &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="25">
+        <label>learnql::query::expressions::Expr&lt; FieldExpr&lt; learnql::catalog::IndexMetadata, uint64_t &gt; &gt;</label>
+        <link refid="classlearnql_1_1query_1_1expressions_1_1_expr"/>
+        <childnode refid="1" relation="template-instance">
+          <edgelabel>&lt; FieldExpr&lt; learnql::catalog::IndexMetadata, uint64_t &gt; &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="31">
+        <label>learnql::query::expressions::Expr&lt; FieldExpr&lt; learnql::catalog::TableMetadata, bool &gt; &gt;</label>
+        <link refid="classlearnql_1_1query_1_1expressions_1_1_expr"/>
+        <childnode refid="1" relation="template-instance">
+          <edgelabel>&lt; FieldExpr&lt; learnql::catalog::TableMetadata, bool &gt; &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="30">
+        <label>learnql::query::expressions::Expr&lt; FieldExpr&lt; learnql::catalog::TableMetadata, std::size_t &gt; &gt;</label>
+        <link refid="classlearnql_1_1query_1_1expressions_1_1_expr"/>
+        <childnode refid="1" relation="template-instance">
+          <edgelabel>&lt; FieldExpr&lt; learnql::catalog::TableMetadata, std::size_t &gt; &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="28">
+        <label>learnql::query::expressions::Expr&lt; FieldExpr&lt; learnql::catalog::TableMetadata, std::string &gt; &gt;</label>
+        <link refid="classlearnql_1_1query_1_1expressions_1_1_expr"/>
+        <childnode refid="1" relation="template-instance">
+          <edgelabel>&lt; FieldExpr&lt; learnql::catalog::TableMetadata, std::string &gt; &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="29">
+        <label>learnql::query::expressions::Expr&lt; FieldExpr&lt; learnql::catalog::TableMetadata, uint64_t &gt; &gt;</label>
+        <link refid="classlearnql_1_1query_1_1expressions_1_1_expr"/>
+        <childnode refid="1" relation="template-instance">
+          <edgelabel>&lt; FieldExpr&lt; learnql::catalog::TableMetadata, uint64_t &gt; &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="19">
+        <label>learnql::query::expressions::Expr&lt; LogicalExpr&lt; Op, Left, Right &gt; &gt;</label>
+        <link refid="classlearnql_1_1query_1_1expressions_1_1_expr"/>
+        <childnode refid="1" relation="template-instance">
+          <edgelabel>&lt; LogicalExpr&lt; Op, Left, Right &gt; &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>learnql::query::expressions::FieldExpr&lt; T, FieldType &gt;</label>
+        <link refid="classlearnql_1_1query_1_1expressions_1_1_field_expr"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>learnql::query::expressions::FieldExpr&lt; learnql::catalog::FieldMetadata, bool &gt;</label>
+        <link refid="classlearnql_1_1query_1_1expressions_1_1_field_expr"/>
+        <childnode refid="7" relation="template-instance">
+          <edgelabel>&lt; learnql::catalog::FieldMetadata, bool &gt;</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>learnql::query::expressions::FieldExpr&lt; learnql::catalog::FieldMetadata, std::string &gt;</label>
+        <link refid="classlearnql_1_1query_1_1expressions_1_1_field_expr"/>
+        <childnode refid="7" relation="template-instance">
+          <edgelabel>&lt; learnql::catalog::FieldMetadata, std::string &gt;</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>learnql::query::expressions::FieldExpr&lt; learnql::catalog::FieldMetadata, uint16_t &gt;</label>
+        <link refid="classlearnql_1_1query_1_1expressions_1_1_field_expr"/>
+        <childnode refid="7" relation="template-instance">
+          <edgelabel>&lt; learnql::catalog::FieldMetadata, uint16_t &gt;</edgelabel>
+        </childnode>
+        <childnode refid="23" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>learnql::query::expressions::FieldExpr&lt; learnql::catalog::FieldMetadata, uint64_t &gt;</label>
+        <link refid="classlearnql_1_1query_1_1expressions_1_1_field_expr"/>
+        <childnode refid="7" relation="template-instance">
+          <edgelabel>&lt; learnql::catalog::FieldMetadata, uint64_t &gt;</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>learnql::query::expressions::FieldExpr&lt; learnql::catalog::IndexMetadata, bool &gt;</label>
+        <link refid="classlearnql_1_1query_1_1expressions_1_1_field_expr"/>
+        <childnode refid="7" relation="template-instance">
+          <edgelabel>&lt; learnql::catalog::IndexMetadata, bool &gt;</edgelabel>
+        </childnode>
+        <childnode refid="27" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>learnql::query::expressions::FieldExpr&lt; learnql::catalog::IndexMetadata, std::string &gt;</label>
+        <link refid="classlearnql_1_1query_1_1expressions_1_1_field_expr"/>
+        <childnode refid="7" relation="template-instance">
+          <edgelabel>&lt; learnql::catalog::IndexMetadata, std::string &gt;</edgelabel>
+        </childnode>
+        <childnode refid="26" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>learnql::query::expressions::FieldExpr&lt; learnql::catalog::IndexMetadata, uint64_t &gt;</label>
+        <link refid="classlearnql_1_1query_1_1expressions_1_1_field_expr"/>
+        <childnode refid="7" relation="template-instance">
+          <edgelabel>&lt; learnql::catalog::IndexMetadata, uint64_t &gt;</edgelabel>
+        </childnode>
+        <childnode refid="25" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>learnql::query::expressions::FieldExpr&lt; learnql::catalog::TableMetadata, bool &gt;</label>
+        <link refid="classlearnql_1_1query_1_1expressions_1_1_field_expr"/>
+        <childnode refid="7" relation="template-instance">
+          <edgelabel>&lt; learnql::catalog::TableMetadata, bool &gt;</edgelabel>
+        </childnode>
+        <childnode refid="31" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>learnql::query::expressions::FieldExpr&lt; learnql::catalog::TableMetadata, std::size_t &gt;</label>
+        <link refid="classlearnql_1_1query_1_1expressions_1_1_field_expr"/>
+        <childnode refid="7" relation="template-instance">
+          <edgelabel>&lt; learnql::catalog::TableMetadata, std::size_t &gt;</edgelabel>
+        </childnode>
+        <childnode refid="30" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>learnql::query::expressions::FieldExpr&lt; learnql::catalog::TableMetadata, std::string &gt;</label>
+        <link refid="classlearnql_1_1query_1_1expressions_1_1_field_expr"/>
+        <childnode refid="7" relation="template-instance">
+          <edgelabel>&lt; learnql::catalog::TableMetadata, std::string &gt;</edgelabel>
+        </childnode>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>learnql::query::expressions::FieldExpr&lt; learnql::catalog::TableMetadata, uint64_t &gt;</label>
+        <link refid="classlearnql_1_1query_1_1expressions_1_1_field_expr"/>
+        <childnode refid="7" relation="template-instance">
+          <edgelabel>&lt; learnql::catalog::TableMetadata, uint64_t &gt;</edgelabel>
+        </childnode>
+        <childnode refid="29" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>learnql::query::expressions::LogicalExpr&lt; Op, Left, Right &gt;</label>
+        <link refid="classlearnql_1_1query_1_1expressions_1_1_logical_expr"/>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/Expr.hpp" line="24" column="1" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/Expr.hpp" bodystart="24" bodyend="50"/>
+    <listofallmembers>
+      <member refid="classlearnql_1_1query_1_1expressions_1_1_expr_1ab3afaf7bba10da4cd15df3713a77974f" prot="public" virt="non-virtual"><scope>learnql::query::expressions::Expr</scope><name>derived</name></member>
+      <member refid="classlearnql_1_1query_1_1expressions_1_1_expr_1a0d548fb13365c652003a26c2c6d23ade" prot="public" virt="non-virtual"><scope>learnql::query::expressions::Expr</scope><name>evaluate</name></member>
+      <member refid="classlearnql_1_1query_1_1expressions_1_1_expr_1acb6feaf8a75ff83575511c117ad7eb89" prot="public" virt="non-virtual"><scope>learnql::query::expressions::Expr</scope><name>to_string</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

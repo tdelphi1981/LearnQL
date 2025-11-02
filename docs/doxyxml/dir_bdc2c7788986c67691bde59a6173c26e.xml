@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="dir_bdc2c7788986c67691bde59a6173c26e" kind="dir">
+    <compoundname>/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage</compoundname>
+    <innerfile refid="_page_8hpp">Page.hpp</innerfile>
+    <innerfile refid="_storage_engine_8hpp">StorageEngine.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,550 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="structlearnql_1_1catalog_1_1_table_metadata" kind="struct" language="C++" prot="public">
+    <compoundname>learnql::catalog::TableMetadata</compoundname>
+    <includes refid="_table_metadata_8hpp" local="no">TableMetadata.hpp</includes>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structlearnql_1_1catalog_1_1_table_metadata_1a34c6807c13e30a2aabfeb68816450536" prot="public" static="no">
+        <type>std::string</type>
+        <definition>using learnql::catalog::TableMetadata::primary_key_type =  std::string</definition>
+        <argsstring></argsstring>
+        <name>primary_key_type</name>
+        <qualifiedname>learnql::catalog::TableMetadata::primary_key_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/TableMetadata.hpp" line="28" column="5" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/TableMetadata.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlearnql_1_1catalog_1_1_table_metadata_1addbe3adb705e67a23c3f9bb1303d481c" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string learnql::catalog::TableMetadata::table_name</definition>
+        <argsstring></argsstring>
+        <name>table_name</name>
+        <qualifiedname>learnql::catalog::TableMetadata::table_name</qualifiedname>
+        <briefdescription>
+<para>Name of the table (primary key). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/TableMetadata.hpp" line="32" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/TableMetadata.hpp" bodystart="32" bodyend="-1"/>
+        <referencedby refid="structlearnql_1_1catalog_1_1_table_metadata_1aefed5155afa9a6e081aad81a44d00712" compoundref="_table_metadata_8hpp" startline="115" endline="122">deserialize</referencedby>
+        <referencedby refid="structlearnql_1_1catalog_1_1_table_metadata_1a631a879a886a640af81aab7f11fd4389" compoundref="_table_metadata_8hpp" startline="100" endline="102">get_primary_key</referencedby>
+        <referencedby refid="structlearnql_1_1catalog_1_1_table_metadata_1a351798866fb25f6068318667a264a98c" compoundref="_table_metadata_8hpp" startline="41" endline="41">get_table_name</referencedby>
+        <referencedby refid="structlearnql_1_1catalog_1_1_table_metadata_1a8d66b6d8d8217041f6026faea828ae8d" compoundref="_table_metadata_8hpp" startline="126" endline="133">operator==</referencedby>
+        <referencedby refid="structlearnql_1_1catalog_1_1_table_metadata_1aa684d6b048218d0ac16ea8832dae75ba" compoundref="_table_metadata_8hpp" startline="106" endline="113">serialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1catalog_1_1_table_metadata_1aa5079bcbe30a8b48b1578f877024e894" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string learnql::catalog::TableMetadata::type_name</definition>
+        <argsstring></argsstring>
+        <name>type_name</name>
+        <qualifiedname>learnql::catalog::TableMetadata::type_name</qualifiedname>
+        <briefdescription>
+<para>C++ type name (from typeid). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/TableMetadata.hpp" line="33" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/TableMetadata.hpp" bodystart="33" bodyend="-1"/>
+        <referencedby refid="structlearnql_1_1catalog_1_1_table_metadata_1aefed5155afa9a6e081aad81a44d00712" compoundref="_table_metadata_8hpp" startline="115" endline="122">deserialize</referencedby>
+        <referencedby refid="structlearnql_1_1catalog_1_1_table_metadata_1af9f7a9d778e2d039f706e5432e3ac59a" compoundref="_table_metadata_8hpp" startline="42" endline="42">get_type_name</referencedby>
+        <referencedby refid="structlearnql_1_1catalog_1_1_table_metadata_1a8d66b6d8d8217041f6026faea828ae8d" compoundref="_table_metadata_8hpp" startline="126" endline="133">operator==</referencedby>
+        <referencedby refid="structlearnql_1_1catalog_1_1_table_metadata_1aa684d6b048218d0ac16ea8832dae75ba" compoundref="_table_metadata_8hpp" startline="106" endline="113">serialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1catalog_1_1_table_metadata_1aaca15c72147da610f4c49b7a10b4f833" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t learnql::catalog::TableMetadata::index_root_page</definition>
+        <argsstring></argsstring>
+        <name>index_root_page</name>
+        <qualifiedname>learnql::catalog::TableMetadata::index_root_page</qualifiedname>
+        <briefdescription>
+<para>Page ID of B-tree root. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/TableMetadata.hpp" line="34" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/TableMetadata.hpp" bodystart="34" bodyend="-1"/>
+        <referencedby refid="structlearnql_1_1catalog_1_1_table_metadata_1aefed5155afa9a6e081aad81a44d00712" compoundref="_table_metadata_8hpp" startline="115" endline="122">deserialize</referencedby>
+        <referencedby refid="structlearnql_1_1catalog_1_1_table_metadata_1ab268bd92cf32a8eacbbc6ecfbf7d2f70" compoundref="_table_metadata_8hpp" startline="43" endline="43">get_index_root_page</referencedby>
+        <referencedby refid="structlearnql_1_1catalog_1_1_table_metadata_1a8d66b6d8d8217041f6026faea828ae8d" compoundref="_table_metadata_8hpp" startline="126" endline="133">operator==</referencedby>
+        <referencedby refid="structlearnql_1_1catalog_1_1_table_metadata_1aa684d6b048218d0ac16ea8832dae75ba" compoundref="_table_metadata_8hpp" startline="106" endline="113">serialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1catalog_1_1_table_metadata_1a4e9a6cc96530b45f37f12a23b0526467" prot="public" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t learnql::catalog::TableMetadata::record_count</definition>
+        <argsstring></argsstring>
+        <name>record_count</name>
+        <qualifiedname>learnql::catalog::TableMetadata::record_count</qualifiedname>
+        <briefdescription>
+<para>Number of records (cached). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/TableMetadata.hpp" line="35" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/TableMetadata.hpp" bodystart="35" bodyend="-1"/>
+        <referencedby refid="structlearnql_1_1catalog_1_1_table_metadata_1aefed5155afa9a6e081aad81a44d00712" compoundref="_table_metadata_8hpp" startline="115" endline="122">deserialize</referencedby>
+        <referencedby refid="structlearnql_1_1catalog_1_1_table_metadata_1a36c96b476f5c0935b751f9cff55d217e" compoundref="_table_metadata_8hpp" startline="44" endline="44">get_record_count</referencedby>
+        <referencedby refid="structlearnql_1_1catalog_1_1_table_metadata_1a8d66b6d8d8217041f6026faea828ae8d" compoundref="_table_metadata_8hpp" startline="126" endline="133">operator==</referencedby>
+        <referencedby refid="structlearnql_1_1catalog_1_1_table_metadata_1aa684d6b048218d0ac16ea8832dae75ba" compoundref="_table_metadata_8hpp" startline="106" endline="113">serialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1catalog_1_1_table_metadata_1ab1b9ae662845a2ec4351ed08d5634037" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t learnql::catalog::TableMetadata::created_timestamp</definition>
+        <argsstring></argsstring>
+        <name>created_timestamp</name>
+        <qualifiedname>learnql::catalog::TableMetadata::created_timestamp</qualifiedname>
+        <briefdescription>
+<para>Unix timestamp of creation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/TableMetadata.hpp" line="36" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/TableMetadata.hpp" bodystart="36" bodyend="-1"/>
+        <referencedby refid="structlearnql_1_1catalog_1_1_table_metadata_1aefed5155afa9a6e081aad81a44d00712" compoundref="_table_metadata_8hpp" startline="115" endline="122">deserialize</referencedby>
+        <referencedby refid="structlearnql_1_1catalog_1_1_table_metadata_1ad0122c71fc127add6f61baae22b1f4c0" compoundref="_table_metadata_8hpp" startline="45" endline="45">get_created_timestamp</referencedby>
+        <referencedby refid="structlearnql_1_1catalog_1_1_table_metadata_1a8d66b6d8d8217041f6026faea828ae8d" compoundref="_table_metadata_8hpp" startline="126" endline="133">operator==</referencedby>
+        <referencedby refid="structlearnql_1_1catalog_1_1_table_metadata_1aa684d6b048218d0ac16ea8832dae75ba" compoundref="_table_metadata_8hpp" startline="106" endline="113">serialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1catalog_1_1_table_metadata_1aa89575c334f5d87bbd946564f7ca0207" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool learnql::catalog::TableMetadata::is_system_table</definition>
+        <argsstring></argsstring>
+        <name>is_system_table</name>
+        <qualifiedname>learnql::catalog::TableMetadata::is_system_table</qualifiedname>
+        <briefdescription>
+<para>true if system table (e.g., _sys_tables) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/TableMetadata.hpp" line="37" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/TableMetadata.hpp" bodystart="37" bodyend="-1"/>
+        <referencedby refid="structlearnql_1_1catalog_1_1_table_metadata_1aefed5155afa9a6e081aad81a44d00712" compoundref="_table_metadata_8hpp" startline="115" endline="122">deserialize</referencedby>
+        <referencedby refid="structlearnql_1_1catalog_1_1_table_metadata_1ae5666a426593f4d13a9c666a0f574684" compoundref="_table_metadata_8hpp" startline="46" endline="46">get_is_system_table</referencedby>
+        <referencedby refid="structlearnql_1_1catalog_1_1_table_metadata_1a8d66b6d8d8217041f6026faea828ae8d" compoundref="_table_metadata_8hpp" startline="126" endline="133">operator==</referencedby>
+        <referencedby refid="structlearnql_1_1catalog_1_1_table_metadata_1aa684d6b048218d0ac16ea8832dae75ba" compoundref="_table_metadata_8hpp" startline="106" endline="113">serialize</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structlearnql_1_1catalog_1_1_table_metadata_1add8e828b1432b1d165bded8cc45727b7" prot="public" static="yes" mutable="no">
+        <type><ref refid="classlearnql_1_1query_1_1_field" kindref="compound">query::Field</ref>&lt; <ref refid="structlearnql_1_1catalog_1_1_table_metadata" kindref="compound">TableMetadata</ref>, std::string &gt;</type>
+        <definition>query::Field&lt;TableMetadata, std::string&gt; learnql::catalog::TableMetadata::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>learnql::catalog::TableMetadata::name</qualifiedname>
+        <initializer>{
+        &quot;table_name&quot;, &amp;<ref refid="structlearnql_1_1catalog_1_1_table_metadata_1a351798866fb25f6068318667a264a98c" kindref="member">TableMetadata::get_table_name</ref>
+    }</initializer>
+        <briefdescription>
+<para>Field for table name Usage: <ref refid="structlearnql_1_1catalog_1_1_table_metadata_1add8e828b1432b1d165bded8cc45727b7" kindref="member">TableMetadata::name</ref> == &quot;students&quot;. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/TableMetadata.hpp" line="54" column="32" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/TableMetadata.hpp" bodystart="54" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1catalog_1_1_table_metadata_1a73779e71f302a5f7d43aed7b717a3671" prot="public" static="yes" mutable="no">
+        <type><ref refid="classlearnql_1_1query_1_1_field" kindref="compound">query::Field</ref>&lt; <ref refid="structlearnql_1_1catalog_1_1_table_metadata" kindref="compound">TableMetadata</ref>, std::string &gt;</type>
+        <definition>query::Field&lt;TableMetadata, std::string&gt; learnql::catalog::TableMetadata::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <qualifiedname>learnql::catalog::TableMetadata::type</qualifiedname>
+        <initializer>{
+        &quot;type_name&quot;, &amp;<ref refid="structlearnql_1_1catalog_1_1_table_metadata_1af9f7a9d778e2d039f706e5432e3ac59a" kindref="member">TableMetadata::get_type_name</ref>
+    }</initializer>
+        <briefdescription>
+<para>Field for C++ type name Usage: <ref refid="structlearnql_1_1catalog_1_1_table_metadata_1a73779e71f302a5f7d43aed7b717a3671" kindref="member">TableMetadata::type</ref> == &quot;Student&quot;. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/TableMetadata.hpp" line="62" column="32" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/TableMetadata.hpp" bodystart="62" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1catalog_1_1_table_metadata_1a17887bb1c8d0141173433596ea7684d6" prot="public" static="yes" mutable="no">
+        <type><ref refid="classlearnql_1_1query_1_1_field" kindref="compound">query::Field</ref>&lt; <ref refid="structlearnql_1_1catalog_1_1_table_metadata" kindref="compound">TableMetadata</ref>, uint64_t &gt;</type>
+        <definition>query::Field&lt;TableMetadata, uint64_t&gt; learnql::catalog::TableMetadata::root_page</definition>
+        <argsstring></argsstring>
+        <name>root_page</name>
+        <qualifiedname>learnql::catalog::TableMetadata::root_page</qualifiedname>
+        <initializer>{
+        &quot;index_root_page&quot;, &amp;<ref refid="structlearnql_1_1catalog_1_1_table_metadata_1ab268bd92cf32a8eacbbc6ecfbf7d2f70" kindref="member">TableMetadata::get_index_root_page</ref>
+    }</initializer>
+        <briefdescription>
+<para>Field for index root page ID Usage: <ref refid="structlearnql_1_1catalog_1_1_table_metadata_1a17887bb1c8d0141173433596ea7684d6" kindref="member">TableMetadata::root_page</ref> &gt; 0. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/TableMetadata.hpp" line="70" column="32" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/TableMetadata.hpp" bodystart="70" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1catalog_1_1_table_metadata_1ade7d6475a5db2892bdbb3c4097af2fb5" prot="public" static="yes" mutable="no">
+        <type><ref refid="classlearnql_1_1query_1_1_field" kindref="compound">query::Field</ref>&lt; <ref refid="structlearnql_1_1catalog_1_1_table_metadata" kindref="compound">TableMetadata</ref>, std::size_t &gt;</type>
+        <definition>query::Field&lt;TableMetadata, std::size_t&gt; learnql::catalog::TableMetadata::records</definition>
+        <argsstring></argsstring>
+        <name>records</name>
+        <qualifiedname>learnql::catalog::TableMetadata::records</qualifiedname>
+        <initializer>{
+        &quot;record_count&quot;, &amp;<ref refid="structlearnql_1_1catalog_1_1_table_metadata_1a36c96b476f5c0935b751f9cff55d217e" kindref="member">TableMetadata::get_record_count</ref>
+    }</initializer>
+        <briefdescription>
+<para>Field for record count Usage: <ref refid="structlearnql_1_1catalog_1_1_table_metadata_1ade7d6475a5db2892bdbb3c4097af2fb5" kindref="member">TableMetadata::records</ref> &gt; 1000. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/TableMetadata.hpp" line="78" column="32" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/TableMetadata.hpp" bodystart="78" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1catalog_1_1_table_metadata_1a7f0b8e4ccc75feab87e20174e936448f" prot="public" static="yes" mutable="no">
+        <type><ref refid="classlearnql_1_1query_1_1_field" kindref="compound">query::Field</ref>&lt; <ref refid="structlearnql_1_1catalog_1_1_table_metadata" kindref="compound">TableMetadata</ref>, uint64_t &gt;</type>
+        <definition>query::Field&lt;TableMetadata, uint64_t&gt; learnql::catalog::TableMetadata::created</definition>
+        <argsstring></argsstring>
+        <name>created</name>
+        <qualifiedname>learnql::catalog::TableMetadata::created</qualifiedname>
+        <initializer>{
+        &quot;created_timestamp&quot;, &amp;<ref refid="structlearnql_1_1catalog_1_1_table_metadata_1ad0122c71fc127add6f61baae22b1f4c0" kindref="member">TableMetadata::get_created_timestamp</ref>
+    }</initializer>
+        <briefdescription>
+<para>Field for creation timestamp Usage: <ref refid="structlearnql_1_1catalog_1_1_table_metadata_1a7f0b8e4ccc75feab87e20174e936448f" kindref="member">TableMetadata::created</ref> &gt; some_timestamp. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/TableMetadata.hpp" line="86" column="32" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/TableMetadata.hpp" bodystart="86" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1catalog_1_1_table_metadata_1adbb80aeccd6f7c5928b8dbb726987748" prot="public" static="yes" mutable="no">
+        <type><ref refid="classlearnql_1_1query_1_1_field" kindref="compound">query::Field</ref>&lt; <ref refid="structlearnql_1_1catalog_1_1_table_metadata" kindref="compound">TableMetadata</ref>, bool &gt;</type>
+        <definition>query::Field&lt;TableMetadata, bool&gt; learnql::catalog::TableMetadata::is_system</definition>
+        <argsstring></argsstring>
+        <name>is_system</name>
+        <qualifiedname>learnql::catalog::TableMetadata::is_system</qualifiedname>
+        <initializer>{
+        &quot;is_system_table&quot;, &amp;<ref refid="structlearnql_1_1catalog_1_1_table_metadata_1ae5666a426593f4d13a9c666a0f574684" kindref="member">TableMetadata::get_is_system_table</ref>
+    }</initializer>
+        <briefdescription>
+<para>Field for system table flag Usage: <ref refid="structlearnql_1_1catalog_1_1_table_metadata_1adbb80aeccd6f7c5928b8dbb726987748" kindref="member">TableMetadata::is_system</ref> == false. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/TableMetadata.hpp" line="94" column="32" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/TableMetadata.hpp" bodystart="94" bodyend="96"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structlearnql_1_1catalog_1_1_table_metadata_1a351798866fb25f6068318667a264a98c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string &amp; learnql::catalog::TableMetadata::get_table_name</definition>
+        <argsstring>() const</argsstring>
+        <name>get_table_name</name>
+        <qualifiedname>learnql::catalog::TableMetadata::get_table_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/TableMetadata.hpp" line="41" column="23" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/TableMetadata.hpp" bodystart="41" bodyend="41"/>
+        <references refid="structlearnql_1_1catalog_1_1_table_metadata_1addbe3adb705e67a23c3f9bb1303d481c" compoundref="_table_metadata_8hpp" startline="32">table_name</references>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1catalog_1_1_table_metadata_1af9f7a9d778e2d039f706e5432e3ac59a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string &amp; learnql::catalog::TableMetadata::get_type_name</definition>
+        <argsstring>() const</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>learnql::catalog::TableMetadata::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/TableMetadata.hpp" line="42" column="23" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/TableMetadata.hpp" bodystart="42" bodyend="42"/>
+        <references refid="structlearnql_1_1catalog_1_1_table_metadata_1aa5079bcbe30a8b48b1578f877024e894" compoundref="_table_metadata_8hpp" startline="33">type_name</references>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1catalog_1_1_table_metadata_1ab268bd92cf32a8eacbbc6ecfbf7d2f70" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t learnql::catalog::TableMetadata::get_index_root_page</definition>
+        <argsstring>() const</argsstring>
+        <name>get_index_root_page</name>
+        <qualifiedname>learnql::catalog::TableMetadata::get_index_root_page</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/TableMetadata.hpp" line="43" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/TableMetadata.hpp" bodystart="43" bodyend="43"/>
+        <references refid="structlearnql_1_1catalog_1_1_table_metadata_1aaca15c72147da610f4c49b7a10b4f833" compoundref="_table_metadata_8hpp" startline="34">index_root_page</references>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1catalog_1_1_table_metadata_1a36c96b476f5c0935b751f9cff55d217e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>std::size_t learnql::catalog::TableMetadata::get_record_count</definition>
+        <argsstring>() const</argsstring>
+        <name>get_record_count</name>
+        <qualifiedname>learnql::catalog::TableMetadata::get_record_count</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/TableMetadata.hpp" line="44" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/TableMetadata.hpp" bodystart="44" bodyend="44"/>
+        <references refid="structlearnql_1_1catalog_1_1_table_metadata_1a4e9a6cc96530b45f37f12a23b0526467" compoundref="_table_metadata_8hpp" startline="35">record_count</references>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1catalog_1_1_table_metadata_1ad0122c71fc127add6f61baae22b1f4c0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t learnql::catalog::TableMetadata::get_created_timestamp</definition>
+        <argsstring>() const</argsstring>
+        <name>get_created_timestamp</name>
+        <qualifiedname>learnql::catalog::TableMetadata::get_created_timestamp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/TableMetadata.hpp" line="45" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/TableMetadata.hpp" bodystart="45" bodyend="45"/>
+        <references refid="structlearnql_1_1catalog_1_1_table_metadata_1ab1b9ae662845a2ec4351ed08d5634037" compoundref="_table_metadata_8hpp" startline="36">created_timestamp</references>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1catalog_1_1_table_metadata_1ae5666a426593f4d13a9c666a0f574684" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool learnql::catalog::TableMetadata::get_is_system_table</definition>
+        <argsstring>() const</argsstring>
+        <name>get_is_system_table</name>
+        <qualifiedname>learnql::catalog::TableMetadata::get_is_system_table</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/TableMetadata.hpp" line="46" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/TableMetadata.hpp" bodystart="46" bodyend="46"/>
+        <references refid="structlearnql_1_1catalog_1_1_table_metadata_1aa89575c334f5d87bbd946564f7ca0207" compoundref="_table_metadata_8hpp" startline="37">is_system_table</references>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1catalog_1_1_table_metadata_1a631a879a886a640af81aab7f11fd4389" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string learnql::catalog::TableMetadata::get_primary_key</definition>
+        <argsstring>() const</argsstring>
+        <name>get_primary_key</name>
+        <qualifiedname>learnql::catalog::TableMetadata::get_primary_key</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/TableMetadata.hpp" line="100" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/TableMetadata.hpp" bodystart="100" bodyend="102"/>
+        <references refid="structlearnql_1_1catalog_1_1_table_metadata_1addbe3adb705e67a23c3f9bb1303d481c" compoundref="_table_metadata_8hpp" startline="32">table_name</references>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1catalog_1_1_table_metadata_1aa684d6b048218d0ac16ea8832dae75ba" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::catalog::TableMetadata::serialize</definition>
+        <argsstring>(serialization::BinaryWriter &amp;writer) const</argsstring>
+        <name>serialize</name>
+        <qualifiedname>learnql::catalog::TableMetadata::serialize</qualifiedname>
+        <param>
+          <type><ref refid="classlearnql_1_1serialization_1_1_binary_writer" kindref="compound">serialization::BinaryWriter</ref> &amp;</type>
+          <declname>writer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/TableMetadata.hpp" line="106" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/TableMetadata.hpp" bodystart="106" bodyend="113"/>
+        <references refid="structlearnql_1_1catalog_1_1_table_metadata_1ab1b9ae662845a2ec4351ed08d5634037" compoundref="_table_metadata_8hpp" startline="36">created_timestamp</references>
+        <references refid="structlearnql_1_1catalog_1_1_table_metadata_1aaca15c72147da610f4c49b7a10b4f833" compoundref="_table_metadata_8hpp" startline="34">index_root_page</references>
+        <references refid="structlearnql_1_1catalog_1_1_table_metadata_1aa89575c334f5d87bbd946564f7ca0207" compoundref="_table_metadata_8hpp" startline="37">is_system_table</references>
+        <references refid="structlearnql_1_1catalog_1_1_table_metadata_1a4e9a6cc96530b45f37f12a23b0526467" compoundref="_table_metadata_8hpp" startline="35">record_count</references>
+        <references refid="structlearnql_1_1catalog_1_1_table_metadata_1addbe3adb705e67a23c3f9bb1303d481c" compoundref="_table_metadata_8hpp" startline="32">table_name</references>
+        <references refid="structlearnql_1_1catalog_1_1_table_metadata_1aa5079bcbe30a8b48b1578f877024e894" compoundref="_table_metadata_8hpp" startline="33">type_name</references>
+        <references refid="classlearnql_1_1serialization_1_1_binary_writer_1a7343d36f8a9adc28f9ab78826055cda7" compoundref="_binary_writer_8hpp" startline="52" endline="64">learnql::serialization::BinaryWriter::write</references>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1catalog_1_1_table_metadata_1aefed5155afa9a6e081aad81a44d00712" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::catalog::TableMetadata::deserialize</definition>
+        <argsstring>(serialization::BinaryReader &amp;reader)</argsstring>
+        <name>deserialize</name>
+        <qualifiedname>learnql::catalog::TableMetadata::deserialize</qualifiedname>
+        <param>
+          <type><ref refid="classlearnql_1_1serialization_1_1_binary_reader" kindref="compound">serialization::BinaryReader</ref> &amp;</type>
+          <declname>reader</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/TableMetadata.hpp" line="115" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/TableMetadata.hpp" bodystart="115" bodyend="122"/>
+        <references refid="structlearnql_1_1catalog_1_1_table_metadata_1ab1b9ae662845a2ec4351ed08d5634037" compoundref="_table_metadata_8hpp" startline="36">created_timestamp</references>
+        <references refid="structlearnql_1_1catalog_1_1_table_metadata_1aaca15c72147da610f4c49b7a10b4f833" compoundref="_table_metadata_8hpp" startline="34">index_root_page</references>
+        <references refid="structlearnql_1_1catalog_1_1_table_metadata_1aa89575c334f5d87bbd946564f7ca0207" compoundref="_table_metadata_8hpp" startline="37">is_system_table</references>
+        <references refid="classlearnql_1_1serialization_1_1_binary_reader_1a5a262266f478e4dd3e7db03c46eff1b6" compoundref="_binary_reader_8hpp" startline="58" endline="71">learnql::serialization::BinaryReader::read</references>
+        <references refid="classlearnql_1_1serialization_1_1_binary_reader_1a2982ba819ac5c8897835d497c41bd861" compoundref="_binary_reader_8hpp" startline="79" endline="95">learnql::serialization::BinaryReader::read_string</references>
+        <references refid="structlearnql_1_1catalog_1_1_table_metadata_1a4e9a6cc96530b45f37f12a23b0526467" compoundref="_table_metadata_8hpp" startline="35">record_count</references>
+        <references refid="structlearnql_1_1catalog_1_1_table_metadata_1addbe3adb705e67a23c3f9bb1303d481c" compoundref="_table_metadata_8hpp" startline="32">table_name</references>
+        <references refid="structlearnql_1_1catalog_1_1_table_metadata_1aa5079bcbe30a8b48b1578f877024e894" compoundref="_table_metadata_8hpp" startline="33">type_name</references>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1catalog_1_1_table_metadata_1a8d66b6d8d8217041f6026faea828ae8d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool learnql::catalog::TableMetadata::operator==</definition>
+        <argsstring>(const TableMetadata &amp;other) const</argsstring>
+        <name>operator==</name>
+        <qualifiedname>learnql::catalog::TableMetadata::operator==</qualifiedname>
+        <param>
+          <type>const <ref refid="structlearnql_1_1catalog_1_1_table_metadata" kindref="compound">TableMetadata</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/TableMetadata.hpp" line="126" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/TableMetadata.hpp" bodystart="126" bodyend="133"/>
+        <references refid="structlearnql_1_1catalog_1_1_table_metadata_1ab1b9ae662845a2ec4351ed08d5634037" compoundref="_table_metadata_8hpp" startline="36">created_timestamp</references>
+        <references refid="structlearnql_1_1catalog_1_1_table_metadata_1aaca15c72147da610f4c49b7a10b4f833" compoundref="_table_metadata_8hpp" startline="34">index_root_page</references>
+        <references refid="structlearnql_1_1catalog_1_1_table_metadata_1aa89575c334f5d87bbd946564f7ca0207" compoundref="_table_metadata_8hpp" startline="37">is_system_table</references>
+        <references refid="structlearnql_1_1catalog_1_1_table_metadata_1a4e9a6cc96530b45f37f12a23b0526467" compoundref="_table_metadata_8hpp" startline="35">record_count</references>
+        <references refid="structlearnql_1_1catalog_1_1_table_metadata_1addbe3adb705e67a23c3f9bb1303d481c" compoundref="_table_metadata_8hpp" startline="32">table_name</references>
+        <references refid="structlearnql_1_1catalog_1_1_table_metadata_1aa5079bcbe30a8b48b1578f877024e894" compoundref="_table_metadata_8hpp" startline="33">type_name</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structlearnql_1_1catalog_1_1_table_metadata_1a27e210105501bdf01b38292a956b1a72" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>static auto learnql::catalog::TableMetadata::reflect_fields</definition>
+        <argsstring>()</argsstring>
+        <name>reflect_fields</name>
+        <qualifiedname>learnql::catalog::TableMetadata::reflect_fields</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/TableMetadata.hpp" line="137" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/TableMetadata.hpp" bodystart="137" bodyend="147"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Metadata for a database table. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Stored in the _sys_tables system catalog table. Provides queryable information about all tables in the database.</para>
+<para>Example usage: <programlisting><codeline><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>large_tables<sp/>=<sp/>catalog.tables()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.where(<ref refid="structlearnql_1_1catalog_1_1_table_metadata_1a4e9a6cc96530b45f37f12a23b0526467" kindref="member">TableMetadata::record_count</ref><sp/>&gt;<sp/>1000);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>student_meta<sp/>=<sp/>catalog.tables()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.where(<ref refid="structlearnql_1_1catalog_1_1_table_metadata_1add8e828b1432b1d165bded8cc45727b7" kindref="member">TableMetadata::name</ref><sp/>==<sp/></highlight><highlight class="stringliteral">&quot;students&quot;</highlight><highlight class="normal">);</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>learnql::catalog::TableMetadata</label>
+        <link refid="structlearnql_1_1catalog_1_1_table_metadata"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>table_name</edgelabel>
+          <edgelabel>type_name</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>name</edgelabel>
+          <edgelabel>type</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>created</edgelabel>
+          <edgelabel>root_page</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>records</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>is_system</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>learnql::query::Field&lt; T, FieldType &gt;</label>
+        <link refid="classlearnql_1_1query_1_1_field"/>
+      </node>
+      <node id="8">
+        <label>learnql::query::Field&lt; learnql::catalog::TableMetadata, bool &gt;</label>
+        <link refid="classlearnql_1_1query_1_1_field"/>
+        <childnode refid="5" relation="template-instance">
+          <edgelabel>&lt; learnql::catalog::TableMetadata, bool &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>learnql::query::Field&lt; learnql::catalog::TableMetadata, std::size_t &gt;</label>
+        <link refid="classlearnql_1_1query_1_1_field"/>
+        <childnode refid="5" relation="template-instance">
+          <edgelabel>&lt; learnql::catalog::TableMetadata, std::size_t &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>learnql::query::Field&lt; learnql::catalog::TableMetadata, std::string &gt;</label>
+        <link refid="classlearnql_1_1query_1_1_field"/>
+        <childnode refid="5" relation="template-instance">
+          <edgelabel>&lt; learnql::catalog::TableMetadata, std::string &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>learnql::query::Field&lt; learnql::catalog::TableMetadata, uint64_t &gt;</label>
+        <link refid="classlearnql_1_1query_1_1_field"/>
+        <childnode refid="5" relation="template-instance">
+          <edgelabel>&lt; learnql::catalog::TableMetadata, uint64_t &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="2">
+        <label>std::string</label>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/TableMetadata.hpp" line="27" column="1" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/TableMetadata.hpp" bodystart="27" bodyend="148"/>
+    <listofallmembers>
+      <member refid="structlearnql_1_1catalog_1_1_table_metadata_1a7f0b8e4ccc75feab87e20174e936448f" prot="public" virt="non-virtual"><scope>learnql::catalog::TableMetadata</scope><name>created</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_table_metadata_1ab1b9ae662845a2ec4351ed08d5634037" prot="public" virt="non-virtual"><scope>learnql::catalog::TableMetadata</scope><name>created_timestamp</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_table_metadata_1aefed5155afa9a6e081aad81a44d00712" prot="public" virt="non-virtual"><scope>learnql::catalog::TableMetadata</scope><name>deserialize</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_table_metadata_1ad0122c71fc127add6f61baae22b1f4c0" prot="public" virt="non-virtual"><scope>learnql::catalog::TableMetadata</scope><name>get_created_timestamp</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_table_metadata_1ab268bd92cf32a8eacbbc6ecfbf7d2f70" prot="public" virt="non-virtual"><scope>learnql::catalog::TableMetadata</scope><name>get_index_root_page</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_table_metadata_1ae5666a426593f4d13a9c666a0f574684" prot="public" virt="non-virtual"><scope>learnql::catalog::TableMetadata</scope><name>get_is_system_table</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_table_metadata_1a631a879a886a640af81aab7f11fd4389" prot="public" virt="non-virtual"><scope>learnql::catalog::TableMetadata</scope><name>get_primary_key</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_table_metadata_1a36c96b476f5c0935b751f9cff55d217e" prot="public" virt="non-virtual"><scope>learnql::catalog::TableMetadata</scope><name>get_record_count</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_table_metadata_1a351798866fb25f6068318667a264a98c" prot="public" virt="non-virtual"><scope>learnql::catalog::TableMetadata</scope><name>get_table_name</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_table_metadata_1af9f7a9d778e2d039f706e5432e3ac59a" prot="public" virt="non-virtual"><scope>learnql::catalog::TableMetadata</scope><name>get_type_name</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_table_metadata_1aaca15c72147da610f4c49b7a10b4f833" prot="public" virt="non-virtual"><scope>learnql::catalog::TableMetadata</scope><name>index_root_page</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_table_metadata_1adbb80aeccd6f7c5928b8dbb726987748" prot="public" virt="non-virtual"><scope>learnql::catalog::TableMetadata</scope><name>is_system</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_table_metadata_1aa89575c334f5d87bbd946564f7ca0207" prot="public" virt="non-virtual"><scope>learnql::catalog::TableMetadata</scope><name>is_system_table</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_table_metadata_1add8e828b1432b1d165bded8cc45727b7" prot="public" virt="non-virtual"><scope>learnql::catalog::TableMetadata</scope><name>name</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_table_metadata_1a8d66b6d8d8217041f6026faea828ae8d" prot="public" virt="non-virtual"><scope>learnql::catalog::TableMetadata</scope><name>operator==</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_table_metadata_1a34c6807c13e30a2aabfeb68816450536" prot="public" virt="non-virtual"><scope>learnql::catalog::TableMetadata</scope><name>primary_key_type</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_table_metadata_1a4e9a6cc96530b45f37f12a23b0526467" prot="public" virt="non-virtual"><scope>learnql::catalog::TableMetadata</scope><name>record_count</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_table_metadata_1ade7d6475a5db2892bdbb3c4097af2fb5" prot="public" virt="non-virtual"><scope>learnql::catalog::TableMetadata</scope><name>records</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_table_metadata_1a27e210105501bdf01b38292a956b1a72" prot="public" virt="non-virtual"><scope>learnql::catalog::TableMetadata</scope><name>reflect_fields</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_table_metadata_1a17887bb1c8d0141173433596ea7684d6" prot="public" virt="non-virtual"><scope>learnql::catalog::TableMetadata</scope><name>root_page</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_table_metadata_1aa684d6b048218d0ac16ea8832dae75ba" prot="public" virt="non-virtual"><scope>learnql::catalog::TableMetadata</scope><name>serialize</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_table_metadata_1addbe3adb705e67a23c3f9bb1303d481c" prot="public" virt="non-virtual"><scope>learnql::catalog::TableMetadata</scope><name>table_name</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_table_metadata_1a73779e71f302a5f7d43aed7b717a3671" prot="public" virt="non-virtual"><scope>learnql::catalog::TableMetadata</scope><name>type</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_table_metadata_1aa5079bcbe30a8b48b1578f877024e894" prot="public" virt="non-virtual"><scope>learnql::catalog::TableMetadata</scope><name>type_name</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

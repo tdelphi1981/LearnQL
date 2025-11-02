@@ -1,0 +1,173 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classlearnql_1_1debug_1_1_scoped_profiler" kind="class" language="C++" prot="public">
+    <compoundname>learnql::debug::ScopedProfiler</compoundname>
+    <includes refid="_profiler_8hpp" local="no">Profiler.hpp</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classlearnql_1_1debug_1_1_scoped_profiler_1ab6b71efbaf0f53420f9f5ff57420756d" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string learnql::debug::ScopedProfiler::operation_name_</definition>
+        <argsstring></argsstring>
+        <name>operation_name_</name>
+        <qualifiedname>learnql::debug::ScopedProfiler::operation_name_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" line="260" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" bodystart="260" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlearnql_1_1debug_1_1_scoped_profiler_1ad60e8417ebf81e1ceb873f05264e04aa" prot="private" static="no" mutable="no">
+        <type>std::chrono::high_resolution_clock::time_point</type>
+        <definition>std::chrono::high_resolution_clock::time_point learnql::debug::ScopedProfiler::start_</definition>
+        <argsstring></argsstring>
+        <name>start_</name>
+        <qualifiedname>learnql::debug::ScopedProfiler::start_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" line="261" column="52" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" bodystart="261" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlearnql_1_1debug_1_1_scoped_profiler_1a01ce084bbd6bbe6ec081426e43f59da8" prot="private" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t learnql::debug::ScopedProfiler::rows_processed_</definition>
+        <argsstring></argsstring>
+        <name>rows_processed_</name>
+        <qualifiedname>learnql::debug::ScopedProfiler::rows_processed_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" line="262" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" bodystart="262" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlearnql_1_1debug_1_1_scoped_profiler_1adac26cf3bf755854fa050b35f12aaff0" prot="private" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t learnql::debug::ScopedProfiler::memory_used_</definition>
+        <argsstring></argsstring>
+        <name>memory_used_</name>
+        <qualifiedname>learnql::debug::ScopedProfiler::memory_used_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" line="263" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" bodystart="263" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlearnql_1_1debug_1_1_scoped_profiler_1a54f453a6f73d3dc94c4f4f91a6517a42" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>learnql::debug::ScopedProfiler::ScopedProfiler</definition>
+        <argsstring>(std::string operation_name)</argsstring>
+        <name>ScopedProfiler</name>
+        <qualifiedname>learnql::debug::ScopedProfiler::ScopedProfiler</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>operation_name</declname>
+        </param>
+        <briefdescription>
+<para>Constructs and starts profiling. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>operation_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the operation </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" line="222" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" bodystart="222" bodyend="226"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1debug_1_1_scoped_profiler_1acb23868425a105b3261e41ed7b85a40b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>learnql::debug::ScopedProfiler::~ScopedProfiler</definition>
+        <argsstring>()</argsstring>
+        <name>~ScopedProfiler</name>
+        <qualifiedname>learnql::debug::ScopedProfiler::~ScopedProfiler</qualifiedname>
+        <briefdescription>
+<para>Destructor - records metrics. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" line="231" column="5" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" bodystart="231" bodyend="243"/>
+        <references refid="classlearnql_1_1debug_1_1_profiler_1a9546847af964fa8caef4f594fa75d694" compoundref="_profiler_8hpp" startline="103" endline="106">learnql::debug::Profiler::instance</references>
+        <references refid="classlearnql_1_1debug_1_1_profiler_1a8551cd8d346f0e5fd795dde696af9710" compoundref="_profiler_8hpp" startline="111" endline="114">learnql::debug::Profiler::record</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1debug_1_1_scoped_profiler_1ac5e7865d8b17f55811fa9cea3a010241" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::debug::ScopedProfiler::set_rows_processed</definition>
+        <argsstring>(std::size_t rows)</argsstring>
+        <name>set_rows_processed</name>
+        <qualifiedname>learnql::debug::ScopedProfiler::set_rows_processed</qualifiedname>
+        <param>
+          <type>std::size_t</type>
+          <declname>rows</declname>
+        </param>
+        <briefdescription>
+<para>Sets the number of rows processed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" line="248" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" bodystart="248" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1debug_1_1_scoped_profiler_1add5e0b4a97e493d52f23ac212969a3bb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::debug::ScopedProfiler::set_memory_used</definition>
+        <argsstring>(std::size_t bytes)</argsstring>
+        <name>set_memory_used</name>
+        <qualifiedname>learnql::debug::ScopedProfiler::set_memory_used</qualifiedname>
+        <param>
+          <type>std::size_t</type>
+          <declname>bytes</declname>
+        </param>
+        <briefdescription>
+<para>Sets the memory used. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" line="255" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" bodystart="255" bodyend="257"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>RAII class for profiling a scope and automatically recording metrics. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Example: <programlisting><codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlearnql_1_1debug_1_1_scoped_profiler_1a54f453a6f73d3dc94c4f4f91a6517a42" kindref="member">ScopedProfiler</ref><sp/>prof(</highlight><highlight class="stringliteral">&quot;Table<sp/>scan&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>...<sp/>code<sp/>to<sp/>profile<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>prof.set_rows_processed(1000);</highlight></codeline>
+<codeline><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>Automatically<sp/>records<sp/>metrics<sp/>when<sp/>it<sp/>goes<sp/>out<sp/>of<sp/>scope</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" line="216" column="1" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" bodystart="216" bodyend="264"/>
+    <listofallmembers>
+      <member refid="classlearnql_1_1debug_1_1_scoped_profiler_1adac26cf3bf755854fa050b35f12aaff0" prot="private" virt="non-virtual"><scope>learnql::debug::ScopedProfiler</scope><name>memory_used_</name></member>
+      <member refid="classlearnql_1_1debug_1_1_scoped_profiler_1ab6b71efbaf0f53420f9f5ff57420756d" prot="private" virt="non-virtual"><scope>learnql::debug::ScopedProfiler</scope><name>operation_name_</name></member>
+      <member refid="classlearnql_1_1debug_1_1_scoped_profiler_1a01ce084bbd6bbe6ec081426e43f59da8" prot="private" virt="non-virtual"><scope>learnql::debug::ScopedProfiler</scope><name>rows_processed_</name></member>
+      <member refid="classlearnql_1_1debug_1_1_scoped_profiler_1a54f453a6f73d3dc94c4f4f91a6517a42" prot="public" virt="non-virtual"><scope>learnql::debug::ScopedProfiler</scope><name>ScopedProfiler</name></member>
+      <member refid="classlearnql_1_1debug_1_1_scoped_profiler_1add5e0b4a97e493d52f23ac212969a3bb" prot="public" virt="non-virtual"><scope>learnql::debug::ScopedProfiler</scope><name>set_memory_used</name></member>
+      <member refid="classlearnql_1_1debug_1_1_scoped_profiler_1ac5e7865d8b17f55811fa9cea3a010241" prot="public" virt="non-virtual"><scope>learnql::debug::ScopedProfiler</scope><name>set_rows_processed</name></member>
+      <member refid="classlearnql_1_1debug_1_1_scoped_profiler_1ad60e8417ebf81e1ceb873f05264e04aa" prot="private" virt="non-virtual"><scope>learnql::debug::ScopedProfiler</scope><name>start_</name></member>
+      <member refid="classlearnql_1_1debug_1_1_scoped_profiler_1acb23868425a105b3261e41ed7b85a40b" prot="public" virt="non-virtual"><scope>learnql::debug::ScopedProfiler</scope><name>~ScopedProfiler</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

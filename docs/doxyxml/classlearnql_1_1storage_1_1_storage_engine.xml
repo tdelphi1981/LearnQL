@@ -1,0 +1,822 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classlearnql_1_1storage_1_1_storage_engine" kind="class" language="C++" prot="public">
+    <compoundname>learnql::storage::StorageEngine</compoundname>
+    <includes refid="_storage_engine_8hpp" local="no">StorageEngine.hpp</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classlearnql_1_1storage_1_1_storage_engine_1a330674386a41fc36f0ec5c48cc7b6441" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string learnql::storage::StorageEngine::file_path_</definition>
+        <argsstring></argsstring>
+        <name>file_path_</name>
+        <qualifiedname>learnql::storage::StorageEngine::file_path_</qualifiedname>
+        <briefdescription>
+<para>Path to database file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/StorageEngine.hpp" line="478" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/StorageEngine.hpp" bodystart="478" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlearnql_1_1storage_1_1_storage_engine_1a4f247410b874a5c66919106c7f993aa7" prot="private" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t learnql::storage::StorageEngine::next_page_id_</definition>
+        <argsstring></argsstring>
+        <name>next_page_id_</name>
+        <qualifiedname>learnql::storage::StorageEngine::next_page_id_</qualifiedname>
+        <briefdescription>
+<para>Next page ID to allocate. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/StorageEngine.hpp" line="479" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/StorageEngine.hpp" bodystart="479" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlearnql_1_1storage_1_1_storage_engine_1aa65cc29d6a2f66a806557f96e7d09251" prot="private" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t learnql::storage::StorageEngine::free_list_head_</definition>
+        <argsstring></argsstring>
+        <name>free_list_head_</name>
+        <qualifiedname>learnql::storage::StorageEngine::free_list_head_</qualifiedname>
+        <briefdescription>
+<para>Head of free list. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/StorageEngine.hpp" line="480" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/StorageEngine.hpp" bodystart="480" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlearnql_1_1storage_1_1_storage_engine_1a2736277abef37db1bf4deee27ef13d27" prot="private" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t learnql::storage::StorageEngine::sys_tables_root_</definition>
+        <argsstring></argsstring>
+        <name>sys_tables_root_</name>
+        <qualifiedname>learnql::storage::StorageEngine::sys_tables_root_</qualifiedname>
+        <briefdescription>
+<para>Root page ID for _sys_tables. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/StorageEngine.hpp" line="481" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/StorageEngine.hpp" bodystart="481" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlearnql_1_1storage_1_1_storage_engine_1a18b2bd017d1bd789ac5a7933f1121143" prot="private" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t learnql::storage::StorageEngine::sys_fields_root_</definition>
+        <argsstring></argsstring>
+        <name>sys_fields_root_</name>
+        <qualifiedname>learnql::storage::StorageEngine::sys_fields_root_</qualifiedname>
+        <briefdescription>
+<para>Root page ID for _sys_fields. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/StorageEngine.hpp" line="482" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/StorageEngine.hpp" bodystart="482" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlearnql_1_1storage_1_1_storage_engine_1ac00841e72b41abc3b57767a7d9c0afe4" prot="private" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t learnql::storage::StorageEngine::sys_indexes_root_</definition>
+        <argsstring></argsstring>
+        <name>sys_indexes_root_</name>
+        <qualifiedname>learnql::storage::StorageEngine::sys_indexes_root_</qualifiedname>
+        <briefdescription>
+<para>Root page ID for _sys_indexes (NEW!). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/StorageEngine.hpp" line="483" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/StorageEngine.hpp" bodystart="483" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlearnql_1_1storage_1_1_storage_engine_1aeca846969cc11bfb906c23774be850a6" prot="private" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t learnql::storage::StorageEngine::cache_size_</definition>
+        <argsstring></argsstring>
+        <name>cache_size_</name>
+        <qualifiedname>learnql::storage::StorageEngine::cache_size_</qualifiedname>
+        <briefdescription>
+<para>Maximum cache size. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/StorageEngine.hpp" line="484" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/StorageEngine.hpp" bodystart="484" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlearnql_1_1storage_1_1_storage_engine_1a8636dd79d990ba00e45143ca98074fb6" prot="private" static="no" mutable="no">
+        <type>std::unordered_map&lt; uint64_t, <ref refid="classlearnql_1_1storage_1_1_page" kindref="compound">Page</ref> &gt;</type>
+        <definition>std::unordered_map&lt;uint64_t, Page&gt; learnql::storage::StorageEngine::page_cache_</definition>
+        <argsstring></argsstring>
+        <name>page_cache_</name>
+        <qualifiedname>learnql::storage::StorageEngine::page_cache_</qualifiedname>
+        <briefdescription>
+<para><ref refid="classlearnql_1_1storage_1_1_page" kindref="compound">Page</ref> cache. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/StorageEngine.hpp" line="485" column="24" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/StorageEngine.hpp" bodystart="485" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlearnql_1_1storage_1_1_storage_engine_1aa0263c3099ba649433095356dcd87686" prot="private" static="no" mutable="no">
+        <type>std::unordered_set&lt; uint64_t &gt;</type>
+        <definition>std::unordered_set&lt;uint64_t&gt; learnql::storage::StorageEngine::dirty_pages_</definition>
+        <argsstring></argsstring>
+        <name>dirty_pages_</name>
+        <qualifiedname>learnql::storage::StorageEngine::dirty_pages_</qualifiedname>
+        <briefdescription>
+<para>Set of dirty page IDs. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/StorageEngine.hpp" line="486" column="24" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/StorageEngine.hpp" bodystart="486" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlearnql_1_1storage_1_1_storage_engine_1a77600da6683a8360ef3eeadab12307c9" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>learnql::storage::StorageEngine::StorageEngine</definition>
+        <argsstring>(const std::string &amp;file_path, std::size_t cache_size=64)</argsstring>
+        <name>StorageEngine</name>
+        <qualifiedname>learnql::storage::StorageEngine::StorageEngine</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>file_path</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>cache_size</declname>
+          <defval>64</defval>
+        </param>
+        <briefdescription>
+<para>Creates or opens a database file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file_path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Path to the database file </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cache_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of pages to cache in memory </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::runtime_error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if file cannot be opened </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/StorageEngine.hpp" line="41" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/StorageEngine.hpp" bodystart="41" bodyend="58"/>
+        <referencedby refid="classlearnql_1_1storage_1_1_storage_engine_1a958af39adfc9bc3bdd95a79f86679ca2">operator=</referencedby>
+        <referencedby refid="classlearnql_1_1storage_1_1_storage_engine_1a6d105d10d455d4835cef228f72a71337">operator=</referencedby>
+        <referencedby refid="classlearnql_1_1storage_1_1_storage_engine_1aaf73fa14ab575adb483192e285dd13a2">StorageEngine</referencedby>
+        <referencedby refid="classlearnql_1_1storage_1_1_storage_engine_1a3d1eb95624738dc94618788835088d51">StorageEngine</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1storage_1_1_storage_engine_1aa0427d916733e2896dd43a03c074be07" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>learnql::storage::StorageEngine::~StorageEngine</definition>
+        <argsstring>()</argsstring>
+        <name>~StorageEngine</name>
+        <qualifiedname>learnql::storage::StorageEngine::~StorageEngine</qualifiedname>
+        <briefdescription>
+<para>Destructor - flushes all dirty pages. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/StorageEngine.hpp" line="63" column="5" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/StorageEngine.hpp" bodystart="63" bodyend="69"/>
+        <references refid="classlearnql_1_1storage_1_1_storage_engine_1ac0fbe07cbe28db28214acbb17116195f" compoundref="_storage_engine_8hpp" startline="198" endline="230">flush_all</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1storage_1_1_storage_engine_1aaf73fa14ab575adb483192e285dd13a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>learnql::storage::StorageEngine::StorageEngine</definition>
+        <argsstring>(const StorageEngine &amp;)=delete</argsstring>
+        <name>StorageEngine</name>
+        <qualifiedname>learnql::storage::StorageEngine::StorageEngine</qualifiedname>
+        <param>
+          <type>const StorageEngine &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/StorageEngine.hpp" line="72" column="5"/>
+        <references refid="classlearnql_1_1storage_1_1_storage_engine_1a77600da6683a8360ef3eeadab12307c9" compoundref="_storage_engine_8hpp" startline="41" endline="58">StorageEngine</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1storage_1_1_storage_engine_1a958af39adfc9bc3bdd95a79f86679ca2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classlearnql_1_1storage_1_1_storage_engine_1a77600da6683a8360ef3eeadab12307c9" kindref="member">StorageEngine</ref> &amp;</type>
+        <definition>StorageEngine &amp; learnql::storage::StorageEngine::operator=</definition>
+        <argsstring>(const StorageEngine &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <qualifiedname>learnql::storage::StorageEngine::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classlearnql_1_1storage_1_1_storage_engine_1a77600da6683a8360ef3eeadab12307c9" kindref="member">StorageEngine</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/StorageEngine.hpp" line="73" column="19"/>
+        <references refid="classlearnql_1_1storage_1_1_storage_engine_1a77600da6683a8360ef3eeadab12307c9" compoundref="_storage_engine_8hpp" startline="41" endline="58">StorageEngine</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1storage_1_1_storage_engine_1a3d1eb95624738dc94618788835088d51" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>learnql::storage::StorageEngine::StorageEngine</definition>
+        <argsstring>(StorageEngine &amp;&amp;) noexcept=default</argsstring>
+        <name>StorageEngine</name>
+        <qualifiedname>learnql::storage::StorageEngine::StorageEngine</qualifiedname>
+        <param>
+          <type>StorageEngine &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/StorageEngine.hpp" line="76" column="5"/>
+        <references refid="classlearnql_1_1storage_1_1_storage_engine_1a77600da6683a8360ef3eeadab12307c9" compoundref="_storage_engine_8hpp" startline="41" endline="58">StorageEngine</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1storage_1_1_storage_engine_1a6d105d10d455d4835cef228f72a71337" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type><ref refid="classlearnql_1_1storage_1_1_storage_engine_1a77600da6683a8360ef3eeadab12307c9" kindref="member">StorageEngine</ref> &amp;</type>
+        <definition>StorageEngine &amp; learnql::storage::StorageEngine::operator=</definition>
+        <argsstring>(StorageEngine &amp;&amp;) noexcept=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>learnql::storage::StorageEngine::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classlearnql_1_1storage_1_1_storage_engine_1a77600da6683a8360ef3eeadab12307c9" kindref="member">StorageEngine</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/StorageEngine.hpp" line="77" column="19"/>
+        <references refid="classlearnql_1_1storage_1_1_storage_engine_1a77600da6683a8360ef3eeadab12307c9" compoundref="_storage_engine_8hpp" startline="41" endline="58">StorageEngine</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1storage_1_1_storage_engine_1aff0652d3cef3b1392e351a590dee86cf" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t learnql::storage::StorageEngine::allocate_page</definition>
+        <argsstring>(PageType type=PageType::DATA)</argsstring>
+        <name>allocate_page</name>
+        <qualifiedname>learnql::storage::StorageEngine::allocate_page</qualifiedname>
+        <param>
+          <type><ref refid="namespacelearnql_1_1storage_1ae05b45a9b02a6b9290c9867f77f420b7" kindref="member">PageType</ref></type>
+          <declname>type</declname>
+          <defval><ref refid="namespacelearnql_1_1storage_1ae05b45a9b02a6b9290c9867f77f420b7ae44f9e348e41cb272efa87387728571b" kindref="member">PageType::DATA</ref></defval>
+        </param>
+        <briefdescription>
+<para>Allocates a new page. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of page to allocate </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classlearnql_1_1storage_1_1_page" kindref="compound">Page</ref> ID of the allocated page</para>
+</simplesect>
+Uses free list if available, otherwise allocates new page </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/StorageEngine.hpp" line="85" column="15" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/StorageEngine.hpp" bodystart="85" bodyend="108"/>
+        <references refid="classlearnql_1_1storage_1_1_storage_engine_1aff0652d3cef3b1392e351a590dee86cf" compoundref="_storage_engine_8hpp" startline="85" endline="108">allocate_page</references>
+        <references refid="classlearnql_1_1storage_1_1_storage_engine_1ac93edcca8ac34e0d45ecebdf6072cc43" compoundref="_storage_engine_8hpp" startline="139" endline="177">read_page</references>
+        <references refid="classlearnql_1_1storage_1_1_storage_engine_1a0c23db9d880689cef18be8cbc069585e" compoundref="_storage_engine_8hpp" startline="184" endline="193">write_page</references>
+        <referencedby refid="classlearnql_1_1storage_1_1_storage_engine_1aff0652d3cef3b1392e351a590dee86cf" compoundref="_storage_engine_8hpp" startline="85" endline="108">allocate_page</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1storage_1_1_storage_engine_1aa1eb303fe871e06e56610839e8eef519" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::storage::StorageEngine::deallocate_page</definition>
+        <argsstring>(uint64_t page_id)</argsstring>
+        <name>deallocate_page</name>
+        <qualifiedname>learnql::storage::StorageEngine::deallocate_page</qualifiedname>
+        <param>
+          <type>uint64_t</type>
+          <declname>page_id</declname>
+        </param>
+        <briefdescription>
+<para>Deallocates a page (adds to free list). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>page_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID of the page to deallocate </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/StorageEngine.hpp" line="114" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/StorageEngine.hpp" bodystart="114" bodyend="131"/>
+        <references refid="namespacelearnql_1_1storage_1ae05b45a9b02a6b9290c9867f77f420b7a88c189a42c87aa49d667fc8ab76bc323" compoundref="_page_8hpp" startline="29">learnql::storage::FREE</references>
+        <references refid="classlearnql_1_1storage_1_1_storage_engine_1ac93edcca8ac34e0d45ecebdf6072cc43" compoundref="_storage_engine_8hpp" startline="139" endline="177">read_page</references>
+        <references refid="classlearnql_1_1storage_1_1_storage_engine_1a0c23db9d880689cef18be8cbc069585e" compoundref="_storage_engine_8hpp" startline="184" endline="193">write_page</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1storage_1_1_storage_engine_1ac93edcca8ac34e0d45ecebdf6072cc43" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classlearnql_1_1storage_1_1_page" kindref="compound">Page</ref></type>
+        <definition>Page learnql::storage::StorageEngine::read_page</definition>
+        <argsstring>(uint64_t page_id)</argsstring>
+        <name>read_page</name>
+        <qualifiedname>learnql::storage::StorageEngine::read_page</qualifiedname>
+        <param>
+          <type>uint64_t</type>
+          <declname>page_id</declname>
+        </param>
+        <briefdescription>
+<para>Reads a page from storage. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>page_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID of the page to read </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The page </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::runtime_error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if page cannot be read </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/StorageEngine.hpp" line="139" column="11" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/StorageEngine.hpp" bodystart="139" bodyend="177"/>
+        <references refid="classlearnql_1_1storage_1_1_page_1a968a9d7e20aedb1f9d45450758e147a9" compoundref="_page_8hpp" startline="144" endline="146">learnql::storage::Page::header</references>
+        <references refid="structlearnql_1_1storage_1_1_page_header_1a60987033234dd199f8f9d51dfcf9a9a6" compoundref="_page_8hpp" startline="81" endline="83">learnql::storage::PageHeader::is_valid</references>
+        <references refid="namespacelearnql_1_1storage_1ae36f10f66bb5104ebab3a7cd143e444a" compoundref="_page_8hpp" startline="23">learnql::storage::PAGE_SIZE</references>
+        <references refid="classlearnql_1_1storage_1_1_page_1aa5eebaadb86eb2038f21fa250c427f4b" compoundref="_page_8hpp" startline="229" endline="231">learnql::storage::Page::raw_data</references>
+        <referencedby refid="classlearnql_1_1storage_1_1_storage_engine_1aff0652d3cef3b1392e351a590dee86cf" compoundref="_storage_engine_8hpp" startline="85" endline="108">allocate_page</referencedby>
+        <referencedby refid="classlearnql_1_1storage_1_1_storage_engine_1aa1eb303fe871e06e56610839e8eef519" compoundref="_storage_engine_8hpp" startline="114" endline="131">deallocate_page</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1storage_1_1_storage_engine_1a0c23db9d880689cef18be8cbc069585e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::storage::StorageEngine::write_page</definition>
+        <argsstring>(uint64_t page_id, const Page &amp;page)</argsstring>
+        <name>write_page</name>
+        <qualifiedname>learnql::storage::StorageEngine::write_page</qualifiedname>
+        <param>
+          <type>uint64_t</type>
+          <declname>page_id</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classlearnql_1_1storage_1_1_page" kindref="compound">Page</ref> &amp;</type>
+          <declname>page</declname>
+        </param>
+        <briefdescription>
+<para>Writes a page to storage. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>page_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID of the page </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>page</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The page to write </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/StorageEngine.hpp" line="184" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/StorageEngine.hpp" bodystart="184" bodyend="193"/>
+        <references refid="classlearnql_1_1storage_1_1_storage_engine_1ac0fbe07cbe28db28214acbb17116195f" compoundref="_storage_engine_8hpp" startline="198" endline="230">flush_all</references>
+        <referencedby refid="classlearnql_1_1storage_1_1_storage_engine_1aff0652d3cef3b1392e351a590dee86cf" compoundref="_storage_engine_8hpp" startline="85" endline="108">allocate_page</referencedby>
+        <referencedby refid="classlearnql_1_1storage_1_1_storage_engine_1aa1eb303fe871e06e56610839e8eef519" compoundref="_storage_engine_8hpp" startline="114" endline="131">deallocate_page</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1storage_1_1_storage_engine_1ac0fbe07cbe28db28214acbb17116195f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::storage::StorageEngine::flush_all</definition>
+        <argsstring>()</argsstring>
+        <name>flush_all</name>
+        <qualifiedname>learnql::storage::StorageEngine::flush_all</qualifiedname>
+        <briefdescription>
+<para>Flushes all dirty pages to disk. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/StorageEngine.hpp" line="198" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/StorageEngine.hpp" bodystart="198" bodyend="230"/>
+        <references refid="namespacelearnql_1_1storage_1ae36f10f66bb5104ebab3a7cd143e444a" compoundref="_page_8hpp" startline="23">learnql::storage::PAGE_SIZE</references>
+        <references refid="classlearnql_1_1storage_1_1_page_1aa5eebaadb86eb2038f21fa250c427f4b" compoundref="_page_8hpp" startline="229" endline="231">learnql::storage::Page::raw_data</references>
+        <references refid="classlearnql_1_1storage_1_1_page_1a98e4779d7d00de208006037502883767" compoundref="_page_8hpp" startline="258" endline="260">learnql::storage::Page::update_checksum</references>
+        <referencedby refid="classlearnql_1_1storage_1_1_storage_engine_1a64436d4f031e75804542aef27daf733d" compoundref="_storage_engine_8hpp" startline="283" endline="286">clear_cache</referencedby>
+        <referencedby refid="classlearnql_1_1storage_1_1_storage_engine_1a0c23db9d880689cef18be8cbc069585e" compoundref="_storage_engine_8hpp" startline="184" endline="193">write_page</referencedby>
+        <referencedby refid="classlearnql_1_1storage_1_1_storage_engine_1aa0427d916733e2896dd43a03c074be07" compoundref="_storage_engine_8hpp" startline="63" endline="69">~StorageEngine</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1storage_1_1_storage_engine_1a5ad865c5f01c699003f7d0dedbfe59ff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::storage::StorageEngine::flush_page</definition>
+        <argsstring>(uint64_t page_id)</argsstring>
+        <name>flush_page</name>
+        <qualifiedname>learnql::storage::StorageEngine::flush_page</qualifiedname>
+        <param>
+          <type>uint64_t</type>
+          <declname>page_id</declname>
+        </param>
+        <briefdescription>
+<para>Flushes a specific page to disk. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>page_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID of the page to flush </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/StorageEngine.hpp" line="236" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/StorageEngine.hpp" bodystart="236" bodyend="262"/>
+        <references refid="namespacelearnql_1_1storage_1ae36f10f66bb5104ebab3a7cd143e444a" compoundref="_page_8hpp" startline="23">learnql::storage::PAGE_SIZE</references>
+        <references refid="classlearnql_1_1storage_1_1_page_1aa5eebaadb86eb2038f21fa250c427f4b" compoundref="_page_8hpp" startline="229" endline="231">learnql::storage::Page::raw_data</references>
+        <references refid="classlearnql_1_1storage_1_1_page_1a98e4779d7d00de208006037502883767" compoundref="_page_8hpp" startline="258" endline="260">learnql::storage::Page::update_checksum</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1storage_1_1_storage_engine_1a2c6d4937b3ccc2b705f1e893864a451b" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t learnql::storage::StorageEngine::get_page_count</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>get_page_count</name>
+        <qualifiedname>learnql::storage::StorageEngine::get_page_count</qualifiedname>
+        <briefdescription>
+<para>Gets the total number of pages. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Total page count </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/StorageEngine.hpp" line="268" column="15" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/StorageEngine.hpp" bodystart="268" bodyend="270"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1storage_1_1_storage_engine_1abd4ea83151893d92191d3c1d96a6a26f" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string &amp; learnql::storage::StorageEngine::get_file_path</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>get_file_path</name>
+        <qualifiedname>learnql::storage::StorageEngine::get_file_path</qualifiedname>
+        <briefdescription>
+<para>Gets the file path. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Path to the database file </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/StorageEngine.hpp" line="276" column="24" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/StorageEngine.hpp" bodystart="276" bodyend="278"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1storage_1_1_storage_engine_1a64436d4f031e75804542aef27daf733d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::storage::StorageEngine::clear_cache</definition>
+        <argsstring>()</argsstring>
+        <name>clear_cache</name>
+        <qualifiedname>learnql::storage::StorageEngine::clear_cache</qualifiedname>
+        <briefdescription>
+<para>Clears the page cache. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/StorageEngine.hpp" line="283" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/StorageEngine.hpp" bodystart="283" bodyend="286"/>
+        <references refid="classlearnql_1_1storage_1_1_storage_engine_1ac0fbe07cbe28db28214acbb17116195f" compoundref="_storage_engine_8hpp" startline="198" endline="230">flush_all</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1storage_1_1_storage_engine_1a8fc1cc8a3069637291fff49d938c260c" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t learnql::storage::StorageEngine::get_sys_tables_root</definition>
+        <argsstring>() const</argsstring>
+        <name>get_sys_tables_root</name>
+        <qualifiedname>learnql::storage::StorageEngine::get_sys_tables_root</qualifiedname>
+        <briefdescription>
+<para>Get root page ID for _sys_tables catalog table. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Root page ID, or 0 if not set </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/StorageEngine.hpp" line="292" column="15" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/StorageEngine.hpp" bodystart="292" bodyend="294"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1storage_1_1_storage_engine_1ad60d45a8ce6b02a4d67d8ab41e908576" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t learnql::storage::StorageEngine::get_sys_fields_root</definition>
+        <argsstring>() const</argsstring>
+        <name>get_sys_fields_root</name>
+        <qualifiedname>learnql::storage::StorageEngine::get_sys_fields_root</qualifiedname>
+        <briefdescription>
+<para>Get root page ID for _sys_fields catalog table. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Root page ID, or 0 if not set </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/StorageEngine.hpp" line="300" column="15" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/StorageEngine.hpp" bodystart="300" bodyend="302"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1storage_1_1_storage_engine_1a94db4882faa302bd4db646e4b5a3c397" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::storage::StorageEngine::set_sys_tables_root</definition>
+        <argsstring>(uint64_t root_page_id)</argsstring>
+        <name>set_sys_tables_root</name>
+        <qualifiedname>learnql::storage::StorageEngine::set_sys_tables_root</qualifiedname>
+        <param>
+          <type>uint64_t</type>
+          <declname>root_page_id</declname>
+        </param>
+        <briefdescription>
+<para>Set root page ID for _sys_tables catalog table. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>root_page_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Root page ID </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/StorageEngine.hpp" line="308" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/StorageEngine.hpp" bodystart="308" bodyend="311"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1storage_1_1_storage_engine_1a764832016343a1970de4f47e70d50f4c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::storage::StorageEngine::set_sys_fields_root</definition>
+        <argsstring>(uint64_t root_page_id)</argsstring>
+        <name>set_sys_fields_root</name>
+        <qualifiedname>learnql::storage::StorageEngine::set_sys_fields_root</qualifiedname>
+        <param>
+          <type>uint64_t</type>
+          <declname>root_page_id</declname>
+        </param>
+        <briefdescription>
+<para>Set root page ID for _sys_fields catalog table. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>root_page_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Root page ID </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/StorageEngine.hpp" line="317" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/StorageEngine.hpp" bodystart="317" bodyend="320"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1storage_1_1_storage_engine_1a0dae2d44d804bcdc12f81f04d61cfa5f" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t learnql::storage::StorageEngine::get_sys_indexes_root</definition>
+        <argsstring>() const</argsstring>
+        <name>get_sys_indexes_root</name>
+        <qualifiedname>learnql::storage::StorageEngine::get_sys_indexes_root</qualifiedname>
+        <briefdescription>
+<para>Get root page ID for _sys_indexes catalog table (NEW!). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Root page ID, or 0 if not set </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/StorageEngine.hpp" line="326" column="15" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/StorageEngine.hpp" bodystart="326" bodyend="328"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1storage_1_1_storage_engine_1abbeded13022d869bbc94356d33bc79d7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::storage::StorageEngine::set_sys_indexes_root</definition>
+        <argsstring>(uint64_t root_page_id)</argsstring>
+        <name>set_sys_indexes_root</name>
+        <qualifiedname>learnql::storage::StorageEngine::set_sys_indexes_root</qualifiedname>
+        <param>
+          <type>uint64_t</type>
+          <declname>root_page_id</declname>
+        </param>
+        <briefdescription>
+<para>Set root page ID for _sys_indexes catalog table (NEW!). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>root_page_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Root page ID </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/StorageEngine.hpp" line="334" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/StorageEngine.hpp" bodystart="334" bodyend="337"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classlearnql_1_1storage_1_1_storage_engine_1aec4f81f4ca71bac98f380d7329703dab" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::storage::StorageEngine::create_new_database</definition>
+        <argsstring>()</argsstring>
+        <name>create_new_database</name>
+        <qualifiedname>learnql::storage::StorageEngine::create_new_database</qualifiedname>
+        <briefdescription>
+<para>Creates a new database file with metadata page (version 3 format). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="classlearnql_1_1storage_1_1_page" kindref="compound">Page</ref> 0 Layout (New Format): Offset 0-15: &quot;LearnQL Database&quot; header (16 bytes) Offset 16-23: next_page_id (8 bytes) Offset 24-31: free_list_head (8 bytes) Offset 32-39: sys_tables_root page ID (8 bytes) Offset 40-47: sys_fields_root page ID (8 bytes) Offset 48-51: database version = 3 (4 bytes) [UPDATED from v2] Offset 52-59: created_timestamp (8 bytes) Offset 60-67: sys_indexes_root page ID (8 bytes) [NEW in v3] </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/StorageEngine.hpp" line="354" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/StorageEngine.hpp" bodystart="354" bodyend="389"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1storage_1_1_storage_engine_1a4ac50505ed5e8696fc3149a7eda6e709" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::storage::StorageEngine::load_metadata</definition>
+        <argsstring>()</argsstring>
+        <name>load_metadata</name>
+        <qualifiedname>learnql::storage::StorageEngine::load_metadata</qualifiedname>
+        <briefdescription>
+<para>Loads metadata from page 0 (supports v2 and v3 formats). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::runtime_error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if format is invalid or version is incompatible </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/StorageEngine.hpp" line="395" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/StorageEngine.hpp" bodystart="395" bodyend="432"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1storage_1_1_storage_engine_1a19f108e49e0fd6e41632124cc685fd7e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::storage::StorageEngine::save_metadata</definition>
+        <argsstring>()</argsstring>
+        <name>save_metadata</name>
+        <qualifiedname>learnql::storage::StorageEngine::save_metadata</qualifiedname>
+        <briefdescription>
+<para>Saves metadata to page 0 (supports v2 and v3 formats). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/StorageEngine.hpp" line="437" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/StorageEngine.hpp" bodystart="437" bodyend="453"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1storage_1_1_storage_engine_1a9c6356f0c508c0e76e7ef94fbed082b9" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::storage::StorageEngine::evict_page</definition>
+        <argsstring>()</argsstring>
+        <name>evict_page</name>
+        <qualifiedname>learnql::storage::StorageEngine::evict_page</qualifiedname>
+        <briefdescription>
+<para>Evicts a page from the cache (LRU-like). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/StorageEngine.hpp" line="458" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/StorageEngine.hpp" bodystart="458" bodyend="475"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Storage engine managing pages and file I/O. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Provides page-based storage with free list management</para>
+<para>Features:<itemizedlist>
+<listitem><para><ref refid="classlearnql_1_1storage_1_1_page" kindref="compound">Page</ref> allocation and deallocation</para>
+</listitem><listitem><para>Free list management for reusing deleted pages</para>
+</listitem><listitem><para><ref refid="classlearnql_1_1storage_1_1_page" kindref="compound">Page</ref> caching for performance</para>
+</listitem><listitem><para>RAII file handling</para>
+</listitem><listitem><para>Transaction-like flush operations</para>
+</listitem></itemizedlist>
+</para>
+<para>File Layout:<itemizedlist>
+<listitem><para><ref refid="classlearnql_1_1storage_1_1_page" kindref="compound">Page</ref> 0: Metadata page (database info, free list head, etc.)</para>
+</listitem><listitem><para><ref refid="classlearnql_1_1storage_1_1_page" kindref="compound">Page</ref> 1+: Data pages </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/StorageEngine.hpp" line="33" column="1" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/StorageEngine.hpp" bodystart="33" bodyend="487"/>
+    <listofallmembers>
+      <member refid="classlearnql_1_1storage_1_1_storage_engine_1aff0652d3cef3b1392e351a590dee86cf" prot="public" virt="non-virtual"><scope>learnql::storage::StorageEngine</scope><name>allocate_page</name></member>
+      <member refid="classlearnql_1_1storage_1_1_storage_engine_1aeca846969cc11bfb906c23774be850a6" prot="private" virt="non-virtual"><scope>learnql::storage::StorageEngine</scope><name>cache_size_</name></member>
+      <member refid="classlearnql_1_1storage_1_1_storage_engine_1a64436d4f031e75804542aef27daf733d" prot="public" virt="non-virtual"><scope>learnql::storage::StorageEngine</scope><name>clear_cache</name></member>
+      <member refid="classlearnql_1_1storage_1_1_storage_engine_1aec4f81f4ca71bac98f380d7329703dab" prot="private" virt="non-virtual"><scope>learnql::storage::StorageEngine</scope><name>create_new_database</name></member>
+      <member refid="classlearnql_1_1storage_1_1_storage_engine_1aa1eb303fe871e06e56610839e8eef519" prot="public" virt="non-virtual"><scope>learnql::storage::StorageEngine</scope><name>deallocate_page</name></member>
+      <member refid="classlearnql_1_1storage_1_1_storage_engine_1aa0263c3099ba649433095356dcd87686" prot="private" virt="non-virtual"><scope>learnql::storage::StorageEngine</scope><name>dirty_pages_</name></member>
+      <member refid="classlearnql_1_1storage_1_1_storage_engine_1a9c6356f0c508c0e76e7ef94fbed082b9" prot="private" virt="non-virtual"><scope>learnql::storage::StorageEngine</scope><name>evict_page</name></member>
+      <member refid="classlearnql_1_1storage_1_1_storage_engine_1a330674386a41fc36f0ec5c48cc7b6441" prot="private" virt="non-virtual"><scope>learnql::storage::StorageEngine</scope><name>file_path_</name></member>
+      <member refid="classlearnql_1_1storage_1_1_storage_engine_1ac0fbe07cbe28db28214acbb17116195f" prot="public" virt="non-virtual"><scope>learnql::storage::StorageEngine</scope><name>flush_all</name></member>
+      <member refid="classlearnql_1_1storage_1_1_storage_engine_1a5ad865c5f01c699003f7d0dedbfe59ff" prot="public" virt="non-virtual"><scope>learnql::storage::StorageEngine</scope><name>flush_page</name></member>
+      <member refid="classlearnql_1_1storage_1_1_storage_engine_1aa65cc29d6a2f66a806557f96e7d09251" prot="private" virt="non-virtual"><scope>learnql::storage::StorageEngine</scope><name>free_list_head_</name></member>
+      <member refid="classlearnql_1_1storage_1_1_storage_engine_1abd4ea83151893d92191d3c1d96a6a26f" prot="public" virt="non-virtual"><scope>learnql::storage::StorageEngine</scope><name>get_file_path</name></member>
+      <member refid="classlearnql_1_1storage_1_1_storage_engine_1a2c6d4937b3ccc2b705f1e893864a451b" prot="public" virt="non-virtual"><scope>learnql::storage::StorageEngine</scope><name>get_page_count</name></member>
+      <member refid="classlearnql_1_1storage_1_1_storage_engine_1ad60d45a8ce6b02a4d67d8ab41e908576" prot="public" virt="non-virtual"><scope>learnql::storage::StorageEngine</scope><name>get_sys_fields_root</name></member>
+      <member refid="classlearnql_1_1storage_1_1_storage_engine_1a0dae2d44d804bcdc12f81f04d61cfa5f" prot="public" virt="non-virtual"><scope>learnql::storage::StorageEngine</scope><name>get_sys_indexes_root</name></member>
+      <member refid="classlearnql_1_1storage_1_1_storage_engine_1a8fc1cc8a3069637291fff49d938c260c" prot="public" virt="non-virtual"><scope>learnql::storage::StorageEngine</scope><name>get_sys_tables_root</name></member>
+      <member refid="classlearnql_1_1storage_1_1_storage_engine_1a4ac50505ed5e8696fc3149a7eda6e709" prot="private" virt="non-virtual"><scope>learnql::storage::StorageEngine</scope><name>load_metadata</name></member>
+      <member refid="classlearnql_1_1storage_1_1_storage_engine_1a4f247410b874a5c66919106c7f993aa7" prot="private" virt="non-virtual"><scope>learnql::storage::StorageEngine</scope><name>next_page_id_</name></member>
+      <member refid="classlearnql_1_1storage_1_1_storage_engine_1a958af39adfc9bc3bdd95a79f86679ca2" prot="public" virt="non-virtual"><scope>learnql::storage::StorageEngine</scope><name>operator=</name></member>
+      <member refid="classlearnql_1_1storage_1_1_storage_engine_1a6d105d10d455d4835cef228f72a71337" prot="public" virt="non-virtual"><scope>learnql::storage::StorageEngine</scope><name>operator=</name></member>
+      <member refid="classlearnql_1_1storage_1_1_storage_engine_1a8636dd79d990ba00e45143ca98074fb6" prot="private" virt="non-virtual"><scope>learnql::storage::StorageEngine</scope><name>page_cache_</name></member>
+      <member refid="classlearnql_1_1storage_1_1_storage_engine_1ac93edcca8ac34e0d45ecebdf6072cc43" prot="public" virt="non-virtual"><scope>learnql::storage::StorageEngine</scope><name>read_page</name></member>
+      <member refid="classlearnql_1_1storage_1_1_storage_engine_1a19f108e49e0fd6e41632124cc685fd7e" prot="private" virt="non-virtual"><scope>learnql::storage::StorageEngine</scope><name>save_metadata</name></member>
+      <member refid="classlearnql_1_1storage_1_1_storage_engine_1a764832016343a1970de4f47e70d50f4c" prot="public" virt="non-virtual"><scope>learnql::storage::StorageEngine</scope><name>set_sys_fields_root</name></member>
+      <member refid="classlearnql_1_1storage_1_1_storage_engine_1abbeded13022d869bbc94356d33bc79d7" prot="public" virt="non-virtual"><scope>learnql::storage::StorageEngine</scope><name>set_sys_indexes_root</name></member>
+      <member refid="classlearnql_1_1storage_1_1_storage_engine_1a94db4882faa302bd4db646e4b5a3c397" prot="public" virt="non-virtual"><scope>learnql::storage::StorageEngine</scope><name>set_sys_tables_root</name></member>
+      <member refid="classlearnql_1_1storage_1_1_storage_engine_1a77600da6683a8360ef3eeadab12307c9" prot="public" virt="non-virtual"><scope>learnql::storage::StorageEngine</scope><name>StorageEngine</name></member>
+      <member refid="classlearnql_1_1storage_1_1_storage_engine_1aaf73fa14ab575adb483192e285dd13a2" prot="public" virt="non-virtual"><scope>learnql::storage::StorageEngine</scope><name>StorageEngine</name></member>
+      <member refid="classlearnql_1_1storage_1_1_storage_engine_1a3d1eb95624738dc94618788835088d51" prot="public" virt="non-virtual"><scope>learnql::storage::StorageEngine</scope><name>StorageEngine</name></member>
+      <member refid="classlearnql_1_1storage_1_1_storage_engine_1a18b2bd017d1bd789ac5a7933f1121143" prot="private" virt="non-virtual"><scope>learnql::storage::StorageEngine</scope><name>sys_fields_root_</name></member>
+      <member refid="classlearnql_1_1storage_1_1_storage_engine_1ac00841e72b41abc3b57767a7d9c0afe4" prot="private" virt="non-virtual"><scope>learnql::storage::StorageEngine</scope><name>sys_indexes_root_</name></member>
+      <member refid="classlearnql_1_1storage_1_1_storage_engine_1a2736277abef37db1bf4deee27ef13d27" prot="private" virt="non-virtual"><scope>learnql::storage::StorageEngine</scope><name>sys_tables_root_</name></member>
+      <member refid="classlearnql_1_1storage_1_1_storage_engine_1a0c23db9d880689cef18be8cbc069585e" prot="public" virt="non-virtual"><scope>learnql::storage::StorageEngine</scope><name>write_page</name></member>
+      <member refid="classlearnql_1_1storage_1_1_storage_engine_1aa0427d916733e2896dd43a03c074be07" prot="public" virt="non-virtual"><scope>learnql::storage::StorageEngine</scope><name>~StorageEngine</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

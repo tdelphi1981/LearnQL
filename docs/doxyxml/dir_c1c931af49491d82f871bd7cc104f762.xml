@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="dir_c1c931af49491d82f871bd7cc104f762" kind="dir">
+    <compoundname>/Users/tolgaberber/Work/CPP/LearnQL/learnql/core</compoundname>
+    <innerfile refid="_database_8hpp">Database.hpp</innerfile>
+    <innerfile refid="_read_only_table_8hpp">ReadOnlyTable.hpp</innerfile>
+    <innerfile refid="_record_id_8hpp">RecordId.hpp</innerfile>
+    <innerfile refid="_table_8hpp">Table.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/"/>
+  </compounddef>
+</doxygen>

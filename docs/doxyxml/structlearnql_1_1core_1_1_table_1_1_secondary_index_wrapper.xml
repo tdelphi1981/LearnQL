@@ -1,0 +1,489 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="structlearnql_1_1core_1_1_table_1_1_secondary_index_wrapper" kind="struct" language="C++" prot="private">
+    <compoundname>learnql::core::Table::SecondaryIndexWrapper</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">learnql::core::Table&lt; T, BatchSize &gt;::SecondaryIndexBase</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>typename FieldType</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structlearnql_1_1core_1_1_table_1_1_secondary_index_wrapper_1a8aa6c17f5a699cc5c4d954df2d79e3d0" prot="public" static="no">
+        <type>std::function&lt; FieldType(const T &amp;)&gt;</type>
+        <definition>using learnql::core::Table&lt; T, BatchSize &gt;::SecondaryIndexWrapper&lt; FieldType &gt;::getter_type =  std::function&lt;FieldType(const T&amp;)&gt;</definition>
+        <argsstring></argsstring>
+        <name>getter_type</name>
+        <qualifiedname>learnql::core::Table::SecondaryIndexWrapper::getter_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="857" column="9" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="857" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="structlearnql_1_1core_1_1_table_1_1_secondary_index_wrapper_1aeeadd2d5296793bd030abc371a6fcab8" prot="public" static="no">
+        <type><ref refid="classlearnql_1_1index_1_1_persistent_secondary_index" kindref="compound">index::PersistentSecondaryIndex</ref>&lt; T, FieldType &gt;</type>
+        <definition>using learnql::core::Table&lt; T, BatchSize &gt;::SecondaryIndexWrapper&lt; FieldType &gt;::unique_index_type =  index::PersistentSecondaryIndex&lt;T, FieldType&gt;</definition>
+        <argsstring></argsstring>
+        <name>unique_index_type</name>
+        <qualifiedname>learnql::core::Table::SecondaryIndexWrapper::unique_index_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="858" column="9" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="858" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="structlearnql_1_1core_1_1_table_1_1_secondary_index_wrapper_1a0b0b903ca0d3b27794d0937be9ada7d3" prot="public" static="no">
+        <type><ref refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index" kindref="compound">index::PersistentMultiValueSecondaryIndex</ref>&lt; T, FieldType &gt;</type>
+        <definition>using learnql::core::Table&lt; T, BatchSize &gt;::SecondaryIndexWrapper&lt; FieldType &gt;::multi_index_type =  index::PersistentMultiValueSecondaryIndex&lt;T, FieldType&gt;</definition>
+        <argsstring></argsstring>
+        <name>multi_index_type</name>
+        <qualifiedname>learnql::core::Table::SecondaryIndexWrapper::multi_index_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="859" column="9" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="859" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlearnql_1_1core_1_1_table_1_1_secondary_index_wrapper_1a77b4ce51a50ede2f4e9abb74dca7b2db" prot="public" static="no" mutable="no">
+        <type>std::unique_ptr&lt; unique_index_type &gt;</type>
+        <definition>std::unique_ptr&lt;unique_index_type&gt; learnql::core::Table&lt; T, BatchSize &gt;::SecondaryIndexWrapper&lt; FieldType &gt;::unique_index_</definition>
+        <argsstring></argsstring>
+        <name>unique_index_</name>
+        <qualifiedname>learnql::core::Table::SecondaryIndexWrapper::unique_index_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="861" column="25" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="861" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1core_1_1_table_1_1_secondary_index_wrapper_1a15957a16970692cf3d1ce47ae4d6c016" prot="public" static="no" mutable="no">
+        <type>std::unique_ptr&lt; multi_index_type &gt;</type>
+        <definition>std::unique_ptr&lt;multi_index_type&gt; learnql::core::Table&lt; T, BatchSize &gt;::SecondaryIndexWrapper&lt; FieldType &gt;::multi_index_</definition>
+        <argsstring></argsstring>
+        <name>multi_index_</name>
+        <qualifiedname>learnql::core::Table::SecondaryIndexWrapper::multi_index_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="862" column="25" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="862" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1core_1_1_table_1_1_secondary_index_wrapper_1adb3c3668a5039371cce5e002c13b7561" prot="public" static="no" mutable="no">
+        <type>getter_type</type>
+        <definition>getter_type learnql::core::Table&lt; T, BatchSize &gt;::SecondaryIndexWrapper&lt; FieldType &gt;::getter_</definition>
+        <argsstring></argsstring>
+        <name>getter_</name>
+        <qualifiedname>learnql::core::Table::SecondaryIndexWrapper::getter_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="863" column="21" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="863" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1core_1_1_table_1_1_secondary_index_wrapper_1a8dd34afdf45b1b071a80a8c83d6b77ce" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string learnql::core::Table&lt; T, BatchSize &gt;::SecondaryIndexWrapper&lt; FieldType &gt;::field_name_</definition>
+        <argsstring></argsstring>
+        <name>field_name_</name>
+        <qualifiedname>learnql::core::Table::SecondaryIndexWrapper::field_name_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="864" column="21" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="864" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1core_1_1_table_1_1_secondary_index_wrapper_1a5b735b91145b71d6466656d239140e18" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool learnql::core::Table&lt; T, BatchSize &gt;::SecondaryIndexWrapper&lt; FieldType &gt;::is_unique_</definition>
+        <argsstring></argsstring>
+        <name>is_unique_</name>
+        <qualifiedname>learnql::core::Table::SecondaryIndexWrapper::is_unique_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="865" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="865" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structlearnql_1_1core_1_1_table_1_1_secondary_index_wrapper_1a9dbb8bfc4e21e8878761e862b9001efb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>learnql::core::Table&lt; T, BatchSize &gt;::SecondaryIndexWrapper&lt; FieldType &gt;::SecondaryIndexWrapper</definition>
+        <argsstring>(std::string field_name, getter_type getter, std::shared_ptr&lt; storage::StorageEngine &gt; storage, bool unique, uint64_t root_page_id=0)</argsstring>
+        <name>SecondaryIndexWrapper</name>
+        <qualifiedname>learnql::core::Table::SecondaryIndexWrapper::SecondaryIndexWrapper</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>field_name</declname>
+        </param>
+        <param>
+          <type>getter_type</type>
+          <declname>getter</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classlearnql_1_1storage_1_1_storage_engine" kindref="compound">storage::StorageEngine</ref> &gt;</type>
+          <declname>storage</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>unique</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>root_page_id</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="868" column="9" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="868" bodyend="893"/>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1core_1_1_table_1_1_secondary_index_wrapper_1a5b7d4cfebb90786ea87b82688fe9d1b7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::core::Table&lt; T, BatchSize &gt;::SecondaryIndexWrapper&lt; FieldType &gt;::insert_record</definition>
+        <argsstring>(const T &amp;record, const RecordId &amp;rid) override</argsstring>
+        <name>insert_record</name>
+        <qualifiedname>learnql::core::Table::SecondaryIndexWrapper::insert_record</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>record</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structlearnql_1_1core_1_1_record_id" kindref="compound">RecordId</ref> &amp;</type>
+          <declname>rid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="895" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="895" bodyend="901"/>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1core_1_1_table_1_1_secondary_index_wrapper_1ac3564bcdc06c97692d779d8ad2e55a7b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::core::Table&lt; T, BatchSize &gt;::SecondaryIndexWrapper&lt; FieldType &gt;::remove_record</definition>
+        <argsstring>(const T &amp;record, const RecordId &amp;rid) override</argsstring>
+        <name>remove_record</name>
+        <qualifiedname>learnql::core::Table::SecondaryIndexWrapper::remove_record</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>record</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structlearnql_1_1core_1_1_record_id" kindref="compound">RecordId</ref> &amp;</type>
+          <declname>rid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="903" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="903" bodyend="909"/>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1core_1_1_table_1_1_secondary_index_wrapper_1a55533eee1f2ae5976f86753efa647762" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::core::Table&lt; T, BatchSize &gt;::SecondaryIndexWrapper&lt; FieldType &gt;::update_record</definition>
+        <argsstring>(const T &amp;old_rec, const T &amp;new_rec, const RecordId &amp;rid) override</argsstring>
+        <name>update_record</name>
+        <qualifiedname>learnql::core::Table::SecondaryIndexWrapper::update_record</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>old_rec</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>new_rec</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structlearnql_1_1core_1_1_record_id" kindref="compound">RecordId</ref> &amp;</type>
+          <declname>rid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="911" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="911" bodyend="917"/>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1core_1_1_table_1_1_secondary_index_wrapper_1afe711e07ea4d794dec96c58b6b49dbde" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::core::Table&lt; T, BatchSize &gt;::SecondaryIndexWrapper&lt; FieldType &gt;::flush</definition>
+        <argsstring>() override</argsstring>
+        <name>flush</name>
+        <qualifiedname>learnql::core::Table::SecondaryIndexWrapper::flush</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="919" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="919" bodyend="925"/>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1core_1_1_table_1_1_secondary_index_wrapper_1a38e58cf0ea8967c3ba9d4546a4122d62" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t learnql::core::Table&lt; T, BatchSize &gt;::SecondaryIndexWrapper&lt; FieldType &gt;::get_root_page_id</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_root_page_id</name>
+        <qualifiedname>learnql::core::Table::SecondaryIndexWrapper::get_root_page_id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="927" column="18" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="927" bodyend="930"/>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1core_1_1_table_1_1_secondary_index_wrapper_1aa1ffb8ea20e4a974e55a92634c3f4555" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string learnql::core::Table&lt; T, BatchSize &gt;::SecondaryIndexWrapper&lt; FieldType &gt;::get_field_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_field_name</name>
+        <qualifiedname>learnql::core::Table::SecondaryIndexWrapper::get_field_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="932" column="21" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="932" bodyend="934"/>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1core_1_1_table_1_1_secondary_index_wrapper_1ad5f2a516772335537884f33123ef7cde" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool learnql::core::Table&lt; T, BatchSize &gt;::SecondaryIndexWrapper&lt; FieldType &gt;::is_unique</definition>
+        <argsstring>() const override</argsstring>
+        <name>is_unique</name>
+        <qualifiedname>learnql::core::Table::SecondaryIndexWrapper::is_unique</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="936" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="936" bodyend="938"/>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1core_1_1_table_1_1_secondary_index_wrapper_1a545db78db6c23d097522398ebb1afffb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string learnql::core::Table&lt; T, BatchSize &gt;::SecondaryIndexWrapper&lt; FieldType &gt;::get_field_type</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_field_type</name>
+        <qualifiedname>learnql::core::Table::SecondaryIndexWrapper::get_field_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="940" column="21" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="940" bodyend="942"/>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1core_1_1_table_1_1_secondary_index_wrapper_1a2efd82fc58ed0ae94a20d53de4d29860" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::optional&lt; <ref refid="structlearnql_1_1core_1_1_record_id" kindref="compound">RecordId</ref> &gt;</type>
+        <definition>std::optional&lt; RecordId &gt; learnql::core::Table&lt; T, BatchSize &gt;::SecondaryIndexWrapper&lt; FieldType &gt;::find_unique</definition>
+        <argsstring>(const FieldType &amp;value) const</argsstring>
+        <name>find_unique</name>
+        <qualifiedname>learnql::core::Table::SecondaryIndexWrapper::find_unique</qualifiedname>
+        <param>
+          <type>const FieldType &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="945" column="23" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="945" bodyend="950"/>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1core_1_1_table_1_1_secondary_index_wrapper_1ab7dae208cfd5ba9fada34d6952aa5622" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="structlearnql_1_1core_1_1_record_id" kindref="compound">RecordId</ref> &gt;</type>
+        <definition>std::vector&lt; RecordId &gt; learnql::core::Table&lt; T, BatchSize &gt;::SecondaryIndexWrapper&lt; FieldType &gt;::find_multi</definition>
+        <argsstring>(const FieldType &amp;value) const</argsstring>
+        <name>find_multi</name>
+        <qualifiedname>learnql::core::Table::SecondaryIndexWrapper::find_multi</qualifiedname>
+        <param>
+          <type>const FieldType &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="952" column="21" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="952" bodyend="957"/>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1core_1_1_table_1_1_secondary_index_wrapper_1a7a82321f3942d76e68bdbb06aa4a046c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="structlearnql_1_1core_1_1_record_id" kindref="compound">RecordId</ref> &gt;</type>
+        <definition>std::vector&lt; RecordId &gt; learnql::core::Table&lt; T, BatchSize &gt;::SecondaryIndexWrapper&lt; FieldType &gt;::range_query</definition>
+        <argsstring>(const FieldType &amp;min_val, const FieldType &amp;max_val) const</argsstring>
+        <name>range_query</name>
+        <qualifiedname>learnql::core::Table::SecondaryIndexWrapper::range_query</qualifiedname>
+        <param>
+          <type>const FieldType &amp;</type>
+          <declname>min_val</declname>
+        </param>
+        <param>
+          <type>const FieldType &amp;</type>
+          <declname>max_val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="959" column="21" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="959" bodyend="967"/>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1core_1_1_table_1_1_secondary_index_wrapper_1a56718274d51a1dbe34971d024e12c42f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; FieldType &gt;</type>
+        <definition>std::vector&lt; FieldType &gt; learnql::core::Table&lt; T, BatchSize &gt;::SecondaryIndexWrapper&lt; FieldType &gt;::get_unique_values</definition>
+        <argsstring>() const</argsstring>
+        <name>get_unique_values</name>
+        <qualifiedname>learnql::core::Table::SecondaryIndexWrapper::get_unique_values</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="969" column="21" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="969" bodyend="974"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Concrete wrapper for typed secondary indexes. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>FieldType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of the indexed field</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+This class wraps either a PersistentSecondaryIndex (unique) or PersistentMultiValueSecondaryIndex (multi-value) and implements the SecondaryIndexBase interface for type erasure. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>learnql::core::Table&lt; T, BatchSize &gt;::SecondaryIndexBase</label>
+      </node>
+      <node id="1">
+        <label>learnql::core::Table&lt; T, BatchSize &gt;::SecondaryIndexWrapper&lt; FieldType &gt;</label>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6">
+        <label>T</label>
+      </node>
+      <node id="2">
+        <label>learnql::core::Table&lt; T, BatchSize &gt;::SecondaryIndexBase</label>
+      </node>
+      <node id="1">
+        <label>learnql::core::Table&lt; T, BatchSize &gt;::SecondaryIndexWrapper&lt; FieldType &gt;</label>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>unique_index_</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>multi_index_</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>field_name_</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>learnql::index::PersistentMultiValueSecondaryIndex&lt; T, FieldType &gt;</label>
+        <link refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index"/>
+      </node>
+      <node id="4">
+        <label>learnql::index::PersistentSecondaryIndex&lt; T, FieldType &gt;</label>
+        <link refid="classlearnql_1_1index_1_1_persistent_secondary_index"/>
+      </node>
+      <node id="10">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="9">
+        <label>std::string</label>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>std::unique_ptr&lt; T &gt;</label>
+        <childnode refid="6" relation="usage">
+          <edgelabel>ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>std::unique_ptr&lt; learnql::index::PersistentMultiValueSecondaryIndex &gt;</label>
+        <childnode refid="8" relation="usage">
+          <edgelabel>ptr</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="template-instance">
+          <edgelabel>&lt; learnql::index::PersistentMultiValueSecondaryIndex &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>std::unique_ptr&lt; learnql::index::PersistentSecondaryIndex &gt;</label>
+        <childnode refid="4" relation="usage">
+          <edgelabel>ptr</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="template-instance">
+          <edgelabel>&lt; learnql::index::PersistentSecondaryIndex &gt;</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="856" column="5" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="856" bodyend="975"/>
+    <listofallmembers>
+      <member refid="structlearnql_1_1core_1_1_table_1_1_secondary_index_wrapper_1a8dd34afdf45b1b071a80a8c83d6b77ce" prot="public" virt="non-virtual"><scope>learnql::core::Table::SecondaryIndexWrapper</scope><name>field_name_</name></member>
+      <member refid="structlearnql_1_1core_1_1_table_1_1_secondary_index_wrapper_1ab7dae208cfd5ba9fada34d6952aa5622" prot="public" virt="non-virtual"><scope>learnql::core::Table::SecondaryIndexWrapper</scope><name>find_multi</name></member>
+      <member refid="structlearnql_1_1core_1_1_table_1_1_secondary_index_wrapper_1a2efd82fc58ed0ae94a20d53de4d29860" prot="public" virt="non-virtual"><scope>learnql::core::Table::SecondaryIndexWrapper</scope><name>find_unique</name></member>
+      <member refid="structlearnql_1_1core_1_1_table_1_1_secondary_index_wrapper_1afe711e07ea4d794dec96c58b6b49dbde" prot="public" virt="non-virtual"><scope>learnql::core::Table::SecondaryIndexWrapper</scope><name>flush</name></member>
+      <member refid="structlearnql_1_1core_1_1_table_1_1_secondary_index_wrapper_1aa1ffb8ea20e4a974e55a92634c3f4555" prot="public" virt="non-virtual"><scope>learnql::core::Table::SecondaryIndexWrapper</scope><name>get_field_name</name></member>
+      <member refid="structlearnql_1_1core_1_1_table_1_1_secondary_index_wrapper_1a545db78db6c23d097522398ebb1afffb" prot="public" virt="non-virtual"><scope>learnql::core::Table::SecondaryIndexWrapper</scope><name>get_field_type</name></member>
+      <member refid="structlearnql_1_1core_1_1_table_1_1_secondary_index_wrapper_1a38e58cf0ea8967c3ba9d4546a4122d62" prot="public" virt="non-virtual"><scope>learnql::core::Table::SecondaryIndexWrapper</scope><name>get_root_page_id</name></member>
+      <member refid="structlearnql_1_1core_1_1_table_1_1_secondary_index_wrapper_1a56718274d51a1dbe34971d024e12c42f" prot="public" virt="non-virtual"><scope>learnql::core::Table::SecondaryIndexWrapper</scope><name>get_unique_values</name></member>
+      <member refid="structlearnql_1_1core_1_1_table_1_1_secondary_index_wrapper_1adb3c3668a5039371cce5e002c13b7561" prot="public" virt="non-virtual"><scope>learnql::core::Table::SecondaryIndexWrapper</scope><name>getter_</name></member>
+      <member refid="structlearnql_1_1core_1_1_table_1_1_secondary_index_wrapper_1a8aa6c17f5a699cc5c4d954df2d79e3d0" prot="public" virt="non-virtual"><scope>learnql::core::Table::SecondaryIndexWrapper</scope><name>getter_type</name></member>
+      <member refid="structlearnql_1_1core_1_1_table_1_1_secondary_index_wrapper_1a5b7d4cfebb90786ea87b82688fe9d1b7" prot="public" virt="non-virtual"><scope>learnql::core::Table::SecondaryIndexWrapper</scope><name>insert_record</name></member>
+      <member refid="structlearnql_1_1core_1_1_table_1_1_secondary_index_wrapper_1ad5f2a516772335537884f33123ef7cde" prot="public" virt="non-virtual"><scope>learnql::core::Table::SecondaryIndexWrapper</scope><name>is_unique</name></member>
+      <member refid="structlearnql_1_1core_1_1_table_1_1_secondary_index_wrapper_1a5b735b91145b71d6466656d239140e18" prot="public" virt="non-virtual"><scope>learnql::core::Table::SecondaryIndexWrapper</scope><name>is_unique_</name></member>
+      <member refid="structlearnql_1_1core_1_1_table_1_1_secondary_index_wrapper_1a15957a16970692cf3d1ce47ae4d6c016" prot="public" virt="non-virtual"><scope>learnql::core::Table::SecondaryIndexWrapper</scope><name>multi_index_</name></member>
+      <member refid="structlearnql_1_1core_1_1_table_1_1_secondary_index_wrapper_1a0b0b903ca0d3b27794d0937be9ada7d3" prot="public" virt="non-virtual"><scope>learnql::core::Table::SecondaryIndexWrapper</scope><name>multi_index_type</name></member>
+      <member refid="structlearnql_1_1core_1_1_table_1_1_secondary_index_wrapper_1a7a82321f3942d76e68bdbb06aa4a046c" prot="public" virt="non-virtual"><scope>learnql::core::Table::SecondaryIndexWrapper</scope><name>range_query</name></member>
+      <member refid="structlearnql_1_1core_1_1_table_1_1_secondary_index_wrapper_1ac3564bcdc06c97692d779d8ad2e55a7b" prot="public" virt="non-virtual"><scope>learnql::core::Table::SecondaryIndexWrapper</scope><name>remove_record</name></member>
+      <member refid="structlearnql_1_1core_1_1_table_1_1_secondary_index_wrapper_1a9dbb8bfc4e21e8878761e862b9001efb" prot="public" virt="non-virtual"><scope>learnql::core::Table::SecondaryIndexWrapper</scope><name>SecondaryIndexWrapper</name></member>
+      <member refid="structlearnql_1_1core_1_1_table_1_1_secondary_index_wrapper_1a77b4ce51a50ede2f4e9abb74dca7b2db" prot="public" virt="non-virtual"><scope>learnql::core::Table::SecondaryIndexWrapper</scope><name>unique_index_</name></member>
+      <member refid="structlearnql_1_1core_1_1_table_1_1_secondary_index_wrapper_1aeeadd2d5296793bd030abc371a6fcab8" prot="public" virt="non-virtual"><scope>learnql::core::Table::SecondaryIndexWrapper</scope><name>unique_index_type</name></member>
+      <member refid="structlearnql_1_1core_1_1_table_1_1_secondary_index_wrapper_1a55533eee1f2ae5976f86753efa647762" prot="public" virt="non-virtual"><scope>learnql::core::Table::SecondaryIndexWrapper</scope><name>update_record</name></member>
+      <member refid="structlearnql_1_1core_1_1_table_1_1_secondary_index_base_1a54c39d1564ef9dd93c89845a71c41b5d" prot="public" virt="virtual"><scope>learnql::core::Table::SecondaryIndexWrapper</scope><name>~SecondaryIndexBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

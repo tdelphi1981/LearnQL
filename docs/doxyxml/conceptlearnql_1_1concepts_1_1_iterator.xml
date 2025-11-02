@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="conceptlearnql_1_1concepts_1_1_iterator" kind="concept">
+    <compoundname>learnql::concepts::Iterator</compoundname>
+    <includes refid="_queryable_8hpp" local="no">Queryable.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename It</type>
+      </param>
+    </templateparamlist>
+    <initializer>template&lt;typename It&gt;
+concept <ref refid="conceptlearnql_1_1concepts_1_1_iterator" kindref="compound">learnql::concepts::Iterator</ref> =  requires(It it) {
+    { *it } -&gt; std::convertible_to&lt;typename std::iterator_traits&lt;It&gt;::reference&gt;;
+    { ++it } -&gt; std::same_as&lt;It&amp;&gt;;
+    { it++ } -&gt; std::convertible_to&lt;It&gt;;
+}    </initializer>
+    <briefdescription>
+<para>Concept for iterator types. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/concepts/Queryable.hpp" line="87" column="1"/>
+  </compounddef>
+</doxygen>

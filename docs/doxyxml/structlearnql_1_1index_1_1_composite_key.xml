@@ -1,0 +1,331 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="structlearnql_1_1index_1_1_composite_key" kind="struct" language="C++" prot="public">
+    <compoundname>learnql::index::CompositeKey</compoundname>
+    <includes refid="_persistent_multi_value_secondary_index_8hpp" local="no">PersistentMultiValueSecondaryIndex.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename FieldType</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlearnql_1_1index_1_1_composite_key_1aaf71d2b36a32a89e59b3b8d6d736bf9d" prot="public" static="no" mutable="no">
+        <type>FieldType</type>
+        <definition>FieldType learnql::index::CompositeKey&lt; FieldType &gt;::field_value</definition>
+        <argsstring></argsstring>
+        <name>field_value</name>
+        <qualifiedname>learnql::index::CompositeKey::field_value</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" line="32" column="15" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" bodystart="32" bodyend="-1"/>
+        <referencedby refid="structlearnql_1_1index_1_1_composite_key_1ae98775a7462b36ab29dde05e48b3ea80" compoundref="_persistent_multi_value_secondary_index_8hpp" startline="35" endline="35">learnql::index::CompositeKey&lt; FieldType &gt;::CompositeKey</referencedby>
+        <referencedby refid="structlearnql_1_1index_1_1_composite_key_1a67057b08908c966e6c11725936e27d35" compoundref="_persistent_multi_value_secondary_index_8hpp" startline="37" endline="38">learnql::index::CompositeKey&lt; FieldType &gt;::CompositeKey</referencedby>
+        <referencedby refid="structlearnql_1_1index_1_1_composite_key_1a6b426f345e7b7eb380fc8ebfb8885400" compoundref="_persistent_multi_value_secondary_index_8hpp" startline="91" endline="100">learnql::index::CompositeKey&lt; FieldType &gt;::deserialize</referencedby>
+        <referencedby refid="structlearnql_1_1index_1_1_composite_key_1a36c98afbb64e0d386d820af918a5d530" compoundref="_persistent_multi_value_secondary_index_8hpp" startline="50" endline="54">learnql::index::CompositeKey&lt; FieldType &gt;::operator&lt;</referencedby>
+        <referencedby refid="structlearnql_1_1index_1_1_composite_key_1a11e04bf8f0c786e80e366282a85cf171" compoundref="_persistent_multi_value_secondary_index_8hpp" startline="69" endline="75">learnql::index::CompositeKey&lt; FieldType &gt;::operator&lt;=&gt;</referencedby>
+        <referencedby refid="structlearnql_1_1index_1_1_composite_key_1a9a6efc25262a08f5841e8517a0754cc7" compoundref="_persistent_multi_value_secondary_index_8hpp" startline="42" endline="44">learnql::index::CompositeKey&lt; FieldType &gt;::operator==</referencedby>
+        <referencedby refid="structlearnql_1_1index_1_1_composite_key_1aade7116fdaa7639420f3416001b2e538" compoundref="_persistent_multi_value_secondary_index_8hpp" startline="79" endline="88">learnql::index::CompositeKey&lt; FieldType &gt;::serialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1index_1_1_composite_key_1aa4f7d0b64187fdb1bcbda748ee6eb02f" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t learnql::index::CompositeKey&lt; FieldType &gt;::page_id</definition>
+        <argsstring></argsstring>
+        <name>page_id</name>
+        <qualifiedname>learnql::index::CompositeKey::page_id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" line="33" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" bodystart="33" bodyend="-1"/>
+        <referencedby refid="structlearnql_1_1index_1_1_composite_key_1ae98775a7462b36ab29dde05e48b3ea80" compoundref="_persistent_multi_value_secondary_index_8hpp" startline="35" endline="35">learnql::index::CompositeKey&lt; FieldType &gt;::CompositeKey</referencedby>
+        <referencedby refid="structlearnql_1_1index_1_1_composite_key_1a67057b08908c966e6c11725936e27d35" compoundref="_persistent_multi_value_secondary_index_8hpp" startline="37" endline="38">learnql::index::CompositeKey&lt; FieldType &gt;::CompositeKey</referencedby>
+        <referencedby refid="structlearnql_1_1index_1_1_composite_key_1a6b426f345e7b7eb380fc8ebfb8885400" compoundref="_persistent_multi_value_secondary_index_8hpp" startline="91" endline="100">learnql::index::CompositeKey&lt; FieldType &gt;::deserialize</referencedby>
+        <referencedby refid="structlearnql_1_1index_1_1_composite_key_1a36c98afbb64e0d386d820af918a5d530" compoundref="_persistent_multi_value_secondary_index_8hpp" startline="50" endline="54">learnql::index::CompositeKey&lt; FieldType &gt;::operator&lt;</referencedby>
+        <referencedby refid="structlearnql_1_1index_1_1_composite_key_1a11e04bf8f0c786e80e366282a85cf171" compoundref="_persistent_multi_value_secondary_index_8hpp" startline="69" endline="75">learnql::index::CompositeKey&lt; FieldType &gt;::operator&lt;=&gt;</referencedby>
+        <referencedby refid="structlearnql_1_1index_1_1_composite_key_1a9a6efc25262a08f5841e8517a0754cc7" compoundref="_persistent_multi_value_secondary_index_8hpp" startline="42" endline="44">learnql::index::CompositeKey&lt; FieldType &gt;::operator==</referencedby>
+        <referencedby refid="structlearnql_1_1index_1_1_composite_key_1aade7116fdaa7639420f3416001b2e538" compoundref="_persistent_multi_value_secondary_index_8hpp" startline="79" endline="88">learnql::index::CompositeKey&lt; FieldType &gt;::serialize</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structlearnql_1_1index_1_1_composite_key_1ae98775a7462b36ab29dde05e48b3ea80" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>learnql::index::CompositeKey&lt; FieldType &gt;::CompositeKey</definition>
+        <argsstring>()</argsstring>
+        <name>CompositeKey</name>
+        <qualifiedname>learnql::index::CompositeKey::CompositeKey</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" line="35" column="5" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" bodystart="35" bodyend="35"/>
+        <references refid="structlearnql_1_1index_1_1_composite_key_1aaf71d2b36a32a89e59b3b8d6d736bf9d" compoundref="_persistent_multi_value_secondary_index_8hpp" startline="32">learnql::index::CompositeKey&lt; FieldType &gt;::field_value</references>
+        <references refid="structlearnql_1_1index_1_1_composite_key_1aa4f7d0b64187fdb1bcbda748ee6eb02f" compoundref="_persistent_multi_value_secondary_index_8hpp" startline="33">learnql::index::CompositeKey&lt; FieldType &gt;::page_id</references>
+        <referencedby refid="structlearnql_1_1index_1_1_composite_key_1a968f3ecbe5f9c13f56cc5288db89b781" compoundref="_persistent_multi_value_secondary_index_8hpp" startline="46" endline="48">learnql::index::CompositeKey&lt; FieldType &gt;::operator!=</referencedby>
+        <referencedby refid="structlearnql_1_1index_1_1_composite_key_1a36c98afbb64e0d386d820af918a5d530" compoundref="_persistent_multi_value_secondary_index_8hpp" startline="50" endline="54">learnql::index::CompositeKey&lt; FieldType &gt;::operator&lt;</referencedby>
+        <referencedby refid="structlearnql_1_1index_1_1_composite_key_1af8b0d0b33e01a84537ee9cc1486b0565" compoundref="_persistent_multi_value_secondary_index_8hpp" startline="56" endline="58">learnql::index::CompositeKey&lt; FieldType &gt;::operator&lt;=</referencedby>
+        <referencedby refid="structlearnql_1_1index_1_1_composite_key_1a11e04bf8f0c786e80e366282a85cf171" compoundref="_persistent_multi_value_secondary_index_8hpp" startline="69" endline="75">learnql::index::CompositeKey&lt; FieldType &gt;::operator&lt;=&gt;</referencedby>
+        <referencedby refid="structlearnql_1_1index_1_1_composite_key_1a9a6efc25262a08f5841e8517a0754cc7" compoundref="_persistent_multi_value_secondary_index_8hpp" startline="42" endline="44">learnql::index::CompositeKey&lt; FieldType &gt;::operator==</referencedby>
+        <referencedby refid="structlearnql_1_1index_1_1_composite_key_1ac742785995e29f325f5f0f1e7ba4079f" compoundref="_persistent_multi_value_secondary_index_8hpp" startline="60" endline="62">learnql::index::CompositeKey&lt; FieldType &gt;::operator&gt;</referencedby>
+        <referencedby refid="structlearnql_1_1index_1_1_composite_key_1a394d0c0380ebfadc61c020c2b090ce97" compoundref="_persistent_multi_value_secondary_index_8hpp" startline="64" endline="66">learnql::index::CompositeKey&lt; FieldType &gt;::operator&gt;=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1index_1_1_composite_key_1a67057b08908c966e6c11725936e27d35" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>learnql::index::CompositeKey&lt; FieldType &gt;::CompositeKey</definition>
+        <argsstring>(FieldType value, uint64_t pid)</argsstring>
+        <name>CompositeKey</name>
+        <qualifiedname>learnql::index::CompositeKey::CompositeKey</qualifiedname>
+        <param>
+          <type>FieldType</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>pid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" line="37" column="5" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" bodystart="37" bodyend="38"/>
+        <references refid="structlearnql_1_1index_1_1_composite_key_1aaf71d2b36a32a89e59b3b8d6d736bf9d" compoundref="_persistent_multi_value_secondary_index_8hpp" startline="32">learnql::index::CompositeKey&lt; FieldType &gt;::field_value</references>
+        <references refid="structlearnql_1_1index_1_1_composite_key_1aa4f7d0b64187fdb1bcbda748ee6eb02f" compoundref="_persistent_multi_value_secondary_index_8hpp" startline="33">learnql::index::CompositeKey&lt; FieldType &gt;::page_id</references>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1index_1_1_composite_key_1a9a6efc25262a08f5841e8517a0754cc7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool learnql::index::CompositeKey&lt; FieldType &gt;::operator==</definition>
+        <argsstring>(const CompositeKey &amp;other) const</argsstring>
+        <name>operator==</name>
+        <qualifiedname>learnql::index::CompositeKey::operator==</qualifiedname>
+        <param>
+          <type>const <ref refid="structlearnql_1_1index_1_1_composite_key_1ae98775a7462b36ab29dde05e48b3ea80" kindref="member">CompositeKey</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" line="42" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" bodystart="42" bodyend="44"/>
+        <references refid="structlearnql_1_1index_1_1_composite_key_1ae98775a7462b36ab29dde05e48b3ea80" compoundref="_persistent_multi_value_secondary_index_8hpp" startline="35" endline="35">learnql::index::CompositeKey&lt; FieldType &gt;::CompositeKey</references>
+        <references refid="structlearnql_1_1index_1_1_composite_key_1aaf71d2b36a32a89e59b3b8d6d736bf9d" compoundref="_persistent_multi_value_secondary_index_8hpp" startline="32">learnql::index::CompositeKey&lt; FieldType &gt;::field_value</references>
+        <references refid="structlearnql_1_1index_1_1_composite_key_1aa4f7d0b64187fdb1bcbda748ee6eb02f" compoundref="_persistent_multi_value_secondary_index_8hpp" startline="33">learnql::index::CompositeKey&lt; FieldType &gt;::page_id</references>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1index_1_1_composite_key_1a968f3ecbe5f9c13f56cc5288db89b781" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool learnql::index::CompositeKey&lt; FieldType &gt;::operator!=</definition>
+        <argsstring>(const CompositeKey &amp;other) const</argsstring>
+        <name>operator!=</name>
+        <qualifiedname>learnql::index::CompositeKey::operator!=</qualifiedname>
+        <param>
+          <type>const <ref refid="structlearnql_1_1index_1_1_composite_key_1ae98775a7462b36ab29dde05e48b3ea80" kindref="member">CompositeKey</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" line="46" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" bodystart="46" bodyend="48"/>
+        <references refid="structlearnql_1_1index_1_1_composite_key_1ae98775a7462b36ab29dde05e48b3ea80" compoundref="_persistent_multi_value_secondary_index_8hpp" startline="35" endline="35">learnql::index::CompositeKey&lt; FieldType &gt;::CompositeKey</references>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1index_1_1_composite_key_1a36c98afbb64e0d386d820af918a5d530" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool learnql::index::CompositeKey&lt; FieldType &gt;::operator&lt;</definition>
+        <argsstring>(const CompositeKey &amp;other) const</argsstring>
+        <name>operator&lt;</name>
+        <qualifiedname>learnql::index::CompositeKey::operator&lt;</qualifiedname>
+        <param>
+          <type>const <ref refid="structlearnql_1_1index_1_1_composite_key_1ae98775a7462b36ab29dde05e48b3ea80" kindref="member">CompositeKey</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" line="50" column="5" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" bodystart="50" bodyend="54"/>
+        <references refid="structlearnql_1_1index_1_1_composite_key_1ae98775a7462b36ab29dde05e48b3ea80" compoundref="_persistent_multi_value_secondary_index_8hpp" startline="35" endline="35">learnql::index::CompositeKey&lt; FieldType &gt;::CompositeKey</references>
+        <references refid="structlearnql_1_1index_1_1_composite_key_1aaf71d2b36a32a89e59b3b8d6d736bf9d" compoundref="_persistent_multi_value_secondary_index_8hpp" startline="32">learnql::index::CompositeKey&lt; FieldType &gt;::field_value</references>
+        <references refid="structlearnql_1_1index_1_1_composite_key_1aa4f7d0b64187fdb1bcbda748ee6eb02f" compoundref="_persistent_multi_value_secondary_index_8hpp" startline="33">learnql::index::CompositeKey&lt; FieldType &gt;::page_id</references>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1index_1_1_composite_key_1af8b0d0b33e01a84537ee9cc1486b0565" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool learnql::index::CompositeKey&lt; FieldType &gt;::operator&lt;=</definition>
+        <argsstring>(const CompositeKey &amp;other) const</argsstring>
+        <name>operator&lt;=</name>
+        <qualifiedname>learnql::index::CompositeKey::operator&lt;=</qualifiedname>
+        <param>
+          <type>const <ref refid="structlearnql_1_1index_1_1_composite_key_1ae98775a7462b36ab29dde05e48b3ea80" kindref="member">CompositeKey</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" line="56" column="5" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" bodystart="56" bodyend="58"/>
+        <references refid="structlearnql_1_1index_1_1_composite_key_1ae98775a7462b36ab29dde05e48b3ea80" compoundref="_persistent_multi_value_secondary_index_8hpp" startline="35" endline="35">learnql::index::CompositeKey&lt; FieldType &gt;::CompositeKey</references>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1index_1_1_composite_key_1ac742785995e29f325f5f0f1e7ba4079f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool learnql::index::CompositeKey&lt; FieldType &gt;::operator&gt;</definition>
+        <argsstring>(const CompositeKey &amp;other) const</argsstring>
+        <name>operator&gt;</name>
+        <qualifiedname>learnql::index::CompositeKey::operator&gt;</qualifiedname>
+        <param>
+          <type>const <ref refid="structlearnql_1_1index_1_1_composite_key_1ae98775a7462b36ab29dde05e48b3ea80" kindref="member">CompositeKey</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" line="60" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" bodystart="60" bodyend="62"/>
+        <references refid="structlearnql_1_1index_1_1_composite_key_1ae98775a7462b36ab29dde05e48b3ea80" compoundref="_persistent_multi_value_secondary_index_8hpp" startline="35" endline="35">learnql::index::CompositeKey&lt; FieldType &gt;::CompositeKey</references>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1index_1_1_composite_key_1a394d0c0380ebfadc61c020c2b090ce97" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool learnql::index::CompositeKey&lt; FieldType &gt;::operator&gt;=</definition>
+        <argsstring>(const CompositeKey &amp;other) const</argsstring>
+        <name>operator&gt;=</name>
+        <qualifiedname>learnql::index::CompositeKey::operator&gt;=</qualifiedname>
+        <param>
+          <type>const <ref refid="structlearnql_1_1index_1_1_composite_key_1ae98775a7462b36ab29dde05e48b3ea80" kindref="member">CompositeKey</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" line="64" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" bodystart="64" bodyend="66"/>
+        <references refid="structlearnql_1_1index_1_1_composite_key_1ae98775a7462b36ab29dde05e48b3ea80" compoundref="_persistent_multi_value_secondary_index_8hpp" startline="35" endline="35">learnql::index::CompositeKey&lt; FieldType &gt;::CompositeKey</references>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1index_1_1_composite_key_1a11e04bf8f0c786e80e366282a85cf171" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto learnql::index::CompositeKey&lt; FieldType &gt;::operator&lt;=&gt;</definition>
+        <argsstring>(const CompositeKey &amp;other) const</argsstring>
+        <name>operator&lt;=&gt;</name>
+        <qualifiedname>learnql::index::CompositeKey::operator&lt;=&gt;</qualifiedname>
+        <param>
+          <type>const <ref refid="structlearnql_1_1index_1_1_composite_key_1ae98775a7462b36ab29dde05e48b3ea80" kindref="member">CompositeKey</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" line="69" column="5" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" bodystart="69" bodyend="75"/>
+        <references refid="structlearnql_1_1index_1_1_composite_key_1ae98775a7462b36ab29dde05e48b3ea80" compoundref="_persistent_multi_value_secondary_index_8hpp" startline="35" endline="35">learnql::index::CompositeKey&lt; FieldType &gt;::CompositeKey</references>
+        <references refid="structlearnql_1_1index_1_1_composite_key_1aaf71d2b36a32a89e59b3b8d6d736bf9d" compoundref="_persistent_multi_value_secondary_index_8hpp" startline="32">learnql::index::CompositeKey&lt; FieldType &gt;::field_value</references>
+        <references refid="structlearnql_1_1index_1_1_composite_key_1aa4f7d0b64187fdb1bcbda748ee6eb02f" compoundref="_persistent_multi_value_secondary_index_8hpp" startline="33">learnql::index::CompositeKey&lt; FieldType &gt;::page_id</references>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1index_1_1_composite_key_1aade7116fdaa7639420f3416001b2e538" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Writer</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void learnql::index::CompositeKey&lt; FieldType &gt;::serialize</definition>
+        <argsstring>(Writer &amp;writer) const</argsstring>
+        <name>serialize</name>
+        <qualifiedname>learnql::index::CompositeKey::serialize</qualifiedname>
+        <param>
+          <type>Writer &amp;</type>
+          <declname>writer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" line="79" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" bodystart="79" bodyend="88"/>
+        <references refid="structlearnql_1_1index_1_1_composite_key_1aaf71d2b36a32a89e59b3b8d6d736bf9d" compoundref="_persistent_multi_value_secondary_index_8hpp" startline="32">learnql::index::CompositeKey&lt; FieldType &gt;::field_value</references>
+        <references refid="structlearnql_1_1index_1_1_composite_key_1aa4f7d0b64187fdb1bcbda748ee6eb02f" compoundref="_persistent_multi_value_secondary_index_8hpp" startline="33">learnql::index::CompositeKey&lt; FieldType &gt;::page_id</references>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1index_1_1_composite_key_1a6b426f345e7b7eb380fc8ebfb8885400" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Reader</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void learnql::index::CompositeKey&lt; FieldType &gt;::deserialize</definition>
+        <argsstring>(Reader &amp;reader)</argsstring>
+        <name>deserialize</name>
+        <qualifiedname>learnql::index::CompositeKey::deserialize</qualifiedname>
+        <param>
+          <type>Reader &amp;</type>
+          <declname>reader</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" line="91" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" bodystart="91" bodyend="100"/>
+        <references refid="structlearnql_1_1index_1_1_composite_key_1aaf71d2b36a32a89e59b3b8d6d736bf9d" compoundref="_persistent_multi_value_secondary_index_8hpp" startline="32">learnql::index::CompositeKey&lt; FieldType &gt;::field_value</references>
+        <references refid="structlearnql_1_1index_1_1_composite_key_1aa4f7d0b64187fdb1bcbda748ee6eb02f" compoundref="_persistent_multi_value_secondary_index_8hpp" startline="33">learnql::index::CompositeKey&lt; FieldType &gt;::page_id</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Composite key for multi-value secondary indexes. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>FieldType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of the indexed field</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Combines field value with page ID to create unique composite keys. This allows multiple records with the same field value.</para>
+<para>Example: If two users have email &quot;test@example.com&quot;:<itemizedlist>
+<listitem><para>User 1 (page 10): composite key = (&quot;test@example.com&quot;, 10)</para>
+</listitem><listitem><para>User 2 (page 20): composite key = (&quot;test@example.com&quot;, 20)</para>
+</listitem></itemizedlist>
+</para>
+<para>Both stored as separate B+Tree entries, enabling range queries. </para>
+    </detaileddescription>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" line="31" column="1" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp" bodystart="31" bodyend="101"/>
+    <listofallmembers>
+      <member refid="structlearnql_1_1index_1_1_composite_key_1ae98775a7462b36ab29dde05e48b3ea80" prot="public" virt="non-virtual"><scope>learnql::index::CompositeKey</scope><name>CompositeKey</name></member>
+      <member refid="structlearnql_1_1index_1_1_composite_key_1a67057b08908c966e6c11725936e27d35" prot="public" virt="non-virtual"><scope>learnql::index::CompositeKey</scope><name>CompositeKey</name></member>
+      <member refid="structlearnql_1_1index_1_1_composite_key_1a6b426f345e7b7eb380fc8ebfb8885400" prot="public" virt="non-virtual"><scope>learnql::index::CompositeKey</scope><name>deserialize</name></member>
+      <member refid="structlearnql_1_1index_1_1_composite_key_1aaf71d2b36a32a89e59b3b8d6d736bf9d" prot="public" virt="non-virtual"><scope>learnql::index::CompositeKey</scope><name>field_value</name></member>
+      <member refid="structlearnql_1_1index_1_1_composite_key_1a968f3ecbe5f9c13f56cc5288db89b781" prot="public" virt="non-virtual"><scope>learnql::index::CompositeKey</scope><name>operator!=</name></member>
+      <member refid="structlearnql_1_1index_1_1_composite_key_1a36c98afbb64e0d386d820af918a5d530" prot="public" virt="non-virtual"><scope>learnql::index::CompositeKey</scope><name>operator&lt;</name></member>
+      <member refid="structlearnql_1_1index_1_1_composite_key_1af8b0d0b33e01a84537ee9cc1486b0565" prot="public" virt="non-virtual"><scope>learnql::index::CompositeKey</scope><name>operator&lt;=</name></member>
+      <member refid="structlearnql_1_1index_1_1_composite_key_1a11e04bf8f0c786e80e366282a85cf171" prot="public" virt="non-virtual"><scope>learnql::index::CompositeKey</scope><name>operator&lt;=&gt;</name></member>
+      <member refid="structlearnql_1_1index_1_1_composite_key_1a9a6efc25262a08f5841e8517a0754cc7" prot="public" virt="non-virtual"><scope>learnql::index::CompositeKey</scope><name>operator==</name></member>
+      <member refid="structlearnql_1_1index_1_1_composite_key_1ac742785995e29f325f5f0f1e7ba4079f" prot="public" virt="non-virtual"><scope>learnql::index::CompositeKey</scope><name>operator&gt;</name></member>
+      <member refid="structlearnql_1_1index_1_1_composite_key_1a394d0c0380ebfadc61c020c2b090ce97" prot="public" virt="non-virtual"><scope>learnql::index::CompositeKey</scope><name>operator&gt;=</name></member>
+      <member refid="structlearnql_1_1index_1_1_composite_key_1aa4f7d0b64187fdb1bcbda748ee6eb02f" prot="public" virt="non-virtual"><scope>learnql::index::CompositeKey</scope><name>page_id</name></member>
+      <member refid="structlearnql_1_1index_1_1_composite_key_1aade7116fdaa7639420f3416001b2e538" prot="public" virt="non-virtual"><scope>learnql::index::CompositeKey</scope><name>serialize</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

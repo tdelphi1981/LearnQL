@@ -1,0 +1,208 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classlearnql_1_1debug_1_1_profiler" kind="class" language="C++" prot="public">
+    <compoundname>learnql::debug::Profiler</compoundname>
+    <includes refid="_profiler_8hpp" local="no">Profiler.hpp</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classlearnql_1_1debug_1_1_profiler_1a585766879207288d2b9c69fdfcfe5538" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structlearnql_1_1debug_1_1_performance_metrics" kindref="compound">PerformanceMetrics</ref> &gt;</type>
+        <definition>std::vector&lt;PerformanceMetrics&gt; learnql::debug::Profiler::metrics_</definition>
+        <argsstring></argsstring>
+        <name>metrics_</name>
+        <qualifiedname>learnql::debug::Profiler::metrics_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" line="200" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlearnql_1_1debug_1_1_profiler_1a321f5b81c052898ba92d54f8b0690af6" prot="private" static="no" mutable="no">
+        <type>std::unordered_map&lt; std::string, std::vector&lt; <ref refid="structlearnql_1_1debug_1_1_performance_metrics" kindref="compound">PerformanceMetrics</ref> &gt; &gt;</type>
+        <definition>std::unordered_map&lt;std::string, std::vector&lt;PerformanceMetrics&gt; &gt; learnql::debug::Profiler::operation_metrics_</definition>
+        <argsstring></argsstring>
+        <name>operation_metrics_</name>
+        <qualifiedname>learnql::debug::Profiler::operation_metrics_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" line="201" column="24" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" bodystart="201" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classlearnql_1_1debug_1_1_profiler_1a9546847af964fa8caef4f594fa75d694" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Profiler &amp;</type>
+        <definition>static Profiler &amp; learnql::debug::Profiler::instance</definition>
+        <argsstring>()</argsstring>
+        <name>instance</name>
+        <qualifiedname>learnql::debug::Profiler::instance</qualifiedname>
+        <briefdescription>
+<para>Gets the singleton instance. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" line="103" column="21" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" bodystart="103" bodyend="106"/>
+        <referencedby refid="classlearnql_1_1debug_1_1_scoped_profiler_1acb23868425a105b3261e41ed7b85a40b" compoundref="_profiler_8hpp" startline="231" endline="243">learnql::debug::ScopedProfiler::~ScopedProfiler</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlearnql_1_1debug_1_1_profiler_1a8551cd8d346f0e5fd795dde696af9710" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::debug::Profiler::record</definition>
+        <argsstring>(const PerformanceMetrics &amp;metrics)</argsstring>
+        <name>record</name>
+        <qualifiedname>learnql::debug::Profiler::record</qualifiedname>
+        <param>
+          <type>const <ref refid="structlearnql_1_1debug_1_1_performance_metrics" kindref="compound">PerformanceMetrics</ref> &amp;</type>
+          <declname>metrics</declname>
+        </param>
+        <briefdescription>
+<para>Records a performance metric. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" line="111" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" bodystart="111" bodyend="114"/>
+        <references refid="classlearnql_1_1debug_1_1_profiler_1a65b998425d4782cd0ec3e7718a6e1a3d" compoundref="_profiler_8hpp" startline="189" endline="191">metrics</references>
+        <referencedby refid="classlearnql_1_1debug_1_1_scoped_profiler_1acb23868425a105b3261e41ed7b85a40b" compoundref="_profiler_8hpp" startline="231" endline="243">learnql::debug::ScopedProfiler::~ScopedProfiler</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1debug_1_1_profiler_1aca92e65589386d92597b45f7c6bc1c48" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::debug::Profiler::print_summary</definition>
+        <argsstring>() const</argsstring>
+        <name>print_summary</name>
+        <qualifiedname>learnql::debug::Profiler::print_summary</qualifiedname>
+        <briefdescription>
+<para>Prints a summary of all metrics. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" line="119" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" bodystart="119" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1debug_1_1_profiler_1a36ed35de0f5eddb2ec714bb622c2430b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::debug::Profiler::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <qualifiedname>learnql::debug::Profiler::clear</qualifiedname>
+        <briefdescription>
+<para>Clears all recorded metrics. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" line="181" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" bodystart="181" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1debug_1_1_profiler_1a65b998425d4782cd0ec3e7718a6e1a3d" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>const std::vector&lt; <ref refid="structlearnql_1_1debug_1_1_performance_metrics" kindref="compound">PerformanceMetrics</ref> &gt; &amp;</type>
+        <definition>const std::vector&lt; PerformanceMetrics &gt; &amp; learnql::debug::Profiler::metrics</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>metrics</name>
+        <qualifiedname>learnql::debug::Profiler::metrics</qualifiedname>
+        <briefdescription>
+<para>Gets all metrics. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" line="189" column="24" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" bodystart="189" bodyend="191"/>
+        <referencedby refid="classlearnql_1_1debug_1_1_profiler_1a8551cd8d346f0e5fd795dde696af9710" compoundref="_profiler_8hpp" startline="111" endline="114">record</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classlearnql_1_1debug_1_1_profiler_1a5f20ccb9c55eb718fe4e80f6a901c74c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>learnql::debug::Profiler::Profiler</definition>
+        <argsstring>()=default</argsstring>
+        <name>Profiler</name>
+        <qualifiedname>learnql::debug::Profiler::Profiler</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" line="194" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1debug_1_1_profiler_1af9dc8750d11a2656186e443162ccc46c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>learnql::debug::Profiler::~Profiler</definition>
+        <argsstring>()=default</argsstring>
+        <name>~Profiler</name>
+        <qualifiedname>learnql::debug::Profiler::~Profiler</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" line="195" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1debug_1_1_profiler_1a307770e03994098415e175aa47c56406" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>learnql::debug::Profiler::Profiler</definition>
+        <argsstring>(const Profiler &amp;)=delete</argsstring>
+        <name>Profiler</name>
+        <qualifiedname>learnql::debug::Profiler::Profiler</qualifiedname>
+        <param>
+          <type>const Profiler &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" line="197" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1debug_1_1_profiler_1a2ba3567d13e81b6e5bb35fe65cfd3810" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Profiler &amp;</type>
+        <definition>Profiler &amp; learnql::debug::Profiler::operator=</definition>
+        <argsstring>(const Profiler &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <qualifiedname>learnql::debug::Profiler::operator=</qualifiedname>
+        <param>
+          <type>const Profiler &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" line="198" column="14"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para><ref refid="classlearnql_1_1debug_1_1_profiler" kindref="compound">Profiler</ref> for collecting and analyzing performance metrics. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Singleton profiler that collects metrics from multiple operations and can generate summary reports. </para>
+    </detaileddescription>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" line="98" column="1" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" bodystart="98" bodyend="202"/>
+    <listofallmembers>
+      <member refid="classlearnql_1_1debug_1_1_profiler_1a36ed35de0f5eddb2ec714bb622c2430b" prot="public" virt="non-virtual"><scope>learnql::debug::Profiler</scope><name>clear</name></member>
+      <member refid="classlearnql_1_1debug_1_1_profiler_1a9546847af964fa8caef4f594fa75d694" prot="public" virt="non-virtual"><scope>learnql::debug::Profiler</scope><name>instance</name></member>
+      <member refid="classlearnql_1_1debug_1_1_profiler_1a65b998425d4782cd0ec3e7718a6e1a3d" prot="public" virt="non-virtual"><scope>learnql::debug::Profiler</scope><name>metrics</name></member>
+      <member refid="classlearnql_1_1debug_1_1_profiler_1a585766879207288d2b9c69fdfcfe5538" prot="private" virt="non-virtual"><scope>learnql::debug::Profiler</scope><name>metrics_</name></member>
+      <member refid="classlearnql_1_1debug_1_1_profiler_1a321f5b81c052898ba92d54f8b0690af6" prot="private" virt="non-virtual"><scope>learnql::debug::Profiler</scope><name>operation_metrics_</name></member>
+      <member refid="classlearnql_1_1debug_1_1_profiler_1a2ba3567d13e81b6e5bb35fe65cfd3810" prot="private" virt="non-virtual"><scope>learnql::debug::Profiler</scope><name>operator=</name></member>
+      <member refid="classlearnql_1_1debug_1_1_profiler_1aca92e65589386d92597b45f7c6bc1c48" prot="public" virt="non-virtual"><scope>learnql::debug::Profiler</scope><name>print_summary</name></member>
+      <member refid="classlearnql_1_1debug_1_1_profiler_1a5f20ccb9c55eb718fe4e80f6a901c74c" prot="private" virt="non-virtual"><scope>learnql::debug::Profiler</scope><name>Profiler</name></member>
+      <member refid="classlearnql_1_1debug_1_1_profiler_1a307770e03994098415e175aa47c56406" prot="private" virt="non-virtual"><scope>learnql::debug::Profiler</scope><name>Profiler</name></member>
+      <member refid="classlearnql_1_1debug_1_1_profiler_1a8551cd8d346f0e5fd795dde696af9710" prot="public" virt="non-virtual"><scope>learnql::debug::Profiler</scope><name>record</name></member>
+      <member refid="classlearnql_1_1debug_1_1_profiler_1af9dc8750d11a2656186e443162ccc46c" prot="private" virt="non-virtual"><scope>learnql::debug::Profiler</scope><name>~Profiler</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

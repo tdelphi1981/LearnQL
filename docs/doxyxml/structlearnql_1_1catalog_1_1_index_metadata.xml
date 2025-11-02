@@ -1,0 +1,655 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="structlearnql_1_1catalog_1_1_index_metadata" kind="struct" language="C++" prot="public">
+    <compoundname>learnql::catalog::IndexMetadata</compoundname>
+    <includes refid="_index_metadata_8hpp" local="no">IndexMetadata.hpp</includes>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structlearnql_1_1catalog_1_1_index_metadata_1a8e1618c9d762443acc552f4ecfc7196a" prot="public" static="no">
+        <type>uint64_t</type>
+        <definition>using learnql::catalog::IndexMetadata::primary_key_type =  uint64_t</definition>
+        <argsstring></argsstring>
+        <name>primary_key_type</name>
+        <qualifiedname>learnql::catalog::IndexMetadata::primary_key_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/IndexMetadata.hpp" line="34" column="5" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/IndexMetadata.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlearnql_1_1catalog_1_1_index_metadata_1a8e9a5bea35c13d7aab767f56be2ab93f" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t learnql::catalog::IndexMetadata::index_id</definition>
+        <argsstring></argsstring>
+        <name>index_id</name>
+        <qualifiedname>learnql::catalog::IndexMetadata::index_id</qualifiedname>
+        <briefdescription>
+<para>Unique index ID (auto-incremented, primary key). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/IndexMetadata.hpp" line="38" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/IndexMetadata.hpp" bodystart="38" bodyend="-1"/>
+        <referencedby refid="structlearnql_1_1catalog_1_1_index_metadata_1a7351d8de5d84957a5be77fbf80e8204a" compoundref="_index_metadata_8hpp" startline="161" endline="170">deserialize</referencedby>
+        <referencedby refid="structlearnql_1_1catalog_1_1_index_metadata_1a8fbfbb9829cf2403bfd859d7def30265" compoundref="_index_metadata_8hpp" startline="49" endline="49">get_index_id</referencedby>
+        <referencedby refid="structlearnql_1_1catalog_1_1_index_metadata_1ac42e82f14fc270741b207f5f05a6c3ef" compoundref="_index_metadata_8hpp" startline="130" endline="132">get_primary_key</referencedby>
+        <referencedby refid="structlearnql_1_1catalog_1_1_index_metadata_1abc95b693b3240a64320580c7f28b1065" compoundref="_index_metadata_8hpp" startline="147" endline="156">serialize</referencedby>
+        <referencedby refid="structlearnql_1_1catalog_1_1_index_metadata_1ab070b982cd823d4b294edca9ba403759" compoundref="_index_metadata_8hpp" startline="138" endline="140">set_primary_key</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1catalog_1_1_index_metadata_1a6e43114573d81edd80444bf0893d1b4d" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string learnql::catalog::IndexMetadata::table_name</definition>
+        <argsstring></argsstring>
+        <name>table_name</name>
+        <qualifiedname>learnql::catalog::IndexMetadata::table_name</qualifiedname>
+        <briefdescription>
+<para>Table this index belongs to. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/IndexMetadata.hpp" line="39" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/IndexMetadata.hpp" bodystart="39" bodyend="-1"/>
+        <referencedby refid="structlearnql_1_1catalog_1_1_index_metadata_1a7351d8de5d84957a5be77fbf80e8204a" compoundref="_index_metadata_8hpp" startline="161" endline="170">deserialize</referencedby>
+        <referencedby refid="structlearnql_1_1catalog_1_1_index_metadata_1a68df6b531cfbd8959eafde151b1ad3ce" compoundref="_index_metadata_8hpp" startline="50" endline="50">get_table_name</referencedby>
+        <referencedby refid="structlearnql_1_1catalog_1_1_index_metadata_1abc95b693b3240a64320580c7f28b1065" compoundref="_index_metadata_8hpp" startline="147" endline="156">serialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1catalog_1_1_index_metadata_1ac2e340547c7c9666fbdec12c9a6ed726" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string learnql::catalog::IndexMetadata::field_name</definition>
+        <argsstring></argsstring>
+        <name>field_name</name>
+        <qualifiedname>learnql::catalog::IndexMetadata::field_name</qualifiedname>
+        <briefdescription>
+<para>Indexed field name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/IndexMetadata.hpp" line="40" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/IndexMetadata.hpp" bodystart="40" bodyend="-1"/>
+        <referencedby refid="structlearnql_1_1catalog_1_1_index_metadata_1a7351d8de5d84957a5be77fbf80e8204a" compoundref="_index_metadata_8hpp" startline="161" endline="170">deserialize</referencedby>
+        <referencedby refid="structlearnql_1_1catalog_1_1_index_metadata_1a40d27759eb1e753dbd71cc90174c4b76" compoundref="_index_metadata_8hpp" startline="51" endline="51">get_field_name</referencedby>
+        <referencedby refid="structlearnql_1_1catalog_1_1_index_metadata_1abc95b693b3240a64320580c7f28b1065" compoundref="_index_metadata_8hpp" startline="147" endline="156">serialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1catalog_1_1_index_metadata_1a26ff188feabbc2dd4badfc0e4f085411" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string learnql::catalog::IndexMetadata::field_type</definition>
+        <argsstring></argsstring>
+        <name>field_type</name>
+        <qualifiedname>learnql::catalog::IndexMetadata::field_type</qualifiedname>
+        <briefdescription>
+<para>C++ type name (e.g., &quot;std::string&quot;, &quot;int&quot;). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/IndexMetadata.hpp" line="41" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/IndexMetadata.hpp" bodystart="41" bodyend="-1"/>
+        <referencedby refid="structlearnql_1_1catalog_1_1_index_metadata_1a7351d8de5d84957a5be77fbf80e8204a" compoundref="_index_metadata_8hpp" startline="161" endline="170">deserialize</referencedby>
+        <referencedby refid="structlearnql_1_1catalog_1_1_index_metadata_1a0fec295c3dc944489a5c60812a6845c3" compoundref="_index_metadata_8hpp" startline="52" endline="52">get_field_type</referencedby>
+        <referencedby refid="structlearnql_1_1catalog_1_1_index_metadata_1abc95b693b3240a64320580c7f28b1065" compoundref="_index_metadata_8hpp" startline="147" endline="156">serialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1catalog_1_1_index_metadata_1a9a48ea1671593e7001cef3e409a8338c" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool learnql::catalog::IndexMetadata::is_unique</definition>
+        <argsstring></argsstring>
+        <name>is_unique</name>
+        <qualifiedname>learnql::catalog::IndexMetadata::is_unique</qualifiedname>
+        <briefdescription>
+<para>true = unique index, false = multi-value </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/IndexMetadata.hpp" line="42" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/IndexMetadata.hpp" bodystart="42" bodyend="-1"/>
+        <referencedby refid="structlearnql_1_1catalog_1_1_index_metadata_1a7351d8de5d84957a5be77fbf80e8204a" compoundref="_index_metadata_8hpp" startline="161" endline="170">deserialize</referencedby>
+        <referencedby refid="structlearnql_1_1catalog_1_1_index_metadata_1a0bc806d382bb849410c46fd1849b7ef5" compoundref="_index_metadata_8hpp" startline="53" endline="53">get_is_unique</referencedby>
+        <referencedby refid="structlearnql_1_1catalog_1_1_index_metadata_1abc95b693b3240a64320580c7f28b1065" compoundref="_index_metadata_8hpp" startline="147" endline="156">serialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1catalog_1_1_index_metadata_1ac08cc35c95528ceb41d64845623d87af" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t learnql::catalog::IndexMetadata::index_root_page</definition>
+        <argsstring></argsstring>
+        <name>index_root_page</name>
+        <qualifiedname>learnql::catalog::IndexMetadata::index_root_page</qualifiedname>
+        <briefdescription>
+<para>B+Tree root page ID. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/IndexMetadata.hpp" line="43" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/IndexMetadata.hpp" bodystart="43" bodyend="-1"/>
+        <referencedby refid="structlearnql_1_1catalog_1_1_index_metadata_1a7351d8de5d84957a5be77fbf80e8204a" compoundref="_index_metadata_8hpp" startline="161" endline="170">deserialize</referencedby>
+        <referencedby refid="structlearnql_1_1catalog_1_1_index_metadata_1a567a6dd4200d8a04af8fba2281968bb6" compoundref="_index_metadata_8hpp" startline="54" endline="54">get_index_root_page</referencedby>
+        <referencedby refid="structlearnql_1_1catalog_1_1_index_metadata_1abc95b693b3240a64320580c7f28b1065" compoundref="_index_metadata_8hpp" startline="147" endline="156">serialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1catalog_1_1_index_metadata_1af6fcff65429c576644e282c1685985a6" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t learnql::catalog::IndexMetadata::created_timestamp</definition>
+        <argsstring></argsstring>
+        <name>created_timestamp</name>
+        <qualifiedname>learnql::catalog::IndexMetadata::created_timestamp</qualifiedname>
+        <briefdescription>
+<para>Creation timestamp. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/IndexMetadata.hpp" line="44" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/IndexMetadata.hpp" bodystart="44" bodyend="-1"/>
+        <referencedby refid="structlearnql_1_1catalog_1_1_index_metadata_1a7351d8de5d84957a5be77fbf80e8204a" compoundref="_index_metadata_8hpp" startline="161" endline="170">deserialize</referencedby>
+        <referencedby refid="structlearnql_1_1catalog_1_1_index_metadata_1a0641998c706066e58a7e1e88b8229e55" compoundref="_index_metadata_8hpp" startline="55" endline="55">get_created_timestamp</referencedby>
+        <referencedby refid="structlearnql_1_1catalog_1_1_index_metadata_1abc95b693b3240a64320580c7f28b1065" compoundref="_index_metadata_8hpp" startline="147" endline="156">serialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1catalog_1_1_index_metadata_1a8ec0211ef20ae208c243eb8a28762bc4" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool learnql::catalog::IndexMetadata::is_active</definition>
+        <argsstring></argsstring>
+        <name>is_active</name>
+        <qualifiedname>learnql::catalog::IndexMetadata::is_active</qualifiedname>
+        <briefdescription>
+<para>Can be disabled without deletion. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/IndexMetadata.hpp" line="45" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/IndexMetadata.hpp" bodystart="45" bodyend="-1"/>
+        <referencedby refid="structlearnql_1_1catalog_1_1_index_metadata_1a7351d8de5d84957a5be77fbf80e8204a" compoundref="_index_metadata_8hpp" startline="161" endline="170">deserialize</referencedby>
+        <referencedby refid="structlearnql_1_1catalog_1_1_index_metadata_1ac70bb90e3db224b277f30e9252701288" compoundref="_index_metadata_8hpp" startline="56" endline="56">get_is_active</referencedby>
+        <referencedby refid="structlearnql_1_1catalog_1_1_index_metadata_1abc95b693b3240a64320580c7f28b1065" compoundref="_index_metadata_8hpp" startline="147" endline="156">serialize</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structlearnql_1_1catalog_1_1_index_metadata_1a96dfa7249a916451946e1b0e7f7f68d5" prot="public" static="yes" mutable="no">
+        <type><ref refid="classlearnql_1_1query_1_1_field" kindref="compound">query::Field</ref>&lt; <ref refid="structlearnql_1_1catalog_1_1_index_metadata" kindref="compound">IndexMetadata</ref>, uint64_t &gt;</type>
+        <definition>query::Field&lt;IndexMetadata, uint64_t&gt; learnql::catalog::IndexMetadata::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <qualifiedname>learnql::catalog::IndexMetadata::id</qualifiedname>
+        <initializer>{
+        &quot;index_id&quot;, &amp;<ref refid="structlearnql_1_1catalog_1_1_index_metadata_1a8fbfbb9829cf2403bfd859d7def30265" kindref="member">IndexMetadata::get_index_id</ref>
+    }</initializer>
+        <briefdescription>
+<para>Field for index ID Usage: <ref refid="structlearnql_1_1catalog_1_1_index_metadata_1a96dfa7249a916451946e1b0e7f7f68d5" kindref="member">IndexMetadata::id</ref> == 1. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/IndexMetadata.hpp" line="64" column="32" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/IndexMetadata.hpp" bodystart="64" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1catalog_1_1_index_metadata_1a990d8b196e916eb66386210d95ab5ea0" prot="public" static="yes" mutable="no">
+        <type><ref refid="classlearnql_1_1query_1_1_field" kindref="compound">query::Field</ref>&lt; <ref refid="structlearnql_1_1catalog_1_1_index_metadata" kindref="compound">IndexMetadata</ref>, std::string &gt;</type>
+        <definition>query::Field&lt;IndexMetadata, std::string&gt; learnql::catalog::IndexMetadata::table</definition>
+        <argsstring></argsstring>
+        <name>table</name>
+        <qualifiedname>learnql::catalog::IndexMetadata::table</qualifiedname>
+        <initializer>{
+        &quot;table_name&quot;, &amp;<ref refid="structlearnql_1_1catalog_1_1_index_metadata_1a68df6b531cfbd8959eafde151b1ad3ce" kindref="member">IndexMetadata::get_table_name</ref>
+    }</initializer>
+        <briefdescription>
+<para>Field for table name Usage: <ref refid="structlearnql_1_1catalog_1_1_index_metadata_1a990d8b196e916eb66386210d95ab5ea0" kindref="member">IndexMetadata::table</ref> == &quot;students&quot;. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/IndexMetadata.hpp" line="72" column="32" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/IndexMetadata.hpp" bodystart="72" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1catalog_1_1_index_metadata_1afdb009010f2d0b79972f3f6ccdad6b96" prot="public" static="yes" mutable="no">
+        <type><ref refid="classlearnql_1_1query_1_1_field" kindref="compound">query::Field</ref>&lt; <ref refid="structlearnql_1_1catalog_1_1_index_metadata" kindref="compound">IndexMetadata</ref>, std::string &gt;</type>
+        <definition>query::Field&lt;IndexMetadata, std::string&gt; learnql::catalog::IndexMetadata::field</definition>
+        <argsstring></argsstring>
+        <name>field</name>
+        <qualifiedname>learnql::catalog::IndexMetadata::field</qualifiedname>
+        <initializer>{
+        &quot;field_name&quot;, &amp;<ref refid="structlearnql_1_1catalog_1_1_index_metadata_1a40d27759eb1e753dbd71cc90174c4b76" kindref="member">IndexMetadata::get_field_name</ref>
+    }</initializer>
+        <briefdescription>
+<para>Field for field name Usage: <ref refid="structlearnql_1_1catalog_1_1_index_metadata_1afdb009010f2d0b79972f3f6ccdad6b96" kindref="member">IndexMetadata::field</ref> == &quot;name&quot;. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/IndexMetadata.hpp" line="80" column="32" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/IndexMetadata.hpp" bodystart="80" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1catalog_1_1_index_metadata_1a25c3bcc7bf69c10c5ed471d160b7b14f" prot="public" static="yes" mutable="no">
+        <type><ref refid="classlearnql_1_1query_1_1_field" kindref="compound">query::Field</ref>&lt; <ref refid="structlearnql_1_1catalog_1_1_index_metadata" kindref="compound">IndexMetadata</ref>, std::string &gt;</type>
+        <definition>query::Field&lt;IndexMetadata, std::string&gt; learnql::catalog::IndexMetadata::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <qualifiedname>learnql::catalog::IndexMetadata::type</qualifiedname>
+        <initializer>{
+        &quot;field_type&quot;, &amp;<ref refid="structlearnql_1_1catalog_1_1_index_metadata_1a0fec295c3dc944489a5c60812a6845c3" kindref="member">IndexMetadata::get_field_type</ref>
+    }</initializer>
+        <briefdescription>
+<para>Field for field type Usage: <ref refid="structlearnql_1_1catalog_1_1_index_metadata_1a25c3bcc7bf69c10c5ed471d160b7b14f" kindref="member">IndexMetadata::type</ref> == &quot;std::string&quot;. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/IndexMetadata.hpp" line="88" column="32" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/IndexMetadata.hpp" bodystart="88" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1catalog_1_1_index_metadata_1ae5af974a2a70a916c3d63a95eb5e1569" prot="public" static="yes" mutable="no">
+        <type><ref refid="classlearnql_1_1query_1_1_field" kindref="compound">query::Field</ref>&lt; <ref refid="structlearnql_1_1catalog_1_1_index_metadata" kindref="compound">IndexMetadata</ref>, bool &gt;</type>
+        <definition>query::Field&lt;IndexMetadata, bool&gt; learnql::catalog::IndexMetadata::unique</definition>
+        <argsstring></argsstring>
+        <name>unique</name>
+        <qualifiedname>learnql::catalog::IndexMetadata::unique</qualifiedname>
+        <initializer>{
+        &quot;is_unique&quot;, &amp;<ref refid="structlearnql_1_1catalog_1_1_index_metadata_1a0bc806d382bb849410c46fd1849b7ef5" kindref="member">IndexMetadata::get_is_unique</ref>
+    }</initializer>
+        <briefdescription>
+<para>Field for unique flag Usage: <ref refid="structlearnql_1_1catalog_1_1_index_metadata_1ae5af974a2a70a916c3d63a95eb5e1569" kindref="member">IndexMetadata::unique</ref> == true. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/IndexMetadata.hpp" line="96" column="32" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/IndexMetadata.hpp" bodystart="96" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1catalog_1_1_index_metadata_1ac836fa01d18dec60ccc628d7200f1aae" prot="public" static="yes" mutable="no">
+        <type><ref refid="classlearnql_1_1query_1_1_field" kindref="compound">query::Field</ref>&lt; <ref refid="structlearnql_1_1catalog_1_1_index_metadata" kindref="compound">IndexMetadata</ref>, uint64_t &gt;</type>
+        <definition>query::Field&lt;IndexMetadata, uint64_t&gt; learnql::catalog::IndexMetadata::root_page</definition>
+        <argsstring></argsstring>
+        <name>root_page</name>
+        <qualifiedname>learnql::catalog::IndexMetadata::root_page</qualifiedname>
+        <initializer>{
+        &quot;index_root_page&quot;, &amp;<ref refid="structlearnql_1_1catalog_1_1_index_metadata_1a567a6dd4200d8a04af8fba2281968bb6" kindref="member">IndexMetadata::get_index_root_page</ref>
+    }</initializer>
+        <briefdescription>
+<para>Field for index root page Usage: <ref refid="structlearnql_1_1catalog_1_1_index_metadata_1ac836fa01d18dec60ccc628d7200f1aae" kindref="member">IndexMetadata::root_page</ref> &gt; 0. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/IndexMetadata.hpp" line="104" column="32" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/IndexMetadata.hpp" bodystart="104" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1catalog_1_1_index_metadata_1a750b7fb77b5411a13c8d5f04b78097ba" prot="public" static="yes" mutable="no">
+        <type><ref refid="classlearnql_1_1query_1_1_field" kindref="compound">query::Field</ref>&lt; <ref refid="structlearnql_1_1catalog_1_1_index_metadata" kindref="compound">IndexMetadata</ref>, uint64_t &gt;</type>
+        <definition>query::Field&lt;IndexMetadata, uint64_t&gt; learnql::catalog::IndexMetadata::created</definition>
+        <argsstring></argsstring>
+        <name>created</name>
+        <qualifiedname>learnql::catalog::IndexMetadata::created</qualifiedname>
+        <initializer>{
+        &quot;created_timestamp&quot;, &amp;<ref refid="structlearnql_1_1catalog_1_1_index_metadata_1a0641998c706066e58a7e1e88b8229e55" kindref="member">IndexMetadata::get_created_timestamp</ref>
+    }</initializer>
+        <briefdescription>
+<para>Field for creation timestamp Usage: <ref refid="structlearnql_1_1catalog_1_1_index_metadata_1a750b7fb77b5411a13c8d5f04b78097ba" kindref="member">IndexMetadata::created</ref> &gt; some_timestamp. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/IndexMetadata.hpp" line="112" column="32" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/IndexMetadata.hpp" bodystart="112" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1catalog_1_1_index_metadata_1a94359e1972c7467d36ba0718c0623447" prot="public" static="yes" mutable="no">
+        <type><ref refid="classlearnql_1_1query_1_1_field" kindref="compound">query::Field</ref>&lt; <ref refid="structlearnql_1_1catalog_1_1_index_metadata" kindref="compound">IndexMetadata</ref>, bool &gt;</type>
+        <definition>query::Field&lt;IndexMetadata, bool&gt; learnql::catalog::IndexMetadata::active</definition>
+        <argsstring></argsstring>
+        <name>active</name>
+        <qualifiedname>learnql::catalog::IndexMetadata::active</qualifiedname>
+        <initializer>{
+        &quot;is_active&quot;, &amp;<ref refid="structlearnql_1_1catalog_1_1_index_metadata_1ac70bb90e3db224b277f30e9252701288" kindref="member">IndexMetadata::get_is_active</ref>
+    }</initializer>
+        <briefdescription>
+<para>Field for active status Usage: <ref refid="structlearnql_1_1catalog_1_1_index_metadata_1a94359e1972c7467d36ba0718c0623447" kindref="member">IndexMetadata::active</ref> == true. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/IndexMetadata.hpp" line="120" column="32" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/IndexMetadata.hpp" bodystart="120" bodyend="122"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structlearnql_1_1catalog_1_1_index_metadata_1a8fbfbb9829cf2403bfd859d7def30265" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t learnql::catalog::IndexMetadata::get_index_id</definition>
+        <argsstring>() const</argsstring>
+        <name>get_index_id</name>
+        <qualifiedname>learnql::catalog::IndexMetadata::get_index_id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/IndexMetadata.hpp" line="49" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/IndexMetadata.hpp" bodystart="49" bodyend="49"/>
+        <references refid="structlearnql_1_1catalog_1_1_index_metadata_1a8e9a5bea35c13d7aab767f56be2ab93f" compoundref="_index_metadata_8hpp" startline="38">index_id</references>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1catalog_1_1_index_metadata_1a68df6b531cfbd8959eafde151b1ad3ce" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string &amp; learnql::catalog::IndexMetadata::get_table_name</definition>
+        <argsstring>() const</argsstring>
+        <name>get_table_name</name>
+        <qualifiedname>learnql::catalog::IndexMetadata::get_table_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/IndexMetadata.hpp" line="50" column="23" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/IndexMetadata.hpp" bodystart="50" bodyend="50"/>
+        <references refid="structlearnql_1_1catalog_1_1_index_metadata_1a6e43114573d81edd80444bf0893d1b4d" compoundref="_index_metadata_8hpp" startline="39">table_name</references>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1catalog_1_1_index_metadata_1a40d27759eb1e753dbd71cc90174c4b76" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string &amp; learnql::catalog::IndexMetadata::get_field_name</definition>
+        <argsstring>() const</argsstring>
+        <name>get_field_name</name>
+        <qualifiedname>learnql::catalog::IndexMetadata::get_field_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/IndexMetadata.hpp" line="51" column="23" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/IndexMetadata.hpp" bodystart="51" bodyend="51"/>
+        <references refid="structlearnql_1_1catalog_1_1_index_metadata_1ac2e340547c7c9666fbdec12c9a6ed726" compoundref="_index_metadata_8hpp" startline="40">field_name</references>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1catalog_1_1_index_metadata_1a0fec295c3dc944489a5c60812a6845c3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string &amp; learnql::catalog::IndexMetadata::get_field_type</definition>
+        <argsstring>() const</argsstring>
+        <name>get_field_type</name>
+        <qualifiedname>learnql::catalog::IndexMetadata::get_field_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/IndexMetadata.hpp" line="52" column="23" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/IndexMetadata.hpp" bodystart="52" bodyend="52"/>
+        <references refid="structlearnql_1_1catalog_1_1_index_metadata_1a26ff188feabbc2dd4badfc0e4f085411" compoundref="_index_metadata_8hpp" startline="41">field_type</references>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1catalog_1_1_index_metadata_1a0bc806d382bb849410c46fd1849b7ef5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool learnql::catalog::IndexMetadata::get_is_unique</definition>
+        <argsstring>() const</argsstring>
+        <name>get_is_unique</name>
+        <qualifiedname>learnql::catalog::IndexMetadata::get_is_unique</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/IndexMetadata.hpp" line="53" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/IndexMetadata.hpp" bodystart="53" bodyend="53"/>
+        <references refid="structlearnql_1_1catalog_1_1_index_metadata_1a9a48ea1671593e7001cef3e409a8338c" compoundref="_index_metadata_8hpp" startline="42">is_unique</references>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1catalog_1_1_index_metadata_1a567a6dd4200d8a04af8fba2281968bb6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t learnql::catalog::IndexMetadata::get_index_root_page</definition>
+        <argsstring>() const</argsstring>
+        <name>get_index_root_page</name>
+        <qualifiedname>learnql::catalog::IndexMetadata::get_index_root_page</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/IndexMetadata.hpp" line="54" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/IndexMetadata.hpp" bodystart="54" bodyend="54"/>
+        <references refid="structlearnql_1_1catalog_1_1_index_metadata_1ac08cc35c95528ceb41d64845623d87af" compoundref="_index_metadata_8hpp" startline="43">index_root_page</references>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1catalog_1_1_index_metadata_1a0641998c706066e58a7e1e88b8229e55" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t learnql::catalog::IndexMetadata::get_created_timestamp</definition>
+        <argsstring>() const</argsstring>
+        <name>get_created_timestamp</name>
+        <qualifiedname>learnql::catalog::IndexMetadata::get_created_timestamp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/IndexMetadata.hpp" line="55" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/IndexMetadata.hpp" bodystart="55" bodyend="55"/>
+        <references refid="structlearnql_1_1catalog_1_1_index_metadata_1af6fcff65429c576644e282c1685985a6" compoundref="_index_metadata_8hpp" startline="44">created_timestamp</references>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1catalog_1_1_index_metadata_1ac70bb90e3db224b277f30e9252701288" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool learnql::catalog::IndexMetadata::get_is_active</definition>
+        <argsstring>() const</argsstring>
+        <name>get_is_active</name>
+        <qualifiedname>learnql::catalog::IndexMetadata::get_is_active</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/IndexMetadata.hpp" line="56" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/IndexMetadata.hpp" bodystart="56" bodyend="56"/>
+        <references refid="structlearnql_1_1catalog_1_1_index_metadata_1a8ec0211ef20ae208c243eb8a28762bc4" compoundref="_index_metadata_8hpp" startline="45">is_active</references>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1catalog_1_1_index_metadata_1ac42e82f14fc270741b207f5f05a6c3ef" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t learnql::catalog::IndexMetadata::get_primary_key</definition>
+        <argsstring>() const</argsstring>
+        <name>get_primary_key</name>
+        <qualifiedname>learnql::catalog::IndexMetadata::get_primary_key</qualifiedname>
+        <briefdescription>
+<para>Get primary key value for this metadata record. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The index_id (primary key) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/IndexMetadata.hpp" line="130" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/IndexMetadata.hpp" bodystart="130" bodyend="132"/>
+        <references refid="structlearnql_1_1catalog_1_1_index_metadata_1a8e9a5bea35c13d7aab767f56be2ab93f" compoundref="_index_metadata_8hpp" startline="38">index_id</references>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1catalog_1_1_index_metadata_1ab070b982cd823d4b294edca9ba403759" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::catalog::IndexMetadata::set_primary_key</definition>
+        <argsstring>(uint64_t key)</argsstring>
+        <name>set_primary_key</name>
+        <qualifiedname>learnql::catalog::IndexMetadata::set_primary_key</qualifiedname>
+        <param>
+          <type>uint64_t</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Set primary key value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new primary key value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/IndexMetadata.hpp" line="138" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/IndexMetadata.hpp" bodystart="138" bodyend="140"/>
+        <references refid="structlearnql_1_1catalog_1_1_index_metadata_1a8e9a5bea35c13d7aab767f56be2ab93f" compoundref="_index_metadata_8hpp" startline="38">index_id</references>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1catalog_1_1_index_metadata_1abc95b693b3240a64320580c7f28b1065" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::catalog::IndexMetadata::serialize</definition>
+        <argsstring>(serialization::BinaryWriter &amp;writer) const</argsstring>
+        <name>serialize</name>
+        <qualifiedname>learnql::catalog::IndexMetadata::serialize</qualifiedname>
+        <param>
+          <type><ref refid="classlearnql_1_1serialization_1_1_binary_writer" kindref="compound">serialization::BinaryWriter</ref> &amp;</type>
+          <declname>writer</declname>
+        </param>
+        <briefdescription>
+<para>Serialize to binary writer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/IndexMetadata.hpp" line="147" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/IndexMetadata.hpp" bodystart="147" bodyend="156"/>
+        <references refid="structlearnql_1_1catalog_1_1_index_metadata_1af6fcff65429c576644e282c1685985a6" compoundref="_index_metadata_8hpp" startline="44">created_timestamp</references>
+        <references refid="structlearnql_1_1catalog_1_1_index_metadata_1ac2e340547c7c9666fbdec12c9a6ed726" compoundref="_index_metadata_8hpp" startline="40">field_name</references>
+        <references refid="structlearnql_1_1catalog_1_1_index_metadata_1a26ff188feabbc2dd4badfc0e4f085411" compoundref="_index_metadata_8hpp" startline="41">field_type</references>
+        <references refid="structlearnql_1_1catalog_1_1_index_metadata_1a8e9a5bea35c13d7aab767f56be2ab93f" compoundref="_index_metadata_8hpp" startline="38">index_id</references>
+        <references refid="structlearnql_1_1catalog_1_1_index_metadata_1ac08cc35c95528ceb41d64845623d87af" compoundref="_index_metadata_8hpp" startline="43">index_root_page</references>
+        <references refid="structlearnql_1_1catalog_1_1_index_metadata_1a8ec0211ef20ae208c243eb8a28762bc4" compoundref="_index_metadata_8hpp" startline="45">is_active</references>
+        <references refid="structlearnql_1_1catalog_1_1_index_metadata_1a9a48ea1671593e7001cef3e409a8338c" compoundref="_index_metadata_8hpp" startline="42">is_unique</references>
+        <references refid="structlearnql_1_1catalog_1_1_index_metadata_1a6e43114573d81edd80444bf0893d1b4d" compoundref="_index_metadata_8hpp" startline="39">table_name</references>
+        <references refid="classlearnql_1_1serialization_1_1_binary_writer_1a7343d36f8a9adc28f9ab78826055cda7" compoundref="_binary_writer_8hpp" startline="52" endline="64">learnql::serialization::BinaryWriter::write</references>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1catalog_1_1_index_metadata_1a7351d8de5d84957a5be77fbf80e8204a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::catalog::IndexMetadata::deserialize</definition>
+        <argsstring>(serialization::BinaryReader &amp;reader)</argsstring>
+        <name>deserialize</name>
+        <qualifiedname>learnql::catalog::IndexMetadata::deserialize</qualifiedname>
+        <param>
+          <type><ref refid="classlearnql_1_1serialization_1_1_binary_reader" kindref="compound">serialization::BinaryReader</ref> &amp;</type>
+          <declname>reader</declname>
+        </param>
+        <briefdescription>
+<para>Deserialize from binary reader. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/IndexMetadata.hpp" line="161" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/IndexMetadata.hpp" bodystart="161" bodyend="170"/>
+        <references refid="structlearnql_1_1catalog_1_1_index_metadata_1af6fcff65429c576644e282c1685985a6" compoundref="_index_metadata_8hpp" startline="44">created_timestamp</references>
+        <references refid="structlearnql_1_1catalog_1_1_index_metadata_1ac2e340547c7c9666fbdec12c9a6ed726" compoundref="_index_metadata_8hpp" startline="40">field_name</references>
+        <references refid="structlearnql_1_1catalog_1_1_index_metadata_1a26ff188feabbc2dd4badfc0e4f085411" compoundref="_index_metadata_8hpp" startline="41">field_type</references>
+        <references refid="structlearnql_1_1catalog_1_1_index_metadata_1a8e9a5bea35c13d7aab767f56be2ab93f" compoundref="_index_metadata_8hpp" startline="38">index_id</references>
+        <references refid="structlearnql_1_1catalog_1_1_index_metadata_1ac08cc35c95528ceb41d64845623d87af" compoundref="_index_metadata_8hpp" startline="43">index_root_page</references>
+        <references refid="structlearnql_1_1catalog_1_1_index_metadata_1a8ec0211ef20ae208c243eb8a28762bc4" compoundref="_index_metadata_8hpp" startline="45">is_active</references>
+        <references refid="structlearnql_1_1catalog_1_1_index_metadata_1a9a48ea1671593e7001cef3e409a8338c" compoundref="_index_metadata_8hpp" startline="42">is_unique</references>
+        <references refid="classlearnql_1_1serialization_1_1_binary_reader_1a5a262266f478e4dd3e7db03c46eff1b6" compoundref="_binary_reader_8hpp" startline="58" endline="71">learnql::serialization::BinaryReader::read</references>
+        <references refid="classlearnql_1_1serialization_1_1_binary_reader_1a2982ba819ac5c8897835d497c41bd861" compoundref="_binary_reader_8hpp" startline="79" endline="95">learnql::serialization::BinaryReader::read_string</references>
+        <references refid="structlearnql_1_1catalog_1_1_index_metadata_1a6e43114573d81edd80444bf0893d1b4d" compoundref="_index_metadata_8hpp" startline="39">table_name</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Metadata for secondary indexes in the system catalog. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This structure stores information about secondary indexes created on tables. It&apos;s stored in the special <computeroutput>_sys_indexes</computeroutput> table and enables:<itemizedlist>
+<listitem><para>Persistence of index configuration across database restarts</para>
+</listitem><listitem><para>Queryable index metadata using expression templates</para>
+</listitem><listitem><para>Automatic index reconstruction when tables are loaded</para>
+</listitem></itemizedlist>
+</para>
+<para>Example: <programlisting><codeline><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>catalog<sp/>=<sp/>db.metadata();</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>student_indexes<sp/>=<sp/>catalog.indexes()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.where(<ref refid="structlearnql_1_1catalog_1_1_index_metadata_1a990d8b196e916eb66386210d95ab5ea0" kindref="member">IndexMetadata::table</ref><sp/>==<sp/></highlight><highlight class="stringliteral">&quot;students&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>idx<sp/>:<sp/>student_indexes)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Index<sp/>on<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>idx.field_name</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>(&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>(idx.is_unique<sp/>?<sp/></highlight><highlight class="stringliteral">&quot;unique&quot;</highlight><highlight class="normal"><sp/>:<sp/></highlight><highlight class="stringliteral">&quot;multi-value&quot;</highlight><highlight class="normal">)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;)\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>learnql::catalog::IndexMetadata</label>
+        <link refid="structlearnql_1_1catalog_1_1_index_metadata"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>field_name</edgelabel>
+          <edgelabel>field_type</edgelabel>
+          <edgelabel>table_name</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>created</edgelabel>
+          <edgelabel>id</edgelabel>
+          <edgelabel>root_page</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>field</edgelabel>
+          <edgelabel>table</edgelabel>
+          <edgelabel>type</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>active</edgelabel>
+          <edgelabel>unique</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>learnql::query::Field&lt; T, FieldType &gt;</label>
+        <link refid="classlearnql_1_1query_1_1_field"/>
+      </node>
+      <node id="7">
+        <label>learnql::query::Field&lt; learnql::catalog::IndexMetadata, bool &gt;</label>
+        <link refid="classlearnql_1_1query_1_1_field"/>
+        <childnode refid="5" relation="template-instance">
+          <edgelabel>&lt; learnql::catalog::IndexMetadata, bool &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>learnql::query::Field&lt; learnql::catalog::IndexMetadata, std::string &gt;</label>
+        <link refid="classlearnql_1_1query_1_1_field"/>
+        <childnode refid="5" relation="template-instance">
+          <edgelabel>&lt; learnql::catalog::IndexMetadata, std::string &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>learnql::query::Field&lt; learnql::catalog::IndexMetadata, uint64_t &gt;</label>
+        <link refid="classlearnql_1_1query_1_1_field"/>
+        <childnode refid="5" relation="template-instance">
+          <edgelabel>&lt; learnql::catalog::IndexMetadata, uint64_t &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="2">
+        <label>std::string</label>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/IndexMetadata.hpp" line="33" column="1" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/IndexMetadata.hpp" bodystart="33" bodyend="171"/>
+    <listofallmembers>
+      <member refid="structlearnql_1_1catalog_1_1_index_metadata_1a94359e1972c7467d36ba0718c0623447" prot="public" virt="non-virtual"><scope>learnql::catalog::IndexMetadata</scope><name>active</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_index_metadata_1a750b7fb77b5411a13c8d5f04b78097ba" prot="public" virt="non-virtual"><scope>learnql::catalog::IndexMetadata</scope><name>created</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_index_metadata_1af6fcff65429c576644e282c1685985a6" prot="public" virt="non-virtual"><scope>learnql::catalog::IndexMetadata</scope><name>created_timestamp</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_index_metadata_1a7351d8de5d84957a5be77fbf80e8204a" prot="public" virt="non-virtual"><scope>learnql::catalog::IndexMetadata</scope><name>deserialize</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_index_metadata_1afdb009010f2d0b79972f3f6ccdad6b96" prot="public" virt="non-virtual"><scope>learnql::catalog::IndexMetadata</scope><name>field</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_index_metadata_1ac2e340547c7c9666fbdec12c9a6ed726" prot="public" virt="non-virtual"><scope>learnql::catalog::IndexMetadata</scope><name>field_name</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_index_metadata_1a26ff188feabbc2dd4badfc0e4f085411" prot="public" virt="non-virtual"><scope>learnql::catalog::IndexMetadata</scope><name>field_type</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_index_metadata_1a0641998c706066e58a7e1e88b8229e55" prot="public" virt="non-virtual"><scope>learnql::catalog::IndexMetadata</scope><name>get_created_timestamp</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_index_metadata_1a40d27759eb1e753dbd71cc90174c4b76" prot="public" virt="non-virtual"><scope>learnql::catalog::IndexMetadata</scope><name>get_field_name</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_index_metadata_1a0fec295c3dc944489a5c60812a6845c3" prot="public" virt="non-virtual"><scope>learnql::catalog::IndexMetadata</scope><name>get_field_type</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_index_metadata_1a8fbfbb9829cf2403bfd859d7def30265" prot="public" virt="non-virtual"><scope>learnql::catalog::IndexMetadata</scope><name>get_index_id</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_index_metadata_1a567a6dd4200d8a04af8fba2281968bb6" prot="public" virt="non-virtual"><scope>learnql::catalog::IndexMetadata</scope><name>get_index_root_page</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_index_metadata_1ac70bb90e3db224b277f30e9252701288" prot="public" virt="non-virtual"><scope>learnql::catalog::IndexMetadata</scope><name>get_is_active</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_index_metadata_1a0bc806d382bb849410c46fd1849b7ef5" prot="public" virt="non-virtual"><scope>learnql::catalog::IndexMetadata</scope><name>get_is_unique</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_index_metadata_1ac42e82f14fc270741b207f5f05a6c3ef" prot="public" virt="non-virtual"><scope>learnql::catalog::IndexMetadata</scope><name>get_primary_key</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_index_metadata_1a68df6b531cfbd8959eafde151b1ad3ce" prot="public" virt="non-virtual"><scope>learnql::catalog::IndexMetadata</scope><name>get_table_name</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_index_metadata_1a96dfa7249a916451946e1b0e7f7f68d5" prot="public" virt="non-virtual"><scope>learnql::catalog::IndexMetadata</scope><name>id</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_index_metadata_1a8e9a5bea35c13d7aab767f56be2ab93f" prot="public" virt="non-virtual"><scope>learnql::catalog::IndexMetadata</scope><name>index_id</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_index_metadata_1ac08cc35c95528ceb41d64845623d87af" prot="public" virt="non-virtual"><scope>learnql::catalog::IndexMetadata</scope><name>index_root_page</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_index_metadata_1a8ec0211ef20ae208c243eb8a28762bc4" prot="public" virt="non-virtual"><scope>learnql::catalog::IndexMetadata</scope><name>is_active</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_index_metadata_1a9a48ea1671593e7001cef3e409a8338c" prot="public" virt="non-virtual"><scope>learnql::catalog::IndexMetadata</scope><name>is_unique</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_index_metadata_1a8e1618c9d762443acc552f4ecfc7196a" prot="public" virt="non-virtual"><scope>learnql::catalog::IndexMetadata</scope><name>primary_key_type</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_index_metadata_1ac836fa01d18dec60ccc628d7200f1aae" prot="public" virt="non-virtual"><scope>learnql::catalog::IndexMetadata</scope><name>root_page</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_index_metadata_1abc95b693b3240a64320580c7f28b1065" prot="public" virt="non-virtual"><scope>learnql::catalog::IndexMetadata</scope><name>serialize</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_index_metadata_1ab070b982cd823d4b294edca9ba403759" prot="public" virt="non-virtual"><scope>learnql::catalog::IndexMetadata</scope><name>set_primary_key</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_index_metadata_1a990d8b196e916eb66386210d95ab5ea0" prot="public" virt="non-virtual"><scope>learnql::catalog::IndexMetadata</scope><name>table</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_index_metadata_1a6e43114573d81edd80444bf0893d1b4d" prot="public" virt="non-virtual"><scope>learnql::catalog::IndexMetadata</scope><name>table_name</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_index_metadata_1a25c3bcc7bf69c10c5ed471d160b7b14f" prot="public" virt="non-virtual"><scope>learnql::catalog::IndexMetadata</scope><name>type</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_index_metadata_1ae5af974a2a70a916c3d63a95eb5e1569" prot="public" virt="non-virtual"><scope>learnql::catalog::IndexMetadata</scope><name>unique</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

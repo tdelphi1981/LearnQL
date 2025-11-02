@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="namespacelearnql_1_1coroutines" kind="namespace" language="C++">
+    <compoundname>learnql::coroutines</compoundname>
+    <innerclass refid="classlearnql_1_1coroutines_1_1_task" prot="public">learnql::coroutines::Task</innerclass>
+    <innerclass refid="classlearnql_1_1coroutines_1_1_task_3_01void_01_4" prot="public">learnql::coroutines::Task&lt; void &gt;</innerclass>
+    <innerclass refid="classlearnql_1_1coroutines_1_1_generator" prot="public">learnql::coroutines::Generator</innerclass>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacelearnql_1_1coroutines_1a8a5f08933e5280b124d0cc22548fa2be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classlearnql_1_1coroutines_1_1_generator" kindref="compound">Generator</ref>&lt; T &gt;</type>
+        <definition>Generator&lt; T &gt; learnql::coroutines::make_generator</definition>
+        <argsstring>(std::vector&lt; T &gt; records)</argsstring>
+        <name>make_generator</name>
+        <qualifiedname>learnql::coroutines::make_generator</qualifiedname>
+        <param>
+          <type>std::vector&lt; T &gt;</type>
+          <declname>records</declname>
+        </param>
+        <briefdescription>
+<para>Helper to create a generator that yields records one at a time. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Record type </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>records</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vector of records </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classlearnql_1_1coroutines_1_1_generator" kindref="compound">Generator</ref> that yields records</para>
+</simplesect>
+Example: <programlisting><codeline><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>gen<sp/>=<sp/><ref refid="namespacelearnql_1_1coroutines_1a8a5f08933e5280b124d0cc22548fa2be" kindref="member">make_generator</ref>(students.get_all());</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>student<sp/>:<sp/>gen)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>student<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/AsyncQuery.hpp" line="254" column="11" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/AsyncQuery.hpp" bodystart="254" bodyend="258"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelearnql_1_1coroutines_1ac779f7806238dccf5bed1567f54887c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename Pred</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classlearnql_1_1coroutines_1_1_generator" kindref="compound">Generator</ref>&lt; T &gt;</type>
+        <definition>Generator&lt; T &gt; learnql::coroutines::filter_generator</definition>
+        <argsstring>(std::vector&lt; T &gt; records, Pred pred)</argsstring>
+        <name>filter_generator</name>
+        <qualifiedname>learnql::coroutines::filter_generator</qualifiedname>
+        <param>
+          <type>std::vector&lt; T &gt;</type>
+          <declname>records</declname>
+        </param>
+        <param>
+          <type>Pred</type>
+          <declname>pred</declname>
+        </param>
+        <briefdescription>
+<para>Helper to create a generator from a predicate filter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Record type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Pred</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Predicate type </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>records</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vector of records </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pred</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Predicate function </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classlearnql_1_1coroutines_1_1_generator" kindref="compound">Generator</ref> that yields matching records </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/AsyncQuery.hpp" line="269" column="11" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/AsyncQuery.hpp" bodystart="269" bodyend="275"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/AsyncQuery.hpp" line="11" column="1"/>
+  </compounddef>
+</doxygen>

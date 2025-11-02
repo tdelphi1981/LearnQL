@@ -1,0 +1,243 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="_query_view_8hpp" kind="file" language="C++">
+    <compoundname>QueryView.hpp</compoundname>
+    <includes local="no">ranges</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">memory</includes>
+    <includes local="no">concepts</includes>
+    <includes refid="_proxy_vector_8hpp" local="yes">ProxyVector.hpp</includes>
+    <includedby refid="_learn_q_l_8hpp" local="yes">/Users/tolgaberber/Work/CPP/LearnQL/learnql/LearnQL.hpp</includedby>
+    <includedby refid="_read_only_table_8hpp" local="yes">/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/ReadOnlyTable.hpp</includedby>
+    <includedby refid="_table_8hpp" local="yes">/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp</includedby>
+    <incdepgraph>
+      <node id="6">
+        <label>ProxyVector.hpp</label>
+        <link refid="_proxy_vector_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/QueryView.hpp</label>
+        <link refid="_query_view_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>concepts</label>
+      </node>
+      <node id="8">
+        <label>functional</label>
+      </node>
+      <node id="7">
+        <label>iterator</label>
+      </node>
+      <node id="4">
+        <label>memory</label>
+      </node>
+      <node id="2">
+        <label>ranges</label>
+      </node>
+      <node id="9">
+        <label>stdexcept</label>
+      </node>
+      <node id="3">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/LearnQL.hpp</label>
+        <link refid="_learn_q_l_8hpp"/>
+      </node>
+      <node id="4">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/SystemCatalog.hpp</label>
+        <link refid="_system_catalog_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Database.hpp</label>
+        <link refid="_database_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/ReadOnlyTable.hpp</label>
+        <link refid="_read_only_table_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp</label>
+        <link refid="_table_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp</label>
+        <link refid="_query_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/QueryView.hpp</label>
+        <link refid="_query_view_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classlearnql_1_1ranges_1_1_query_view" prot="public">learnql::ranges::QueryView</innerclass>
+    <innerclass refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator" prot="public">learnql::ranges::QueryView::Iterator</innerclass>
+    <innernamespace refid="namespacelearnql">learnql</innernamespace>
+    <innernamespace refid="namespacelearnql_1_1ranges">learnql::ranges</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>LEARNQL_RANGES_QUERY_VIEW_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LEARNQL_RANGES_QUERY_VIEW_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ranges&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;concepts&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_proxy_vector_8hpp" kindref="compound">ProxyVector.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacelearnql_1_1ranges" kindref="compound">learnql::ranges</ref><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="28" refid="classlearnql_1_1ranges_1_1_query_view" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classlearnql_1_1ranges_1_1_query_view_1a78f655105371811918dbe275d75cbfb7" kindref="member">QueryView</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>std::ranges::view_interface&lt;QueryView&lt;T&gt;&gt;<sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="33" refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1a3deadda366614c195e2878ec3835f88e" kindref="member">Iterator</ref><sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="35" refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1a6537b4013ebca1d4ac0f0bb6016d23a4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1a6537b4013ebca1d4ac0f0bb6016d23a4" kindref="member">iterator_category</ref><sp/>=<sp/>std::forward_iterator_tag;</highlight></codeline>
+<codeline lineno="36" refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1aba0ed1824fcf532a49a2238981437ac9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1aba0ed1824fcf532a49a2238981437ac9" kindref="member">value_type</ref><sp/>=<sp/>T;</highlight></codeline>
+<codeline lineno="37" refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1ae5e03f569558f52768df3ff0c8ffc7d3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1ae5e03f569558f52768df3ff0c8ffc7d3" kindref="member">difference_type</ref><sp/>=<sp/>std::ptrdiff_t;</highlight></codeline>
+<codeline lineno="38" refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1ac0e873b38dc21c5978899fde538b4314" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1ac0e873b38dc21c5978899fde538b4314" kindref="member">pointer</ref><sp/>=<sp/>T*;</highlight></codeline>
+<codeline lineno="39" refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1a672d45838ac348098e6ff2d4511dea3d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1a672d45838ac348098e6ff2d4511dea3d" kindref="member">reference</ref><sp/>=<sp/>T&amp;;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1a3deadda366614c195e2878ec3835f88e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1a3deadda366614c195e2878ec3835f88e" kindref="member">Iterator</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1abaac6dd7293b0c67aed3d740cb7dece9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1abaac6dd7293b0c67aed3d740cb7dece9" kindref="member">Iterator</ref>(</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>std::vector&lt;T&gt;::iterator<sp/>it)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>it_(it)<sp/>{}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1ae4d4bd64bdc0ed22459f019d91243a2d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1a672d45838ac348098e6ff2d4511dea3d" kindref="member">reference</ref><sp/><ref refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1ae4d4bd64bdc0ed22459f019d91243a2d" kindref="member">operator*</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*it_;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1a0c05fe86540a3f972facadab791d81e0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1ac0e873b38dc21c5978899fde538b4314" kindref="member">pointer</ref><sp/><ref refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1a0c05fe86540a3f972facadab791d81e0" kindref="member">operator-&gt;</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;(*it_);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1aa7360abd909fca41a81d700a9fa697be" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1a3deadda366614c195e2878ec3835f88e" kindref="member">Iterator</ref>&amp;<sp/><ref refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1aa7360abd909fca41a81d700a9fa697be" kindref="member">operator++</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>++it_;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1ac622a013247ee6513fcf605e00bcccfc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1a3deadda366614c195e2878ec3835f88e" kindref="member">Iterator</ref><sp/><ref refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1ac622a013247ee6513fcf605e00bcccfc" kindref="member">operator++</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1a3deadda366614c195e2878ec3835f88e" kindref="member">Iterator</ref><sp/>tmp<sp/>=<sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>++(*this);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>tmp;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1adf9a9358b475317bd816d7b47a0f5cd1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1adf9a9358b475317bd816d7b47a0f5cd1" kindref="member">operator==</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1a3deadda366614c195e2878ec3835f88e" kindref="member">Iterator</ref>&amp;<sp/>a,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1a3deadda366614c195e2878ec3835f88e" kindref="member">Iterator</ref>&amp;<sp/>b)<sp/>{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>a.it_<sp/>==<sp/>b.it_;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1a27aed9f3ea67a677964fa51de28a5824" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1a27aed9f3ea67a677964fa51de28a5824" kindref="member">operator!=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1a3deadda366614c195e2878ec3835f88e" kindref="member">Iterator</ref>&amp;<sp/>a,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1a3deadda366614c195e2878ec3835f88e" kindref="member">Iterator</ref>&amp;<sp/>b)<sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!(a<sp/>==<sp/>b);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>std::vector&lt;T&gt;::iterator<sp/>it_;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="classlearnql_1_1ranges_1_1_query_view_1a78f655105371811918dbe275d75cbfb7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classlearnql_1_1ranges_1_1_query_view_1a78f655105371811918dbe275d75cbfb7" kindref="member">QueryView</ref>(std::vector&lt;T&gt;<sp/>data)</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>data_(std::make_shared&lt;std::vector&lt;T&gt;&gt;(std::move(data)))<sp/>{}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;std::</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>BatchSize&gt;</highlight></codeline>
+<codeline lineno="93" refid="classlearnql_1_1ranges_1_1_query_view_1a42e1e1e31d9464320d04a4fbd4198022" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classlearnql_1_1ranges_1_1_query_view_1a42e1e1e31d9464320d04a4fbd4198022" kindref="member">QueryView</ref>(<ref refid="classlearnql_1_1ranges_1_1_proxy_vector" kindref="compound">ProxyVector&lt;T, BatchSize&gt;</ref><sp/>proxy_data)</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>data_(std::make_shared&lt;std::vector&lt;T&gt;&gt;(proxy_data.materialize()))<sp/>{}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99" refid="classlearnql_1_1ranges_1_1_query_view_1a90ffe2d3956ac4dfb7c7c32b4488f5dc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/><ref refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator" kindref="compound">Iterator</ref><sp/><ref refid="classlearnql_1_1ranges_1_1_query_view_1a90ffe2d3956ac4dfb7c7c32b4488f5dc" kindref="member">begin</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator" kindref="compound">Iterator</ref>(data_-&gt;begin());</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106" refid="classlearnql_1_1ranges_1_1_query_view_1a10c1c86b164c23a5108032f3d2a6c380" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/><ref refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator" kindref="compound">Iterator</ref><sp/><ref refid="classlearnql_1_1ranges_1_1_query_view_1a10c1c86b164c23a5108032f3d2a6c380" kindref="member">end</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator" kindref="compound">Iterator</ref>(data_-&gt;end());</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113" refid="classlearnql_1_1ranges_1_1_query_view_1a205f774918f1378671d4cccc4a7e8327" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/><ref refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator" kindref="compound">Iterator</ref><sp/><ref refid="classlearnql_1_1ranges_1_1_query_view_1a205f774918f1378671d4cccc4a7e8327" kindref="member">begin</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator" kindref="compound">Iterator</ref>(</highlight><highlight class="keyword">const_cast&lt;</highlight><highlight class="normal">std::vector&lt;T&gt;&amp;</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(*data_).begin());</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120" refid="classlearnql_1_1ranges_1_1_query_view_1a51ef32ad72df64d3c1f20d2cdb153c76" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/><ref refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator" kindref="compound">Iterator</ref><sp/><ref refid="classlearnql_1_1ranges_1_1_query_view_1a51ef32ad72df64d3c1f20d2cdb153c76" kindref="member">end</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator" kindref="compound">Iterator</ref>(</highlight><highlight class="keyword">const_cast&lt;</highlight><highlight class="normal">std::vector&lt;T&gt;&amp;</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(*data_).end());</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127" refid="classlearnql_1_1ranges_1_1_query_view_1aa18830a956e21a93a25c3d00ea189b00" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classlearnql_1_1ranges_1_1_query_view_1aa18830a956e21a93a25c3d00ea189b00" kindref="member">empty</ref>()<sp/>const<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>data_-&gt;empty();</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134" refid="classlearnql_1_1ranges_1_1_query_view_1ab49156b1cf5ddc0e84cc458a9434b2fd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/>std::size_t<sp/><ref refid="classlearnql_1_1ranges_1_1_query_view_1ab49156b1cf5ddc0e84cc458a9434b2fd" kindref="member">size</ref>()<sp/>const<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>data_-&gt;size();</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141" refid="classlearnql_1_1ranges_1_1_query_view_1a2353064a7c5f5b82eeeb79d52e91780d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/>std::vector&lt;T&gt;<sp/><ref refid="classlearnql_1_1ranges_1_1_query_view_1a2353064a7c5f5b82eeeb79d52e91780d" kindref="member">to_vector</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*data_;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>std::shared_ptr&lt;std::vector&lt;T&gt;&gt;<sp/>data_;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Deduction<sp/>guides</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="151" refid="namespacelearnql_1_1ranges_1ae9315046002161879c27aa284eacb469" refkind="member"><highlight class="normal"><ref refid="namespacelearnql_1_1ranges_1ae9315046002161879c27aa284eacb469" kindref="member">QueryView</ref>(std::vector&lt;T&gt;)<sp/>-&gt;<sp/><ref refid="classlearnql_1_1ranges_1_1_query_view" kindref="compound">QueryView&lt;T&gt;</ref>;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T,<sp/>std::</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>BatchSize&gt;</highlight></codeline>
+<codeline lineno="154" refid="namespacelearnql_1_1ranges_1ae501a306e1cb43f396caefced6992abd" refkind="member"><highlight class="normal"><ref refid="namespacelearnql_1_1ranges_1ae9315046002161879c27aa284eacb469" kindref="member">QueryView</ref>(<ref refid="classlearnql_1_1ranges_1_1_proxy_vector" kindref="compound">ProxyVector&lt;T, BatchSize&gt;</ref>)<sp/>-&gt;<sp/><ref refid="classlearnql_1_1ranges_1_1_query_view" kindref="compound">QueryView&lt;T&gt;</ref>;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>learnql::ranges</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>LEARNQL_RANGES_QUERY_VIEW_HPP</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/QueryView.hpp"/>
+  </compounddef>
+</doxygen>

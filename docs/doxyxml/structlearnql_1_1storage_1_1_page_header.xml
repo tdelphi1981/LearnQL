@@ -1,0 +1,291 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="structlearnql_1_1storage_1_1_page_header" kind="struct" language="C++" prot="public">
+    <compoundname>learnql::storage::PageHeader</compoundname>
+    <includes refid="_page_8hpp" local="no">Page.hpp</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlearnql_1_1storage_1_1_page_header_1aadbb8e40cb25fc44d646d77025b33fc7" prot="public" static="no" mutable="no">
+        <type>std::array&lt; char, 4 &gt;</type>
+        <definition>std::array&lt;char, 4&gt; learnql::storage::PageHeader::magic</definition>
+        <argsstring></argsstring>
+        <name>magic</name>
+        <qualifiedname>learnql::storage::PageHeader::magic</qualifiedname>
+        <briefdescription>
+<para>Magic number for validation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" line="53" column="16" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" bodystart="53" bodyend="-1"/>
+        <referencedby refid="structlearnql_1_1storage_1_1_page_header_1a60987033234dd199f8f9d51dfcf9a9a6" compoundref="_page_8hpp" startline="81" endline="83">is_valid</referencedby>
+        <referencedby refid="structlearnql_1_1storage_1_1_page_header_1a732ae3232b4112d4f424fe7e98ca9f87" compoundref="_page_8hpp" startline="66" endline="75">PageHeader</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1storage_1_1_page_header_1adc786de7a529a2daef38a4050470063a" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t learnql::storage::PageHeader::page_id</definition>
+        <argsstring></argsstring>
+        <name>page_id</name>
+        <qualifiedname>learnql::storage::PageHeader::page_id</qualifiedname>
+        <briefdescription>
+<para>Unique page identifier. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" line="54" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" bodystart="54" bodyend="-1"/>
+        <referencedby refid="structlearnql_1_1storage_1_1_page_header_1a732ae3232b4112d4f424fe7e98ca9f87" compoundref="_page_8hpp" startline="66" endline="75">PageHeader</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1storage_1_1_page_header_1a797629c9327c6e763c4ec52c2b09e98e" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacelearnql_1_1storage_1ae05b45a9b02a6b9290c9867f77f420b7" kindref="member">PageType</ref></type>
+        <definition>PageType learnql::storage::PageHeader::page_type</definition>
+        <argsstring></argsstring>
+        <name>page_type</name>
+        <qualifiedname>learnql::storage::PageHeader::page_type</qualifiedname>
+        <briefdescription>
+<para>Type of page. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" line="55" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" bodystart="55" bodyend="-1"/>
+        <referencedby refid="structlearnql_1_1storage_1_1_page_header_1a732ae3232b4112d4f424fe7e98ca9f87" compoundref="_page_8hpp" startline="66" endline="75">PageHeader</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1storage_1_1_page_header_1a51fec5c65482ac179bf2e10a83282fe6" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t learnql::storage::PageHeader::version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <qualifiedname>learnql::storage::PageHeader::version</qualifiedname>
+        <briefdescription>
+<para>Format version. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" line="56" column="13" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" bodystart="56" bodyend="-1"/>
+        <referencedby refid="structlearnql_1_1storage_1_1_page_header_1a732ae3232b4112d4f424fe7e98ca9f87" compoundref="_page_8hpp" startline="66" endline="75">PageHeader</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1storage_1_1_page_header_1a72fdae4510939af2ea445a458162eb7c" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t learnql::storage::PageHeader::record_count</definition>
+        <argsstring></argsstring>
+        <name>record_count</name>
+        <qualifiedname>learnql::storage::PageHeader::record_count</qualifiedname>
+        <briefdescription>
+<para>Number of records in this page. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" line="57" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" bodystart="57" bodyend="-1"/>
+        <referencedby refid="structlearnql_1_1storage_1_1_page_header_1a732ae3232b4112d4f424fe7e98ca9f87" compoundref="_page_8hpp" startline="66" endline="75">PageHeader</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1storage_1_1_page_header_1a8da8fdbd8073bc478e54c2cc78f4c842" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t learnql::storage::PageHeader::free_space_offset</definition>
+        <argsstring></argsstring>
+        <name>free_space_offset</name>
+        <qualifiedname>learnql::storage::PageHeader::free_space_offset</qualifiedname>
+        <briefdescription>
+<para>Offset to free space. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" line="58" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" bodystart="58" bodyend="-1"/>
+        <referencedby refid="structlearnql_1_1storage_1_1_page_header_1a732ae3232b4112d4f424fe7e98ca9f87" compoundref="_page_8hpp" startline="66" endline="75">PageHeader</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1storage_1_1_page_header_1a4904c0420cf8f4d2b78d6d67da9533c4" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t learnql::storage::PageHeader::next_page_id</definition>
+        <argsstring></argsstring>
+        <name>next_page_id</name>
+        <qualifiedname>learnql::storage::PageHeader::next_page_id</qualifiedname>
+        <briefdescription>
+<para>Next page in chain (0 = none). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" line="59" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" bodystart="59" bodyend="-1"/>
+        <referencedby refid="structlearnql_1_1storage_1_1_page_header_1a732ae3232b4112d4f424fe7e98ca9f87" compoundref="_page_8hpp" startline="66" endline="75">PageHeader</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1storage_1_1_page_header_1ab51f1396a656b09ff2bde712df70d79b" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t learnql::storage::PageHeader::checksum</definition>
+        <argsstring></argsstring>
+        <name>checksum</name>
+        <qualifiedname>learnql::storage::PageHeader::checksum</qualifiedname>
+        <briefdescription>
+<para>CRC32 checksum. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" line="60" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" bodystart="60" bodyend="-1"/>
+        <referencedby refid="structlearnql_1_1storage_1_1_page_header_1a732ae3232b4112d4f424fe7e98ca9f87" compoundref="_page_8hpp" startline="66" endline="75">PageHeader</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1storage_1_1_page_header_1ac82f58cdd60556f330b3d7a94d8e90a9" prot="public" static="no" mutable="no">
+        <type>std::array&lt; uint8_t, 34 &gt;</type>
+        <definition>std::array&lt;uint8_t, 34&gt; learnql::storage::PageHeader::reserved</definition>
+        <argsstring></argsstring>
+        <name>reserved</name>
+        <qualifiedname>learnql::storage::PageHeader::reserved</qualifiedname>
+        <briefdescription>
+<para>Reserved for future use. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" line="61" column="16" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" bodystart="61" bodyend="-1"/>
+        <referencedby refid="structlearnql_1_1storage_1_1_page_header_1a732ae3232b4112d4f424fe7e98ca9f87" compoundref="_page_8hpp" startline="66" endline="75">PageHeader</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structlearnql_1_1storage_1_1_page_header_1a732ae3232b4112d4f424fe7e98ca9f87" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>learnql::storage::PageHeader::PageHeader</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>PageHeader</name>
+        <qualifiedname>learnql::storage::PageHeader::PageHeader</qualifiedname>
+        <briefdescription>
+<para>Default constructor - initializes a free page. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" line="66" column="5" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" bodystart="66" bodyend="75"/>
+        <references refid="structlearnql_1_1storage_1_1_page_header_1ab51f1396a656b09ff2bde712df70d79b" compoundref="_page_8hpp" startline="60">checksum</references>
+        <references refid="structlearnql_1_1storage_1_1_page_header_1a8da8fdbd8073bc478e54c2cc78f4c842" compoundref="_page_8hpp" startline="58">free_space_offset</references>
+        <references refid="structlearnql_1_1storage_1_1_page_header_1aadbb8e40cb25fc44d646d77025b33fc7" compoundref="_page_8hpp" startline="53">magic</references>
+        <references refid="namespacelearnql_1_1storage_1aa7e8d66da1715ae9da7740911fdfeac6" compoundref="_page_8hpp" startline="17" endline="17">learnql::storage::MAGIC_NUMBER</references>
+        <references refid="structlearnql_1_1storage_1_1_page_header_1a4904c0420cf8f4d2b78d6d67da9533c4" compoundref="_page_8hpp" startline="59">next_page_id</references>
+        <references refid="structlearnql_1_1storage_1_1_page_header_1adc786de7a529a2daef38a4050470063a" compoundref="_page_8hpp" startline="54">page_id</references>
+        <references refid="structlearnql_1_1storage_1_1_page_header_1a797629c9327c6e763c4ec52c2b09e98e" compoundref="_page_8hpp" startline="55">page_type</references>
+        <references refid="structlearnql_1_1storage_1_1_page_header_1a732ae3232b4112d4f424fe7e98ca9f87" compoundref="_page_8hpp" startline="66" endline="75">PageHeader</references>
+        <references refid="structlearnql_1_1storage_1_1_page_header_1a72fdae4510939af2ea445a458162eb7c" compoundref="_page_8hpp" startline="57">record_count</references>
+        <references refid="structlearnql_1_1storage_1_1_page_header_1ac82f58cdd60556f330b3d7a94d8e90a9" compoundref="_page_8hpp" startline="61">reserved</references>
+        <references refid="structlearnql_1_1storage_1_1_page_header_1a51fec5c65482ac179bf2e10a83282fe6" compoundref="_page_8hpp" startline="56">version</references>
+        <referencedby refid="structlearnql_1_1storage_1_1_page_header_1a001c77f89b8110e277ef6c4755e7aabf">operator&lt;=&gt;</referencedby>
+        <referencedby refid="structlearnql_1_1storage_1_1_page_header_1a732ae3232b4112d4f424fe7e98ca9f87" compoundref="_page_8hpp" startline="66" endline="75">PageHeader</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1storage_1_1_page_header_1a60987033234dd199f8f9d51dfcf9a9a6" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool learnql::storage::PageHeader::is_valid</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>is_valid</name>
+        <qualifiedname>learnql::storage::PageHeader::is_valid</qualifiedname>
+        <briefdescription>
+<para>Validates the magic number. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if magic number is valid </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" line="81" column="11" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" bodystart="81" bodyend="83"/>
+        <references refid="structlearnql_1_1storage_1_1_page_header_1aadbb8e40cb25fc44d646d77025b33fc7" compoundref="_page_8hpp" startline="53">magic</references>
+        <references refid="namespacelearnql_1_1storage_1aa7e8d66da1715ae9da7740911fdfeac6" compoundref="_page_8hpp" startline="17" endline="17">learnql::storage::MAGIC_NUMBER</references>
+        <referencedby refid="classlearnql_1_1storage_1_1_storage_engine_1ac93edcca8ac34e0d45ecebdf6072cc43" compoundref="_storage_engine_8hpp" startline="139" endline="177">learnql::storage::StorageEngine::read_page</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1storage_1_1_page_header_1a001c77f89b8110e277ef6c4755e7aabf" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto learnql::storage::PageHeader::operator&lt;=&gt;</definition>
+        <argsstring>(const PageHeader &amp;other) const noexcept=default</argsstring>
+        <name>operator&lt;=&gt;</name>
+        <qualifiedname>learnql::storage::PageHeader::operator&lt;=&gt;</qualifiedname>
+        <param>
+          <type>const <ref refid="structlearnql_1_1storage_1_1_page_header_1a732ae3232b4112d4f424fe7e98ca9f87" kindref="member">PageHeader</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Three-way comparison for page headers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" line="88" column="5"/>
+        <references refid="structlearnql_1_1storage_1_1_page_header_1a732ae3232b4112d4f424fe7e98ca9f87" compoundref="_page_8hpp" startline="66" endline="75">PageHeader</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para><ref refid="classlearnql_1_1storage_1_1_page" kindref="compound">Page</ref> header structure (64 bytes). </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Contains metadata about the page</para>
+<para>Layout:<itemizedlist>
+<listitem><para>Magic number: 4 bytes (validation)</para>
+</listitem><listitem><para><ref refid="classlearnql_1_1storage_1_1_page" kindref="compound">Page</ref> ID: 8 bytes (unique identifier)</para>
+</listitem><listitem><para><ref refid="classlearnql_1_1storage_1_1_page" kindref="compound">Page</ref> type: 1 byte</para>
+</listitem><listitem><para>Version: 1 byte (for future compatibility)</para>
+</listitem><listitem><para>Record count: 2 bytes (number of records in page)</para>
+</listitem><listitem><para>Free space offset: 2 bytes (where free space begins)</para>
+</listitem><listitem><para>Next page: 8 bytes (for linked lists)</para>
+</listitem><listitem><para>Checksum: 4 bytes (for integrity checking)</para>
+</listitem><listitem><para>Reserved: 34 bytes (for future use) </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="4">
+        <label>T</label>
+      </node>
+      <node id="1">
+        <label>learnql::storage::PageHeader</label>
+        <link refid="structlearnql_1_1storage_1_1_page_header"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>magic</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>reserved</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>std::array&lt; T &gt;</label>
+        <childnode refid="4" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>std::array&lt; char, 4 &gt;</label>
+        <childnode refid="3" relation="template-instance">
+          <edgelabel>&lt; char, 4 &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>std::array&lt; uint8_t, 34 &gt;</label>
+        <childnode refid="3" relation="template-instance">
+          <edgelabel>&lt; uint8_t, 34 &gt;</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" line="52" column="1" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" bodystart="52" bodyend="89"/>
+    <listofallmembers>
+      <member refid="structlearnql_1_1storage_1_1_page_header_1ab51f1396a656b09ff2bde712df70d79b" prot="public" virt="non-virtual"><scope>learnql::storage::PageHeader</scope><name>checksum</name></member>
+      <member refid="structlearnql_1_1storage_1_1_page_header_1a8da8fdbd8073bc478e54c2cc78f4c842" prot="public" virt="non-virtual"><scope>learnql::storage::PageHeader</scope><name>free_space_offset</name></member>
+      <member refid="structlearnql_1_1storage_1_1_page_header_1a60987033234dd199f8f9d51dfcf9a9a6" prot="public" virt="non-virtual"><scope>learnql::storage::PageHeader</scope><name>is_valid</name></member>
+      <member refid="structlearnql_1_1storage_1_1_page_header_1aadbb8e40cb25fc44d646d77025b33fc7" prot="public" virt="non-virtual"><scope>learnql::storage::PageHeader</scope><name>magic</name></member>
+      <member refid="structlearnql_1_1storage_1_1_page_header_1a4904c0420cf8f4d2b78d6d67da9533c4" prot="public" virt="non-virtual"><scope>learnql::storage::PageHeader</scope><name>next_page_id</name></member>
+      <member refid="structlearnql_1_1storage_1_1_page_header_1a001c77f89b8110e277ef6c4755e7aabf" prot="public" virt="non-virtual"><scope>learnql::storage::PageHeader</scope><name>operator&lt;=&gt;</name></member>
+      <member refid="structlearnql_1_1storage_1_1_page_header_1adc786de7a529a2daef38a4050470063a" prot="public" virt="non-virtual"><scope>learnql::storage::PageHeader</scope><name>page_id</name></member>
+      <member refid="structlearnql_1_1storage_1_1_page_header_1a797629c9327c6e763c4ec52c2b09e98e" prot="public" virt="non-virtual"><scope>learnql::storage::PageHeader</scope><name>page_type</name></member>
+      <member refid="structlearnql_1_1storage_1_1_page_header_1a732ae3232b4112d4f424fe7e98ca9f87" prot="public" virt="non-virtual"><scope>learnql::storage::PageHeader</scope><name>PageHeader</name></member>
+      <member refid="structlearnql_1_1storage_1_1_page_header_1a72fdae4510939af2ea445a458162eb7c" prot="public" virt="non-virtual"><scope>learnql::storage::PageHeader</scope><name>record_count</name></member>
+      <member refid="structlearnql_1_1storage_1_1_page_header_1ac82f58cdd60556f330b3d7a94d8e90a9" prot="public" virt="non-virtual"><scope>learnql::storage::PageHeader</scope><name>reserved</name></member>
+      <member refid="structlearnql_1_1storage_1_1_page_header_1a51fec5c65482ac179bf2e10a83282fe6" prot="public" virt="non-virtual"><scope>learnql::storage::PageHeader</scope><name>version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,345 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classlearnql_1_1query_1_1_query" kind="class" language="C++" prot="public">
+    <compoundname>learnql::query::Query</compoundname>
+    <includes refid="_query_8hpp" local="no">Query.hpp</includes>
+    <innerclass refid="classlearnql_1_1query_1_1_query_1_1_iterator" prot="public">learnql::query::Query::Iterator</innerclass>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+      <param>
+        <type>std::size_t</type>
+        <declname>BatchSize</declname>
+        <defname>BatchSize</defname>
+        <defval>10</defval>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classlearnql_1_1query_1_1_query_1a70c824d5531524dc012b0baec4f1fb5b" prot="public" static="no">
+        <type><ref refid="classlearnql_1_1core_1_1_table" kindref="compound">core::Table</ref>&lt; T, BatchSize &gt;</type>
+        <definition>using learnql::query::Query&lt; T, BatchSize &gt;::table_type =  core::Table&lt;T, BatchSize&gt;</definition>
+        <argsstring></argsstring>
+        <name>table_type</name>
+        <qualifiedname>learnql::query::Query::table_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp" line="31" column="5" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classlearnql_1_1query_1_1_query_1a23526c3427df1f032cdbb8cf87a08207" prot="public" static="no">
+        <type>T</type>
+        <definition>using learnql::query::Query&lt; T, BatchSize &gt;::value_type =  T</definition>
+        <argsstring></argsstring>
+        <name>value_type</name>
+        <qualifiedname>learnql::query::Query::value_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp" line="32" column="5" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classlearnql_1_1query_1_1_query_1a0e68eede90c43564c129c4ea3cb4e603" prot="private" static="no" mutable="no">
+        <type><ref refid="classlearnql_1_1query_1_1_query_1a70c824d5531524dc012b0baec4f1fb5b" kindref="member">table_type</ref> &amp;</type>
+        <definition>table_type&amp; learnql::query::Query&lt; T, BatchSize &gt;::table_</definition>
+        <argsstring></argsstring>
+        <name>table_</name>
+        <qualifiedname>learnql::query::Query::table_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp" line="220" column="16" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlearnql_1_1query_1_1_query_1a895145628f0c94eff7ad6208cd08da7a" prot="private" static="no" mutable="no">
+        <type>std::function&lt; bool(const T &amp;)&gt;</type>
+        <definition>std::function&lt;bool(const T&amp;)&gt; learnql::query::Query&lt; T, BatchSize &gt;::predicate_</definition>
+        <argsstring></argsstring>
+        <name>predicate_</name>
+        <qualifiedname>learnql::query::Query::predicate_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp" line="221" column="19" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp" bodystart="221" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlearnql_1_1query_1_1_query_1a34e1ed036c997d1192ed341ff82b864b" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>learnql::query::Query&lt; T, BatchSize &gt;::Query</definition>
+        <argsstring>(table_type &amp;table)</argsstring>
+        <name>Query</name>
+        <qualifiedname>learnql::query::Query::Query</qualifiedname>
+        <param>
+          <type><ref refid="classlearnql_1_1query_1_1_query_1a70c824d5531524dc012b0baec4f1fb5b" kindref="member">table_type</ref> &amp;</type>
+          <declname>table</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a query for a table. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>table</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reference to the table </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp" line="38" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp" bodystart="38" bodyend="39"/>
+        <referencedby refid="classlearnql_1_1query_1_1_query_1a397bb70fc53fdb90841a17aa7093edc1" compoundref="_query_8hpp" startline="54" endline="60">learnql::query::Query&lt; T, BatchSize &gt;::where</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1query_1_1_query_1a397bb70fc53fdb90841a17aa7093edc1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename ExprType</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classlearnql_1_1query_1_1_query_1a34e1ed036c997d1192ed341ff82b864b" kindref="member">Query</ref> &amp;</type>
+        <definition>Query &amp; learnql::query::Query&lt; T, BatchSize &gt;::where</definition>
+        <argsstring>(const Expr&lt; ExprType &gt; &amp;expr)</argsstring>
+        <name>where</name>
+        <qualifiedname>learnql::query::Query::where</qualifiedname>
+        <param>
+          <type>const <ref refid="classlearnql_1_1query_1_1expressions_1_1_expr" kindref="compound">Expr</ref>&lt; ExprType &gt; &amp;</type>
+          <declname>expr</declname>
+        </param>
+    <requiresclause>Expression&lt;ExprType&gt;    </requiresclause>
+        <briefdescription>
+<para>Adds a WHERE clause using an expression. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>ExprType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Expression type </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Expression to filter by </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reference to this query (for chaining)</para>
+</simplesect>
+Example: <programlisting><codeline><highlight class="normal">query.where((age<sp/>&gt;<sp/>18)<sp/>&amp;&amp;<sp/>(name<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;Alice&quot;</highlight><highlight class="normal">));</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp" line="54" column="11" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp" bodystart="54" bodyend="60"/>
+        <references refid="classlearnql_1_1query_1_1expressions_1_1_expr_1ab3afaf7bba10da4cd15df3713a77974f" compoundref="_expr_8hpp" startline="29" endline="31">learnql::query::expressions::Expr&lt; Derived &gt;::derived</references>
+        <references refid="classlearnql_1_1query_1_1_query_1a34e1ed036c997d1192ed341ff82b864b" compoundref="_query_8hpp" startline="38" endline="39">learnql::query::Query&lt; T, BatchSize &gt;::Query</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1query_1_1_query_1a4dd2e00ea45d681085aa3089ee8b1010" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classlearnql_1_1ranges_1_1_proxy_vector" kindref="compound">ranges::ProxyVector</ref>&lt; T, BatchSize &gt;</type>
+        <definition>ranges::ProxyVector&lt; T, BatchSize &gt; learnql::query::Query&lt; T, BatchSize &gt;::execute</definition>
+        <argsstring>() const</argsstring>
+        <name>execute</name>
+        <qualifiedname>learnql::query::Query::execute</qualifiedname>
+        <briefdescription>
+<para>Executes the query and returns all matching records. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>ProxyVector of matching records (loaded in batches) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp" line="66" column="26" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp" bodystart="66" bodyend="72"/>
+        <referencedby refid="classlearnql_1_1query_1_1_query_1a3b696344fbd70f9c16e2ef0cee7df9ad" compoundref="_query_8hpp" startline="78" endline="88">learnql::query::Query&lt; T, BatchSize &gt;::execute_single</referencedby>
+        <referencedby refid="classlearnql_1_1query_1_1_query_1a8301d6740b2b579d639b17919c4202f6" compoundref="_query_8hpp" startline="148" endline="150">learnql::query::Query&lt; T, BatchSize &gt;::operator std::vector&lt; T &gt;</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1query_1_1_query_1a3b696344fbd70f9c16e2ef0cee7df9ad" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::unique_ptr&lt; T &gt;</type>
+        <definition>std::unique_ptr&lt; T &gt; learnql::query::Query&lt; T, BatchSize &gt;::execute_single</definition>
+        <argsstring>() const</argsstring>
+        <name>execute_single</name>
+        <qualifiedname>learnql::query::Query::execute_single</qualifiedname>
+        <briefdescription>
+<para>Executes query and returns the first matching record. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Unique pointer to the first match, or nullptr </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp" line="78" column="22" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp" bodystart="78" bodyend="88"/>
+        <references refid="classlearnql_1_1query_1_1_query_1a4dd2e00ea45d681085aa3089ee8b1010" compoundref="_query_8hpp" startline="66" endline="72">learnql::query::Query&lt; T, BatchSize &gt;::execute</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1query_1_1_query_1a2ca0d9a089e90ef43e8a09c79b556de1" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>std::size_t learnql::query::Query&lt; T, BatchSize &gt;::count</definition>
+        <argsstring>() const</argsstring>
+        <name>count</name>
+        <qualifiedname>learnql::query::Query::count</qualifiedname>
+        <briefdescription>
+<para>Counts matching records. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Number of matching records </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp" line="94" column="18" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp" bodystart="94" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1query_1_1_query_1a528c8a8d565579c00544947e658c779b" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool learnql::query::Query&lt; T, BatchSize &gt;::any</definition>
+        <argsstring>() const</argsstring>
+        <name>any</name>
+        <qualifiedname>learnql::query::Query::any</qualifiedname>
+        <briefdescription>
+<para>Checks if any records match the query. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if at least one record matches </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp" line="112" column="11" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp" bodystart="112" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1query_1_1_query_1ad41474e3eef51d01bca7f41f739fa6db" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool learnql::query::Query&lt; T, BatchSize &gt;::all</definition>
+        <argsstring>() const</argsstring>
+        <name>all</name>
+        <qualifiedname>learnql::query::Query::all</qualifiedname>
+        <briefdescription>
+<para>Checks if all records match the query. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if all records match (or table is empty) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp" line="129" column="11" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp" bodystart="129" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1query_1_1_query_1a8301d6740b2b579d639b17919c4202f6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>learnql::query::Query&lt; T, BatchSize &gt;::operator std::vector&lt; T &gt;</definition>
+        <argsstring>() const</argsstring>
+        <name>operator std::vector&lt; T &gt;</name>
+        <qualifiedname>learnql::query::Query::vector&lt; T &gt;</qualifiedname>
+        <briefdescription>
+<para>Implicit conversion to vector (executes and materializes the query). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Note: This materializes all results into memory. For large result sets, prefer using the <ref refid="classlearnql_1_1query_1_1_query_1a4dd2e00ea45d681085aa3089ee8b1010" kindref="member">execute()</ref> method and iterating over the ProxyVector. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp" line="148" column="5" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp" bodystart="148" bodyend="150"/>
+        <references refid="classlearnql_1_1query_1_1_query_1a4dd2e00ea45d681085aa3089ee8b1010" compoundref="_query_8hpp" startline="66" endline="72">learnql::query::Query&lt; T, BatchSize &gt;::execute</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1query_1_1_query_1a276fcfc0bc9a2f11140372804261e639" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classlearnql_1_1query_1_1_query_1_1_iterator" kindref="compound">Iterator</ref></type>
+        <definition>Iterator learnql::query::Query&lt; T, BatchSize &gt;::begin</definition>
+        <argsstring>() const</argsstring>
+        <name>begin</name>
+        <qualifiedname>learnql::query::Query::begin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp" line="211" column="15" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp" bodystart="211" bodyend="213"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1query_1_1_query_1aa25cc9c67c9dc306552fb63480ac63bc" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classlearnql_1_1query_1_1_query_1_1_iterator" kindref="compound">Iterator</ref></type>
+        <definition>Iterator learnql::query::Query&lt; T, BatchSize &gt;::end</definition>
+        <argsstring>() const</argsstring>
+        <name>end</name>
+        <qualifiedname>learnql::query::Query::end</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp" line="215" column="15" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp" bodystart="215" bodyend="217"/>
+        <referencedby refid="classlearnql_1_1query_1_1_query_1_1_iterator_1a00fb405ec82e6f60c03cefd33fc4b283" compoundref="_query_8hpp" startline="164" endline="169">learnql::query::Query&lt; T, BatchSize &gt;::Iterator::Iterator</referencedby>
+      </memberdef>
+    </sectiondef>
+    <requiresclause>concepts::Queryable&lt;T, <ref refid="classlearnql_1_1serialization_1_1_binary_writer" kindref="compound">serialization::BinaryWriter</ref>, <ref refid="classlearnql_1_1serialization_1_1_binary_reader" kindref="compound">serialization::BinaryReader</ref>&gt;    </requiresclause>
+    <briefdescription>
+<para><ref refid="classlearnql_1_1query_1_1_query" kindref="compound">Query</ref> builder for tables using expression templates. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of objects in the table </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>BatchSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of records to load per batch (default: 10)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Provides a fluent interface for building SQL-like queries with memory-efficient batched execution.</para>
+<para>Example: <programlisting><codeline><highlight class="normal">Table&lt;Student&gt;<sp/>students;</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="namespacelearnql_1_1query_1ad77882d436b612192d099574176a8d5b" kindref="member">Field&lt;Student, int&gt;</ref><sp/>age{</highlight><highlight class="stringliteral">&quot;age&quot;</highlight><highlight class="normal">,<sp/>&amp;Student::getAge};</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>results<sp/>=<sp/><ref refid="classlearnql_1_1query_1_1_query_1a34e1ed036c997d1192ed341ff82b864b" kindref="member">Query</ref>{students}.where(age<sp/>&gt;<sp/>18).execute();</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp" line="29" column="1" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp" bodystart="29" bodyend="222"/>
+    <listofallmembers>
+      <member refid="classlearnql_1_1query_1_1_query_1ad41474e3eef51d01bca7f41f739fa6db" prot="public" virt="non-virtual"><scope>learnql::query::Query</scope><name>all</name></member>
+      <member refid="classlearnql_1_1query_1_1_query_1a528c8a8d565579c00544947e658c779b" prot="public" virt="non-virtual"><scope>learnql::query::Query</scope><name>any</name></member>
+      <member refid="classlearnql_1_1query_1_1_query_1a276fcfc0bc9a2f11140372804261e639" prot="public" virt="non-virtual"><scope>learnql::query::Query</scope><name>begin</name></member>
+      <member refid="classlearnql_1_1query_1_1_query_1a2ca0d9a089e90ef43e8a09c79b556de1" prot="public" virt="non-virtual"><scope>learnql::query::Query</scope><name>count</name></member>
+      <member refid="classlearnql_1_1query_1_1_query_1aa25cc9c67c9dc306552fb63480ac63bc" prot="public" virt="non-virtual"><scope>learnql::query::Query</scope><name>end</name></member>
+      <member refid="classlearnql_1_1query_1_1_query_1a4dd2e00ea45d681085aa3089ee8b1010" prot="public" virt="non-virtual"><scope>learnql::query::Query</scope><name>execute</name></member>
+      <member refid="classlearnql_1_1query_1_1_query_1a3b696344fbd70f9c16e2ef0cee7df9ad" prot="public" virt="non-virtual"><scope>learnql::query::Query</scope><name>execute_single</name></member>
+      <member refid="classlearnql_1_1query_1_1_query_1a8301d6740b2b579d639b17919c4202f6" prot="public" virt="non-virtual"><scope>learnql::query::Query</scope><name>operator std::vector&lt; T &gt;</name></member>
+      <member refid="classlearnql_1_1query_1_1_query_1a895145628f0c94eff7ad6208cd08da7a" prot="private" virt="non-virtual"><scope>learnql::query::Query</scope><name>predicate_</name></member>
+      <member refid="classlearnql_1_1query_1_1_query_1a34e1ed036c997d1192ed341ff82b864b" prot="public" virt="non-virtual"><scope>learnql::query::Query</scope><name>Query</name></member>
+      <member refid="classlearnql_1_1query_1_1_query_1a0e68eede90c43564c129c4ea3cb4e603" prot="private" virt="non-virtual"><scope>learnql::query::Query</scope><name>table_</name></member>
+      <member refid="classlearnql_1_1query_1_1_query_1a70c824d5531524dc012b0baec4f1fb5b" prot="public" virt="non-virtual"><scope>learnql::query::Query</scope><name>table_type</name></member>
+      <member refid="classlearnql_1_1query_1_1_query_1a23526c3427df1f032cdbb8cf87a08207" prot="public" virt="non-virtual"><scope>learnql::query::Query</scope><name>value_type</name></member>
+      <member refid="classlearnql_1_1query_1_1_query_1a397bb70fc53fdb90841a17aa7093edc1" prot="public" virt="non-virtual"><scope>learnql::query::Query</scope><name>where</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

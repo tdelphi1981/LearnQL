@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="conceptlearnql_1_1concepts_1_1_storable" kind="concept">
+    <compoundname>learnql::concepts::Storable</compoundname>
+    <includes refid="_queryable_8hpp" local="no">Queryable.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+      <param>
+        <type>typename Writer</type>
+      </param>
+      <param>
+        <type>typename Reader</type>
+      </param>
+    </templateparamlist>
+    <initializer>template&lt;typename T, typename Writer, typename Reader&gt;
+concept <ref refid="conceptlearnql_1_1concepts_1_1_storable" kindref="compound">learnql::concepts::Storable</ref> =  std::is_default_constructible_v&lt;T&gt; &amp;&amp;
+                   std::is_copy_constructible_v&lt;T&gt; &amp;&amp;
+                   HasPrimaryKey&lt;T&gt; &amp;&amp;
+                   CustomSerializable&lt;T, Writer, Reader&gt; &amp;&amp;
+                   PrimaryKeyType&lt;typename T::primary_key_type&gt;    </initializer>
+    <briefdescription>
+<para>Concept for types that can be stored in a table. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Types must:<itemizedlist>
+<listitem><para>Be default constructible</para>
+</listitem><listitem><para>Be copy constructible</para>
+</listitem><listitem><para>Have a primary key</para>
+</listitem><listitem><para>Have custom serialization</para>
+</listitem></itemizedlist>
+</para>
+<para>This is the main concept for domain objects that can be stored in LearnQL tables. </para>
+    </detaileddescription>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/concepts/Queryable.hpp" line="55" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,386 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classlearnql_1_1core_1_1_table_1_1_iterator" kind="class" language="C++" prot="public">
+    <compoundname>learnql::core::Table::Iterator</compoundname>
+    <includes refid="_table_8hpp" local="no">Table.hpp</includes>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classlearnql_1_1core_1_1_table_1_1_iterator_1ad18865eeb4c5683b88f63cb1360175b6" prot="public" static="no">
+        <type>std::forward_iterator_tag</type>
+        <definition>using learnql::core::Table&lt; T, BatchSize &gt;::Iterator::iterator_category =  std::forward_iterator_tag</definition>
+        <argsstring></argsstring>
+        <name>iterator_category</name>
+        <qualifiedname>learnql::core::Table::Iterator::iterator_category</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="80" column="9" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classlearnql_1_1core_1_1_table_1_1_iterator_1ad8a1eaab2e093a34a6f50907a9135884" prot="public" static="no">
+        <type>T</type>
+        <definition>using learnql::core::Table&lt; T, BatchSize &gt;::Iterator::value_type =  T</definition>
+        <argsstring></argsstring>
+        <name>value_type</name>
+        <qualifiedname>learnql::core::Table::Iterator::value_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="81" column="9" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classlearnql_1_1core_1_1_table_1_1_iterator_1a2cb735d3d8850c6b7aa013d84860a7e9" prot="public" static="no">
+        <type>std::ptrdiff_t</type>
+        <definition>using learnql::core::Table&lt; T, BatchSize &gt;::Iterator::difference_type =  std::ptrdiff_t</definition>
+        <argsstring></argsstring>
+        <name>difference_type</name>
+        <qualifiedname>learnql::core::Table::Iterator::difference_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="82" column="9" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classlearnql_1_1core_1_1_table_1_1_iterator_1a2b7b8bed59caafbea49f6ef7bb3e5ff8" prot="public" static="no">
+        <type>const T *</type>
+        <definition>using learnql::core::Table&lt; T, BatchSize &gt;::Iterator::pointer =  const T*</definition>
+        <argsstring></argsstring>
+        <name>pointer</name>
+        <qualifiedname>learnql::core::Table::Iterator::pointer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="83" column="9" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classlearnql_1_1core_1_1_table_1_1_iterator_1a0ac8a9636385a72e1aa920cd38586c85" prot="public" static="no">
+        <type>const T &amp;</type>
+        <definition>using learnql::core::Table&lt; T, BatchSize &gt;::Iterator::reference =  const T&amp;</definition>
+        <argsstring></argsstring>
+        <name>reference</name>
+        <qualifiedname>learnql::core::Table::Iterator::reference</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="84" column="9" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classlearnql_1_1core_1_1_table_1_1_iterator_1a5ba7c56e7d428e767becb28b8cfa418e" prot="public" static="no">
+        <type><ref refid="classlearnql_1_1index_1_1_batch_iterator" kindref="compound">index::BatchIterator</ref>&lt; <ref refid="classlearnql_1_1core_1_1_table_1abb8fc1ea0d7a8f4bac470a71d14f3f31" kindref="member">primary_key_type</ref>, <ref refid="structlearnql_1_1core_1_1_record_id" kindref="compound">RecordId</ref>, BatchSize &gt;</type>
+        <definition>using learnql::core::Table&lt; T, BatchSize &gt;::Iterator::batch_iterator_type =  index::BatchIterator&lt;primary_key_type, RecordId, BatchSize&gt;</definition>
+        <argsstring></argsstring>
+        <name>batch_iterator_type</name>
+        <qualifiedname>learnql::core::Table::Iterator::batch_iterator_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="85" column="9" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="85" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classlearnql_1_1core_1_1_table_1_1_iterator_1ac21933427352b89e8ccb2b1ce9b8683c" prot="private" static="no" mutable="no">
+        <type>const <ref refid="classlearnql_1_1core_1_1_table_1a5005a87f9bdff39c3f8ad236816ad825" kindref="member">Table</ref> *</type>
+        <definition>const Table* learnql::core::Table&lt; T, BatchSize &gt;::Iterator::table_</definition>
+        <argsstring></argsstring>
+        <name>table_</name>
+        <qualifiedname>learnql::core::Table::Iterator::table_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="88" column="21" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlearnql_1_1core_1_1_table_1_1_iterator_1aab3d5db54c25ef43cbe7d70d70c7bedb" prot="private" static="no" mutable="yes">
+        <type>std::shared_ptr&lt; <ref refid="classlearnql_1_1core_1_1_table_1_1_iterator_1a5ba7c56e7d428e767becb28b8cfa418e" kindref="member">batch_iterator_type</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;batch_iterator_type&gt; learnql::core::Table&lt; T, BatchSize &gt;::Iterator::batch_iter_</definition>
+        <argsstring></argsstring>
+        <name>batch_iter_</name>
+        <qualifiedname>learnql::core::Table::Iterator::batch_iter_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="89" column="33" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlearnql_1_1core_1_1_table_1_1_iterator_1a8682aa5696aef792cacfa3a8d91508ab" prot="private" static="no" mutable="yes">
+        <type>std::vector&lt; std::pair&lt; <ref refid="classlearnql_1_1core_1_1_table_1abb8fc1ea0d7a8f4bac470a71d14f3f31" kindref="member">primary_key_type</ref>, <ref refid="structlearnql_1_1core_1_1_record_id" kindref="compound">RecordId</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::pair&lt;primary_key_type, RecordId&gt; &gt; learnql::core::Table&lt; T, BatchSize &gt;::Iterator::current_batch_</definition>
+        <argsstring></argsstring>
+        <name>current_batch_</name>
+        <qualifiedname>learnql::core::Table::Iterator::current_batch_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="90" column="29" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlearnql_1_1core_1_1_table_1_1_iterator_1ad49e8145bc3b6ef89fd399a77c2e83e1" prot="private" static="no" mutable="yes">
+        <type>std::size_t</type>
+        <definition>std::size_t learnql::core::Table&lt; T, BatchSize &gt;::Iterator::batch_index_</definition>
+        <argsstring></argsstring>
+        <name>batch_index_</name>
+        <qualifiedname>learnql::core::Table::Iterator::batch_index_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="91" column="29" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlearnql_1_1core_1_1_table_1_1_iterator_1affa440bd8ecc5caeeea54583fc07942a" prot="private" static="no" mutable="yes">
+        <type>T</type>
+        <definition>T learnql::core::Table&lt; T, BatchSize &gt;::Iterator::current_</definition>
+        <argsstring></argsstring>
+        <name>current_</name>
+        <qualifiedname>learnql::core::Table::Iterator::current_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="92" column="19" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlearnql_1_1core_1_1_table_1_1_iterator_1a8b467b98e176929f336cba1c93ba0195" prot="private" static="no" mutable="yes">
+        <type>bool</type>
+        <definition>bool learnql::core::Table&lt; T, BatchSize &gt;::Iterator::current_loaded_</definition>
+        <argsstring></argsstring>
+        <name>current_loaded_</name>
+        <qualifiedname>learnql::core::Table::Iterator::current_loaded_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="93" column="22" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlearnql_1_1core_1_1_table_1_1_iterator_1af9948201c716d8c08116f7b0d1f27fc9" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool learnql::core::Table&lt; T, BatchSize &gt;::Iterator::is_end_</definition>
+        <argsstring></argsstring>
+        <name>is_end_</name>
+        <qualifiedname>learnql::core::Table::Iterator::is_end_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="94" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="94" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classlearnql_1_1core_1_1_table_1_1_iterator_1a93015d60a67a495eed28db61cddd403d" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::core::Table&lt; T, BatchSize &gt;::Iterator::load_current</definition>
+        <argsstring>() const</argsstring>
+        <name>load_current</name>
+        <qualifiedname>learnql::core::Table::Iterator::load_current</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="96" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="96" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1core_1_1_table_1_1_iterator_1a28d77b7688f8df48c11a73047e7da9b4" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::core::Table&lt; T, BatchSize &gt;::Iterator::load_next_batch</definition>
+        <argsstring>() const</argsstring>
+        <name>load_next_batch</name>
+        <qualifiedname>learnql::core::Table::Iterator::load_next_batch</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="111" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="111" bodyend="119"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlearnql_1_1core_1_1_table_1_1_iterator_1aa3e85983154b0dc9d6d3d4c1cf8953d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>learnql::core::Table&lt; T, BatchSize &gt;::Iterator::Iterator</definition>
+        <argsstring>(const Table *table, std::shared_ptr&lt; batch_iterator_type &gt; batch_iter, bool is_end)</argsstring>
+        <name>Iterator</name>
+        <qualifiedname>learnql::core::Table::Iterator::Iterator</qualifiedname>
+        <param>
+          <type>const <ref refid="classlearnql_1_1core_1_1_table_1a5005a87f9bdff39c3f8ad236816ad825" kindref="member">Table</ref> *</type>
+          <declname>table</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classlearnql_1_1core_1_1_table_1_1_iterator_1a5ba7c56e7d428e767becb28b8cfa418e" kindref="member">batch_iterator_type</ref> &gt;</type>
+          <declname>batch_iter</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>is_end</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="123" column="9" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="123" bodyend="140"/>
+        <references refid="classlearnql_1_1core_1_1_table_1a5005a87f9bdff39c3f8ad236816ad825" compoundref="_table_8hpp" startline="206" endline="219">learnql::core::Table&lt; T, BatchSize &gt;::Table</references>
+        <referencedby refid="classlearnql_1_1core_1_1_table_1_1_iterator_1a9d515b4deec054020b888cd5e8ca6d0a" compoundref="_table_8hpp" startline="195" endline="197">learnql::core::Table&lt; T, BatchSize &gt;::Iterator::operator!=</referencedby>
+        <referencedby refid="classlearnql_1_1core_1_1_table_1_1_iterator_1a08a5dff0909c1e6f09db5bca7d7c247b" compoundref="_table_8hpp" startline="153" endline="174">learnql::core::Table&lt; T, BatchSize &gt;::Iterator::operator++</referencedby>
+        <referencedby refid="classlearnql_1_1core_1_1_table_1_1_iterator_1ab53bcd8aee7ced21f5c5f092213787b6" compoundref="_table_8hpp" startline="176" endline="180">learnql::core::Table&lt; T, BatchSize &gt;::Iterator::operator++</referencedby>
+        <referencedby refid="classlearnql_1_1core_1_1_table_1_1_iterator_1af3f82f17df8fdc97f44aa3a9d8cf99d1" compoundref="_table_8hpp" startline="182" endline="193">learnql::core::Table&lt; T, BatchSize &gt;::Iterator::operator==</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1core_1_1_table_1_1_iterator_1a87c277585717bc966ab507e5e910a197" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classlearnql_1_1core_1_1_table_1_1_iterator_1a0ac8a9636385a72e1aa920cd38586c85" kindref="member">reference</ref></type>
+        <definition>reference learnql::core::Table&lt; T, BatchSize &gt;::Iterator::operator*</definition>
+        <argsstring>() const</argsstring>
+        <name>operator*</name>
+        <qualifiedname>learnql::core::Table::Iterator::operator*</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="142" column="19" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="142" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1core_1_1_table_1_1_iterator_1a25c3930a867c4ab8a156797f911ecb6b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classlearnql_1_1core_1_1_table_1_1_iterator_1a2b7b8bed59caafbea49f6ef7bb3e5ff8" kindref="member">pointer</ref></type>
+        <definition>pointer learnql::core::Table&lt; T, BatchSize &gt;::Iterator::operator-&gt;</definition>
+        <argsstring>() const</argsstring>
+        <name>operator-&gt;</name>
+        <qualifiedname>learnql::core::Table::Iterator::operator-&gt;</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="149" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="149" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1core_1_1_table_1_1_iterator_1a08a5dff0909c1e6f09db5bca7d7c247b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classlearnql_1_1core_1_1_table_1_1_iterator_1aa3e85983154b0dc9d6d3d4c1cf8953d5" kindref="member">Iterator</ref> &amp;</type>
+        <definition>Iterator &amp; learnql::core::Table&lt; T, BatchSize &gt;::Iterator::operator++</definition>
+        <argsstring>()</argsstring>
+        <name>operator++</name>
+        <qualifiedname>learnql::core::Table::Iterator::operator++</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="153" column="18" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="153" bodyend="174"/>
+        <references refid="classlearnql_1_1core_1_1_table_1_1_iterator_1aa3e85983154b0dc9d6d3d4c1cf8953d5" compoundref="_table_8hpp" startline="123" endline="140">learnql::core::Table&lt; T, BatchSize &gt;::Iterator::Iterator</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1core_1_1_table_1_1_iterator_1ab53bcd8aee7ced21f5c5f092213787b6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classlearnql_1_1core_1_1_table_1_1_iterator_1aa3e85983154b0dc9d6d3d4c1cf8953d5" kindref="member">Iterator</ref></type>
+        <definition>Iterator learnql::core::Table&lt; T, BatchSize &gt;::Iterator::operator++</definition>
+        <argsstring>(int)</argsstring>
+        <name>operator++</name>
+        <qualifiedname>learnql::core::Table::Iterator::operator++</qualifiedname>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="176" column="18" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="176" bodyend="180"/>
+        <references refid="classlearnql_1_1core_1_1_table_1_1_iterator_1aa3e85983154b0dc9d6d3d4c1cf8953d5" compoundref="_table_8hpp" startline="123" endline="140">learnql::core::Table&lt; T, BatchSize &gt;::Iterator::Iterator</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1core_1_1_table_1_1_iterator_1af3f82f17df8fdc97f44aa3a9d8cf99d1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool learnql::core::Table&lt; T, BatchSize &gt;::Iterator::operator==</definition>
+        <argsstring>(const Iterator &amp;other) const</argsstring>
+        <name>operator==</name>
+        <qualifiedname>learnql::core::Table::Iterator::operator==</qualifiedname>
+        <param>
+          <type>const <ref refid="classlearnql_1_1core_1_1_table_1_1_iterator_1aa3e85983154b0dc9d6d3d4c1cf8953d5" kindref="member">Iterator</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="182" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="182" bodyend="193"/>
+        <references refid="classlearnql_1_1core_1_1_table_1_1_iterator_1aa3e85983154b0dc9d6d3d4c1cf8953d5" compoundref="_table_8hpp" startline="123" endline="140">learnql::core::Table&lt; T, BatchSize &gt;::Iterator::Iterator</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1core_1_1_table_1_1_iterator_1a9d515b4deec054020b888cd5e8ca6d0a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool learnql::core::Table&lt; T, BatchSize &gt;::Iterator::operator!=</definition>
+        <argsstring>(const Iterator &amp;other) const</argsstring>
+        <name>operator!=</name>
+        <qualifiedname>learnql::core::Table::Iterator::operator!=</qualifiedname>
+        <param>
+          <type>const <ref refid="classlearnql_1_1core_1_1_table_1_1_iterator_1aa3e85983154b0dc9d6d3d4c1cf8953d5" kindref="member">Iterator</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="195" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="195" bodyend="197"/>
+        <references refid="classlearnql_1_1core_1_1_table_1_1_iterator_1aa3e85983154b0dc9d6d3d4c1cf8953d5" compoundref="_table_8hpp" startline="123" endline="140">learnql::core::Table&lt; T, BatchSize &gt;::Iterator::Iterator</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Forward iterator for table with batched loading. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This iterator loads record IDs in batches rather than caching all IDs upfront, making iteration more memory-efficient for large tables. </para>
+    </detaileddescription>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="78" column="5" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="78" bodyend="198"/>
+    <listofallmembers>
+      <member refid="classlearnql_1_1core_1_1_table_1_1_iterator_1ad49e8145bc3b6ef89fd399a77c2e83e1" prot="private" virt="non-virtual"><scope>learnql::core::Table::Iterator</scope><name>batch_index_</name></member>
+      <member refid="classlearnql_1_1core_1_1_table_1_1_iterator_1aab3d5db54c25ef43cbe7d70d70c7bedb" prot="private" virt="non-virtual"><scope>learnql::core::Table::Iterator</scope><name>batch_iter_</name></member>
+      <member refid="classlearnql_1_1core_1_1_table_1_1_iterator_1a5ba7c56e7d428e767becb28b8cfa418e" prot="public" virt="non-virtual"><scope>learnql::core::Table::Iterator</scope><name>batch_iterator_type</name></member>
+      <member refid="classlearnql_1_1core_1_1_table_1_1_iterator_1affa440bd8ecc5caeeea54583fc07942a" prot="private" virt="non-virtual"><scope>learnql::core::Table::Iterator</scope><name>current_</name></member>
+      <member refid="classlearnql_1_1core_1_1_table_1_1_iterator_1a8682aa5696aef792cacfa3a8d91508ab" prot="private" virt="non-virtual"><scope>learnql::core::Table::Iterator</scope><name>current_batch_</name></member>
+      <member refid="classlearnql_1_1core_1_1_table_1_1_iterator_1a8b467b98e176929f336cba1c93ba0195" prot="private" virt="non-virtual"><scope>learnql::core::Table::Iterator</scope><name>current_loaded_</name></member>
+      <member refid="classlearnql_1_1core_1_1_table_1_1_iterator_1a2cb735d3d8850c6b7aa013d84860a7e9" prot="public" virt="non-virtual"><scope>learnql::core::Table::Iterator</scope><name>difference_type</name></member>
+      <member refid="classlearnql_1_1core_1_1_table_1_1_iterator_1af9948201c716d8c08116f7b0d1f27fc9" prot="private" virt="non-virtual"><scope>learnql::core::Table::Iterator</scope><name>is_end_</name></member>
+      <member refid="classlearnql_1_1core_1_1_table_1_1_iterator_1aa3e85983154b0dc9d6d3d4c1cf8953d5" prot="public" virt="non-virtual"><scope>learnql::core::Table::Iterator</scope><name>Iterator</name></member>
+      <member refid="classlearnql_1_1core_1_1_table_1_1_iterator_1ad18865eeb4c5683b88f63cb1360175b6" prot="public" virt="non-virtual"><scope>learnql::core::Table::Iterator</scope><name>iterator_category</name></member>
+      <member refid="classlearnql_1_1core_1_1_table_1_1_iterator_1a93015d60a67a495eed28db61cddd403d" prot="private" virt="non-virtual"><scope>learnql::core::Table::Iterator</scope><name>load_current</name></member>
+      <member refid="classlearnql_1_1core_1_1_table_1_1_iterator_1a28d77b7688f8df48c11a73047e7da9b4" prot="private" virt="non-virtual"><scope>learnql::core::Table::Iterator</scope><name>load_next_batch</name></member>
+      <member refid="classlearnql_1_1core_1_1_table_1_1_iterator_1a9d515b4deec054020b888cd5e8ca6d0a" prot="public" virt="non-virtual"><scope>learnql::core::Table::Iterator</scope><name>operator!=</name></member>
+      <member refid="classlearnql_1_1core_1_1_table_1_1_iterator_1a87c277585717bc966ab507e5e910a197" prot="public" virt="non-virtual"><scope>learnql::core::Table::Iterator</scope><name>operator*</name></member>
+      <member refid="classlearnql_1_1core_1_1_table_1_1_iterator_1a08a5dff0909c1e6f09db5bca7d7c247b" prot="public" virt="non-virtual"><scope>learnql::core::Table::Iterator</scope><name>operator++</name></member>
+      <member refid="classlearnql_1_1core_1_1_table_1_1_iterator_1ab53bcd8aee7ced21f5c5f092213787b6" prot="public" virt="non-virtual"><scope>learnql::core::Table::Iterator</scope><name>operator++</name></member>
+      <member refid="classlearnql_1_1core_1_1_table_1_1_iterator_1a25c3930a867c4ab8a156797f911ecb6b" prot="public" virt="non-virtual"><scope>learnql::core::Table::Iterator</scope><name>operator-&gt;</name></member>
+      <member refid="classlearnql_1_1core_1_1_table_1_1_iterator_1af3f82f17df8fdc97f44aa3a9d8cf99d1" prot="public" virt="non-virtual"><scope>learnql::core::Table::Iterator</scope><name>operator==</name></member>
+      <member refid="classlearnql_1_1core_1_1_table_1_1_iterator_1a2b7b8bed59caafbea49f6ef7bb3e5ff8" prot="public" virt="non-virtual"><scope>learnql::core::Table::Iterator</scope><name>pointer</name></member>
+      <member refid="classlearnql_1_1core_1_1_table_1_1_iterator_1a0ac8a9636385a72e1aa920cd38586c85" prot="public" virt="non-virtual"><scope>learnql::core::Table::Iterator</scope><name>reference</name></member>
+      <member refid="classlearnql_1_1core_1_1_table_1_1_iterator_1ac21933427352b89e8ccb2b1ce9b8683c" prot="private" virt="non-virtual"><scope>learnql::core::Table::Iterator</scope><name>table_</name></member>
+      <member refid="classlearnql_1_1core_1_1_table_1_1_iterator_1ad8a1eaab2e093a34a6f50907a9135884" prot="public" virt="non-virtual"><scope>learnql::core::Table::Iterator</scope><name>value_type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

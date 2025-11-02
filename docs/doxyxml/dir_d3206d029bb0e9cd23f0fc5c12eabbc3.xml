@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="dir_d3206d029bb0e9cd23f0fc5c12eabbc3" kind="dir">
+    <compoundname>/Users/tolgaberber/Work/CPP/LearnQL/learnql</compoundname>
+    <innerdir refid="dir_7676d122234a8d5059bcc815006f12ac">/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog</innerdir>
+    <innerdir refid="dir_7b3c1aac03baa003acc46075f61b8d1d">/Users/tolgaberber/Work/CPP/LearnQL/learnql/concepts</innerdir>
+    <innerdir refid="dir_c1c931af49491d82f871bd7cc104f762">/Users/tolgaberber/Work/CPP/LearnQL/learnql/core</innerdir>
+    <innerdir refid="dir_5bacce0275de2104102c1382b255ec0d">/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines</innerdir>
+    <innerdir refid="dir_2a3a1ca00d99dd1205452b1408a8a493">/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug</innerdir>
+    <innerdir refid="dir_8ad5c2d390164b76feb946693c32683c">/Users/tolgaberber/Work/CPP/LearnQL/learnql/index</innerdir>
+    <innerdir refid="dir_5533d3c317017698c01bd043ebc8d3c8">/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta</innerdir>
+    <innerdir refid="dir_70d0bba77a2968a7dd2f99d3fadbfbee">/Users/tolgaberber/Work/CPP/LearnQL/learnql/query</innerdir>
+    <innerdir refid="dir_4dd2babf828856317b2e648b9290b6e0">/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges</innerdir>
+    <innerdir refid="dir_5f51293974d08079be4601b493d10583">/Users/tolgaberber/Work/CPP/LearnQL/learnql/reflection</innerdir>
+    <innerdir refid="dir_f05cdb7c293520ebd945016adc0a6b86">/Users/tolgaberber/Work/CPP/LearnQL/learnql/serialization</innerdir>
+    <innerdir refid="dir_bdc2c7788986c67691bde59a6173c26e">/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage</innerdir>
+    <innerdir refid="dir_38c7d6e53a43086bdf30103936c07769">/Users/tolgaberber/Work/CPP/LearnQL/learnql/utils</innerdir>
+    <innerfile refid="_learn_q_l_8hpp">LearnQL.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/"/>
+  </compounddef>
+</doxygen>

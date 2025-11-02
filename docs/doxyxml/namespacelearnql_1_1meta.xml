@@ -1,0 +1,314 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="namespacelearnql_1_1meta" kind="namespace" language="C++">
+    <compoundname>learnql::meta</compoundname>
+    <innerclass refid="structlearnql_1_1meta_1_1_property_meta" prot="public">learnql::meta::PropertyMeta</innerclass>
+    <innerclass refid="structlearnql_1_1meta_1_1_field_descriptor" prot="public">learnql::meta::FieldDescriptor</innerclass>
+    <innerclass refid="classlearnql_1_1meta_1_1_type_info" prot="public">learnql::meta::TypeInfo</innerclass>
+    <innerclass refid="classlearnql_1_1meta_1_1_type_registry" prot="public">learnql::meta::TypeRegistry</innerclass>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespacelearnql_1_1meta_1a8da5fbfe3fe249906be7f9784f4a7dc0" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>FieldType</name>
+        <qualifiedname>learnql::meta::FieldType</qualifiedname>
+        <enumvalue id="namespacelearnql_1_1meta_1a8da5fbfe3fe249906be7f9784f4a7dc0a7d839b2c12bfd40ac121b4cc9e81c539" prot="public">
+          <name>Int8</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacelearnql_1_1meta_1a8da5fbfe3fe249906be7f9784f4a7dc0a39bc2ae44b184207f560ff8619823208" prot="public">
+          <name>Int16</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacelearnql_1_1meta_1a8da5fbfe3fe249906be7f9784f4a7dc0ac06129f6e6e15c09328365e553f1dc31" prot="public">
+          <name>Int32</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacelearnql_1_1meta_1a8da5fbfe3fe249906be7f9784f4a7dc0afbde23b11d7e59af7828e81144c8b487" prot="public">
+          <name>Int64</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacelearnql_1_1meta_1a8da5fbfe3fe249906be7f9784f4a7dc0ab31df9c476d20e85ff898121efe11b5a" prot="public">
+          <name>UInt8</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacelearnql_1_1meta_1a8da5fbfe3fe249906be7f9784f4a7dc0a8bd950a9d7779b83f5c30046c9aaf1cf" prot="public">
+          <name>UInt16</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacelearnql_1_1meta_1a8da5fbfe3fe249906be7f9784f4a7dc0ae7956ed7be1c5025a27ed3cb42a396bd" prot="public">
+          <name>UInt32</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacelearnql_1_1meta_1a8da5fbfe3fe249906be7f9784f4a7dc0aaf71234725f0470ccf993e263a8b820a" prot="public">
+          <name>UInt64</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacelearnql_1_1meta_1a8da5fbfe3fe249906be7f9784f4a7dc0a22ae0e2b89e5e3d477f988cc36d3272b" prot="public">
+          <name>Float</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacelearnql_1_1meta_1a8da5fbfe3fe249906be7f9784f4a7dc0ad909d38d705ce75386dd86e611a82f5b" prot="public">
+          <name>Double</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacelearnql_1_1meta_1a8da5fbfe3fe249906be7f9784f4a7dc0ac26f15e86e3de4c398a8273272aba034" prot="public">
+          <name>Bool</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacelearnql_1_1meta_1a8da5fbfe3fe249906be7f9784f4a7dc0a27118326006d3829667a400ad23d5d98" prot="public">
+          <name>String</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacelearnql_1_1meta_1a8da5fbfe3fe249906be7f9784f4a7dc0a90589c47f06eb971d548591f23c285af" prot="public">
+          <name>Custom</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enumeration of supported field types. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/TypeInfo.hpp" line="18" column="1" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/TypeInfo.hpp" bodystart="18" bodyend="32"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespacelearnql_1_1meta_1ae81b67158e178c2800424a200f37dd89" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::conditional_t&lt; std::is_fundamental_v&lt; T &gt;||(sizeof(T)&lt;=sizeof(void *) &amp;&amp;std::is_trivially_copyable_v&lt; T &gt;), T, const T &amp; &gt;</type>
+        <definition>using learnql::meta::property_return_type =  std::conditional_t&lt;
+    std::is_fundamental_v&lt;T&gt; || (sizeof(T) &lt;= sizeof(void*) &amp;&amp; std::is_trivially_copyable_v&lt;T&gt;),
+    T,           
+    const T&amp;     
+&gt;</definition>
+        <argsstring></argsstring>
+        <name>property_return_type</name>
+        <qualifiedname>learnql::meta::property_return_type</qualifiedname>
+        <briefdescription>
+<para>Type trait to determine the appropriate return type for a property getter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Small, trivially copyable types (like int, double) are returned by value. Larger types (like std::string) are returned by const reference.</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The property type </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/Property.hpp" line="22" column="1" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/Property.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacelearnql_1_1meta_1a53f585cfa9be97b6719d45ab4d2ab669" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::conditional_t&lt; std::is_fundamental_v&lt; T &gt;, T, const T &amp; &gt;</type>
+        <definition>using learnql::meta::property_param_type =  std::conditional_t&lt;
+    std::is_fundamental_v&lt;T&gt;,
+    T,           
+    const T&amp;     
+&gt;</definition>
+        <argsstring></argsstring>
+        <name>property_param_type</name>
+        <qualifiedname>learnql::meta::property_param_type</qualifiedname>
+        <briefdescription>
+<para>Type trait to determine the appropriate parameter type for a property setter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Fundamental types are passed by value. Non-fundamental types are passed by const reference.</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The property type </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/Property.hpp" line="37" column="1" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/Property.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacelearnql_1_1meta_1a3cc4b01a05c4fc2a73f7df691f9f2b34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename Reader</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T learnql::meta::deserialize_property</definition>
+        <argsstring>(Reader &amp;reader)</argsstring>
+        <name>deserialize_property</name>
+        <qualifiedname>learnql::meta::deserialize_property</qualifiedname>
+        <param>
+          <type>Reader &amp;</type>
+          <declname>reader</declname>
+        </param>
+        <briefdescription>
+<para>Helper function to deserialize a property based on its type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Dispatches to the appropriate BinaryReader method:<itemizedlist>
+<listitem><para>std::string -&gt; read_string()</para>
+</listitem><listitem><para>Arithmetic types -&gt; read&lt;T&gt;()</para>
+</listitem><listitem><para>Custom types -&gt; read_custom&lt;T&gt;()</para>
+</listitem></itemizedlist>
+</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The property type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Reader</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The reader type </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>reader</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The binary reader </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The deserialized value </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/Property.hpp" line="57" column="3" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/Property.hpp" bodystart="57" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelearnql_1_1meta_1ac36876119db8ef099fb80808580cba84" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>const char *</type>
+        <definition>const char * learnql::meta::type_name</definition>
+        <argsstring>()</argsstring>
+        <name>type_name</name>
+        <qualifiedname>learnql::meta::type_name</qualifiedname>
+        <briefdescription>
+<para>Compile-time type name helper Maps C++ types to string representations for reflection. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/Property.hpp" line="73" column="22" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/Property.hpp" bodystart="73" bodyend="90"/>
+        <referencedby refid="classlearnql_1_1meta_1_1_type_registry_1ae1a7d251470c1c77e3a653c2bfa9c47c" compoundref="_type_info_8hpp" startline="273" endline="279">learnql::meta::TypeRegistry::get_type_info_by_name</referencedby>
+        <referencedby refid="classlearnql_1_1meta_1_1_type_registry_1ad6d37aa7d76bd87d2d8002e79b7bda91" compoundref="_type_info_8hpp" startline="295" endline="297">learnql::meta::TypeRegistry::is_registered</referencedby>
+        <referencedby refid="classlearnql_1_1meta_1_1_type_registry_1aa3e97f450129dd42cc9ca8923667a15b" compoundref="_type_info_8hpp" startline="247" endline="249">learnql::meta::TypeRegistry::register_type_by_name</referencedby>
+        <referencedby refid="structlearnql_1_1meta_1_1_property_meta_1a1feff6ee4d228fea56dedaa263a62003" compoundref="_property_8hpp" startline="117" endline="119">learnql::meta::PropertyMeta&lt; Class, Type, IsPK &gt;::type_string</referencedby>
+        <referencedby refid="classlearnql_1_1meta_1_1_type_info_1a5070ca2628c6c5af3f84b3a25c0083ac" compoundref="_type_info_8hpp" startline="102" endline="106">learnql::meta::TypeInfo::TypeInfo</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacelearnql_1_1meta_1a0ec86f3f6b75ae602eec633399ad2f57" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string learnql::meta::field_type_to_string</definition>
+        <argsstring>(FieldType type)</argsstring>
+        <name>field_type_to_string</name>
+        <qualifiedname>learnql::meta::field_type_to_string</qualifiedname>
+        <param>
+          <type><ref refid="namespacelearnql_1_1meta_1a8da5fbfe3fe249906be7f9784f4a7dc0" kindref="member">FieldType</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Converts <ref refid="namespacelearnql_1_1meta_1a8da5fbfe3fe249906be7f9784f4a7dc0" kindref="member">FieldType</ref> to string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/TypeInfo.hpp" line="37" column="21" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/TypeInfo.hpp" bodystart="37" bodyend="54"/>
+        <references refid="namespacelearnql_1_1meta_1a8da5fbfe3fe249906be7f9784f4a7dc0ac26f15e86e3de4c398a8273272aba034" compoundref="_type_info_8hpp" startline="29">Bool</references>
+        <references refid="namespacelearnql_1_1meta_1a8da5fbfe3fe249906be7f9784f4a7dc0a90589c47f06eb971d548591f23c285af" compoundref="_type_info_8hpp" startline="31">Custom</references>
+        <references refid="namespacelearnql_1_1meta_1a8da5fbfe3fe249906be7f9784f4a7dc0ad909d38d705ce75386dd86e611a82f5b" compoundref="_type_info_8hpp" startline="28">Double</references>
+        <references refid="namespacelearnql_1_1meta_1a8da5fbfe3fe249906be7f9784f4a7dc0a22ae0e2b89e5e3d477f988cc36d3272b" compoundref="_type_info_8hpp" startline="27">Float</references>
+        <references refid="namespacelearnql_1_1meta_1a8da5fbfe3fe249906be7f9784f4a7dc0a39bc2ae44b184207f560ff8619823208" compoundref="_type_info_8hpp" startline="20">Int16</references>
+        <references refid="namespacelearnql_1_1meta_1a8da5fbfe3fe249906be7f9784f4a7dc0ac06129f6e6e15c09328365e553f1dc31" compoundref="_type_info_8hpp" startline="21">Int32</references>
+        <references refid="namespacelearnql_1_1meta_1a8da5fbfe3fe249906be7f9784f4a7dc0afbde23b11d7e59af7828e81144c8b487" compoundref="_type_info_8hpp" startline="22">Int64</references>
+        <references refid="namespacelearnql_1_1meta_1a8da5fbfe3fe249906be7f9784f4a7dc0a7d839b2c12bfd40ac121b4cc9e81c539" compoundref="_type_info_8hpp" startline="19">Int8</references>
+        <references refid="namespacelearnql_1_1meta_1a8da5fbfe3fe249906be7f9784f4a7dc0a27118326006d3829667a400ad23d5d98" compoundref="_type_info_8hpp" startline="30">String</references>
+        <references refid="namespacelearnql_1_1meta_1a8da5fbfe3fe249906be7f9784f4a7dc0a8bd950a9d7779b83f5c30046c9aaf1cf" compoundref="_type_info_8hpp" startline="24">UInt16</references>
+        <references refid="namespacelearnql_1_1meta_1a8da5fbfe3fe249906be7f9784f4a7dc0ae7956ed7be1c5025a27ed3cb42a396bd" compoundref="_type_info_8hpp" startline="25">UInt32</references>
+        <references refid="namespacelearnql_1_1meta_1a8da5fbfe3fe249906be7f9784f4a7dc0aaf71234725f0470ccf993e263a8b820a" compoundref="_type_info_8hpp" startline="26">UInt64</references>
+        <references refid="namespacelearnql_1_1meta_1a8da5fbfe3fe249906be7f9784f4a7dc0ab31df9c476d20e85ff898121efe11b5a" compoundref="_type_info_8hpp" startline="23">UInt8</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/Property.hpp" line="11" column="1"/>
+  </compounddef>
+</doxygen>

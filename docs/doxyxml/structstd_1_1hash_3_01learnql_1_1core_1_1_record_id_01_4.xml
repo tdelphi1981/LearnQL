@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="structstd_1_1hash_3_01learnql_1_1core_1_1_record_id_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>std::hash&lt; learnql::core::RecordId &gt;</compoundname>
+    <includes refid="_record_id_8hpp" local="no">RecordId.hpp</includes>
+    <templateparamlist>
+    </templateparamlist>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structstd_1_1hash_3_01learnql_1_1core_1_1_record_id_01_4_1a756cea5ab2d7be5a71e2b7c2229388d1" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>std::size_t std::hash&lt; learnql::core::RecordId &gt;::operator()</definition>
+        <argsstring>(const learnql::core::RecordId &amp;id) const noexcept</argsstring>
+        <name>operator()</name>
+        <qualifiedname>std::hash&lt; learnql::core::RecordId &gt;::operator()</qualifiedname>
+        <param>
+          <type>const <ref refid="structlearnql_1_1core_1_1_record_id" kindref="compound">learnql::core::RecordId</ref> &amp;</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/RecordId.hpp" line="82" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/RecordId.hpp" bodystart="82" bodyend="87"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Hash specialization for RecordId. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Enables use in std::unordered_map and std::unordered_set </para>
+    </detaileddescription>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/RecordId.hpp" line="81" column="1" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/RecordId.hpp" bodystart="81" bodyend="88"/>
+    <listofallmembers>
+      <member refid="structstd_1_1hash_3_01learnql_1_1core_1_1_record_id_01_4_1a756cea5ab2d7be5a71e2b7c2229388d1" prot="public" virt="non-virtual"><scope>std::hash&lt; learnql::core::RecordId &gt;</scope><name>operator()</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

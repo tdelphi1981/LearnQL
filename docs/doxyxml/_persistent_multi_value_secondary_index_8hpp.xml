@@ -1,0 +1,563 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="_persistent_multi_value_secondary_index_8hpp" kind="file" language="C++">
+    <compoundname>PersistentMultiValueSecondaryIndex.hpp</compoundname>
+    <includes refid="_persistent_b_tree_index_8hpp" local="yes">PersistentBTreeIndex.hpp</includes>
+    <includes refid="_record_id_8hpp" local="yes">../core/RecordId.hpp</includes>
+    <includes refid="_storage_engine_8hpp" local="yes">../storage/StorageEngine.hpp</includes>
+    <includes local="no">functional</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">string</includes>
+    <includes local="no">optional</includes>
+    <includes local="no">memory</includes>
+    <includes local="no">limits</includes>
+    <includes local="no">compare</includes>
+    <includedby refid="_learn_q_l_8hpp" local="yes">/Users/tolgaberber/Work/CPP/LearnQL/learnql/LearnQL.hpp</includedby>
+    <includedby refid="_table_8hpp" local="yes">/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp</includedby>
+    <incdepgraph>
+      <node id="23">
+        <label>../concepts/Serializable.hpp</label>
+        <link refid="_serializable_8hpp"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>../core/RecordId.hpp</label>
+        <link refid="_record_id_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>BatchIterator.hpp</label>
+        <link refid="_batch_iterator_8hpp"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>PersistentBTreeIndex.hpp</label>
+        <link refid="_persistent_b_tree_index_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp</label>
+        <link refid="_persistent_multi_value_secondary_index_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>../serialization/BinaryReader.hpp</label>
+        <link refid="_binary_reader_8hpp"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>../serialization/BinaryWriter.hpp</label>
+        <link refid="_binary_writer_8hpp"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Page.hpp</label>
+        <link refid="_page_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>../storage/StorageEngine.hpp</label>
+        <link refid="_storage_engine_8hpp"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>algorithm</label>
+      </node>
+      <node id="10">
+        <label>array</label>
+      </node>
+      <node id="26">
+        <label>bit</label>
+      </node>
+      <node id="5">
+        <label>compare</label>
+      </node>
+      <node id="24">
+        <label>concepts</label>
+      </node>
+      <node id="31">
+        <label>cstddef</label>
+      </node>
+      <node id="4">
+        <label>cstdint</label>
+      </node>
+      <node id="9">
+        <label>cstring</label>
+      </node>
+      <node id="21">
+        <label>ctime</label>
+      </node>
+      <node id="19">
+        <label>filesystem</label>
+      </node>
+      <node id="14">
+        <label>fstream</label>
+      </node>
+      <node id="6">
+        <label>functional</label>
+      </node>
+      <node id="33">
+        <label>limits</label>
+      </node>
+      <node id="15">
+        <label>memory</label>
+      </node>
+      <node id="32">
+        <label>optional</label>
+      </node>
+      <node id="11">
+        <label>span</label>
+      </node>
+      <node id="29">
+        <label>stack</label>
+      </node>
+      <node id="12">
+        <label>stdexcept</label>
+      </node>
+      <node id="13">
+        <label>string</label>
+      </node>
+      <node id="25">
+        <label>type_traits</label>
+      </node>
+      <node id="16">
+        <label>unordered_map</label>
+      </node>
+      <node id="17">
+        <label>unordered_set</label>
+      </node>
+      <node id="30">
+        <label>utility</label>
+      </node>
+      <node id="18">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/LearnQL.hpp</label>
+        <link refid="_learn_q_l_8hpp"/>
+      </node>
+      <node id="4">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/SystemCatalog.hpp</label>
+        <link refid="_system_catalog_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Database.hpp</label>
+        <link refid="_database_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/ReadOnlyTable.hpp</label>
+        <link refid="_read_only_table_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp</label>
+        <link refid="_table_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp</label>
+        <link refid="_persistent_multi_value_secondary_index_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp</label>
+        <link refid="_query_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structlearnql_1_1index_1_1_composite_key" prot="public">learnql::index::CompositeKey</innerclass>
+    <innerclass refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index" prot="public">learnql::index::PersistentMultiValueSecondaryIndex</innerclass>
+    <innernamespace refid="namespacelearnql">learnql</innernamespace>
+    <innernamespace refid="namespacelearnql_1_1index">learnql::index</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>LEARNQL_INDEX_PERSISTENT_MULTI_VALUE_SECONDARY_INDEX_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LEARNQL_INDEX_PERSISTENT_MULTI_VALUE_SECONDARY_INDEX_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_persistent_b_tree_index_8hpp" kindref="compound">PersistentBTreeIndex.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_record_id_8hpp" kindref="compound">../core/RecordId.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_storage_engine_8hpp" kindref="compound">../storage/StorageEngine.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;functional&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;optional&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;limits&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;compare&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacelearnql_1_1index" kindref="compound">learnql::index</ref><sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>FieldType&gt;</highlight></codeline>
+<codeline lineno="31" refid="structlearnql_1_1index_1_1_composite_key" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structlearnql_1_1index_1_1_composite_key_1ae98775a7462b36ab29dde05e48b3ea80" kindref="member">CompositeKey</ref><sp/>{</highlight></codeline>
+<codeline lineno="32" refid="structlearnql_1_1index_1_1_composite_key_1aaf71d2b36a32a89e59b3b8d6d736bf9d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>FieldType<sp/><ref refid="structlearnql_1_1index_1_1_composite_key_1aaf71d2b36a32a89e59b3b8d6d736bf9d" kindref="member">field_value</ref>;</highlight></codeline>
+<codeline lineno="33" refid="structlearnql_1_1index_1_1_composite_key_1aa4f7d0b64187fdb1bcbda748ee6eb02f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/><ref refid="structlearnql_1_1index_1_1_composite_key_1aa4f7d0b64187fdb1bcbda748ee6eb02f" kindref="member">page_id</ref>;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="structlearnql_1_1index_1_1_composite_key_1ae98775a7462b36ab29dde05e48b3ea80" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structlearnql_1_1index_1_1_composite_key_1ae98775a7462b36ab29dde05e48b3ea80" kindref="member">CompositeKey</ref>()<sp/>:<sp/><ref refid="structlearnql_1_1index_1_1_composite_key_1aaf71d2b36a32a89e59b3b8d6d736bf9d" kindref="member">field_value</ref>{},<sp/><ref refid="structlearnql_1_1index_1_1_composite_key_1aa4f7d0b64187fdb1bcbda748ee6eb02f" kindref="member">page_id</ref>(0)<sp/>{}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="structlearnql_1_1index_1_1_composite_key_1a67057b08908c966e6c11725936e27d35" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structlearnql_1_1index_1_1_composite_key_1a67057b08908c966e6c11725936e27d35" kindref="member">CompositeKey</ref>(FieldType<sp/>value,<sp/>uint64_t<sp/>pid)</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="structlearnql_1_1index_1_1_composite_key_1aaf71d2b36a32a89e59b3b8d6d736bf9d" kindref="member">field_value</ref>(std::move(value)),<sp/><ref refid="structlearnql_1_1index_1_1_composite_key_1aa4f7d0b64187fdb1bcbda748ee6eb02f" kindref="member">page_id</ref>(pid)<sp/>{}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Comparison<sp/>operators<sp/>for<sp/>B+Tree<sp/>ordering</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Note:<sp/>Using<sp/>explicit<sp/>comparisons<sp/>for<sp/>better<sp/>compatibility</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="structlearnql_1_1index_1_1_composite_key_1a9a6efc25262a08f5841e8517a0754cc7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structlearnql_1_1index_1_1_composite_key_1a9a6efc25262a08f5841e8517a0754cc7" kindref="member">operator==</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlearnql_1_1index_1_1_composite_key_1ae98775a7462b36ab29dde05e48b3ea80" kindref="member">CompositeKey</ref>&amp;<sp/>other)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structlearnql_1_1index_1_1_composite_key_1aaf71d2b36a32a89e59b3b8d6d736bf9d" kindref="member">field_value</ref><sp/>==<sp/>other.<ref refid="structlearnql_1_1index_1_1_composite_key_1aaf71d2b36a32a89e59b3b8d6d736bf9d" kindref="member">field_value</ref><sp/>&amp;&amp;<sp/><ref refid="structlearnql_1_1index_1_1_composite_key_1aa4f7d0b64187fdb1bcbda748ee6eb02f" kindref="member">page_id</ref><sp/>==<sp/>other.<ref refid="structlearnql_1_1index_1_1_composite_key_1aa4f7d0b64187fdb1bcbda748ee6eb02f" kindref="member">page_id</ref>;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="structlearnql_1_1index_1_1_composite_key_1a968f3ecbe5f9c13f56cc5288db89b781" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structlearnql_1_1index_1_1_composite_key_1a968f3ecbe5f9c13f56cc5288db89b781" kindref="member">operator!=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlearnql_1_1index_1_1_composite_key_1ae98775a7462b36ab29dde05e48b3ea80" kindref="member">CompositeKey</ref>&amp;<sp/>other)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!(*</highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>==<sp/>other);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="structlearnql_1_1index_1_1_composite_key_1a36c98afbb64e0d386d820af918a5d530" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structlearnql_1_1index_1_1_composite_key_1a36c98afbb64e0d386d820af918a5d530" kindref="member">operator&lt;</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlearnql_1_1index_1_1_composite_key_1ae98775a7462b36ab29dde05e48b3ea80" kindref="member">CompositeKey</ref>&amp;<sp/>other)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="structlearnql_1_1index_1_1_composite_key_1aaf71d2b36a32a89e59b3b8d6d736bf9d" kindref="member">field_value</ref><sp/>&lt;<sp/>other.<ref refid="structlearnql_1_1index_1_1_composite_key_1aaf71d2b36a32a89e59b3b8d6d736bf9d" kindref="member">field_value</ref>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(other.<ref refid="structlearnql_1_1index_1_1_composite_key_1aaf71d2b36a32a89e59b3b8d6d736bf9d" kindref="member">field_value</ref><sp/>&lt;<sp/><ref refid="structlearnql_1_1index_1_1_composite_key_1aaf71d2b36a32a89e59b3b8d6d736bf9d" kindref="member">field_value</ref>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structlearnql_1_1index_1_1_composite_key_1aa4f7d0b64187fdb1bcbda748ee6eb02f" kindref="member">page_id</ref><sp/>&lt;<sp/>other.<ref refid="structlearnql_1_1index_1_1_composite_key_1aa4f7d0b64187fdb1bcbda748ee6eb02f" kindref="member">page_id</ref>;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="structlearnql_1_1index_1_1_composite_key_1af8b0d0b33e01a84537ee9cc1486b0565" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structlearnql_1_1index_1_1_composite_key_1af8b0d0b33e01a84537ee9cc1486b0565" kindref="member">operator&lt;=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlearnql_1_1index_1_1_composite_key_1ae98775a7462b36ab29dde05e48b3ea80" kindref="member">CompositeKey</ref>&amp;<sp/>other)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!(other<sp/>&lt;<sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="structlearnql_1_1index_1_1_composite_key_1ac742785995e29f325f5f0f1e7ba4079f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structlearnql_1_1index_1_1_composite_key_1ac742785995e29f325f5f0f1e7ba4079f" kindref="member">operator&gt;</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlearnql_1_1index_1_1_composite_key_1ae98775a7462b36ab29dde05e48b3ea80" kindref="member">CompositeKey</ref>&amp;<sp/>other)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>other<sp/>&lt;<sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="structlearnql_1_1index_1_1_composite_key_1a394d0c0380ebfadc61c020c2b090ce97" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structlearnql_1_1index_1_1_composite_key_1a394d0c0380ebfadc61c020c2b090ce97" kindref="member">operator&gt;=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlearnql_1_1index_1_1_composite_key_1ae98775a7462b36ab29dde05e48b3ea80" kindref="member">CompositeKey</ref>&amp;<sp/>other)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!(*</highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>&lt;<sp/>other);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>C++20<sp/>spaceship<sp/>operator<sp/>for<sp/>modern<sp/>code</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="structlearnql_1_1index_1_1_composite_key_1a11e04bf8f0c786e80e366282a85cf171" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="structlearnql_1_1index_1_1_composite_key_1a11e04bf8f0c786e80e366282a85cf171" kindref="member">operator&lt;=&gt;</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlearnql_1_1index_1_1_composite_key_1ae98775a7462b36ab29dde05e48b3ea80" kindref="member">CompositeKey</ref>&amp;<sp/>other)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="structlearnql_1_1index_1_1_composite_key_1aaf71d2b36a32a89e59b3b8d6d736bf9d" kindref="member">field_value</ref><sp/>&lt;<sp/>other.<ref refid="structlearnql_1_1index_1_1_composite_key_1aaf71d2b36a32a89e59b3b8d6d736bf9d" kindref="member">field_value</ref>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::strong_ordering::less;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(other.<ref refid="structlearnql_1_1index_1_1_composite_key_1aaf71d2b36a32a89e59b3b8d6d736bf9d" kindref="member">field_value</ref><sp/>&lt;<sp/><ref refid="structlearnql_1_1index_1_1_composite_key_1aaf71d2b36a32a89e59b3b8d6d736bf9d" kindref="member">field_value</ref>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::strong_ordering::greater;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="structlearnql_1_1index_1_1_composite_key_1aa4f7d0b64187fdb1bcbda748ee6eb02f" kindref="member">page_id</ref><sp/>&lt;<sp/>other.<ref refid="structlearnql_1_1index_1_1_composite_key_1aa4f7d0b64187fdb1bcbda748ee6eb02f" kindref="member">page_id</ref>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::strong_ordering::less;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="structlearnql_1_1index_1_1_composite_key_1aa4f7d0b64187fdb1bcbda748ee6eb02f" kindref="member">page_id</ref><sp/>&gt;<sp/>other.<ref refid="structlearnql_1_1index_1_1_composite_key_1aa4f7d0b64187fdb1bcbda748ee6eb02f" kindref="member">page_id</ref>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::strong_ordering::greater;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::strong_ordering::equal;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Serialization<sp/>support</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Writer&gt;</highlight></codeline>
+<codeline lineno="79" refid="structlearnql_1_1index_1_1_composite_key_1aade7116fdaa7639420f3416001b2e538" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structlearnql_1_1index_1_1_composite_key_1aade7116fdaa7639420f3416001b2e538" kindref="member">serialize</ref>(Writer&amp;<sp/>writer)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>(std::is_arithmetic_v&lt;FieldType&gt;)<sp/>{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>writer.write(<ref refid="structlearnql_1_1index_1_1_composite_key_1aaf71d2b36a32a89e59b3b8d6d736bf9d" kindref="member">field_value</ref>);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">requires</highlight><highlight class="normal"><sp/>{<sp/>std::string(<ref refid="structlearnql_1_1index_1_1_composite_key_1aaf71d2b36a32a89e59b3b8d6d736bf9d" kindref="member">field_value</ref>);<sp/>})<sp/>{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>writer.write(std::string(<ref refid="structlearnql_1_1index_1_1_composite_key_1aaf71d2b36a32a89e59b3b8d6d736bf9d" kindref="member">field_value</ref>));</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>writer.write(<ref refid="structlearnql_1_1index_1_1_composite_key_1aaf71d2b36a32a89e59b3b8d6d736bf9d" kindref="member">field_value</ref>);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>writer.write(<ref refid="structlearnql_1_1index_1_1_composite_key_1aa4f7d0b64187fdb1bcbda748ee6eb02f" kindref="member">page_id</ref>);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Reader&gt;</highlight></codeline>
+<codeline lineno="91" refid="structlearnql_1_1index_1_1_composite_key_1a6b426f345e7b7eb380fc8ebfb8885400" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structlearnql_1_1index_1_1_composite_key_1a6b426f345e7b7eb380fc8ebfb8885400" kindref="member">deserialize</ref>(Reader&amp;<sp/>reader)<sp/>{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>(std::is_arithmetic_v&lt;FieldType&gt;)<sp/>{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlearnql_1_1index_1_1_composite_key_1aaf71d2b36a32a89e59b3b8d6d736bf9d" kindref="member">field_value</ref><sp/>=<sp/>reader.template<sp/>read&lt;FieldType&gt;();</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">requires</highlight><highlight class="normal"><sp/>{<sp/>std::string(FieldType{});<sp/>})<sp/>{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlearnql_1_1index_1_1_composite_key_1aaf71d2b36a32a89e59b3b8d6d736bf9d" kindref="member">field_value</ref><sp/>=<sp/>FieldType(reader.read_string());</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlearnql_1_1index_1_1_composite_key_1aaf71d2b36a32a89e59b3b8d6d736bf9d" kindref="member">field_value</ref>.deserialize(reader);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlearnql_1_1index_1_1_composite_key_1aa4f7d0b64187fdb1bcbda748ee6eb02f" kindref="member">page_id</ref><sp/>=<sp/>reader.template<sp/>read&lt;uint64_t&gt;();</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>FieldType&gt;</highlight></codeline>
+<codeline lineno="142" refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1ac1200d9a2c9309e35421023e8940eca7" kindref="member">PersistentMultiValueSecondaryIndex</ref><sp/>{</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="144" refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1aa38b9609f0beecb7fe0266e14193c6a8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1aa38b9609f0beecb7fe0266e14193c6a8" kindref="member">getter_type</ref><sp/>=<sp/>std::function&lt;FieldType(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;)&gt;;</highlight></codeline>
+<codeline lineno="145" refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a4436d001e5a31009de3507fe0c1624ff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a4436d001e5a31009de3507fe0c1624ff" kindref="member">composite_key_type</ref><sp/>=<sp/><ref refid="structlearnql_1_1index_1_1_composite_key" kindref="compound">CompositeKey&lt;FieldType&gt;</ref>;</highlight></codeline>
+<codeline lineno="146" refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a0320cde8e42bbb82356fe2b3aa25f733" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a0320cde8e42bbb82356fe2b3aa25f733" kindref="member">index_type</ref><sp/>=<sp/><ref refid="classlearnql_1_1index_1_1_persistent_b_tree_index" kindref="compound">PersistentBTreeIndex&lt;composite_key_type, core::RecordId&gt;</ref>;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155" refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1ac1200d9a2c9309e35421023e8940eca7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1ac1200d9a2c9309e35421023e8940eca7" kindref="member">PersistentMultiValueSecondaryIndex</ref>(</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>field_name,</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1aa38b9609f0beecb7fe0266e14193c6a8" kindref="member">getter_type</ref><sp/>getter,</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::shared_ptr&lt;storage::StorageEngine&gt;<sp/><ref refid="namespacelearnql_1_1storage" kindref="compound">storage</ref>,</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>root_page_id<sp/>=<sp/>0</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>)<sp/>:<sp/>field_name_(std::move(field_name)),</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>getter_(std::move(getter)),</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>index_(std::make_unique&lt;<ref refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a0320cde8e42bbb82356fe2b3aa25f733" kindref="member">index_type</ref>&gt;(<ref refid="namespacelearnql_1_1storage" kindref="compound">storage</ref>,<sp/>root_page_id))<sp/>{</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173" refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a2743930dab02b7ade766cbb64187ba7b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a2743930dab02b7ade766cbb64187ba7b" kindref="member">insert</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>record,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlearnql_1_1core_1_1_record_id" kindref="compound">core::RecordId</ref>&amp;<sp/>rid)<sp/>{</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FieldType<sp/>field_value<sp/>=<sp/>getter_(record);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a4436d001e5a31009de3507fe0c1624ff" kindref="member">composite_key_type</ref><sp/>key(field_value,<sp/>rid.<ref refid="structlearnql_1_1core_1_1_record_id_1a83061170039ebaa5ec4e333c1c3237af" kindref="member">page_id</ref>);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>index_-&gt;insert(key,<sp/>rid);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186" refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a576b15d7b905d992a236dd6e7ae99a5b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/>std::vector&lt;core::RecordId&gt;<sp/><ref refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a576b15d7b905d992a236dd6e7ae99a5b" kindref="member">find</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FieldType&amp;<sp/>value)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Create<sp/>range:<sp/>(value,<sp/>0)<sp/>to<sp/>(value,<sp/>MAX_UINT64)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a4436d001e5a31009de3507fe0c1624ff" kindref="member">composite_key_type</ref><sp/>min_key(value,<sp/>0);</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a4436d001e5a31009de3507fe0c1624ff" kindref="member">composite_key_type</ref><sp/>max_key(value,<sp/>std::numeric_limits&lt;uint64_t&gt;::max());</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>index_-&gt;range_query(min_key,<sp/>max_key);</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199" refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a9f839ee942b3a7c4ca8e0282c7e8c07f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a9f839ee942b3a7c4ca8e0282c7e8c07f" kindref="member">contains</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FieldType&amp;<sp/>value)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>results<sp/>=<sp/><ref refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a576b15d7b905d992a236dd6e7ae99a5b" kindref="member">find</ref>(value);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!results.empty();</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209" refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1abbfc70d66e3f0bf9c8c4f38cc3f519c3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/>std::size_t<sp/><ref refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1abbfc70d66e3f0bf9c8c4f38cc3f519c3" kindref="member">count</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FieldType&amp;<sp/>value)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>results<sp/>=<sp/><ref refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a576b15d7b905d992a236dd6e7ae99a5b" kindref="member">find</ref>(value);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>results.size();</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220" refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1aeef5f8091acdfcfd7b677ca67e1e25c1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1aeef5f8091acdfcfd7b677ca67e1e25c1" kindref="member">remove</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>record,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlearnql_1_1core_1_1_record_id" kindref="compound">core::RecordId</ref>&amp;<sp/>rid)<sp/>{</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FieldType<sp/>field_value<sp/>=<sp/>getter_(record);</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a4436d001e5a31009de3507fe0c1624ff" kindref="member">composite_key_type</ref><sp/>key(field_value,<sp/>rid.<ref refid="structlearnql_1_1core_1_1_record_id_1a83061170039ebaa5ec4e333c1c3237af" kindref="member">page_id</ref>);</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>index_-&gt;remove(key);</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231" refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1ad71ebdd59de77d2509c144f11ca0362c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::size_t<sp/><ref refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1ad71ebdd59de77d2509c144f11ca0362c" kindref="member">remove_all</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FieldType&amp;<sp/>value)<sp/>{</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>rids<sp/>=<sp/><ref refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a576b15d7b905d992a236dd6e7ae99a5b" kindref="member">find</ref>(value);</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::size_t<sp/>removed_count<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>rid<sp/>:<sp/>rids)<sp/>{</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a4436d001e5a31009de3507fe0c1624ff" kindref="member">composite_key_type</ref><sp/>key(value,<sp/>rid.page_id);</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(index_-&gt;remove(key))<sp/>{</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>++removed_count;</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>removed_count;</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254" refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1aeb054a2c8102513522ab812fceec37cf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1aeb054a2c8102513522ab812fceec37cf" kindref="member">update</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>old_record,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>new_record,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlearnql_1_1core_1_1_record_id" kindref="compound">core::RecordId</ref>&amp;<sp/>rid)<sp/>{</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FieldType<sp/>old_value<sp/>=<sp/>getter_(old_record);</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FieldType<sp/>new_value<sp/>=<sp/>getter_(new_record);</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>field<sp/>value<sp/>hasn&apos;t<sp/>changed,<sp/>nothing<sp/>to<sp/>do</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(old_value<sp/>==<sp/>new_value)<sp/>{</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Remove<sp/>old<sp/>entry</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a4436d001e5a31009de3507fe0c1624ff" kindref="member">composite_key_type</ref><sp/>old_key(old_value,<sp/>rid.<ref refid="structlearnql_1_1core_1_1_record_id_1a83061170039ebaa5ec4e333c1c3237af" kindref="member">page_id</ref>);</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!index_-&gt;remove(old_key))<sp/>{</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Insert<sp/>new<sp/>entry</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a4436d001e5a31009de3507fe0c1624ff" kindref="member">composite_key_type</ref><sp/>new_key(new_value,<sp/>rid.<ref refid="structlearnql_1_1core_1_1_record_id_1a83061170039ebaa5ec4e333c1c3237af" kindref="member">page_id</ref>);</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>index_-&gt;insert(new_key,<sp/>rid);</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight></codeline>
+<codeline lineno="280" refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a02f29d7186698502f31ce6f6db4523c8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/>std::vector&lt;FieldType&gt;<sp/><ref refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a02f29d7186698502f31ce6f6db4523c8" kindref="member">get_unique_values</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;FieldType&gt;<sp/>unique_values;</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>all_entries<sp/>=<sp/>index_-&gt;get_all();</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(all_entries.empty())<sp/>{</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>unique_values;</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Extract<sp/>unique<sp/>values<sp/>(entries<sp/>are<sp/>sorted<sp/>by<sp/>composite<sp/>key)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FieldType<sp/>last_value<sp/>=<sp/>all_entries[0].first.field_value;</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>unique_values.push_back(last_value);</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"></highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(std::size_t<sp/>i<sp/>=<sp/>1;<sp/>i<sp/>&lt;<sp/>all_entries.size();<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(all_entries[i].first.field_value<sp/>!=<sp/>last_value)<sp/>{</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>last_value<sp/>=<sp/>all_entries[i].first.field_value;</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>unique_values.push_back(last_value);</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>unique_values;</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"></highlight></codeline>
+<codeline lineno="306" refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a15f94c3dd2797bf43cd6709be2f5ce86" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/>std::vector&lt;std::pair&lt;FieldType,<sp/>core::RecordId&gt;&gt;<sp/><ref refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a15f94c3dd2797bf43cd6709be2f5ce86" kindref="member">get_all</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>all_entries<sp/>=<sp/>index_-&gt;get_all();</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::pair&lt;FieldType,<sp/>core::RecordId&gt;&gt;<sp/>results;</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>results.reserve(all_entries.size());</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"></highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>[composite_key,<sp/>rid]<sp/>:<sp/>all_entries)<sp/>{</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>results.emplace_back(composite_key.field_value,<sp/>rid);</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"></highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>results;</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"></highlight></codeline>
+<codeline lineno="321" refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1aba9766c6eb39206fcd9b15532e31cd07" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/>std::size_t<sp/><ref refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1aba9766c6eb39206fcd9b15532e31cd07" kindref="member">size</ref>()<sp/>const<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>index_-&gt;size();</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"></highlight></codeline>
+<codeline lineno="328" refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a4670f264a41948dc31da3acd4babdac9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a4670f264a41948dc31da3acd4babdac9" kindref="member">empty</ref>()<sp/>const<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>index_-&gt;empty();</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"></highlight></codeline>
+<codeline lineno="335" refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a659af66d368d6fa58c85b07398fb03e0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/><ref refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a659af66d368d6fa58c85b07398fb03e0" kindref="member">get_field_name</ref>()<sp/>const<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>field_name_;</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"></highlight></codeline>
+<codeline lineno="343" refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a1b5f70cbe05ff0ebdc5528f86a7caf37" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/>uint64_t<sp/><ref refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a1b5f70cbe05ff0ebdc5528f86a7caf37" kindref="member">get_root_page_id</ref>()<sp/>const<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>index_-&gt;get_root_page_id();</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"></highlight></codeline>
+<codeline lineno="350" refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a75cd0c04ef34e745474a49e84d2439e4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a75cd0c04ef34e745474a49e84d2439e4" kindref="member">flush</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>index_-&gt;flush();</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"></highlight></codeline>
+<codeline lineno="357" refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1ab920716f03ec3d132f55393e21165938" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1ab920716f03ec3d132f55393e21165938" kindref="member">clear_cache</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>index_-&gt;clear_cache();</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"></highlight></codeline>
+<codeline lineno="368"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;std::</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>BatchSize<sp/>=<sp/>10&gt;</highlight></codeline>
+<codeline lineno="369" refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1ad7da65bbcbac4c4939b6b4a3067da219" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1ad7da65bbcbac4c4939b6b4a3067da219" kindref="member">create_batch_iterator</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>index_-&gt;template<sp/><ref refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1ad7da65bbcbac4c4939b6b4a3067da219" kindref="member">create_batch_iterator&lt;BatchSize&gt;</ref>();</highlight></codeline>
+<codeline lineno="371"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="372"><highlight class="normal"></highlight></codeline>
+<codeline lineno="373"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="374"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>field_name_;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="375"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1aa38b9609f0beecb7fe0266e14193c6a8" kindref="member">getter_type</ref><sp/>getter_;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="376"><highlight class="normal"><sp/><sp/><sp/><sp/>std::unique_ptr&lt;index_type&gt;<sp/>index_;<sp/></highlight></codeline>
+<codeline lineno="377"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="378"><highlight class="normal"></highlight></codeline>
+<codeline lineno="379"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>learnql::index</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="380"><highlight class="normal"></highlight></codeline>
+<codeline lineno="381"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>LEARNQL_INDEX_PERSISTENT_MULTI_VALUE_SECONDARY_INDEX_HPP</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp"/>
+  </compounddef>
+</doxygen>

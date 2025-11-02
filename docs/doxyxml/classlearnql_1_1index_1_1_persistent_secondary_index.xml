@@ -1,0 +1,645 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classlearnql_1_1index_1_1_persistent_secondary_index" kind="class" language="C++" prot="public">
+    <compoundname>learnql::index::PersistentSecondaryIndex</compoundname>
+    <includes refid="_persistent_secondary_index_8hpp" local="no">PersistentSecondaryIndex.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+      <param>
+        <type>typename FieldType</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classlearnql_1_1index_1_1_persistent_secondary_index_1afee06a245c8a5dacd3ec11db6a8b9bc4" prot="public" static="no">
+        <type>std::function&lt; FieldType(const T &amp;)&gt;</type>
+        <definition>using learnql::index::PersistentSecondaryIndex&lt; T, FieldType &gt;::getter_type =  std::function&lt;FieldType(const T&amp;)&gt;</definition>
+        <argsstring></argsstring>
+        <name>getter_type</name>
+        <qualifiedname>learnql::index::PersistentSecondaryIndex::getter_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentSecondaryIndex.hpp" line="54" column="5" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentSecondaryIndex.hpp" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classlearnql_1_1index_1_1_persistent_secondary_index_1a62a794b1cc60b15fb72761eb12e3626a" prot="public" static="no">
+        <type><ref refid="classlearnql_1_1index_1_1_persistent_b_tree_index" kindref="compound">PersistentBTreeIndex</ref>&lt; FieldType, <ref refid="structlearnql_1_1core_1_1_record_id" kindref="compound">core::RecordId</ref> &gt;</type>
+        <definition>using learnql::index::PersistentSecondaryIndex&lt; T, FieldType &gt;::index_type =  PersistentBTreeIndex&lt;FieldType, core::RecordId&gt;</definition>
+        <argsstring></argsstring>
+        <name>index_type</name>
+        <qualifiedname>learnql::index::PersistentSecondaryIndex::index_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentSecondaryIndex.hpp" line="55" column="5" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentSecondaryIndex.hpp" bodystart="55" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classlearnql_1_1index_1_1_persistent_secondary_index_1a10c0f07dcdc9a7fc175e5baf55a0067e" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string learnql::index::PersistentSecondaryIndex&lt; T, FieldType &gt;::field_name_</definition>
+        <argsstring></argsstring>
+        <name>field_name_</name>
+        <qualifiedname>learnql::index::PersistentSecondaryIndex::field_name_</qualifiedname>
+        <briefdescription>
+<para>Name of the indexed field. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentSecondaryIndex.hpp" line="228" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentSecondaryIndex.hpp" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlearnql_1_1index_1_1_persistent_secondary_index_1af4eeccafb10de2d75c7fd796170c2123" prot="private" static="no" mutable="no">
+        <type><ref refid="classlearnql_1_1index_1_1_persistent_secondary_index_1afee06a245c8a5dacd3ec11db6a8b9bc4" kindref="member">getter_type</ref></type>
+        <definition>getter_type learnql::index::PersistentSecondaryIndex&lt; T, FieldType &gt;::getter_</definition>
+        <argsstring></argsstring>
+        <name>getter_</name>
+        <qualifiedname>learnql::index::PersistentSecondaryIndex::getter_</qualifiedname>
+        <briefdescription>
+<para>Function to extract field value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentSecondaryIndex.hpp" line="229" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentSecondaryIndex.hpp" bodystart="229" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlearnql_1_1index_1_1_persistent_secondary_index_1a3d532fcf6a0ccfb30bf16e3d281e2bda" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="classlearnql_1_1index_1_1_persistent_secondary_index_1a62a794b1cc60b15fb72761eb12e3626a" kindref="member">index_type</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;index_type&gt; learnql::index::PersistentSecondaryIndex&lt; T, FieldType &gt;::index_</definition>
+        <argsstring></argsstring>
+        <name>index_</name>
+        <qualifiedname>learnql::index::PersistentSecondaryIndex::index_</qualifiedname>
+        <briefdescription>
+<para>Underlying B+Tree index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentSecondaryIndex.hpp" line="230" column="21" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentSecondaryIndex.hpp" bodystart="230" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_persistent_secondary_index_1af5bd31c495ae3c64030a30a9833ab844" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>learnql::index::PersistentSecondaryIndex&lt; T, FieldType &gt;::PersistentSecondaryIndex</definition>
+        <argsstring>(std::string field_name, getter_type getter, std::shared_ptr&lt; storage::StorageEngine &gt; storage, uint64_t root_page_id=0)</argsstring>
+        <name>PersistentSecondaryIndex</name>
+        <qualifiedname>learnql::index::PersistentSecondaryIndex::PersistentSecondaryIndex</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>field_name</declname>
+        </param>
+        <param>
+          <type><ref refid="classlearnql_1_1index_1_1_persistent_secondary_index_1afee06a245c8a5dacd3ec11db6a8b9bc4" kindref="member">getter_type</ref></type>
+          <declname>getter</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classlearnql_1_1storage_1_1_storage_engine" kindref="compound">storage::StorageEngine</ref> &gt;</type>
+          <declname>storage</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>root_page_id</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Constructs a persistent secondary index. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>field_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the indexed field </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>getter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Function to extract field value from record </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>storage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Shared pointer to storage engine </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>root_page_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Root page ID (0 for new index) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentSecondaryIndex.hpp" line="64" column="5" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentSecondaryIndex.hpp" bodystart="64" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_persistent_secondary_index_1ab3571999729956d4c6b9b1442c0805fb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool learnql::index::PersistentSecondaryIndex&lt; T, FieldType &gt;::insert</definition>
+        <argsstring>(const T &amp;record, const core::RecordId &amp;rid)</argsstring>
+        <name>insert</name>
+        <qualifiedname>learnql::index::PersistentSecondaryIndex::insert</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>record</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structlearnql_1_1core_1_1_record_id" kindref="compound">core::RecordId</ref> &amp;</type>
+          <declname>rid</declname>
+        </param>
+        <briefdescription>
+<para>Inserts a record into the index. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>record</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The record to index </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>RecordId of the record </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if inserted, false if field value already exists </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentSecondaryIndex.hpp" line="80" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentSecondaryIndex.hpp" bodystart="80" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_persistent_secondary_index_1a37167eeae6cb8a22839277b18a305e8e" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::optional&lt; <ref refid="structlearnql_1_1core_1_1_record_id" kindref="compound">core::RecordId</ref> &gt;</type>
+        <definition>std::optional&lt; core::RecordId &gt; learnql::index::PersistentSecondaryIndex&lt; T, FieldType &gt;::find</definition>
+        <argsstring>(const FieldType &amp;value) const</argsstring>
+        <name>find</name>
+        <qualifiedname>learnql::index::PersistentSecondaryIndex::find</qualifiedname>
+        <param>
+          <type>const FieldType &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Finds a record by field value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Field value to search for </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Optional RecordId if found </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentSecondaryIndex.hpp" line="90" column="20" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentSecondaryIndex.hpp" bodystart="90" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_persistent_secondary_index_1a15cf9e70b66b0b07b2d322f79e120d2f" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool learnql::index::PersistentSecondaryIndex&lt; T, FieldType &gt;::contains</definition>
+        <argsstring>(const FieldType &amp;value) const</argsstring>
+        <name>contains</name>
+        <qualifiedname>learnql::index::PersistentSecondaryIndex::contains</qualifiedname>
+        <param>
+          <type>const FieldType &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Checks if a field value exists. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Field value to check </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if value exists in index </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentSecondaryIndex.hpp" line="99" column="11" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentSecondaryIndex.hpp" bodystart="99" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_persistent_secondary_index_1a1156d34a40e5244726b55a270da4248f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool learnql::index::PersistentSecondaryIndex&lt; T, FieldType &gt;::remove</definition>
+        <argsstring>(const T &amp;record)</argsstring>
+        <name>remove</name>
+        <qualifiedname>learnql::index::PersistentSecondaryIndex::remove</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>record</declname>
+        </param>
+        <briefdescription>
+<para>Removes a record from the index. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>record</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The record to remove </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if removed, false if not found </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentSecondaryIndex.hpp" line="108" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentSecondaryIndex.hpp" bodystart="108" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_persistent_secondary_index_1adad6bf3023d6bf400b2c4b03e860a2dc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool learnql::index::PersistentSecondaryIndex&lt; T, FieldType &gt;::remove_by_value</definition>
+        <argsstring>(const FieldType &amp;value)</argsstring>
+        <name>remove_by_value</name>
+        <qualifiedname>learnql::index::PersistentSecondaryIndex::remove_by_value</qualifiedname>
+        <param>
+          <type>const FieldType &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Removes a record by field value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Field value to remove </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if removed, false if not found </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentSecondaryIndex.hpp" line="118" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentSecondaryIndex.hpp" bodystart="118" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_persistent_secondary_index_1a5881533c2f4b4cb772cc14d09771d878" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool learnql::index::PersistentSecondaryIndex&lt; T, FieldType &gt;::update</definition>
+        <argsstring>(const T &amp;old_record, const T &amp;new_record, const core::RecordId &amp;rid)</argsstring>
+        <name>update</name>
+        <qualifiedname>learnql::index::PersistentSecondaryIndex::update</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>old_record</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>new_record</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structlearnql_1_1core_1_1_record_id" kindref="compound">core::RecordId</ref> &amp;</type>
+          <declname>rid</declname>
+        </param>
+        <briefdescription>
+<para>Updates the index when a record is modified. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>old_record</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The old record state </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>new_record</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new record state </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>RecordId of the record </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if updated successfully</para>
+</simplesect>
+This handles the case where the indexed field value changes. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentSecondaryIndex.hpp" line="131" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentSecondaryIndex.hpp" bodystart="131" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_persistent_secondary_index_1a9b25de7856bcb47bdefc167dc19c962e" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="structlearnql_1_1core_1_1_record_id" kindref="compound">core::RecordId</ref> &gt;</type>
+        <definition>std::vector&lt; core::RecordId &gt; learnql::index::PersistentSecondaryIndex&lt; T, FieldType &gt;::range_query</definition>
+        <argsstring>(const FieldType &amp;min_value, const FieldType &amp;max_value) const</argsstring>
+        <name>range_query</name>
+        <qualifiedname>learnql::index::PersistentSecondaryIndex::range_query</qualifiedname>
+        <param>
+          <type>const FieldType &amp;</type>
+          <declname>min_value</declname>
+        </param>
+        <param>
+          <type>const FieldType &amp;</type>
+          <declname>max_value</declname>
+        </param>
+        <briefdescription>
+<para>Performs a range query on the index. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>min_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Minimum field value (inclusive) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum field value (inclusive) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Vector of RecordIds in range</para>
+</simplesect>
+Leverages B+Tree leaf linking for efficient range scans. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentSecondaryIndex.hpp" line="157" column="18" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentSecondaryIndex.hpp" bodystart="157" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_persistent_secondary_index_1ab8e3fb24e5d6c0e00d8521e30e966304" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; std::pair&lt; FieldType, <ref refid="structlearnql_1_1core_1_1_record_id" kindref="compound">core::RecordId</ref> &gt; &gt;</type>
+        <definition>std::vector&lt; std::pair&lt; FieldType, core::RecordId &gt; &gt; learnql::index::PersistentSecondaryIndex&lt; T, FieldType &gt;::get_all</definition>
+        <argsstring>() const</argsstring>
+        <name>get_all</name>
+        <qualifiedname>learnql::index::PersistentSecondaryIndex::get_all</qualifiedname>
+        <briefdescription>
+<para>Gets all indexed values and their RecordIds. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Vector of (field_value, RecordId) pairs </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentSecondaryIndex.hpp" line="168" column="18" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentSecondaryIndex.hpp" bodystart="168" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_persistent_secondary_index_1a0c0462d1e4b14a27e441dff8f58a3ed9" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>std::size_t learnql::index::PersistentSecondaryIndex&lt; T, FieldType &gt;::size</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>size</name>
+        <qualifiedname>learnql::index::PersistentSecondaryIndex::size</qualifiedname>
+        <briefdescription>
+<para>Gets the number of entries in the index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentSecondaryIndex.hpp" line="175" column="18" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentSecondaryIndex.hpp" bodystart="175" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_persistent_secondary_index_1a82b7f8ec68feabf606b0ee45e15c3e72" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool learnql::index::PersistentSecondaryIndex&lt; T, FieldType &gt;::empty</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>empty</name>
+        <qualifiedname>learnql::index::PersistentSecondaryIndex::empty</qualifiedname>
+        <briefdescription>
+<para>Checks if the index is empty. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentSecondaryIndex.hpp" line="182" column="11" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentSecondaryIndex.hpp" bodystart="182" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_persistent_secondary_index_1ac768caddfe8f4cc94effe7b1a782f026" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string &amp; learnql::index::PersistentSecondaryIndex&lt; T, FieldType &gt;::get_field_name</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>get_field_name</name>
+        <qualifiedname>learnql::index::PersistentSecondaryIndex::get_field_name</qualifiedname>
+        <briefdescription>
+<para>Gets the field name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentSecondaryIndex.hpp" line="189" column="24" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentSecondaryIndex.hpp" bodystart="189" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_persistent_secondary_index_1a6816e16fa5bc879bf106eaa023c62e6b" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t learnql::index::PersistentSecondaryIndex&lt; T, FieldType &gt;::get_root_page_id</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>get_root_page_id</name>
+        <qualifiedname>learnql::index::PersistentSecondaryIndex::get_root_page_id</qualifiedname>
+        <briefdescription>
+<para>Gets the root page ID for persistence. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Root page ID of the underlying B+Tree </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentSecondaryIndex.hpp" line="197" column="15" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentSecondaryIndex.hpp" bodystart="197" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_persistent_secondary_index_1a86db9c2974d5790d7c82039f2a706b80" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::index::PersistentSecondaryIndex&lt; T, FieldType &gt;::flush</definition>
+        <argsstring>()</argsstring>
+        <name>flush</name>
+        <qualifiedname>learnql::index::PersistentSecondaryIndex::flush</qualifiedname>
+        <briefdescription>
+<para>Flushes all changes to disk. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentSecondaryIndex.hpp" line="204" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentSecondaryIndex.hpp" bodystart="204" bodyend="206"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_persistent_secondary_index_1a6a0a9e5558a372fbc8628c1c075adce1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::index::PersistentSecondaryIndex&lt; T, FieldType &gt;::clear_cache</definition>
+        <argsstring>()</argsstring>
+        <name>clear_cache</name>
+        <qualifiedname>learnql::index::PersistentSecondaryIndex::clear_cache</qualifiedname>
+        <briefdescription>
+<para>Clears the node cache and flushes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentSecondaryIndex.hpp" line="211" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentSecondaryIndex.hpp" bodystart="211" bodyend="213"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_persistent_secondary_index_1a6e74d2953bc79d55565e306043c5a74d" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>std::size_t</type>
+            <declname>BatchSize</declname>
+            <defname>BatchSize</defname>
+            <defval>10</defval>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto learnql::index::PersistentSecondaryIndex&lt; T, FieldType &gt;::create_batch_iterator</definition>
+        <argsstring>() const</argsstring>
+        <name>create_batch_iterator</name>
+        <qualifiedname>learnql::index::PersistentSecondaryIndex::create_batch_iterator</qualifiedname>
+        <briefdescription>
+<para>Creates a batch iterator for the index. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>BatchSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of entries per batch </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classlearnql_1_1index_1_1_batch_iterator" kindref="compound">BatchIterator</ref> for efficient traversal</para>
+</simplesect>
+Uses B+Tree leaf linking for optimal performance. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentSecondaryIndex.hpp" line="223" column="11" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentSecondaryIndex.hpp" bodystart="223" bodyend="225"/>
+        <references refid="classlearnql_1_1index_1_1_persistent_secondary_index_1a6e74d2953bc79d55565e306043c5a74d" compoundref="_persistent_secondary_index_8hpp" startline="223" endline="225">learnql::index::PersistentSecondaryIndex&lt; T, FieldType &gt;::create_batch_iterator</references>
+        <referencedby refid="classlearnql_1_1index_1_1_persistent_secondary_index_1a6e74d2953bc79d55565e306043c5a74d" compoundref="_persistent_secondary_index_8hpp" startline="223" endline="225">learnql::index::PersistentSecondaryIndex&lt; T, FieldType &gt;::create_batch_iterator</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Persistent secondary index using B+Tree storage. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Record type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>FieldType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of the indexed field</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+This class provides persistent secondary indexing on a single field. Unlike the old memory-based <ref refid="classlearnql_1_1index_1_1_secondary_index" kindref="compound">SecondaryIndex</ref>, this version:<itemizedlist>
+<listitem><para>Persists to disk using B+Tree storage</para>
+</listitem><listitem><para>Survives database restarts</para>
+</listitem><listitem><para>Supports efficient range queries via B+Tree leaf linking</para>
+</listitem><listitem><para>Uses the same optimized <ref refid="classlearnql_1_1index_1_1_persistent_b_tree_index" kindref="compound">PersistentBTreeIndex</ref> as primary keys</para>
+</listitem></itemizedlist>
+</para>
+<para>For unique secondary indexes (one record per field value). For non-unique fields, use <ref refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index" kindref="compound">PersistentMultiValueSecondaryIndex</ref>.</para>
+<para>Example: <programlisting><codeline><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>storage<sp/>=<sp/>std::make_shared&lt;StorageEngine&gt;(</highlight><highlight class="stringliteral">&quot;db.db&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Create<sp/>secondary<sp/>index<sp/>on<sp/>email<sp/>field</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="classlearnql_1_1index_1_1_persistent_secondary_index_1af5bd31c495ae3c64030a30a9833ab844" kindref="member">PersistentSecondaryIndex&lt;User, std::string&gt;</ref><sp/>email_index(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;email&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>[](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>User&amp;<sp/>u)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>u.get_email();<sp/>},</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>storage</highlight></codeline>
+<codeline><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Insert</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">email_index.insert(user,<sp/>RecordId{1,<sp/>0});</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Lookup<sp/>by<sp/>email</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>rid<sp/>=<sp/>email_index.find(</highlight><highlight class="stringliteral">&quot;alice@example.com&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Persist<sp/>to<sp/>disk</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">email_index.flush();</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentSecondaryIndex.hpp" line="52" column="1" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentSecondaryIndex.hpp" bodystart="52" bodyend="231"/>
+    <listofallmembers>
+      <member refid="classlearnql_1_1index_1_1_persistent_secondary_index_1a6a0a9e5558a372fbc8628c1c075adce1" prot="public" virt="non-virtual"><scope>learnql::index::PersistentSecondaryIndex</scope><name>clear_cache</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_secondary_index_1a15cf9e70b66b0b07b2d322f79e120d2f" prot="public" virt="non-virtual"><scope>learnql::index::PersistentSecondaryIndex</scope><name>contains</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_secondary_index_1a6e74d2953bc79d55565e306043c5a74d" prot="public" virt="non-virtual"><scope>learnql::index::PersistentSecondaryIndex</scope><name>create_batch_iterator</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_secondary_index_1a82b7f8ec68feabf606b0ee45e15c3e72" prot="public" virt="non-virtual"><scope>learnql::index::PersistentSecondaryIndex</scope><name>empty</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_secondary_index_1a10c0f07dcdc9a7fc175e5baf55a0067e" prot="private" virt="non-virtual"><scope>learnql::index::PersistentSecondaryIndex</scope><name>field_name_</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_secondary_index_1a37167eeae6cb8a22839277b18a305e8e" prot="public" virt="non-virtual"><scope>learnql::index::PersistentSecondaryIndex</scope><name>find</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_secondary_index_1a86db9c2974d5790d7c82039f2a706b80" prot="public" virt="non-virtual"><scope>learnql::index::PersistentSecondaryIndex</scope><name>flush</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_secondary_index_1ab8e3fb24e5d6c0e00d8521e30e966304" prot="public" virt="non-virtual"><scope>learnql::index::PersistentSecondaryIndex</scope><name>get_all</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_secondary_index_1ac768caddfe8f4cc94effe7b1a782f026" prot="public" virt="non-virtual"><scope>learnql::index::PersistentSecondaryIndex</scope><name>get_field_name</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_secondary_index_1a6816e16fa5bc879bf106eaa023c62e6b" prot="public" virt="non-virtual"><scope>learnql::index::PersistentSecondaryIndex</scope><name>get_root_page_id</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_secondary_index_1af4eeccafb10de2d75c7fd796170c2123" prot="private" virt="non-virtual"><scope>learnql::index::PersistentSecondaryIndex</scope><name>getter_</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_secondary_index_1afee06a245c8a5dacd3ec11db6a8b9bc4" prot="public" virt="non-virtual"><scope>learnql::index::PersistentSecondaryIndex</scope><name>getter_type</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_secondary_index_1a3d532fcf6a0ccfb30bf16e3d281e2bda" prot="private" virt="non-virtual"><scope>learnql::index::PersistentSecondaryIndex</scope><name>index_</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_secondary_index_1a62a794b1cc60b15fb72761eb12e3626a" prot="public" virt="non-virtual"><scope>learnql::index::PersistentSecondaryIndex</scope><name>index_type</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_secondary_index_1ab3571999729956d4c6b9b1442c0805fb" prot="public" virt="non-virtual"><scope>learnql::index::PersistentSecondaryIndex</scope><name>insert</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_secondary_index_1af5bd31c495ae3c64030a30a9833ab844" prot="public" virt="non-virtual"><scope>learnql::index::PersistentSecondaryIndex</scope><name>PersistentSecondaryIndex</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_secondary_index_1a9b25de7856bcb47bdefc167dc19c962e" prot="public" virt="non-virtual"><scope>learnql::index::PersistentSecondaryIndex</scope><name>range_query</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_secondary_index_1a1156d34a40e5244726b55a270da4248f" prot="public" virt="non-virtual"><scope>learnql::index::PersistentSecondaryIndex</scope><name>remove</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_secondary_index_1adad6bf3023d6bf400b2c4b03e860a2dc" prot="public" virt="non-virtual"><scope>learnql::index::PersistentSecondaryIndex</scope><name>remove_by_value</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_secondary_index_1a0c0462d1e4b14a27e441dff8f58a3ed9" prot="public" virt="non-virtual"><scope>learnql::index::PersistentSecondaryIndex</scope><name>size</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_secondary_index_1a5881533c2f4b4cb772cc14d09771d878" prot="public" virt="non-virtual"><scope>learnql::index::PersistentSecondaryIndex</scope><name>update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

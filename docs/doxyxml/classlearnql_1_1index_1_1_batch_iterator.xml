@@ -1,0 +1,300 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classlearnql_1_1index_1_1_batch_iterator" kind="class" language="C++" prot="public">
+    <compoundname>learnql::index::BatchIterator</compoundname>
+    <includes refid="_batch_iterator_8hpp" local="no">BatchIterator.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename Key</type>
+      </param>
+      <param>
+        <type>typename Value</type>
+      </param>
+      <param>
+        <type>std::size_t</type>
+        <declname>BatchSize</declname>
+        <defname>BatchSize</defname>
+        <defval>10</defval>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classlearnql_1_1index_1_1_batch_iterator_1aa40101959c59dbc88fddd8d20973c168" prot="private" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t learnql::index::BatchIterator&lt; Key, Value, BatchSize &gt;::current_leaf_id_</definition>
+        <argsstring></argsstring>
+        <name>current_leaf_id_</name>
+        <qualifiedname>learnql::index::BatchIterator::current_leaf_id_</qualifiedname>
+        <briefdescription>
+<para>Current leaf page ID. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BatchIterator.hpp" line="43" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BatchIterator.hpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlearnql_1_1index_1_1_batch_iterator_1a660aacef29a8ba5d8c22c5bcfd03a71e" prot="private" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t learnql::index::BatchIterator&lt; Key, Value, BatchSize &gt;::current_key_index_</definition>
+        <argsstring></argsstring>
+        <name>current_key_index_</name>
+        <qualifiedname>learnql::index::BatchIterator::current_key_index_</qualifiedname>
+        <briefdescription>
+<para>Current index within leaf. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BatchIterator.hpp" line="44" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BatchIterator.hpp" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlearnql_1_1index_1_1_batch_iterator_1a8f5189a6af7178ee05dce08bc87a50cc" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool learnql::index::BatchIterator&lt; Key, Value, BatchSize &gt;::exhausted_</definition>
+        <argsstring></argsstring>
+        <name>exhausted_</name>
+        <qualifiedname>learnql::index::BatchIterator::exhausted_</qualifiedname>
+        <briefdescription>
+<para>True if traversal is complete. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BatchIterator.hpp" line="45" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BatchIterator.hpp" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlearnql_1_1index_1_1_batch_iterator_1a60d6b9d6c1db8fc1a1c7a7341dfefb3e" prot="private" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t learnql::index::BatchIterator&lt; Key, Value, BatchSize &gt;::root_page_id_</definition>
+        <argsstring></argsstring>
+        <name>root_page_id_</name>
+        <qualifiedname>learnql::index::BatchIterator::root_page_id_</qualifiedname>
+        <briefdescription>
+<para>Root page ID of the B+tree. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BatchIterator.hpp" line="46" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BatchIterator.hpp" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlearnql_1_1index_1_1_batch_iterator_1a061266e51654dad2504f75ed1f858f81" prot="private" static="no" mutable="no">
+        <type>std::function&lt; void(uint64_t, std::vector&lt; Key &gt; &amp;, std::vector&lt; Value &gt; &amp;, std::vector&lt; uint64_t &gt; &amp;, bool &amp;, uint64_t &amp;)&gt;</type>
+        <definition>std::function&lt;void(uint64_t, std::vector&lt;Key&gt;&amp;, std::vector&lt;Value&gt;&amp;, std::vector&lt;uint64_t&gt;&amp;, bool&amp;, uint64_t&amp;)&gt; learnql::index::BatchIterator&lt; Key, Value, BatchSize &gt;::load_node_fn_</definition>
+        <argsstring></argsstring>
+        <name>load_node_fn_</name>
+        <qualifiedname>learnql::index::BatchIterator::load_node_fn_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BatchIterator.hpp" line="51" column="2" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BatchIterator.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_batch_iterator_1ac2ccd9cb02e65aa6723030a6d062793d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename LoadFn</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>learnql::index::BatchIterator&lt; Key, Value, BatchSize &gt;::BatchIterator</definition>
+        <argsstring>(uint64_t root_page_id, LoadFn &amp;&amp;load_fn)</argsstring>
+        <name>BatchIterator</name>
+        <qualifiedname>learnql::index::BatchIterator::BatchIterator</qualifiedname>
+        <param>
+          <type>uint64_t</type>
+          <declname>root_page_id</declname>
+        </param>
+        <param>
+          <type>LoadFn &amp;&amp;</type>
+          <declname>load_fn</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a batch iterator for B+Tree. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>root_page_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Root page ID of the B+tree </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>load_fn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Function to load node data given a page ID</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+The load_fn should populate the provided references with node data:<itemizedlist>
+<listitem><para>keys: vector of keys in the node</para>
+</listitem><listitem><para>values: vector of values in the node (leaf nodes only in B+Tree)</para>
+</listitem><listitem><para>children: vector of child page IDs (internal nodes only)</para>
+</listitem><listitem><para>is_leaf: whether the node is a leaf</para>
+</listitem><listitem><para>next_page_id: next leaf page ID (0 if none, for B+Tree linking)</para>
+</listitem></itemizedlist>
+</para>
+<para>The iterator starts at the leftmost (first) leaf for efficient B+Tree traversal via leaf linked list. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BatchIterator.hpp" line="70" column="5" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BatchIterator.hpp" bodystart="70" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_batch_iterator_1a7a3df979f01a5487e18a59bd599c16a0" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool learnql::index::BatchIterator&lt; Key, Value, BatchSize &gt;::has_more</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>has_more</name>
+        <qualifiedname>learnql::index::BatchIterator::has_more</qualifiedname>
+        <briefdescription>
+<para>Checks if there are more entries to iterate. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if more entries exist </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BatchIterator.hpp" line="90" column="11" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BatchIterator.hpp" bodystart="90" bodyend="92"/>
+        <referencedby refid="classlearnql_1_1index_1_1_batch_iterator_1aeb00da633918ae00ffe5bd143904ce9c" compoundref="_batch_iterator_8hpp" startline="102" endline="134">learnql::index::BatchIterator&lt; primary_key_type, RecordId, BatchSize &gt;::next_batch</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_batch_iterator_1aeb00da633918ae00ffe5bd143904ce9c" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; std::pair&lt; Key, Value &gt; &gt;</type>
+        <definition>std::vector&lt; std::pair&lt; Key, Value &gt; &gt; learnql::index::BatchIterator&lt; Key, Value, BatchSize &gt;::next_batch</definition>
+        <argsstring>()</argsstring>
+        <name>next_batch</name>
+        <qualifiedname>learnql::index::BatchIterator::next_batch</qualifiedname>
+        <briefdescription>
+<para>Fetches the next batch of entries (B+Tree optimized). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Vector of key-value pairs (up to BatchSize entries)</para>
+</simplesect>
+This method walks the leaf linked list sequentially, collecting up to BatchSize entries before returning. Much faster than tree traversal since all data is in leaves. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BatchIterator.hpp" line="102" column="18" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BatchIterator.hpp" bodystart="102" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_batch_iterator_1a6eac5c7f01cc72e90bd28e6d94243ef7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::index::BatchIterator&lt; Key, Value, BatchSize &gt;::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <qualifiedname>learnql::index::BatchIterator::reset</qualifiedname>
+        <briefdescription>
+<para>Resets the iterator to the beginning. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Allows re-iteration from the start. Finds the leftmost leaf and resets the cursor to the beginning. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BatchIterator.hpp" line="174" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BatchIterator.hpp" bodystart="174" bodyend="184"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_batch_iterator_1a193b6cea24482258de4943299208cbf9" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t learnql::index::BatchIterator&lt; Key, Value, BatchSize &gt;::find_leftmost_leaf</definition>
+        <argsstring>(uint64_t node_id) const</argsstring>
+        <name>find_leftmost_leaf</name>
+        <qualifiedname>learnql::index::BatchIterator::find_leftmost_leaf</qualifiedname>
+        <param>
+          <type>uint64_t</type>
+          <declname>node_id</declname>
+        </param>
+        <briefdescription>
+<para>Finds the leftmost (first) leaf node in the B+Tree. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BatchIterator.hpp" line="140" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BatchIterator.hpp" bodystart="140" bodyend="164"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Batch iterator for B+tree traversal. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value type (typically RecordId) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>BatchSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of entries to fetch per batch</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+This iterator performs efficient B+tree traversal by walking the leaf linked list, yielding entries in batches. In B+Tree mode, it&apos;s much faster than tree traversal since all data is in leaves.</para>
+<para>Features:<itemizedlist>
+<listitem><para>B+Tree optimized: walks leaf linked list sequentially</para>
+</listitem><listitem><para>Stateful cursor-based traversal</para>
+</listitem><listitem><para>Configurable batch size at compile time</para>
+</listitem><listitem><para>Memory-efficient (only current batch in memory)</para>
+</listitem><listitem><para>In-order (sorted) traversal</para>
+</listitem></itemizedlist>
+</para>
+<para>Example: <programlisting><codeline><highlight class="normal"><ref refid="classlearnql_1_1index_1_1_batch_iterator_1ac2ccd9cb02e65aa6723030a6d062793d" kindref="member">BatchIterator&lt;int, RecordId, 10&gt;</ref><sp/>iter(index);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(iter.has_more())<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>batch<sp/>=<sp/>iter.next_batch();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>[key,<sp/>value]<sp/>:<sp/>batch)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Process<sp/>each<sp/>entry</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>learnql::index::BatchIterator&lt; Key, Value, BatchSize &gt;</label>
+        <link refid="classlearnql_1_1index_1_1_batch_iterator"/>
+      </node>
+      <node id="2">
+        <label>learnql::index::BatchIterator&lt; primary_key_type, RecordId, BatchSize &gt;</label>
+        <link refid="classlearnql_1_1index_1_1_batch_iterator"/>
+        <childnode refid="1" relation="template-instance">
+          <edgelabel>&lt; primary_key_type, RecordId, BatchSize &gt;</edgelabel>
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BatchIterator.hpp" line="40" column="1" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BatchIterator.hpp" bodystart="40" bodyend="185"/>
+    <listofallmembers>
+      <member refid="classlearnql_1_1index_1_1_batch_iterator_1ac2ccd9cb02e65aa6723030a6d062793d" prot="public" virt="non-virtual"><scope>learnql::index::BatchIterator</scope><name>BatchIterator</name></member>
+      <member refid="classlearnql_1_1index_1_1_batch_iterator_1a660aacef29a8ba5d8c22c5bcfd03a71e" prot="private" virt="non-virtual"><scope>learnql::index::BatchIterator</scope><name>current_key_index_</name></member>
+      <member refid="classlearnql_1_1index_1_1_batch_iterator_1aa40101959c59dbc88fddd8d20973c168" prot="private" virt="non-virtual"><scope>learnql::index::BatchIterator</scope><name>current_leaf_id_</name></member>
+      <member refid="classlearnql_1_1index_1_1_batch_iterator_1a8f5189a6af7178ee05dce08bc87a50cc" prot="private" virt="non-virtual"><scope>learnql::index::BatchIterator</scope><name>exhausted_</name></member>
+      <member refid="classlearnql_1_1index_1_1_batch_iterator_1a193b6cea24482258de4943299208cbf9" prot="private" virt="non-virtual"><scope>learnql::index::BatchIterator</scope><name>find_leftmost_leaf</name></member>
+      <member refid="classlearnql_1_1index_1_1_batch_iterator_1a7a3df979f01a5487e18a59bd599c16a0" prot="public" virt="non-virtual"><scope>learnql::index::BatchIterator</scope><name>has_more</name></member>
+      <member refid="classlearnql_1_1index_1_1_batch_iterator_1a061266e51654dad2504f75ed1f858f81" prot="private" virt="non-virtual"><scope>learnql::index::BatchIterator</scope><name>load_node_fn_</name></member>
+      <member refid="classlearnql_1_1index_1_1_batch_iterator_1aeb00da633918ae00ffe5bd143904ce9c" prot="public" virt="non-virtual"><scope>learnql::index::BatchIterator</scope><name>next_batch</name></member>
+      <member refid="classlearnql_1_1index_1_1_batch_iterator_1a6eac5c7f01cc72e90bd28e6d94243ef7" prot="public" virt="non-virtual"><scope>learnql::index::BatchIterator</scope><name>reset</name></member>
+      <member refid="classlearnql_1_1index_1_1_batch_iterator_1a60d6b9d6c1db8fc1a1c7a7341dfefb3e" prot="private" virt="non-virtual"><scope>learnql::index::BatchIterator</scope><name>root_page_id_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

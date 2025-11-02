@@ -1,0 +1,576 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classlearnql_1_1index_1_1_b_tree_index" kind="class" language="C++" prot="public">
+    <compoundname>learnql::index::BTreeIndex</compoundname>
+    <includes refid="_b_tree_index_8hpp" local="no">BTreeIndex.hpp</includes>
+    <innerclass refid="structlearnql_1_1index_1_1_b_tree_index_1_1_node" prot="private">learnql::index::BTreeIndex::Node</innerclass>
+    <templateparamlist>
+      <param>
+        <type>typename Key</type>
+      </param>
+      <param>
+        <type>typename Value</type>
+        <defval><ref refid="structlearnql_1_1core_1_1_record_id" kindref="compound">core::RecordId</ref></defval>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classlearnql_1_1index_1_1_b_tree_index_1ae9dbe8d617ff3230a6bd20a1053ddfeb" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t learnql::index::BTreeIndex&lt; Key, Value &gt;::ORDER</definition>
+        <argsstring></argsstring>
+        <name>ORDER</name>
+        <qualifiedname>learnql::index::BTreeIndex::ORDER</qualifiedname>
+        <initializer>= 4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BTreeIndex.hpp" line="41" column="34" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BTreeIndex.hpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlearnql_1_1index_1_1_b_tree_index_1a3f375fbabdbe532ebc3802de3f3e6f0f" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t learnql::index::BTreeIndex&lt; Key, Value &gt;::MIN_KEYS</definition>
+        <argsstring></argsstring>
+        <name>MIN_KEYS</name>
+        <qualifiedname>learnql::index::BTreeIndex::MIN_KEYS</qualifiedname>
+        <initializer>= ORDER / 2 - 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BTreeIndex.hpp" line="42" column="34" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BTreeIndex.hpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlearnql_1_1index_1_1_b_tree_index_1a0f659f2b4a1f3d6e192146c26b5d7ecf" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t learnql::index::BTreeIndex&lt; Key, Value &gt;::MAX_KEYS</definition>
+        <argsstring></argsstring>
+        <name>MAX_KEYS</name>
+        <qualifiedname>learnql::index::BTreeIndex::MAX_KEYS</qualifiedname>
+        <initializer>= ORDER - 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BTreeIndex.hpp" line="43" column="34" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BTreeIndex.hpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classlearnql_1_1index_1_1_b_tree_index_1a6925f27eb112d29b4f377dfbe386dae5" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; Node &gt;</type>
+        <definition>std::unique_ptr&lt;Node&gt; learnql::index::BTreeIndex&lt; Key, Value &gt;::root_</definition>
+        <argsstring></argsstring>
+        <name>root_</name>
+        <qualifiedname>learnql::index::BTreeIndex::root_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BTreeIndex.hpp" line="359" column="21" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BTreeIndex.hpp" bodystart="359" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlearnql_1_1index_1_1_b_tree_index_1ac67108b334c05f1d45e1286c60dc0959" prot="private" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t learnql::index::BTreeIndex&lt; Key, Value &gt;::size_</definition>
+        <argsstring></argsstring>
+        <name>size_</name>
+        <qualifiedname>learnql::index::BTreeIndex::size_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BTreeIndex.hpp" line="360" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BTreeIndex.hpp" bodystart="360" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_b_tree_index_1ab25f56daa9d68468592f2fbd76e66cf3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>learnql::index::BTreeIndex&lt; Key, Value &gt;::BTreeIndex</definition>
+        <argsstring>()</argsstring>
+        <name>BTreeIndex</name>
+        <qualifiedname>learnql::index::BTreeIndex::BTreeIndex</qualifiedname>
+        <briefdescription>
+<para>Constructs an empty B-tree index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BTreeIndex.hpp" line="86" column="5" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BTreeIndex.hpp" bodystart="86" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_b_tree_index_1a615d50d4a4cfc6e9233a743625225e48" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool learnql::index::BTreeIndex&lt; Key, Value &gt;::insert</definition>
+        <argsstring>(const Key &amp;key, const Value &amp;value)</argsstring>
+        <name>insert</name>
+        <qualifiedname>learnql::index::BTreeIndex::insert</qualifiedname>
+        <param>
+          <type>const Key &amp;</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const Value &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Inserts a key-value pair. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if inserted, false if key already exists </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BTreeIndex.hpp" line="94" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BTreeIndex.hpp" bodystart="94" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_b_tree_index_1a87c77c5879d991f91fce7109759c5aef" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::optional&lt; Value &gt;</type>
+        <definition>std::optional&lt; Value &gt; learnql::index::BTreeIndex&lt; Key, Value &gt;::find</definition>
+        <argsstring>(const Key &amp;key) const</argsstring>
+        <name>find</name>
+        <qualifiedname>learnql::index::BTreeIndex::find</qualifiedname>
+        <param>
+          <type>const Key &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Finds a value by key. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key to search for </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Optional containing the value if found </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BTreeIndex.hpp" line="116" column="20" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BTreeIndex.hpp" bodystart="116" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_b_tree_index_1abb0af28d5a95d2eed42d61d4ac19e79a" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool learnql::index::BTreeIndex&lt; Key, Value &gt;::contains</definition>
+        <argsstring>(const Key &amp;key) const</argsstring>
+        <name>contains</name>
+        <qualifiedname>learnql::index::BTreeIndex::contains</qualifiedname>
+        <param>
+          <type>const Key &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Checks if a key exists. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key to check </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if key exists </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BTreeIndex.hpp" line="125" column="11" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BTreeIndex.hpp" bodystart="125" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_b_tree_index_1a2f38d64faf857ef12e5806679ccd8e3a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool learnql::index::BTreeIndex&lt; Key, Value &gt;::remove</definition>
+        <argsstring>(const Key &amp;key)</argsstring>
+        <name>remove</name>
+        <qualifiedname>learnql::index::BTreeIndex::remove</qualifiedname>
+        <param>
+          <type>const Key &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Removes a key-value pair. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key to remove </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if removed, false if not found </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BTreeIndex.hpp" line="134" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BTreeIndex.hpp" bodystart="134" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_b_tree_index_1a291e9c177ff285ff2b46993aebb2f500" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; Value &gt;</type>
+        <definition>std::vector&lt; Value &gt; learnql::index::BTreeIndex&lt; Key, Value &gt;::range_query</definition>
+        <argsstring>(const Key &amp;min_key, const Key &amp;max_key) const</argsstring>
+        <name>range_query</name>
+        <qualifiedname>learnql::index::BTreeIndex::range_query</qualifiedname>
+        <param>
+          <type>const Key &amp;</type>
+          <declname>min_key</declname>
+        </param>
+        <param>
+          <type>const Key &amp;</type>
+          <declname>max_key</declname>
+        </param>
+        <briefdescription>
+<para>Finds all values in a range [min_key, max_key]. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>min_key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Minimum key (inclusive) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum key (inclusive) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Vector of values in range </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BTreeIndex.hpp" line="159" column="18" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BTreeIndex.hpp" bodystart="159" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_b_tree_index_1aa38e8bed2dc213882eb8dec14e3ac55b" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>std::size_t learnql::index::BTreeIndex&lt; Key, Value &gt;::size</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>size</name>
+        <qualifiedname>learnql::index::BTreeIndex::size</qualifiedname>
+        <briefdescription>
+<para>Gets the number of entries in the index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BTreeIndex.hpp" line="168" column="18" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BTreeIndex.hpp" bodystart="168" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_b_tree_index_1ad44539f29bb4641f53dfe55bb118f82f" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool learnql::index::BTreeIndex&lt; Key, Value &gt;::empty</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>empty</name>
+        <qualifiedname>learnql::index::BTreeIndex::empty</qualifiedname>
+        <briefdescription>
+<para>Checks if the index is empty. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BTreeIndex.hpp" line="175" column="11" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BTreeIndex.hpp" bodystart="175" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_b_tree_index_1abbf3fbc9d184ce2b9573c7b1c586d280" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::index::BTreeIndex&lt; Key, Value &gt;::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <qualifiedname>learnql::index::BTreeIndex::clear</qualifiedname>
+        <briefdescription>
+<para>Clears all entries from the index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BTreeIndex.hpp" line="182" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BTreeIndex.hpp" bodystart="182" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_b_tree_index_1a17e0a23f56dea530b5dacef459993d35" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; std::pair&lt; Key, Value &gt; &gt;</type>
+        <definition>std::vector&lt; std::pair&lt; Key, Value &gt; &gt; learnql::index::BTreeIndex&lt; Key, Value &gt;::get_all</definition>
+        <argsstring>() const</argsstring>
+        <name>get_all</name>
+        <qualifiedname>learnql::index::BTreeIndex::get_all</qualifiedname>
+        <briefdescription>
+<para>Gets all key-value pairs in sorted order. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BTreeIndex.hpp" line="190" column="18" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BTreeIndex.hpp" bodystart="190" bodyend="195"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_b_tree_index_1adceb3dc873989d941b34f1fc10c820f6" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::optional&lt; Value &gt;</type>
+        <definition>std::optional&lt; Value &gt; learnql::index::BTreeIndex&lt; Key, Value &gt;::search</definition>
+        <argsstring>(Node *node, const Key &amp;key) const</argsstring>
+        <name>search</name>
+        <qualifiedname>learnql::index::BTreeIndex::search</qualifiedname>
+        <param>
+          <type>Node *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>const Key &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Searches for a key in a subtree. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BTreeIndex.hpp" line="201" column="19" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BTreeIndex.hpp" bodystart="201" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_b_tree_index_1afedd38860b8094d398fb05954750e990" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool learnql::index::BTreeIndex&lt; Key, Value &gt;::insert_non_full</definition>
+        <argsstring>(Node *node, const Key &amp;key, const Value &amp;value)</argsstring>
+        <name>insert_non_full</name>
+        <qualifiedname>learnql::index::BTreeIndex::insert_non_full</qualifiedname>
+        <param>
+          <type>Node *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>const Key &amp;</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const Value &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Inserts into a non-full node. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BTreeIndex.hpp" line="225" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BTreeIndex.hpp" bodystart="225" bodyend="246"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_b_tree_index_1a9033b20f1b6fe2a3ac3d65de04895497" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::index::BTreeIndex&lt; Key, Value &gt;::split_child</definition>
+        <argsstring>(Node *parent, std::size_t index)</argsstring>
+        <name>split_child</name>
+        <qualifiedname>learnql::index::BTreeIndex::split_child</qualifiedname>
+        <param>
+          <type>Node *</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Splits a full child node. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BTreeIndex.hpp" line="251" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BTreeIndex.hpp" bodystart="251" bodyend="285"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_b_tree_index_1a9e832ccd5e323b7bda66a07cb6c847c5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool learnql::index::BTreeIndex&lt; Key, Value &gt;::remove_from_node</definition>
+        <argsstring>(Node *node, const Key &amp;key)</argsstring>
+        <name>remove_from_node</name>
+        <qualifiedname>learnql::index::BTreeIndex::remove_from_node</qualifiedname>
+        <param>
+          <type>Node *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>const Key &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Removes a key from a node. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BTreeIndex.hpp" line="290" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BTreeIndex.hpp" bodystart="290" bodyend="307"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_b_tree_index_1a22f98a6a90460af1f7e02f4e10f44af3" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::index::BTreeIndex&lt; Key, Value &gt;::range_query_helper</definition>
+        <argsstring>(Node *node, const Key &amp;min_key, const Key &amp;max_key, std::vector&lt; Value &gt; &amp;results) const</argsstring>
+        <name>range_query_helper</name>
+        <qualifiedname>learnql::index::BTreeIndex::range_query_helper</qualifiedname>
+        <param>
+          <type>Node *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>const Key &amp;</type>
+          <declname>min_key</declname>
+        </param>
+        <param>
+          <type>const Key &amp;</type>
+          <declname>max_key</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; Value &gt; &amp;</type>
+          <declname>results</declname>
+        </param>
+        <briefdescription>
+<para>Helper for range queries. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BTreeIndex.hpp" line="312" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BTreeIndex.hpp" bodystart="312" bodyend="334"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_b_tree_index_1a4cdacc41550f819629824e458e3f4f48" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::index::BTreeIndex&lt; Key, Value &gt;::traverse</definition>
+        <argsstring>(Node *node, std::vector&lt; std::pair&lt; Key, Value &gt; &gt; &amp;results) const</argsstring>
+        <name>traverse</name>
+        <qualifiedname>learnql::index::BTreeIndex::traverse</qualifiedname>
+        <param>
+          <type>Node *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::pair&lt; Key, Value &gt; &gt; &amp;</type>
+          <declname>results</declname>
+        </param>
+        <briefdescription>
+<para>Traverses the tree in order. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BTreeIndex.hpp" line="339" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BTreeIndex.hpp" bodystart="339" bodyend="356"/>
+      </memberdef>
+    </sectiondef>
+    <requiresclause>std::totally_ordered&lt;Key&gt;    </requiresclause>
+    <briefdescription>
+<para>DEPRECATED: In-memory B-tree index for efficient key lookups. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key type (must be comparable) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value type (typically RecordId)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="deprecated_1_deprecated000001"><xreftitle>Deprecated</xreftitle><xrefdescription><para>This in-memory implementation has been replaced by <ref refid="classlearnql_1_1index_1_1_persistent_b_tree_index" kindref="compound">PersistentBTreeIndex</ref>. Use <ref refid="classlearnql_1_1index_1_1_persistent_b_tree_index" kindref="compound">PersistentBTreeIndex</ref> for production code as it persists data to disk. This class is kept for educational/reference purposes only.</para>
+</xrefdescription></xrefsect></para>
+<para>This is a simplified B-tree implementation for educational purposes. This implementation does NOT persist to disk - all data is lost on restart.</para>
+<para>Features:<itemizedlist>
+<listitem><para>O(log n) search, insert, delete</para>
+</listitem><listitem><para>Range queries</para>
+</listitem><listitem><para>Ordered iteration</para>
+</listitem></itemizedlist>
+</para>
+<para>Example: <programlisting><codeline><highlight class="comment">//<sp/>DEPRECATED<sp/>-<sp/>Use<sp/>PersistentBTreeIndex<sp/>instead!</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="classlearnql_1_1index_1_1_b_tree_index_1ab25f56daa9d68468592f2fbd76e66cf3" kindref="member">BTreeIndex&lt;int, RecordId&gt;</ref><sp/>index;</highlight></codeline>
+<codeline><highlight class="normal">index.insert(42,<sp/>RecordId{1,<sp/>0});</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>rid<sp/>=<sp/>index.find(42);</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>learnql::index::BTreeIndex&lt; FieldType, core::RecordId &gt;</label>
+        <link refid="classlearnql_1_1index_1_1_b_tree_index"/>
+        <childnode refid="1" relation="template-instance">
+          <edgelabel>&lt; FieldType, core::RecordId &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>learnql::index::BTreeIndex&lt; Key, Value &gt;</label>
+        <link refid="classlearnql_1_1index_1_1_b_tree_index"/>
+      </node>
+    </inheritancegraph>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BTreeIndex.hpp" line="39" column="1" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BTreeIndex.hpp" bodystart="39" bodyend="361"/>
+    <listofallmembers>
+      <member refid="classlearnql_1_1index_1_1_b_tree_index_1ab25f56daa9d68468592f2fbd76e66cf3" prot="public" virt="non-virtual"><scope>learnql::index::BTreeIndex</scope><name>BTreeIndex</name></member>
+      <member refid="classlearnql_1_1index_1_1_b_tree_index_1abbf3fbc9d184ce2b9573c7b1c586d280" prot="public" virt="non-virtual"><scope>learnql::index::BTreeIndex</scope><name>clear</name></member>
+      <member refid="classlearnql_1_1index_1_1_b_tree_index_1abb0af28d5a95d2eed42d61d4ac19e79a" prot="public" virt="non-virtual"><scope>learnql::index::BTreeIndex</scope><name>contains</name></member>
+      <member refid="classlearnql_1_1index_1_1_b_tree_index_1ad44539f29bb4641f53dfe55bb118f82f" prot="public" virt="non-virtual"><scope>learnql::index::BTreeIndex</scope><name>empty</name></member>
+      <member refid="classlearnql_1_1index_1_1_b_tree_index_1a87c77c5879d991f91fce7109759c5aef" prot="public" virt="non-virtual"><scope>learnql::index::BTreeIndex</scope><name>find</name></member>
+      <member refid="classlearnql_1_1index_1_1_b_tree_index_1a17e0a23f56dea530b5dacef459993d35" prot="public" virt="non-virtual"><scope>learnql::index::BTreeIndex</scope><name>get_all</name></member>
+      <member refid="classlearnql_1_1index_1_1_b_tree_index_1a615d50d4a4cfc6e9233a743625225e48" prot="public" virt="non-virtual"><scope>learnql::index::BTreeIndex</scope><name>insert</name></member>
+      <member refid="classlearnql_1_1index_1_1_b_tree_index_1afedd38860b8094d398fb05954750e990" prot="private" virt="non-virtual"><scope>learnql::index::BTreeIndex</scope><name>insert_non_full</name></member>
+      <member refid="classlearnql_1_1index_1_1_b_tree_index_1a0f659f2b4a1f3d6e192146c26b5d7ecf" prot="private" virt="non-virtual"><scope>learnql::index::BTreeIndex</scope><name>MAX_KEYS</name></member>
+      <member refid="classlearnql_1_1index_1_1_b_tree_index_1a3f375fbabdbe532ebc3802de3f3e6f0f" prot="private" virt="non-virtual"><scope>learnql::index::BTreeIndex</scope><name>MIN_KEYS</name></member>
+      <member refid="classlearnql_1_1index_1_1_b_tree_index_1ae9dbe8d617ff3230a6bd20a1053ddfeb" prot="private" virt="non-virtual"><scope>learnql::index::BTreeIndex</scope><name>ORDER</name></member>
+      <member refid="classlearnql_1_1index_1_1_b_tree_index_1a291e9c177ff285ff2b46993aebb2f500" prot="public" virt="non-virtual"><scope>learnql::index::BTreeIndex</scope><name>range_query</name></member>
+      <member refid="classlearnql_1_1index_1_1_b_tree_index_1a22f98a6a90460af1f7e02f4e10f44af3" prot="private" virt="non-virtual"><scope>learnql::index::BTreeIndex</scope><name>range_query_helper</name></member>
+      <member refid="classlearnql_1_1index_1_1_b_tree_index_1a2f38d64faf857ef12e5806679ccd8e3a" prot="public" virt="non-virtual"><scope>learnql::index::BTreeIndex</scope><name>remove</name></member>
+      <member refid="classlearnql_1_1index_1_1_b_tree_index_1a9e832ccd5e323b7bda66a07cb6c847c5" prot="private" virt="non-virtual"><scope>learnql::index::BTreeIndex</scope><name>remove_from_node</name></member>
+      <member refid="classlearnql_1_1index_1_1_b_tree_index_1a6925f27eb112d29b4f377dfbe386dae5" prot="private" virt="non-virtual"><scope>learnql::index::BTreeIndex</scope><name>root_</name></member>
+      <member refid="classlearnql_1_1index_1_1_b_tree_index_1adceb3dc873989d941b34f1fc10c820f6" prot="private" virt="non-virtual"><scope>learnql::index::BTreeIndex</scope><name>search</name></member>
+      <member refid="classlearnql_1_1index_1_1_b_tree_index_1aa38e8bed2dc213882eb8dec14e3ac55b" prot="public" virt="non-virtual"><scope>learnql::index::BTreeIndex</scope><name>size</name></member>
+      <member refid="classlearnql_1_1index_1_1_b_tree_index_1ac67108b334c05f1d45e1286c60dc0959" prot="private" virt="non-virtual"><scope>learnql::index::BTreeIndex</scope><name>size_</name></member>
+      <member refid="classlearnql_1_1index_1_1_b_tree_index_1a9033b20f1b6fe2a3ac3d65de04895497" prot="private" virt="non-virtual"><scope>learnql::index::BTreeIndex</scope><name>split_child</name></member>
+      <member refid="classlearnql_1_1index_1_1_b_tree_index_1a4cdacc41550f819629824e458e3f4f48" prot="private" virt="non-virtual"><scope>learnql::index::BTreeIndex</scope><name>traverse</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="structlearnql_1_1utils_1_1_db_inspector_1_1_page_info" kind="struct" language="C++" prot="public">
+    <compoundname>learnql::utils::DbInspector::PageInfo</compoundname>
+    <includes refid="_db_inspector_8hpp" local="no">DbInspector.hpp</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlearnql_1_1utils_1_1_db_inspector_1_1_page_info_1ab3218fae5afaafb5efabdba01079da7a" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t learnql::utils::DbInspector::PageInfo::page_id</definition>
+        <argsstring></argsstring>
+        <name>page_id</name>
+        <qualifiedname>learnql::utils::DbInspector::PageInfo::page_id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/utils/DbInspector.hpp" line="29" column="18" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/utils/DbInspector.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1utils_1_1_db_inspector_1_1_page_info_1abcc475f828de00e85f77a9aae9e59c0a" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacelearnql_1_1storage_1ae05b45a9b02a6b9290c9867f77f420b7" kindref="member">storage::PageType</ref></type>
+        <definition>storage::PageType learnql::utils::DbInspector::PageInfo::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <qualifiedname>learnql::utils::DbInspector::PageInfo::type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/utils/DbInspector.hpp" line="30" column="27" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/utils/DbInspector.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1utils_1_1_db_inspector_1_1_page_info_1a5f3aeb9e871cbb5abca8910ff234fcb7" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t learnql::utils::DbInspector::PageInfo::record_count</definition>
+        <argsstring></argsstring>
+        <name>record_count</name>
+        <qualifiedname>learnql::utils::DbInspector::PageInfo::record_count</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/utils/DbInspector.hpp" line="31" column="18" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/utils/DbInspector.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1utils_1_1_db_inspector_1_1_page_info_1a625e6147f8bfc81cce8a0d6ad576bf0d" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t learnql::utils::DbInspector::PageInfo::free_space_offset</definition>
+        <argsstring></argsstring>
+        <name>free_space_offset</name>
+        <qualifiedname>learnql::utils::DbInspector::PageInfo::free_space_offset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/utils/DbInspector.hpp" line="32" column="18" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/utils/DbInspector.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1utils_1_1_db_inspector_1_1_page_info_1a8d51fb07f881ed4eabb9afdae66552e4" prot="public" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t learnql::utils::DbInspector::PageInfo::used_space</definition>
+        <argsstring></argsstring>
+        <name>used_space</name>
+        <qualifiedname>learnql::utils::DbInspector::PageInfo::used_space</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/utils/DbInspector.hpp" line="33" column="21" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/utils/DbInspector.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1utils_1_1_db_inspector_1_1_page_info_1a6db52039b09226b97cdba39c94f16298" prot="public" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t learnql::utils::DbInspector::PageInfo::free_space</definition>
+        <argsstring></argsstring>
+        <name>free_space</name>
+        <qualifiedname>learnql::utils::DbInspector::PageInfo::free_space</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/utils/DbInspector.hpp" line="34" column="21" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/utils/DbInspector.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1utils_1_1_db_inspector_1_1_page_info_1ac22ed4bacd53eef524a10f18dfffe23b" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string learnql::utils::DbInspector::PageInfo::owner_table</definition>
+        <argsstring></argsstring>
+        <name>owner_table</name>
+        <qualifiedname>learnql::utils::DbInspector::PageInfo::owner_table</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/utils/DbInspector.hpp" line="35" column="21" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/utils/DbInspector.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Page information structure. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>learnql::utils::DbInspector::PageInfo</label>
+        <link refid="structlearnql_1_1utils_1_1_db_inspector_1_1_page_info"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>owner_table</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="2">
+        <label>std::string</label>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/utils/DbInspector.hpp" line="28" column="5" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/utils/DbInspector.hpp" bodystart="28" bodyend="36"/>
+    <listofallmembers>
+      <member refid="structlearnql_1_1utils_1_1_db_inspector_1_1_page_info_1a6db52039b09226b97cdba39c94f16298" prot="public" virt="non-virtual"><scope>learnql::utils::DbInspector::PageInfo</scope><name>free_space</name></member>
+      <member refid="structlearnql_1_1utils_1_1_db_inspector_1_1_page_info_1a625e6147f8bfc81cce8a0d6ad576bf0d" prot="public" virt="non-virtual"><scope>learnql::utils::DbInspector::PageInfo</scope><name>free_space_offset</name></member>
+      <member refid="structlearnql_1_1utils_1_1_db_inspector_1_1_page_info_1ac22ed4bacd53eef524a10f18dfffe23b" prot="public" virt="non-virtual"><scope>learnql::utils::DbInspector::PageInfo</scope><name>owner_table</name></member>
+      <member refid="structlearnql_1_1utils_1_1_db_inspector_1_1_page_info_1ab3218fae5afaafb5efabdba01079da7a" prot="public" virt="non-virtual"><scope>learnql::utils::DbInspector::PageInfo</scope><name>page_id</name></member>
+      <member refid="structlearnql_1_1utils_1_1_db_inspector_1_1_page_info_1a5f3aeb9e871cbb5abca8910ff234fcb7" prot="public" virt="non-virtual"><scope>learnql::utils::DbInspector::PageInfo</scope><name>record_count</name></member>
+      <member refid="structlearnql_1_1utils_1_1_db_inspector_1_1_page_info_1abcc475f828de00e85f77a9aae9e59c0a" prot="public" virt="non-virtual"><scope>learnql::utils::DbInspector::PageInfo</scope><name>type</name></member>
+      <member refid="structlearnql_1_1utils_1_1_db_inspector_1_1_page_info_1a8d51fb07f881ed4eabb9afdae66552e4" prot="public" virt="non-virtual"><scope>learnql::utils::DbInspector::PageInfo</scope><name>used_space</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classlearnql_1_1core_1_1_query" kind="class" language="C++" prot="public">
+    <compoundname>learnql::core::Query</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+      <param>
+        <type>std::size_t</type>
+        <declname>BatchSize</declname>
+        <defname>BatchSize</defname>
+        <defval>10</defval>
+      </param>
+    </templateparamlist>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="1013" column="1" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="1013" bodyend="-1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

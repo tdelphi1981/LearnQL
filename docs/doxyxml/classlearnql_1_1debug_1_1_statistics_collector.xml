@@ -1,0 +1,293 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classlearnql_1_1debug_1_1_statistics_collector" kind="class" language="C++" prot="public">
+    <compoundname>learnql::debug::StatisticsCollector</compoundname>
+    <includes refid="_statistics_8hpp" local="no">Statistics.hpp</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classlearnql_1_1debug_1_1_statistics_collector_1adbde08bff0ebf525b86bf15acd4deb12" prot="private" static="no" mutable="no">
+        <type>std::unordered_map&lt; std::string, <ref refid="structlearnql_1_1debug_1_1_table_statistics" kindref="compound">TableStatistics</ref> &gt;</type>
+        <definition>std::unordered_map&lt;std::string, TableStatistics&gt; learnql::debug::StatisticsCollector::table_stats_</definition>
+        <argsstring></argsstring>
+        <name>table_stats_</name>
+        <qualifiedname>learnql::debug::StatisticsCollector::table_stats_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Statistics.hpp" line="220" column="24" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Statistics.hpp" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlearnql_1_1debug_1_1_statistics_collector_1a71d6f30d540360e5c9a82b972266616a" prot="private" static="no" mutable="no">
+        <type>std::unordered_map&lt; std::string, <ref refid="structlearnql_1_1debug_1_1_index_statistics" kindref="compound">IndexStatistics</ref> &gt;</type>
+        <definition>std::unordered_map&lt;std::string, IndexStatistics&gt; learnql::debug::StatisticsCollector::index_stats_</definition>
+        <argsstring></argsstring>
+        <name>index_stats_</name>
+        <qualifiedname>learnql::debug::StatisticsCollector::index_stats_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Statistics.hpp" line="221" column="24" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Statistics.hpp" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlearnql_1_1debug_1_1_statistics_collector_1a5266b65f570c523287357367f15b03d6" prot="private" static="no" mutable="no">
+        <type>std::unordered_map&lt; std::string, <ref refid="structlearnql_1_1debug_1_1_query_statistics" kindref="compound">QueryStatistics</ref> &gt;</type>
+        <definition>std::unordered_map&lt;std::string, QueryStatistics&gt; learnql::debug::StatisticsCollector::query_stats_</definition>
+        <argsstring></argsstring>
+        <name>query_stats_</name>
+        <qualifiedname>learnql::debug::StatisticsCollector::query_stats_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Statistics.hpp" line="222" column="24" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Statistics.hpp" bodystart="222" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classlearnql_1_1debug_1_1_statistics_collector_1a65e7f412b6a53a8cf50201f71b47e6fe" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>StatisticsCollector &amp;</type>
+        <definition>static StatisticsCollector &amp; learnql::debug::StatisticsCollector::instance</definition>
+        <argsstring>()</argsstring>
+        <name>instance</name>
+        <qualifiedname>learnql::debug::StatisticsCollector::instance</qualifiedname>
+        <briefdescription>
+<para>Gets the singleton instance. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Statistics.hpp" line="109" column="32" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Statistics.hpp" bodystart="109" bodyend="112"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlearnql_1_1debug_1_1_statistics_collector_1a95b3939f6a072f57b194dc43bb871235" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::debug::StatisticsCollector::record_table</definition>
+        <argsstring>(const TableStatistics &amp;stats)</argsstring>
+        <name>record_table</name>
+        <qualifiedname>learnql::debug::StatisticsCollector::record_table</qualifiedname>
+        <param>
+          <type>const <ref refid="structlearnql_1_1debug_1_1_table_statistics" kindref="compound">TableStatistics</ref> &amp;</type>
+          <declname>stats</declname>
+        </param>
+        <briefdescription>
+<para>Records table statistics. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Statistics.hpp" line="117" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Statistics.hpp" bodystart="117" bodyend="119"/>
+        <references refid="structlearnql_1_1debug_1_1_table_statistics_1ae8bf82b2fec86a7cf33650325a3c6d4e" compoundref="_statistics_8hpp" startline="17">learnql::debug::TableStatistics::table_name</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1debug_1_1_statistics_collector_1a2b86937ab77833cdf732eabf717cbddb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::debug::StatisticsCollector::record_index</definition>
+        <argsstring>(const IndexStatistics &amp;stats)</argsstring>
+        <name>record_index</name>
+        <qualifiedname>learnql::debug::StatisticsCollector::record_index</qualifiedname>
+        <param>
+          <type>const <ref refid="structlearnql_1_1debug_1_1_index_statistics" kindref="compound">IndexStatistics</ref> &amp;</type>
+          <declname>stats</declname>
+        </param>
+        <briefdescription>
+<para>Records index statistics. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Statistics.hpp" line="124" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Statistics.hpp" bodystart="124" bodyend="126"/>
+        <references refid="structlearnql_1_1debug_1_1_index_statistics_1a12da25470404c5cd0a6a82409a222824" compoundref="_statistics_8hpp" startline="48">learnql::debug::IndexStatistics::index_name</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1debug_1_1_statistics_collector_1afbe326679333b0813844784052ba575c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::debug::StatisticsCollector::record_query</definition>
+        <argsstring>(const std::string &amp;query_desc, std::chrono::microseconds duration, std::size_t rows_returned)</argsstring>
+        <name>record_query</name>
+        <qualifiedname>learnql::debug::StatisticsCollector::record_query</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>query_desc</declname>
+        </param>
+        <param>
+          <type>std::chrono::microseconds</type>
+          <declname>duration</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>rows_returned</declname>
+        </param>
+        <briefdescription>
+<para>Records a query execution. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Statistics.hpp" line="131" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Statistics.hpp" bodystart="131" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1debug_1_1_statistics_collector_1a37ff81f99781d51681864ca71a781de4" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="structlearnql_1_1debug_1_1_table_statistics" kindref="compound">TableStatistics</ref> *</type>
+        <definition>const TableStatistics * learnql::debug::StatisticsCollector::get_table_stats</definition>
+        <argsstring>(const std::string &amp;table_name) const</argsstring>
+        <name>get_table_stats</name>
+        <qualifiedname>learnql::debug::StatisticsCollector::get_table_stats</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>table_name</declname>
+        </param>
+        <briefdescription>
+<para>Gets table statistics. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Statistics.hpp" line="145" column="28" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Statistics.hpp" bodystart="145" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1debug_1_1_statistics_collector_1a713e389bc5fff1e456f582e921a4660d" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="structlearnql_1_1debug_1_1_index_statistics" kindref="compound">IndexStatistics</ref> *</type>
+        <definition>const IndexStatistics * learnql::debug::StatisticsCollector::get_index_stats</definition>
+        <argsstring>(const std::string &amp;index_name) const</argsstring>
+        <name>get_index_stats</name>
+        <qualifiedname>learnql::debug::StatisticsCollector::get_index_stats</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>index_name</declname>
+        </param>
+        <briefdescription>
+<para>Gets index statistics. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Statistics.hpp" line="153" column="28" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Statistics.hpp" bodystart="153" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1debug_1_1_statistics_collector_1a60b840a676b018523f241d2e6840f80d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::debug::StatisticsCollector::print_all</definition>
+        <argsstring>() const</argsstring>
+        <name>print_all</name>
+        <qualifiedname>learnql::debug::StatisticsCollector::print_all</qualifiedname>
+        <briefdescription>
+<para>Prints all statistics. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Statistics.hpp" line="161" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Statistics.hpp" bodystart="161" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1debug_1_1_statistics_collector_1a38d4d1087229cfaf2f6714a4f317afc4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::debug::StatisticsCollector::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <qualifiedname>learnql::debug::StatisticsCollector::clear</qualifiedname>
+        <briefdescription>
+<para>Clears all statistics. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Statistics.hpp" line="207" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Statistics.hpp" bodystart="207" bodyend="211"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classlearnql_1_1debug_1_1_statistics_collector_1a84f5e2d0e7995f1025596dd0a8f8ae7f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>learnql::debug::StatisticsCollector::StatisticsCollector</definition>
+        <argsstring>()=default</argsstring>
+        <name>StatisticsCollector</name>
+        <qualifiedname>learnql::debug::StatisticsCollector::StatisticsCollector</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Statistics.hpp" line="214" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1debug_1_1_statistics_collector_1af25f1a9c355d756ab1fdcbb261a31de8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>learnql::debug::StatisticsCollector::~StatisticsCollector</definition>
+        <argsstring>()=default</argsstring>
+        <name>~StatisticsCollector</name>
+        <qualifiedname>learnql::debug::StatisticsCollector::~StatisticsCollector</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Statistics.hpp" line="215" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1debug_1_1_statistics_collector_1a41bbb403e49c40d7d2437c1afc0ecf79" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>learnql::debug::StatisticsCollector::StatisticsCollector</definition>
+        <argsstring>(const StatisticsCollector &amp;)=delete</argsstring>
+        <name>StatisticsCollector</name>
+        <qualifiedname>learnql::debug::StatisticsCollector::StatisticsCollector</qualifiedname>
+        <param>
+          <type>const StatisticsCollector &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Statistics.hpp" line="217" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1debug_1_1_statistics_collector_1a9bfbb72b71c7a225fee966f0030f26c9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>StatisticsCollector &amp;</type>
+        <definition>StatisticsCollector &amp; learnql::debug::StatisticsCollector::operator=</definition>
+        <argsstring>(const StatisticsCollector &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <qualifiedname>learnql::debug::StatisticsCollector::operator=</qualifiedname>
+        <param>
+          <type>const StatisticsCollector &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Statistics.hpp" line="218" column="25"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Statistics collector for database objects. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Collects and maintains statistics about tables, indexes, and queries to help with query optimization and debugging. </para>
+    </detaileddescription>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Statistics.hpp" line="104" column="1" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Statistics.hpp" bodystart="104" bodyend="223"/>
+    <listofallmembers>
+      <member refid="classlearnql_1_1debug_1_1_statistics_collector_1a38d4d1087229cfaf2f6714a4f317afc4" prot="public" virt="non-virtual"><scope>learnql::debug::StatisticsCollector</scope><name>clear</name></member>
+      <member refid="classlearnql_1_1debug_1_1_statistics_collector_1a713e389bc5fff1e456f582e921a4660d" prot="public" virt="non-virtual"><scope>learnql::debug::StatisticsCollector</scope><name>get_index_stats</name></member>
+      <member refid="classlearnql_1_1debug_1_1_statistics_collector_1a37ff81f99781d51681864ca71a781de4" prot="public" virt="non-virtual"><scope>learnql::debug::StatisticsCollector</scope><name>get_table_stats</name></member>
+      <member refid="classlearnql_1_1debug_1_1_statistics_collector_1a71d6f30d540360e5c9a82b972266616a" prot="private" virt="non-virtual"><scope>learnql::debug::StatisticsCollector</scope><name>index_stats_</name></member>
+      <member refid="classlearnql_1_1debug_1_1_statistics_collector_1a65e7f412b6a53a8cf50201f71b47e6fe" prot="public" virt="non-virtual"><scope>learnql::debug::StatisticsCollector</scope><name>instance</name></member>
+      <member refid="classlearnql_1_1debug_1_1_statistics_collector_1a9bfbb72b71c7a225fee966f0030f26c9" prot="private" virt="non-virtual"><scope>learnql::debug::StatisticsCollector</scope><name>operator=</name></member>
+      <member refid="classlearnql_1_1debug_1_1_statistics_collector_1a60b840a676b018523f241d2e6840f80d" prot="public" virt="non-virtual"><scope>learnql::debug::StatisticsCollector</scope><name>print_all</name></member>
+      <member refid="classlearnql_1_1debug_1_1_statistics_collector_1a5266b65f570c523287357367f15b03d6" prot="private" virt="non-virtual"><scope>learnql::debug::StatisticsCollector</scope><name>query_stats_</name></member>
+      <member refid="classlearnql_1_1debug_1_1_statistics_collector_1a2b86937ab77833cdf732eabf717cbddb" prot="public" virt="non-virtual"><scope>learnql::debug::StatisticsCollector</scope><name>record_index</name></member>
+      <member refid="classlearnql_1_1debug_1_1_statistics_collector_1afbe326679333b0813844784052ba575c" prot="public" virt="non-virtual"><scope>learnql::debug::StatisticsCollector</scope><name>record_query</name></member>
+      <member refid="classlearnql_1_1debug_1_1_statistics_collector_1a95b3939f6a072f57b194dc43bb871235" prot="public" virt="non-virtual"><scope>learnql::debug::StatisticsCollector</scope><name>record_table</name></member>
+      <member refid="classlearnql_1_1debug_1_1_statistics_collector_1a84f5e2d0e7995f1025596dd0a8f8ae7f" prot="private" virt="non-virtual"><scope>learnql::debug::StatisticsCollector</scope><name>StatisticsCollector</name></member>
+      <member refid="classlearnql_1_1debug_1_1_statistics_collector_1a41bbb403e49c40d7d2437c1afc0ecf79" prot="private" virt="non-virtual"><scope>learnql::debug::StatisticsCollector</scope><name>StatisticsCollector</name></member>
+      <member refid="classlearnql_1_1debug_1_1_statistics_collector_1adbde08bff0ebf525b86bf15acd4deb12" prot="private" virt="non-virtual"><scope>learnql::debug::StatisticsCollector</scope><name>table_stats_</name></member>
+      <member refid="classlearnql_1_1debug_1_1_statistics_collector_1af25f1a9c355d756ab1fdcbb261a31de8" prot="private" virt="non-virtual"><scope>learnql::debug::StatisticsCollector</scope><name>~StatisticsCollector</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

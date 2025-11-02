@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classlearnql_1_1debug_1_1_explain_query" kind="class" language="C++" prot="public">
+    <compoundname>learnql::debug::ExplainQuery</compoundname>
+    <includes refid="_debug_utils_8hpp" local="no">DebugUtils.hpp</includes>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classlearnql_1_1debug_1_1_explain_query_1a15ab38416d64d557167e39ee51d4ecd1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void learnql::debug::ExplainQuery::table_scan</definition>
+        <argsstring>(const std::string &amp;table_name, std::size_t estimated_rows)</argsstring>
+        <name>table_scan</name>
+        <qualifiedname>learnql::debug::ExplainQuery::table_scan</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>table_name</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>estimated_rows</declname>
+        </param>
+        <briefdescription>
+<para>Explains a simple table scan. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/DebugUtils.hpp" line="224" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/DebugUtils.hpp" bodystart="224" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1debug_1_1_explain_query_1a1e9a0cb48ab609bdcd83aba99467d0a4" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void learnql::debug::ExplainQuery::index_scan</definition>
+        <argsstring>(const std::string &amp;index_name, std::size_t estimated_rows)</argsstring>
+        <name>index_scan</name>
+        <qualifiedname>learnql::debug::ExplainQuery::index_scan</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>index_name</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>estimated_rows</declname>
+        </param>
+        <briefdescription>
+<para>Explains an index scan. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/DebugUtils.hpp" line="233" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/DebugUtils.hpp" bodystart="233" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1debug_1_1_explain_query_1a4aa8c4c59dffed30632e9635ff3e3478" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void learnql::debug::ExplainQuery::join</definition>
+        <argsstring>(const std::string &amp;join_type, std::size_t left_rows, std::size_t right_rows)</argsstring>
+        <name>join</name>
+        <qualifiedname>learnql::debug::ExplainQuery::join</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>join_type</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>left_rows</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>right_rows</declname>
+        </param>
+        <briefdescription>
+<para>Explains a join. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/DebugUtils.hpp" line="243" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/DebugUtils.hpp" bodystart="243" bodyend="252"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Query explain utility. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/DebugUtils.hpp" line="219" column="1" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/DebugUtils.hpp" bodystart="219" bodyend="253"/>
+    <listofallmembers>
+      <member refid="classlearnql_1_1debug_1_1_explain_query_1a1e9a0cb48ab609bdcd83aba99467d0a4" prot="public" virt="non-virtual"><scope>learnql::debug::ExplainQuery</scope><name>index_scan</name></member>
+      <member refid="classlearnql_1_1debug_1_1_explain_query_1a4aa8c4c59dffed30632e9635ff3e3478" prot="public" virt="non-virtual"><scope>learnql::debug::ExplainQuery</scope><name>join</name></member>
+      <member refid="classlearnql_1_1debug_1_1_explain_query_1a15ab38416d64d557167e39ee51d4ecd1" prot="public" virt="non-virtual"><scope>learnql::debug::ExplainQuery</scope><name>table_scan</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

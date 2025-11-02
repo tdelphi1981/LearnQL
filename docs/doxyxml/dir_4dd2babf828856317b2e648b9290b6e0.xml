@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="dir_4dd2babf828856317b2e648b9290b6e0" kind="dir">
+    <compoundname>/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges</compoundname>
+    <innerfile refid="_adaptors_8hpp">Adaptors.hpp</innerfile>
+    <innerfile refid="_proxy_vector_8hpp">ProxyVector.hpp</innerfile>
+    <innerfile refid="_query_view_8hpp">QueryView.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,153 @@
+# Doxyfile for LearnQL
+# Configuration for generating XML output for Sphinx/Breathe integration
+
+# Project information
+PROJECT_NAME           = "LearnQL"
+PROJECT_NUMBER         = "1.0.0"
+PROJECT_BRIEF          = "Modern C++20 Database Library for Learning and Prototyping"
+OUTPUT_DIRECTORY       = .
+CREATE_SUBDIRS         = NO
+
+# Build settings
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = NO
+EXTRACT_STATIC         = YES
+EXTRACT_LOCAL_CLASSES  = YES
+HIDE_UNDOC_MEMBERS     = NO
+HIDE_UNDOC_CLASSES     = NO
+BRIEF_MEMBER_DESC      = YES
+REPEAT_BRIEF           = YES
+ALWAYS_DETAILED_SEC    = NO
+INLINE_INHERITED_MEMB  = NO
+JAVADOC_AUTOBRIEF      = YES
+QT_AUTOBRIEF           = NO
+MULTILINE_CPP_IS_BRIEF = NO
+INHERIT_DOCS           = YES
+SEPARATE_MEMBER_PAGES  = NO
+TAB_SIZE               = 4
+OPTIMIZE_OUTPUT_FOR_C  = NO
+OPTIMIZE_OUTPUT_JAVA   = NO
+BUILTIN_STL_SUPPORT    = YES
+CPP_CLI_SUPPORT        = NO
+SIP_SUPPORT            = NO
+IDL_PROPERTY_SUPPORT   = YES
+DISTRIBUTE_GROUP_DOC   = NO
+GROUP_NESTED_COMPOUNDS = NO
+SUBGROUPING            = YES
+INLINE_GROUPED_CLASSES = NO
+INLINE_SIMPLE_STRUCTS  = NO
+
+# Input settings
+INPUT                  = ../learnql
+INPUT_ENCODING         = UTF-8
+FILE_PATTERNS          = *.hpp *.h
+RECURSIVE              = YES
+EXCLUDE                =
+EXCLUDE_SYMLINKS       = NO
+EXCLUDE_PATTERNS       = */build/* */cmake-build-*/* */.git/*
+EXCLUDE_SYMBOLS        =
+EXAMPLE_PATH           = ../
+EXAMPLE_PATTERNS       = *.cpp
+EXAMPLE_RECURSIVE      = NO
+IMAGE_PATH             =
+INPUT_FILTER           =
+FILTER_PATTERNS        =
+FILTER_SOURCE_FILES    = NO
+FILTER_SOURCE_PATTERNS =
+
+# Source browsing
+SOURCE_BROWSER         = YES
+INLINE_SOURCES         = NO
+STRIP_CODE_COMMENTS    = YES
+REFERENCED_BY_RELATION = YES
+REFERENCES_RELATION    = YES
+REFERENCES_LINK_SOURCE = YES
+USE_HTAGS              = NO
+VERBATIM_HEADERS       = YES
+CLANG_ASSISTED_PARSING = NO
+CLANG_OPTIONS          = -std=c++20
+
+# Alphabetical index
+ALPHABETICAL_INDEX     = YES
+COLS_IN_ALPHA_INDEX    = 5
+IGNORE_PREFIX          =
+
+# HTML output (disabled, we only need XML for Sphinx)
+GENERATE_HTML          = NO
+HTML_OUTPUT            = html
+HTML_FILE_EXTENSION    = .html
+HTML_COLORSTYLE_HUE    = 220
+HTML_COLORSTYLE_SAT    = 100
+HTML_COLORSTYLE_GAMMA  = 80
+HTML_TIMESTAMP         = NO
+HTML_DYNAMIC_SECTIONS  = NO
+HTML_INDEX_NUM_ENTRIES = 100
+
+# LaTeX output (disabled)
+GENERATE_LATEX         = NO
+
+# RTF output (disabled)
+GENERATE_RTF           = NO
+
+# Man page output (disabled)
+GENERATE_MAN           = NO
+
+# XML output (ENABLED - this is what Breathe uses)
+GENERATE_XML           = YES
+XML_OUTPUT             = doxyxml
+XML_PROGRAMLISTING     = YES
+
+# Other outputs (disabled)
+GENERATE_DOCBOOK       = NO
+GENERATE_AUTOGEN_DEF   = NO
+GENERATE_PERLMOD       = NO
+
+# Preprocessor settings
+ENABLE_PREPROCESSING   = YES
+MACRO_EXPANSION        = YES
+EXPAND_ONLY_PREDEF     = NO
+SEARCH_INCLUDES        = YES
+INCLUDE_PATH           = ../learnql
+INCLUDE_FILE_PATTERNS  =
+PREDEFINED             = __cplusplus=202002L \
+                         DOXYGEN_SHOULD_SKIP_THIS
+EXPAND_AS_DEFINED      =
+SKIP_FUNCTION_MACROS   = YES
+
+# External references
+TAGFILES               =
+GENERATE_TAGFILE       =
+ALLEXTERNALS           = NO
+EXTERNAL_GROUPS        = YES
+EXTERNAL_PAGES         = YES
+
+# Dot/Graphviz settings
+CLASS_DIAGRAMS         = YES
+HIDE_UNDOC_RELATIONS   = YES
+HAVE_DOT               = YES
+DOT_NUM_THREADS        = 0
+DOT_FONTNAME           = Helvetica
+DOT_FONTSIZE           = 10
+CLASS_GRAPH            = YES
+COLLABORATION_GRAPH    = YES
+GROUP_GRAPHS           = YES
+UML_LOOK               = NO
+UML_LIMIT_NUM_FIELDS   = 10
+TEMPLATE_RELATIONS     = YES
+INCLUDE_GRAPH          = YES
+INCLUDED_BY_GRAPH      = YES
+CALL_GRAPH             = NO
+CALLER_GRAPH           = NO
+GRAPHICAL_HIERARCHY    = YES
+DIRECTORY_GRAPH        = YES
+DOT_IMAGE_FORMAT       = png
+INTERACTIVE_SVG        = NO
+DOT_GRAPH_MAX_NODES    = 50
+MAX_DOT_GRAPH_DEPTH    = 0
+DOT_TRANSPARENT        = NO
+DOT_MULTI_TARGETS      = NO
+GENERATE_LEGEND        = YES
+DOT_CLEANUP            = YES
+
+# Search engine
+SEARCHENGINE           = YES

@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="structlearnql_1_1core_1_1_database_1_1_table_base" kind="struct" language="C++" prot="private">
+    <compoundname>learnql::core::Database::TableBase</compoundname>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structlearnql_1_1core_1_1_database_1_1_table_base_1a4b91c3102c00d305a2e6b01d57a26466" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual learnql::core::Database::TableBase::~TableBase</definition>
+        <argsstring>()=default</argsstring>
+        <name>~TableBase</name>
+        <qualifiedname>learnql::core::Database::TableBase::~TableBase</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Database.hpp" line="366" column="17"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Base class for type-erased table storage. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Database.hpp" line="365" column="5" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Database.hpp" bodystart="365" bodyend="367"/>
+    <listofallmembers>
+      <member refid="structlearnql_1_1core_1_1_database_1_1_table_base_1a4b91c3102c00d305a2e6b01d57a26466" prot="public" virt="virtual"><scope>learnql::core::Database::TableBase</scope><name>~TableBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

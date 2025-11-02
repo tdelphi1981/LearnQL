@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="conceptlearnql_1_1query_1_1expressions_1_1_expression" kind="concept">
+    <compoundname>learnql::query::expressions::Expression</compoundname>
+    <includes refid="_expr_8hpp" local="no">Expr.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <initializer>template&lt;typename T&gt;
+concept <ref refid="conceptlearnql_1_1query_1_1expressions_1_1_expression" kindref="compound">learnql::query::expressions::Expression</ref> =  requires(const T&amp; expr) {
+    { expr.to_string() } -&gt; std::convertible_to&lt;std::string&gt;;
+}    </initializer>
+    <briefdescription>
+<para>Concept for expression types. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/Expr.hpp" line="102" column="1"/>
+  </compounddef>
+</doxygen>

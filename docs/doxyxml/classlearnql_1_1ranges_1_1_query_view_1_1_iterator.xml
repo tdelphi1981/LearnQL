@@ -1,0 +1,264 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classlearnql_1_1ranges_1_1_query_view_1_1_iterator" kind="class" language="C++" prot="public">
+    <compoundname>learnql::ranges::QueryView::Iterator</compoundname>
+    <includes refid="_query_view_8hpp" local="no">QueryView.hpp</includes>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1a6537b4013ebca1d4ac0f0bb6016d23a4" prot="public" static="no">
+        <type>std::forward_iterator_tag</type>
+        <definition>using learnql::ranges::QueryView&lt; T &gt;::Iterator::iterator_category =  std::forward_iterator_tag</definition>
+        <argsstring></argsstring>
+        <name>iterator_category</name>
+        <qualifiedname>learnql::ranges::QueryView::Iterator::iterator_category</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/QueryView.hpp" line="35" column="9" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/QueryView.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1aba0ed1824fcf532a49a2238981437ac9" prot="public" static="no">
+        <type>T</type>
+        <definition>using learnql::ranges::QueryView&lt; T &gt;::Iterator::value_type =  T</definition>
+        <argsstring></argsstring>
+        <name>value_type</name>
+        <qualifiedname>learnql::ranges::QueryView::Iterator::value_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/QueryView.hpp" line="36" column="9" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/QueryView.hpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1ae5e03f569558f52768df3ff0c8ffc7d3" prot="public" static="no">
+        <type>std::ptrdiff_t</type>
+        <definition>using learnql::ranges::QueryView&lt; T &gt;::Iterator::difference_type =  std::ptrdiff_t</definition>
+        <argsstring></argsstring>
+        <name>difference_type</name>
+        <qualifiedname>learnql::ranges::QueryView::Iterator::difference_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/QueryView.hpp" line="37" column="9" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/QueryView.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1ac0e873b38dc21c5978899fde538b4314" prot="public" static="no">
+        <type>T *</type>
+        <definition>using learnql::ranges::QueryView&lt; T &gt;::Iterator::pointer =  T*</definition>
+        <argsstring></argsstring>
+        <name>pointer</name>
+        <qualifiedname>learnql::ranges::QueryView::Iterator::pointer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/QueryView.hpp" line="38" column="9" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/QueryView.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1a672d45838ac348098e6ff2d4511dea3d" prot="public" static="no">
+        <type>T &amp;</type>
+        <definition>using learnql::ranges::QueryView&lt; T &gt;::Iterator::reference =  T&amp;</definition>
+        <argsstring></argsstring>
+        <name>reference</name>
+        <qualifiedname>learnql::ranges::QueryView::Iterator::reference</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/QueryView.hpp" line="39" column="9" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/QueryView.hpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1a7182fbefab8d2a9098eb43cf7918ab27" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; T &gt;::iterator</type>
+        <definition>std::vector&lt;T&gt;::iterator learnql::ranges::QueryView&lt; T &gt;::Iterator::it_</definition>
+        <argsstring></argsstring>
+        <name>it_</name>
+        <qualifiedname>learnql::ranges::QueryView::Iterator::it_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/QueryView.hpp" line="74" column="41" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/QueryView.hpp" bodystart="74" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1a3deadda366614c195e2878ec3835f88e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>learnql::ranges::QueryView&lt; T &gt;::Iterator::Iterator</definition>
+        <argsstring>()=default</argsstring>
+        <name>Iterator</name>
+        <qualifiedname>learnql::ranges::QueryView::Iterator::Iterator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/QueryView.hpp" line="41" column="9"/>
+        <referencedby refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1a27aed9f3ea67a677964fa51de28a5824" compoundref="_query_view_8hpp" startline="69" endline="71">learnql::ranges::QueryView&lt; T &gt;::Iterator::operator!=</referencedby>
+        <referencedby refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1aa7360abd909fca41a81d700a9fa697be" compoundref="_query_view_8hpp" startline="54" endline="57">learnql::ranges::QueryView&lt; T &gt;::Iterator::operator++</referencedby>
+        <referencedby refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1ac622a013247ee6513fcf605e00bcccfc" compoundref="_query_view_8hpp" startline="59" endline="63">learnql::ranges::QueryView&lt; T &gt;::Iterator::operator++</referencedby>
+        <referencedby refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1adf9a9358b475317bd816d7b47a0f5cd1" compoundref="_query_view_8hpp" startline="65" endline="67">learnql::ranges::QueryView&lt; T &gt;::Iterator::operator==</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1abaac6dd7293b0c67aed3d740cb7dece9" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>learnql::ranges::QueryView&lt; T &gt;::Iterator::Iterator</definition>
+        <argsstring>(typename std::vector&lt; T &gt;::iterator it)</argsstring>
+        <name>Iterator</name>
+        <qualifiedname>learnql::ranges::QueryView::Iterator::Iterator</qualifiedname>
+        <param>
+          <type>typename std::vector&lt; T &gt;::iterator</type>
+          <declname>it</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/QueryView.hpp" line="43" column="18" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/QueryView.hpp" bodystart="43" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1ae4d4bd64bdc0ed22459f019d91243a2d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1a672d45838ac348098e6ff2d4511dea3d" kindref="member">reference</ref></type>
+        <definition>reference learnql::ranges::QueryView&lt; T &gt;::Iterator::operator*</definition>
+        <argsstring>() const</argsstring>
+        <name>operator*</name>
+        <qualifiedname>learnql::ranges::QueryView::Iterator::operator*</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/QueryView.hpp" line="46" column="19" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/QueryView.hpp" bodystart="46" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1a0c05fe86540a3f972facadab791d81e0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1ac0e873b38dc21c5978899fde538b4314" kindref="member">pointer</ref></type>
+        <definition>pointer learnql::ranges::QueryView&lt; T &gt;::Iterator::operator-&gt;</definition>
+        <argsstring>() const</argsstring>
+        <name>operator-&gt;</name>
+        <qualifiedname>learnql::ranges::QueryView::Iterator::operator-&gt;</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/QueryView.hpp" line="50" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/QueryView.hpp" bodystart="50" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1aa7360abd909fca41a81d700a9fa697be" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1a3deadda366614c195e2878ec3835f88e" kindref="member">Iterator</ref> &amp;</type>
+        <definition>Iterator &amp; learnql::ranges::QueryView&lt; T &gt;::Iterator::operator++</definition>
+        <argsstring>()</argsstring>
+        <name>operator++</name>
+        <qualifiedname>learnql::ranges::QueryView::Iterator::operator++</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/QueryView.hpp" line="54" column="18" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/QueryView.hpp" bodystart="54" bodyend="57"/>
+        <references refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1a3deadda366614c195e2878ec3835f88e">learnql::ranges::QueryView&lt; T &gt;::Iterator::Iterator</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1ac622a013247ee6513fcf605e00bcccfc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1a3deadda366614c195e2878ec3835f88e" kindref="member">Iterator</ref></type>
+        <definition>Iterator learnql::ranges::QueryView&lt; T &gt;::Iterator::operator++</definition>
+        <argsstring>(int)</argsstring>
+        <name>operator++</name>
+        <qualifiedname>learnql::ranges::QueryView::Iterator::operator++</qualifiedname>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/QueryView.hpp" line="59" column="18" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/QueryView.hpp" bodystart="59" bodyend="63"/>
+        <references refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1a3deadda366614c195e2878ec3835f88e">learnql::ranges::QueryView&lt; T &gt;::Iterator::Iterator</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1adf9a9358b475317bd816d7b47a0f5cd1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool operator==</definition>
+        <argsstring>(const Iterator &amp;a, const Iterator &amp;b)</argsstring>
+        <name>operator==</name>
+        <qualifiedname>learnql::ranges::QueryView::Iterator::operator==</qualifiedname>
+        <param>
+          <type>const <ref refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1a3deadda366614c195e2878ec3835f88e" kindref="member">Iterator</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1a3deadda366614c195e2878ec3835f88e" kindref="member">Iterator</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/QueryView.hpp" line="65" column="21" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/QueryView.hpp" bodystart="65" bodyend="67"/>
+        <references refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1a3deadda366614c195e2878ec3835f88e">learnql::ranges::QueryView&lt; T &gt;::Iterator::Iterator</references>
+      </memberdef>
+      <memberdef kind="friend" id="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1a27aed9f3ea67a677964fa51de28a5824" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool operator!=</definition>
+        <argsstring>(const Iterator &amp;a, const Iterator &amp;b)</argsstring>
+        <name>operator!=</name>
+        <qualifiedname>learnql::ranges::QueryView::Iterator::operator!=</qualifiedname>
+        <param>
+          <type>const <ref refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1a3deadda366614c195e2878ec3835f88e" kindref="member">Iterator</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1a3deadda366614c195e2878ec3835f88e" kindref="member">Iterator</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/QueryView.hpp" line="69" column="21" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/QueryView.hpp" bodystart="69" bodyend="71"/>
+        <references refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1a3deadda366614c195e2878ec3835f88e">learnql::ranges::QueryView&lt; T &gt;::Iterator::Iterator</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para><ref refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator" kindref="compound">Iterator</ref> for the query view. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/QueryView.hpp" line="33" column="5" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/QueryView.hpp" bodystart="33" bodyend="75"/>
+    <listofallmembers>
+      <member refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1ae5e03f569558f52768df3ff0c8ffc7d3" prot="public" virt="non-virtual"><scope>learnql::ranges::QueryView::Iterator</scope><name>difference_type</name></member>
+      <member refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1a7182fbefab8d2a9098eb43cf7918ab27" prot="private" virt="non-virtual"><scope>learnql::ranges::QueryView::Iterator</scope><name>it_</name></member>
+      <member refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1a3deadda366614c195e2878ec3835f88e" prot="public" virt="non-virtual"><scope>learnql::ranges::QueryView::Iterator</scope><name>Iterator</name></member>
+      <member refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1abaac6dd7293b0c67aed3d740cb7dece9" prot="public" virt="non-virtual"><scope>learnql::ranges::QueryView::Iterator</scope><name>Iterator</name></member>
+      <member refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1a6537b4013ebca1d4ac0f0bb6016d23a4" prot="public" virt="non-virtual"><scope>learnql::ranges::QueryView::Iterator</scope><name>iterator_category</name></member>
+      <member refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1a27aed9f3ea67a677964fa51de28a5824" prot="public" virt="non-virtual"><scope>learnql::ranges::QueryView::Iterator</scope><name>operator!=</name></member>
+      <member refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1ae4d4bd64bdc0ed22459f019d91243a2d" prot="public" virt="non-virtual"><scope>learnql::ranges::QueryView::Iterator</scope><name>operator*</name></member>
+      <member refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1aa7360abd909fca41a81d700a9fa697be" prot="public" virt="non-virtual"><scope>learnql::ranges::QueryView::Iterator</scope><name>operator++</name></member>
+      <member refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1ac622a013247ee6513fcf605e00bcccfc" prot="public" virt="non-virtual"><scope>learnql::ranges::QueryView::Iterator</scope><name>operator++</name></member>
+      <member refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1a0c05fe86540a3f972facadab791d81e0" prot="public" virt="non-virtual"><scope>learnql::ranges::QueryView::Iterator</scope><name>operator-&gt;</name></member>
+      <member refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1adf9a9358b475317bd816d7b47a0f5cd1" prot="public" virt="non-virtual"><scope>learnql::ranges::QueryView::Iterator</scope><name>operator==</name></member>
+      <member refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1ac0e873b38dc21c5978899fde538b4314" prot="public" virt="non-virtual"><scope>learnql::ranges::QueryView::Iterator</scope><name>pointer</name></member>
+      <member refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1a672d45838ac348098e6ff2d4511dea3d" prot="public" virt="non-virtual"><scope>learnql::ranges::QueryView::Iterator</scope><name>reference</name></member>
+      <member refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1aba0ed1824fcf532a49a2238981437ac9" prot="public" virt="non-virtual"><scope>learnql::ranges::QueryView::Iterator</scope><name>value_type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

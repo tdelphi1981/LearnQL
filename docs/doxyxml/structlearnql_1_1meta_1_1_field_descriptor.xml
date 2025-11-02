@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="structlearnql_1_1meta_1_1_field_descriptor" kind="struct" language="C++" prot="public">
+    <compoundname>learnql::meta::FieldDescriptor</compoundname>
+    <includes refid="_type_info_8hpp" local="no">TypeInfo.hpp</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlearnql_1_1meta_1_1_field_descriptor_1a35c24192657ee025173a28debe13a968" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string learnql::meta::FieldDescriptor::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>learnql::meta::FieldDescriptor::name</qualifiedname>
+        <briefdescription>
+<para>Field name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/TypeInfo.hpp" line="60" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/TypeInfo.hpp" bodystart="60" bodyend="-1"/>
+        <referencedby refid="structlearnql_1_1meta_1_1_field_descriptor_1a37fc7ccb18ab62f8e3e3969d20048d02" compoundref="_type_info_8hpp" startline="69" endline="76">FieldDescriptor</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1meta_1_1_field_descriptor_1aaab485502a7b4673ef47d98700ebbca0" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacelearnql_1_1meta_1a8da5fbfe3fe249906be7f9784f4a7dc0" kindref="member">FieldType</ref></type>
+        <definition>FieldType learnql::meta::FieldDescriptor::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <qualifiedname>learnql::meta::FieldDescriptor::type</qualifiedname>
+        <briefdescription>
+<para>Field type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/TypeInfo.hpp" line="61" column="15" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/TypeInfo.hpp" bodystart="61" bodyend="-1"/>
+        <referencedby refid="structlearnql_1_1meta_1_1_field_descriptor_1a37fc7ccb18ab62f8e3e3969d20048d02" compoundref="_type_info_8hpp" startline="69" endline="76">FieldDescriptor</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1meta_1_1_field_descriptor_1a2a329b0f86a756b4f0bbb99769e81969" prot="public" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t learnql::meta::FieldDescriptor::offset</definition>
+        <argsstring></argsstring>
+        <name>offset</name>
+        <qualifiedname>learnql::meta::FieldDescriptor::offset</qualifiedname>
+        <briefdescription>
+<para>Offset in bytes from start of object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/TypeInfo.hpp" line="62" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/TypeInfo.hpp" bodystart="62" bodyend="-1"/>
+        <referencedby refid="structlearnql_1_1meta_1_1_field_descriptor_1a37fc7ccb18ab62f8e3e3969d20048d02" compoundref="_type_info_8hpp" startline="69" endline="76">FieldDescriptor</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1meta_1_1_field_descriptor_1a0e8a4f694e925a6f3608464d29645ce5" prot="public" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t learnql::meta::FieldDescriptor::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <qualifiedname>learnql::meta::FieldDescriptor::size</qualifiedname>
+        <briefdescription>
+<para>Size in bytes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/TypeInfo.hpp" line="63" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/TypeInfo.hpp" bodystart="63" bodyend="-1"/>
+        <referencedby refid="structlearnql_1_1meta_1_1_field_descriptor_1a37fc7ccb18ab62f8e3e3969d20048d02" compoundref="_type_info_8hpp" startline="69" endline="76">FieldDescriptor</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1meta_1_1_field_descriptor_1a57b5e87bc9a721e8bb745e4d234c5fd3" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool learnql::meta::FieldDescriptor::is_primary_key</definition>
+        <argsstring></argsstring>
+        <name>is_primary_key</name>
+        <qualifiedname>learnql::meta::FieldDescriptor::is_primary_key</qualifiedname>
+        <briefdescription>
+<para>Whether this field is a primary key. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/TypeInfo.hpp" line="64" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/TypeInfo.hpp" bodystart="64" bodyend="-1"/>
+        <referencedby refid="structlearnql_1_1meta_1_1_field_descriptor_1a37fc7ccb18ab62f8e3e3969d20048d02" compoundref="_type_info_8hpp" startline="69" endline="76">FieldDescriptor</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structlearnql_1_1meta_1_1_field_descriptor_1a37fc7ccb18ab62f8e3e3969d20048d02" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>learnql::meta::FieldDescriptor::FieldDescriptor</definition>
+        <argsstring>(std::string field_name, FieldType field_type, std::size_t field_offset, std::size_t field_size, bool is_pk=false)</argsstring>
+        <name>FieldDescriptor</name>
+        <qualifiedname>learnql::meta::FieldDescriptor::FieldDescriptor</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>field_name</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacelearnql_1_1meta_1a8da5fbfe3fe249906be7f9784f4a7dc0" kindref="member">FieldType</ref></type>
+          <declname>field_type</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>field_offset</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>field_size</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>is_pk</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/TypeInfo.hpp" line="69" column="5" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/TypeInfo.hpp" bodystart="69" bodyend="76"/>
+        <references refid="structlearnql_1_1meta_1_1_field_descriptor_1a57b5e87bc9a721e8bb745e4d234c5fd3" compoundref="_type_info_8hpp" startline="64">is_primary_key</references>
+        <references refid="structlearnql_1_1meta_1_1_field_descriptor_1a35c24192657ee025173a28debe13a968" compoundref="_type_info_8hpp" startline="60">name</references>
+        <references refid="structlearnql_1_1meta_1_1_field_descriptor_1a2a329b0f86a756b4f0bbb99769e81969" compoundref="_type_info_8hpp" startline="62">offset</references>
+        <references refid="structlearnql_1_1meta_1_1_field_descriptor_1a0e8a4f694e925a6f3608464d29645ce5" compoundref="_type_info_8hpp" startline="63">size</references>
+        <references refid="structlearnql_1_1meta_1_1_field_descriptor_1aaab485502a7b4673ef47d98700ebbca0" compoundref="_type_info_8hpp" startline="61">type</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Descriptor for a single field in a type. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>learnql::meta::FieldDescriptor</label>
+        <link refid="structlearnql_1_1meta_1_1_field_descriptor"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>name</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="2">
+        <label>std::string</label>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/TypeInfo.hpp" line="59" column="1" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta/TypeInfo.hpp" bodystart="59" bodyend="77"/>
+    <listofallmembers>
+      <member refid="structlearnql_1_1meta_1_1_field_descriptor_1a37fc7ccb18ab62f8e3e3969d20048d02" prot="public" virt="non-virtual"><scope>learnql::meta::FieldDescriptor</scope><name>FieldDescriptor</name></member>
+      <member refid="structlearnql_1_1meta_1_1_field_descriptor_1a57b5e87bc9a721e8bb745e4d234c5fd3" prot="public" virt="non-virtual"><scope>learnql::meta::FieldDescriptor</scope><name>is_primary_key</name></member>
+      <member refid="structlearnql_1_1meta_1_1_field_descriptor_1a35c24192657ee025173a28debe13a968" prot="public" virt="non-virtual"><scope>learnql::meta::FieldDescriptor</scope><name>name</name></member>
+      <member refid="structlearnql_1_1meta_1_1_field_descriptor_1a2a329b0f86a756b4f0bbb99769e81969" prot="public" virt="non-virtual"><scope>learnql::meta::FieldDescriptor</scope><name>offset</name></member>
+      <member refid="structlearnql_1_1meta_1_1_field_descriptor_1a0e8a4f694e925a6f3608464d29645ce5" prot="public" virt="non-virtual"><scope>learnql::meta::FieldDescriptor</scope><name>size</name></member>
+      <member refid="structlearnql_1_1meta_1_1_field_descriptor_1aaab485502a7b4673ef47d98700ebbca0" prot="public" virt="non-virtual"><scope>learnql::meta::FieldDescriptor</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

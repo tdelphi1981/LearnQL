@@ -1,0 +1,604 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classlearnql_1_1storage_1_1_page" kind="class" language="C++" prot="public">
+    <compoundname>learnql::storage::Page</compoundname>
+    <includes refid="_page_8hpp" local="no">Page.hpp</includes>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classlearnql_1_1storage_1_1_page_1a037494cfeb8b70d99a80807b14a2705a" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t learnql::storage::Page::DATA_SIZE</definition>
+        <argsstring></argsstring>
+        <name>DATA_SIZE</name>
+        <qualifiedname>learnql::storage::Page::DATA_SIZE</qualifiedname>
+        <initializer>= <ref refid="namespacelearnql_1_1storage_1ae36f10f66bb5104ebab3a7cd143e444a" kindref="member">PAGE_SIZE</ref> - sizeof(<ref refid="structlearnql_1_1storage_1_1_page_header" kindref="compound">PageHeader</ref>)</initializer>
+        <briefdescription>
+<para>Size of data section. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" line="114" column="34" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" bodystart="114" bodyend="-1"/>
+        <referencedby refid="classlearnql_1_1storage_1_1_page_1a089bf89139d2c70f381464edb404ffcc" compoundref="_page_8hpp" startline="212" endline="214">available_space</referencedby>
+        <referencedby refid="classlearnql_1_1storage_1_1_page_1a6b22ac5bdc5dacf708984f33e5c6729d" compoundref="_page_8hpp" startline="193" endline="198">read_data</referencedby>
+        <referencedby refid="classlearnql_1_1storage_1_1_page_1ad133e6780577b3d1d6f9ec20acb02e47" compoundref="_page_8hpp" startline="179" endline="184">write_data</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classlearnql_1_1storage_1_1_page_1a6514e6d943a61066097a430c64f58861" prot="private" static="no" mutable="no">
+        <type><ref refid="structlearnql_1_1storage_1_1_page_header" kindref="compound">PageHeader</ref></type>
+        <definition>PageHeader learnql::storage::Page::header_</definition>
+        <argsstring></argsstring>
+        <name>header_</name>
+        <qualifiedname>learnql::storage::Page::header_</qualifiedname>
+        <briefdescription>
+<para><ref refid="classlearnql_1_1storage_1_1_page" kindref="compound">Page</ref> metadata. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" line="271" column="16" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" bodystart="271" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlearnql_1_1storage_1_1_page_1a1db84631bb6c0ce621fbfbd0505c5660" prot="private" static="no" mutable="no">
+        <type>std::array&lt; uint8_t, <ref refid="classlearnql_1_1storage_1_1_page_1a037494cfeb8b70d99a80807b14a2705a" kindref="member">DATA_SIZE</ref> &gt;</type>
+        <definition>std::array&lt;uint8_t, DATA_SIZE&gt; learnql::storage::Page::data_</definition>
+        <argsstring></argsstring>
+        <name>data_</name>
+        <qualifiedname>learnql::storage::Page::data_</qualifiedname>
+        <briefdescription>
+<para><ref refid="classlearnql_1_1storage_1_1_page" kindref="compound">Page</ref> data section. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" line="272" column="16" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" bodystart="272" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlearnql_1_1storage_1_1_page_1a7e2577f6318136044bbe678dabc6f968" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>learnql::storage::Page::Page</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>Page</name>
+        <qualifiedname>learnql::storage::Page::Page</qualifiedname>
+        <briefdescription>
+<para>Default constructor - creates a free page. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" line="119" column="5" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" bodystart="119" bodyend="119"/>
+        <referencedby refid="classlearnql_1_1storage_1_1_page_1a28332f6163f4485eb04977f7b0164d3c">operator=</referencedby>
+        <referencedby refid="classlearnql_1_1storage_1_1_page_1afdfde3962fb6ab42795b0fba9c4910bb">operator=</referencedby>
+        <referencedby refid="classlearnql_1_1storage_1_1_page_1acbdd663d6cf727706a19fd1185aab4a5">Page</referencedby>
+        <referencedby refid="classlearnql_1_1storage_1_1_page_1a1e92264f725a6e773d506f51d5c84949">Page</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1storage_1_1_page_1a24ff8e6651dac5e0dde09aaf77270894" prot="public" static="no" const="no" explicit="yes" inline="yes" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>learnql::storage::Page::Page</definition>
+        <argsstring>(uint64_t page_id, PageType type=PageType::DATA) noexcept</argsstring>
+        <name>Page</name>
+        <qualifiedname>learnql::storage::Page::Page</qualifiedname>
+        <param>
+          <type>uint64_t</type>
+          <declname>page_id</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacelearnql_1_1storage_1ae05b45a9b02a6b9290c9867f77f420b7" kindref="member">PageType</ref></type>
+          <declname>type</declname>
+          <defval><ref refid="namespacelearnql_1_1storage_1ae05b45a9b02a6b9290c9867f77f420b7ae44f9e348e41cb272efa87387728571b" kindref="member">PageType::DATA</ref></defval>
+        </param>
+        <briefdescription>
+<para>Constructs a page with specific type and ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>page_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unique page identifier </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of page </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" line="126" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" bodystart="126" bodyend="130"/>
+        <references refid="namespacelearnql_1_1storage_1ae05b45a9b02a6b9290c9867f77f420b7ae44f9e348e41cb272efa87387728571b" compoundref="_page_8hpp" startline="30">learnql::storage::DATA</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1storage_1_1_page_1acbdd663d6cf727706a19fd1185aab4a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>learnql::storage::Page::Page</definition>
+        <argsstring>(const Page &amp;)=default</argsstring>
+        <name>Page</name>
+        <qualifiedname>learnql::storage::Page::Page</qualifiedname>
+        <param>
+          <type>const Page &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" line="133" column="5"/>
+        <references refid="classlearnql_1_1storage_1_1_page_1a7e2577f6318136044bbe678dabc6f968" compoundref="_page_8hpp" startline="119" endline="119">Page</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1storage_1_1_page_1a28332f6163f4485eb04977f7b0164d3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classlearnql_1_1storage_1_1_page_1a7e2577f6318136044bbe678dabc6f968" kindref="member">Page</ref> &amp;</type>
+        <definition>Page &amp; learnql::storage::Page::operator=</definition>
+        <argsstring>(const Page &amp;)=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>learnql::storage::Page::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classlearnql_1_1storage_1_1_page_1a7e2577f6318136044bbe678dabc6f968" kindref="member">Page</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" line="134" column="10"/>
+        <references refid="classlearnql_1_1storage_1_1_page_1a7e2577f6318136044bbe678dabc6f968" compoundref="_page_8hpp" startline="119" endline="119">Page</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1storage_1_1_page_1a1e92264f725a6e773d506f51d5c84949" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>learnql::storage::Page::Page</definition>
+        <argsstring>(Page &amp;&amp;) noexcept=default</argsstring>
+        <name>Page</name>
+        <qualifiedname>learnql::storage::Page::Page</qualifiedname>
+        <param>
+          <type>Page &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" line="137" column="5"/>
+        <references refid="classlearnql_1_1storage_1_1_page_1a7e2577f6318136044bbe678dabc6f968" compoundref="_page_8hpp" startline="119" endline="119">Page</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1storage_1_1_page_1afdfde3962fb6ab42795b0fba9c4910bb" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type><ref refid="classlearnql_1_1storage_1_1_page_1a7e2577f6318136044bbe678dabc6f968" kindref="member">Page</ref> &amp;</type>
+        <definition>Page &amp; learnql::storage::Page::operator=</definition>
+        <argsstring>(Page &amp;&amp;) noexcept=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>learnql::storage::Page::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classlearnql_1_1storage_1_1_page_1a7e2577f6318136044bbe678dabc6f968" kindref="member">Page</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" line="138" column="10"/>
+        <references refid="classlearnql_1_1storage_1_1_page_1a7e2577f6318136044bbe678dabc6f968" compoundref="_page_8hpp" startline="119" endline="119">Page</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1storage_1_1_page_1a968a9d7e20aedb1f9d45450758e147a9" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="structlearnql_1_1storage_1_1_page_header" kindref="compound">PageHeader</ref> &amp;</type>
+        <definition>PageHeader &amp; learnql::storage::Page::header</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>header</name>
+        <qualifiedname>learnql::storage::Page::header</qualifiedname>
+        <briefdescription>
+<para>Gets the page header. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Reference to the header </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" line="144" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" bodystart="144" bodyend="146"/>
+        <references refid="classlearnql_1_1storage_1_1_page_1a968a9d7e20aedb1f9d45450758e147a9" compoundref="_page_8hpp" startline="144" endline="146">header</references>
+        <referencedby refid="classlearnql_1_1storage_1_1_page_1a968a9d7e20aedb1f9d45450758e147a9" compoundref="_page_8hpp" startline="144" endline="146">header</referencedby>
+        <referencedby refid="classlearnql_1_1storage_1_1_storage_engine_1ac93edcca8ac34e0d45ecebdf6072cc43" compoundref="_storage_engine_8hpp" startline="139" endline="177">learnql::storage::StorageEngine::read_page</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1storage_1_1_page_1a451adee85c63366ea62b69c7d2e2a5a6" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>const <ref refid="structlearnql_1_1storage_1_1_page_header" kindref="compound">PageHeader</ref> &amp;</type>
+        <definition>const PageHeader &amp; learnql::storage::Page::header</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>header</name>
+        <qualifiedname>learnql::storage::Page::header</qualifiedname>
+        <briefdescription>
+<para>Gets the page header (const). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Const reference to the header </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" line="152" column="23" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" bodystart="152" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1storage_1_1_page_1a9685692b30ac1ed39343b5a35798312b" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>std::span&lt; uint8_t &gt;</type>
+        <definition>std::span&lt; uint8_t &gt; learnql::storage::Page::data</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>data</name>
+        <qualifiedname>learnql::storage::Page::data</qualifiedname>
+        <briefdescription>
+<para>Gets a view of the data section. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::span providing safe access to data </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" line="160" column="16" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" bodystart="160" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1storage_1_1_page_1af2b9c44f3c4ae656e68b12979f0692f1" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>std::span&lt; const uint8_t &gt;</type>
+        <definition>std::span&lt; const uint8_t &gt; learnql::storage::Page::data</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>data</name>
+        <qualifiedname>learnql::storage::Page::data</qualifiedname>
+        <briefdescription>
+<para>Gets a view of the data section (const). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::span providing safe read-only access to data </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" line="168" column="16" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" bodystart="168" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1storage_1_1_page_1ad133e6780577b3d1d6f9ec20acb02e47" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::storage::Page::write_data</definition>
+        <argsstring>(std::size_t offset, const void *src, std::size_t size)</argsstring>
+        <name>write_data</name>
+        <qualifiedname>learnql::storage::Page::write_data</qualifiedname>
+        <param>
+          <type>std::size_t</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Writes data to the page. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Offset in data section to write to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Source data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of bytes to write </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::out_of_range</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if offset + size exceeds page size </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" line="179" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" bodystart="179" bodyend="184"/>
+        <references refid="classlearnql_1_1storage_1_1_page_1a037494cfeb8b70d99a80807b14a2705a" compoundref="_page_8hpp" startline="114">DATA_SIZE</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1storage_1_1_page_1a6b22ac5bdc5dacf708984f33e5c6729d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::storage::Page::read_data</definition>
+        <argsstring>(std::size_t offset, void *dest, std::size_t size) const</argsstring>
+        <name>read_data</name>
+        <qualifiedname>learnql::storage::Page::read_data</qualifiedname>
+        <param>
+          <type>std::size_t</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Reads data from the page. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Offset in data section to read from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dest</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Destination buffer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of bytes to read </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::out_of_range</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if offset + size exceeds page size </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" line="193" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" bodystart="193" bodyend="198"/>
+        <references refid="classlearnql_1_1storage_1_1_page_1a037494cfeb8b70d99a80807b14a2705a" compoundref="_page_8hpp" startline="114">DATA_SIZE</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1storage_1_1_page_1a03549972dd82409dcdecd9a696ff3b31" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::storage::Page::clear</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>clear</name>
+        <qualifiedname>learnql::storage::Page::clear</qualifiedname>
+        <briefdescription>
+<para>Clears the page (resets to free state). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" line="203" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" bodystart="203" bodyend="206"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1storage_1_1_page_1a089bf89139d2c70f381464edb404ffcc" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>std::size_t learnql::storage::Page::available_space</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>available_space</name>
+        <qualifiedname>learnql::storage::Page::available_space</qualifiedname>
+        <briefdescription>
+<para>Calculates available free space in bytes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Number of bytes available </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" line="212" column="18" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" bodystart="212" bodyend="214"/>
+        <references refid="classlearnql_1_1storage_1_1_page_1a037494cfeb8b70d99a80807b14a2705a" compoundref="_page_8hpp" startline="114">DATA_SIZE</references>
+        <referencedby refid="classlearnql_1_1storage_1_1_page_1a0aa3b1b9bf8b132b53058476c009ba4e" compoundref="_page_8hpp" startline="221" endline="223">can_fit</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1storage_1_1_page_1a0aa3b1b9bf8b132b53058476c009ba4e" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool learnql::storage::Page::can_fit</definition>
+        <argsstring>(std::size_t size) const noexcept</argsstring>
+        <name>can_fit</name>
+        <qualifiedname>learnql::storage::Page::can_fit</qualifiedname>
+        <param>
+          <type>std::size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Checks if the page can fit data of given size. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size in bytes </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if data fits </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" line="221" column="11" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" bodystart="221" bodyend="223"/>
+        <references refid="classlearnql_1_1storage_1_1_page_1a089bf89139d2c70f381464edb404ffcc" compoundref="_page_8hpp" startline="212" endline="214">available_space</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1storage_1_1_page_1aa5eebaadb86eb2038f21fa250c427f4b" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>const void *</type>
+        <definition>const void * learnql::storage::Page::raw_data</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>raw_data</name>
+        <qualifiedname>learnql::storage::Page::raw_data</qualifiedname>
+        <briefdescription>
+<para>Gets raw pointer to page data (for I/O operations). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Pointer to beginning of page (header) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" line="229" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" bodystart="229" bodyend="231"/>
+        <referencedby refid="classlearnql_1_1storage_1_1_storage_engine_1ac0fbe07cbe28db28214acbb17116195f" compoundref="_storage_engine_8hpp" startline="198" endline="230">learnql::storage::StorageEngine::flush_all</referencedby>
+        <referencedby refid="classlearnql_1_1storage_1_1_storage_engine_1a5ad865c5f01c699003f7d0dedbfe59ff" compoundref="_storage_engine_8hpp" startline="236" endline="262">learnql::storage::StorageEngine::flush_page</referencedby>
+        <referencedby refid="classlearnql_1_1storage_1_1_storage_engine_1ac93edcca8ac34e0d45ecebdf6072cc43" compoundref="_storage_engine_8hpp" startline="139" endline="177">learnql::storage::StorageEngine::read_page</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1storage_1_1_page_1abb823df1ee0752514ac42dbe27680998" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * learnql::storage::Page::raw_data</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>raw_data</name>
+        <qualifiedname>learnql::storage::Page::raw_data</qualifiedname>
+        <briefdescription>
+<para>Gets raw pointer to page data (for I/O operations). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Pointer to beginning of page (header) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" line="237" column="11" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" bodystart="237" bodyend="239"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1storage_1_1_page_1a6394bb0e398884a3184309eb9ba82dd4" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t learnql::storage::Page::compute_checksum</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>compute_checksum</name>
+        <qualifiedname>learnql::storage::Page::compute_checksum</qualifiedname>
+        <briefdescription>
+<para>Computes CRC32 checksum of page data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Checksum value </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" line="245" column="15" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" bodystart="245" bodyend="253"/>
+        <referencedby refid="classlearnql_1_1storage_1_1_page_1a98e4779d7d00de208006037502883767" compoundref="_page_8hpp" startline="258" endline="260">update_checksum</referencedby>
+        <referencedby refid="classlearnql_1_1storage_1_1_page_1a1f654677b1d5488288b5a0a83787f638" compoundref="_page_8hpp" startline="266" endline="268">validate_checksum</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1storage_1_1_page_1a98e4779d7d00de208006037502883767" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::storage::Page::update_checksum</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>update_checksum</name>
+        <qualifiedname>learnql::storage::Page::update_checksum</qualifiedname>
+        <briefdescription>
+<para>Updates the checksum in the header. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" line="258" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" bodystart="258" bodyend="260"/>
+        <references refid="classlearnql_1_1storage_1_1_page_1a6394bb0e398884a3184309eb9ba82dd4" compoundref="_page_8hpp" startline="245" endline="253">compute_checksum</references>
+        <referencedby refid="classlearnql_1_1storage_1_1_storage_engine_1ac0fbe07cbe28db28214acbb17116195f" compoundref="_storage_engine_8hpp" startline="198" endline="230">learnql::storage::StorageEngine::flush_all</referencedby>
+        <referencedby refid="classlearnql_1_1storage_1_1_storage_engine_1a5ad865c5f01c699003f7d0dedbfe59ff" compoundref="_storage_engine_8hpp" startline="236" endline="262">learnql::storage::StorageEngine::flush_page</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1storage_1_1_page_1a1f654677b1d5488288b5a0a83787f638" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool learnql::storage::Page::validate_checksum</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>validate_checksum</name>
+        <qualifiedname>learnql::storage::Page::validate_checksum</qualifiedname>
+        <briefdescription>
+<para>Validates the checksum. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if checksum is valid </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" line="266" column="11" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" bodystart="266" bodyend="268"/>
+        <references refid="classlearnql_1_1storage_1_1_page_1a6394bb0e398884a3184309eb9ba82dd4" compoundref="_page_8hpp" startline="245" endline="253">compute_checksum</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>A single page in the storage system (4KB). </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Fixed-size page containing header and data</para>
+<para>Layout:<itemizedlist>
+<listitem><para>Header: 64 bytes (<ref refid="structlearnql_1_1storage_1_1_page_header" kindref="compound">PageHeader</ref>)</para>
+</listitem><listitem><para>Data: 4032 bytes (PAGE_SIZE - sizeof(PageHeader))</para>
+</listitem></itemizedlist>
+</para>
+<para>Features:<itemizedlist>
+<listitem><para>RAII-based memory management</para>
+</listitem><listitem><para>Safe data access via std::span</para>
+</listitem><listitem><para>Compile-time size validation</para>
+</listitem><listitem><para>C++20 three-way comparison </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" line="109" column="1" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp" bodystart="109" bodyend="273"/>
+    <listofallmembers>
+      <member refid="classlearnql_1_1storage_1_1_page_1a089bf89139d2c70f381464edb404ffcc" prot="public" virt="non-virtual"><scope>learnql::storage::Page</scope><name>available_space</name></member>
+      <member refid="classlearnql_1_1storage_1_1_page_1a0aa3b1b9bf8b132b53058476c009ba4e" prot="public" virt="non-virtual"><scope>learnql::storage::Page</scope><name>can_fit</name></member>
+      <member refid="classlearnql_1_1storage_1_1_page_1a03549972dd82409dcdecd9a696ff3b31" prot="public" virt="non-virtual"><scope>learnql::storage::Page</scope><name>clear</name></member>
+      <member refid="classlearnql_1_1storage_1_1_page_1a6394bb0e398884a3184309eb9ba82dd4" prot="public" virt="non-virtual"><scope>learnql::storage::Page</scope><name>compute_checksum</name></member>
+      <member refid="classlearnql_1_1storage_1_1_page_1a9685692b30ac1ed39343b5a35798312b" prot="public" virt="non-virtual"><scope>learnql::storage::Page</scope><name>data</name></member>
+      <member refid="classlearnql_1_1storage_1_1_page_1af2b9c44f3c4ae656e68b12979f0692f1" prot="public" virt="non-virtual"><scope>learnql::storage::Page</scope><name>data</name></member>
+      <member refid="classlearnql_1_1storage_1_1_page_1a1db84631bb6c0ce621fbfbd0505c5660" prot="private" virt="non-virtual"><scope>learnql::storage::Page</scope><name>data_</name></member>
+      <member refid="classlearnql_1_1storage_1_1_page_1a037494cfeb8b70d99a80807b14a2705a" prot="public" virt="non-virtual"><scope>learnql::storage::Page</scope><name>DATA_SIZE</name></member>
+      <member refid="classlearnql_1_1storage_1_1_page_1a968a9d7e20aedb1f9d45450758e147a9" prot="public" virt="non-virtual"><scope>learnql::storage::Page</scope><name>header</name></member>
+      <member refid="classlearnql_1_1storage_1_1_page_1a451adee85c63366ea62b69c7d2e2a5a6" prot="public" virt="non-virtual"><scope>learnql::storage::Page</scope><name>header</name></member>
+      <member refid="classlearnql_1_1storage_1_1_page_1a6514e6d943a61066097a430c64f58861" prot="private" virt="non-virtual"><scope>learnql::storage::Page</scope><name>header_</name></member>
+      <member refid="classlearnql_1_1storage_1_1_page_1a28332f6163f4485eb04977f7b0164d3c" prot="public" virt="non-virtual"><scope>learnql::storage::Page</scope><name>operator=</name></member>
+      <member refid="classlearnql_1_1storage_1_1_page_1afdfde3962fb6ab42795b0fba9c4910bb" prot="public" virt="non-virtual"><scope>learnql::storage::Page</scope><name>operator=</name></member>
+      <member refid="classlearnql_1_1storage_1_1_page_1a7e2577f6318136044bbe678dabc6f968" prot="public" virt="non-virtual"><scope>learnql::storage::Page</scope><name>Page</name></member>
+      <member refid="classlearnql_1_1storage_1_1_page_1a24ff8e6651dac5e0dde09aaf77270894" prot="public" virt="non-virtual"><scope>learnql::storage::Page</scope><name>Page</name></member>
+      <member refid="classlearnql_1_1storage_1_1_page_1acbdd663d6cf727706a19fd1185aab4a5" prot="public" virt="non-virtual"><scope>learnql::storage::Page</scope><name>Page</name></member>
+      <member refid="classlearnql_1_1storage_1_1_page_1a1e92264f725a6e773d506f51d5c84949" prot="public" virt="non-virtual"><scope>learnql::storage::Page</scope><name>Page</name></member>
+      <member refid="classlearnql_1_1storage_1_1_page_1aa5eebaadb86eb2038f21fa250c427f4b" prot="public" virt="non-virtual"><scope>learnql::storage::Page</scope><name>raw_data</name></member>
+      <member refid="classlearnql_1_1storage_1_1_page_1abb823df1ee0752514ac42dbe27680998" prot="public" virt="non-virtual"><scope>learnql::storage::Page</scope><name>raw_data</name></member>
+      <member refid="classlearnql_1_1storage_1_1_page_1a6b22ac5bdc5dacf708984f33e5c6729d" prot="public" virt="non-virtual"><scope>learnql::storage::Page</scope><name>read_data</name></member>
+      <member refid="classlearnql_1_1storage_1_1_page_1a98e4779d7d00de208006037502883767" prot="public" virt="non-virtual"><scope>learnql::storage::Page</scope><name>update_checksum</name></member>
+      <member refid="classlearnql_1_1storage_1_1_page_1a1f654677b1d5488288b5a0a83787f638" prot="public" virt="non-virtual"><scope>learnql::storage::Page</scope><name>validate_checksum</name></member>
+      <member refid="classlearnql_1_1storage_1_1_page_1ad133e6780577b3d1d6f9ec20acb02e47" prot="public" virt="non-virtual"><scope>learnql::storage::Page</scope><name>write_data</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

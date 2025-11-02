@@ -1,0 +1,763 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classlearnql_1_1catalog_1_1_system_catalog" kind="class" language="C++" prot="public">
+    <compoundname>learnql::catalog::SystemCatalog</compoundname>
+    <includes refid="_system_catalog_8hpp" local="no">SystemCatalog.hpp</includes>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classlearnql_1_1catalog_1_1_system_catalog_1aa8d0b2fc479b1441402cf2c77a6ac338" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class core::Database</definition>
+        <argsstring></argsstring>
+        <name>core::Database</name>
+        <qualifiedname>learnql::catalog::SystemCatalog::Database</qualifiedname>
+        <param>
+          <type><ref refid="classlearnql_1_1core_1_1_database" kindref="compound">core::Database</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/SystemCatalog.hpp" line="135" column="18" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/SystemCatalog.hpp" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classlearnql_1_1catalog_1_1_system_catalog_1ac536d0288c5dc7925fff074889a92963" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>BatchSize</declname>
+            <defname>BatchSize</defname>
+          </param>
+        </templateparamlist>
+        <type>class</type>
+        <definition>friend class core::Table</definition>
+        <argsstring></argsstring>
+        <name>core::Table</name>
+        <qualifiedname>learnql::catalog::SystemCatalog::Table</qualifiedname>
+        <param>
+          <type><ref refid="classlearnql_1_1core_1_1_table" kindref="compound">core::Table</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/SystemCatalog.hpp" line="139" column="18" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/SystemCatalog.hpp" bodystart="139" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classlearnql_1_1catalog_1_1_system_catalog_1ae26472e8348bed712adcb8abefd8fdb6" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classlearnql_1_1storage_1_1_storage_engine" kindref="compound">storage::StorageEngine</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;storage::StorageEngine&gt; learnql::catalog::SystemCatalog::storage_</definition>
+        <argsstring></argsstring>
+        <name>storage_</name>
+        <qualifiedname>learnql::catalog::SystemCatalog::storage_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/SystemCatalog.hpp" line="354" column="21" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/SystemCatalog.hpp" bodystart="354" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlearnql_1_1catalog_1_1_system_catalog_1aa38e8f5f8c5a6ecf760f6d5b527b3751" prot="private" static="no" mutable="no">
+        <type><ref refid="classlearnql_1_1core_1_1_read_only_table" kindref="compound">core::ReadOnlyTable</ref>&lt; <ref refid="structlearnql_1_1catalog_1_1_table_metadata" kindref="compound">TableMetadata</ref> &gt;</type>
+        <definition>core::ReadOnlyTable&lt;TableMetadata&gt; learnql::catalog::SystemCatalog::tables_table_</definition>
+        <argsstring></argsstring>
+        <name>tables_table_</name>
+        <qualifiedname>learnql::catalog::SystemCatalog::tables_table_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/SystemCatalog.hpp" line="355" column="25" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/SystemCatalog.hpp" bodystart="355" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlearnql_1_1catalog_1_1_system_catalog_1a6ced0d2606db8ed4777ea40dc6832527" prot="private" static="no" mutable="no">
+        <type><ref refid="classlearnql_1_1core_1_1_read_only_table" kindref="compound">core::ReadOnlyTable</ref>&lt; <ref refid="structlearnql_1_1catalog_1_1_field_metadata" kindref="compound">FieldMetadata</ref> &gt;</type>
+        <definition>core::ReadOnlyTable&lt;FieldMetadata&gt; learnql::catalog::SystemCatalog::fields_table_</definition>
+        <argsstring></argsstring>
+        <name>fields_table_</name>
+        <qualifiedname>learnql::catalog::SystemCatalog::fields_table_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/SystemCatalog.hpp" line="356" column="25" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/SystemCatalog.hpp" bodystart="356" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlearnql_1_1catalog_1_1_system_catalog_1acfcee08f7184a5c0d6b6231c9efc80ae" prot="private" static="no" mutable="no">
+        <type><ref refid="classlearnql_1_1core_1_1_read_only_table" kindref="compound">core::ReadOnlyTable</ref>&lt; <ref refid="structlearnql_1_1catalog_1_1_index_metadata" kindref="compound">IndexMetadata</ref> &gt;</type>
+        <definition>core::ReadOnlyTable&lt;IndexMetadata&gt; learnql::catalog::SystemCatalog::indexes_table_</definition>
+        <argsstring></argsstring>
+        <name>indexes_table_</name>
+        <qualifiedname>learnql::catalog::SystemCatalog::indexes_table_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/SystemCatalog.hpp" line="357" column="25" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/SystemCatalog.hpp" bodystart="357" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlearnql_1_1catalog_1_1_system_catalog_1a5f0a7f2212b6629ab582cca072d973d1" prot="private" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t learnql::catalog::SystemCatalog::next_field_id_</definition>
+        <argsstring></argsstring>
+        <name>next_field_id_</name>
+        <qualifiedname>learnql::catalog::SystemCatalog::next_field_id_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/SystemCatalog.hpp" line="358" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/SystemCatalog.hpp" bodystart="358" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlearnql_1_1catalog_1_1_system_catalog_1a196d8d62e7270578495ccb552d23af23" prot="private" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t learnql::catalog::SystemCatalog::next_index_id_</definition>
+        <argsstring></argsstring>
+        <name>next_index_id_</name>
+        <qualifiedname>learnql::catalog::SystemCatalog::next_index_id_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/SystemCatalog.hpp" line="359" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/SystemCatalog.hpp" bodystart="359" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlearnql_1_1catalog_1_1_system_catalog_1a73623ff94e06cd8a2f9bb269bbb5169e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>learnql::catalog::SystemCatalog::SystemCatalog</definition>
+        <argsstring>(std::shared_ptr&lt; storage::StorageEngine &gt; storage, uint64_t sys_tables_root, uint64_t sys_fields_root, uint64_t sys_indexes_root)</argsstring>
+        <name>SystemCatalog</name>
+        <qualifiedname>learnql::catalog::SystemCatalog::SystemCatalog</qualifiedname>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classlearnql_1_1storage_1_1_storage_engine" kindref="compound">storage::StorageEngine</ref> &gt;</type>
+          <declname>storage</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>sys_tables_root</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>sys_fields_root</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>sys_indexes_root</declname>
+        </param>
+        <briefdescription>
+<para>Construct system catalog by loading existing system tables. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>storage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Storage engine </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sys_tables_root</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Root page ID for _sys_tables </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sys_fields_root</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Root page ID for _sys_fields </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sys_indexes_root</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Root page ID for _sys_indexes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Used when opening an existing database. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/SystemCatalog.hpp" line="69" column="5" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/SystemCatalog.hpp" bodystart="69" bodyend="84"/>
+        <referencedby refid="classlearnql_1_1catalog_1_1_system_catalog_1afebfec61da360a2ee49a4a2f9b4429a9">operator=</referencedby>
+        <referencedby refid="classlearnql_1_1catalog_1_1_system_catalog_1a878175fc66b58aada5ead85b3019e9d6">operator=</referencedby>
+        <referencedby refid="classlearnql_1_1catalog_1_1_system_catalog_1a5f92d1c519d661024e3d8aeba2f4fb76">SystemCatalog</referencedby>
+        <referencedby refid="classlearnql_1_1catalog_1_1_system_catalog_1a58450e7e315dd043497a30b609c6f14b">SystemCatalog</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1catalog_1_1_system_catalog_1a5f92d1c519d661024e3d8aeba2f4fb76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>learnql::catalog::SystemCatalog::SystemCatalog</definition>
+        <argsstring>(const SystemCatalog &amp;)=delete</argsstring>
+        <name>SystemCatalog</name>
+        <qualifiedname>learnql::catalog::SystemCatalog::SystemCatalog</qualifiedname>
+        <param>
+          <type>const SystemCatalog &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/SystemCatalog.hpp" line="89" column="5"/>
+        <references refid="classlearnql_1_1catalog_1_1_system_catalog_1a73623ff94e06cd8a2f9bb269bbb5169e" compoundref="_system_catalog_8hpp" startline="69" endline="84">SystemCatalog</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1catalog_1_1_system_catalog_1afebfec61da360a2ee49a4a2f9b4429a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classlearnql_1_1catalog_1_1_system_catalog_1a73623ff94e06cd8a2f9bb269bbb5169e" kindref="member">SystemCatalog</ref> &amp;</type>
+        <definition>SystemCatalog &amp; learnql::catalog::SystemCatalog::operator=</definition>
+        <argsstring>(const SystemCatalog &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <qualifiedname>learnql::catalog::SystemCatalog::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classlearnql_1_1catalog_1_1_system_catalog_1a73623ff94e06cd8a2f9bb269bbb5169e" kindref="member">SystemCatalog</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/SystemCatalog.hpp" line="90" column="19"/>
+        <references refid="classlearnql_1_1catalog_1_1_system_catalog_1a73623ff94e06cd8a2f9bb269bbb5169e" compoundref="_system_catalog_8hpp" startline="69" endline="84">SystemCatalog</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1catalog_1_1_system_catalog_1a58450e7e315dd043497a30b609c6f14b" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>learnql::catalog::SystemCatalog::SystemCatalog</definition>
+        <argsstring>(SystemCatalog &amp;&amp;) noexcept=default</argsstring>
+        <name>SystemCatalog</name>
+        <qualifiedname>learnql::catalog::SystemCatalog::SystemCatalog</qualifiedname>
+        <param>
+          <type>SystemCatalog &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/SystemCatalog.hpp" line="93" column="5"/>
+        <references refid="classlearnql_1_1catalog_1_1_system_catalog_1a73623ff94e06cd8a2f9bb269bbb5169e" compoundref="_system_catalog_8hpp" startline="69" endline="84">SystemCatalog</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1catalog_1_1_system_catalog_1a878175fc66b58aada5ead85b3019e9d6" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type><ref refid="classlearnql_1_1catalog_1_1_system_catalog_1a73623ff94e06cd8a2f9bb269bbb5169e" kindref="member">SystemCatalog</ref> &amp;</type>
+        <definition>SystemCatalog &amp; learnql::catalog::SystemCatalog::operator=</definition>
+        <argsstring>(SystemCatalog &amp;&amp;) noexcept=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>learnql::catalog::SystemCatalog::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classlearnql_1_1catalog_1_1_system_catalog_1a73623ff94e06cd8a2f9bb269bbb5169e" kindref="member">SystemCatalog</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/SystemCatalog.hpp" line="94" column="19"/>
+        <references refid="classlearnql_1_1catalog_1_1_system_catalog_1a73623ff94e06cd8a2f9bb269bbb5169e" compoundref="_system_catalog_8hpp" startline="69" endline="84">SystemCatalog</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1catalog_1_1_system_catalog_1a567745819ef2db3b22ddec47dcde99bb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classlearnql_1_1core_1_1_read_only_table" kindref="compound">core::ReadOnlyTable</ref>&lt; <ref refid="structlearnql_1_1catalog_1_1_table_metadata" kindref="compound">TableMetadata</ref> &gt; &amp;</type>
+        <definition>const core::ReadOnlyTable&lt; TableMetadata &gt; &amp; learnql::catalog::SystemCatalog::tables</definition>
+        <argsstring>() const</argsstring>
+        <name>tables</name>
+        <qualifiedname>learnql::catalog::SystemCatalog::tables</qualifiedname>
+        <briefdescription>
+<para>Get read-only access to tables metadata. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>ReadOnlyTable for querying table metadata </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/SystemCatalog.hpp" line="102" column="31" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/SystemCatalog.hpp" bodystart="102" bodyend="104"/>
+        <references refid="classlearnql_1_1catalog_1_1_system_catalog_1a567745819ef2db3b22ddec47dcde99bb" compoundref="_system_catalog_8hpp" startline="102" endline="104">tables</references>
+        <referencedby refid="classlearnql_1_1catalog_1_1_system_catalog_1a567745819ef2db3b22ddec47dcde99bb" compoundref="_system_catalog_8hpp" startline="102" endline="104">tables</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1catalog_1_1_system_catalog_1a8084ce5e32dd02795fc4c85344572acc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classlearnql_1_1core_1_1_read_only_table" kindref="compound">core::ReadOnlyTable</ref>&lt; <ref refid="structlearnql_1_1catalog_1_1_field_metadata" kindref="compound">FieldMetadata</ref> &gt; &amp;</type>
+        <definition>const core::ReadOnlyTable&lt; FieldMetadata &gt; &amp; learnql::catalog::SystemCatalog::fields</definition>
+        <argsstring>() const</argsstring>
+        <name>fields</name>
+        <qualifiedname>learnql::catalog::SystemCatalog::fields</qualifiedname>
+        <briefdescription>
+<para>Get read-only access to fields metadata. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>ReadOnlyTable for querying field metadata </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/SystemCatalog.hpp" line="110" column="31" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/SystemCatalog.hpp" bodystart="110" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1catalog_1_1_system_catalog_1a7ea69d71a8e23abbb7cb790b9c907787" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classlearnql_1_1core_1_1_read_only_table" kindref="compound">core::ReadOnlyTable</ref>&lt; <ref refid="structlearnql_1_1catalog_1_1_index_metadata" kindref="compound">IndexMetadata</ref> &gt; &amp;</type>
+        <definition>const core::ReadOnlyTable&lt; IndexMetadata &gt; &amp; learnql::catalog::SystemCatalog::indexes</definition>
+        <argsstring>() const</argsstring>
+        <name>indexes</name>
+        <qualifiedname>learnql::catalog::SystemCatalog::indexes</qualifiedname>
+        <briefdescription>
+<para>Get read-only access to indexes metadata (NEW!). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>ReadOnlyTable for querying index metadata</para>
+</simplesect>
+Example: <programlisting><codeline><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>student_indexes<sp/>=<sp/>catalog.indexes()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.where(<ref refid="structlearnql_1_1catalog_1_1_index_metadata_1a990d8b196e916eb66386210d95ab5ea0" kindref="member">IndexMetadata::table</ref><sp/>==<sp/></highlight><highlight class="stringliteral">&quot;students&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>idx<sp/>:<sp/>student_indexes)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>idx.field_name<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>(&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>(idx.is_unique<sp/>?<sp/></highlight><highlight class="stringliteral">&quot;unique&quot;</highlight><highlight class="normal"><sp/>:<sp/></highlight><highlight class="stringliteral">&quot;multi-value&quot;</highlight><highlight class="normal">)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;)\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/SystemCatalog.hpp" line="129" column="31" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/SystemCatalog.hpp" bodystart="129" bodyend="131"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classlearnql_1_1catalog_1_1_system_catalog_1a9225670dabf7847fa4908cd9b40753b3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::catalog::SystemCatalog::register_table</definition>
+        <argsstring>(const TableMetadata &amp;meta, const std::vector&lt; FieldMetadata &gt; &amp;field_metas)</argsstring>
+        <name>register_table</name>
+        <qualifiedname>learnql::catalog::SystemCatalog::register_table</qualifiedname>
+        <param>
+          <type>const <ref refid="structlearnql_1_1catalog_1_1_table_metadata" kindref="compound">TableMetadata</ref> &amp;</type>
+          <declname>meta</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="structlearnql_1_1catalog_1_1_field_metadata" kindref="compound">FieldMetadata</ref> &gt; &amp;</type>
+          <declname>field_metas</declname>
+        </param>
+        <briefdescription>
+<para>Register a new table in the catalog. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>meta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Table metadata </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>field_metas</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Field metadata for the table </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::runtime_error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if table already exists </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/SystemCatalog.hpp" line="149" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/SystemCatalog.hpp" bodystart="149" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1catalog_1_1_system_catalog_1a60fb8af4bc9705ed61dd4207e390a897" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::catalog::SystemCatalog::unregister_table</definition>
+        <argsstring>(const std::string &amp;table_name)</argsstring>
+        <name>unregister_table</name>
+        <qualifiedname>learnql::catalog::SystemCatalog::unregister_table</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>table_name</declname>
+        </param>
+        <briefdescription>
+<para>Unregister a table from the catalog. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>table_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of table to remove</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Removes table metadata and all associated field metadata. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/SystemCatalog.hpp" line="177" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/SystemCatalog.hpp" bodystart="177" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1catalog_1_1_system_catalog_1a4034871b7a72c8bf94e2d7cb4e82d102" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::catalog::SystemCatalog::update_record_count</definition>
+        <argsstring>(const std::string &amp;table_name, std::size_t count)</argsstring>
+        <name>update_record_count</name>
+        <qualifiedname>learnql::catalog::SystemCatalog::update_record_count</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>table_name</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+<para>Update record count for a table. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>table_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of table </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New record count </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/SystemCatalog.hpp" line="197" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/SystemCatalog.hpp" bodystart="197" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1catalog_1_1_system_catalog_1aefaa3f9f0d7b7cde70e2f98d7c19d72b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t learnql::catalog::SystemCatalog::register_index</definition>
+        <argsstring>(const std::string &amp;table_name, const std::string &amp;field_name, const std::string &amp;field_type, bool is_unique, uint64_t root_page_id)</argsstring>
+        <name>register_index</name>
+        <qualifiedname>learnql::catalog::SystemCatalog::register_index</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>table_name</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>field_name</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>field_type</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>is_unique</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>root_page_id</declname>
+        </param>
+        <briefdescription>
+<para>Register a new secondary index in the catalog. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>table_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the table </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>field_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the indexed field </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>field_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>C++ type name of the field </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>is_unique</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true for unique index, false for multi-value </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>root_page_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Root page ID of the index B+Tree </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The assigned index ID </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/SystemCatalog.hpp" line="220" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/SystemCatalog.hpp" bodystart="220" bodyend="244"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1catalog_1_1_system_catalog_1a96ba4dfd676965599ac8eb8e511c3a9f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool learnql::catalog::SystemCatalog::unregister_index</definition>
+        <argsstring>(const std::string &amp;table_name, const std::string &amp;field_name)</argsstring>
+        <name>unregister_index</name>
+        <qualifiedname>learnql::catalog::SystemCatalog::unregister_index</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>table_name</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>field_name</declname>
+        </param>
+        <briefdescription>
+<para>Unregister a secondary index from the catalog. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>table_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the table </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>field_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the indexed field </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if index was found and removed </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/SystemCatalog.hpp" line="252" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/SystemCatalog.hpp" bodystart="252" bodyend="263"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1catalog_1_1_system_catalog_1a6c4a4fd6ab263d81d644806845e6b43e" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="structlearnql_1_1catalog_1_1_index_metadata" kindref="compound">IndexMetadata</ref> &gt;</type>
+        <definition>std::vector&lt; IndexMetadata &gt; learnql::catalog::SystemCatalog::get_table_indexes</definition>
+        <argsstring>(const std::string &amp;table_name) const</argsstring>
+        <name>get_table_indexes</name>
+        <qualifiedname>learnql::catalog::SystemCatalog::get_table_indexes</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>table_name</declname>
+        </param>
+        <briefdescription>
+<para>Get all indexes for a specific table. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>table_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the table </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Vector of index metadata </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/SystemCatalog.hpp" line="270" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/SystemCatalog.hpp" bodystart="270" bodyend="287"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1catalog_1_1_system_catalog_1a2c211a27aabab877ea4d861d15345e01" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t learnql::catalog::SystemCatalog::get_tables_root_page</definition>
+        <argsstring>() const</argsstring>
+        <name>get_tables_root_page</name>
+        <qualifiedname>learnql::catalog::SystemCatalog::get_tables_root_page</qualifiedname>
+        <briefdescription>
+<para>Get root page ID for tables table. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/SystemCatalog.hpp" line="292" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/SystemCatalog.hpp" bodystart="292" bodyend="294"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1catalog_1_1_system_catalog_1a66fdeb31cca4da0c7ef9b7d096780b9f" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t learnql::catalog::SystemCatalog::get_fields_root_page</definition>
+        <argsstring>() const</argsstring>
+        <name>get_fields_root_page</name>
+        <qualifiedname>learnql::catalog::SystemCatalog::get_fields_root_page</qualifiedname>
+        <briefdescription>
+<para>Get root page ID for fields table. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/SystemCatalog.hpp" line="299" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/SystemCatalog.hpp" bodystart="299" bodyend="301"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1catalog_1_1_system_catalog_1ad8d133911e9a77dfabac85403c674159" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t learnql::catalog::SystemCatalog::get_indexes_root_page</definition>
+        <argsstring>() const</argsstring>
+        <name>get_indexes_root_page</name>
+        <qualifiedname>learnql::catalog::SystemCatalog::get_indexes_root_page</qualifiedname>
+        <briefdescription>
+<para>Get root page ID for indexes table (NEW!). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/SystemCatalog.hpp" line="306" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/SystemCatalog.hpp" bodystart="306" bodyend="308"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1catalog_1_1_system_catalog_1a4319db5b332a3f70873b9cd6ea5627b6" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t learnql::catalog::SystemCatalog::compute_next_field_id</definition>
+        <argsstring>()</argsstring>
+        <name>compute_next_field_id</name>
+        <qualifiedname>learnql::catalog::SystemCatalog::compute_next_field_id</qualifiedname>
+        <briefdescription>
+<para>Compute next available field ID from existing fields. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Next field ID to use </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/SystemCatalog.hpp" line="314" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/SystemCatalog.hpp" bodystart="314" bodyend="330"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1catalog_1_1_system_catalog_1ade59c2b5bc0a2d45eacaf0f2fc4333fa" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t learnql::catalog::SystemCatalog::compute_next_index_id</definition>
+        <argsstring>()</argsstring>
+        <name>compute_next_index_id</name>
+        <qualifiedname>learnql::catalog::SystemCatalog::compute_next_index_id</qualifiedname>
+        <briefdescription>
+<para>Compute next available index ID from existing indexes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Next index ID to use </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/SystemCatalog.hpp" line="336" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/SystemCatalog.hpp" bodystart="336" bodyend="352"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>System catalog providing queryable metadata about tables, fields, and indexes. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The system catalog stores metadata in three special tables:<itemizedlist>
+<listitem><para>_sys_tables: Information about all tables</para>
+</listitem><listitem><para>_sys_fields: Information about all fields/columns</para>
+</listitem><listitem><para>_sys_indexes: Information about secondary indexes (NEW!)</para>
+</listitem></itemizedlist>
+</para>
+<para>These tables are queryable using the same expression template and lambda query interface as regular tables, but are read-only to prevent corruption.</para>
+<para>Example usage: <programlisting><codeline><highlight class="normal"><ref refid="classlearnql_1_1catalog_1_1_system_catalog_1aa8d0b2fc479b1441402cf2c77a6ac338" kindref="member">Database</ref><sp/>db(</highlight><highlight class="stringliteral">&quot;myapp.db&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>catalog<sp/>=<sp/>db.metadata();</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Query<sp/>tables</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>large<sp/>=<sp/>catalog.tables()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.where(<ref refid="structlearnql_1_1catalog_1_1_table_metadata_1a4e9a6cc96530b45f37f12a23b0526467" kindref="member">TableMetadata::record_count</ref><sp/>&gt;<sp/>1000);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Query<sp/>fields</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>student_fields<sp/>=<sp/>catalog.fields()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.where(<ref refid="structlearnql_1_1catalog_1_1_field_metadata_1a16b715f3d28a8b3fa41ddd0c0ccb0f93" kindref="member">FieldMetadata::table</ref><sp/>==<sp/></highlight><highlight class="stringliteral">&quot;students&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Query<sp/>indexes<sp/>(NEW!)</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>student_indexes<sp/>=<sp/>catalog.indexes()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.where(<ref refid="structlearnql_1_1catalog_1_1_index_metadata_1a990d8b196e916eb66386210d95ab5ea0" kindref="member">IndexMetadata::table</ref><sp/>==<sp/></highlight><highlight class="stringliteral">&quot;students&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Use<sp/>with<sp/>ranges</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>top<sp/>=<sp/>catalog.tables().view()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>|<sp/><ref refid="namespacelearnql_1_1ranges_1adb0aac8d32b3bc0352902250c5c3ffeb" kindref="member">order_by</ref>(&amp;<ref refid="structlearnql_1_1catalog_1_1_table_metadata_1a36c96b476f5c0935b751f9cff55d217e" kindref="member">TableMetadata::get_record_count</ref>,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>|<sp/><ref refid="namespacelearnql_1_1ranges_1a2bbd315971ac7f77ad01ca24bb06b37f" kindref="member">limit</ref>(10);</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/SystemCatalog.hpp" line="58" column="1" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/SystemCatalog.hpp" bodystart="58" bodyend="360"/>
+    <listofallmembers>
+      <member refid="classlearnql_1_1catalog_1_1_system_catalog_1a4319db5b332a3f70873b9cd6ea5627b6" prot="private" virt="non-virtual"><scope>learnql::catalog::SystemCatalog</scope><name>compute_next_field_id</name></member>
+      <member refid="classlearnql_1_1catalog_1_1_system_catalog_1ade59c2b5bc0a2d45eacaf0f2fc4333fa" prot="private" virt="non-virtual"><scope>learnql::catalog::SystemCatalog</scope><name>compute_next_index_id</name></member>
+      <member refid="classlearnql_1_1catalog_1_1_system_catalog_1aa8d0b2fc479b1441402cf2c77a6ac338" prot="public" virt="non-virtual"><scope>learnql::catalog::SystemCatalog</scope><name>core::Database</name></member>
+      <member refid="classlearnql_1_1catalog_1_1_system_catalog_1ac536d0288c5dc7925fff074889a92963" prot="public" virt="non-virtual"><scope>learnql::catalog::SystemCatalog</scope><name>core::Table</name></member>
+      <member refid="classlearnql_1_1catalog_1_1_system_catalog_1a8084ce5e32dd02795fc4c85344572acc" prot="public" virt="non-virtual"><scope>learnql::catalog::SystemCatalog</scope><name>fields</name></member>
+      <member refid="classlearnql_1_1catalog_1_1_system_catalog_1a6ced0d2606db8ed4777ea40dc6832527" prot="private" virt="non-virtual"><scope>learnql::catalog::SystemCatalog</scope><name>fields_table_</name></member>
+      <member refid="classlearnql_1_1catalog_1_1_system_catalog_1a66fdeb31cca4da0c7ef9b7d096780b9f" prot="private" virt="non-virtual"><scope>learnql::catalog::SystemCatalog</scope><name>get_fields_root_page</name></member>
+      <member refid="classlearnql_1_1catalog_1_1_system_catalog_1ad8d133911e9a77dfabac85403c674159" prot="private" virt="non-virtual"><scope>learnql::catalog::SystemCatalog</scope><name>get_indexes_root_page</name></member>
+      <member refid="classlearnql_1_1catalog_1_1_system_catalog_1a6c4a4fd6ab263d81d644806845e6b43e" prot="private" virt="non-virtual"><scope>learnql::catalog::SystemCatalog</scope><name>get_table_indexes</name></member>
+      <member refid="classlearnql_1_1catalog_1_1_system_catalog_1a2c211a27aabab877ea4d861d15345e01" prot="private" virt="non-virtual"><scope>learnql::catalog::SystemCatalog</scope><name>get_tables_root_page</name></member>
+      <member refid="classlearnql_1_1catalog_1_1_system_catalog_1a7ea69d71a8e23abbb7cb790b9c907787" prot="public" virt="non-virtual"><scope>learnql::catalog::SystemCatalog</scope><name>indexes</name></member>
+      <member refid="classlearnql_1_1catalog_1_1_system_catalog_1acfcee08f7184a5c0d6b6231c9efc80ae" prot="private" virt="non-virtual"><scope>learnql::catalog::SystemCatalog</scope><name>indexes_table_</name></member>
+      <member refid="classlearnql_1_1catalog_1_1_system_catalog_1a5f0a7f2212b6629ab582cca072d973d1" prot="private" virt="non-virtual"><scope>learnql::catalog::SystemCatalog</scope><name>next_field_id_</name></member>
+      <member refid="classlearnql_1_1catalog_1_1_system_catalog_1a196d8d62e7270578495ccb552d23af23" prot="private" virt="non-virtual"><scope>learnql::catalog::SystemCatalog</scope><name>next_index_id_</name></member>
+      <member refid="classlearnql_1_1catalog_1_1_system_catalog_1afebfec61da360a2ee49a4a2f9b4429a9" prot="public" virt="non-virtual"><scope>learnql::catalog::SystemCatalog</scope><name>operator=</name></member>
+      <member refid="classlearnql_1_1catalog_1_1_system_catalog_1a878175fc66b58aada5ead85b3019e9d6" prot="public" virt="non-virtual"><scope>learnql::catalog::SystemCatalog</scope><name>operator=</name></member>
+      <member refid="classlearnql_1_1catalog_1_1_system_catalog_1aefaa3f9f0d7b7cde70e2f98d7c19d72b" prot="private" virt="non-virtual"><scope>learnql::catalog::SystemCatalog</scope><name>register_index</name></member>
+      <member refid="classlearnql_1_1catalog_1_1_system_catalog_1a9225670dabf7847fa4908cd9b40753b3" prot="private" virt="non-virtual"><scope>learnql::catalog::SystemCatalog</scope><name>register_table</name></member>
+      <member refid="classlearnql_1_1catalog_1_1_system_catalog_1ae26472e8348bed712adcb8abefd8fdb6" prot="private" virt="non-virtual"><scope>learnql::catalog::SystemCatalog</scope><name>storage_</name></member>
+      <member refid="classlearnql_1_1catalog_1_1_system_catalog_1a73623ff94e06cd8a2f9bb269bbb5169e" prot="public" virt="non-virtual"><scope>learnql::catalog::SystemCatalog</scope><name>SystemCatalog</name></member>
+      <member refid="classlearnql_1_1catalog_1_1_system_catalog_1a5f92d1c519d661024e3d8aeba2f4fb76" prot="public" virt="non-virtual"><scope>learnql::catalog::SystemCatalog</scope><name>SystemCatalog</name></member>
+      <member refid="classlearnql_1_1catalog_1_1_system_catalog_1a58450e7e315dd043497a30b609c6f14b" prot="public" virt="non-virtual"><scope>learnql::catalog::SystemCatalog</scope><name>SystemCatalog</name></member>
+      <member refid="classlearnql_1_1catalog_1_1_system_catalog_1a567745819ef2db3b22ddec47dcde99bb" prot="public" virt="non-virtual"><scope>learnql::catalog::SystemCatalog</scope><name>tables</name></member>
+      <member refid="classlearnql_1_1catalog_1_1_system_catalog_1aa38e8f5f8c5a6ecf760f6d5b527b3751" prot="private" virt="non-virtual"><scope>learnql::catalog::SystemCatalog</scope><name>tables_table_</name></member>
+      <member refid="classlearnql_1_1catalog_1_1_system_catalog_1a96ba4dfd676965599ac8eb8e511c3a9f" prot="private" virt="non-virtual"><scope>learnql::catalog::SystemCatalog</scope><name>unregister_index</name></member>
+      <member refid="classlearnql_1_1catalog_1_1_system_catalog_1a60fb8af4bc9705ed61dd4207e390a897" prot="private" virt="non-virtual"><scope>learnql::catalog::SystemCatalog</scope><name>unregister_table</name></member>
+      <member refid="classlearnql_1_1catalog_1_1_system_catalog_1a4034871b7a72c8bf94e2d7cb4e82d102" prot="private" virt="non-virtual"><scope>learnql::catalog::SystemCatalog</scope><name>update_record_count</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

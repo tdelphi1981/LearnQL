@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="conceptlearnql_1_1concepts_1_1_custom_serializable" kind="concept">
+    <compoundname>learnql::concepts::CustomSerializable</compoundname>
+    <includes refid="_serializable_8hpp" local="no">Serializable.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+      <param>
+        <type>typename Writer</type>
+      </param>
+      <param>
+        <type>typename Reader</type>
+      </param>
+    </templateparamlist>
+    <initializer>template&lt;typename T, typename Writer, typename Reader&gt;
+concept <ref refid="conceptlearnql_1_1concepts_1_1_custom_serializable" kindref="compound">learnql::concepts::CustomSerializable</ref> =  requires(T obj, const T const_obj, Writer&amp; writer, Reader&amp; reader) {
+    { const_obj.serialize(writer) } -&gt; std::same_as&lt;void&gt;;
+    { obj.deserialize(reader) } -&gt; std::same_as&lt;void&gt;;
+}    </initializer>
+    <briefdescription>
+<para>Concept for types that have custom serialization methods. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Types must implement serialize() and deserialize() methods</para>
+<para>Example: <programlisting><codeline><highlight class="keyword">class<sp/></highlight><highlight class="normal">MyClass<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Writer&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>serialize(Writer&amp;<sp/>writer)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Reader&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>deserialize(Reader&amp;<sp/>reader);</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/concepts/Serializable.hpp" line="43" column="1"/>
+  </compounddef>
+</doxygen>

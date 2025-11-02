@@ -1,0 +1,231 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classlearnql_1_1debug_1_1_logger" kind="class" language="C++" prot="public">
+    <compoundname>learnql::debug::Logger</compoundname>
+    <includes refid="_debug_utils_8hpp" local="no">DebugUtils.hpp</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classlearnql_1_1debug_1_1_logger_1a531d01e275f7cd0a8280dcb8a083ed96" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacelearnql_1_1debug_1a6f449c05d96e391460715d261d799cc6" kindref="member">LogLevel</ref></type>
+        <definition>LogLevel learnql::debug::Logger::min_level_</definition>
+        <argsstring></argsstring>
+        <name>min_level_</name>
+        <qualifiedname>learnql::debug::Logger::min_level_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/DebugUtils.hpp" line="108" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/DebugUtils.hpp" bodystart="108" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classlearnql_1_1debug_1_1_logger_1abc9d8d54e713c33c029ab708f6032ff4" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Logger &amp;</type>
+        <definition>static Logger &amp; learnql::debug::Logger::instance</definition>
+        <argsstring>()</argsstring>
+        <name>instance</name>
+        <qualifiedname>learnql::debug::Logger::instance</qualifiedname>
+        <briefdescription>
+<para>Gets the singleton instance. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/DebugUtils.hpp" line="44" column="19" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/DebugUtils.hpp" bodystart="44" bodyend="47"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlearnql_1_1debug_1_1_logger_1a9a8c8374fe57cd31e6f72b9e68fd3acf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::debug::Logger::set_log_level</definition>
+        <argsstring>(LogLevel level)</argsstring>
+        <name>set_log_level</name>
+        <qualifiedname>learnql::debug::Logger::set_log_level</qualifiedname>
+        <param>
+          <type><ref refid="namespacelearnql_1_1debug_1a6f449c05d96e391460715d261d799cc6" kindref="member">LogLevel</ref></type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+<para>Sets the minimum log level. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/DebugUtils.hpp" line="52" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/DebugUtils.hpp" bodystart="52" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1debug_1_1_logger_1ad5a94bf40cefd0e24a85e74aa6ff8ff4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::debug::Logger::log</definition>
+        <argsstring>(LogLevel level, const std::string &amp;message, const std::string &amp;category=&quot;&quot;)</argsstring>
+        <name>log</name>
+        <qualifiedname>learnql::debug::Logger::log</qualifiedname>
+        <param>
+          <type><ref refid="namespacelearnql_1_1debug_1a6f449c05d96e391460715d261d799cc6" kindref="member">LogLevel</ref></type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>category</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Logs a message. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/DebugUtils.hpp" line="59" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/DebugUtils.hpp" bodystart="59" bodyend="75"/>
+        <references refid="namespacelearnql_1_1debug_1a903e4aeadb4210e7e0902cb3139c9778" compoundref="_debug_utils_8hpp" startline="26" endline="34">learnql::debug::log_level_to_string</references>
+        <referencedby refid="classlearnql_1_1debug_1_1_logger_1a452bf034fb6ae84ae2becdbf91fb6bbd" compoundref="_debug_utils_8hpp" startline="80" endline="82">debug</referencedby>
+        <referencedby refid="classlearnql_1_1debug_1_1_logger_1a9f63313a63651e352c4b213b29e60a8d" compoundref="_debug_utils_8hpp" startline="101" endline="103">error</referencedby>
+        <referencedby refid="classlearnql_1_1debug_1_1_logger_1af2c1c9c18f603dd9d7c36106cf501cc7" compoundref="_debug_utils_8hpp" startline="87" endline="89">info</referencedby>
+        <referencedby refid="classlearnql_1_1debug_1_1_logger_1a16e07d2859d087bab293332a78202432" compoundref="_debug_utils_8hpp" startline="94" endline="96">warn</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1debug_1_1_logger_1a452bf034fb6ae84ae2becdbf91fb6bbd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::debug::Logger::debug</definition>
+        <argsstring>(const std::string &amp;message, const std::string &amp;category=&quot;&quot;)</argsstring>
+        <name>debug</name>
+        <qualifiedname>learnql::debug::Logger::debug</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>category</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Debug log. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/DebugUtils.hpp" line="80" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/DebugUtils.hpp" bodystart="80" bodyend="82"/>
+        <references refid="namespacelearnql_1_1debug_1a6f449c05d96e391460715d261d799cc6aa603905470e2a5b8c13e96b579ef0dba" compoundref="_debug_utils_8hpp" startline="17">learnql::debug::Debug</references>
+        <references refid="classlearnql_1_1debug_1_1_logger_1ad5a94bf40cefd0e24a85e74aa6ff8ff4" compoundref="_debug_utils_8hpp" startline="59" endline="75">log</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1debug_1_1_logger_1af2c1c9c18f603dd9d7c36106cf501cc7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::debug::Logger::info</definition>
+        <argsstring>(const std::string &amp;message, const std::string &amp;category=&quot;&quot;)</argsstring>
+        <name>info</name>
+        <qualifiedname>learnql::debug::Logger::info</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>category</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Info log. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/DebugUtils.hpp" line="87" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/DebugUtils.hpp" bodystart="87" bodyend="89"/>
+        <references refid="namespacelearnql_1_1debug_1a6f449c05d96e391460715d261d799cc6a4059b0251f66a18cb56f544728796875" compoundref="_debug_utils_8hpp" startline="18">learnql::debug::Info</references>
+        <references refid="classlearnql_1_1debug_1_1_logger_1ad5a94bf40cefd0e24a85e74aa6ff8ff4" compoundref="_debug_utils_8hpp" startline="59" endline="75">log</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1debug_1_1_logger_1a16e07d2859d087bab293332a78202432" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::debug::Logger::warn</definition>
+        <argsstring>(const std::string &amp;message, const std::string &amp;category=&quot;&quot;)</argsstring>
+        <name>warn</name>
+        <qualifiedname>learnql::debug::Logger::warn</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>category</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Warning log. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/DebugUtils.hpp" line="94" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/DebugUtils.hpp" bodystart="94" bodyend="96"/>
+        <references refid="classlearnql_1_1debug_1_1_logger_1ad5a94bf40cefd0e24a85e74aa6ff8ff4" compoundref="_debug_utils_8hpp" startline="59" endline="75">log</references>
+        <references refid="namespacelearnql_1_1debug_1a6f449c05d96e391460715d261d799cc6a0eaadb4fcb48a0a0ed7bc9868be9fbaa" compoundref="_debug_utils_8hpp" startline="19">learnql::debug::Warning</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1debug_1_1_logger_1a9f63313a63651e352c4b213b29e60a8d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::debug::Logger::error</definition>
+        <argsstring>(const std::string &amp;message, const std::string &amp;category=&quot;&quot;)</argsstring>
+        <name>error</name>
+        <qualifiedname>learnql::debug::Logger::error</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>category</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Error log. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/DebugUtils.hpp" line="101" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/DebugUtils.hpp" bodystart="101" bodyend="103"/>
+        <references refid="namespacelearnql_1_1debug_1a6f449c05d96e391460715d261d799cc6a902b0d55fddef6f8d651fe1035b7d4bd" compoundref="_debug_utils_8hpp" startline="20">learnql::debug::Error</references>
+        <references refid="classlearnql_1_1debug_1_1_logger_1ad5a94bf40cefd0e24a85e74aa6ff8ff4" compoundref="_debug_utils_8hpp" startline="59" endline="75">log</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classlearnql_1_1debug_1_1_logger_1ad7b0cf017b142c343367047e130fee63" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>learnql::debug::Logger::Logger</definition>
+        <argsstring>()</argsstring>
+        <name>Logger</name>
+        <qualifiedname>learnql::debug::Logger::Logger</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/DebugUtils.hpp" line="106" column="5" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/DebugUtils.hpp" bodystart="106" bodyend="106"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Simple logger for debugging. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/DebugUtils.hpp" line="39" column="1" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/DebugUtils.hpp" bodystart="39" bodyend="109"/>
+    <listofallmembers>
+      <member refid="classlearnql_1_1debug_1_1_logger_1a452bf034fb6ae84ae2becdbf91fb6bbd" prot="public" virt="non-virtual"><scope>learnql::debug::Logger</scope><name>debug</name></member>
+      <member refid="classlearnql_1_1debug_1_1_logger_1a9f63313a63651e352c4b213b29e60a8d" prot="public" virt="non-virtual"><scope>learnql::debug::Logger</scope><name>error</name></member>
+      <member refid="classlearnql_1_1debug_1_1_logger_1af2c1c9c18f603dd9d7c36106cf501cc7" prot="public" virt="non-virtual"><scope>learnql::debug::Logger</scope><name>info</name></member>
+      <member refid="classlearnql_1_1debug_1_1_logger_1abc9d8d54e713c33c029ab708f6032ff4" prot="public" virt="non-virtual"><scope>learnql::debug::Logger</scope><name>instance</name></member>
+      <member refid="classlearnql_1_1debug_1_1_logger_1ad5a94bf40cefd0e24a85e74aa6ff8ff4" prot="public" virt="non-virtual"><scope>learnql::debug::Logger</scope><name>log</name></member>
+      <member refid="classlearnql_1_1debug_1_1_logger_1ad7b0cf017b142c343367047e130fee63" prot="private" virt="non-virtual"><scope>learnql::debug::Logger</scope><name>Logger</name></member>
+      <member refid="classlearnql_1_1debug_1_1_logger_1a531d01e275f7cd0a8280dcb8a083ed96" prot="private" virt="non-virtual"><scope>learnql::debug::Logger</scope><name>min_level_</name></member>
+      <member refid="classlearnql_1_1debug_1_1_logger_1a9a8c8374fe57cd31e6f72b9e68fd3acf" prot="public" virt="non-virtual"><scope>learnql::debug::Logger</scope><name>set_log_level</name></member>
+      <member refid="classlearnql_1_1debug_1_1_logger_1a16e07d2859d087bab293332a78202432" prot="public" virt="non-virtual"><scope>learnql::debug::Logger</scope><name>warn</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

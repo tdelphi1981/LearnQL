@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="dir_70d0bba77a2968a7dd2f99d3fadbfbee" kind="dir">
+    <compoundname>/Users/tolgaberber/Work/CPP/LearnQL/learnql/query</compoundname>
+    <innerdir refid="dir_808bcb38f3f24d38ec28b5b6b113da3e">/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions</innerdir>
+    <innerfile refid="_field_8hpp">Field.hpp</innerfile>
+    <innerfile refid="_group_by_8hpp">GroupBy.hpp</innerfile>
+    <innerfile refid="_join_8hpp">Join.hpp</innerfile>
+    <innerfile refid="_query_8hpp">Query.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/"/>
+  </compounddef>
+</doxygen>

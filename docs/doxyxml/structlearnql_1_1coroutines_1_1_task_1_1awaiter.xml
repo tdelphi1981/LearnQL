@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="structlearnql_1_1coroutines_1_1_task_1_1awaiter" kind="struct" language="C++" prot="public">
+    <compoundname>learnql::coroutines::Task::awaiter</compoundname>
+    <includes refid="_async_query_8hpp" local="no">AsyncQuery.hpp</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlearnql_1_1coroutines_1_1_task_1_1awaiter_1a580a6669c7dd4bfb11ed47675b3a2c9d" prot="public" static="no" mutable="no">
+        <type><ref refid="classlearnql_1_1coroutines_1_1_task_1a970181f6b87ae86bd703165a33a1dd14" kindref="member">handle_type</ref></type>
+        <definition>handle_type learnql::coroutines::Task&lt; T &gt;::awaiter::coro</definition>
+        <argsstring></argsstring>
+        <name>coro</name>
+        <qualifiedname>learnql::coroutines::Task::awaiter::coro</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/AsyncQuery.hpp" line="92" column="21" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/AsyncQuery.hpp" bodystart="92" bodyend="-1"/>
+        <referencedby refid="structlearnql_1_1coroutines_1_1_task_1_1awaiter_1abc433910e711faaae0c5833f94540c88" compoundref="_async_query_8hpp" startline="94" endline="96">learnql::coroutines::Task&lt; T &gt;::awaiter::await_ready</referencedby>
+        <referencedby refid="structlearnql_1_1coroutines_1_1_task_1_1awaiter_1abb4862fa37079714bac40d5acd7e8b17" compoundref="_async_query_8hpp" startline="102" endline="107">learnql::coroutines::Task&lt; T &gt;::awaiter::await_resume</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structlearnql_1_1coroutines_1_1_task_1_1awaiter_1abc433910e711faaae0c5833f94540c88" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool learnql::coroutines::Task&lt; T &gt;::awaiter::await_ready</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>await_ready</name>
+        <qualifiedname>learnql::coroutines::Task::awaiter::await_ready</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/AsyncQuery.hpp" line="94" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/AsyncQuery.hpp" bodystart="94" bodyend="96"/>
+        <references refid="structlearnql_1_1coroutines_1_1_task_1_1awaiter_1a580a6669c7dd4bfb11ed47675b3a2c9d" compoundref="_async_query_8hpp" startline="92">learnql::coroutines::Task&lt; T &gt;::awaiter::coro</references>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1coroutines_1_1_task_1_1awaiter_1a1a58a10c4a6ef2e9d5c8a4acd0b4d521" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::coroutines::Task&lt; T &gt;::awaiter::await_suspend</definition>
+        <argsstring>(std::coroutine_handle&lt;&gt; awaiting) noexcept</argsstring>
+        <name>await_suspend</name>
+        <qualifiedname>learnql::coroutines::Task::awaiter::await_suspend</qualifiedname>
+        <param>
+          <type>std::coroutine_handle&lt;&gt;</type>
+          <declname>awaiting</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/AsyncQuery.hpp" line="98" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/AsyncQuery.hpp" bodystart="98" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1coroutines_1_1_task_1_1awaiter_1abb4862fa37079714bac40d5acd7e8b17" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T learnql::coroutines::Task&lt; T &gt;::awaiter::await_resume</definition>
+        <argsstring>()</argsstring>
+        <name>await_resume</name>
+        <qualifiedname>learnql::coroutines::Task::awaiter::await_resume</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/AsyncQuery.hpp" line="102" column="11" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/AsyncQuery.hpp" bodystart="102" bodyend="107"/>
+        <references refid="structlearnql_1_1coroutines_1_1_task_1_1awaiter_1a580a6669c7dd4bfb11ed47675b3a2c9d" compoundref="_async_query_8hpp" startline="92">learnql::coroutines::Task&lt; T &gt;::awaiter::coro</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Awaiter for the task. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/AsyncQuery.hpp" line="91" column="5" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/AsyncQuery.hpp" bodystart="91" bodyend="108"/>
+    <listofallmembers>
+      <member refid="structlearnql_1_1coroutines_1_1_task_1_1awaiter_1abc433910e711faaae0c5833f94540c88" prot="public" virt="non-virtual"><scope>learnql::coroutines::Task::awaiter</scope><name>await_ready</name></member>
+      <member refid="structlearnql_1_1coroutines_1_1_task_1_1awaiter_1abb4862fa37079714bac40d5acd7e8b17" prot="public" virt="non-virtual"><scope>learnql::coroutines::Task::awaiter</scope><name>await_resume</name></member>
+      <member refid="structlearnql_1_1coroutines_1_1_task_1_1awaiter_1a1a58a10c4a6ef2e9d5c8a4acd0b4d521" prot="public" virt="non-virtual"><scope>learnql::coroutines::Task::awaiter</scope><name>await_suspend</name></member>
+      <member refid="structlearnql_1_1coroutines_1_1_task_1_1awaiter_1a580a6669c7dd4bfb11ed47675b3a2c9d" prot="public" virt="non-virtual"><scope>learnql::coroutines::Task::awaiter</scope><name>coro</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

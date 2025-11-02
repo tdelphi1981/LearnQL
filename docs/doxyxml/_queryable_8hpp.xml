@@ -1,0 +1,202 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="_queryable_8hpp" kind="file" language="C++">
+    <compoundname>Queryable.hpp</compoundname>
+    <includes refid="_serializable_8hpp" local="yes">Serializable.hpp</includes>
+    <includes local="no">concepts</includes>
+    <includes local="no">type_traits</includes>
+    <includes local="no">functional</includes>
+    <includedby refid="_learn_q_l_8hpp" local="yes">/Users/tolgaberber/Work/CPP/LearnQL/learnql/LearnQL.hpp</includedby>
+    <includedby refid="_read_only_table_8hpp" local="yes">/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/ReadOnlyTable.hpp</includedby>
+    <includedby refid="_table_8hpp" local="yes">/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp</includedby>
+    <includedby refid="_async_query_8hpp" local="yes">/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/AsyncQuery.hpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/concepts/Queryable.hpp</label>
+        <link refid="_queryable_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Serializable.hpp</label>
+        <link refid="_serializable_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>concepts</label>
+      </node>
+      <node id="8">
+        <label>functional</label>
+      </node>
+      <node id="7">
+        <label>memory</label>
+      </node>
+      <node id="5">
+        <label>string</label>
+      </node>
+      <node id="4">
+        <label>type_traits</label>
+      </node>
+      <node id="6">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/LearnQL.hpp</label>
+        <link refid="_learn_q_l_8hpp"/>
+      </node>
+      <node id="4">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/SystemCatalog.hpp</label>
+        <link refid="_system_catalog_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/concepts/Queryable.hpp</label>
+        <link refid="_queryable_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Database.hpp</label>
+        <link refid="_database_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/ReadOnlyTable.hpp</label>
+        <link refid="_read_only_table_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp</label>
+        <link refid="_table_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/AsyncQuery.hpp</label>
+        <link refid="_async_query_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp</label>
+        <link refid="_query_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerconcept refid="conceptlearnql_1_1concepts_1_1_has_primary_key">learnql::concepts::HasPrimaryKey</innerconcept>
+    <innerconcept refid="conceptlearnql_1_1concepts_1_1_primary_key_type">learnql::concepts::PrimaryKeyType</innerconcept>
+    <innerconcept refid="conceptlearnql_1_1concepts_1_1_storable">learnql::concepts::Storable</innerconcept>
+    <innerconcept refid="conceptlearnql_1_1concepts_1_1_predicate">learnql::concepts::Predicate</innerconcept>
+    <innerconcept refid="conceptlearnql_1_1concepts_1_1_indexable">learnql::concepts::Indexable</innerconcept>
+    <innerconcept refid="conceptlearnql_1_1concepts_1_1_queryable">learnql::concepts::Queryable</innerconcept>
+    <innerconcept refid="conceptlearnql_1_1concepts_1_1_iterator">learnql::concepts::Iterator</innerconcept>
+    <innerconcept refid="conceptlearnql_1_1concepts_1_1_forward_iterator">learnql::concepts::ForwardIterator</innerconcept>
+    <innernamespace refid="namespacelearnql">learnql</innernamespace>
+    <innernamespace refid="namespacelearnql_1_1concepts">learnql::concepts</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>LEARNQL_CONCEPTS_QUERYABLE_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LEARNQL_CONCEPTS_QUERYABLE_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_serializable_8hpp" kindref="compound">Serializable.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;concepts&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;type_traits&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;functional&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="namespacelearnql_1_1concepts" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacelearnql_1_1concepts" kindref="compound">learnql::concepts</ref><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="27" refid="conceptlearnql_1_1concepts_1_1_has_primary_key" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">concept<sp/></highlight><highlight class="normal"><ref refid="conceptlearnql_1_1concepts_1_1_has_primary_key" kindref="compound">HasPrimaryKey</ref><sp/>=<sp/></highlight><highlight class="keyword">requires</highlight><highlight class="normal">(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>obj)<sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T::primary_key_type;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>obj.get_primary_key()<sp/>}<sp/>-&gt;<sp/>std::convertible_to&lt;typename<sp/>T::primary_key_type&gt;;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="37" refid="conceptlearnql_1_1concepts_1_1_primary_key_type" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">concept<sp/></highlight><highlight class="normal"><ref refid="conceptlearnql_1_1concepts_1_1_primary_key_type" kindref="compound">PrimaryKeyType</ref><sp/>=<sp/><ref refid="conceptlearnql_1_1concepts_1_1_comparable" kindref="compound">Comparable&lt;T&gt;</ref><sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::is_default_constructible_v&lt;T&gt;<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::is_copy_constructible_v&lt;T&gt;<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">requires</highlight><highlight class="normal">(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>key)<sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>std::hash&lt;T&gt;{}(key)<sp/>}<sp/>-&gt;<sp/>std::convertible_to&lt;std::size_t&gt;;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Writer,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Reader&gt;</highlight></codeline>
+<codeline lineno="55" refid="conceptlearnql_1_1concepts_1_1_storable" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">concept<sp/></highlight><highlight class="normal"><ref refid="conceptlearnql_1_1concepts_1_1_storable" kindref="compound">Storable</ref><sp/>=<sp/>std::is_default_constructible_v&lt;T&gt;<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::is_copy_constructible_v&lt;T&gt;<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="conceptlearnql_1_1concepts_1_1_has_primary_key" kindref="compound">HasPrimaryKey&lt;T&gt;</ref><sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="conceptlearnql_1_1concepts_1_1_custom_serializable" kindref="compound">CustomSerializable&lt;T, Writer, Reader&gt;</ref><sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="conceptlearnql_1_1concepts_1_1_primary_key_type" kindref="compound">PrimaryKeyType&lt;typename T::primary_key_type&gt;</ref>;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>F,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="66" refid="conceptlearnql_1_1concepts_1_1_predicate" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">concept<sp/></highlight><highlight class="normal"><ref refid="conceptlearnql_1_1concepts_1_1_predicate" kindref="compound">Predicate</ref><sp/>=<sp/>std::is_invocable_r_v&lt;bool,<sp/>F,<sp/>const<sp/>T&amp;&gt;;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="73" refid="conceptlearnql_1_1concepts_1_1_indexable" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">concept<sp/></highlight><highlight class="normal"><ref refid="conceptlearnql_1_1concepts_1_1_indexable" kindref="compound">Indexable</ref><sp/>=<sp/><ref refid="conceptlearnql_1_1concepts_1_1_has_primary_key" kindref="compound">HasPrimaryKey&lt;T&gt;</ref><sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="conceptlearnql_1_1concepts_1_1_orderable" kindref="compound">Orderable&lt;typename T::primary_key_type&gt;</ref>;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Writer,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Reader&gt;</highlight></codeline>
+<codeline lineno="81" refid="conceptlearnql_1_1concepts_1_1_queryable" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">concept<sp/></highlight><highlight class="normal"><ref refid="conceptlearnql_1_1concepts_1_1_queryable" kindref="compound">Queryable</ref><sp/>=<sp/><ref refid="conceptlearnql_1_1concepts_1_1_storable" kindref="compound">Storable&lt;T, Writer, Reader&gt;</ref><sp/>&amp;&amp;<sp/><ref refid="conceptlearnql_1_1concepts_1_1_indexable" kindref="compound">Indexable&lt;T&gt;</ref>;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>It&gt;</highlight></codeline>
+<codeline lineno="87" refid="conceptlearnql_1_1concepts_1_1_iterator" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">concept<sp/></highlight><highlight class="normal"><ref refid="conceptlearnql_1_1concepts_1_1_iterator" kindref="compound">Iterator</ref><sp/>=<sp/></highlight><highlight class="keyword">requires</highlight><highlight class="normal">(It<sp/>it)<sp/>{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>*it<sp/>}<sp/>-&gt;<sp/>std::convertible_to&lt;typename<sp/>std::iterator_traits&lt;It&gt;::reference&gt;;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>++it<sp/>}<sp/>-&gt;<sp/>std::same_as&lt;It&amp;&gt;;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>it++<sp/>}<sp/>-&gt;<sp/>std::convertible_to&lt;It&gt;;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>It&gt;</highlight></codeline>
+<codeline lineno="97" refid="conceptlearnql_1_1concepts_1_1_forward_iterator" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">concept<sp/></highlight><highlight class="normal"><ref refid="conceptlearnql_1_1concepts_1_1_forward_iterator" kindref="compound">ForwardIterator</ref><sp/>=<sp/><ref refid="conceptlearnql_1_1concepts_1_1_iterator" kindref="compound">Iterator&lt;It&gt;</ref><sp/>&amp;&amp;<sp/></highlight><highlight class="keyword">requires</highlight><highlight class="normal">(It<sp/>it1,<sp/>It<sp/>it2)<sp/>{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>it1<sp/>==<sp/>it2<sp/>}<sp/>-&gt;<sp/>std::convertible_to&lt;bool&gt;;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>it1<sp/>!=<sp/>it2<sp/>}<sp/>-&gt;<sp/>std::convertible_to&lt;bool&gt;;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>learnql::concepts</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>LEARNQL_CONCEPTS_QUERYABLE_HPP</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/concepts/Queryable.hpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,209 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classlearnql_1_1query_1_1expressions_1_1_const_expr" kind="class" language="C++" prot="public">
+    <compoundname>learnql::query::expressions::ConstExpr</compoundname>
+    <basecompoundref refid="classlearnql_1_1query_1_1expressions_1_1_expr" prot="public" virt="non-virtual">learnql::query::expressions::Expr&lt; ConstExpr&lt; T &gt; &gt;</basecompoundref>
+    <includes refid="_const_expr_8hpp" local="no">ConstExpr.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classlearnql_1_1query_1_1expressions_1_1_const_expr_1a36041ede453d91ea465d8921c9fa8141" prot="public" static="no">
+        <type>T</type>
+        <definition>using learnql::query::expressions::ConstExpr&lt; T &gt;::value_type =  T</definition>
+        <argsstring></argsstring>
+        <name>value_type</name>
+        <qualifiedname>learnql::query::expressions::ConstExpr::value_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/ConstExpr.hpp" line="22" column="5" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/ConstExpr.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classlearnql_1_1query_1_1expressions_1_1_const_expr_1aa91060a50127074c96b8cf62191c6593" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T learnql::query::expressions::ConstExpr&lt; T &gt;::value_</definition>
+        <argsstring></argsstring>
+        <name>value_</name>
+        <qualifiedname>learnql::query::expressions::ConstExpr::value_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/ConstExpr.hpp" line="64" column="7" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/ConstExpr.hpp" bodystart="64" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlearnql_1_1query_1_1expressions_1_1_const_expr_1ae4e793562d4e9d7160fd156daca25d61" prot="public" static="no" constexpr="yes" const="no" explicit="yes" inline="yes" noexcept="yes" noexceptexpression="std::is_nothrow_move_constructible_v&lt; T &gt;" virt="non-virtual">
+        <type>constexpr</type>
+        <definition>learnql::query::expressions::ConstExpr&lt; T &gt;::ConstExpr</definition>
+        <argsstring>(T value)</argsstring>
+        <name>ConstExpr</name>
+        <qualifiedname>learnql::query::expressions::ConstExpr::ConstExpr</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a constant expression. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The constant value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/ConstExpr.hpp" line="28" column="24" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/ConstExpr.hpp" bodystart="28" bodyend="29"/>
+        <references refid="classlearnql_1_1query_1_1expressions_1_1_const_expr_1a7cdb06938a038ca586c235415bdc6eb2" compoundref="_const_expr_8hpp" startline="44" endline="46">learnql::query::expressions::ConstExpr&lt; T &gt;::value</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1query_1_1expressions_1_1_const_expr_1a9a8c409b911a13b5613a84332943bdc6" prot="public" static="no" nodiscard="yes" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type>const T &amp;</type>
+        <definition>const T &amp; learnql::query::expressions::ConstExpr&lt; T &gt;::evaluate</definition>
+        <argsstring>(const U &amp;) const noexcept</argsstring>
+        <name>evaluate</name>
+        <qualifiedname>learnql::query::expressions::ConstExpr::evaluate</qualifiedname>
+        <param>
+          <type>const U &amp;</type>
+        </param>
+        <briefdescription>
+<para>Evaluates to the constant value (ignores object). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>U</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Object type (unused) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The constant value </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/ConstExpr.hpp" line="37" column="24" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/ConstExpr.hpp" bodystart="37" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1query_1_1expressions_1_1_const_expr_1a7cdb06938a038ca586c235415bdc6eb2" prot="public" static="no" nodiscard="yes" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>const T &amp;</type>
+        <definition>const T &amp; learnql::query::expressions::ConstExpr&lt; T &gt;::value</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>value</name>
+        <qualifiedname>learnql::query::expressions::ConstExpr::value</qualifiedname>
+        <briefdescription>
+<para>Gets the constant value directly. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/ConstExpr.hpp" line="44" column="24" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/ConstExpr.hpp" bodystart="44" bodyend="46"/>
+        <referencedby refid="classlearnql_1_1query_1_1expressions_1_1_const_expr_1ae4e793562d4e9d7160fd156daca25d61" compoundref="_const_expr_8hpp" startline="28" endline="29">learnql::query::expressions::ConstExpr&lt; T &gt;::ConstExpr</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1query_1_1expressions_1_1_const_expr_1aa6abcd358e96721e6075219e5cbd9bde" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string learnql::query::expressions::ConstExpr&lt; T &gt;::to_string</definition>
+        <argsstring>() const</argsstring>
+        <name>to_string</name>
+        <qualifiedname>learnql::query::expressions::ConstExpr::to_string</qualifiedname>
+        <briefdescription>
+<para>Converts to string representation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/ConstExpr.hpp" line="51" column="18" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/ConstExpr.hpp" bodystart="51" bodyend="61"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para><ref refid="conceptlearnql_1_1query_1_1expressions_1_1_expression" kindref="compound">Expression</ref> representing a constant value. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of the constant value</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Example: <programlisting><codeline><highlight class="normal"><ref refid="classlearnql_1_1query_1_1expressions_1_1_const_expr_1ae4e793562d4e9d7160fd156daca25d61" kindref="member">ConstExpr&lt;int&gt;</ref><sp/>age_limit{18};</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="classlearnql_1_1query_1_1expressions_1_1_const_expr_1ae4e793562d4e9d7160fd156daca25d61" kindref="member">ConstExpr&lt;std::string&gt;</ref><sp/>name{</highlight><highlight class="stringliteral">&quot;Alice&quot;</highlight><highlight class="normal">};</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>learnql::query::expressions::ConstExpr&lt; T &gt;</label>
+        <link refid="classlearnql_1_1query_1_1expressions_1_1_const_expr"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>learnql::query::expressions::Expr&lt; Derived &gt;</label>
+        <link refid="classlearnql_1_1query_1_1expressions_1_1_expr"/>
+      </node>
+      <node id="2">
+        <label>learnql::query::expressions::Expr&lt; ConstExpr&lt; T &gt; &gt;</label>
+        <link refid="classlearnql_1_1query_1_1expressions_1_1_expr"/>
+        <childnode refid="3" relation="template-instance">
+          <edgelabel>&lt; ConstExpr&lt; T &gt; &gt;</edgelabel>
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>learnql::query::expressions::ConstExpr&lt; T &gt;</label>
+        <link refid="classlearnql_1_1query_1_1expressions_1_1_const_expr"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>learnql::query::expressions::Expr&lt; Derived &gt;</label>
+        <link refid="classlearnql_1_1query_1_1expressions_1_1_expr"/>
+      </node>
+      <node id="2">
+        <label>learnql::query::expressions::Expr&lt; ConstExpr&lt; T &gt; &gt;</label>
+        <link refid="classlearnql_1_1query_1_1expressions_1_1_expr"/>
+        <childnode refid="3" relation="template-instance">
+          <edgelabel>&lt; ConstExpr&lt; T &gt; &gt;</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/ConstExpr.hpp" line="20" column="1" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/ConstExpr.hpp" bodystart="20" bodyend="65"/>
+    <listofallmembers>
+      <member refid="classlearnql_1_1query_1_1expressions_1_1_const_expr_1ae4e793562d4e9d7160fd156daca25d61" prot="public" virt="non-virtual"><scope>learnql::query::expressions::ConstExpr</scope><name>ConstExpr</name></member>
+      <member refid="classlearnql_1_1query_1_1expressions_1_1_expr_1ab3afaf7bba10da4cd15df3713a77974f" prot="public" virt="non-virtual"><scope>learnql::query::expressions::ConstExpr</scope><name>derived</name></member>
+      <member refid="classlearnql_1_1query_1_1expressions_1_1_const_expr_1a9a8c409b911a13b5613a84332943bdc6" prot="public" virt="non-virtual"><scope>learnql::query::expressions::ConstExpr</scope><name>evaluate</name></member>
+      <member refid="classlearnql_1_1query_1_1expressions_1_1_expr_1a0d548fb13365c652003a26c2c6d23ade" prot="public" virt="non-virtual" ambiguityscope="learnql::query::expressions::Expr&lt; ConstExpr&lt; T &gt; &gt;::"><scope>learnql::query::expressions::ConstExpr</scope><name>evaluate</name></member>
+      <member refid="classlearnql_1_1query_1_1expressions_1_1_const_expr_1aa6abcd358e96721e6075219e5cbd9bde" prot="public" virt="non-virtual"><scope>learnql::query::expressions::ConstExpr</scope><name>to_string</name></member>
+      <member refid="classlearnql_1_1query_1_1expressions_1_1_const_expr_1a7cdb06938a038ca586c235415bdc6eb2" prot="public" virt="non-virtual"><scope>learnql::query::expressions::ConstExpr</scope><name>value</name></member>
+      <member refid="classlearnql_1_1query_1_1expressions_1_1_const_expr_1aa91060a50127074c96b8cf62191c6593" prot="private" virt="non-virtual"><scope>learnql::query::expressions::ConstExpr</scope><name>value_</name></member>
+      <member refid="classlearnql_1_1query_1_1expressions_1_1_const_expr_1a36041ede453d91ea465d8921c9fa8141" prot="public" virt="non-virtual"><scope>learnql::query::expressions::ConstExpr</scope><name>value_type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

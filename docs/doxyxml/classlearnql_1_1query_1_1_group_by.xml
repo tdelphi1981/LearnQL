@@ -1,0 +1,604 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classlearnql_1_1query_1_1_group_by" kind="class" language="C++" prot="public">
+    <compoundname>learnql::query::GroupBy</compoundname>
+    <includes refid="_group_by_8hpp" local="no">GroupBy.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+      <param>
+        <type>typename GroupKey</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classlearnql_1_1query_1_1_group_by_1afa04cfd0ed7464486f80e5632be8201c" prot="public" static="no">
+        <type>std::function&lt; GroupKey(const T &amp;)&gt;</type>
+        <definition>using learnql::query::GroupBy&lt; T, GroupKey &gt;::key_extractor_type =  std::function&lt;GroupKey(const T&amp;)&gt;</definition>
+        <argsstring></argsstring>
+        <name>key_extractor_type</name>
+        <qualifiedname>learnql::query::GroupBy::key_extractor_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/GroupBy.hpp" line="49" column="5" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/GroupBy.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classlearnql_1_1query_1_1_group_by_1a3f92efa067a764a72e36a22f7251d4a5" prot="public" static="no">
+        <type>std::unordered_map&lt; GroupKey, std::vector&lt; T &gt; &gt;</type>
+        <definition>using learnql::query::GroupBy&lt; T, GroupKey &gt;::group_map_type =  std::unordered_map&lt;GroupKey, std::vector&lt;T&gt;&gt;</definition>
+        <argsstring></argsstring>
+        <name>group_map_type</name>
+        <qualifiedname>learnql::query::GroupBy::group_map_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/GroupBy.hpp" line="50" column="5" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/GroupBy.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classlearnql_1_1query_1_1_group_by_1a9f48104265459c522c425fa1c4426f52" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Container</type>
+          </param>
+          <param>
+            <type>typename AggFunc</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>static auto learnql::query::GroupBy&lt; T, GroupKey &gt;::group_by</definition>
+        <argsstring>(const Container &amp;records, key_extractor_type key_extractor, AggFunc agg_func)</argsstring>
+        <name>group_by</name>
+        <qualifiedname>learnql::query::GroupBy::group_by</qualifiedname>
+        <param>
+          <type>const Container &amp;</type>
+          <declname>records</declname>
+        </param>
+        <param>
+          <type><ref refid="classlearnql_1_1query_1_1_group_by_1afa04cfd0ed7464486f80e5632be8201c" kindref="member">key_extractor_type</ref></type>
+          <declname>key_extractor</declname>
+        </param>
+        <param>
+          <type>AggFunc</type>
+          <declname>agg_func</declname>
+        </param>
+        <briefdescription>
+<para>Performs a group-by operation with custom aggregation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Container</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Container type (e.g., vector) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>AggFunc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Aggregation function type </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>records</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Records to group </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key_extractor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Function to extract group key </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>agg_func</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Aggregation function </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Vector of group-by results </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/GroupBy.hpp" line="62" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/GroupBy.hpp" bodystart="62" bodyend="89"/>
+        <referencedby refid="classlearnql_1_1query_1_1_group_by_1aaf871ac89238db9b1eb335c5e32d0b5d" compoundref="_group_by_8hpp" startline="151" endline="169">learnql::query::GroupBy&lt; T, GroupKey &gt;::average_by</referencedby>
+        <referencedby refid="classlearnql_1_1query_1_1_group_by_1a63358fc8d18e27dd1009d4d6e1b3d3d5" compoundref="_group_by_8hpp" startline="99" endline="108">learnql::query::GroupBy&lt; T, GroupKey &gt;::count_by</referencedby>
+        <referencedby refid="namespacelearnql_1_1query_1a7da159c5a4fc69bc9b9e11e08bbdb454" compoundref="_group_by_8hpp" startline="254" endline="260">learnql::query::group_by</referencedby>
+        <referencedby refid="classlearnql_1_1query_1_1_group_by_1ab42342f3bc9cc26e155c0e116198c9a5" compoundref="_group_by_8hpp" startline="217" endline="239">learnql::query::GroupBy&lt; T, GroupKey &gt;::max_by</referencedby>
+        <referencedby refid="classlearnql_1_1query_1_1_group_by_1a1faa367907616251b4dce506d100acaa" compoundref="_group_by_8hpp" startline="182" endline="204">learnql::query::GroupBy&lt; T, GroupKey &gt;::min_by</referencedby>
+        <referencedby refid="classlearnql_1_1query_1_1_group_by_1a10097ca4196ca5ec8f8d82b8b6eb82a0" compoundref="_group_by_8hpp" startline="121" endline="138">learnql::query::GroupBy&lt; T, GroupKey &gt;::sum_by</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1query_1_1_group_by_1a63358fc8d18e27dd1009d4d6e1b3d3d5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Container</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>static auto learnql::query::GroupBy&lt; T, GroupKey &gt;::count_by</definition>
+        <argsstring>(const Container &amp;records, key_extractor_type key_extractor)</argsstring>
+        <name>count_by</name>
+        <qualifiedname>learnql::query::GroupBy::count_by</qualifiedname>
+        <param>
+          <type>const Container &amp;</type>
+          <declname>records</declname>
+        </param>
+        <param>
+          <type><ref refid="classlearnql_1_1query_1_1_group_by_1afa04cfd0ed7464486f80e5632be8201c" kindref="member">key_extractor_type</ref></type>
+          <declname>key_extractor</declname>
+        </param>
+        <briefdescription>
+<para>Groups records and counts them. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Container</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Container type </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>records</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Records to group </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key_extractor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Function to extract group key </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Vector of group counts </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/GroupBy.hpp" line="99" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/GroupBy.hpp" bodystart="99" bodyend="108"/>
+        <references refid="classlearnql_1_1query_1_1_group_by_1a9f48104265459c522c425fa1c4426f52" compoundref="_group_by_8hpp" startline="62" endline="89">learnql::query::GroupBy&lt; T, GroupKey &gt;::group_by</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1query_1_1_group_by_1a10097ca4196ca5ec8f8d82b8b6eb82a0" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Container</type>
+          </param>
+          <param>
+            <type>typename KeyExtractor</type>
+          </param>
+          <param>
+            <type>typename ValueExtractor</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>static auto learnql::query::GroupBy&lt; T, GroupKey &gt;::sum_by</definition>
+        <argsstring>(const Container &amp;records, KeyExtractor &amp;&amp;key_extractor, ValueExtractor &amp;&amp;value_extractor)</argsstring>
+        <name>sum_by</name>
+        <qualifiedname>learnql::query::GroupBy::sum_by</qualifiedname>
+        <param>
+          <type>const Container &amp;</type>
+          <declname>records</declname>
+        </param>
+        <param>
+          <type>KeyExtractor &amp;&amp;</type>
+          <declname>key_extractor</declname>
+        </param>
+        <param>
+          <type>ValueExtractor &amp;&amp;</type>
+          <declname>value_extractor</declname>
+        </param>
+        <briefdescription>
+<para>Groups records and sums a field. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Container</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Container type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>KeyExtractor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Key extractor callable type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ValueExtractor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value extractor callable type </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>records</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Records to group </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key_extractor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Function to extract group key </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value_extractor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Function to extract value to sum </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Vector of group sums </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/GroupBy.hpp" line="121" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/GroupBy.hpp" bodystart="121" bodyend="138"/>
+        <references refid="classlearnql_1_1query_1_1_group_by_1a9f48104265459c522c425fa1c4426f52" compoundref="_group_by_8hpp" startline="62" endline="89">learnql::query::GroupBy&lt; T, GroupKey &gt;::group_by</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1query_1_1_group_by_1aaf871ac89238db9b1eb335c5e32d0b5d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Container</type>
+          </param>
+          <param>
+            <type>typename KeyExtractor</type>
+          </param>
+          <param>
+            <type>typename ValueExtractor</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>static auto learnql::query::GroupBy&lt; T, GroupKey &gt;::average_by</definition>
+        <argsstring>(const Container &amp;records, KeyExtractor &amp;&amp;key_extractor, ValueExtractor &amp;&amp;value_extractor)</argsstring>
+        <name>average_by</name>
+        <qualifiedname>learnql::query::GroupBy::average_by</qualifiedname>
+        <param>
+          <type>const Container &amp;</type>
+          <declname>records</declname>
+        </param>
+        <param>
+          <type>KeyExtractor &amp;&amp;</type>
+          <declname>key_extractor</declname>
+        </param>
+        <param>
+          <type>ValueExtractor &amp;&amp;</type>
+          <declname>value_extractor</declname>
+        </param>
+        <briefdescription>
+<para>Groups records and computes average of a field. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Container</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Container type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>KeyExtractor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Key extractor callable type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ValueExtractor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value extractor callable type </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>records</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Records to group </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key_extractor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Function to extract group key </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value_extractor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Function to extract value to average </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Vector of group averages </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/GroupBy.hpp" line="151" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/GroupBy.hpp" bodystart="151" bodyend="169"/>
+        <references refid="classlearnql_1_1query_1_1_group_by_1a9f48104265459c522c425fa1c4426f52" compoundref="_group_by_8hpp" startline="62" endline="89">learnql::query::GroupBy&lt; T, GroupKey &gt;::group_by</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1query_1_1_group_by_1a1faa367907616251b4dce506d100acaa" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Container</type>
+          </param>
+          <param>
+            <type>typename KeyExtractor</type>
+          </param>
+          <param>
+            <type>typename ValueExtractor</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>static auto learnql::query::GroupBy&lt; T, GroupKey &gt;::min_by</definition>
+        <argsstring>(const Container &amp;records, KeyExtractor &amp;&amp;key_extractor, ValueExtractor &amp;&amp;value_extractor)</argsstring>
+        <name>min_by</name>
+        <qualifiedname>learnql::query::GroupBy::min_by</qualifiedname>
+        <param>
+          <type>const Container &amp;</type>
+          <declname>records</declname>
+        </param>
+        <param>
+          <type>KeyExtractor &amp;&amp;</type>
+          <declname>key_extractor</declname>
+        </param>
+        <param>
+          <type>ValueExtractor &amp;&amp;</type>
+          <declname>value_extractor</declname>
+        </param>
+        <briefdescription>
+<para>Groups records and finds minimum value of a field. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Container</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Container type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>KeyExtractor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Key extractor callable type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ValueExtractor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value extractor callable type </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>records</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Records to group </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key_extractor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Function to extract group key </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value_extractor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Function to extract value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Vector of group minimums </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/GroupBy.hpp" line="182" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/GroupBy.hpp" bodystart="182" bodyend="204"/>
+        <references refid="classlearnql_1_1query_1_1_group_by_1a9f48104265459c522c425fa1c4426f52" compoundref="_group_by_8hpp" startline="62" endline="89">learnql::query::GroupBy&lt; T, GroupKey &gt;::group_by</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1query_1_1_group_by_1ab42342f3bc9cc26e155c0e116198c9a5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Container</type>
+          </param>
+          <param>
+            <type>typename KeyExtractor</type>
+          </param>
+          <param>
+            <type>typename ValueExtractor</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>static auto learnql::query::GroupBy&lt; T, GroupKey &gt;::max_by</definition>
+        <argsstring>(const Container &amp;records, KeyExtractor &amp;&amp;key_extractor, ValueExtractor &amp;&amp;value_extractor)</argsstring>
+        <name>max_by</name>
+        <qualifiedname>learnql::query::GroupBy::max_by</qualifiedname>
+        <param>
+          <type>const Container &amp;</type>
+          <declname>records</declname>
+        </param>
+        <param>
+          <type>KeyExtractor &amp;&amp;</type>
+          <declname>key_extractor</declname>
+        </param>
+        <param>
+          <type>ValueExtractor &amp;&amp;</type>
+          <declname>value_extractor</declname>
+        </param>
+        <briefdescription>
+<para>Groups records and finds maximum value of a field. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Container</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Container type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>KeyExtractor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Key extractor callable type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ValueExtractor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value extractor callable type </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>records</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Records to group </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key_extractor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Function to extract group key </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value_extractor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Function to extract value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Vector of group maximums </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/GroupBy.hpp" line="217" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/GroupBy.hpp" bodystart="217" bodyend="239"/>
+        <references refid="classlearnql_1_1query_1_1_group_by_1a9f48104265459c522c425fa1c4426f52" compoundref="_group_by_8hpp" startline="62" endline="89">learnql::query::GroupBy&lt; T, GroupKey &gt;::group_by</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Group-by operation helper. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Record type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>GroupKey</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of the grouping key</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Provides SQL-like GROUP BY functionality with aggregations.</para>
+<para>Example: <programlisting><codeline><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>results<sp/>=<sp/><ref refid="classlearnql_1_1query_1_1_group_by_1a9f48104265459c522c425fa1c4426f52" kindref="member">GroupBy::group_by</ref>(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>students,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>[](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>s)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>s.department;<sp/>},<sp/><sp/></highlight><highlight class="comment">//<sp/>Group<sp/>key</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>[](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>group)<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Aggregate</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::ranges::fold_left(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>group<sp/>|<sp/>std::views::transform([](</highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>s)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>s.gpa;<sp/>}),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0.0,<sp/>std::plus{}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>)<sp/>/<sp/>group.size();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">);</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/GroupBy.hpp" line="47" column="1" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/GroupBy.hpp" bodystart="47" bodyend="240"/>
+    <listofallmembers>
+      <member refid="classlearnql_1_1query_1_1_group_by_1aaf871ac89238db9b1eb335c5e32d0b5d" prot="public" virt="non-virtual"><scope>learnql::query::GroupBy</scope><name>average_by</name></member>
+      <member refid="classlearnql_1_1query_1_1_group_by_1a63358fc8d18e27dd1009d4d6e1b3d3d5" prot="public" virt="non-virtual"><scope>learnql::query::GroupBy</scope><name>count_by</name></member>
+      <member refid="classlearnql_1_1query_1_1_group_by_1a9f48104265459c522c425fa1c4426f52" prot="public" virt="non-virtual"><scope>learnql::query::GroupBy</scope><name>group_by</name></member>
+      <member refid="classlearnql_1_1query_1_1_group_by_1a3f92efa067a764a72e36a22f7251d4a5" prot="public" virt="non-virtual"><scope>learnql::query::GroupBy</scope><name>group_map_type</name></member>
+      <member refid="classlearnql_1_1query_1_1_group_by_1afa04cfd0ed7464486f80e5632be8201c" prot="public" virt="non-virtual"><scope>learnql::query::GroupBy</scope><name>key_extractor_type</name></member>
+      <member refid="classlearnql_1_1query_1_1_group_by_1ab42342f3bc9cc26e155c0e116198c9a5" prot="public" virt="non-virtual"><scope>learnql::query::GroupBy</scope><name>max_by</name></member>
+      <member refid="classlearnql_1_1query_1_1_group_by_1a1faa367907616251b4dce506d100acaa" prot="public" virt="non-virtual"><scope>learnql::query::GroupBy</scope><name>min_by</name></member>
+      <member refid="classlearnql_1_1query_1_1_group_by_1a10097ca4196ca5ec8f8d82b8b6eb82a0" prot="public" virt="non-virtual"><scope>learnql::query::GroupBy</scope><name>sum_by</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

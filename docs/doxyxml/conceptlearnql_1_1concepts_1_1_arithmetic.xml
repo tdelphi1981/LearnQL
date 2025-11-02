@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="conceptlearnql_1_1concepts_1_1_arithmetic" kind="concept">
+    <compoundname>learnql::concepts::Arithmetic</compoundname>
+    <includes refid="_serializable_8hpp" local="no">Serializable.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <initializer>template&lt;typename T&gt;
+concept <ref refid="conceptlearnql_1_1concepts_1_1_arithmetic" kindref="compound">learnql::concepts::Arithmetic</ref> =  std::is_arithmetic_v&lt;T&gt;    </initializer>
+    <briefdescription>
+<para>Concept for arithmetic types (integers, floats, etc.). </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Fundamental numeric types that can be serialized directly </para>
+    </detaileddescription>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/concepts/Serializable.hpp" line="17" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,229 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="namespacelearnql_1_1query_1_1expressions" kind="namespace" language="C++">
+    <compoundname>learnql::query::expressions</compoundname>
+    <innerclass refid="classlearnql_1_1query_1_1expressions_1_1_binary_expr" prot="public">learnql::query::expressions::BinaryExpr</innerclass>
+    <innerclass refid="classlearnql_1_1query_1_1expressions_1_1_const_expr" prot="public">learnql::query::expressions::ConstExpr</innerclass>
+    <innerclass refid="classlearnql_1_1query_1_1expressions_1_1_expr" prot="public">learnql::query::expressions::Expr</innerclass>
+    <innerclass refid="classlearnql_1_1query_1_1expressions_1_1_field_expr" prot="public">learnql::query::expressions::FieldExpr</innerclass>
+    <innerclass refid="classlearnql_1_1query_1_1expressions_1_1_logical_expr" prot="public">learnql::query::expressions::LogicalExpr</innerclass>
+    <innerconcept refid="conceptlearnql_1_1query_1_1expressions_1_1_expression">learnql::query::expressions::Expression</innerconcept>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespacelearnql_1_1query_1_1expressions_1a00f9c30809237ff6d8247b7b93942052" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>BinaryOp</name>
+        <qualifiedname>learnql::query::expressions::BinaryOp</qualifiedname>
+        <enumvalue id="namespacelearnql_1_1query_1_1expressions_1a00f9c30809237ff6d8247b7b93942052af5f286e73bda105e538310b3190f75c5" prot="public">
+          <name>Equal</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacelearnql_1_1query_1_1expressions_1a00f9c30809237ff6d8247b7b93942052a19bb0af2c3c530538cb41aff7f235b96" prot="public">
+          <name>NotEqual</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacelearnql_1_1query_1_1expressions_1a00f9c30809237ff6d8247b7b93942052a1cfdf0e8d0c87a228c1f40d9bee7888b" prot="public">
+          <name>Less</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacelearnql_1_1query_1_1expressions_1a00f9c30809237ff6d8247b7b93942052ad3e6fdac55bb7b0edd7834c968ba1f38" prot="public">
+          <name>LessEqual</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacelearnql_1_1query_1_1expressions_1a00f9c30809237ff6d8247b7b93942052a8768a6821cd735aea4f5b0df88c1fc6a" prot="public">
+          <name>Greater</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacelearnql_1_1query_1_1expressions_1a00f9c30809237ff6d8247b7b93942052a758b05d899def79c9eb864ad4f96be1f" prot="public">
+          <name>GreaterEqual</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Binary operator types. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/Expr.hpp" line="55" column="1" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/Expr.hpp" bodystart="55" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacelearnql_1_1query_1_1expressions_1a2d9f720fdaedcc4810f4beeb2c5301a2" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>LogicalOp</name>
+        <qualifiedname>learnql::query::expressions::LogicalOp</qualifiedname>
+        <enumvalue id="namespacelearnql_1_1query_1_1expressions_1a2d9f720fdaedcc4810f4beeb2c5301a2ac33315685a0cba3ce53be378b3c7874b" prot="public">
+          <name>And</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacelearnql_1_1query_1_1expressions_1a2d9f720fdaedcc4810f4beeb2c5301a2a3a2d5fe857d8f9541136a124c2edec6c" prot="public">
+          <name>Or</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Logical operator types. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/Expr.hpp" line="82" column="1" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/Expr.hpp" bodystart="82" bodyend="85"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacelearnql_1_1query_1_1expressions_1a3be9edc38e6ce2d82cafc51cfab2b4a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>learnql::query::expressions::ConstExpr</definition>
+        <argsstring>(T) -&gt; ConstExpr&lt; T &gt;</argsstring>
+        <name>ConstExpr</name>
+        <qualifiedname>learnql::query::expressions::ConstExpr</qualifiedname>
+        <param>
+          <type>T</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/ConstExpr.hpp" line="69" column="1" declfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/ConstExpr.hpp" declline="69" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelearnql_1_1query_1_1expressions_1ae784ccbf3774781425bf12cc3a5be770" prot="public" static="no" nodiscard="yes" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * learnql::query::expressions::binary_op_to_string</definition>
+        <argsstring>(BinaryOp op) noexcept</argsstring>
+        <name>binary_op_to_string</name>
+        <qualifiedname>learnql::query::expressions::binary_op_to_string</qualifiedname>
+        <param>
+          <type><ref refid="namespacelearnql_1_1query_1_1expressions_1a00f9c30809237ff6d8247b7b93942052" kindref="member">BinaryOp</ref></type>
+          <declname>op</declname>
+        </param>
+        <briefdescription>
+<para>Converts <ref refid="namespacelearnql_1_1query_1_1expressions_1a00f9c30809237ff6d8247b7b93942052" kindref="member">BinaryOp</ref> to string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/Expr.hpp" line="67" column="30" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/Expr.hpp" bodystart="67" bodyend="77"/>
+        <references refid="namespacelearnql_1_1query_1_1expressions_1a00f9c30809237ff6d8247b7b93942052af5f286e73bda105e538310b3190f75c5" compoundref="_expr_8hpp" startline="56">Equal</references>
+        <references refid="namespacelearnql_1_1query_1_1expressions_1a00f9c30809237ff6d8247b7b93942052a8768a6821cd735aea4f5b0df88c1fc6a" compoundref="_expr_8hpp" startline="60">Greater</references>
+        <references refid="namespacelearnql_1_1query_1_1expressions_1a00f9c30809237ff6d8247b7b93942052a758b05d899def79c9eb864ad4f96be1f" compoundref="_expr_8hpp" startline="61">GreaterEqual</references>
+        <references refid="namespacelearnql_1_1query_1_1expressions_1a00f9c30809237ff6d8247b7b93942052a1cfdf0e8d0c87a228c1f40d9bee7888b" compoundref="_expr_8hpp" startline="58">Less</references>
+        <references refid="namespacelearnql_1_1query_1_1expressions_1a00f9c30809237ff6d8247b7b93942052ad3e6fdac55bb7b0edd7834c968ba1f38" compoundref="_expr_8hpp" startline="59">LessEqual</references>
+        <references refid="namespacelearnql_1_1query_1_1expressions_1a00f9c30809237ff6d8247b7b93942052a19bb0af2c3c530538cb41aff7f235b96" compoundref="_expr_8hpp" startline="57">NotEqual</references>
+        <referencedby refid="classlearnql_1_1query_1_1expressions_1_1_binary_expr_1ac37dc1481f0452848d75a1a1efd0e5a7" compoundref="_binary_expr_8hpp" startline="67" endline="73">learnql::query::expressions::BinaryExpr&lt; Op, Left, Right &gt;::to_string</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacelearnql_1_1query_1_1expressions_1aa2f02bac46bab2bbc8c534e792894bac" prot="public" static="no" nodiscard="yes" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * learnql::query::expressions::logical_op_to_string</definition>
+        <argsstring>(LogicalOp op) noexcept</argsstring>
+        <name>logical_op_to_string</name>
+        <qualifiedname>learnql::query::expressions::logical_op_to_string</qualifiedname>
+        <param>
+          <type><ref refid="namespacelearnql_1_1query_1_1expressions_1a2d9f720fdaedcc4810f4beeb2c5301a2" kindref="member">LogicalOp</ref></type>
+          <declname>op</declname>
+        </param>
+        <briefdescription>
+<para>Converts <ref refid="namespacelearnql_1_1query_1_1expressions_1a2d9f720fdaedcc4810f4beeb2c5301a2" kindref="member">LogicalOp</ref> to string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/Expr.hpp" line="90" column="30" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/Expr.hpp" bodystart="90" bodyend="96"/>
+        <references refid="namespacelearnql_1_1query_1_1expressions_1a2d9f720fdaedcc4810f4beeb2c5301a2ac33315685a0cba3ce53be378b3c7874b" compoundref="_expr_8hpp" startline="83">And</references>
+        <references refid="namespacelearnql_1_1query_1_1expressions_1a2d9f720fdaedcc4810f4beeb2c5301a2a3a2d5fe857d8f9541136a124c2edec6c" compoundref="_expr_8hpp" startline="84">Or</references>
+        <referencedby refid="classlearnql_1_1query_1_1expressions_1_1_logical_expr_1ac717dd36ba697e57d2b042c3ec2dd13c" compoundref="_logical_expr_8hpp" startline="56" endline="62">learnql::query::expressions::LogicalExpr&lt; Op, Left, Right &gt;::to_string</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacelearnql_1_1query_1_1expressions_1a744991e226e1f7379b2b1427e0d9c5a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename FieldType</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>learnql::query::expressions::FieldExpr</definition>
+        <argsstring>(std::string, FieldType(T::*)() const) -&gt; FieldExpr&lt; T, FieldType &gt;</argsstring>
+        <name>FieldExpr</name>
+        <qualifiedname>learnql::query::expressions::FieldExpr</qualifiedname>
+        <param>
+          <type>std::string</type>
+        </param>
+        <param>
+          <type>FieldType(T::*)() const</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/FieldExpr.hpp" line="90" column="1" declfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/FieldExpr.hpp" declline="90" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelearnql_1_1query_1_1expressions_1acb396c4f7b8f53b1e19632519083c921" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename FieldType</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>learnql::query::expressions::FieldExpr</definition>
+        <argsstring>(std::string, std::function&lt; FieldType(const T &amp;)&gt;) -&gt; FieldExpr&lt; T, FieldType &gt;</argsstring>
+        <name>FieldExpr</name>
+        <qualifiedname>learnql::query::expressions::FieldExpr</qualifiedname>
+        <param>
+          <type>std::string</type>
+        </param>
+        <param>
+          <type>std::function&lt; FieldType(const T &amp;)&gt;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/FieldExpr.hpp" line="93" column="1" declfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/FieldExpr.hpp" declline="93" declcolumn="1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/BinaryExpr.hpp" line="9" column="1"/>
+  </compounddef>
+</doxygen>

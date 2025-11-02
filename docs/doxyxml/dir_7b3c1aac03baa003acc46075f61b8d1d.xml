@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="dir_7b3c1aac03baa003acc46075f61b8d1d" kind="dir">
+    <compoundname>/Users/tolgaberber/Work/CPP/LearnQL/learnql/concepts</compoundname>
+    <innerfile refid="_queryable_8hpp">Queryable.hpp</innerfile>
+    <innerfile refid="_serializable_8hpp">Serializable.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/concepts/"/>
+  </compounddef>
+</doxygen>

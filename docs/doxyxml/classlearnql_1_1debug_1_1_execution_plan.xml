@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classlearnql_1_1debug_1_1_execution_plan" kind="class" language="C++" prot="public">
+    <compoundname>learnql::debug::ExecutionPlan</compoundname>
+    <includes refid="_execution_plan_8hpp" local="no">ExecutionPlan.hpp</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classlearnql_1_1debug_1_1_execution_plan_1a9cb4b6d7e475840243727ecbed3e499c" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string learnql::debug::ExecutionPlan::query_text_</definition>
+        <argsstring></argsstring>
+        <name>query_text_</name>
+        <qualifiedname>learnql::debug::ExecutionPlan::query_text_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/ExecutionPlan.hpp" line="192" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/ExecutionPlan.hpp" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlearnql_1_1debug_1_1_execution_plan_1adcff529110e9d3ee028b7fafa6d2bd71" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classlearnql_1_1debug_1_1_execution_plan_node" kindref="compound">ExecutionPlanNode</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;ExecutionPlanNode&gt; learnql::debug::ExecutionPlan::root_</definition>
+        <argsstring></argsstring>
+        <name>root_</name>
+        <qualifiedname>learnql::debug::ExecutionPlan::root_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/ExecutionPlan.hpp" line="193" column="21" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/ExecutionPlan.hpp" bodystart="193" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlearnql_1_1debug_1_1_execution_plan_1a27ae02d0db8c7da5bcfdb7e640a609c0" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>learnql::debug::ExecutionPlan::ExecutionPlan</definition>
+        <argsstring>(std::string query_text)</argsstring>
+        <name>ExecutionPlan</name>
+        <qualifiedname>learnql::debug::ExecutionPlan::ExecutionPlan</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>query_text</declname>
+        </param>
+        <briefdescription>
+<para>Constructs an execution plan. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>query_text</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Original query text/description </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/ExecutionPlan.hpp" line="148" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/ExecutionPlan.hpp" bodystart="148" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1debug_1_1_execution_plan_1accff2969c10c5a6ee0b2a82c78fabec5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::debug::ExecutionPlan::set_root</definition>
+        <argsstring>(std::shared_ptr&lt; ExecutionPlanNode &gt; root)</argsstring>
+        <name>set_root</name>
+        <qualifiedname>learnql::debug::ExecutionPlan::set_root</qualifiedname>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classlearnql_1_1debug_1_1_execution_plan_node" kindref="compound">ExecutionPlanNode</ref> &gt;</type>
+          <declname>root</declname>
+        </param>
+        <briefdescription>
+<para>Sets the root node of the execution plan. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/ExecutionPlan.hpp" line="154" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/ExecutionPlan.hpp" bodystart="154" bodyend="156"/>
+        <references refid="classlearnql_1_1debug_1_1_execution_plan_1a2671777cfcbb2352b519692e83589be7" compoundref="_execution_plan_8hpp" startline="161" endline="163">root</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1debug_1_1_execution_plan_1a2671777cfcbb2352b519692e83589be7" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>const std::shared_ptr&lt; <ref refid="classlearnql_1_1debug_1_1_execution_plan_node" kindref="compound">ExecutionPlanNode</ref> &gt; &amp;</type>
+        <definition>const std::shared_ptr&lt; ExecutionPlanNode &gt; &amp; learnql::debug::ExecutionPlan::root</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>root</name>
+        <qualifiedname>learnql::debug::ExecutionPlan::root</qualifiedname>
+        <briefdescription>
+<para>Gets the root node. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/ExecutionPlan.hpp" line="161" column="28" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/ExecutionPlan.hpp" bodystart="161" bodyend="163"/>
+        <referencedby refid="classlearnql_1_1debug_1_1_execution_plan_1accff2969c10c5a6ee0b2a82c78fabec5" compoundref="_execution_plan_8hpp" startline="154" endline="156">set_root</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1debug_1_1_execution_plan_1aefd69da0826c115d7e74b1b02a6f1ae3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::debug::ExecutionPlan::print</definition>
+        <argsstring>() const</argsstring>
+        <name>print</name>
+        <qualifiedname>learnql::debug::ExecutionPlan::print</qualifiedname>
+        <briefdescription>
+<para>Prints the execution plan. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/ExecutionPlan.hpp" line="168" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/ExecutionPlan.hpp" bodystart="168" bodyend="179"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1debug_1_1_execution_plan_1a52ffecbed3134c1b08ce9eca3f3dd19d" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string learnql::debug::ExecutionPlan::to_string</definition>
+        <argsstring>() const</argsstring>
+        <name>to_string</name>
+        <qualifiedname>learnql::debug::ExecutionPlan::to_string</qualifiedname>
+        <briefdescription>
+<para>Converts the plan to a string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/ExecutionPlan.hpp" line="184" column="18" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/ExecutionPlan.hpp" bodystart="184" bodyend="189"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Execution plan for a query. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Visualizes how a query will be executed. </para>
+    </detaileddescription>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/ExecutionPlan.hpp" line="142" column="1" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/ExecutionPlan.hpp" bodystart="142" bodyend="194"/>
+    <listofallmembers>
+      <member refid="classlearnql_1_1debug_1_1_execution_plan_1a27ae02d0db8c7da5bcfdb7e640a609c0" prot="public" virt="non-virtual"><scope>learnql::debug::ExecutionPlan</scope><name>ExecutionPlan</name></member>
+      <member refid="classlearnql_1_1debug_1_1_execution_plan_1aefd69da0826c115d7e74b1b02a6f1ae3" prot="public" virt="non-virtual"><scope>learnql::debug::ExecutionPlan</scope><name>print</name></member>
+      <member refid="classlearnql_1_1debug_1_1_execution_plan_1a9cb4b6d7e475840243727ecbed3e499c" prot="private" virt="non-virtual"><scope>learnql::debug::ExecutionPlan</scope><name>query_text_</name></member>
+      <member refid="classlearnql_1_1debug_1_1_execution_plan_1a2671777cfcbb2352b519692e83589be7" prot="public" virt="non-virtual"><scope>learnql::debug::ExecutionPlan</scope><name>root</name></member>
+      <member refid="classlearnql_1_1debug_1_1_execution_plan_1adcff529110e9d3ee028b7fafa6d2bd71" prot="private" virt="non-virtual"><scope>learnql::debug::ExecutionPlan</scope><name>root_</name></member>
+      <member refid="classlearnql_1_1debug_1_1_execution_plan_1accff2969c10c5a6ee0b2a82c78fabec5" prot="public" virt="non-virtual"><scope>learnql::debug::ExecutionPlan</scope><name>set_root</name></member>
+      <member refid="classlearnql_1_1debug_1_1_execution_plan_1a52ffecbed3134c1b08ce9eca3f3dd19d" prot="public" virt="non-virtual"><scope>learnql::debug::ExecutionPlan</scope><name>to_string</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

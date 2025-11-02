@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="conceptlearnql_1_1concepts_1_1_stream_serializable" kind="concept">
+    <compoundname>learnql::concepts::StreamSerializable</compoundname>
+    <includes refid="_serializable_8hpp" local="no">Serializable.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <initializer>template&lt;typename T&gt;
+concept <ref refid="conceptlearnql_1_1concepts_1_1_stream_serializable" kindref="compound">learnql::concepts::StreamSerializable</ref> =  requires(T obj, std::ostream&amp; os, std::istream&amp; is) {
+    { os &lt;&lt; obj } -&gt; std::convertible_to&lt;std::ostream&amp;&gt;;
+    { is &gt;&gt; obj } -&gt; std::convertible_to&lt;std::istream&amp;&gt;;
+}    </initializer>
+    <briefdescription>
+<para>Concept for types that support stream-based serialization. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Types that have overloaded &lt;&lt; and &gt;&gt; operators for binary streams </para>
+    </detaileddescription>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/concepts/Serializable.hpp" line="53" column="1"/>
+  </compounddef>
+</doxygen>

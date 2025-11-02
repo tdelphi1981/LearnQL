@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="dir_808bcb38f3f24d38ec28b5b6b113da3e" kind="dir">
+    <compoundname>/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions</compoundname>
+    <innerfile refid="_binary_expr_8hpp">BinaryExpr.hpp</innerfile>
+    <innerfile refid="_const_expr_8hpp">ConstExpr.hpp</innerfile>
+    <innerfile refid="_expr_8hpp">Expr.hpp</innerfile>
+    <innerfile refid="_field_expr_8hpp">FieldExpr.hpp</innerfile>
+    <innerfile refid="_logical_expr_8hpp">LogicalExpr.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/"/>
+  </compounddef>
+</doxygen>

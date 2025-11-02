@@ -1,0 +1,274 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classlearnql_1_1coroutines_1_1_generator" kind="class" language="C++" prot="public">
+    <compoundname>learnql::coroutines::Generator</compoundname>
+    <includes refid="_generator_8hpp" local="no">Generator.hpp</includes>
+    <innerclass refid="structlearnql_1_1coroutines_1_1_generator_1_1promise__type" prot="public">learnql::coroutines::Generator::promise_type</innerclass>
+    <innerclass refid="classlearnql_1_1coroutines_1_1_generator_1_1_iterator" prot="public">learnql::coroutines::Generator::Iterator</innerclass>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classlearnql_1_1coroutines_1_1_generator_1a2a5229805040418af4049081b7292045" prot="public" static="no">
+        <type>std::coroutine_handle&lt; <ref refid="structlearnql_1_1coroutines_1_1_generator_1_1promise__type" kindref="compound">promise_type</ref> &gt;</type>
+        <definition>using learnql::coroutines::Generator&lt; T &gt;::handle_type =  std::coroutine_handle&lt;promise_type&gt;</definition>
+        <argsstring></argsstring>
+        <name>handle_type</name>
+        <qualifiedname>learnql::coroutines::Generator::handle_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/Generator.hpp" line="89" column="5" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/Generator.hpp" bodystart="89" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classlearnql_1_1coroutines_1_1_generator_1a550ddb8991f5e1c0c1d1f0884b4cb6ed" prot="private" static="no" mutable="no">
+        <type><ref refid="classlearnql_1_1coroutines_1_1_generator_1a2a5229805040418af4049081b7292045" kindref="member">handle_type</ref></type>
+        <definition>handle_type learnql::coroutines::Generator&lt; T &gt;::coro_</definition>
+        <argsstring></argsstring>
+        <name>coro_</name>
+        <qualifiedname>learnql::coroutines::Generator::coro_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/Generator.hpp" line="239" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/Generator.hpp" bodystart="239" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlearnql_1_1coroutines_1_1_generator_1a016c54f206f3c05dd782988a8ce4257f" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>learnql::coroutines::Generator&lt; T &gt;::Generator</definition>
+        <argsstring>(handle_type h)</argsstring>
+        <name>Generator</name>
+        <qualifiedname>learnql::coroutines::Generator::Generator</qualifiedname>
+        <param>
+          <type><ref refid="classlearnql_1_1coroutines_1_1_generator_1a2a5229805040418af4049081b7292045" kindref="member">handle_type</ref></type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a generator from a coroutine handle. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/Generator.hpp" line="94" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/Generator.hpp" bodystart="94" bodyend="94"/>
+        <referencedby refid="classlearnql_1_1coroutines_1_1_generator_1af26912a86c26ea0f965b7aee827ec972">learnql::coroutines::Generator&lt; T &gt;::Generator</referencedby>
+        <referencedby refid="classlearnql_1_1coroutines_1_1_generator_1aaa58f569b3753158a41bba2628c5d369" compoundref="_generator_8hpp" startline="104" endline="107">learnql::coroutines::Generator&lt; T &gt;::Generator</referencedby>
+        <referencedby refid="structlearnql_1_1coroutines_1_1_generator_1_1promise__type_1a2e92b4247d3497a921bdf77813bc7ae1" compoundref="_generator_8hpp" startline="50" endline="52">learnql::coroutines::Generator&lt; T &gt;::promise_type::get_return_object</referencedby>
+        <referencedby refid="classlearnql_1_1coroutines_1_1_generator_1_1_iterator_1a1d2dfb23fe6d23a4cdeb86e0639a5920" compoundref="_generator_8hpp" startline="179" endline="181">learnql::coroutines::Generator&lt; T &gt;::Iterator::Iterator</referencedby>
+        <referencedby refid="classlearnql_1_1coroutines_1_1_generator_1a7b8f4c3c0f65bc46f3ca9d04d7118256">learnql::coroutines::Generator&lt; T &gt;::operator=</referencedby>
+        <referencedby refid="classlearnql_1_1coroutines_1_1_generator_1ae6076de3bd41299a54fe641d5d7b1bfa" compoundref="_generator_8hpp" startline="117" endline="126">learnql::coroutines::Generator&lt; T &gt;::operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1coroutines_1_1_generator_1af26912a86c26ea0f965b7aee827ec972" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>learnql::coroutines::Generator&lt; T &gt;::Generator</definition>
+        <argsstring>(const Generator &amp;)=delete</argsstring>
+        <name>Generator</name>
+        <qualifiedname>learnql::coroutines::Generator::Generator</qualifiedname>
+        <param>
+          <type>const Generator &amp;</type>
+        </param>
+        <briefdescription>
+<para>Deleted copy constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/Generator.hpp" line="99" column="5"/>
+        <references refid="classlearnql_1_1coroutines_1_1_generator_1a016c54f206f3c05dd782988a8ce4257f" compoundref="_generator_8hpp" startline="94" endline="94">learnql::coroutines::Generator&lt; T &gt;::Generator</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1coroutines_1_1_generator_1aaa58f569b3753158a41bba2628c5d369" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>learnql::coroutines::Generator&lt; T &gt;::Generator</definition>
+        <argsstring>(Generator &amp;&amp;other) noexcept</argsstring>
+        <name>Generator</name>
+        <qualifiedname>learnql::coroutines::Generator::Generator</qualifiedname>
+        <param>
+          <type>Generator &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Move constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/Generator.hpp" line="104" column="5" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/Generator.hpp" bodystart="104" bodyend="107"/>
+        <references refid="classlearnql_1_1coroutines_1_1_generator_1a016c54f206f3c05dd782988a8ce4257f" compoundref="_generator_8hpp" startline="94" endline="94">learnql::coroutines::Generator&lt; T &gt;::Generator</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1coroutines_1_1_generator_1a7b8f4c3c0f65bc46f3ca9d04d7118256" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classlearnql_1_1coroutines_1_1_generator_1a016c54f206f3c05dd782988a8ce4257f" kindref="member">Generator</ref> &amp;</type>
+        <definition>Generator &amp; learnql::coroutines::Generator&lt; T &gt;::operator=</definition>
+        <argsstring>(const Generator &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <qualifiedname>learnql::coroutines::Generator::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classlearnql_1_1coroutines_1_1_generator_1a016c54f206f3c05dd782988a8ce4257f" kindref="member">Generator</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Deleted copy assignment. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/Generator.hpp" line="112" column="15"/>
+        <references refid="classlearnql_1_1coroutines_1_1_generator_1a016c54f206f3c05dd782988a8ce4257f" compoundref="_generator_8hpp" startline="94" endline="94">learnql::coroutines::Generator&lt; T &gt;::Generator</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1coroutines_1_1_generator_1ae6076de3bd41299a54fe641d5d7b1bfa" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="classlearnql_1_1coroutines_1_1_generator_1a016c54f206f3c05dd782988a8ce4257f" kindref="member">Generator</ref> &amp;</type>
+        <definition>Generator &amp; learnql::coroutines::Generator&lt; T &gt;::operator=</definition>
+        <argsstring>(Generator &amp;&amp;other) noexcept</argsstring>
+        <name>operator=</name>
+        <qualifiedname>learnql::coroutines::Generator::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classlearnql_1_1coroutines_1_1_generator_1a016c54f206f3c05dd782988a8ce4257f" kindref="member">Generator</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Move assignment. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/Generator.hpp" line="117" column="15" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/Generator.hpp" bodystart="117" bodyend="126"/>
+        <references refid="classlearnql_1_1coroutines_1_1_generator_1a016c54f206f3c05dd782988a8ce4257f" compoundref="_generator_8hpp" startline="94" endline="94">learnql::coroutines::Generator&lt; T &gt;::Generator</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1coroutines_1_1_generator_1ab48b49c8887ebb080c36fa23a6827699" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>learnql::coroutines::Generator&lt; T &gt;::~Generator</definition>
+        <argsstring>()</argsstring>
+        <name>~Generator</name>
+        <qualifiedname>learnql::coroutines::Generator::~Generator</qualifiedname>
+        <briefdescription>
+<para>Destructor - destroys the coroutine. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/Generator.hpp" line="131" column="5" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/Generator.hpp" bodystart="131" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1coroutines_1_1_generator_1a534c65b5451729d7809f2aa9174e8465" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::optional&lt; T &gt;</type>
+        <definition>std::optional&lt; T &gt; learnql::coroutines::Generator&lt; T &gt;::next</definition>
+        <argsstring>()</argsstring>
+        <name>next</name>
+        <qualifiedname>learnql::coroutines::Generator::next</qualifiedname>
+        <briefdescription>
+<para>Advances the generator and returns the next value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Optional containing the next value, or empty if done </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/Generator.hpp" line="141" column="19" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/Generator.hpp" bodystart="141" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1coroutines_1_1_generator_1a5f7adde23561712fe9fe1c91c3702762" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool learnql::coroutines::Generator&lt; T &gt;::has_next</definition>
+        <argsstring>() const</argsstring>
+        <name>has_next</name>
+        <qualifiedname>learnql::coroutines::Generator::has_next</qualifiedname>
+        <briefdescription>
+<para>Checks if the generator has more values. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/Generator.hpp" line="162" column="11" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/Generator.hpp" bodystart="162" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1coroutines_1_1_generator_1a6f43d0a1717481de35d6743940f57546" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classlearnql_1_1coroutines_1_1_generator_1_1_iterator" kindref="compound">Iterator</ref></type>
+        <definition>Iterator learnql::coroutines::Generator&lt; T &gt;::begin</definition>
+        <argsstring>()</argsstring>
+        <name>begin</name>
+        <qualifiedname>learnql::coroutines::Generator::begin</qualifiedname>
+        <briefdescription>
+<para>Returns an iterator to the beginning. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/Generator.hpp" line="227" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/Generator.hpp" bodystart="227" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1coroutines_1_1_generator_1a41e646e90f8a1550e61d6738d7abc71f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classlearnql_1_1coroutines_1_1_generator_1_1_iterator" kindref="compound">Iterator</ref></type>
+        <definition>Iterator learnql::coroutines::Generator&lt; T &gt;::end</definition>
+        <argsstring>()</argsstring>
+        <name>end</name>
+        <qualifiedname>learnql::coroutines::Generator::end</qualifiedname>
+        <briefdescription>
+<para>Returns an iterator to the end. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/Generator.hpp" line="234" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/Generator.hpp" bodystart="234" bodyend="236"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>A generator for lazy sequence generation using C++20 coroutines. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of values generated</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+This implements a coroutine-based generator that yields values one at a time. It&apos;s perfect for lazy evaluation and can significantly reduce memory usage for large datasets.</para>
+<para>Example: <programlisting><codeline><highlight class="normal"><ref refid="classlearnql_1_1coroutines_1_1_generator_1a016c54f206f3c05dd782988a8ce4257f" kindref="member">Generator&lt;int&gt;</ref><sp/>fibonacci()<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>a<sp/>=<sp/>0,<sp/>b<sp/>=<sp/>1;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">true</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">co_yield</highlight><highlight class="normal"><sp/>a;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>tmp<sp/>=<sp/>a<sp/>+<sp/>b;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>a<sp/>=<sp/>b;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>b<sp/>=<sp/>tmp;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>fib<sp/>=<sp/>fibonacci();</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>10;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>fib()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/Generator.hpp" line="38" column="1" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/Generator.hpp" bodystart="38" bodyend="240"/>
+    <listofallmembers>
+      <member refid="classlearnql_1_1coroutines_1_1_generator_1a6f43d0a1717481de35d6743940f57546" prot="public" virt="non-virtual"><scope>learnql::coroutines::Generator</scope><name>begin</name></member>
+      <member refid="classlearnql_1_1coroutines_1_1_generator_1a550ddb8991f5e1c0c1d1f0884b4cb6ed" prot="private" virt="non-virtual"><scope>learnql::coroutines::Generator</scope><name>coro_</name></member>
+      <member refid="classlearnql_1_1coroutines_1_1_generator_1a41e646e90f8a1550e61d6738d7abc71f" prot="public" virt="non-virtual"><scope>learnql::coroutines::Generator</scope><name>end</name></member>
+      <member refid="classlearnql_1_1coroutines_1_1_generator_1a016c54f206f3c05dd782988a8ce4257f" prot="public" virt="non-virtual"><scope>learnql::coroutines::Generator</scope><name>Generator</name></member>
+      <member refid="classlearnql_1_1coroutines_1_1_generator_1af26912a86c26ea0f965b7aee827ec972" prot="public" virt="non-virtual"><scope>learnql::coroutines::Generator</scope><name>Generator</name></member>
+      <member refid="classlearnql_1_1coroutines_1_1_generator_1aaa58f569b3753158a41bba2628c5d369" prot="public" virt="non-virtual"><scope>learnql::coroutines::Generator</scope><name>Generator</name></member>
+      <member refid="classlearnql_1_1coroutines_1_1_generator_1a2a5229805040418af4049081b7292045" prot="public" virt="non-virtual"><scope>learnql::coroutines::Generator</scope><name>handle_type</name></member>
+      <member refid="classlearnql_1_1coroutines_1_1_generator_1a5f7adde23561712fe9fe1c91c3702762" prot="public" virt="non-virtual"><scope>learnql::coroutines::Generator</scope><name>has_next</name></member>
+      <member refid="classlearnql_1_1coroutines_1_1_generator_1a534c65b5451729d7809f2aa9174e8465" prot="public" virt="non-virtual"><scope>learnql::coroutines::Generator</scope><name>next</name></member>
+      <member refid="classlearnql_1_1coroutines_1_1_generator_1a7b8f4c3c0f65bc46f3ca9d04d7118256" prot="public" virt="non-virtual"><scope>learnql::coroutines::Generator</scope><name>operator=</name></member>
+      <member refid="classlearnql_1_1coroutines_1_1_generator_1ae6076de3bd41299a54fe641d5d7b1bfa" prot="public" virt="non-virtual"><scope>learnql::coroutines::Generator</scope><name>operator=</name></member>
+      <member refid="classlearnql_1_1coroutines_1_1_generator_1ab48b49c8887ebb080c36fa23a6827699" prot="public" virt="non-virtual"><scope>learnql::coroutines::Generator</scope><name>~Generator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="namespacelearnql_1_1ranges_1_1aggregates" kind="namespace" language="C++">
+    <compoundname>learnql::ranges::aggregates</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacelearnql_1_1ranges_1_1aggregates_1a81aec0aab5aff70cc8ef2d9678b9bb48" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>std::ranges::input_range</type>
+            <declname>R</declname>
+            <defname>R</defname>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto learnql::ranges::aggregates::count</definition>
+        <argsstring>(R &amp;&amp;range)</argsstring>
+        <name>count</name>
+        <qualifiedname>learnql::ranges::aggregates::count</qualifiedname>
+        <param>
+          <type>R &amp;&amp;</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+<para>Counts elements in a range. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/Adaptors.hpp" line="234" column="7" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/Adaptors.hpp" bodystart="234" bodyend="236"/>
+        <referencedby refid="namespacelearnql_1_1ranges_1_1aggregates_1a89c5a7b94e1c139ead2356ae79663434" compoundref="_adaptors_8hpp" startline="251" endline="255">average</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacelearnql_1_1ranges_1_1aggregates_1af5f6939a0b843093daebb98f411e272f" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>std::ranges::input_range</type>
+            <declname>R</declname>
+            <defname>R</defname>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto learnql::ranges::aggregates::sum</definition>
+        <argsstring>(R &amp;&amp;range)</argsstring>
+        <name>sum</name>
+        <qualifiedname>learnql::ranges::aggregates::sum</qualifiedname>
+        <param>
+          <type>R &amp;&amp;</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+<para>Sums elements in a range. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/Adaptors.hpp" line="242" column="7" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/Adaptors.hpp" bodystart="242" bodyend="245"/>
+        <referencedby refid="namespacelearnql_1_1ranges_1_1aggregates_1a89c5a7b94e1c139ead2356ae79663434" compoundref="_adaptors_8hpp" startline="251" endline="255">average</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacelearnql_1_1ranges_1_1aggregates_1a89c5a7b94e1c139ead2356ae79663434" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>std::ranges::input_range</type>
+            <declname>R</declname>
+            <defname>R</defname>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto learnql::ranges::aggregates::average</definition>
+        <argsstring>(R &amp;&amp;range)</argsstring>
+        <name>average</name>
+        <qualifiedname>learnql::ranges::aggregates::average</qualifiedname>
+        <param>
+          <type>R &amp;&amp;</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+<para>Computes average of elements in a range. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/Adaptors.hpp" line="251" column="7" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/Adaptors.hpp" bodystart="251" bodyend="255"/>
+        <references refid="namespacelearnql_1_1ranges_1_1aggregates_1a81aec0aab5aff70cc8ef2d9678b9bb48" compoundref="_adaptors_8hpp" startline="234" endline="236">count</references>
+        <references refid="namespacelearnql_1_1ranges_1_1aggregates_1af5f6939a0b843093daebb98f411e272f" compoundref="_adaptors_8hpp" startline="242" endline="245">sum</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacelearnql_1_1ranges_1_1aggregates_1a7792d7707c24c3982403da30ba6405c7" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>std::ranges::input_range</type>
+            <declname>R</declname>
+            <defname>R</defname>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto learnql::ranges::aggregates::min</definition>
+        <argsstring>(R &amp;&amp;range)</argsstring>
+        <name>min</name>
+        <qualifiedname>learnql::ranges::aggregates::min</qualifiedname>
+        <param>
+          <type>R &amp;&amp;</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+<para>Finds minimum element in a range. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/Adaptors.hpp" line="261" column="7" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/Adaptors.hpp" bodystart="261" bodyend="263"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelearnql_1_1ranges_1_1aggregates_1a92f68d8c70c5adfa60e3e54ada09ce9e" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>std::ranges::input_range</type>
+            <declname>R</declname>
+            <defname>R</defname>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto learnql::ranges::aggregates::max</definition>
+        <argsstring>(R &amp;&amp;range)</argsstring>
+        <name>max</name>
+        <qualifiedname>learnql::ranges::aggregates::max</qualifiedname>
+        <param>
+          <type>R &amp;&amp;</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+<para>Finds maximum element in a range. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/Adaptors.hpp" line="269" column="7" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/Adaptors.hpp" bodystart="269" bodyend="271"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Aggregation functions for ranges. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/Adaptors.hpp" line="228" column="1"/>
+  </compounddef>
+</doxygen>

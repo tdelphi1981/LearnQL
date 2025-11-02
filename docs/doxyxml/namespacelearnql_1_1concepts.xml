@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="namespacelearnql_1_1concepts" kind="namespace" language="C++">
+    <compoundname>learnql::concepts</compoundname>
+    <innerconcept refid="conceptlearnql_1_1concepts_1_1_has_primary_key">learnql::concepts::HasPrimaryKey</innerconcept>
+    <innerconcept refid="conceptlearnql_1_1concepts_1_1_primary_key_type">learnql::concepts::PrimaryKeyType</innerconcept>
+    <innerconcept refid="conceptlearnql_1_1concepts_1_1_storable">learnql::concepts::Storable</innerconcept>
+    <innerconcept refid="conceptlearnql_1_1concepts_1_1_predicate">learnql::concepts::Predicate</innerconcept>
+    <innerconcept refid="conceptlearnql_1_1concepts_1_1_indexable">learnql::concepts::Indexable</innerconcept>
+    <innerconcept refid="conceptlearnql_1_1concepts_1_1_queryable">learnql::concepts::Queryable</innerconcept>
+    <innerconcept refid="conceptlearnql_1_1concepts_1_1_iterator">learnql::concepts::Iterator</innerconcept>
+    <innerconcept refid="conceptlearnql_1_1concepts_1_1_forward_iterator">learnql::concepts::ForwardIterator</innerconcept>
+    <innerconcept refid="conceptlearnql_1_1concepts_1_1_arithmetic">learnql::concepts::Arithmetic</innerconcept>
+    <innerconcept refid="conceptlearnql_1_1concepts_1_1_string_like">learnql::concepts::StringLike</innerconcept>
+    <innerconcept refid="conceptlearnql_1_1concepts_1_1_custom_serializable">learnql::concepts::CustomSerializable</innerconcept>
+    <innerconcept refid="conceptlearnql_1_1concepts_1_1_stream_serializable">learnql::concepts::StreamSerializable</innerconcept>
+    <innerconcept refid="conceptlearnql_1_1concepts_1_1_serializable">learnql::concepts::Serializable</innerconcept>
+    <innerconcept refid="conceptlearnql_1_1concepts_1_1_container">learnql::concepts::Container</innerconcept>
+    <innerconcept refid="conceptlearnql_1_1concepts_1_1_comparable">learnql::concepts::Comparable</innerconcept>
+    <innerconcept refid="conceptlearnql_1_1concepts_1_1_orderable">learnql::concepts::Orderable</innerconcept>
+    <innerconcept refid="conceptlearnql_1_1concepts_1_1_three_way_comparable">learnql::concepts::ThreeWayComparable</innerconcept>
+    <innerconcept refid="conceptlearnql_1_1concepts_1_1_smart_pointer">learnql::concepts::SmartPointer</innerconcept>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/concepts/Queryable.hpp" line="9" column="1"/>
+  </compounddef>
+</doxygen>

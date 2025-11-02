@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="conceptlearnql_1_1concepts_1_1_predicate" kind="concept">
+    <compoundname>learnql::concepts::Predicate</compoundname>
+    <includes refid="_queryable_8hpp" local="no">Queryable.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename F</type>
+      </param>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <initializer>template&lt;typename F, typename T&gt;
+concept <ref refid="conceptlearnql_1_1concepts_1_1_predicate" kindref="compound">learnql::concepts::Predicate</ref> =  std::is_invocable_r_v&lt;bool, F, const T&amp;&gt;    </initializer>
+    <briefdescription>
+<para>Concept for predicate functions. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Functions that take an object and return bool </para>
+    </detaileddescription>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/concepts/Queryable.hpp" line="66" column="1"/>
+  </compounddef>
+</doxygen>

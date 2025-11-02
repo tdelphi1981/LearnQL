@@ -1,0 +1,1484 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.15.0" xml:lang="en-US">
+  <compound refid="structlearnql_1_1coroutines_1_1_task_1_1awaiter" kind="struct"><name>learnql::coroutines::Task::awaiter</name>
+    <member refid="structlearnql_1_1coroutines_1_1_task_1_1awaiter_1a580a6669c7dd4bfb11ed47675b3a2c9d" kind="variable"><name>coro</name></member>
+    <member refid="structlearnql_1_1coroutines_1_1_task_1_1awaiter_1abc433910e711faaae0c5833f94540c88" kind="function"><name>await_ready</name></member>
+    <member refid="structlearnql_1_1coroutines_1_1_task_1_1awaiter_1a1a58a10c4a6ef2e9d5c8a4acd0b4d521" kind="function"><name>await_suspend</name></member>
+    <member refid="structlearnql_1_1coroutines_1_1_task_1_1awaiter_1abb4862fa37079714bac40d5acd7e8b17" kind="function"><name>await_resume</name></member>
+  </compound>
+  <compound refid="structlearnql_1_1coroutines_1_1_task_3_01void_01_4_1_1awaiter" kind="struct"><name>learnql::coroutines::Task&lt; void &gt;::awaiter</name>
+    <member refid="structlearnql_1_1coroutines_1_1_task_3_01void_01_4_1_1awaiter_1a9db49502640f66986261f3d670f7f852" kind="variable"><name>coro</name></member>
+    <member refid="structlearnql_1_1coroutines_1_1_task_3_01void_01_4_1_1awaiter_1a0da491987cf92a7d5bd50eece02a74a4" kind="function"><name>await_ready</name></member>
+    <member refid="structlearnql_1_1coroutines_1_1_task_3_01void_01_4_1_1awaiter_1a991a2ac4ba898557a9de9c7439c8aeff" kind="function"><name>await_suspend</name></member>
+    <member refid="structlearnql_1_1coroutines_1_1_task_3_01void_01_4_1_1awaiter_1a2ae049bfc56df6cea8f2a5d5f1049a30" kind="function"><name>await_resume</name></member>
+  </compound>
+  <compound refid="classlearnql_1_1index_1_1_batch_iterator" kind="class"><name>learnql::index::BatchIterator</name>
+    <member refid="classlearnql_1_1index_1_1_batch_iterator_1aa40101959c59dbc88fddd8d20973c168" kind="variable"><name>current_leaf_id_</name></member>
+    <member refid="classlearnql_1_1index_1_1_batch_iterator_1a660aacef29a8ba5d8c22c5bcfd03a71e" kind="variable"><name>current_key_index_</name></member>
+    <member refid="classlearnql_1_1index_1_1_batch_iterator_1a8f5189a6af7178ee05dce08bc87a50cc" kind="variable"><name>exhausted_</name></member>
+    <member refid="classlearnql_1_1index_1_1_batch_iterator_1a60d6b9d6c1db8fc1a1c7a7341dfefb3e" kind="variable"><name>root_page_id_</name></member>
+    <member refid="classlearnql_1_1index_1_1_batch_iterator_1a061266e51654dad2504f75ed1f858f81" kind="variable"><name>load_node_fn_</name></member>
+    <member refid="classlearnql_1_1index_1_1_batch_iterator_1ac2ccd9cb02e65aa6723030a6d062793d" kind="function"><name>BatchIterator</name></member>
+    <member refid="classlearnql_1_1index_1_1_batch_iterator_1a7a3df979f01a5487e18a59bd599c16a0" kind="function"><name>has_more</name></member>
+    <member refid="classlearnql_1_1index_1_1_batch_iterator_1aeb00da633918ae00ffe5bd143904ce9c" kind="function"><name>next_batch</name></member>
+    <member refid="classlearnql_1_1index_1_1_batch_iterator_1a6eac5c7f01cc72e90bd28e6d94243ef7" kind="function"><name>reset</name></member>
+    <member refid="classlearnql_1_1index_1_1_batch_iterator_1a193b6cea24482258de4943299208cbf9" kind="function"><name>find_leftmost_leaf</name></member>
+  </compound>
+  <compound refid="classlearnql_1_1query_1_1expressions_1_1_binary_expr" kind="class"><name>learnql::query::expressions::BinaryExpr</name>
+    <member refid="classlearnql_1_1query_1_1expressions_1_1_binary_expr_1a1ded3e12eb7cdea3d528a26d4b86b890" kind="variable"><name>left_</name></member>
+    <member refid="classlearnql_1_1query_1_1expressions_1_1_binary_expr_1acd1e75d1dc94d4e7842a8fe0e68beb3b" kind="variable"><name>right_</name></member>
+    <member refid="classlearnql_1_1query_1_1expressions_1_1_binary_expr_1aed2290e24451ca7f0dec80c41e57636e" kind="function"><name>BinaryExpr</name></member>
+    <member refid="classlearnql_1_1query_1_1expressions_1_1_binary_expr_1a70e05327e537be83af5f0b91eedd592e" kind="function"><name>evaluate</name></member>
+    <member refid="classlearnql_1_1query_1_1expressions_1_1_binary_expr_1ac37dc1481f0452848d75a1a1efd0e5a7" kind="function"><name>to_string</name></member>
+    <member refid="classlearnql_1_1query_1_1expressions_1_1_binary_expr_1aef3ab9b3e78904dfbe6ee6d131861204" kind="function"><name>left</name></member>
+    <member refid="classlearnql_1_1query_1_1expressions_1_1_binary_expr_1a4c310dae0edd2c130ecfe7bae6afdf55" kind="function"><name>right</name></member>
+  </compound>
+  <compound refid="classlearnql_1_1serialization_1_1_binary_reader" kind="class"><name>learnql::serialization::BinaryReader</name>
+    <member refid="classlearnql_1_1serialization_1_1_binary_reader_1aa056b8ef624e2b664a5886c66eda2bbb" kind="variable"><name>data_</name></member>
+    <member refid="classlearnql_1_1serialization_1_1_binary_reader_1a31c37239cc6e977b4d0adedd2a8aa099" kind="variable"><name>position_</name></member>
+    <member refid="classlearnql_1_1serialization_1_1_binary_reader_1a390b3763f414ba714b48e1247cff0631" kind="function"><name>BinaryReader</name></member>
+    <member refid="classlearnql_1_1serialization_1_1_binary_reader_1a55092fb113bf56590885c580cb9838ee" kind="function"><name>BinaryReader</name></member>
+    <member refid="classlearnql_1_1serialization_1_1_binary_reader_1a5a262266f478e4dd3e7db03c46eff1b6" kind="function"><name>read</name></member>
+    <member refid="classlearnql_1_1serialization_1_1_binary_reader_1a2982ba819ac5c8897835d497c41bd861" kind="function"><name>read_string</name></member>
+    <member refid="classlearnql_1_1serialization_1_1_binary_reader_1a935b9886348c40b8f198ddc37d60aa42" kind="function"><name>read_container</name></member>
+    <member refid="classlearnql_1_1serialization_1_1_binary_reader_1a0ec0ac0da554135a623e38c5d79b3b98" kind="function"><name>read_custom</name></member>
+    <member refid="classlearnql_1_1serialization_1_1_binary_reader_1a65138cc994b2c069b525444dee73cefc" kind="function"><name>read_smart_ptr</name></member>
+    <member refid="classlearnql_1_1serialization_1_1_binary_reader_1a7af877082e540c8efd46ea52e2d7a5c0" kind="function"><name>read_raw</name></member>
+    <member refid="classlearnql_1_1serialization_1_1_binary_reader_1a0d8ba0ba52c1fc00ba9da9d55453d30d" kind="function"><name>read_bytes</name></member>
+    <member refid="classlearnql_1_1serialization_1_1_binary_reader_1a76ed16007d3081cda5f1f2839dc6f17b" kind="function"><name>position</name></member>
+    <member refid="classlearnql_1_1serialization_1_1_binary_reader_1a024149c92297bab02d7885b71bea9201" kind="function"><name>size</name></member>
+    <member refid="classlearnql_1_1serialization_1_1_binary_reader_1a521b773006336c5b9c35913f83f306fc" kind="function"><name>remaining</name></member>
+    <member refid="classlearnql_1_1serialization_1_1_binary_reader_1a7593fcd8b1854729ed838ce8f759ea18" kind="function"><name>has_more</name></member>
+    <member refid="classlearnql_1_1serialization_1_1_binary_reader_1aa649c8a931d1170f3603e0d49ed435d8" kind="function"><name>seek</name></member>
+    <member refid="classlearnql_1_1serialization_1_1_binary_reader_1a1cc2ff7b5591b3669c5dcacc5aa86d52" kind="function"><name>reset</name></member>
+    <member refid="classlearnql_1_1serialization_1_1_binary_reader_1a7f80a0988a6f6f5db96f0289b9b09815" kind="function"><name>skip</name></member>
+  </compound>
+  <compound refid="classlearnql_1_1serialization_1_1_binary_writer" kind="class"><name>learnql::serialization::BinaryWriter</name>
+    <member refid="classlearnql_1_1serialization_1_1_binary_writer_1a3ebd6bc2e2b67385fec8bad35d4d2e1b" kind="variable"><name>buffer_</name></member>
+    <member refid="classlearnql_1_1serialization_1_1_binary_writer_1afc78852afe524ae88f6e58e7cc280bb7" kind="function"><name>BinaryWriter</name></member>
+    <member refid="classlearnql_1_1serialization_1_1_binary_writer_1a7343d36f8a9adc28f9ab78826055cda7" kind="function"><name>write</name></member>
+    <member refid="classlearnql_1_1serialization_1_1_binary_writer_1a447fff390608076cea2caa2ece868388" kind="function"><name>write</name></member>
+    <member refid="classlearnql_1_1serialization_1_1_binary_writer_1a2bf0d3ef49884234c0c8ab36252dfcab" kind="function"><name>write</name></member>
+    <member refid="classlearnql_1_1serialization_1_1_binary_writer_1aeac789d254b7cbc3f270f72a223c8101" kind="function"><name>write</name></member>
+    <member refid="classlearnql_1_1serialization_1_1_binary_writer_1ac6573701b83af18fbd8411fb03ecc2aa" kind="function"><name>write</name></member>
+    <member refid="classlearnql_1_1serialization_1_1_binary_writer_1a4cc70a3864a97c30ede837a14b94a9c2" kind="function"><name>write_raw</name></member>
+    <member refid="classlearnql_1_1serialization_1_1_binary_writer_1ae94bd3dc9ff0ac8bde96662afa9f6b0f" kind="function"><name>write_bytes</name></member>
+    <member refid="classlearnql_1_1serialization_1_1_binary_writer_1acda94a75a28410004af394087980ab79" kind="function"><name>get_buffer</name></member>
+    <member refid="classlearnql_1_1serialization_1_1_binary_writer_1ae7e363f938bbf28d9894ae05b0e60e5f" kind="function"><name>take_buffer</name></member>
+    <member refid="classlearnql_1_1serialization_1_1_binary_writer_1ad8f0159b0f114e4a9ba550be037c1b96" kind="function"><name>size</name></member>
+    <member refid="classlearnql_1_1serialization_1_1_binary_writer_1a39f5cc80e1134e7e13cb1d2b050421ab" kind="function"><name>clear</name></member>
+    <member refid="classlearnql_1_1serialization_1_1_binary_writer_1aa3430d056af31ab9c7c71bbdf5dfa1b2" kind="function"><name>reset</name></member>
+    <member refid="classlearnql_1_1serialization_1_1_binary_writer_1a2a8bed3e07e43c7ff8ba4bc87908fbee" kind="function"><name>position</name></member>
+  </compound>
+  <compound refid="classlearnql_1_1index_1_1_b_tree_index" kind="class"><name>learnql::index::BTreeIndex</name>
+    <member refid="classlearnql_1_1index_1_1_b_tree_index_1ae9dbe8d617ff3230a6bd20a1053ddfeb" kind="variable"><name>ORDER</name></member>
+    <member refid="classlearnql_1_1index_1_1_b_tree_index_1a3f375fbabdbe532ebc3802de3f3e6f0f" kind="variable"><name>MIN_KEYS</name></member>
+    <member refid="classlearnql_1_1index_1_1_b_tree_index_1a0f659f2b4a1f3d6e192146c26b5d7ecf" kind="variable"><name>MAX_KEYS</name></member>
+    <member refid="classlearnql_1_1index_1_1_b_tree_index_1a6925f27eb112d29b4f377dfbe386dae5" kind="variable"><name>root_</name></member>
+    <member refid="classlearnql_1_1index_1_1_b_tree_index_1ac67108b334c05f1d45e1286c60dc0959" kind="variable"><name>size_</name></member>
+    <member refid="classlearnql_1_1index_1_1_b_tree_index_1ab25f56daa9d68468592f2fbd76e66cf3" kind="function"><name>BTreeIndex</name></member>
+    <member refid="classlearnql_1_1index_1_1_b_tree_index_1a615d50d4a4cfc6e9233a743625225e48" kind="function"><name>insert</name></member>
+    <member refid="classlearnql_1_1index_1_1_b_tree_index_1a87c77c5879d991f91fce7109759c5aef" kind="function"><name>find</name></member>
+    <member refid="classlearnql_1_1index_1_1_b_tree_index_1abb0af28d5a95d2eed42d61d4ac19e79a" kind="function"><name>contains</name></member>
+    <member refid="classlearnql_1_1index_1_1_b_tree_index_1a2f38d64faf857ef12e5806679ccd8e3a" kind="function"><name>remove</name></member>
+    <member refid="classlearnql_1_1index_1_1_b_tree_index_1a291e9c177ff285ff2b46993aebb2f500" kind="function"><name>range_query</name></member>
+    <member refid="classlearnql_1_1index_1_1_b_tree_index_1aa38e8bed2dc213882eb8dec14e3ac55b" kind="function"><name>size</name></member>
+    <member refid="classlearnql_1_1index_1_1_b_tree_index_1ad44539f29bb4641f53dfe55bb118f82f" kind="function"><name>empty</name></member>
+    <member refid="classlearnql_1_1index_1_1_b_tree_index_1abbf3fbc9d184ce2b9573c7b1c586d280" kind="function"><name>clear</name></member>
+    <member refid="classlearnql_1_1index_1_1_b_tree_index_1a17e0a23f56dea530b5dacef459993d35" kind="function"><name>get_all</name></member>
+    <member refid="classlearnql_1_1index_1_1_b_tree_index_1adceb3dc873989d941b34f1fc10c820f6" kind="function"><name>search</name></member>
+    <member refid="classlearnql_1_1index_1_1_b_tree_index_1afedd38860b8094d398fb05954750e990" kind="function"><name>insert_non_full</name></member>
+    <member refid="classlearnql_1_1index_1_1_b_tree_index_1a9033b20f1b6fe2a3ac3d65de04895497" kind="function"><name>split_child</name></member>
+    <member refid="classlearnql_1_1index_1_1_b_tree_index_1a9e832ccd5e323b7bda66a07cb6c847c5" kind="function"><name>remove_from_node</name></member>
+    <member refid="classlearnql_1_1index_1_1_b_tree_index_1a22f98a6a90460af1f7e02f4e10f44af3" kind="function"><name>range_query_helper</name></member>
+    <member refid="classlearnql_1_1index_1_1_b_tree_index_1a4cdacc41550f819629824e458e3f4f48" kind="function"><name>traverse</name></member>
+  </compound>
+  <compound refid="structlearnql_1_1index_1_1_composite_key" kind="struct"><name>learnql::index::CompositeKey</name>
+    <member refid="structlearnql_1_1index_1_1_composite_key_1aaf71d2b36a32a89e59b3b8d6d736bf9d" kind="variable"><name>field_value</name></member>
+    <member refid="structlearnql_1_1index_1_1_composite_key_1aa4f7d0b64187fdb1bcbda748ee6eb02f" kind="variable"><name>page_id</name></member>
+    <member refid="structlearnql_1_1index_1_1_composite_key_1ae98775a7462b36ab29dde05e48b3ea80" kind="function"><name>CompositeKey</name></member>
+    <member refid="structlearnql_1_1index_1_1_composite_key_1a67057b08908c966e6c11725936e27d35" kind="function"><name>CompositeKey</name></member>
+    <member refid="structlearnql_1_1index_1_1_composite_key_1a9a6efc25262a08f5841e8517a0754cc7" kind="function"><name>operator==</name></member>
+    <member refid="structlearnql_1_1index_1_1_composite_key_1a968f3ecbe5f9c13f56cc5288db89b781" kind="function"><name>operator!=</name></member>
+    <member refid="structlearnql_1_1index_1_1_composite_key_1a36c98afbb64e0d386d820af918a5d530" kind="function"><name>operator&lt;</name></member>
+    <member refid="structlearnql_1_1index_1_1_composite_key_1af8b0d0b33e01a84537ee9cc1486b0565" kind="function"><name>operator&lt;=</name></member>
+    <member refid="structlearnql_1_1index_1_1_composite_key_1ac742785995e29f325f5f0f1e7ba4079f" kind="function"><name>operator&gt;</name></member>
+    <member refid="structlearnql_1_1index_1_1_composite_key_1a394d0c0380ebfadc61c020c2b090ce97" kind="function"><name>operator&gt;=</name></member>
+    <member refid="structlearnql_1_1index_1_1_composite_key_1a11e04bf8f0c786e80e366282a85cf171" kind="function"><name>operator&lt;=&gt;</name></member>
+    <member refid="structlearnql_1_1index_1_1_composite_key_1aade7116fdaa7639420f3416001b2e538" kind="function"><name>serialize</name></member>
+    <member refid="structlearnql_1_1index_1_1_composite_key_1a6b426f345e7b7eb380fc8ebfb8885400" kind="function"><name>deserialize</name></member>
+  </compound>
+  <compound refid="classlearnql_1_1query_1_1expressions_1_1_const_expr" kind="class"><name>learnql::query::expressions::ConstExpr</name>
+    <member refid="classlearnql_1_1query_1_1expressions_1_1_const_expr_1a36041ede453d91ea465d8921c9fa8141" kind="typedef"><name>value_type</name></member>
+    <member refid="classlearnql_1_1query_1_1expressions_1_1_const_expr_1aa91060a50127074c96b8cf62191c6593" kind="variable"><name>value_</name></member>
+    <member refid="classlearnql_1_1query_1_1expressions_1_1_const_expr_1ae4e793562d4e9d7160fd156daca25d61" kind="function"><name>ConstExpr</name></member>
+    <member refid="classlearnql_1_1query_1_1expressions_1_1_const_expr_1a9a8c409b911a13b5613a84332943bdc6" kind="function"><name>evaluate</name></member>
+    <member refid="classlearnql_1_1query_1_1expressions_1_1_const_expr_1a7cdb06938a038ca586c235415bdc6eb2" kind="function"><name>value</name></member>
+    <member refid="classlearnql_1_1query_1_1expressions_1_1_const_expr_1aa6abcd358e96721e6075219e5cbd9bde" kind="function"><name>to_string</name></member>
+  </compound>
+  <compound refid="classlearnql_1_1core_1_1_database" kind="class"><name>learnql::core::Database</name>
+    <member refid="classlearnql_1_1core_1_1_database_1a40973b76d6cac9099760c596ee0680f3" kind="variable"><name>storage_</name></member>
+    <member refid="classlearnql_1_1core_1_1_database_1a9233760d86e307b3d3395303b3b6bdf8" kind="variable"><name>tables_</name></member>
+    <member refid="classlearnql_1_1core_1_1_database_1adbcbdb7404d6a88d39ef7a25505862c9" kind="variable"><name>table_names_</name></member>
+    <member refid="classlearnql_1_1core_1_1_database_1a92ac06d1544d0ea4405dd30c78d472de" kind="variable"><name>named_tables_</name></member>
+    <member refid="classlearnql_1_1core_1_1_database_1a1c96fbb38a2dd43124f7f03b11887d36" kind="variable"><name>named_table_names_</name></member>
+    <member refid="classlearnql_1_1core_1_1_database_1a5cf183b80fe63ec0eb19a19961a22116" kind="variable"><name>catalog_</name></member>
+    <member refid="classlearnql_1_1core_1_1_database_1a2c61a85e087faaccec6c6d6efed489b0" kind="function"><name>Database</name></member>
+    <member refid="classlearnql_1_1core_1_1_database_1aa1b7ba0e7ec672788fc43ff3fff74107" kind="function"><name>Database</name></member>
+    <member refid="classlearnql_1_1core_1_1_database_1a5404f3f45a5f73125874d42a3cc59116" kind="function"><name>operator=</name></member>
+    <member refid="classlearnql_1_1core_1_1_database_1acc6adcce8d0e648f9d120ef0dcd2b55d" kind="function"><name>Database</name></member>
+    <member refid="classlearnql_1_1core_1_1_database_1add820ca3a6c229e243f0cb0bbbc77786" kind="function"><name>operator=</name></member>
+    <member refid="classlearnql_1_1core_1_1_database_1a7dbabeaada4e6514b0789e82a97ecbd9" kind="function"><name>~Database</name></member>
+    <member refid="classlearnql_1_1core_1_1_database_1ab18fbe87a6784d33bc815d1656e8871e" kind="function"><name>table</name></member>
+    <member refid="classlearnql_1_1core_1_1_database_1a88af9aa0a39c957674e2200ee6d45787" kind="function"><name>table</name></member>
+    <member refid="classlearnql_1_1core_1_1_database_1ac76c89dd770913cd80c999ad8947085c" kind="function"><name>has_table</name></member>
+    <member refid="classlearnql_1_1core_1_1_database_1a192b6f817b561b0be39fff45e147a68d" kind="function"><name>flush</name></member>
+    <member refid="classlearnql_1_1core_1_1_database_1ade84821c7bcef568ac92cb1cc31f866a" kind="function"><name>table_count</name></member>
+    <member refid="classlearnql_1_1core_1_1_database_1a7412afb4f8dee84464bdd4173c175690" kind="function"><name>get_storage</name></member>
+    <member refid="classlearnql_1_1core_1_1_database_1afd8da6452e6fb195fa44b4128c745dae" kind="function"><name>get_storage</name></member>
+    <member refid="classlearnql_1_1core_1_1_database_1a5d3afe32ef13bc5b2e478c350de3e908" kind="function"><name>get_storage_ptr</name></member>
+    <member refid="classlearnql_1_1core_1_1_database_1a4a537dbe9ef7175094a075e1a5841a7c" kind="function"><name>get_file_path</name></member>
+    <member refid="classlearnql_1_1core_1_1_database_1aecc537d84db840dfedcd69d06753b15b" kind="function"><name>get_table_names</name></member>
+    <member refid="classlearnql_1_1core_1_1_database_1a9eebad6aa027c8aa4d5afd943e482274" kind="function"><name>drop_table</name></member>
+    <member refid="classlearnql_1_1core_1_1_database_1a610c78e9dd12182285eb0699370289bf" kind="function"><name>metadata</name></member>
+    <member refid="classlearnql_1_1core_1_1_database_1a6c5173fbb07f87eae03d5697fccdfd3a" kind="function"><name>metadata</name></member>
+    <member refid="classlearnql_1_1core_1_1_database_1aa6fa0598b2d03b57856a1c5d62158493" kind="function"><name>get_table_name</name></member>
+    <member refid="classlearnql_1_1core_1_1_database_1a575784dde71f090393596e71a5ac3720" kind="function"><name>initialize_system_catalog</name></member>
+    <member refid="classlearnql_1_1core_1_1_database_1a38f77f6352df380a7a2c9eb7e3db7344" kind="function"><name>bootstrap_system_catalog</name></member>
+    <member refid="classlearnql_1_1core_1_1_database_1afe808d2442557afd25e420345773c3e0" kind="function"><name>register_system_table</name></member>
+  </compound>
+  <compound refid="classlearnql_1_1utils_1_1_db_inspector" kind="class"><name>learnql::utils::DbInspector</name>
+    <member refid="classlearnql_1_1utils_1_1_db_inspector_1a150c23195aadeff4e48b0450fed0f216" kind="function"><name>print_database_structure</name></member>
+    <member refid="classlearnql_1_1utils_1_1_db_inspector_1ac3a68b8e0ca1101b6fec0a5a111f59e3" kind="function"><name>print_compact_summary</name></member>
+    <member refid="classlearnql_1_1utils_1_1_db_inspector_1a6380c7a9729761e4bad6255532a5adfe" kind="function"><name>print_page_map</name></member>
+    <member refid="classlearnql_1_1utils_1_1_db_inspector_1a5ed3dc828911eb28692e77225fc4b4da" kind="function"><name>collect_page_info</name></member>
+    <member refid="classlearnql_1_1utils_1_1_db_inspector_1aceb84989ed3fe2e936c1f43937ff4798" kind="function"><name>calculate_statistics</name></member>
+    <member refid="classlearnql_1_1utils_1_1_db_inspector_1a4212b394551e401f070ac90ce115c81c" kind="function"><name>print_summary</name></member>
+    <member refid="classlearnql_1_1utils_1_1_db_inspector_1a2e3e0ca0c1bd90cfa11fb10d12620ba5" kind="function"><name>print_page_breakdown</name></member>
+    <member refid="classlearnql_1_1utils_1_1_db_inspector_1aa71ffa75bb713629e5490c5920c9e8b0" kind="function"><name>print_table_info</name></member>
+    <member refid="classlearnql_1_1utils_1_1_db_inspector_1a7f8f69907c124857d9421c5f90ce1e7f" kind="function"><name>print_page_details</name></member>
+    <member refid="classlearnql_1_1utils_1_1_db_inspector_1ad70b94afbbd709bcb6e75a8586785f84" kind="function"><name>print_storage_efficiency</name></member>
+    <member refid="classlearnql_1_1utils_1_1_db_inspector_1a6e90e954797fc114e3d624a55a05c5e2" kind="function"><name>format_bytes</name></member>
+  </compound>
+  <compound refid="classlearnql_1_1ranges_1_1_distinct_adaptor" kind="class"><name>learnql::ranges::DistinctAdaptor</name>
+    <member refid="classlearnql_1_1ranges_1_1_distinct_adaptor_1af1524ac91aa7d587b7e63408a0d73031" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="classlearnql_1_1debug_1_1_execution_plan" kind="class"><name>learnql::debug::ExecutionPlan</name>
+    <member refid="classlearnql_1_1debug_1_1_execution_plan_1a9cb4b6d7e475840243727ecbed3e499c" kind="variable"><name>query_text_</name></member>
+    <member refid="classlearnql_1_1debug_1_1_execution_plan_1adcff529110e9d3ee028b7fafa6d2bd71" kind="variable"><name>root_</name></member>
+    <member refid="classlearnql_1_1debug_1_1_execution_plan_1a27ae02d0db8c7da5bcfdb7e640a609c0" kind="function"><name>ExecutionPlan</name></member>
+    <member refid="classlearnql_1_1debug_1_1_execution_plan_1accff2969c10c5a6ee0b2a82c78fabec5" kind="function"><name>set_root</name></member>
+    <member refid="classlearnql_1_1debug_1_1_execution_plan_1a2671777cfcbb2352b519692e83589be7" kind="function"><name>root</name></member>
+    <member refid="classlearnql_1_1debug_1_1_execution_plan_1aefd69da0826c115d7e74b1b02a6f1ae3" kind="function"><name>print</name></member>
+    <member refid="classlearnql_1_1debug_1_1_execution_plan_1a52ffecbed3134c1b08ce9eca3f3dd19d" kind="function"><name>to_string</name></member>
+  </compound>
+  <compound refid="classlearnql_1_1debug_1_1_execution_plan_builder" kind="class"><name>learnql::debug::ExecutionPlanBuilder</name>
+    <member refid="classlearnql_1_1debug_1_1_execution_plan_builder_1af041a9b21dfc5e57406c701efd1ffad3" kind="variable"><name>plan_</name></member>
+    <member refid="classlearnql_1_1debug_1_1_execution_plan_builder_1a54963196c21773504d2046812e42641e" kind="function"><name>ExecutionPlanBuilder</name></member>
+    <member refid="classlearnql_1_1debug_1_1_execution_plan_builder_1af54e90be6665db7d81af23e501d50f1a" kind="function"><name>set_root</name></member>
+    <member refid="classlearnql_1_1debug_1_1_execution_plan_builder_1a27014b65f33809a945e8d4e6fe86583b" kind="function"><name>build</name></member>
+    <member refid="classlearnql_1_1debug_1_1_execution_plan_builder_1af01d1352ab1e479fec50652252aaed4f" kind="function"><name>table_scan</name></member>
+    <member refid="classlearnql_1_1debug_1_1_execution_plan_builder_1a7428d40c0689b7c2c8781b9f7bc30667" kind="function"><name>index_scan</name></member>
+    <member refid="classlearnql_1_1debug_1_1_execution_plan_builder_1aea2d2f9a471ca80cb76ea89376e388e8" kind="function"><name>filter</name></member>
+    <member refid="classlearnql_1_1debug_1_1_execution_plan_builder_1af7d50f71dc09e499bcc6e67fa12ea4e5" kind="function"><name>join</name></member>
+    <member refid="classlearnql_1_1debug_1_1_execution_plan_builder_1aa839a7a36e1d891f16650be399cf0231" kind="function"><name>group_by</name></member>
+    <member refid="classlearnql_1_1debug_1_1_execution_plan_builder_1a27b112076f822414e0bbf171cdc80dfe" kind="function"><name>sort</name></member>
+    <member refid="classlearnql_1_1debug_1_1_execution_plan_builder_1a60ecb344faad29edbca49e0ed4ead1db" kind="function"><name>limit</name></member>
+    <member refid="classlearnql_1_1debug_1_1_execution_plan_builder_1a3beb072cf11a52360bed7bc33bba41cf" kind="function"><name>projection</name></member>
+  </compound>
+  <compound refid="classlearnql_1_1debug_1_1_execution_plan_node" kind="class"><name>learnql::debug::ExecutionPlanNode</name>
+    <member refid="classlearnql_1_1debug_1_1_execution_plan_node_1a307c5a7e83ae9a26adbaa51f242048cc" kind="variable"><name>type_</name></member>
+    <member refid="classlearnql_1_1debug_1_1_execution_plan_node_1af8417847a6510ad8008f9c05c840810d" kind="variable"><name>description_</name></member>
+    <member refid="classlearnql_1_1debug_1_1_execution_plan_node_1a872bb3beb9028506f06882ae49f1440d" kind="variable"><name>children_</name></member>
+    <member refid="classlearnql_1_1debug_1_1_execution_plan_node_1af65fb946ab31bc70ee00a35490b55f59" kind="variable"><name>estimated_rows_</name></member>
+    <member refid="classlearnql_1_1debug_1_1_execution_plan_node_1ab09339d571a2d84c0dedda14a1a54050" kind="variable"><name>estimated_cost_</name></member>
+    <member refid="classlearnql_1_1debug_1_1_execution_plan_node_1a21ee373271265b420b1414571cacbfa1" kind="function"><name>ExecutionPlanNode</name></member>
+    <member refid="classlearnql_1_1debug_1_1_execution_plan_node_1a96068c557fad25aedb0d38792980a31e" kind="function"><name>set_estimated_rows</name></member>
+    <member refid="classlearnql_1_1debug_1_1_execution_plan_node_1a172f430ec3da7502250176a0025d332c" kind="function"><name>set_estimated_cost</name></member>
+    <member refid="classlearnql_1_1debug_1_1_execution_plan_node_1a69db044e8475a3f410d048a01d9b1997" kind="function"><name>add_child</name></member>
+    <member refid="classlearnql_1_1debug_1_1_execution_plan_node_1a4696d3f7491ebce2868f7500fe431781" kind="function"><name>type</name></member>
+    <member refid="classlearnql_1_1debug_1_1_execution_plan_node_1a99104ccbacb813f00880749fc3414cab" kind="function"><name>description</name></member>
+    <member refid="classlearnql_1_1debug_1_1_execution_plan_node_1a39766aabe5544fd1857d38d882e46e1b" kind="function"><name>children</name></member>
+    <member refid="classlearnql_1_1debug_1_1_execution_plan_node_1a7cf7e70ec871a6164dd744cbb671110b" kind="function"><name>to_tree_string</name></member>
+  </compound>
+  <compound refid="classlearnql_1_1debug_1_1_explain_query" kind="class"><name>learnql::debug::ExplainQuery</name>
+    <member refid="classlearnql_1_1debug_1_1_explain_query_1a15ab38416d64d557167e39ee51d4ecd1" kind="function"><name>table_scan</name></member>
+    <member refid="classlearnql_1_1debug_1_1_explain_query_1a1e9a0cb48ab609bdcd83aba99467d0a4" kind="function"><name>index_scan</name></member>
+    <member refid="classlearnql_1_1debug_1_1_explain_query_1a4aa8c4c59dffed30632e9635ff3e3478" kind="function"><name>join</name></member>
+  </compound>
+  <compound refid="classlearnql_1_1query_1_1expressions_1_1_expr" kind="class"><name>learnql::query::expressions::Expr</name>
+    <member refid="classlearnql_1_1query_1_1expressions_1_1_expr_1ab3afaf7bba10da4cd15df3713a77974f" kind="function"><name>derived</name></member>
+    <member refid="classlearnql_1_1query_1_1expressions_1_1_expr_1a0d548fb13365c652003a26c2c6d23ade" kind="function"><name>evaluate</name></member>
+    <member refid="classlearnql_1_1query_1_1expressions_1_1_expr_1acb6feaf8a75ff83575511c117ad7eb89" kind="function"><name>to_string</name></member>
+  </compound>
+  <compound refid="classlearnql_1_1query_1_1_field" kind="class"><name>learnql::query::Field</name>
+    <member refid="classlearnql_1_1query_1_1_field_1a22f6e81d107db6e0409d2bd76147aa00" kind="typedef"><name>field_expr_type</name></member>
+    <member refid="classlearnql_1_1query_1_1_field_1a8221bd370df9bea78e687ee81421aa90" kind="variable"><name>expr_</name></member>
+    <member refid="classlearnql_1_1query_1_1_field_1af971f7e227918f6112e3535ac6a80351" kind="function"><name>Field</name></member>
+    <member refid="classlearnql_1_1query_1_1_field_1ab43466cb9f572cb05b6def356d104eac" kind="function"><name>Field</name></member>
+    <member refid="classlearnql_1_1query_1_1_field_1a3b07a80f4cc7a476db80804638d4949e" kind="function"><name>expr</name></member>
+    <member refid="classlearnql_1_1query_1_1_field_1a818aef8239b3cc2287062933f8d298b1" kind="function"><name>operator const field_expr_type &amp;</name></member>
+    <member refid="classlearnql_1_1query_1_1_field_1a1295c8c5303762eefa1554923cd14a49" kind="function"><name>operator==</name></member>
+    <member refid="classlearnql_1_1query_1_1_field_1a40e4c35e836564c72ab5f788f2ff9da4" kind="function"><name>operator==</name></member>
+    <member refid="classlearnql_1_1query_1_1_field_1acc87f6d788f487ae75b03279c96b8bf4" kind="function"><name>operator==</name></member>
+    <member refid="classlearnql_1_1query_1_1_field_1a29032915f809a7e05d3752b36bd177a0" kind="function"><name>operator!=</name></member>
+    <member refid="classlearnql_1_1query_1_1_field_1a0df1ec77c43ee721acb1707322762582" kind="function"><name>operator!=</name></member>
+    <member refid="classlearnql_1_1query_1_1_field_1a64d7bfb15bc8b8c3571350ef429552fb" kind="function"><name>operator!=</name></member>
+    <member refid="classlearnql_1_1query_1_1_field_1af11b0199d64f5a27e38af161ed61e5f9" kind="function"><name>operator&lt;</name></member>
+    <member refid="classlearnql_1_1query_1_1_field_1a7a5d3cc4503597337179e9b8f72868cb" kind="function"><name>operator&lt;</name></member>
+    <member refid="classlearnql_1_1query_1_1_field_1a01d84f0ab38e158f831d08bdc88756a4" kind="function"><name>operator&lt;=</name></member>
+    <member refid="classlearnql_1_1query_1_1_field_1aa3aef24aa347bb1e63f08ce766b4ff7d" kind="function"><name>operator&lt;=</name></member>
+    <member refid="classlearnql_1_1query_1_1_field_1ab52884bb7ec0e30a0703f23336a0f112" kind="function"><name>operator&gt;</name></member>
+    <member refid="classlearnql_1_1query_1_1_field_1a7610c8aca12e0b3df08efa009e9f3009" kind="function"><name>operator&gt;</name></member>
+    <member refid="classlearnql_1_1query_1_1_field_1af9299f2f1785a375fb9f2b7247456d39" kind="function"><name>operator&gt;=</name></member>
+    <member refid="classlearnql_1_1query_1_1_field_1a8391377f9cafd86751ae9b9fc5897360" kind="function"><name>operator&gt;=</name></member>
+  </compound>
+  <compound refid="structlearnql_1_1meta_1_1_field_descriptor" kind="struct"><name>learnql::meta::FieldDescriptor</name>
+    <member refid="structlearnql_1_1meta_1_1_field_descriptor_1a35c24192657ee025173a28debe13a968" kind="variable"><name>name</name></member>
+    <member refid="structlearnql_1_1meta_1_1_field_descriptor_1aaab485502a7b4673ef47d98700ebbca0" kind="variable"><name>type</name></member>
+    <member refid="structlearnql_1_1meta_1_1_field_descriptor_1a2a329b0f86a756b4f0bbb99769e81969" kind="variable"><name>offset</name></member>
+    <member refid="structlearnql_1_1meta_1_1_field_descriptor_1a0e8a4f694e925a6f3608464d29645ce5" kind="variable"><name>size</name></member>
+    <member refid="structlearnql_1_1meta_1_1_field_descriptor_1a57b5e87bc9a721e8bb745e4d234c5fd3" kind="variable"><name>is_primary_key</name></member>
+    <member refid="structlearnql_1_1meta_1_1_field_descriptor_1a37fc7ccb18ab62f8e3e3969d20048d02" kind="function"><name>FieldDescriptor</name></member>
+  </compound>
+  <compound refid="classlearnql_1_1query_1_1expressions_1_1_field_expr" kind="class"><name>learnql::query::expressions::FieldExpr</name>
+    <member refid="classlearnql_1_1query_1_1expressions_1_1_field_expr_1ac281a616cabc71a1d2483cbed46041cb" kind="typedef"><name>object_type</name></member>
+    <member refid="classlearnql_1_1query_1_1expressions_1_1_field_expr_1a5191b60746b7fc625862860dce4fb3cd" kind="typedef"><name>value_type</name></member>
+    <member refid="classlearnql_1_1query_1_1expressions_1_1_field_expr_1a93e06f35043b8c1a4080ddb05b4124e1" kind="typedef"><name>getter_type</name></member>
+    <member refid="classlearnql_1_1query_1_1expressions_1_1_field_expr_1a54706803b7aaedceeb9c7959da84cb9b" kind="variable"><name>name_</name></member>
+    <member refid="classlearnql_1_1query_1_1expressions_1_1_field_expr_1ac93cd2d8d1a13d748518eb3c55b2a166" kind="variable"><name>getter_</name></member>
+    <member refid="classlearnql_1_1query_1_1expressions_1_1_field_expr_1a6eb730cba507a37a675660f6810ada8d" kind="function"><name>FieldExpr</name></member>
+    <member refid="classlearnql_1_1query_1_1expressions_1_1_field_expr_1a600a8bb1f543153128935af7fc0e136f" kind="function"><name>FieldExpr</name></member>
+    <member refid="classlearnql_1_1query_1_1expressions_1_1_field_expr_1a7fbf9523a5c99085bfc7e7f7c6718bc6" kind="function"><name>evaluate</name></member>
+    <member refid="classlearnql_1_1query_1_1expressions_1_1_field_expr_1ac2cdbce1693d9235b6d0fd424c883f2c" kind="function"><name>name</name></member>
+    <member refid="classlearnql_1_1query_1_1expressions_1_1_field_expr_1ad50338be8354c459a56217149b99d939" kind="function"><name>to_string</name></member>
+    <member refid="classlearnql_1_1query_1_1expressions_1_1_field_expr_1ac39db9d1c97e8a45ff46823378a92485" kind="function"><name>getter</name></member>
+  </compound>
+  <compound refid="structlearnql_1_1reflection_1_1_field_info" kind="struct"><name>learnql::reflection::FieldInfo</name>
+    <member refid="structlearnql_1_1reflection_1_1_field_info_1a148b13acc2eac3377a7cd4a6149bc494" kind="variable"><name>name</name></member>
+    <member refid="structlearnql_1_1reflection_1_1_field_info_1a7495b130b3360fc78185afc791fd66e2" kind="variable"><name>type</name></member>
+    <member refid="structlearnql_1_1reflection_1_1_field_info_1a70dbfd3bbb2be4ffa91672cec1f5b9bc" kind="variable"><name>order</name></member>
+    <member refid="structlearnql_1_1reflection_1_1_field_info_1a6cbb7320d42090412aa79acf93da0a77" kind="variable"><name>is_primary_key</name></member>
+    <member refid="structlearnql_1_1reflection_1_1_field_info_1a86aa63a8d07e68649890df025d3f33a3" kind="function"><name>FieldInfo</name></member>
+  </compound>
+  <compound refid="structlearnql_1_1catalog_1_1_field_metadata" kind="struct"><name>learnql::catalog::FieldMetadata</name>
+    <member refid="structlearnql_1_1catalog_1_1_field_metadata_1a886f47cc3c4eeb93cd3d4ab0edacea00" kind="typedef"><name>primary_key_type</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_field_metadata_1afbd7dd5ab07a49babe4a9b8d92853715" kind="variable"><name>field_id</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_field_metadata_1aef2ce1e18a3abff2e3bc6ef36ed6720a" kind="variable"><name>table_name</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_field_metadata_1ae0363b9975d9c0a515a55adfba6fa5ba" kind="variable"><name>field_name</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_field_metadata_1a9b16815d288c9b8948e2f95b27dafe21" kind="variable"><name>field_type</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_field_metadata_1a0dd8e10f468c8073701bdd390302ecbd" kind="variable"><name>field_order</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_field_metadata_1a8972df5b97c94d650c2083162d7cff2a" kind="variable"><name>is_primary_key</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_field_metadata_1aac4c2ecb4ef7e511a7a87b5f3a844b40" kind="variable"><name>id</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_field_metadata_1a16b715f3d28a8b3fa41ddd0c0ccb0f93" kind="variable"><name>table</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_field_metadata_1af0979a909a3f8fd82e32b2a27d69839e" kind="variable"><name>name</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_field_metadata_1aca2d26838c26a647f9fcccc6d968c118" kind="variable"><name>type</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_field_metadata_1a060bec42b3bbf4db5463622370b02a20" kind="variable"><name>order</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_field_metadata_1a605aa92f6e4f685c3fbdee7b1496b533" kind="variable"><name>is_pk</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_field_metadata_1a529e3641569a566fb39e7f79689e0479" kind="function"><name>get_field_id</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_field_metadata_1a987c61313bb4089cc3111b740bc06b8b" kind="function"><name>get_table_name</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_field_metadata_1ad7ba01062b867e8f6dab20e2b789dc3f" kind="function"><name>get_field_name</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_field_metadata_1a3731e2c0f8c7f317afa8b46fe401a736" kind="function"><name>get_field_type</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_field_metadata_1a35185a0b82ecfe221836a40b2fdae482" kind="function"><name>get_field_order</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_field_metadata_1ac62e785af8ae080e64c432a4052c4fd7" kind="function"><name>get_is_primary_key</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_field_metadata_1a63687ac2a6c9b71b3660d56364800629" kind="function"><name>get_primary_key</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_field_metadata_1adfc3c7531fcbdeb819a761625d78d18b" kind="function"><name>serialize</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_field_metadata_1af9490982f31af015e014eef607f70993" kind="function"><name>deserialize</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_field_metadata_1a1f6d1ac35185259a4d1bd0eaa241461b" kind="function"><name>operator==</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_field_metadata_1a79046a1e9aae893703717bd6d4ce82c6" kind="function"><name>reflect_fields</name></member>
+  </compound>
+  <compound refid="classlearnql_1_1coroutines_1_1_generator" kind="class"><name>learnql::coroutines::Generator</name>
+    <member refid="classlearnql_1_1coroutines_1_1_generator_1a2a5229805040418af4049081b7292045" kind="typedef"><name>handle_type</name></member>
+    <member refid="classlearnql_1_1coroutines_1_1_generator_1a550ddb8991f5e1c0c1d1f0884b4cb6ed" kind="variable"><name>coro_</name></member>
+    <member refid="classlearnql_1_1coroutines_1_1_generator_1a016c54f206f3c05dd782988a8ce4257f" kind="function"><name>Generator</name></member>
+    <member refid="classlearnql_1_1coroutines_1_1_generator_1af26912a86c26ea0f965b7aee827ec972" kind="function"><name>Generator</name></member>
+    <member refid="classlearnql_1_1coroutines_1_1_generator_1aaa58f569b3753158a41bba2628c5d369" kind="function"><name>Generator</name></member>
+    <member refid="classlearnql_1_1coroutines_1_1_generator_1a7b8f4c3c0f65bc46f3ca9d04d7118256" kind="function"><name>operator=</name></member>
+    <member refid="classlearnql_1_1coroutines_1_1_generator_1ae6076de3bd41299a54fe641d5d7b1bfa" kind="function"><name>operator=</name></member>
+    <member refid="classlearnql_1_1coroutines_1_1_generator_1ab48b49c8887ebb080c36fa23a6827699" kind="function"><name>~Generator</name></member>
+    <member refid="classlearnql_1_1coroutines_1_1_generator_1a534c65b5451729d7809f2aa9174e8465" kind="function"><name>next</name></member>
+    <member refid="classlearnql_1_1coroutines_1_1_generator_1a5f7adde23561712fe9fe1c91c3702762" kind="function"><name>has_next</name></member>
+    <member refid="classlearnql_1_1coroutines_1_1_generator_1a6f43d0a1717481de35d6743940f57546" kind="function"><name>begin</name></member>
+    <member refid="classlearnql_1_1coroutines_1_1_generator_1a41e646e90f8a1550e61d6738d7abc71f" kind="function"><name>end</name></member>
+  </compound>
+  <compound refid="classlearnql_1_1query_1_1_group_by" kind="class"><name>learnql::query::GroupBy</name>
+    <member refid="classlearnql_1_1query_1_1_group_by_1afa04cfd0ed7464486f80e5632be8201c" kind="typedef"><name>key_extractor_type</name></member>
+    <member refid="classlearnql_1_1query_1_1_group_by_1a3f92efa067a764a72e36a22f7251d4a5" kind="typedef"><name>group_map_type</name></member>
+    <member refid="classlearnql_1_1query_1_1_group_by_1a9f48104265459c522c425fa1c4426f52" kind="function"><name>group_by</name></member>
+    <member refid="classlearnql_1_1query_1_1_group_by_1a63358fc8d18e27dd1009d4d6e1b3d3d5" kind="function"><name>count_by</name></member>
+    <member refid="classlearnql_1_1query_1_1_group_by_1a10097ca4196ca5ec8f8d82b8b6eb82a0" kind="function"><name>sum_by</name></member>
+    <member refid="classlearnql_1_1query_1_1_group_by_1aaf871ac89238db9b1eb335c5e32d0b5d" kind="function"><name>average_by</name></member>
+    <member refid="classlearnql_1_1query_1_1_group_by_1a1faa367907616251b4dce506d100acaa" kind="function"><name>min_by</name></member>
+    <member refid="classlearnql_1_1query_1_1_group_by_1ab42342f3bc9cc26e155c0e116198c9a5" kind="function"><name>max_by</name></member>
+  </compound>
+  <compound refid="structlearnql_1_1query_1_1_group_by_result" kind="struct"><name>learnql::query::GroupByResult</name>
+    <member refid="structlearnql_1_1query_1_1_group_by_result_1ad7c67ecc21e5d6407cb44b29e07fe0b6" kind="variable"><name>key</name></member>
+    <member refid="structlearnql_1_1query_1_1_group_by_result_1a0606cf43a840df7346d19275df2730b0" kind="variable"><name>value</name></member>
+    <member refid="structlearnql_1_1query_1_1_group_by_result_1a5122c0c3f59a7b36cd4d15096dcb2e46" kind="variable"><name>count</name></member>
+  </compound>
+  <compound refid="structstd_1_1hash_3_01learnql_1_1core_1_1_record_id_01_4" kind="struct"><name>std::hash&lt; learnql::core::RecordId &gt;</name>
+    <member refid="structstd_1_1hash_3_01learnql_1_1core_1_1_record_id_01_4_1a756cea5ab2d7be5a71e2b7c2229388d1" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="structlearnql_1_1catalog_1_1_index_metadata" kind="struct"><name>learnql::catalog::IndexMetadata</name>
+    <member refid="structlearnql_1_1catalog_1_1_index_metadata_1a8e1618c9d762443acc552f4ecfc7196a" kind="typedef"><name>primary_key_type</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_index_metadata_1a8e9a5bea35c13d7aab767f56be2ab93f" kind="variable"><name>index_id</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_index_metadata_1a6e43114573d81edd80444bf0893d1b4d" kind="variable"><name>table_name</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_index_metadata_1ac2e340547c7c9666fbdec12c9a6ed726" kind="variable"><name>field_name</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_index_metadata_1a26ff188feabbc2dd4badfc0e4f085411" kind="variable"><name>field_type</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_index_metadata_1a9a48ea1671593e7001cef3e409a8338c" kind="variable"><name>is_unique</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_index_metadata_1ac08cc35c95528ceb41d64845623d87af" kind="variable"><name>index_root_page</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_index_metadata_1af6fcff65429c576644e282c1685985a6" kind="variable"><name>created_timestamp</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_index_metadata_1a8ec0211ef20ae208c243eb8a28762bc4" kind="variable"><name>is_active</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_index_metadata_1a96dfa7249a916451946e1b0e7f7f68d5" kind="variable"><name>id</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_index_metadata_1a990d8b196e916eb66386210d95ab5ea0" kind="variable"><name>table</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_index_metadata_1afdb009010f2d0b79972f3f6ccdad6b96" kind="variable"><name>field</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_index_metadata_1a25c3bcc7bf69c10c5ed471d160b7b14f" kind="variable"><name>type</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_index_metadata_1ae5af974a2a70a916c3d63a95eb5e1569" kind="variable"><name>unique</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_index_metadata_1ac836fa01d18dec60ccc628d7200f1aae" kind="variable"><name>root_page</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_index_metadata_1a750b7fb77b5411a13c8d5f04b78097ba" kind="variable"><name>created</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_index_metadata_1a94359e1972c7467d36ba0718c0623447" kind="variable"><name>active</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_index_metadata_1a8fbfbb9829cf2403bfd859d7def30265" kind="function"><name>get_index_id</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_index_metadata_1a68df6b531cfbd8959eafde151b1ad3ce" kind="function"><name>get_table_name</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_index_metadata_1a40d27759eb1e753dbd71cc90174c4b76" kind="function"><name>get_field_name</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_index_metadata_1a0fec295c3dc944489a5c60812a6845c3" kind="function"><name>get_field_type</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_index_metadata_1a0bc806d382bb849410c46fd1849b7ef5" kind="function"><name>get_is_unique</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_index_metadata_1a567a6dd4200d8a04af8fba2281968bb6" kind="function"><name>get_index_root_page</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_index_metadata_1a0641998c706066e58a7e1e88b8229e55" kind="function"><name>get_created_timestamp</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_index_metadata_1ac70bb90e3db224b277f30e9252701288" kind="function"><name>get_is_active</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_index_metadata_1ac42e82f14fc270741b207f5f05a6c3ef" kind="function"><name>get_primary_key</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_index_metadata_1ab070b982cd823d4b294edca9ba403759" kind="function"><name>set_primary_key</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_index_metadata_1abc95b693b3240a64320580c7f28b1065" kind="function"><name>serialize</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_index_metadata_1a7351d8de5d84957a5be77fbf80e8204a" kind="function"><name>deserialize</name></member>
+  </compound>
+  <compound refid="structlearnql_1_1debug_1_1_index_statistics" kind="struct"><name>learnql::debug::IndexStatistics</name>
+    <member refid="structlearnql_1_1debug_1_1_index_statistics_1a12da25470404c5cd0a6a82409a222824" kind="variable"><name>index_name</name></member>
+    <member refid="structlearnql_1_1debug_1_1_index_statistics_1a5215040c8da0b734ed6482acedf205aa" kind="variable"><name>table_name</name></member>
+    <member refid="structlearnql_1_1debug_1_1_index_statistics_1ae162c5f1910156b542aa1daca108a713" kind="variable"><name>indexed_field</name></member>
+    <member refid="structlearnql_1_1debug_1_1_index_statistics_1a057fa91eb63f81a03dc4f781329141e6" kind="variable"><name>entry_count</name></member>
+    <member refid="structlearnql_1_1debug_1_1_index_statistics_1ac5ea022f326693c9d89d0b797181f545" kind="variable"><name>unique_values</name></member>
+    <member refid="structlearnql_1_1debug_1_1_index_statistics_1a8dddc0a287d150424bd61a915499882d" kind="variable"><name>total_bytes</name></member>
+    <member refid="structlearnql_1_1debug_1_1_index_statistics_1acc2b5b2684a5e5bc52f258345e128a84" kind="function"><name>selectivity</name></member>
+    <member refid="structlearnql_1_1debug_1_1_index_statistics_1a3c03c785d2c0f2b0d6f5b0a284ee3fe6" kind="function"><name>print</name></member>
+  </compound>
+  <compound refid="classlearnql_1_1core_1_1_table_1_1_iterator" kind="class"><name>learnql::core::Table::Iterator</name>
+    <member refid="classlearnql_1_1core_1_1_table_1_1_iterator_1ad18865eeb4c5683b88f63cb1360175b6" kind="typedef"><name>iterator_category</name></member>
+    <member refid="classlearnql_1_1core_1_1_table_1_1_iterator_1ad8a1eaab2e093a34a6f50907a9135884" kind="typedef"><name>value_type</name></member>
+    <member refid="classlearnql_1_1core_1_1_table_1_1_iterator_1a2cb735d3d8850c6b7aa013d84860a7e9" kind="typedef"><name>difference_type</name></member>
+    <member refid="classlearnql_1_1core_1_1_table_1_1_iterator_1a2b7b8bed59caafbea49f6ef7bb3e5ff8" kind="typedef"><name>pointer</name></member>
+    <member refid="classlearnql_1_1core_1_1_table_1_1_iterator_1a0ac8a9636385a72e1aa920cd38586c85" kind="typedef"><name>reference</name></member>
+    <member refid="classlearnql_1_1core_1_1_table_1_1_iterator_1a5ba7c56e7d428e767becb28b8cfa418e" kind="typedef"><name>batch_iterator_type</name></member>
+    <member refid="classlearnql_1_1core_1_1_table_1_1_iterator_1ac21933427352b89e8ccb2b1ce9b8683c" kind="variable"><name>table_</name></member>
+    <member refid="classlearnql_1_1core_1_1_table_1_1_iterator_1aab3d5db54c25ef43cbe7d70d70c7bedb" kind="variable"><name>batch_iter_</name></member>
+    <member refid="classlearnql_1_1core_1_1_table_1_1_iterator_1a8682aa5696aef792cacfa3a8d91508ab" kind="variable"><name>current_batch_</name></member>
+    <member refid="classlearnql_1_1core_1_1_table_1_1_iterator_1ad49e8145bc3b6ef89fd399a77c2e83e1" kind="variable"><name>batch_index_</name></member>
+    <member refid="classlearnql_1_1core_1_1_table_1_1_iterator_1affa440bd8ecc5caeeea54583fc07942a" kind="variable"><name>current_</name></member>
+    <member refid="classlearnql_1_1core_1_1_table_1_1_iterator_1a8b467b98e176929f336cba1c93ba0195" kind="variable"><name>current_loaded_</name></member>
+    <member refid="classlearnql_1_1core_1_1_table_1_1_iterator_1af9948201c716d8c08116f7b0d1f27fc9" kind="variable"><name>is_end_</name></member>
+    <member refid="classlearnql_1_1core_1_1_table_1_1_iterator_1a93015d60a67a495eed28db61cddd403d" kind="function"><name>load_current</name></member>
+    <member refid="classlearnql_1_1core_1_1_table_1_1_iterator_1a28d77b7688f8df48c11a73047e7da9b4" kind="function"><name>load_next_batch</name></member>
+    <member refid="classlearnql_1_1core_1_1_table_1_1_iterator_1aa3e85983154b0dc9d6d3d4c1cf8953d5" kind="function"><name>Iterator</name></member>
+    <member refid="classlearnql_1_1core_1_1_table_1_1_iterator_1a87c277585717bc966ab507e5e910a197" kind="function"><name>operator*</name></member>
+    <member refid="classlearnql_1_1core_1_1_table_1_1_iterator_1a25c3930a867c4ab8a156797f911ecb6b" kind="function"><name>operator-&gt;</name></member>
+    <member refid="classlearnql_1_1core_1_1_table_1_1_iterator_1a08a5dff0909c1e6f09db5bca7d7c247b" kind="function"><name>operator++</name></member>
+    <member refid="classlearnql_1_1core_1_1_table_1_1_iterator_1ab53bcd8aee7ced21f5c5f092213787b6" kind="function"><name>operator++</name></member>
+    <member refid="classlearnql_1_1core_1_1_table_1_1_iterator_1af3f82f17df8fdc97f44aa3a9d8cf99d1" kind="function"><name>operator==</name></member>
+    <member refid="classlearnql_1_1core_1_1_table_1_1_iterator_1a9d515b4deec054020b888cd5e8ca6d0a" kind="function"><name>operator!=</name></member>
+  </compound>
+  <compound refid="classlearnql_1_1coroutines_1_1_generator_1_1_iterator" kind="class"><name>learnql::coroutines::Generator::Iterator</name>
+    <member refid="classlearnql_1_1coroutines_1_1_generator_1_1_iterator_1a0582a5a8f99188f6b20ba73254b277f0" kind="typedef"><name>iterator_category</name></member>
+    <member refid="classlearnql_1_1coroutines_1_1_generator_1_1_iterator_1ac806ce5a8ea1d41e2ee737e9e0563e41" kind="typedef"><name>value_type</name></member>
+    <member refid="classlearnql_1_1coroutines_1_1_generator_1_1_iterator_1aafd12ea3c6243850cd4108e4eab9ee7d" kind="typedef"><name>difference_type</name></member>
+    <member refid="classlearnql_1_1coroutines_1_1_generator_1_1_iterator_1a531fe3e5586782352f94b859eeac5e64" kind="typedef"><name>pointer</name></member>
+    <member refid="classlearnql_1_1coroutines_1_1_generator_1_1_iterator_1aaec12fa0e177b73b6e09149ab8ebc936" kind="typedef"><name>reference</name></member>
+    <member refid="classlearnql_1_1coroutines_1_1_generator_1_1_iterator_1acd891472c9dbfd5d88189b927b950e5f" kind="variable"><name>gen_</name></member>
+    <member refid="classlearnql_1_1coroutines_1_1_generator_1_1_iterator_1a1348667c38063c5970994058f5b092c4" kind="variable"><name>current_</name></member>
+    <member refid="classlearnql_1_1coroutines_1_1_generator_1_1_iterator_1a25fca415b2c55d17528993bec5f61a0b" kind="function"><name>Iterator</name></member>
+    <member refid="classlearnql_1_1coroutines_1_1_generator_1_1_iterator_1a1d2dfb23fe6d23a4cdeb86e0639a5920" kind="function"><name>Iterator</name></member>
+    <member refid="classlearnql_1_1coroutines_1_1_generator_1_1_iterator_1ab7ea1059a8922990b6616d9a542fe258" kind="function"><name>operator*</name></member>
+    <member refid="classlearnql_1_1coroutines_1_1_generator_1_1_iterator_1a295882a3942c77157c02208532c1be8b" kind="function"><name>operator-&gt;</name></member>
+    <member refid="classlearnql_1_1coroutines_1_1_generator_1_1_iterator_1ac67de0541fd73f5750e296030e187283" kind="function"><name>operator++</name></member>
+    <member refid="classlearnql_1_1coroutines_1_1_generator_1_1_iterator_1a70850ae09e793f23548416faf7a283e1" kind="function"><name>operator++</name></member>
+    <member refid="classlearnql_1_1coroutines_1_1_generator_1_1_iterator_1aee59660dcb95d9be5022615b2a5ebac5" kind="function"><name>operator==</name></member>
+    <member refid="classlearnql_1_1coroutines_1_1_generator_1_1_iterator_1a171c3c3a4262d9b81af3cd9ffa521f4e" kind="function"><name>operator!=</name></member>
+    <member refid="classlearnql_1_1coroutines_1_1_generator_1_1_iterator_1aed153406ce65490573f0ca2fb2d86a4c" kind="function"><name>advance</name></member>
+  </compound>
+  <compound refid="classlearnql_1_1query_1_1_query_1_1_iterator" kind="class"><name>learnql::query::Query::Iterator</name>
+    <member refid="classlearnql_1_1query_1_1_query_1_1_iterator_1a6abc9b60bb85acd730c03856114833a0" kind="typedef"><name>iterator_category</name></member>
+    <member refid="classlearnql_1_1query_1_1_query_1_1_iterator_1a09d52f38997cc6d894113f06d4fe94d8" kind="typedef"><name>value_type</name></member>
+    <member refid="classlearnql_1_1query_1_1_query_1_1_iterator_1af5a577fc3d2ba4c35622fa85ce36a89a" kind="typedef"><name>difference_type</name></member>
+    <member refid="classlearnql_1_1query_1_1_query_1_1_iterator_1a4b4ceb2dafde6d17d524f5830e9079c8" kind="typedef"><name>pointer</name></member>
+    <member refid="classlearnql_1_1query_1_1_query_1_1_iterator_1af500794147a3009245989ed29ae17200" kind="typedef"><name>reference</name></member>
+    <member refid="classlearnql_1_1query_1_1_query_1_1_iterator_1a83a00567b5f597c6678f00f56d967f3d" kind="variable"><name>it_</name></member>
+    <member refid="classlearnql_1_1query_1_1_query_1_1_iterator_1a6a15888d720d76f2337964c33e29fc93" kind="variable"><name>end_</name></member>
+    <member refid="classlearnql_1_1query_1_1_query_1_1_iterator_1a2a2406381f83e411660f8bf779892fe4" kind="variable"><name>predicate_</name></member>
+    <member refid="classlearnql_1_1query_1_1_query_1_1_iterator_1a00fb405ec82e6f60c03cefd33fc4b283" kind="function"><name>Iterator</name></member>
+    <member refid="classlearnql_1_1query_1_1_query_1_1_iterator_1a9182a0f0b862c1891e07e75ddeec7da8" kind="function"><name>operator*</name></member>
+    <member refid="classlearnql_1_1query_1_1_query_1_1_iterator_1a6d5d8fdba726475c0993923136cdbd76" kind="function"><name>operator-&gt;</name></member>
+    <member refid="classlearnql_1_1query_1_1_query_1_1_iterator_1a43edf828411433e3bb6b3a7edd195944" kind="function"><name>operator++</name></member>
+    <member refid="classlearnql_1_1query_1_1_query_1_1_iterator_1a0d6827f2bf447c804a57d4573f0f6df4" kind="function"><name>operator++</name></member>
+    <member refid="classlearnql_1_1query_1_1_query_1_1_iterator_1acb9e9e6e85bcce059a40f7d3333789b9" kind="function"><name>operator==</name></member>
+    <member refid="classlearnql_1_1query_1_1_query_1_1_iterator_1a736a19a11e8fc270f1b6ad5511a10c39" kind="function"><name>operator!=</name></member>
+    <member refid="classlearnql_1_1query_1_1_query_1_1_iterator_1a0e6fe9b931eedbb9b6f38e7e6ea0629a" kind="function"><name>advance_to_next_match</name></member>
+  </compound>
+  <compound refid="classlearnql_1_1ranges_1_1_proxy_vector_1_1_iterator" kind="class"><name>learnql::ranges::ProxyVector::Iterator</name>
+    <member refid="classlearnql_1_1ranges_1_1_proxy_vector_1_1_iterator_1ad8a01a739ddd82331e7d527ed413e1e0" kind="typedef"><name>iterator_category</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_proxy_vector_1_1_iterator_1a0da3d643da703ce94e57e27edd9f8f28" kind="typedef"><name>value_type</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_proxy_vector_1_1_iterator_1a3aaa706d3c44ad4f2b3a12e1a87dadca" kind="typedef"><name>difference_type</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_proxy_vector_1_1_iterator_1a6ef87114b18713ec38144005fd8b3c51" kind="typedef"><name>pointer</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_proxy_vector_1_1_iterator_1a75a4d6b1673283273001e0f36f9f651b" kind="typedef"><name>reference</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_proxy_vector_1_1_iterator_1a34dedad78ad54449ebabfb7e53b85a0b" kind="variable"><name>proxy_</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_proxy_vector_1_1_iterator_1a34adc54989e385b0d87a5b238892e714" kind="variable"><name>global_position_</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_proxy_vector_1_1_iterator_1a95b71d239e4553c4d394ca950591ef58" kind="variable"><name>batch_index_</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_proxy_vector_1_1_iterator_1a213a2b46dd8a75a7dac35599a7564608" kind="variable"><name>is_end_</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_proxy_vector_1_1_iterator_1a6619ab30400874009588405356c59886" kind="friend"><name>ProxyVector</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_proxy_vector_1_1_iterator_1adc3257f87be8a3d7a117d20ff8aab119" kind="function"><name>Iterator</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_proxy_vector_1_1_iterator_1ac083cbde845c10c2acd32c9f90173a96" kind="function"><name>operator*</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_proxy_vector_1_1_iterator_1a34bea71905ef59e2d7cfa5e9824f6f16" kind="function"><name>operator-&gt;</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_proxy_vector_1_1_iterator_1a41f9af2143a5669a13be8101bb173d37" kind="function"><name>operator++</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_proxy_vector_1_1_iterator_1a835ee04fb34c1b3b5bbcee419477eb6f" kind="function"><name>operator++</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_proxy_vector_1_1_iterator_1a9a99b2a3a4993de201f42f9ea7c2a0cd" kind="function"><name>operator==</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_proxy_vector_1_1_iterator_1a0e01ed6c1e04c1ba9e132e278694f59b" kind="function"><name>operator!=</name></member>
+  </compound>
+  <compound refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator" kind="class"><name>learnql::ranges::QueryView::Iterator</name>
+    <member refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1a6537b4013ebca1d4ac0f0bb6016d23a4" kind="typedef"><name>iterator_category</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1aba0ed1824fcf532a49a2238981437ac9" kind="typedef"><name>value_type</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1ae5e03f569558f52768df3ff0c8ffc7d3" kind="typedef"><name>difference_type</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1ac0e873b38dc21c5978899fde538b4314" kind="typedef"><name>pointer</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1a672d45838ac348098e6ff2d4511dea3d" kind="typedef"><name>reference</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1a7182fbefab8d2a9098eb43cf7918ab27" kind="variable"><name>it_</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1a3deadda366614c195e2878ec3835f88e" kind="function"><name>Iterator</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1abaac6dd7293b0c67aed3d740cb7dece9" kind="function"><name>Iterator</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1ae4d4bd64bdc0ed22459f019d91243a2d" kind="function"><name>operator*</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1a0c05fe86540a3f972facadab791d81e0" kind="function"><name>operator-&gt;</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1aa7360abd909fca41a81d700a9fa697be" kind="function"><name>operator++</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1ac622a013247ee6513fcf605e00bcccfc" kind="function"><name>operator++</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1adf9a9358b475317bd816d7b47a0f5cd1" kind="friend"><name>operator==</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator_1a27aed9f3ea67a677964fa51de28a5824" kind="friend"><name>operator!=</name></member>
+  </compound>
+  <compound refid="classlearnql_1_1query_1_1_join" kind="class"><name>learnql::query::Join</name>
+    <member refid="classlearnql_1_1query_1_1_join_1a5f74f1658eb36c51a0bd29733fe6d6d7" kind="function"><name>inner_join</name></member>
+    <member refid="classlearnql_1_1query_1_1_join_1aaedb4c628088798909cd1e38960114d1" kind="function"><name>left_join</name></member>
+    <member refid="classlearnql_1_1query_1_1_join_1a177ea45706ce40aabfffdc0e4f91b8e1" kind="function"><name>cross_join</name></member>
+    <member refid="classlearnql_1_1query_1_1_join_1a68c0d093e295f71db278a405213bef6f" kind="function"><name>semi_join</name></member>
+    <member refid="classlearnql_1_1query_1_1_join_1a8f3814a91efbbcb6874dd64253c4d79d" kind="function"><name>anti_join</name></member>
+  </compound>
+  <compound refid="structlearnql_1_1query_1_1_join_result" kind="struct"><name>learnql::query::JoinResult</name>
+    <member refid="structlearnql_1_1query_1_1_join_result_1af7812594ab3ea3239bddd4584ddcb709" kind="variable"><name>left</name></member>
+    <member refid="structlearnql_1_1query_1_1_join_result_1a766c972d5c1a86d2d115df1e9e4b12b8" kind="variable"><name>right</name></member>
+    <member refid="structlearnql_1_1query_1_1_join_result_1aed01b0efedcf3ca824e23a26961ed9e4" kind="function"><name>is_inner</name></member>
+  </compound>
+  <compound refid="classlearnql_1_1ranges_1_1_limit_adaptor" kind="class"><name>learnql::ranges::LimitAdaptor</name>
+    <member refid="classlearnql_1_1ranges_1_1_limit_adaptor_1ad3d30e06ab9ae2b2ee32af1937a48a7a" kind="variable"><name>n_</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_limit_adaptor_1a875d8903145d27520bc29b10b98f6ec8" kind="function"><name>LimitAdaptor</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_limit_adaptor_1a95a1a047dd934bdbdf1bd1c45f9fc3af" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="classlearnql_1_1debug_1_1_logger" kind="class"><name>learnql::debug::Logger</name>
+    <member refid="classlearnql_1_1debug_1_1_logger_1a531d01e275f7cd0a8280dcb8a083ed96" kind="variable"><name>min_level_</name></member>
+    <member refid="classlearnql_1_1debug_1_1_logger_1abc9d8d54e713c33c029ab708f6032ff4" kind="function"><name>instance</name></member>
+    <member refid="classlearnql_1_1debug_1_1_logger_1a9a8c8374fe57cd31e6f72b9e68fd3acf" kind="function"><name>set_log_level</name></member>
+    <member refid="classlearnql_1_1debug_1_1_logger_1ad5a94bf40cefd0e24a85e74aa6ff8ff4" kind="function"><name>log</name></member>
+    <member refid="classlearnql_1_1debug_1_1_logger_1a452bf034fb6ae84ae2becdbf91fb6bbd" kind="function"><name>debug</name></member>
+    <member refid="classlearnql_1_1debug_1_1_logger_1af2c1c9c18f603dd9d7c36106cf501cc7" kind="function"><name>info</name></member>
+    <member refid="classlearnql_1_1debug_1_1_logger_1a16e07d2859d087bab293332a78202432" kind="function"><name>warn</name></member>
+    <member refid="classlearnql_1_1debug_1_1_logger_1a9f63313a63651e352c4b213b29e60a8d" kind="function"><name>error</name></member>
+    <member refid="classlearnql_1_1debug_1_1_logger_1ad7b0cf017b142c343367047e130fee63" kind="function"><name>Logger</name></member>
+  </compound>
+  <compound refid="classlearnql_1_1query_1_1expressions_1_1_logical_expr" kind="class"><name>learnql::query::expressions::LogicalExpr</name>
+    <member refid="classlearnql_1_1query_1_1expressions_1_1_logical_expr_1ac63897f508394a2ec11b061acaf11155" kind="variable"><name>left_</name></member>
+    <member refid="classlearnql_1_1query_1_1expressions_1_1_logical_expr_1a5431e8dcc852949382a7c05aafd88b61" kind="variable"><name>right_</name></member>
+    <member refid="classlearnql_1_1query_1_1expressions_1_1_logical_expr_1a1dea6761c2de8461ed59ccb9fe4fcaad" kind="function"><name>LogicalExpr</name></member>
+    <member refid="classlearnql_1_1query_1_1expressions_1_1_logical_expr_1aec73288dcc164f00a60879af2c4c79dd" kind="function"><name>evaluate</name></member>
+    <member refid="classlearnql_1_1query_1_1expressions_1_1_logical_expr_1ac717dd36ba697e57d2b042c3ec2dd13c" kind="function"><name>to_string</name></member>
+    <member refid="classlearnql_1_1query_1_1expressions_1_1_logical_expr_1af88fe5fffd70731b2f28c924d0080e32" kind="function"><name>left</name></member>
+    <member refid="classlearnql_1_1query_1_1expressions_1_1_logical_expr_1a981044b44c92f7e3159f644562634043" kind="function"><name>right</name></member>
+  </compound>
+  <compound refid="classlearnql_1_1debug_1_1_memory_tracker" kind="class"><name>learnql::debug::MemoryTracker</name>
+    <member refid="classlearnql_1_1debug_1_1_memory_tracker_1a965a7558f8fce6f023ecdafc7843c5a5" kind="variable"><name>current_usage_</name></member>
+    <member refid="classlearnql_1_1debug_1_1_memory_tracker_1af038037657267b7fa2a37b67480b4796" kind="variable"><name>peak_usage_</name></member>
+    <member refid="classlearnql_1_1debug_1_1_memory_tracker_1a1dc37c978757b382b7f029c7aa67b995" kind="variable"><name>total_allocated_</name></member>
+    <member refid="classlearnql_1_1debug_1_1_memory_tracker_1a03ae83767659cc753281deb6c71ebcdf" kind="variable"><name>allocations_</name></member>
+    <member refid="classlearnql_1_1debug_1_1_memory_tracker_1a3a0bafecb1a8abcd047fc91be40c97ff" kind="function"><name>record_allocation</name></member>
+    <member refid="classlearnql_1_1debug_1_1_memory_tracker_1a3bfbcfd3d0692db93783c7e8cca4f78a" kind="function"><name>record_deallocation</name></member>
+    <member refid="classlearnql_1_1debug_1_1_memory_tracker_1a5befb6b554ce98a16b0103e6b4726435" kind="function"><name>current_usage</name></member>
+    <member refid="classlearnql_1_1debug_1_1_memory_tracker_1a48db2a6108bce63beed285acb2f549c4" kind="function"><name>peak_usage</name></member>
+    <member refid="classlearnql_1_1debug_1_1_memory_tracker_1abfe0dc831bf12b80d17beb4786d2be29" kind="function"><name>print_summary</name></member>
+    <member refid="classlearnql_1_1debug_1_1_memory_tracker_1aaac0977f04bd010b9295821b9b6bb8e1" kind="function"><name>reset</name></member>
+    <member refid="classlearnql_1_1debug_1_1_memory_tracker_1aae2dbaf7879b29d1e17e6e433101bec5" kind="function"><name>instance</name></member>
+    <member refid="classlearnql_1_1debug_1_1_memory_tracker_1a1a678794231880f6d048ab466c13fab7" kind="function"><name>format_bytes</name></member>
+    <member refid="classlearnql_1_1debug_1_1_memory_tracker_1a329fa02671e549f954a790e8acba22ba" kind="function"><name>MemoryTracker</name></member>
+  </compound>
+  <compound refid="classlearnql_1_1index_1_1_multi_value_secondary_index" kind="class"><name>learnql::index::MultiValueSecondaryIndex</name>
+    <member refid="classlearnql_1_1index_1_1_multi_value_secondary_index_1a9ceef3460170206e6134a572ff0bb5ad" kind="typedef"><name>getter_type</name></member>
+    <member refid="classlearnql_1_1index_1_1_multi_value_secondary_index_1abad87e291499bb72c8dddc2cf994e868" kind="typedef"><name>map_type</name></member>
+    <member refid="classlearnql_1_1index_1_1_multi_value_secondary_index_1a338dfdc4a284a09f1925f797e4fd64b5" kind="variable"><name>field_name_</name></member>
+    <member refid="classlearnql_1_1index_1_1_multi_value_secondary_index_1ae87f1ad787a59d01b179eab23c69c8a4" kind="variable"><name>getter_</name></member>
+    <member refid="classlearnql_1_1index_1_1_multi_value_secondary_index_1a930041b8070382785bc3446dcc90bde4" kind="variable"><name>index_</name></member>
+    <member refid="classlearnql_1_1index_1_1_multi_value_secondary_index_1a93d96659a94fc463f5edea22f4abcacc" kind="function"><name>MultiValueSecondaryIndex</name></member>
+    <member refid="classlearnql_1_1index_1_1_multi_value_secondary_index_1ac2a708a94a92ffda3511e959280353f0" kind="function"><name>insert</name></member>
+    <member refid="classlearnql_1_1index_1_1_multi_value_secondary_index_1a95994d283cfa0de8df76a265783b4575" kind="function"><name>find</name></member>
+    <member refid="classlearnql_1_1index_1_1_multi_value_secondary_index_1ad67cdd49507f953aa4b46ea7b8bbfa58" kind="function"><name>remove</name></member>
+    <member refid="classlearnql_1_1index_1_1_multi_value_secondary_index_1af637a6400401aab27c7ff44c974bad28" kind="function"><name>update</name></member>
+    <member refid="classlearnql_1_1index_1_1_multi_value_secondary_index_1ae660412582efa4fd2462a479f778fe95" kind="function"><name>field_name</name></member>
+    <member refid="classlearnql_1_1index_1_1_multi_value_secondary_index_1a4928c24115cf8b4e5c500398ae0eb3d8" kind="function"><name>size</name></member>
+    <member refid="classlearnql_1_1index_1_1_multi_value_secondary_index_1ae37397d9a07ca581f0847080492987af" kind="function"><name>total_records</name></member>
+    <member refid="classlearnql_1_1index_1_1_multi_value_secondary_index_1ae2209349c2911f2bf87901c9ee5e40ca" kind="function"><name>clear</name></member>
+  </compound>
+  <compound refid="structlearnql_1_1index_1_1_b_tree_index_1_1_node" kind="struct"><name>learnql::index::BTreeIndex::Node</name>
+    <member refid="structlearnql_1_1index_1_1_b_tree_index_1_1_node_1a8368cb16942d1006ba64ba0b063a1468" kind="variable"><name>keys</name></member>
+    <member refid="structlearnql_1_1index_1_1_b_tree_index_1_1_node_1a57684b0fec7e302fddb53e1f05b5d40b" kind="variable"><name>values</name></member>
+    <member refid="structlearnql_1_1index_1_1_b_tree_index_1_1_node_1a5c528521acc482be2779a6399eb9e41a" kind="variable"><name>children</name></member>
+    <member refid="structlearnql_1_1index_1_1_b_tree_index_1_1_node_1a17953c1b3469478431df9a40885326d9" kind="variable"><name>is_leaf</name></member>
+    <member refid="structlearnql_1_1index_1_1_b_tree_index_1_1_node_1aaed8a08711867aac94bcbff751281a68" kind="function"><name>Node</name></member>
+    <member refid="structlearnql_1_1index_1_1_b_tree_index_1_1_node_1a52614657748acdec84aece7d6cf9510e" kind="function"><name>find_insert_pos</name></member>
+    <member refid="structlearnql_1_1index_1_1_b_tree_index_1_1_node_1a7fba0341a5c6315147392676be141c92" kind="function"><name>is_full</name></member>
+    <member refid="structlearnql_1_1index_1_1_b_tree_index_1_1_node_1a41f1aae2abf62aa5beaf6efdcb4e9459" kind="function"><name>has_min_keys</name></member>
+  </compound>
+  <compound refid="structlearnql_1_1index_1_1_persistent_b_tree_index_1_1_node" kind="struct"><name>learnql::index::PersistentBTreeIndex::Node</name>
+    <member refid="structlearnql_1_1index_1_1_persistent_b_tree_index_1_1_node_1a2bf6b809e3863bf0b9574f6b5b3def9c" kind="variable"><name>page_id</name></member>
+    <member refid="structlearnql_1_1index_1_1_persistent_b_tree_index_1_1_node_1ad2f358beb6f5372624c95e6ddb078a4e" kind="variable"><name>keys</name></member>
+    <member refid="structlearnql_1_1index_1_1_persistent_b_tree_index_1_1_node_1ad859189b9270165b7579f17a349e6614" kind="variable"><name>values</name></member>
+    <member refid="structlearnql_1_1index_1_1_persistent_b_tree_index_1_1_node_1a9a2638a0c229151dac8c6ab3de5a04cc" kind="variable"><name>children_ids</name></member>
+    <member refid="structlearnql_1_1index_1_1_persistent_b_tree_index_1_1_node_1a937a90da3a0d11dc0c33854565fa79a8" kind="variable"><name>is_leaf</name></member>
+    <member refid="structlearnql_1_1index_1_1_persistent_b_tree_index_1_1_node_1a15cd6f7bd30a3b67dfd9cfc8555f8736" kind="variable"><name>next_page_id</name></member>
+    <member refid="structlearnql_1_1index_1_1_persistent_b_tree_index_1_1_node_1aaede6c14f42a25cb2a4d2f811f6074d5" kind="variable"><name>prev_page_id</name></member>
+    <member refid="structlearnql_1_1index_1_1_persistent_b_tree_index_1_1_node_1ab75b0c39eb5323bd88dec1d96f6b3c44" kind="function"><name>Node</name></member>
+    <member refid="structlearnql_1_1index_1_1_persistent_b_tree_index_1_1_node_1a870d7c9e134302b29d581d6f0900fff9" kind="function"><name>Node</name></member>
+    <member refid="structlearnql_1_1index_1_1_persistent_b_tree_index_1_1_node_1a0539c61568341f4f0056ff9324a827d2" kind="function"><name>serialize</name></member>
+    <member refid="structlearnql_1_1index_1_1_persistent_b_tree_index_1_1_node_1a29597feb8a0ed9c73d07dc1d4221e679" kind="function"><name>deserialize</name></member>
+    <member refid="structlearnql_1_1index_1_1_persistent_b_tree_index_1_1_node_1a30428e97c55d84a4d4a2c8fe2f3c54ab" kind="function"><name>find_insert_pos</name></member>
+    <member refid="structlearnql_1_1index_1_1_persistent_b_tree_index_1_1_node_1a095195967909a1d658ac8cedf639e53e" kind="function"><name>is_full</name></member>
+    <member refid="structlearnql_1_1index_1_1_persistent_b_tree_index_1_1_node_1a967ebce81270248ffb011e2e63a81455" kind="function"><name>has_min_keys</name></member>
+  </compound>
+  <compound refid="classlearnql_1_1ranges_1_1_order_by_adaptor" kind="class"><name>learnql::ranges::OrderByAdaptor</name>
+    <member refid="classlearnql_1_1ranges_1_1_order_by_adaptor_1a991687598e99c54ef4c43708e7df0966" kind="variable"><name>proj_</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_order_by_adaptor_1a5c97421267ef87b7bc51e7974c7121aa" kind="variable"><name>ascending_</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_order_by_adaptor_1a04eebde9299e34ba7485e1d11e5fd8f0" kind="function"><name>OrderByAdaptor</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_order_by_adaptor_1a127ff0c35b3b806b4370ba4e7bde928a" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="classlearnql_1_1storage_1_1_page" kind="class"><name>learnql::storage::Page</name>
+    <member refid="classlearnql_1_1storage_1_1_page_1a037494cfeb8b70d99a80807b14a2705a" kind="variable"><name>DATA_SIZE</name></member>
+    <member refid="classlearnql_1_1storage_1_1_page_1a6514e6d943a61066097a430c64f58861" kind="variable"><name>header_</name></member>
+    <member refid="classlearnql_1_1storage_1_1_page_1a1db84631bb6c0ce621fbfbd0505c5660" kind="variable"><name>data_</name></member>
+    <member refid="classlearnql_1_1storage_1_1_page_1a7e2577f6318136044bbe678dabc6f968" kind="function"><name>Page</name></member>
+    <member refid="classlearnql_1_1storage_1_1_page_1a24ff8e6651dac5e0dde09aaf77270894" kind="function"><name>Page</name></member>
+    <member refid="classlearnql_1_1storage_1_1_page_1acbdd663d6cf727706a19fd1185aab4a5" kind="function"><name>Page</name></member>
+    <member refid="classlearnql_1_1storage_1_1_page_1a28332f6163f4485eb04977f7b0164d3c" kind="function"><name>operator=</name></member>
+    <member refid="classlearnql_1_1storage_1_1_page_1a1e92264f725a6e773d506f51d5c84949" kind="function"><name>Page</name></member>
+    <member refid="classlearnql_1_1storage_1_1_page_1afdfde3962fb6ab42795b0fba9c4910bb" kind="function"><name>operator=</name></member>
+    <member refid="classlearnql_1_1storage_1_1_page_1a968a9d7e20aedb1f9d45450758e147a9" kind="function"><name>header</name></member>
+    <member refid="classlearnql_1_1storage_1_1_page_1a451adee85c63366ea62b69c7d2e2a5a6" kind="function"><name>header</name></member>
+    <member refid="classlearnql_1_1storage_1_1_page_1a9685692b30ac1ed39343b5a35798312b" kind="function"><name>data</name></member>
+    <member refid="classlearnql_1_1storage_1_1_page_1af2b9c44f3c4ae656e68b12979f0692f1" kind="function"><name>data</name></member>
+    <member refid="classlearnql_1_1storage_1_1_page_1ad133e6780577b3d1d6f9ec20acb02e47" kind="function"><name>write_data</name></member>
+    <member refid="classlearnql_1_1storage_1_1_page_1a6b22ac5bdc5dacf708984f33e5c6729d" kind="function"><name>read_data</name></member>
+    <member refid="classlearnql_1_1storage_1_1_page_1a03549972dd82409dcdecd9a696ff3b31" kind="function"><name>clear</name></member>
+    <member refid="classlearnql_1_1storage_1_1_page_1a089bf89139d2c70f381464edb404ffcc" kind="function"><name>available_space</name></member>
+    <member refid="classlearnql_1_1storage_1_1_page_1a0aa3b1b9bf8b132b53058476c009ba4e" kind="function"><name>can_fit</name></member>
+    <member refid="classlearnql_1_1storage_1_1_page_1aa5eebaadb86eb2038f21fa250c427f4b" kind="function"><name>raw_data</name></member>
+    <member refid="classlearnql_1_1storage_1_1_page_1abb823df1ee0752514ac42dbe27680998" kind="function"><name>raw_data</name></member>
+    <member refid="classlearnql_1_1storage_1_1_page_1a6394bb0e398884a3184309eb9ba82dd4" kind="function"><name>compute_checksum</name></member>
+    <member refid="classlearnql_1_1storage_1_1_page_1a98e4779d7d00de208006037502883767" kind="function"><name>update_checksum</name></member>
+    <member refid="classlearnql_1_1storage_1_1_page_1a1f654677b1d5488288b5a0a83787f638" kind="function"><name>validate_checksum</name></member>
+  </compound>
+  <compound refid="structlearnql_1_1storage_1_1_page_header" kind="struct"><name>learnql::storage::PageHeader</name>
+    <member refid="structlearnql_1_1storage_1_1_page_header_1aadbb8e40cb25fc44d646d77025b33fc7" kind="variable"><name>magic</name></member>
+    <member refid="structlearnql_1_1storage_1_1_page_header_1adc786de7a529a2daef38a4050470063a" kind="variable"><name>page_id</name></member>
+    <member refid="structlearnql_1_1storage_1_1_page_header_1a797629c9327c6e763c4ec52c2b09e98e" kind="variable"><name>page_type</name></member>
+    <member refid="structlearnql_1_1storage_1_1_page_header_1a51fec5c65482ac179bf2e10a83282fe6" kind="variable"><name>version</name></member>
+    <member refid="structlearnql_1_1storage_1_1_page_header_1a72fdae4510939af2ea445a458162eb7c" kind="variable"><name>record_count</name></member>
+    <member refid="structlearnql_1_1storage_1_1_page_header_1a8da8fdbd8073bc478e54c2cc78f4c842" kind="variable"><name>free_space_offset</name></member>
+    <member refid="structlearnql_1_1storage_1_1_page_header_1a4904c0420cf8f4d2b78d6d67da9533c4" kind="variable"><name>next_page_id</name></member>
+    <member refid="structlearnql_1_1storage_1_1_page_header_1ab51f1396a656b09ff2bde712df70d79b" kind="variable"><name>checksum</name></member>
+    <member refid="structlearnql_1_1storage_1_1_page_header_1ac82f58cdd60556f330b3d7a94d8e90a9" kind="variable"><name>reserved</name></member>
+    <member refid="structlearnql_1_1storage_1_1_page_header_1a732ae3232b4112d4f424fe7e98ca9f87" kind="function"><name>PageHeader</name></member>
+    <member refid="structlearnql_1_1storage_1_1_page_header_1a60987033234dd199f8f9d51dfcf9a9a6" kind="function"><name>is_valid</name></member>
+    <member refid="structlearnql_1_1storage_1_1_page_header_1a001c77f89b8110e277ef6c4755e7aabf" kind="function"><name>operator&lt;=&gt;</name></member>
+  </compound>
+  <compound refid="structlearnql_1_1utils_1_1_db_inspector_1_1_page_info" kind="struct"><name>learnql::utils::DbInspector::PageInfo</name>
+    <member refid="structlearnql_1_1utils_1_1_db_inspector_1_1_page_info_1ab3218fae5afaafb5efabdba01079da7a" kind="variable"><name>page_id</name></member>
+    <member refid="structlearnql_1_1utils_1_1_db_inspector_1_1_page_info_1abcc475f828de00e85f77a9aae9e59c0a" kind="variable"><name>type</name></member>
+    <member refid="structlearnql_1_1utils_1_1_db_inspector_1_1_page_info_1a5f3aeb9e871cbb5abca8910ff234fcb7" kind="variable"><name>record_count</name></member>
+    <member refid="structlearnql_1_1utils_1_1_db_inspector_1_1_page_info_1a625e6147f8bfc81cce8a0d6ad576bf0d" kind="variable"><name>free_space_offset</name></member>
+    <member refid="structlearnql_1_1utils_1_1_db_inspector_1_1_page_info_1a8d51fb07f881ed4eabb9afdae66552e4" kind="variable"><name>used_space</name></member>
+    <member refid="structlearnql_1_1utils_1_1_db_inspector_1_1_page_info_1a6db52039b09226b97cdba39c94f16298" kind="variable"><name>free_space</name></member>
+    <member refid="structlearnql_1_1utils_1_1_db_inspector_1_1_page_info_1ac22ed4bacd53eef524a10f18dfffe23b" kind="variable"><name>owner_table</name></member>
+  </compound>
+  <compound refid="structlearnql_1_1debug_1_1_performance_metrics" kind="struct"><name>learnql::debug::PerformanceMetrics</name>
+    <member refid="structlearnql_1_1debug_1_1_performance_metrics_1a632463e0d17f1ebc0ddfa892bab9abbb" kind="variable"><name>operation_name</name></member>
+    <member refid="structlearnql_1_1debug_1_1_performance_metrics_1a546eaf72a6d2b1eb152c339acbadd842" kind="variable"><name>duration</name></member>
+    <member refid="structlearnql_1_1debug_1_1_performance_metrics_1a8d8c1db43f390cd90e0fe6d4c8e96bae" kind="variable"><name>rows_processed</name></member>
+    <member refid="structlearnql_1_1debug_1_1_performance_metrics_1ad3494eef32eda2b4e5c459d4393a768c" kind="variable"><name>memory_used</name></member>
+    <member refid="structlearnql_1_1debug_1_1_performance_metrics_1a4b83aee9ecbadca6296b78ea5f2546ad" kind="function"><name>duration_ms</name></member>
+    <member refid="structlearnql_1_1debug_1_1_performance_metrics_1a85839b27ca683d9f14bb30a3d7c2ebb5" kind="function"><name>rows_per_second</name></member>
+  </compound>
+  <compound refid="classlearnql_1_1index_1_1_persistent_b_tree_index" kind="class"><name>learnql::index::PersistentBTreeIndex</name>
+    <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1a0dfd829319ecba90711ac06d14ff15b9" kind="variable"><name>ORDER</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1a34cb7cbce3d28085f0e55eee02799c75" kind="variable"><name>MIN_KEYS</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1a46f1ae9acf6febaee04b34baf9c976fe" kind="variable"><name>MAX_KEYS</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1a9263542e8a0a2607781b8549742fb991" kind="variable"><name>CACHE_SIZE</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1ab6f7348905c00bdb5c1d34c9589d2dd0" kind="variable"><name>storage_</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1a7a58c1a34b6d5f0feb1bd6e79ef890be" kind="variable"><name>root_page_id_</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1af0a91623f855879cb26cb5ed8dfd6088" kind="variable"><name>size_</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1aad959f18e00107ebda2e4067430e284d" kind="variable"><name>node_cache_</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1ac137fd3ea264fef6c1647f04e5242120" kind="variable"><name>dirty_nodes_</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1a18aef3d4cb63615f46505a31db92aae4" kind="function"><name>PersistentBTreeIndex</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1aa5300a289858ccdebd68bb0e3c9fb146" kind="function"><name>~PersistentBTreeIndex</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1a61bbeaf93256e41122bcad17cd220dc3" kind="function"><name>insert</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1ac271037cd3ef640ab23d4a81abfd1e46" kind="function"><name>find</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1a985c96c1de263fcb00fcc32478e67220" kind="function"><name>contains</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1a0465e0b0bb942a6155a0f96cd54981ce" kind="function"><name>remove</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1a15b8849a7ada45f1311f3be57838524e" kind="function"><name>range_query</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1aac3dc273c9b504ba6e3c820b104179e3" kind="function"><name>size</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1a2312e8ec73ea45f893667408ec546f2d" kind="function"><name>empty</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1a118c4c5f5fe412166c7e3e09b34b8784" kind="function"><name>get_root_page_id</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1a1ea432162866e110e38ff561246aa712" kind="function"><name>get_all</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1aa8e5a324bc5d3313d98e1600a655178d" kind="function"><name>create_batch_iterator</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1ae47394af5601973c90565ec2cd514655" kind="function"><name>flush</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1a5f7043033f8bd1a6c5ae0061be9a1df6" kind="function"><name>clear_cache</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1a5b74053987e74a10edbfaf84af5c2511" kind="function"><name>allocate_node</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1a6cb31769c47baa0f35accfbe363a2af3" kind="function"><name>deallocate_node</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1a0c78005a8c5d9041a3d8a1faa8e453f5" kind="function"><name>load_node</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1a32a6707bdd44414439636b4a2d562102" kind="function"><name>save_node</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1af29d7be52f6f78ec900f0f500afb655b" kind="function"><name>write_node_to_page</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1a10c2d052b084abdaa4581eefe6d04379" kind="function"><name>evict_node</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1af5b5ac153c663e65ed6d80a2e1527f93" kind="function"><name>search</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1a732308c7c60cfacf1eacb1577dc46cc5" kind="function"><name>insert_non_full</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1ab254efdb0a1a4ab58955a00ad785da50" kind="function"><name>split_child</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1a649d356a94e3e0318b3707e637ed8d5d" kind="function"><name>remove_from_node</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1a6aee2945b40c46cb35822f9ab10485d8" kind="function"><name>range_query_helper</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1a377838c822bc3a25a6d086247761cc08" kind="function"><name>find_leaf_for_key</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1af5d16bfdcda6c7dd4637a5f12f14c557" kind="function"><name>traverse</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1a138f33ddbf06df517f29dccee57f28e0" kind="function"><name>find_leftmost_leaf</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1a3d996aec5cd8f01a0faf6dbc1afe87a6" kind="function"><name>count_entries</name></member>
+  </compound>
+  <compound refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index" kind="class"><name>learnql::index::PersistentMultiValueSecondaryIndex</name>
+    <member refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1aa38b9609f0beecb7fe0266e14193c6a8" kind="typedef"><name>getter_type</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a4436d001e5a31009de3507fe0c1624ff" kind="typedef"><name>composite_key_type</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a0320cde8e42bbb82356fe2b3aa25f733" kind="typedef"><name>index_type</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a9b647d5ee6b69805e2bd615e8c9373bf" kind="variable"><name>field_name_</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a37f2bd74d169d11f041f0161bce23cd4" kind="variable"><name>getter_</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1ab75ec5df02a61099f559ec0a15661991" kind="variable"><name>index_</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1ac1200d9a2c9309e35421023e8940eca7" kind="function"><name>PersistentMultiValueSecondaryIndex</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a2743930dab02b7ade766cbb64187ba7b" kind="function"><name>insert</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a576b15d7b905d992a236dd6e7ae99a5b" kind="function"><name>find</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a9f839ee942b3a7c4ca8e0282c7e8c07f" kind="function"><name>contains</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1abbfc70d66e3f0bf9c8c4f38cc3f519c3" kind="function"><name>count</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1aeef5f8091acdfcfd7b677ca67e1e25c1" kind="function"><name>remove</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1ad71ebdd59de77d2509c144f11ca0362c" kind="function"><name>remove_all</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1aeb054a2c8102513522ab812fceec37cf" kind="function"><name>update</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a02f29d7186698502f31ce6f6db4523c8" kind="function"><name>get_unique_values</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a15f94c3dd2797bf43cd6709be2f5ce86" kind="function"><name>get_all</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1aba9766c6eb39206fcd9b15532e31cd07" kind="function"><name>size</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a4670f264a41948dc31da3acd4babdac9" kind="function"><name>empty</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a659af66d368d6fa58c85b07398fb03e0" kind="function"><name>get_field_name</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a1b5f70cbe05ff0ebdc5528f86a7caf37" kind="function"><name>get_root_page_id</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1a75cd0c04ef34e745474a49e84d2439e4" kind="function"><name>flush</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1ab920716f03ec3d132f55393e21165938" kind="function"><name>clear_cache</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index_1ad7da65bbcbac4c4939b6b4a3067da219" kind="function"><name>create_batch_iterator</name></member>
+  </compound>
+  <compound refid="classlearnql_1_1index_1_1_persistent_secondary_index" kind="class"><name>learnql::index::PersistentSecondaryIndex</name>
+    <member refid="classlearnql_1_1index_1_1_persistent_secondary_index_1afee06a245c8a5dacd3ec11db6a8b9bc4" kind="typedef"><name>getter_type</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_secondary_index_1a62a794b1cc60b15fb72761eb12e3626a" kind="typedef"><name>index_type</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_secondary_index_1a10c0f07dcdc9a7fc175e5baf55a0067e" kind="variable"><name>field_name_</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_secondary_index_1af4eeccafb10de2d75c7fd796170c2123" kind="variable"><name>getter_</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_secondary_index_1a3d532fcf6a0ccfb30bf16e3d281e2bda" kind="variable"><name>index_</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_secondary_index_1af5bd31c495ae3c64030a30a9833ab844" kind="function"><name>PersistentSecondaryIndex</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_secondary_index_1ab3571999729956d4c6b9b1442c0805fb" kind="function"><name>insert</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_secondary_index_1a37167eeae6cb8a22839277b18a305e8e" kind="function"><name>find</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_secondary_index_1a15cf9e70b66b0b07b2d322f79e120d2f" kind="function"><name>contains</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_secondary_index_1a1156d34a40e5244726b55a270da4248f" kind="function"><name>remove</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_secondary_index_1adad6bf3023d6bf400b2c4b03e860a2dc" kind="function"><name>remove_by_value</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_secondary_index_1a5881533c2f4b4cb772cc14d09771d878" kind="function"><name>update</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_secondary_index_1a9b25de7856bcb47bdefc167dc19c962e" kind="function"><name>range_query</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_secondary_index_1ab8e3fb24e5d6c0e00d8521e30e966304" kind="function"><name>get_all</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_secondary_index_1a0c0462d1e4b14a27e441dff8f58a3ed9" kind="function"><name>size</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_secondary_index_1a82b7f8ec68feabf606b0ee45e15c3e72" kind="function"><name>empty</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_secondary_index_1ac768caddfe8f4cc94effe7b1a782f026" kind="function"><name>get_field_name</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_secondary_index_1a6816e16fa5bc879bf106eaa023c62e6b" kind="function"><name>get_root_page_id</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_secondary_index_1a86db9c2974d5790d7c82039f2a706b80" kind="function"><name>flush</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_secondary_index_1a6a0a9e5558a372fbc8628c1c075adce1" kind="function"><name>clear_cache</name></member>
+    <member refid="classlearnql_1_1index_1_1_persistent_secondary_index_1a6e74d2953bc79d55565e306043c5a74d" kind="function"><name>create_batch_iterator</name></member>
+  </compound>
+  <compound refid="classlearnql_1_1debug_1_1_profiler" kind="class"><name>learnql::debug::Profiler</name>
+    <member refid="classlearnql_1_1debug_1_1_profiler_1a585766879207288d2b9c69fdfcfe5538" kind="variable"><name>metrics_</name></member>
+    <member refid="classlearnql_1_1debug_1_1_profiler_1a321f5b81c052898ba92d54f8b0690af6" kind="variable"><name>operation_metrics_</name></member>
+    <member refid="classlearnql_1_1debug_1_1_profiler_1a9546847af964fa8caef4f594fa75d694" kind="function"><name>instance</name></member>
+    <member refid="classlearnql_1_1debug_1_1_profiler_1a8551cd8d346f0e5fd795dde696af9710" kind="function"><name>record</name></member>
+    <member refid="classlearnql_1_1debug_1_1_profiler_1aca92e65589386d92597b45f7c6bc1c48" kind="function"><name>print_summary</name></member>
+    <member refid="classlearnql_1_1debug_1_1_profiler_1a36ed35de0f5eddb2ec714bb622c2430b" kind="function"><name>clear</name></member>
+    <member refid="classlearnql_1_1debug_1_1_profiler_1a65b998425d4782cd0ec3e7718a6e1a3d" kind="function"><name>metrics</name></member>
+    <member refid="classlearnql_1_1debug_1_1_profiler_1a5f20ccb9c55eb718fe4e80f6a901c74c" kind="function"><name>Profiler</name></member>
+    <member refid="classlearnql_1_1debug_1_1_profiler_1af9dc8750d11a2656186e443162ccc46c" kind="function"><name>~Profiler</name></member>
+    <member refid="classlearnql_1_1debug_1_1_profiler_1a307770e03994098415e175aa47c56406" kind="function"><name>Profiler</name></member>
+    <member refid="classlearnql_1_1debug_1_1_profiler_1a2ba3567d13e81b6e5bb35fe65cfd3810" kind="function"><name>operator=</name></member>
+  </compound>
+  <compound refid="structlearnql_1_1coroutines_1_1_generator_1_1promise__type" kind="struct"><name>learnql::coroutines::Generator::promise_type</name>
+    <member refid="structlearnql_1_1coroutines_1_1_generator_1_1promise__type_1ade83c449c8425eae253d53ec6d7ccbce" kind="variable"><name>current_value</name></member>
+    <member refid="structlearnql_1_1coroutines_1_1_generator_1_1promise__type_1ac1bb7278edc4ea0d04bc41d6875c172c" kind="variable"><name>exception</name></member>
+    <member refid="structlearnql_1_1coroutines_1_1_generator_1_1promise__type_1a2e92b4247d3497a921bdf77813bc7ae1" kind="function"><name>get_return_object</name></member>
+    <member refid="structlearnql_1_1coroutines_1_1_generator_1_1promise__type_1a6da183d33ff3be99d6963af6b5766cda" kind="function"><name>initial_suspend</name></member>
+    <member refid="structlearnql_1_1coroutines_1_1_generator_1_1promise__type_1aab5216e7528a6aceca5ad4389b1bd6c1" kind="function"><name>final_suspend</name></member>
+    <member refid="structlearnql_1_1coroutines_1_1_generator_1_1promise__type_1aba855717934f5de3a2e940bdc5e79233" kind="function"><name>yield_value</name></member>
+    <member refid="structlearnql_1_1coroutines_1_1_generator_1_1promise__type_1ad2de08b9044fcfb82bb17dd6fd3ea3fc" kind="function"><name>return_void</name></member>
+    <member refid="structlearnql_1_1coroutines_1_1_generator_1_1promise__type_1a86d92a6e5225a25e61f6782080ca0694" kind="function"><name>unhandled_exception</name></member>
+  </compound>
+  <compound refid="structlearnql_1_1coroutines_1_1_task_1_1promise__type" kind="struct"><name>learnql::coroutines::Task::promise_type</name>
+    <member refid="structlearnql_1_1coroutines_1_1_task_1_1promise__type_1aecd6136871cb01ea9b6b1edec7f312d0" kind="variable"><name>result</name></member>
+    <member refid="structlearnql_1_1coroutines_1_1_task_1_1promise__type_1ac6ea0a5885713ce7c2237fdbbc025709" kind="variable"><name>exception</name></member>
+    <member refid="structlearnql_1_1coroutines_1_1_task_1_1promise__type_1a01e7dcf5d7b3c17173ac811dc53c691e" kind="function"><name>get_return_object</name></member>
+    <member refid="structlearnql_1_1coroutines_1_1_task_1_1promise__type_1a2d16b8caf141311849e1a147274f1b0e" kind="function"><name>initial_suspend</name></member>
+    <member refid="structlearnql_1_1coroutines_1_1_task_1_1promise__type_1a3b31216c784d6925be11ddc5b85db6ca" kind="function"><name>final_suspend</name></member>
+    <member refid="structlearnql_1_1coroutines_1_1_task_1_1promise__type_1a22e4dbd6bf29dec8b203906cec20db79" kind="function"><name>return_value</name></member>
+    <member refid="structlearnql_1_1coroutines_1_1_task_1_1promise__type_1a79991e9c33f1296619ad68b68d954348" kind="function"><name>unhandled_exception</name></member>
+  </compound>
+  <compound refid="structlearnql_1_1coroutines_1_1_task_3_01void_01_4_1_1promise__type" kind="struct"><name>learnql::coroutines::Task&lt; void &gt;::promise_type</name>
+    <member refid="structlearnql_1_1coroutines_1_1_task_3_01void_01_4_1_1promise__type_1a31a8f0b2743165e2aaec4752c54e059e" kind="variable"><name>exception</name></member>
+    <member refid="structlearnql_1_1coroutines_1_1_task_1_1promise__type_1aecd6136871cb01ea9b6b1edec7f312d0" kind="variable"><name>result</name></member>
+    <member refid="structlearnql_1_1coroutines_1_1_task_3_01void_01_4_1_1promise__type_1a9a5b5091db97dd8f1c27ea65134a43ec" kind="function"><name>get_return_object</name></member>
+    <member refid="structlearnql_1_1coroutines_1_1_task_3_01void_01_4_1_1promise__type_1a726622d3459eb88a9a92557f18039d79" kind="function"><name>initial_suspend</name></member>
+    <member refid="structlearnql_1_1coroutines_1_1_task_3_01void_01_4_1_1promise__type_1a2cbad1b33ec0b2e4fdbffa943e6667f5" kind="function"><name>final_suspend</name></member>
+    <member refid="structlearnql_1_1coroutines_1_1_task_3_01void_01_4_1_1promise__type_1ae3db51a0a7be8b41105114d922fa5a1b" kind="function"><name>return_void</name></member>
+    <member refid="structlearnql_1_1coroutines_1_1_task_3_01void_01_4_1_1promise__type_1a7e74a2001b968c9952e349b3c98bdbbb" kind="function"><name>unhandled_exception</name></member>
+    <member refid="structlearnql_1_1coroutines_1_1_task_1_1promise__type_1a22e4dbd6bf29dec8b203906cec20db79" kind="function"><name>return_value</name></member>
+  </compound>
+  <compound refid="structlearnql_1_1meta_1_1_property_meta" kind="struct"><name>learnql::meta::PropertyMeta</name>
+    <member refid="structlearnql_1_1meta_1_1_property_meta_1ad1da7def587afbf266165a8ed3ab0f39" kind="typedef"><name>value_type</name></member>
+    <member refid="structlearnql_1_1meta_1_1_property_meta_1a0f43fe96cfb00d686b39a654c10b3ce5" kind="typedef"><name>class_type</name></member>
+    <member refid="structlearnql_1_1meta_1_1_property_meta_1aabf447033d228db3c71f6d2e016da6e8" kind="variable"><name>name</name></member>
+    <member refid="structlearnql_1_1meta_1_1_property_meta_1a02d0f2b511d8dc175e4bc8012ca9d274" kind="variable"><name>member_ptr</name></member>
+    <member refid="structlearnql_1_1meta_1_1_property_meta_1a26b231c01d2b55d4b16e60d2907719e2" kind="variable"><name>index</name></member>
+    <member refid="structlearnql_1_1meta_1_1_property_meta_1a5a332d5a3408cd5e1c238979e8efed06" kind="variable"><name>is_primary_key</name></member>
+    <member refid="structlearnql_1_1meta_1_1_property_meta_1ae71fa0e94a431a38ec99fe1936648e56" kind="function"><name>get</name></member>
+    <member refid="structlearnql_1_1meta_1_1_property_meta_1a572aa254f6f432972debb635cd4f8dea" kind="function"><name>set</name></member>
+    <member refid="structlearnql_1_1meta_1_1_property_meta_1a1feff6ee4d228fea56dedaa263a62003" kind="function"><name>type_string</name></member>
+  </compound>
+  <compound refid="classlearnql_1_1ranges_1_1_proxy_vector" kind="class"><name>learnql::ranges::ProxyVector</name>
+    <member refid="classlearnql_1_1ranges_1_1_proxy_vector_1ae0940de52c4b60f1c4ad9ecc28863c26" kind="typedef"><name>BatchFetcher</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_proxy_vector_1a27a846f8956a1c77943c5920e1c12a3b" kind="typedef"><name>value_type</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_proxy_vector_1a0b78d9a759698fcdf6be6fe7305ff6c7" kind="typedef"><name>size_type</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_proxy_vector_1a1e792fb7bc16d8d6a458c5cfb6818f9c" kind="typedef"><name>reference</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_proxy_vector_1a18695934e6fa58f0f7f5739dcb6d13f2" kind="typedef"><name>const_reference</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_proxy_vector_1a7a782d67f51fac7d26fdc1d3a6de3898" kind="typedef"><name>pointer</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_proxy_vector_1a889c8bb9ba3b753b75a8fa6012837dd3" kind="typedef"><name>const_pointer</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_proxy_vector_1a4a3b5b674d6ca7bc1f13b1e763feabbb" kind="typedef"><name>iterator</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_proxy_vector_1a8010ffa44841200b12f911173680ecaf" kind="typedef"><name>const_iterator</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_proxy_vector_1a0c8abd5f4401c126935500041dae06eb" kind="variable"><name>batch_fetcher_</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_proxy_vector_1a9257d0eb4d27b54e1dd3fae482c8a510" kind="variable"><name>current_batch_</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_proxy_vector_1a1e5760659938a2e90373f9cd4e2ae50c" kind="variable"><name>global_pos_</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_proxy_vector_1ab8774daa91e4529576795ac829809dcd" kind="variable"><name>batches_loaded_</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_proxy_vector_1a79bf6ff9c05ea045d8705900fe1319c5" kind="variable"><name>exhausted_</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_proxy_vector_1a05b37eaa09171eb0727cf6757cea1e82" kind="function"><name>ProxyVector</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_proxy_vector_1a67f8c5d31db0f2750ff803dad56fc228" kind="function"><name>begin</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_proxy_vector_1a625004555e0ceda145bdef81c052b755" kind="function"><name>end</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_proxy_vector_1a389adfafb2799526fd55dcc5d068b132" kind="function"><name>begin</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_proxy_vector_1aa031f96409d67b6c5f3659d976d1eae9" kind="function"><name>end</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_proxy_vector_1adb4dd0c34d643997bd26604fa006ea4e" kind="function"><name>cbegin</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_proxy_vector_1adfdb1f12c69d8c09f478da689e5ab401" kind="function"><name>cend</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_proxy_vector_1a36929dc21c7db9247cc628ef093aaf82" kind="function"><name>empty</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_proxy_vector_1a0697ded9c50f0e23bb1bf19c4a1666c5" kind="function"><name>materialize</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_proxy_vector_1a2c4de8b974f446a843c12ffa9d3d0b67" kind="function"><name>load_next_batch</name></member>
+  </compound>
+  <compound refid="classlearnql_1_1core_1_1_query" kind="class"><name>learnql::core::Query</name>
+  </compound>
+  <compound refid="classlearnql_1_1query_1_1_query" kind="class"><name>learnql::query::Query</name>
+    <member refid="classlearnql_1_1query_1_1_query_1a70c824d5531524dc012b0baec4f1fb5b" kind="typedef"><name>table_type</name></member>
+    <member refid="classlearnql_1_1query_1_1_query_1a23526c3427df1f032cdbb8cf87a08207" kind="typedef"><name>value_type</name></member>
+    <member refid="classlearnql_1_1query_1_1_query_1a0e68eede90c43564c129c4ea3cb4e603" kind="variable"><name>table_</name></member>
+    <member refid="classlearnql_1_1query_1_1_query_1a895145628f0c94eff7ad6208cd08da7a" kind="variable"><name>predicate_</name></member>
+    <member refid="classlearnql_1_1query_1_1_query_1a34e1ed036c997d1192ed341ff82b864b" kind="function"><name>Query</name></member>
+    <member refid="classlearnql_1_1query_1_1_query_1a397bb70fc53fdb90841a17aa7093edc1" kind="function"><name>where</name></member>
+    <member refid="classlearnql_1_1query_1_1_query_1a4dd2e00ea45d681085aa3089ee8b1010" kind="function"><name>execute</name></member>
+    <member refid="classlearnql_1_1query_1_1_query_1a3b696344fbd70f9c16e2ef0cee7df9ad" kind="function"><name>execute_single</name></member>
+    <member refid="classlearnql_1_1query_1_1_query_1a2ca0d9a089e90ef43e8a09c79b556de1" kind="function"><name>count</name></member>
+    <member refid="classlearnql_1_1query_1_1_query_1a528c8a8d565579c00544947e658c779b" kind="function"><name>any</name></member>
+    <member refid="classlearnql_1_1query_1_1_query_1ad41474e3eef51d01bca7f41f739fa6db" kind="function"><name>all</name></member>
+    <member refid="classlearnql_1_1query_1_1_query_1a8301d6740b2b579d639b17919c4202f6" kind="function"><name>operator std::vector&lt; T &gt;</name></member>
+    <member refid="classlearnql_1_1query_1_1_query_1a276fcfc0bc9a2f11140372804261e639" kind="function"><name>begin</name></member>
+    <member refid="classlearnql_1_1query_1_1_query_1aa25cc9c67c9dc306552fb63480ac63bc" kind="function"><name>end</name></member>
+  </compound>
+  <compound refid="structlearnql_1_1debug_1_1_query_statistics" kind="struct"><name>learnql::debug::QueryStatistics</name>
+    <member refid="structlearnql_1_1debug_1_1_query_statistics_1a7d89b6982e86a375588ed8d26f824e8d" kind="variable"><name>query_description</name></member>
+    <member refid="structlearnql_1_1debug_1_1_query_statistics_1a8e228431af394c43aa4ea7620ec20b95" kind="variable"><name>execution_count</name></member>
+    <member refid="structlearnql_1_1debug_1_1_query_statistics_1a7ce241ba757aa2ec426458a6b9e1d0c3" kind="variable"><name>total_duration</name></member>
+    <member refid="structlearnql_1_1debug_1_1_query_statistics_1a639f0501cd83ca78f48235f5feb8903e" kind="variable"><name>total_rows_returned</name></member>
+    <member refid="structlearnql_1_1debug_1_1_query_statistics_1a6f808b54ffa0e2b026679bf3de69123e" kind="function"><name>avg_duration_ms</name></member>
+    <member refid="structlearnql_1_1debug_1_1_query_statistics_1af217a78e750f95d29ae451cb59c8a530" kind="function"><name>avg_rows_returned</name></member>
+    <member refid="structlearnql_1_1debug_1_1_query_statistics_1ac07d5dd95c64f4ee13cc57e7a2f6373c" kind="function"><name>print</name></member>
+  </compound>
+  <compound refid="classlearnql_1_1ranges_1_1_query_view" kind="class"><name>learnql::ranges::QueryView</name>
+    <member refid="classlearnql_1_1ranges_1_1_query_view_1aa04e8a8e6ec2a69c1f310229663f1351" kind="variable"><name>data_</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_query_view_1a78f655105371811918dbe275d75cbfb7" kind="function"><name>QueryView</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_query_view_1a42e1e1e31d9464320d04a4fbd4198022" kind="function"><name>QueryView</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_query_view_1a90ffe2d3956ac4dfb7c7c32b4488f5dc" kind="function"><name>begin</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_query_view_1a10c1c86b164c23a5108032f3d2a6c380" kind="function"><name>end</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_query_view_1a205f774918f1378671d4cccc4a7e8327" kind="function"><name>begin</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_query_view_1a51ef32ad72df64d3c1f20d2cdb153c76" kind="function"><name>end</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_query_view_1aa18830a956e21a93a25c3d00ea189b00" kind="function"><name>empty</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_query_view_1ab49156b1cf5ddc0e84cc458a9434b2fd" kind="function"><name>size</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_query_view_1a2353064a7c5f5b82eeeb79d52e91780d" kind="function"><name>to_vector</name></member>
+  </compound>
+  <compound refid="classlearnql_1_1core_1_1_read_only_table" kind="class"><name>learnql::core::ReadOnlyTable</name>
+    <member refid="classlearnql_1_1core_1_1_read_only_table_1a8dbe675c21bdc564980175f36af02982" kind="typedef"><name>value_type</name></member>
+    <member refid="classlearnql_1_1core_1_1_read_only_table_1a3a0a3d4526b891a3767c54775143ed06" kind="typedef"><name>primary_key_type</name></member>
+    <member refid="classlearnql_1_1core_1_1_read_only_table_1ae37bab75b39fd1450e5ae13bce8a60b1" kind="friend"><name>catalog::SystemCatalog</name></member>
+    <member refid="classlearnql_1_1core_1_1_read_only_table_1a3f1a644bcb00ff74c72cc4c681c04bf9" kind="variable"><name>table_</name></member>
+    <member refid="classlearnql_1_1core_1_1_read_only_table_1a21ec44751585e1346654156528ec18bd" kind="function"><name>ReadOnlyTable</name></member>
+    <member refid="classlearnql_1_1core_1_1_read_only_table_1ab2b496ad392be2ed45c366c6596b4f8d" kind="function"><name>ReadOnlyTable</name></member>
+    <member refid="classlearnql_1_1core_1_1_read_only_table_1ab240ccedc8de66a071bcdf81f6485e28" kind="function"><name>operator=</name></member>
+    <member refid="classlearnql_1_1core_1_1_read_only_table_1a87f0e660867e1fd5c2b573068acc6d11" kind="function"><name>ReadOnlyTable</name></member>
+    <member refid="classlearnql_1_1core_1_1_read_only_table_1a6814f3460027330555177ff347487e7b" kind="function"><name>operator=</name></member>
+    <member refid="classlearnql_1_1core_1_1_read_only_table_1af220009df7ce9154e5b81cd6cb44a782" kind="function"><name>find</name></member>
+    <member refid="classlearnql_1_1core_1_1_read_only_table_1af573accc6f4c4307c2ace6b5993e5f57" kind="function"><name>contains</name></member>
+    <member refid="classlearnql_1_1core_1_1_read_only_table_1ac9ed24b787bc5582743693e38afddd9d" kind="function"><name>get_all</name></member>
+    <member refid="classlearnql_1_1core_1_1_read_only_table_1a50007d2e9803bce64527744a1c030534" kind="function"><name>find_if</name></member>
+    <member refid="classlearnql_1_1core_1_1_read_only_table_1aeaccfbe0f983cdef639bf34a1d7f838d" kind="function"><name>where</name></member>
+    <member refid="classlearnql_1_1core_1_1_read_only_table_1ad8a2dcf83222a13772cf953b46282a14" kind="function"><name>view</name></member>
+    <member refid="classlearnql_1_1core_1_1_read_only_table_1ad8f54ee0801ed840ea3856571c3e5f66" kind="function"><name>view_where</name></member>
+    <member refid="classlearnql_1_1core_1_1_read_only_table_1add6794551a461049ec73b94cd3abd33d" kind="function"><name>all</name></member>
+    <member refid="classlearnql_1_1core_1_1_read_only_table_1a14b87d48f563f4fa3dfff956ad8b03c6" kind="function"><name>size</name></member>
+    <member refid="classlearnql_1_1core_1_1_read_only_table_1a5d6c518412b2c266ba2643d2fe96867d" kind="function"><name>empty</name></member>
+    <member refid="classlearnql_1_1core_1_1_read_only_table_1a27e7936d3bc94f9c82add98b4118f800" kind="function"><name>insert</name></member>
+    <member refid="classlearnql_1_1core_1_1_read_only_table_1aff92e4cd5550a6e8cb0b995922e53101" kind="function"><name>update</name></member>
+    <member refid="classlearnql_1_1core_1_1_read_only_table_1ad86572c4ec13295f3d8acd46de8e7224" kind="function"><name>remove</name></member>
+    <member refid="classlearnql_1_1core_1_1_read_only_table_1ada20d1d4e1199a74222fb4edf394dce8" kind="function"><name>clear</name></member>
+    <member refid="classlearnql_1_1core_1_1_read_only_table_1a392dfa45c993e40adcca61f70aad0f63" kind="function"><name>internal_table</name></member>
+    <member refid="classlearnql_1_1core_1_1_read_only_table_1aaf1cb81a5ed9a66e1491798108cf6286" kind="function"><name>internal_table</name></member>
+  </compound>
+  <compound refid="structlearnql_1_1core_1_1_record_id" kind="struct"><name>learnql::core::RecordId</name>
+    <member refid="structlearnql_1_1core_1_1_record_id_1a83061170039ebaa5ec4e333c1c3237af" kind="variable"><name>page_id</name></member>
+    <member refid="structlearnql_1_1core_1_1_record_id_1a6e12298992b41f04a995452318911545" kind="variable"><name>slot</name></member>
+    <member refid="structlearnql_1_1core_1_1_record_id_1a5f3e2db0611b3366999bc3063bba4d88" kind="function"><name>RecordId</name></member>
+    <member refid="structlearnql_1_1core_1_1_record_id_1ac5b0b69235eb46a6ee2d24fa62d72855" kind="function"><name>RecordId</name></member>
+    <member refid="structlearnql_1_1core_1_1_record_id_1a367aa6708baf42aeec552fc281b01768" kind="function"><name>is_valid</name></member>
+    <member refid="structlearnql_1_1core_1_1_record_id_1a05f1bc6d7e15e8f3cd0447578bb1983f" kind="function"><name>operator&lt;=&gt;</name></member>
+    <member refid="structlearnql_1_1core_1_1_record_id_1a6cf8fdd9a399ba5ab9ddc625a883d408" kind="function"><name>operator==</name></member>
+    <member refid="structlearnql_1_1core_1_1_record_id_1aa0cafe431bbf3a99455883440c404e48" kind="function"><name>invalid</name></member>
+  </compound>
+  <compound refid="classlearnql_1_1debug_1_1_scoped_profiler" kind="class"><name>learnql::debug::ScopedProfiler</name>
+    <member refid="classlearnql_1_1debug_1_1_scoped_profiler_1ab6b71efbaf0f53420f9f5ff57420756d" kind="variable"><name>operation_name_</name></member>
+    <member refid="classlearnql_1_1debug_1_1_scoped_profiler_1ad60e8417ebf81e1ceb873f05264e04aa" kind="variable"><name>start_</name></member>
+    <member refid="classlearnql_1_1debug_1_1_scoped_profiler_1a01ce084bbd6bbe6ec081426e43f59da8" kind="variable"><name>rows_processed_</name></member>
+    <member refid="classlearnql_1_1debug_1_1_scoped_profiler_1adac26cf3bf755854fa050b35f12aaff0" kind="variable"><name>memory_used_</name></member>
+    <member refid="classlearnql_1_1debug_1_1_scoped_profiler_1a54f453a6f73d3dc94c4f4f91a6517a42" kind="function"><name>ScopedProfiler</name></member>
+    <member refid="classlearnql_1_1debug_1_1_scoped_profiler_1acb23868425a105b3261e41ed7b85a40b" kind="function"><name>~ScopedProfiler</name></member>
+    <member refid="classlearnql_1_1debug_1_1_scoped_profiler_1ac5e7865d8b17f55811fa9cea3a010241" kind="function"><name>set_rows_processed</name></member>
+    <member refid="classlearnql_1_1debug_1_1_scoped_profiler_1add5e0b4a97e493d52f23ac212969a3bb" kind="function"><name>set_memory_used</name></member>
+  </compound>
+  <compound refid="classlearnql_1_1index_1_1_secondary_index" kind="class"><name>learnql::index::SecondaryIndex</name>
+    <member refid="classlearnql_1_1index_1_1_secondary_index_1ac66ec6c838e0be4f5a66e1dc53661009" kind="typedef"><name>getter_type</name></member>
+    <member refid="classlearnql_1_1index_1_1_secondary_index_1a3c6df92ba9597f36ce48ec6cd8a46a98" kind="typedef"><name>index_type</name></member>
+    <member refid="classlearnql_1_1index_1_1_secondary_index_1a1a8f30d51daa2062617f05b3ecd14c36" kind="variable"><name>field_name_</name></member>
+    <member refid="classlearnql_1_1index_1_1_secondary_index_1a1c53818fa6ceb5fbcbbbc4a723b24277" kind="variable"><name>getter_</name></member>
+    <member refid="classlearnql_1_1index_1_1_secondary_index_1ad3fdc2052a9b04dd122fe245678605fc" kind="variable"><name>index_</name></member>
+    <member refid="classlearnql_1_1index_1_1_secondary_index_1a881e8f4c208a9ebc82c9c25c70ed948e" kind="function"><name>SecondaryIndex</name></member>
+    <member refid="classlearnql_1_1index_1_1_secondary_index_1a0f40a50a118503e627121b5967b215ac" kind="function"><name>insert</name></member>
+    <member refid="classlearnql_1_1index_1_1_secondary_index_1af60b558794f51135a8a9286f498410d5" kind="function"><name>find</name></member>
+    <member refid="classlearnql_1_1index_1_1_secondary_index_1a1b60500942791f5399a5a5f49b96309c" kind="function"><name>range_query</name></member>
+    <member refid="classlearnql_1_1index_1_1_secondary_index_1ac8a1a790ab2c8638f228af88a0a2f659" kind="function"><name>remove</name></member>
+    <member refid="classlearnql_1_1index_1_1_secondary_index_1ae4c86f6f995ea7bc1187e4eefc00e8dc" kind="function"><name>update</name></member>
+    <member refid="classlearnql_1_1index_1_1_secondary_index_1a44039b7c5e13e14ebf36d50f3af4a257" kind="function"><name>field_name</name></member>
+    <member refid="classlearnql_1_1index_1_1_secondary_index_1a55c5d36d361fb0d802187e8f274b86ef" kind="function"><name>size</name></member>
+    <member refid="classlearnql_1_1index_1_1_secondary_index_1afcc1e1beada7c14b024d35b7cc7a0447" kind="function"><name>clear</name></member>
+  </compound>
+  <compound refid="structlearnql_1_1core_1_1_table_1_1_secondary_index_base" kind="struct"><name>learnql::core::Table::SecondaryIndexBase</name>
+    <member refid="structlearnql_1_1core_1_1_table_1_1_secondary_index_base_1a54c39d1564ef9dd93c89845a71c41b5d" kind="function"><name>~SecondaryIndexBase</name></member>
+    <member refid="structlearnql_1_1core_1_1_table_1_1_secondary_index_base_1ae787d15d48bd09520a42c2508078b5a1" kind="function"><name>insert_record</name></member>
+    <member refid="structlearnql_1_1core_1_1_table_1_1_secondary_index_base_1a7c1a458b3fecd969df7698a31055e52f" kind="function"><name>remove_record</name></member>
+    <member refid="structlearnql_1_1core_1_1_table_1_1_secondary_index_base_1a4c41ccb6ffe37d312345b71967815f9b" kind="function"><name>update_record</name></member>
+    <member refid="structlearnql_1_1core_1_1_table_1_1_secondary_index_base_1ac73507efff3789367c58b3731529c559" kind="function"><name>flush</name></member>
+    <member refid="structlearnql_1_1core_1_1_table_1_1_secondary_index_base_1a9710d2ba02f2bd2400f7606f06cca3da" kind="function"><name>get_root_page_id</name></member>
+    <member refid="structlearnql_1_1core_1_1_table_1_1_secondary_index_base_1a55dfa5da69b900b1c36eb21198e7b3b0" kind="function"><name>get_field_name</name></member>
+    <member refid="structlearnql_1_1core_1_1_table_1_1_secondary_index_base_1a060ed01b8aa8f1bccf139dd92be0d8f7" kind="function"><name>is_unique</name></member>
+    <member refid="structlearnql_1_1core_1_1_table_1_1_secondary_index_base_1a92e49cff4fb3cb31a92dc1181c08b5b7" kind="function"><name>get_field_type</name></member>
+  </compound>
+  <compound refid="structlearnql_1_1core_1_1_table_1_1_secondary_index_wrapper" kind="struct"><name>learnql::core::Table::SecondaryIndexWrapper</name>
+    <member refid="structlearnql_1_1core_1_1_table_1_1_secondary_index_wrapper_1a8aa6c17f5a699cc5c4d954df2d79e3d0" kind="typedef"><name>getter_type</name></member>
+    <member refid="structlearnql_1_1core_1_1_table_1_1_secondary_index_wrapper_1aeeadd2d5296793bd030abc371a6fcab8" kind="typedef"><name>unique_index_type</name></member>
+    <member refid="structlearnql_1_1core_1_1_table_1_1_secondary_index_wrapper_1a0b0b903ca0d3b27794d0937be9ada7d3" kind="typedef"><name>multi_index_type</name></member>
+    <member refid="structlearnql_1_1core_1_1_table_1_1_secondary_index_wrapper_1a77b4ce51a50ede2f4e9abb74dca7b2db" kind="variable"><name>unique_index_</name></member>
+    <member refid="structlearnql_1_1core_1_1_table_1_1_secondary_index_wrapper_1a15957a16970692cf3d1ce47ae4d6c016" kind="variable"><name>multi_index_</name></member>
+    <member refid="structlearnql_1_1core_1_1_table_1_1_secondary_index_wrapper_1adb3c3668a5039371cce5e002c13b7561" kind="variable"><name>getter_</name></member>
+    <member refid="structlearnql_1_1core_1_1_table_1_1_secondary_index_wrapper_1a8dd34afdf45b1b071a80a8c83d6b77ce" kind="variable"><name>field_name_</name></member>
+    <member refid="structlearnql_1_1core_1_1_table_1_1_secondary_index_wrapper_1a5b735b91145b71d6466656d239140e18" kind="variable"><name>is_unique_</name></member>
+    <member refid="structlearnql_1_1core_1_1_table_1_1_secondary_index_wrapper_1a9dbb8bfc4e21e8878761e862b9001efb" kind="function"><name>SecondaryIndexWrapper</name></member>
+    <member refid="structlearnql_1_1core_1_1_table_1_1_secondary_index_wrapper_1a5b7d4cfebb90786ea87b82688fe9d1b7" kind="function"><name>insert_record</name></member>
+    <member refid="structlearnql_1_1core_1_1_table_1_1_secondary_index_wrapper_1ac3564bcdc06c97692d779d8ad2e55a7b" kind="function"><name>remove_record</name></member>
+    <member refid="structlearnql_1_1core_1_1_table_1_1_secondary_index_wrapper_1a55533eee1f2ae5976f86753efa647762" kind="function"><name>update_record</name></member>
+    <member refid="structlearnql_1_1core_1_1_table_1_1_secondary_index_wrapper_1afe711e07ea4d794dec96c58b6b49dbde" kind="function"><name>flush</name></member>
+    <member refid="structlearnql_1_1core_1_1_table_1_1_secondary_index_wrapper_1a38e58cf0ea8967c3ba9d4546a4122d62" kind="function"><name>get_root_page_id</name></member>
+    <member refid="structlearnql_1_1core_1_1_table_1_1_secondary_index_wrapper_1aa1ffb8ea20e4a974e55a92634c3f4555" kind="function"><name>get_field_name</name></member>
+    <member refid="structlearnql_1_1core_1_1_table_1_1_secondary_index_wrapper_1ad5f2a516772335537884f33123ef7cde" kind="function"><name>is_unique</name></member>
+    <member refid="structlearnql_1_1core_1_1_table_1_1_secondary_index_wrapper_1a545db78db6c23d097522398ebb1afffb" kind="function"><name>get_field_type</name></member>
+    <member refid="structlearnql_1_1core_1_1_table_1_1_secondary_index_wrapper_1a2efd82fc58ed0ae94a20d53de4d29860" kind="function"><name>find_unique</name></member>
+    <member refid="structlearnql_1_1core_1_1_table_1_1_secondary_index_wrapper_1ab7dae208cfd5ba9fada34d6952aa5622" kind="function"><name>find_multi</name></member>
+    <member refid="structlearnql_1_1core_1_1_table_1_1_secondary_index_wrapper_1a7a82321f3942d76e68bdbb06aa4a046c" kind="function"><name>range_query</name></member>
+    <member refid="structlearnql_1_1core_1_1_table_1_1_secondary_index_wrapper_1a56718274d51a1dbe34971d024e12c42f" kind="function"><name>get_unique_values</name></member>
+  </compound>
+  <compound refid="classlearnql_1_1ranges_1_1_select_adaptor" kind="class"><name>learnql::ranges::SelectAdaptor</name>
+    <member refid="classlearnql_1_1ranges_1_1_select_adaptor_1adc58647df7429edc9961a98587d4a5b4" kind="variable"><name>proj_</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_select_adaptor_1a24eb139677f71e6324f4d09ebb5f62da" kind="function"><name>SelectAdaptor</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_select_adaptor_1a66a2a0c8e72d87567dae957b2989c20b" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="classlearnql_1_1ranges_1_1_skip_adaptor" kind="class"><name>learnql::ranges::SkipAdaptor</name>
+    <member refid="classlearnql_1_1ranges_1_1_skip_adaptor_1aec759a1a7ec1dc0ef03e73c30ab45d2d" kind="variable"><name>n_</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_skip_adaptor_1ad35ab44d15912878d83de48cf78a2308" kind="function"><name>SkipAdaptor</name></member>
+    <member refid="classlearnql_1_1ranges_1_1_skip_adaptor_1a23cb40b4d01f8a664d7e1ba31acc52d7" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="classlearnql_1_1debug_1_1_statistics_collector" kind="class"><name>learnql::debug::StatisticsCollector</name>
+    <member refid="classlearnql_1_1debug_1_1_statistics_collector_1adbde08bff0ebf525b86bf15acd4deb12" kind="variable"><name>table_stats_</name></member>
+    <member refid="classlearnql_1_1debug_1_1_statistics_collector_1a71d6f30d540360e5c9a82b972266616a" kind="variable"><name>index_stats_</name></member>
+    <member refid="classlearnql_1_1debug_1_1_statistics_collector_1a5266b65f570c523287357367f15b03d6" kind="variable"><name>query_stats_</name></member>
+    <member refid="classlearnql_1_1debug_1_1_statistics_collector_1a65e7f412b6a53a8cf50201f71b47e6fe" kind="function"><name>instance</name></member>
+    <member refid="classlearnql_1_1debug_1_1_statistics_collector_1a95b3939f6a072f57b194dc43bb871235" kind="function"><name>record_table</name></member>
+    <member refid="classlearnql_1_1debug_1_1_statistics_collector_1a2b86937ab77833cdf732eabf717cbddb" kind="function"><name>record_index</name></member>
+    <member refid="classlearnql_1_1debug_1_1_statistics_collector_1afbe326679333b0813844784052ba575c" kind="function"><name>record_query</name></member>
+    <member refid="classlearnql_1_1debug_1_1_statistics_collector_1a37ff81f99781d51681864ca71a781de4" kind="function"><name>get_table_stats</name></member>
+    <member refid="classlearnql_1_1debug_1_1_statistics_collector_1a713e389bc5fff1e456f582e921a4660d" kind="function"><name>get_index_stats</name></member>
+    <member refid="classlearnql_1_1debug_1_1_statistics_collector_1a60b840a676b018523f241d2e6840f80d" kind="function"><name>print_all</name></member>
+    <member refid="classlearnql_1_1debug_1_1_statistics_collector_1a38d4d1087229cfaf2f6714a4f317afc4" kind="function"><name>clear</name></member>
+    <member refid="classlearnql_1_1debug_1_1_statistics_collector_1a84f5e2d0e7995f1025596dd0a8f8ae7f" kind="function"><name>StatisticsCollector</name></member>
+    <member refid="classlearnql_1_1debug_1_1_statistics_collector_1af25f1a9c355d756ab1fdcbb261a31de8" kind="function"><name>~StatisticsCollector</name></member>
+    <member refid="classlearnql_1_1debug_1_1_statistics_collector_1a41bbb403e49c40d7d2437c1afc0ecf79" kind="function"><name>StatisticsCollector</name></member>
+    <member refid="classlearnql_1_1debug_1_1_statistics_collector_1a9bfbb72b71c7a225fee966f0030f26c9" kind="function"><name>operator=</name></member>
+  </compound>
+  <compound refid="classlearnql_1_1storage_1_1_storage_engine" kind="class"><name>learnql::storage::StorageEngine</name>
+    <member refid="classlearnql_1_1storage_1_1_storage_engine_1a330674386a41fc36f0ec5c48cc7b6441" kind="variable"><name>file_path_</name></member>
+    <member refid="classlearnql_1_1storage_1_1_storage_engine_1a4f247410b874a5c66919106c7f993aa7" kind="variable"><name>next_page_id_</name></member>
+    <member refid="classlearnql_1_1storage_1_1_storage_engine_1aa65cc29d6a2f66a806557f96e7d09251" kind="variable"><name>free_list_head_</name></member>
+    <member refid="classlearnql_1_1storage_1_1_storage_engine_1a2736277abef37db1bf4deee27ef13d27" kind="variable"><name>sys_tables_root_</name></member>
+    <member refid="classlearnql_1_1storage_1_1_storage_engine_1a18b2bd017d1bd789ac5a7933f1121143" kind="variable"><name>sys_fields_root_</name></member>
+    <member refid="classlearnql_1_1storage_1_1_storage_engine_1ac00841e72b41abc3b57767a7d9c0afe4" kind="variable"><name>sys_indexes_root_</name></member>
+    <member refid="classlearnql_1_1storage_1_1_storage_engine_1aeca846969cc11bfb906c23774be850a6" kind="variable"><name>cache_size_</name></member>
+    <member refid="classlearnql_1_1storage_1_1_storage_engine_1a8636dd79d990ba00e45143ca98074fb6" kind="variable"><name>page_cache_</name></member>
+    <member refid="classlearnql_1_1storage_1_1_storage_engine_1aa0263c3099ba649433095356dcd87686" kind="variable"><name>dirty_pages_</name></member>
+    <member refid="classlearnql_1_1storage_1_1_storage_engine_1a77600da6683a8360ef3eeadab12307c9" kind="function"><name>StorageEngine</name></member>
+    <member refid="classlearnql_1_1storage_1_1_storage_engine_1aa0427d916733e2896dd43a03c074be07" kind="function"><name>~StorageEngine</name></member>
+    <member refid="classlearnql_1_1storage_1_1_storage_engine_1aaf73fa14ab575adb483192e285dd13a2" kind="function"><name>StorageEngine</name></member>
+    <member refid="classlearnql_1_1storage_1_1_storage_engine_1a958af39adfc9bc3bdd95a79f86679ca2" kind="function"><name>operator=</name></member>
+    <member refid="classlearnql_1_1storage_1_1_storage_engine_1a3d1eb95624738dc94618788835088d51" kind="function"><name>StorageEngine</name></member>
+    <member refid="classlearnql_1_1storage_1_1_storage_engine_1a6d105d10d455d4835cef228f72a71337" kind="function"><name>operator=</name></member>
+    <member refid="classlearnql_1_1storage_1_1_storage_engine_1aff0652d3cef3b1392e351a590dee86cf" kind="function"><name>allocate_page</name></member>
+    <member refid="classlearnql_1_1storage_1_1_storage_engine_1aa1eb303fe871e06e56610839e8eef519" kind="function"><name>deallocate_page</name></member>
+    <member refid="classlearnql_1_1storage_1_1_storage_engine_1ac93edcca8ac34e0d45ecebdf6072cc43" kind="function"><name>read_page</name></member>
+    <member refid="classlearnql_1_1storage_1_1_storage_engine_1a0c23db9d880689cef18be8cbc069585e" kind="function"><name>write_page</name></member>
+    <member refid="classlearnql_1_1storage_1_1_storage_engine_1ac0fbe07cbe28db28214acbb17116195f" kind="function"><name>flush_all</name></member>
+    <member refid="classlearnql_1_1storage_1_1_storage_engine_1a5ad865c5f01c699003f7d0dedbfe59ff" kind="function"><name>flush_page</name></member>
+    <member refid="classlearnql_1_1storage_1_1_storage_engine_1a2c6d4937b3ccc2b705f1e893864a451b" kind="function"><name>get_page_count</name></member>
+    <member refid="classlearnql_1_1storage_1_1_storage_engine_1abd4ea83151893d92191d3c1d96a6a26f" kind="function"><name>get_file_path</name></member>
+    <member refid="classlearnql_1_1storage_1_1_storage_engine_1a64436d4f031e75804542aef27daf733d" kind="function"><name>clear_cache</name></member>
+    <member refid="classlearnql_1_1storage_1_1_storage_engine_1a8fc1cc8a3069637291fff49d938c260c" kind="function"><name>get_sys_tables_root</name></member>
+    <member refid="classlearnql_1_1storage_1_1_storage_engine_1ad60d45a8ce6b02a4d67d8ab41e908576" kind="function"><name>get_sys_fields_root</name></member>
+    <member refid="classlearnql_1_1storage_1_1_storage_engine_1a94db4882faa302bd4db646e4b5a3c397" kind="function"><name>set_sys_tables_root</name></member>
+    <member refid="classlearnql_1_1storage_1_1_storage_engine_1a764832016343a1970de4f47e70d50f4c" kind="function"><name>set_sys_fields_root</name></member>
+    <member refid="classlearnql_1_1storage_1_1_storage_engine_1a0dae2d44d804bcdc12f81f04d61cfa5f" kind="function"><name>get_sys_indexes_root</name></member>
+    <member refid="classlearnql_1_1storage_1_1_storage_engine_1abbeded13022d869bbc94356d33bc79d7" kind="function"><name>set_sys_indexes_root</name></member>
+    <member refid="classlearnql_1_1storage_1_1_storage_engine_1aec4f81f4ca71bac98f380d7329703dab" kind="function"><name>create_new_database</name></member>
+    <member refid="classlearnql_1_1storage_1_1_storage_engine_1a4ac50505ed5e8696fc3149a7eda6e709" kind="function"><name>load_metadata</name></member>
+    <member refid="classlearnql_1_1storage_1_1_storage_engine_1a19f108e49e0fd6e41632124cc685fd7e" kind="function"><name>save_metadata</name></member>
+    <member refid="classlearnql_1_1storage_1_1_storage_engine_1a9c6356f0c508c0e76e7ef94fbed082b9" kind="function"><name>evict_page</name></member>
+  </compound>
+  <compound refid="structlearnql_1_1utils_1_1_db_inspector_1_1_storage_stats" kind="struct"><name>learnql::utils::DbInspector::StorageStats</name>
+    <member refid="structlearnql_1_1utils_1_1_db_inspector_1_1_storage_stats_1aa5f9e994b6bfacb9f7ca07f9453f78d2" kind="variable"><name>total_pages</name></member>
+    <member refid="structlearnql_1_1utils_1_1_db_inspector_1_1_storage_stats_1a6e76c0c585c3cf13e434dc545e4ad9ce" kind="variable"><name>metadata_pages</name></member>
+    <member refid="structlearnql_1_1utils_1_1_db_inspector_1_1_storage_stats_1aa92a3f19ed0d77d36fdf31cbde984549" kind="variable"><name>data_pages</name></member>
+    <member refid="structlearnql_1_1utils_1_1_db_inspector_1_1_storage_stats_1a338758a2af0020d3cc05824b08e0ef03" kind="variable"><name>index_pages</name></member>
+    <member refid="structlearnql_1_1utils_1_1_db_inspector_1_1_storage_stats_1accc78b6392fe3c2077cbb95e97fd07f3" kind="variable"><name>free_pages</name></member>
+    <member refid="structlearnql_1_1utils_1_1_db_inspector_1_1_storage_stats_1ada9e41d544b37f2f1615e1061f7cdb56" kind="variable"><name>total_used_space</name></member>
+    <member refid="structlearnql_1_1utils_1_1_db_inspector_1_1_storage_stats_1a508ccb2e7749171d32d84a4ea848d616" kind="variable"><name>total_free_space</name></member>
+    <member refid="structlearnql_1_1utils_1_1_db_inspector_1_1_storage_stats_1a090e95070622c0b5a5c0b0291bcde558" kind="variable"><name>table_data_pages</name></member>
+    <member refid="structlearnql_1_1utils_1_1_db_inspector_1_1_storage_stats_1a758d0448f70f3b6c760411a597c87780" kind="variable"><name>table_index_pages</name></member>
+  </compound>
+  <compound refid="classlearnql_1_1catalog_1_1_system_catalog" kind="class"><name>learnql::catalog::SystemCatalog</name>
+    <member refid="classlearnql_1_1catalog_1_1_system_catalog_1aa8d0b2fc479b1441402cf2c77a6ac338" kind="friend"><name>core::Database</name></member>
+    <member refid="classlearnql_1_1catalog_1_1_system_catalog_1ac536d0288c5dc7925fff074889a92963" kind="friend"><name>core::Table</name></member>
+    <member refid="classlearnql_1_1catalog_1_1_system_catalog_1ae26472e8348bed712adcb8abefd8fdb6" kind="variable"><name>storage_</name></member>
+    <member refid="classlearnql_1_1catalog_1_1_system_catalog_1aa38e8f5f8c5a6ecf760f6d5b527b3751" kind="variable"><name>tables_table_</name></member>
+    <member refid="classlearnql_1_1catalog_1_1_system_catalog_1a6ced0d2606db8ed4777ea40dc6832527" kind="variable"><name>fields_table_</name></member>
+    <member refid="classlearnql_1_1catalog_1_1_system_catalog_1acfcee08f7184a5c0d6b6231c9efc80ae" kind="variable"><name>indexes_table_</name></member>
+    <member refid="classlearnql_1_1catalog_1_1_system_catalog_1a5f0a7f2212b6629ab582cca072d973d1" kind="variable"><name>next_field_id_</name></member>
+    <member refid="classlearnql_1_1catalog_1_1_system_catalog_1a196d8d62e7270578495ccb552d23af23" kind="variable"><name>next_index_id_</name></member>
+    <member refid="classlearnql_1_1catalog_1_1_system_catalog_1a73623ff94e06cd8a2f9bb269bbb5169e" kind="function"><name>SystemCatalog</name></member>
+    <member refid="classlearnql_1_1catalog_1_1_system_catalog_1a5f92d1c519d661024e3d8aeba2f4fb76" kind="function"><name>SystemCatalog</name></member>
+    <member refid="classlearnql_1_1catalog_1_1_system_catalog_1afebfec61da360a2ee49a4a2f9b4429a9" kind="function"><name>operator=</name></member>
+    <member refid="classlearnql_1_1catalog_1_1_system_catalog_1a58450e7e315dd043497a30b609c6f14b" kind="function"><name>SystemCatalog</name></member>
+    <member refid="classlearnql_1_1catalog_1_1_system_catalog_1a878175fc66b58aada5ead85b3019e9d6" kind="function"><name>operator=</name></member>
+    <member refid="classlearnql_1_1catalog_1_1_system_catalog_1a567745819ef2db3b22ddec47dcde99bb" kind="function"><name>tables</name></member>
+    <member refid="classlearnql_1_1catalog_1_1_system_catalog_1a8084ce5e32dd02795fc4c85344572acc" kind="function"><name>fields</name></member>
+    <member refid="classlearnql_1_1catalog_1_1_system_catalog_1a7ea69d71a8e23abbb7cb790b9c907787" kind="function"><name>indexes</name></member>
+    <member refid="classlearnql_1_1catalog_1_1_system_catalog_1a9225670dabf7847fa4908cd9b40753b3" kind="function"><name>register_table</name></member>
+    <member refid="classlearnql_1_1catalog_1_1_system_catalog_1a60fb8af4bc9705ed61dd4207e390a897" kind="function"><name>unregister_table</name></member>
+    <member refid="classlearnql_1_1catalog_1_1_system_catalog_1a4034871b7a72c8bf94e2d7cb4e82d102" kind="function"><name>update_record_count</name></member>
+    <member refid="classlearnql_1_1catalog_1_1_system_catalog_1aefaa3f9f0d7b7cde70e2f98d7c19d72b" kind="function"><name>register_index</name></member>
+    <member refid="classlearnql_1_1catalog_1_1_system_catalog_1a96ba4dfd676965599ac8eb8e511c3a9f" kind="function"><name>unregister_index</name></member>
+    <member refid="classlearnql_1_1catalog_1_1_system_catalog_1a6c4a4fd6ab263d81d644806845e6b43e" kind="function"><name>get_table_indexes</name></member>
+    <member refid="classlearnql_1_1catalog_1_1_system_catalog_1a2c211a27aabab877ea4d861d15345e01" kind="function"><name>get_tables_root_page</name></member>
+    <member refid="classlearnql_1_1catalog_1_1_system_catalog_1a66fdeb31cca4da0c7ef9b7d096780b9f" kind="function"><name>get_fields_root_page</name></member>
+    <member refid="classlearnql_1_1catalog_1_1_system_catalog_1ad8d133911e9a77dfabac85403c674159" kind="function"><name>get_indexes_root_page</name></member>
+    <member refid="classlearnql_1_1catalog_1_1_system_catalog_1a4319db5b332a3f70873b9cd6ea5627b6" kind="function"><name>compute_next_field_id</name></member>
+    <member refid="classlearnql_1_1catalog_1_1_system_catalog_1ade59c2b5bc0a2d45eacaf0f2fc4333fa" kind="function"><name>compute_next_index_id</name></member>
+  </compound>
+  <compound refid="classlearnql_1_1core_1_1_table" kind="class"><name>learnql::core::Table</name>
+    <member refid="classlearnql_1_1core_1_1_table_1a7de8c5ab0d7015cee3eaaaeaa81246ec" kind="typedef"><name>value_type</name></member>
+    <member refid="classlearnql_1_1core_1_1_table_1abb8fc1ea0d7a8f4bac470a71d14f3f31" kind="typedef"><name>primary_key_type</name></member>
+    <member refid="classlearnql_1_1core_1_1_table_1af2757ace205d9226717e0e63c0415e00" kind="typedef"><name>index_type</name></member>
+    <member refid="classlearnql_1_1core_1_1_table_1ab5865499dbf94d8f46a0c2921dc51284" kind="variable"><name>storage_</name></member>
+    <member refid="classlearnql_1_1core_1_1_table_1ac135f0894e8be809f63fe5abcac9ccad" kind="variable"><name>table_name_</name></member>
+    <member refid="classlearnql_1_1core_1_1_table_1a9fa11f6a0feec59290c193c25337ffce" kind="variable"><name>index_</name></member>
+    <member refid="classlearnql_1_1core_1_1_table_1ab43b4b72da042e03c5e644abf2fe141e" kind="variable"><name>secondary_indexes_</name></member>
+    <member refid="classlearnql_1_1core_1_1_table_1a79d9c29d85129369afb3228571c181df" kind="variable"><name>count_</name></member>
+    <member refid="classlearnql_1_1core_1_1_table_1a65e62a415669ce36296fa58aa8e495c8" kind="variable"><name>catalog_</name></member>
+    <member refid="classlearnql_1_1core_1_1_table_1a5005a87f9bdff39c3f8ad236816ad825" kind="function"><name>Table</name></member>
+    <member refid="classlearnql_1_1core_1_1_table_1a82b606785a105b5c9dda50c365815e9b" kind="function"><name>~Table</name></member>
+    <member refid="classlearnql_1_1core_1_1_table_1a7b24f9b4a5136e437e596838a7f4f2f1" kind="function"><name>insert</name></member>
+    <member refid="classlearnql_1_1core_1_1_table_1ae733db6ab4ce469fc71526d596441761" kind="function"><name>update</name></member>
+    <member refid="classlearnql_1_1core_1_1_table_1a8c07ea66a829bed3bbf7b10fc20c41b8" kind="function"><name>remove</name></member>
+    <member refid="classlearnql_1_1core_1_1_table_1a2ed0b6ab21b386d7ed0c18f65a91f111" kind="function"><name>find</name></member>
+    <member refid="classlearnql_1_1core_1_1_table_1a4da366825bc4f61f49648686dd7e04dc" kind="function"><name>contains</name></member>
+    <member refid="classlearnql_1_1core_1_1_table_1a1d7084e74f821b1ac501effc227378c4" kind="function"><name>get_record_id</name></member>
+    <member refid="classlearnql_1_1core_1_1_table_1ae1b20aff372531934f72a5768845b225" kind="function"><name>add_index</name></member>
+    <member refid="classlearnql_1_1core_1_1_table_1a5a3bcddb65016955e9df1712cfc180f5" kind="function"><name>drop_index</name></member>
+    <member refid="classlearnql_1_1core_1_1_table_1afc1c9919edc0c673294ac306a7a51842" kind="function"><name>find_by</name></member>
+    <member refid="classlearnql_1_1core_1_1_table_1ad13285b25ac20eb2e6e2d6485c1448c6" kind="function"><name>find_all_by</name></member>
+    <member refid="classlearnql_1_1core_1_1_table_1ab418b7c455cc0ffffc46b2343ad55254" kind="function"><name>get_unique_values</name></member>
+    <member refid="classlearnql_1_1core_1_1_table_1a7bb0b9d084875fbbdeee7ae6152a3c7a" kind="function"><name>range_query</name></member>
+    <member refid="classlearnql_1_1core_1_1_table_1a2b941e217c0a4923dee333360d6f5b11" kind="function"><name>size</name></member>
+    <member refid="classlearnql_1_1core_1_1_table_1a5c67acef00777c6962f1e5872c9d43c1" kind="function"><name>empty</name></member>
+    <member refid="classlearnql_1_1core_1_1_table_1a67ee2a008791927d7f953da143be8f6c" kind="function"><name>clear</name></member>
+    <member refid="classlearnql_1_1core_1_1_table_1a12b6a9df9e60b8c0f4c66b3c28943f45" kind="function"><name>find_if</name></member>
+    <member refid="classlearnql_1_1core_1_1_table_1a8ceccb8d0e92cc9ba552de7a2ec56ccf" kind="function"><name>get_all</name></member>
+    <member refid="classlearnql_1_1core_1_1_table_1a09902a2fadbeaf72b3ceb27170f78533" kind="function"><name>where</name></member>
+    <member refid="classlearnql_1_1core_1_1_table_1abf144135f027702e790d9f22aa545300" kind="function"><name>view</name></member>
+    <member refid="classlearnql_1_1core_1_1_table_1a628edbfebc7d852dc3dd70edbfb8cdcd" kind="function"><name>all</name></member>
+    <member refid="classlearnql_1_1core_1_1_table_1a017434d424c8c41073ba10cdf1df87b3" kind="function"><name>view_where</name></member>
+    <member refid="classlearnql_1_1core_1_1_table_1a80a5715d651b6c8e308c234f514a7593" kind="function"><name>name</name></member>
+    <member refid="classlearnql_1_1core_1_1_table_1a689956cf9e6d4bd21135f4819ead41c1" kind="function"><name>begin</name></member>
+    <member refid="classlearnql_1_1core_1_1_table_1af8bff71cf619e6341da47aa0a1f28dd0" kind="function"><name>end</name></member>
+    <member refid="classlearnql_1_1core_1_1_table_1a5fea2656268908fed51a205dcfc01096" kind="function"><name>flush</name></member>
+    <member refid="classlearnql_1_1core_1_1_table_1a5b5600407474c3bb6176b3c240a2d105" kind="function"><name>get_root_page</name></member>
+    <member refid="classlearnql_1_1core_1_1_table_1a5868f6ca975977ff0c40ace8915124da" kind="function"><name>set_catalog</name></member>
+    <member refid="classlearnql_1_1core_1_1_table_1ac85baaf921b5cd20dc717375893edf3d" kind="function"><name>add_index</name></member>
+    <member refid="classlearnql_1_1core_1_1_table_1a39e29f50288fbaf995162f0e5dfc0bf0" kind="function"><name>load_record</name></member>
+    <member refid="classlearnql_1_1core_1_1_table_1a8fa2cc1a5a646cc07dd10182abe27f6e" kind="function"><name>sync_catalog_count</name></member>
+  </compound>
+  <compound refid="structlearnql_1_1core_1_1_database_1_1_table_base" kind="struct"><name>learnql::core::Database::TableBase</name>
+    <member refid="structlearnql_1_1core_1_1_database_1_1_table_base_1a4b91c3102c00d305a2e6b01d57a26466" kind="function"><name>~TableBase</name></member>
+  </compound>
+  <compound refid="structlearnql_1_1catalog_1_1_table_metadata" kind="struct"><name>learnql::catalog::TableMetadata</name>
+    <member refid="structlearnql_1_1catalog_1_1_table_metadata_1a34c6807c13e30a2aabfeb68816450536" kind="typedef"><name>primary_key_type</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_table_metadata_1addbe3adb705e67a23c3f9bb1303d481c" kind="variable"><name>table_name</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_table_metadata_1aa5079bcbe30a8b48b1578f877024e894" kind="variable"><name>type_name</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_table_metadata_1aaca15c72147da610f4c49b7a10b4f833" kind="variable"><name>index_root_page</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_table_metadata_1a4e9a6cc96530b45f37f12a23b0526467" kind="variable"><name>record_count</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_table_metadata_1ab1b9ae662845a2ec4351ed08d5634037" kind="variable"><name>created_timestamp</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_table_metadata_1aa89575c334f5d87bbd946564f7ca0207" kind="variable"><name>is_system_table</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_table_metadata_1add8e828b1432b1d165bded8cc45727b7" kind="variable"><name>name</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_table_metadata_1a73779e71f302a5f7d43aed7b717a3671" kind="variable"><name>type</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_table_metadata_1a17887bb1c8d0141173433596ea7684d6" kind="variable"><name>root_page</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_table_metadata_1ade7d6475a5db2892bdbb3c4097af2fb5" kind="variable"><name>records</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_table_metadata_1a7f0b8e4ccc75feab87e20174e936448f" kind="variable"><name>created</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_table_metadata_1adbb80aeccd6f7c5928b8dbb726987748" kind="variable"><name>is_system</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_table_metadata_1a351798866fb25f6068318667a264a98c" kind="function"><name>get_table_name</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_table_metadata_1af9f7a9d778e2d039f706e5432e3ac59a" kind="function"><name>get_type_name</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_table_metadata_1ab268bd92cf32a8eacbbc6ecfbf7d2f70" kind="function"><name>get_index_root_page</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_table_metadata_1a36c96b476f5c0935b751f9cff55d217e" kind="function"><name>get_record_count</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_table_metadata_1ad0122c71fc127add6f61baae22b1f4c0" kind="function"><name>get_created_timestamp</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_table_metadata_1ae5666a426593f4d13a9c666a0f574684" kind="function"><name>get_is_system_table</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_table_metadata_1a631a879a886a640af81aab7f11fd4389" kind="function"><name>get_primary_key</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_table_metadata_1aa684d6b048218d0ac16ea8832dae75ba" kind="function"><name>serialize</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_table_metadata_1aefed5155afa9a6e081aad81a44d00712" kind="function"><name>deserialize</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_table_metadata_1a8d66b6d8d8217041f6026faea828ae8d" kind="function"><name>operator==</name></member>
+    <member refid="structlearnql_1_1catalog_1_1_table_metadata_1a27e210105501bdf01b38292a956b1a72" kind="function"><name>reflect_fields</name></member>
+  </compound>
+  <compound refid="structlearnql_1_1debug_1_1_table_statistics" kind="struct"><name>learnql::debug::TableStatistics</name>
+    <member refid="structlearnql_1_1debug_1_1_table_statistics_1ae8bf82b2fec86a7cf33650325a3c6d4e" kind="variable"><name>table_name</name></member>
+    <member refid="structlearnql_1_1debug_1_1_table_statistics_1a270365c55f8f8bcd8386779aada69280" kind="variable"><name>row_count</name></member>
+    <member refid="structlearnql_1_1debug_1_1_table_statistics_1a87628f5b4daaf8dae5f4e1bbcec2c601" kind="variable"><name>page_count</name></member>
+    <member refid="structlearnql_1_1debug_1_1_table_statistics_1a6f8bea41a884707effaa866c6727c9fb" kind="variable"><name>total_bytes</name></member>
+    <member refid="structlearnql_1_1debug_1_1_table_statistics_1ac65b475a4741826cdd9090c472042621" kind="variable"><name>index_count</name></member>
+    <member refid="structlearnql_1_1debug_1_1_table_statistics_1a82c1db2471607a8aa0adb493b0dccbed" kind="function"><name>avg_row_size</name></member>
+    <member refid="structlearnql_1_1debug_1_1_table_statistics_1a35aeb32ac47a071e27cdf7371bafd731" kind="function"><name>avg_rows_per_page</name></member>
+    <member refid="structlearnql_1_1debug_1_1_table_statistics_1ab6715ece2303c1efb51cca968f1a1245" kind="function"><name>print</name></member>
+  </compound>
+  <compound refid="structlearnql_1_1core_1_1_database_1_1_table_wrapper" kind="struct"><name>learnql::core::Database::TableWrapper</name>
+    <member refid="structlearnql_1_1core_1_1_database_1_1_table_wrapper_1a770d9dbf54d7b2a325c07aa5b6d3c28e" kind="variable"><name>table</name></member>
+    <member refid="structlearnql_1_1core_1_1_database_1_1_table_wrapper_1a4f60765b5d7d60025bc90dc4523d95d4" kind="function"><name>TableWrapper</name></member>
+  </compound>
+  <compound refid="classlearnql_1_1coroutines_1_1_task" kind="class"><name>learnql::coroutines::Task</name>
+    <member refid="classlearnql_1_1coroutines_1_1_task_1a970181f6b87ae86bd703165a33a1dd14" kind="typedef"><name>handle_type</name></member>
+    <member refid="classlearnql_1_1coroutines_1_1_task_1a910e2776a1b8ac79122bae6716d84179" kind="variable"><name>coro_</name></member>
+    <member refid="classlearnql_1_1coroutines_1_1_task_1a0681f42d73b3febcbc8123a7afe7b7c5" kind="function"><name>Task</name></member>
+    <member refid="classlearnql_1_1coroutines_1_1_task_1a1e8cab1a62001fd32c526ec732b47944" kind="function"><name>Task</name></member>
+    <member refid="classlearnql_1_1coroutines_1_1_task_1ac5d837c1d3487bfcd18745ec96ead841" kind="function"><name>operator=</name></member>
+    <member refid="classlearnql_1_1coroutines_1_1_task_1a9226d889d73c8535c6734af03662dbc6" kind="function"><name>Task</name></member>
+    <member refid="classlearnql_1_1coroutines_1_1_task_1ab9d8d0947530f402ba417dd87b480d98" kind="function"><name>operator=</name></member>
+    <member refid="classlearnql_1_1coroutines_1_1_task_1a83ed7e9976b17e7e75961eae67274008" kind="function"><name>~Task</name></member>
+    <member refid="classlearnql_1_1coroutines_1_1_task_1a53c32c176f501d0fe3710a7ea0b5b6ea" kind="function"><name>operator co_await</name></member>
+    <member refid="classlearnql_1_1coroutines_1_1_task_1adb3b660efc4323e2e0b5cadf66528243" kind="function"><name>get</name></member>
+    <member refid="classlearnql_1_1coroutines_1_1_task_1ab72681af9e7f9d04a7dc66cf9605e8d4" kind="function"><name>is_ready</name></member>
+  </compound>
+  <compound refid="classlearnql_1_1coroutines_1_1_task_3_01void_01_4" kind="class"><name>learnql::coroutines::Task&lt; void &gt;</name>
+    <member refid="classlearnql_1_1coroutines_1_1_task_3_01void_01_4_1a0e6cecda07441130a7fd81b40d7e19de" kind="typedef"><name>handle_type</name></member>
+    <member refid="classlearnql_1_1coroutines_1_1_task_3_01void_01_4_1aec803f155e9faafd1b8f57a233a54c25" kind="variable"><name>coro_</name></member>
+    <member refid="classlearnql_1_1coroutines_1_1_task_3_01void_01_4_1ad15752186d90ad0d8101989da52928bd" kind="function"><name>Task</name></member>
+    <member refid="classlearnql_1_1coroutines_1_1_task_3_01void_01_4_1ae70f17d57dd9c323eec0c91591246a40" kind="function"><name>Task</name></member>
+    <member refid="classlearnql_1_1coroutines_1_1_task_3_01void_01_4_1a503097adca2adccd610db6d266513f02" kind="function"><name>operator=</name></member>
+    <member refid="classlearnql_1_1coroutines_1_1_task_3_01void_01_4_1aaf01d71d562a3f42ad23a5891e9009b0" kind="function"><name>Task</name></member>
+    <member refid="classlearnql_1_1coroutines_1_1_task_3_01void_01_4_1a9c147f92b2a83b0127538e585352d024" kind="function"><name>operator=</name></member>
+    <member refid="classlearnql_1_1coroutines_1_1_task_3_01void_01_4_1a9e1252fa679755ce197b525c18975f41" kind="function"><name>~Task</name></member>
+    <member refid="classlearnql_1_1coroutines_1_1_task_3_01void_01_4_1ada1f91fa2572c4249d7bd917e6751020" kind="function"><name>operator co_await</name></member>
+    <member refid="classlearnql_1_1coroutines_1_1_task_3_01void_01_4_1aae48450473885844497237e454afdd01" kind="function"><name>get</name></member>
+    <member refid="classlearnql_1_1coroutines_1_1_task_3_01void_01_4_1a064e36683e31eb36878367deb3d408c6" kind="function"><name>is_ready</name></member>
+  </compound>
+  <compound refid="classlearnql_1_1debug_1_1_timer" kind="class"><name>learnql::debug::Timer</name>
+    <member refid="classlearnql_1_1debug_1_1_timer_1a04e5abdf027b5cc99a0b3accad4f8385" kind="variable"><name>name_</name></member>
+    <member refid="classlearnql_1_1debug_1_1_timer_1a063c02f9d488d6b83f733b44493178f4" kind="variable"><name>start_</name></member>
+    <member refid="classlearnql_1_1debug_1_1_timer_1aadde536ac87564a55d90438f39f8e44e" kind="variable"><name>end_</name></member>
+    <member refid="classlearnql_1_1debug_1_1_timer_1a0fce33f92ddac89c88775bd6396cb323" kind="variable"><name>stopped_</name></member>
+    <member refid="classlearnql_1_1debug_1_1_timer_1a7601997891baf94b4da323d302ff2b87" kind="function"><name>Timer</name></member>
+    <member refid="classlearnql_1_1debug_1_1_timer_1adedbb7943568ae2405b1bfd9d49ac136" kind="function"><name>~Timer</name></member>
+    <member refid="classlearnql_1_1debug_1_1_timer_1a3c3e8ed839b5a11b1474b735147ff352" kind="function"><name>stop</name></member>
+    <member refid="classlearnql_1_1debug_1_1_timer_1a6785c15f65609f98d397bae0eb37790c" kind="function"><name>print</name></member>
+  </compound>
+  <compound refid="classlearnql_1_1meta_1_1_type_info" kind="class"><name>learnql::meta::TypeInfo</name>
+    <member refid="classlearnql_1_1meta_1_1_type_info_1a73c10b4880a876292a7fb315d69bba3d" kind="variable"><name>type_name_</name></member>
+    <member refid="classlearnql_1_1meta_1_1_type_info_1a3ebafd9f5b8beef77ca300ef81267543" kind="variable"><name>type_size_</name></member>
+    <member refid="classlearnql_1_1meta_1_1_type_info_1ae673374be8a0f0590771a3a8eb5191c9" kind="variable"><name>fields_</name></member>
+    <member refid="classlearnql_1_1meta_1_1_type_info_1a27b401b7e4998b9c161e083838bfe6dc" kind="variable"><name>primary_key_field_</name></member>
+    <member refid="classlearnql_1_1meta_1_1_type_info_1ad65c33e3ed67a1954d1bfe2b2ae913b9" kind="function"><name>TypeInfo</name></member>
+    <member refid="classlearnql_1_1meta_1_1_type_info_1a5070ca2628c6c5af3f84b3a25c0083ac" kind="function"><name>TypeInfo</name></member>
+    <member refid="classlearnql_1_1meta_1_1_type_info_1abfea5c8ecf989ecfeeb68777c928dfe1" kind="function"><name>add_field</name></member>
+    <member refid="classlearnql_1_1meta_1_1_type_info_1a1239c26d0f13ee05d2ebf157cf421b67" kind="function"><name>get_type_name</name></member>
+    <member refid="classlearnql_1_1meta_1_1_type_info_1a102906f9218ccb761e5c633052cf7fe0" kind="function"><name>get_type_size</name></member>
+    <member refid="classlearnql_1_1meta_1_1_type_info_1a5f29dd4f13619ac730d85145a76ab4ff" kind="function"><name>get_fields</name></member>
+    <member refid="classlearnql_1_1meta_1_1_type_info_1a24345c42e0b64971f3aab43c8dfb4040" kind="function"><name>get_field</name></member>
+    <member refid="classlearnql_1_1meta_1_1_type_info_1a667d94adc3de7abfb668818c84071f62" kind="function"><name>has_field</name></member>
+    <member refid="classlearnql_1_1meta_1_1_type_info_1a123ff000c26280043117a76c0a8b8e49" kind="function"><name>get_primary_key</name></member>
+    <member refid="classlearnql_1_1meta_1_1_type_info_1a00a68a3d1d832c37f9a709808fdc06a4" kind="function"><name>has_primary_key</name></member>
+  </compound>
+  <compound refid="classlearnql_1_1meta_1_1_type_registry" kind="class"><name>learnql::meta::TypeRegistry</name>
+    <member refid="classlearnql_1_1meta_1_1_type_registry_1a2e8901ca268742def81b75b4caf9cf84" kind="variable"><name>type_info_map_</name></member>
+    <member refid="classlearnql_1_1meta_1_1_type_registry_1a4dc559974fd1d713fe76f913f1b1f20b" kind="variable"><name>name_to_info_map_</name></member>
+    <member refid="classlearnql_1_1meta_1_1_type_registry_1a860288766314c24d4faddbae7929bea0" kind="function"><name>instance</name></member>
+    <member refid="classlearnql_1_1meta_1_1_type_registry_1a3d39be62c43fa376fb751d87ed05058b" kind="function"><name>TypeRegistry</name></member>
+    <member refid="classlearnql_1_1meta_1_1_type_registry_1ae78286bf2e2d7b037ac67711a2ea6daf" kind="function"><name>operator=</name></member>
+    <member refid="classlearnql_1_1meta_1_1_type_registry_1ab8cca36589abf37a2dc11b9e4bdeffcf" kind="function"><name>TypeRegistry</name></member>
+    <member refid="classlearnql_1_1meta_1_1_type_registry_1af6e3ace23427cf558ff02d289fe13cc9" kind="function"><name>operator=</name></member>
+    <member refid="classlearnql_1_1meta_1_1_type_registry_1a148b17881d18a824b1b0399381a464f6" kind="function"><name>register_type</name></member>
+    <member refid="classlearnql_1_1meta_1_1_type_registry_1aa3e97f450129dd42cc9ca8923667a15b" kind="function"><name>register_type_by_name</name></member>
+    <member refid="classlearnql_1_1meta_1_1_type_registry_1a2296001b256524de532c8c02442c7699" kind="function"><name>get_type_info</name></member>
+    <member refid="classlearnql_1_1meta_1_1_type_registry_1ae1a7d251470c1c77e3a653c2bfa9c47c" kind="function"><name>get_type_info_by_name</name></member>
+    <member refid="classlearnql_1_1meta_1_1_type_registry_1afb68f8f1e7399a2404f05c024690d73f" kind="function"><name>is_registered</name></member>
+    <member refid="classlearnql_1_1meta_1_1_type_registry_1ad6d37aa7d76bd87d2d8002e79b7bda91" kind="function"><name>is_registered</name></member>
+    <member refid="classlearnql_1_1meta_1_1_type_registry_1a61362529fd105cf77e68e27821cb8103" kind="function"><name>get_registered_types</name></member>
+    <member refid="classlearnql_1_1meta_1_1_type_registry_1a8200e0dd4be5fed46f5653e563760827" kind="function"><name>clear</name></member>
+    <member refid="classlearnql_1_1meta_1_1_type_registry_1ad49d3e26dcaa63409a2d067e95748f30" kind="function"><name>TypeRegistry</name></member>
+  </compound>
+  <compound refid="conceptlearnql_1_1concepts_1_1_arithmetic" kind="concept"><name>learnql::concepts::Arithmetic</name>
+  </compound>
+  <compound refid="conceptlearnql_1_1concepts_1_1_comparable" kind="concept"><name>learnql::concepts::Comparable</name>
+  </compound>
+  <compound refid="conceptlearnql_1_1concepts_1_1_container" kind="concept"><name>learnql::concepts::Container</name>
+  </compound>
+  <compound refid="conceptlearnql_1_1concepts_1_1_custom_serializable" kind="concept"><name>learnql::concepts::CustomSerializable</name>
+  </compound>
+  <compound refid="conceptlearnql_1_1concepts_1_1_forward_iterator" kind="concept"><name>learnql::concepts::ForwardIterator</name>
+  </compound>
+  <compound refid="conceptlearnql_1_1concepts_1_1_has_primary_key" kind="concept"><name>learnql::concepts::HasPrimaryKey</name>
+  </compound>
+  <compound refid="conceptlearnql_1_1concepts_1_1_indexable" kind="concept"><name>learnql::concepts::Indexable</name>
+  </compound>
+  <compound refid="conceptlearnql_1_1concepts_1_1_iterator" kind="concept"><name>learnql::concepts::Iterator</name>
+  </compound>
+  <compound refid="conceptlearnql_1_1concepts_1_1_orderable" kind="concept"><name>learnql::concepts::Orderable</name>
+  </compound>
+  <compound refid="conceptlearnql_1_1concepts_1_1_predicate" kind="concept"><name>learnql::concepts::Predicate</name>
+  </compound>
+  <compound refid="conceptlearnql_1_1concepts_1_1_primary_key_type" kind="concept"><name>learnql::concepts::PrimaryKeyType</name>
+  </compound>
+  <compound refid="conceptlearnql_1_1concepts_1_1_queryable" kind="concept"><name>learnql::concepts::Queryable</name>
+  </compound>
+  <compound refid="conceptlearnql_1_1concepts_1_1_serializable" kind="concept"><name>learnql::concepts::Serializable</name>
+  </compound>
+  <compound refid="conceptlearnql_1_1concepts_1_1_smart_pointer" kind="concept"><name>learnql::concepts::SmartPointer</name>
+  </compound>
+  <compound refid="conceptlearnql_1_1concepts_1_1_storable" kind="concept"><name>learnql::concepts::Storable</name>
+  </compound>
+  <compound refid="conceptlearnql_1_1concepts_1_1_stream_serializable" kind="concept"><name>learnql::concepts::StreamSerializable</name>
+  </compound>
+  <compound refid="conceptlearnql_1_1concepts_1_1_string_like" kind="concept"><name>learnql::concepts::StringLike</name>
+  </compound>
+  <compound refid="conceptlearnql_1_1concepts_1_1_three_way_comparable" kind="concept"><name>learnql::concepts::ThreeWayComparable</name>
+  </compound>
+  <compound refid="conceptlearnql_1_1query_1_1expressions_1_1_expression" kind="concept"><name>learnql::query::expressions::Expression</name>
+  </compound>
+  <compound refid="conceptlearnql_1_1reflection_1_1_reflectable" kind="concept"><name>learnql::reflection::Reflectable</name>
+  </compound>
+  <compound refid="namespacelearnql" kind="namespace"><name>learnql</name>
+  </compound>
+  <compound refid="namespacelearnql_1_1catalog" kind="namespace"><name>learnql::catalog</name>
+  </compound>
+  <compound refid="namespacelearnql_1_1concepts" kind="namespace"><name>learnql::concepts</name>
+  </compound>
+  <compound refid="namespacelearnql_1_1core" kind="namespace"><name>learnql::core</name>
+    <member refid="namespacelearnql_1_1core_1a4f22da0836f46f8e38c37d2db9f4c317" kind="enum"><name>IndexType</name></member>
+    <member refid="namespacelearnql_1_1core_1a4f22da0836f46f8e38c37d2db9f4c317ad019979a29c88c8d69bab3a63388da97" kind="enumvalue"><name>Unique</name></member>
+    <member refid="namespacelearnql_1_1core_1a4f22da0836f46f8e38c37d2db9f4c317a53bb6d143f96678b6a429b3bbda948ae" kind="enumvalue"><name>MultiValue</name></member>
+  </compound>
+  <compound refid="namespacelearnql_1_1coroutines" kind="namespace"><name>learnql::coroutines</name>
+    <member refid="namespacelearnql_1_1coroutines_1a8a5f08933e5280b124d0cc22548fa2be" kind="function"><name>make_generator</name></member>
+    <member refid="namespacelearnql_1_1coroutines_1ac779f7806238dccf5bed1567f54887c4" kind="function"><name>filter_generator</name></member>
+  </compound>
+  <compound refid="namespacelearnql_1_1debug" kind="namespace"><name>learnql::debug</name>
+    <member refid="namespacelearnql_1_1debug_1a6f449c05d96e391460715d261d799cc6" kind="enum"><name>LogLevel</name></member>
+    <member refid="namespacelearnql_1_1debug_1a6f449c05d96e391460715d261d799cc6aa603905470e2a5b8c13e96b579ef0dba" kind="enumvalue"><name>Debug</name></member>
+    <member refid="namespacelearnql_1_1debug_1a6f449c05d96e391460715d261d799cc6a4059b0251f66a18cb56f544728796875" kind="enumvalue"><name>Info</name></member>
+    <member refid="namespacelearnql_1_1debug_1a6f449c05d96e391460715d261d799cc6a0eaadb4fcb48a0a0ed7bc9868be9fbaa" kind="enumvalue"><name>Warning</name></member>
+    <member refid="namespacelearnql_1_1debug_1a6f449c05d96e391460715d261d799cc6a902b0d55fddef6f8d651fe1035b7d4bd" kind="enumvalue"><name>Error</name></member>
+    <member refid="namespacelearnql_1_1debug_1addc603b0bb6554acbb9d6848d90c5919" kind="enum"><name>OperationType</name></member>
+    <member refid="namespacelearnql_1_1debug_1addc603b0bb6554acbb9d6848d90c5919a8b14a48f86836edd1b23f78290c15b22" kind="enumvalue"><name>TableScan</name></member>
+    <member refid="namespacelearnql_1_1debug_1addc603b0bb6554acbb9d6848d90c5919a2166606fa6ba860b6f6078448d501ab4" kind="enumvalue"><name>IndexScan</name></member>
+    <member refid="namespacelearnql_1_1debug_1addc603b0bb6554acbb9d6848d90c5919ad7778d0c64b6ba21494c97f77a66885a" kind="enumvalue"><name>Filter</name></member>
+    <member refid="namespacelearnql_1_1debug_1addc603b0bb6554acbb9d6848d90c5919aa286d9991c6a547ae25a5f5216164b8f" kind="enumvalue"><name>Join</name></member>
+    <member refid="namespacelearnql_1_1debug_1addc603b0bb6554acbb9d6848d90c5919a04e1eaa7a23f66df19ea1396adf5ebec" kind="enumvalue"><name>GroupBy</name></member>
+    <member refid="namespacelearnql_1_1debug_1addc603b0bb6554acbb9d6848d90c5919a6b46ae48421828d9973deec5fa9aa0c3" kind="enumvalue"><name>Sort</name></member>
+    <member refid="namespacelearnql_1_1debug_1addc603b0bb6554acbb9d6848d90c5919a80d2677cf518f4d04320042f4ea6c146" kind="enumvalue"><name>Limit</name></member>
+    <member refid="namespacelearnql_1_1debug_1addc603b0bb6554acbb9d6848d90c5919a2121e8333850befac5412d69d52306f7" kind="enumvalue"><name>Projection</name></member>
+    <member refid="namespacelearnql_1_1debug_1a903e4aeadb4210e7e0902cb3139c9778" kind="function"><name>log_level_to_string</name></member>
+    <member refid="namespacelearnql_1_1debug_1adbf8249fba89d7db766e5520be772d60" kind="function"><name>operation_type_to_string</name></member>
+  </compound>
+  <compound refid="namespacelearnql_1_1index" kind="namespace"><name>learnql::index</name>
+  </compound>
+  <compound refid="namespacelearnql_1_1meta" kind="namespace"><name>learnql::meta</name>
+    <member refid="namespacelearnql_1_1meta_1a8da5fbfe3fe249906be7f9784f4a7dc0" kind="enum"><name>FieldType</name></member>
+    <member refid="namespacelearnql_1_1meta_1a8da5fbfe3fe249906be7f9784f4a7dc0a7d839b2c12bfd40ac121b4cc9e81c539" kind="enumvalue"><name>Int8</name></member>
+    <member refid="namespacelearnql_1_1meta_1a8da5fbfe3fe249906be7f9784f4a7dc0a39bc2ae44b184207f560ff8619823208" kind="enumvalue"><name>Int16</name></member>
+    <member refid="namespacelearnql_1_1meta_1a8da5fbfe3fe249906be7f9784f4a7dc0ac06129f6e6e15c09328365e553f1dc31" kind="enumvalue"><name>Int32</name></member>
+    <member refid="namespacelearnql_1_1meta_1a8da5fbfe3fe249906be7f9784f4a7dc0afbde23b11d7e59af7828e81144c8b487" kind="enumvalue"><name>Int64</name></member>
+    <member refid="namespacelearnql_1_1meta_1a8da5fbfe3fe249906be7f9784f4a7dc0ab31df9c476d20e85ff898121efe11b5a" kind="enumvalue"><name>UInt8</name></member>
+    <member refid="namespacelearnql_1_1meta_1a8da5fbfe3fe249906be7f9784f4a7dc0a8bd950a9d7779b83f5c30046c9aaf1cf" kind="enumvalue"><name>UInt16</name></member>
+    <member refid="namespacelearnql_1_1meta_1a8da5fbfe3fe249906be7f9784f4a7dc0ae7956ed7be1c5025a27ed3cb42a396bd" kind="enumvalue"><name>UInt32</name></member>
+    <member refid="namespacelearnql_1_1meta_1a8da5fbfe3fe249906be7f9784f4a7dc0aaf71234725f0470ccf993e263a8b820a" kind="enumvalue"><name>UInt64</name></member>
+    <member refid="namespacelearnql_1_1meta_1a8da5fbfe3fe249906be7f9784f4a7dc0a22ae0e2b89e5e3d477f988cc36d3272b" kind="enumvalue"><name>Float</name></member>
+    <member refid="namespacelearnql_1_1meta_1a8da5fbfe3fe249906be7f9784f4a7dc0ad909d38d705ce75386dd86e611a82f5b" kind="enumvalue"><name>Double</name></member>
+    <member refid="namespacelearnql_1_1meta_1a8da5fbfe3fe249906be7f9784f4a7dc0ac26f15e86e3de4c398a8273272aba034" kind="enumvalue"><name>Bool</name></member>
+    <member refid="namespacelearnql_1_1meta_1a8da5fbfe3fe249906be7f9784f4a7dc0a27118326006d3829667a400ad23d5d98" kind="enumvalue"><name>String</name></member>
+    <member refid="namespacelearnql_1_1meta_1a8da5fbfe3fe249906be7f9784f4a7dc0a90589c47f06eb971d548591f23c285af" kind="enumvalue"><name>Custom</name></member>
+    <member refid="namespacelearnql_1_1meta_1ae81b67158e178c2800424a200f37dd89" kind="typedef"><name>property_return_type</name></member>
+    <member refid="namespacelearnql_1_1meta_1a53f585cfa9be97b6719d45ab4d2ab669" kind="typedef"><name>property_param_type</name></member>
+    <member refid="namespacelearnql_1_1meta_1a3cc4b01a05c4fc2a73f7df691f9f2b34" kind="function"><name>deserialize_property</name></member>
+    <member refid="namespacelearnql_1_1meta_1ac36876119db8ef099fb80808580cba84" kind="function"><name>type_name</name></member>
+    <member refid="namespacelearnql_1_1meta_1a0ec86f3f6b75ae602eec633399ad2f57" kind="function"><name>field_type_to_string</name></member>
+  </compound>
+  <compound refid="namespacelearnql_1_1query" kind="namespace"><name>learnql::query</name>
+    <member refid="namespacelearnql_1_1query_1a3529d89b2d2491c2b35082ffe78ec973" kind="enum"><name>JoinType</name></member>
+    <member refid="namespacelearnql_1_1query_1a3529d89b2d2491c2b35082ffe78ec973aa1684698ac3d8ffda353d0458c30b1e7" kind="enumvalue"><name>Inner</name></member>
+    <member refid="namespacelearnql_1_1query_1a3529d89b2d2491c2b35082ffe78ec973a041d4f8b374671b8696650eb4c3454a0" kind="enumvalue"><name>LeftOuter</name></member>
+    <member refid="namespacelearnql_1_1query_1a3529d89b2d2491c2b35082ffe78ec973aaf50bf850a3953b8c40b8810ef1b594b" kind="enumvalue"><name>RightOuter</name></member>
+    <member refid="namespacelearnql_1_1query_1a3529d89b2d2491c2b35082ffe78ec973a2b4117aebb079d6f860d26c21cead67e" kind="enumvalue"><name>FullOuter</name></member>
+    <member refid="namespacelearnql_1_1query_1ad77882d436b612192d099574176a8d5b" kind="function"><name>Field</name></member>
+    <member refid="namespacelearnql_1_1query_1aa0777d52761bad0c7708ac6c521c02c6" kind="function"><name>Field</name></member>
+    <member refid="namespacelearnql_1_1query_1adffda967514a237d7da798a04487cca3" kind="function"><name>operator&amp;&amp;</name></member>
+    <member refid="namespacelearnql_1_1query_1a9352974dbb8619a6f462761b92a78957" kind="function"><name>operator||</name></member>
+    <member refid="namespacelearnql_1_1query_1a7da159c5a4fc69bc9b9e11e08bbdb454" kind="function"><name>group_by</name></member>
+    <member refid="namespacelearnql_1_1query_1a7faa8715ba3cce81b3bfa5a10bfb65dd" kind="function"><name>inner_join</name></member>
+    <member refid="namespacelearnql_1_1query_1a8e95f6011e1d567fbca9b49ac27c73b0" kind="function"><name>left_join</name></member>
+  </compound>
+  <compound refid="namespacelearnql_1_1query_1_1expressions" kind="namespace"><name>learnql::query::expressions</name>
+    <member refid="namespacelearnql_1_1query_1_1expressions_1a00f9c30809237ff6d8247b7b93942052" kind="enum"><name>BinaryOp</name></member>
+    <member refid="namespacelearnql_1_1query_1_1expressions_1a00f9c30809237ff6d8247b7b93942052af5f286e73bda105e538310b3190f75c5" kind="enumvalue"><name>Equal</name></member>
+    <member refid="namespacelearnql_1_1query_1_1expressions_1a00f9c30809237ff6d8247b7b93942052a19bb0af2c3c530538cb41aff7f235b96" kind="enumvalue"><name>NotEqual</name></member>
+    <member refid="namespacelearnql_1_1query_1_1expressions_1a00f9c30809237ff6d8247b7b93942052a1cfdf0e8d0c87a228c1f40d9bee7888b" kind="enumvalue"><name>Less</name></member>
+    <member refid="namespacelearnql_1_1query_1_1expressions_1a00f9c30809237ff6d8247b7b93942052ad3e6fdac55bb7b0edd7834c968ba1f38" kind="enumvalue"><name>LessEqual</name></member>
+    <member refid="namespacelearnql_1_1query_1_1expressions_1a00f9c30809237ff6d8247b7b93942052a8768a6821cd735aea4f5b0df88c1fc6a" kind="enumvalue"><name>Greater</name></member>
+    <member refid="namespacelearnql_1_1query_1_1expressions_1a00f9c30809237ff6d8247b7b93942052a758b05d899def79c9eb864ad4f96be1f" kind="enumvalue"><name>GreaterEqual</name></member>
+    <member refid="namespacelearnql_1_1query_1_1expressions_1a2d9f720fdaedcc4810f4beeb2c5301a2" kind="enum"><name>LogicalOp</name></member>
+    <member refid="namespacelearnql_1_1query_1_1expressions_1a2d9f720fdaedcc4810f4beeb2c5301a2ac33315685a0cba3ce53be378b3c7874b" kind="enumvalue"><name>And</name></member>
+    <member refid="namespacelearnql_1_1query_1_1expressions_1a2d9f720fdaedcc4810f4beeb2c5301a2a3a2d5fe857d8f9541136a124c2edec6c" kind="enumvalue"><name>Or</name></member>
+    <member refid="namespacelearnql_1_1query_1_1expressions_1a3be9edc38e6ce2d82cafc51cfab2b4a8" kind="function"><name>ConstExpr</name></member>
+    <member refid="namespacelearnql_1_1query_1_1expressions_1ae784ccbf3774781425bf12cc3a5be770" kind="function"><name>binary_op_to_string</name></member>
+    <member refid="namespacelearnql_1_1query_1_1expressions_1aa2f02bac46bab2bbc8c534e792894bac" kind="function"><name>logical_op_to_string</name></member>
+    <member refid="namespacelearnql_1_1query_1_1expressions_1a744991e226e1f7379b2b1427e0d9c5a3" kind="function"><name>FieldExpr</name></member>
+    <member refid="namespacelearnql_1_1query_1_1expressions_1acb396c4f7b8f53b1e19632519083c921" kind="function"><name>FieldExpr</name></member>
+  </compound>
+  <compound refid="namespacelearnql_1_1ranges" kind="namespace"><name>learnql::ranges</name>
+    <member refid="namespacelearnql_1_1ranges_1adb0aac8d32b3bc0352902250c5c3ffeb" kind="function"><name>order_by</name></member>
+    <member refid="namespacelearnql_1_1ranges_1ae8e0b745576ffd628c1a7ad513abfad0" kind="function"><name>operator|</name></member>
+    <member refid="namespacelearnql_1_1ranges_1a72fdab88d2d6ba44ce9ac39f3c3ce9c7" kind="function"><name>select</name></member>
+    <member refid="namespacelearnql_1_1ranges_1acc16a0c10a9083b8accf46c08b5b8976" kind="function"><name>operator|</name></member>
+    <member refid="namespacelearnql_1_1ranges_1a19b2b5f954e6fd2c36ed43563c1bed6d" kind="function"><name>distinct</name></member>
+    <member refid="namespacelearnql_1_1ranges_1a8bba8fe7051ff09bd04f73e95de1c178" kind="function"><name>operator|</name></member>
+    <member refid="namespacelearnql_1_1ranges_1a2bbd315971ac7f77ad01ca24bb06b37f" kind="function"><name>limit</name></member>
+    <member refid="namespacelearnql_1_1ranges_1a409cd597bba7b754bb60a1c12206ee39" kind="function"><name>operator|</name></member>
+    <member refid="namespacelearnql_1_1ranges_1a80316e88998a8e9b1465dc581a77a51f" kind="function"><name>skip</name></member>
+    <member refid="namespacelearnql_1_1ranges_1ad5696ca98c5bd6cb181912652f119592" kind="function"><name>operator|</name></member>
+    <member refid="namespacelearnql_1_1ranges_1ae9315046002161879c27aa284eacb469" kind="function"><name>QueryView</name></member>
+    <member refid="namespacelearnql_1_1ranges_1ae501a306e1cb43f396caefced6992abd" kind="function"><name>QueryView</name></member>
+  </compound>
+  <compound refid="namespacelearnql_1_1ranges_1_1aggregates" kind="namespace"><name>learnql::ranges::aggregates</name>
+    <member refid="namespacelearnql_1_1ranges_1_1aggregates_1a81aec0aab5aff70cc8ef2d9678b9bb48" kind="function"><name>count</name></member>
+    <member refid="namespacelearnql_1_1ranges_1_1aggregates_1af5f6939a0b843093daebb98f411e272f" kind="function"><name>sum</name></member>
+    <member refid="namespacelearnql_1_1ranges_1_1aggregates_1a89c5a7b94e1c139ead2356ae79663434" kind="function"><name>average</name></member>
+    <member refid="namespacelearnql_1_1ranges_1_1aggregates_1a7792d7707c24c3982403da30ba6405c7" kind="function"><name>min</name></member>
+    <member refid="namespacelearnql_1_1ranges_1_1aggregates_1a92f68d8c70c5adfa60e3e54ada09ce9e" kind="function"><name>max</name></member>
+  </compound>
+  <compound refid="namespacelearnql_1_1reflection" kind="namespace"><name>learnql::reflection</name>
+    <member refid="namespacelearnql_1_1reflection_1a6246dbcce40da581bfb13e2b9220c312" kind="function"><name>extract_field_metadata</name></member>
+    <member refid="namespacelearnql_1_1reflection_1a53ce71e0824f3a0ff74bf1735cad596f" kind="function"><name>is_reflectable</name></member>
+    <member refid="namespacelearnql_1_1reflection_1a91b674aedc6a77e256dccb4fbb78c1c8" kind="function"><name>field_count</name></member>
+  </compound>
+  <compound refid="namespacelearnql_1_1serialization" kind="namespace"><name>learnql::serialization</name>
+  </compound>
+  <compound refid="namespacelearnql_1_1storage" kind="namespace"><name>learnql::storage</name>
+    <member refid="namespacelearnql_1_1storage_1ae05b45a9b02a6b9290c9867f77f420b7" kind="enum"><name>PageType</name></member>
+    <member refid="namespacelearnql_1_1storage_1ae05b45a9b02a6b9290c9867f77f420b7a88c189a42c87aa49d667fc8ab76bc323" kind="enumvalue"><name>FREE</name></member>
+    <member refid="namespacelearnql_1_1storage_1ae05b45a9b02a6b9290c9867f77f420b7ae44f9e348e41cb272efa87387728571b" kind="enumvalue"><name>DATA</name></member>
+    <member refid="namespacelearnql_1_1storage_1ae05b45a9b02a6b9290c9867f77f420b7acb4ae3b37047fb4b2c0d16f8bf84f076" kind="enumvalue"><name>INDEX</name></member>
+    <member refid="namespacelearnql_1_1storage_1ae05b45a9b02a6b9290c9867f77f420b7a8a9c0818e0622aadfcb2e59cfe5299b4" kind="enumvalue"><name>METADATA</name></member>
+    <member refid="namespacelearnql_1_1storage_1ae05b45a9b02a6b9290c9867f77f420b7a6019cbff128b1f75f0664d83ea8aefeb" kind="enumvalue"><name>OVERFLOW_DATA</name></member>
+    <member refid="namespacelearnql_1_1storage_1aa7e8d66da1715ae9da7740911fdfeac6" kind="variable"><name>MAGIC_NUMBER</name></member>
+    <member refid="namespacelearnql_1_1storage_1ae36f10f66bb5104ebab3a7cd143e444a" kind="variable"><name>PAGE_SIZE</name></member>
+  </compound>
+  <compound refid="namespacelearnql_1_1utils" kind="namespace"><name>learnql::utils</name>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="namespacestd_1_1ranges" kind="namespace"><name>std::ranges</name>
+  </compound>
+  <compound refid="_field_metadata_8hpp" kind="file"><name>FieldMetadata.hpp</name>
+  </compound>
+  <compound refid="_index_metadata_8hpp" kind="file"><name>IndexMetadata.hpp</name>
+  </compound>
+  <compound refid="_system_catalog_8hpp" kind="file"><name>SystemCatalog.hpp</name>
+  </compound>
+  <compound refid="_table_metadata_8hpp" kind="file"><name>TableMetadata.hpp</name>
+  </compound>
+  <compound refid="_queryable_8hpp" kind="file"><name>Queryable.hpp</name>
+  </compound>
+  <compound refid="_serializable_8hpp" kind="file"><name>Serializable.hpp</name>
+  </compound>
+  <compound refid="_database_8hpp" kind="file"><name>Database.hpp</name>
+  </compound>
+  <compound refid="_read_only_table_8hpp" kind="file"><name>ReadOnlyTable.hpp</name>
+  </compound>
+  <compound refid="_record_id_8hpp" kind="file"><name>RecordId.hpp</name>
+  </compound>
+  <compound refid="_table_8hpp" kind="file"><name>Table.hpp</name>
+  </compound>
+  <compound refid="_async_query_8hpp" kind="file"><name>AsyncQuery.hpp</name>
+  </compound>
+  <compound refid="_generator_8hpp" kind="file"><name>Generator.hpp</name>
+  </compound>
+  <compound refid="_debug_utils_8hpp" kind="file"><name>DebugUtils.hpp</name>
+    <member refid="_debug_utils_8hpp_1a976527d08d8762bf3c3def349642dcbb" kind="define"><name>LEARNQL_DEBUG</name></member>
+    <member refid="_debug_utils_8hpp_1afcc55b4ae90b71bace5457c500a781bb" kind="define"><name>LEARNQL_INFO</name></member>
+    <member refid="_debug_utils_8hpp_1a158f09bc12964a44d50ed6b8eebc5392" kind="define"><name>LEARNQL_WARN</name></member>
+    <member refid="_debug_utils_8hpp_1a0849d469308a4d0118e977b812845c9c" kind="define"><name>LEARNQL_ERROR</name></member>
+  </compound>
+  <compound refid="_execution_plan_8hpp" kind="file"><name>ExecutionPlan.hpp</name>
+  </compound>
+  <compound refid="_profiler_8hpp" kind="file"><name>Profiler.hpp</name>
+  </compound>
+  <compound refid="_statistics_8hpp" kind="file"><name>Statistics.hpp</name>
+  </compound>
+  <compound refid="_batch_iterator_8hpp" kind="file"><name>BatchIterator.hpp</name>
+  </compound>
+  <compound refid="_b_tree_index_8hpp" kind="file"><name>BTreeIndex.hpp</name>
+  </compound>
+  <compound refid="_persistent_b_tree_index_8hpp" kind="file"><name>PersistentBTreeIndex.hpp</name>
+  </compound>
+  <compound refid="_persistent_multi_value_secondary_index_8hpp" kind="file"><name>PersistentMultiValueSecondaryIndex.hpp</name>
+  </compound>
+  <compound refid="_persistent_secondary_index_8hpp" kind="file"><name>PersistentSecondaryIndex.hpp</name>
+  </compound>
+  <compound refid="_secondary_index_8hpp" kind="file"><name>SecondaryIndex.hpp</name>
+  </compound>
+  <compound refid="_learn_q_l_8hpp" kind="file"><name>LearnQL.hpp</name>
+  </compound>
+  <compound refid="_property_8hpp" kind="file"><name>Property.hpp</name>
+    <member refid="_property_8hpp_1aeda21bfeb55820f10e5279dd0720d080" kind="define"><name>LEARNQL_PROPERTIES_BEGIN</name></member>
+    <member refid="_property_8hpp_1a79adefc15ab3aeeb532fe6db17c96bd2" kind="define"><name>LEARNQL_PROPERTY</name></member>
+    <member refid="_property_8hpp_1a838a878cb35327ef8200e07fad06435d" kind="define"><name>_LEARNQL_IS_PK_3</name></member>
+    <member refid="_property_8hpp_1a3ec49e454704c0735347a3d12fd6c02d" kind="define"><name>_LEARNQL_IS_PK_2</name></member>
+    <member refid="_property_8hpp_1a08a37269efeaa30941796381de12d2b0" kind="define"><name>_LEARNQL_IS_PK_1</name></member>
+    <member refid="_property_8hpp_1abdfb27d0e70af13eda0793e4e9d38849" kind="define"><name>_LEARNQL_GET_4TH_ARG</name></member>
+    <member refid="_property_8hpp_1a1900ce35f4a76232365ba689b538973c" kind="define"><name>_LEARNQL_IS_PK</name></member>
+    <member refid="_property_8hpp_1a820cdc19ace1c096a6f2f90777ad68b7" kind="define"><name>PROP</name></member>
+    <member refid="_property_8hpp_1a99b774f95a44e756ee611e2f44c316e2" kind="define"><name>LEARNQL_PROPERTIES_END</name></member>
+    <member refid="_property_8hpp_1ae4de43178c03670dc1b752e7e0eab41b" kind="define"><name>_LEARNQL_CLASS</name></member>
+    <member refid="_property_8hpp_1a607b50a9d2317dd34ff4eb64d00bb8e4" kind="define"><name>LEARNQL_PROPERTIES_BEGIN</name></member>
+  </compound>
+  <compound refid="_type_info_8hpp" kind="file"><name>TypeInfo.hpp</name>
+    <member refid="_type_info_8hpp_1ac46377ec8a0a0905671a5716dedb6410" kind="define"><name>LEARNQL_REGISTER_TYPE</name></member>
+    <member refid="_type_info_8hpp_1ada12b7fde0ac06b93d3e8848a352c8a0" kind="define"><name>LEARNQL_FIELD</name></member>
+  </compound>
+  <compound refid="_binary_expr_8hpp" kind="file"><name>BinaryExpr.hpp</name>
+  </compound>
+  <compound refid="_const_expr_8hpp" kind="file"><name>ConstExpr.hpp</name>
+  </compound>
+  <compound refid="_expr_8hpp" kind="file"><name>Expr.hpp</name>
+  </compound>
+  <compound refid="_field_expr_8hpp" kind="file"><name>FieldExpr.hpp</name>
+  </compound>
+  <compound refid="_logical_expr_8hpp" kind="file"><name>LogicalExpr.hpp</name>
+  </compound>
+  <compound refid="_field_8hpp" kind="file"><name>Field.hpp</name>
+  </compound>
+  <compound refid="_group_by_8hpp" kind="file"><name>GroupBy.hpp</name>
+  </compound>
+  <compound refid="_join_8hpp" kind="file"><name>Join.hpp</name>
+  </compound>
+  <compound refid="_query_8hpp" kind="file"><name>Query.hpp</name>
+  </compound>
+  <compound refid="_adaptors_8hpp" kind="file"><name>Adaptors.hpp</name>
+  </compound>
+  <compound refid="_proxy_vector_8hpp" kind="file"><name>ProxyVector.hpp</name>
+  </compound>
+  <compound refid="_query_view_8hpp" kind="file"><name>QueryView.hpp</name>
+  </compound>
+  <compound refid="_field_extractor_8hpp" kind="file"><name>FieldExtractor.hpp</name>
+  </compound>
+  <compound refid="_field_info_8hpp" kind="file"><name>FieldInfo.hpp</name>
+  </compound>
+  <compound refid="_binary_reader_8hpp" kind="file"><name>BinaryReader.hpp</name>
+  </compound>
+  <compound refid="_binary_writer_8hpp" kind="file"><name>BinaryWriter.hpp</name>
+  </compound>
+  <compound refid="_page_8hpp" kind="file"><name>Page.hpp</name>
+  </compound>
+  <compound refid="_storage_engine_8hpp" kind="file"><name>StorageEngine.hpp</name>
+  </compound>
+  <compound refid="_db_inspector_8hpp" kind="file"><name>DbInspector.hpp</name>
+  </compound>
+  <compound refid="deprecated" kind="page"><name>deprecated</name>
+  </compound>
+  <compound refid="dir_7676d122234a8d5059bcc815006f12ac" kind="dir"><name>/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog</name>
+  </compound>
+  <compound refid="dir_7b3c1aac03baa003acc46075f61b8d1d" kind="dir"><name>/Users/tolgaberber/Work/CPP/LearnQL/learnql/concepts</name>
+  </compound>
+  <compound refid="dir_c1c931af49491d82f871bd7cc104f762" kind="dir"><name>/Users/tolgaberber/Work/CPP/LearnQL/learnql/core</name>
+  </compound>
+  <compound refid="dir_5bacce0275de2104102c1382b255ec0d" kind="dir"><name>/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines</name>
+  </compound>
+  <compound refid="dir_2a3a1ca00d99dd1205452b1408a8a493" kind="dir"><name>/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug</name>
+  </compound>
+  <compound refid="dir_808bcb38f3f24d38ec28b5b6b113da3e" kind="dir"><name>/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions</name>
+  </compound>
+  <compound refid="dir_8ad5c2d390164b76feb946693c32683c" kind="dir"><name>/Users/tolgaberber/Work/CPP/LearnQL/learnql/index</name>
+  </compound>
+  <compound refid="dir_d3206d029bb0e9cd23f0fc5c12eabbc3" kind="dir"><name>/Users/tolgaberber/Work/CPP/LearnQL/learnql</name>
+  </compound>
+  <compound refid="dir_5533d3c317017698c01bd043ebc8d3c8" kind="dir"><name>/Users/tolgaberber/Work/CPP/LearnQL/learnql/meta</name>
+  </compound>
+  <compound refid="dir_70d0bba77a2968a7dd2f99d3fadbfbee" kind="dir"><name>/Users/tolgaberber/Work/CPP/LearnQL/learnql/query</name>
+  </compound>
+  <compound refid="dir_4dd2babf828856317b2e648b9290b6e0" kind="dir"><name>/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges</name>
+  </compound>
+  <compound refid="dir_5f51293974d08079be4601b493d10583" kind="dir"><name>/Users/tolgaberber/Work/CPP/LearnQL/learnql/reflection</name>
+  </compound>
+  <compound refid="dir_f05cdb7c293520ebd945016adc0a6b86" kind="dir"><name>/Users/tolgaberber/Work/CPP/LearnQL/learnql/serialization</name>
+  </compound>
+  <compound refid="dir_bdc2c7788986c67691bde59a6173c26e" kind="dir"><name>/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage</name>
+  </compound>
+  <compound refid="dir_38c7d6e53a43086bdf30103936c07769" kind="dir"><name>/Users/tolgaberber/Work/CPP/LearnQL/learnql/utils</name>
+  </compound>
+</doxygenindex>

@@ -1,0 +1,337 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="_page_8hpp" kind="file" language="C++">
+    <compoundname>Page.hpp</compoundname>
+    <includes local="no">cstdint</includes>
+    <includes local="no">cstring</includes>
+    <includes local="no">array</includes>
+    <includes local="no">span</includes>
+    <includes local="no">stdexcept</includes>
+    <includes local="no">compare</includes>
+    <includedby refid="_learn_q_l_8hpp" local="yes">/Users/tolgaberber/Work/CPP/LearnQL/learnql/LearnQL.hpp</includedby>
+    <includedby refid="_persistent_b_tree_index_8hpp" local="yes">/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp</includedby>
+    <includedby refid="_storage_engine_8hpp" local="yes">/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/StorageEngine.hpp</includedby>
+    <includedby refid="_db_inspector_8hpp" local="yes">/Users/tolgaberber/Work/CPP/LearnQL/learnql/utils/DbInspector.hpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp</label>
+        <link refid="_page_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>array</label>
+      </node>
+      <node id="7">
+        <label>compare</label>
+      </node>
+      <node id="2">
+        <label>cstdint</label>
+      </node>
+      <node id="3">
+        <label>cstring</label>
+      </node>
+      <node id="5">
+        <label>span</label>
+      </node>
+      <node id="6">
+        <label>stdexcept</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/LearnQL.hpp</label>
+        <link refid="_learn_q_l_8hpp"/>
+      </node>
+      <node id="5">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/SystemCatalog.hpp</label>
+        <link refid="_system_catalog_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Database.hpp</label>
+        <link refid="_database_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/ReadOnlyTable.hpp</label>
+        <link refid="_read_only_table_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp</label>
+        <link refid="_table_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp</label>
+        <link refid="_persistent_b_tree_index_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentMultiValueSecondaryIndex.hpp</label>
+        <link refid="_persistent_multi_value_secondary_index_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentSecondaryIndex.hpp</label>
+        <link refid="_persistent_secondary_index_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Query.hpp</label>
+        <link refid="_query_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp</label>
+        <link refid="_page_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/StorageEngine.hpp</label>
+        <link refid="_storage_engine_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/utils/DbInspector.hpp</label>
+        <link refid="_db_inspector_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structlearnql_1_1storage_1_1_page_header" prot="public">learnql::storage::PageHeader</innerclass>
+    <innerclass refid="classlearnql_1_1storage_1_1_page" prot="public">learnql::storage::Page</innerclass>
+    <innernamespace refid="namespacelearnql">learnql</innernamespace>
+    <innernamespace refid="namespacelearnql_1_1storage">learnql::storage</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>LEARNQL_STORAGE_PAGE_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LEARNQL_STORAGE_PAGE_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdint&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstring&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;array&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;span&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdexcept&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;compare&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="namespacelearnql_1_1storage" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacelearnql_1_1storage" kindref="compound">learnql::storage</ref><sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="namespacelearnql_1_1storage_1aa7e8d66da1715ae9da7740911fdfeac6" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>std::array&lt;char,<sp/>4&gt;<sp/><ref refid="namespacelearnql_1_1storage_1aa7e8d66da1715ae9da7740911fdfeac6" kindref="member">MAGIC_NUMBER</ref><sp/>=<sp/>{</highlight><highlight class="charliteral">&apos;L&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;Q&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;L&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;1&apos;</highlight><highlight class="normal">};</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="namespacelearnql_1_1storage_1ae36f10f66bb5104ebab3a7cd143e444a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>std::size_t<sp/><ref refid="namespacelearnql_1_1storage_1ae36f10f66bb5104ebab3a7cd143e444a" kindref="member">PAGE_SIZE</ref><sp/>=<sp/>4096;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="namespacelearnql_1_1storage_1ae05b45a9b02a6b9290c9867f77f420b7" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="namespacelearnql_1_1storage_1ae05b45a9b02a6b9290c9867f77f420b7" kindref="member">PageType</ref><sp/>:<sp/>uint8_t<sp/>{</highlight></codeline>
+<codeline lineno="29" refid="namespacelearnql_1_1storage_1ae05b45a9b02a6b9290c9867f77f420b7a88c189a42c87aa49d667fc8ab76bc323" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacelearnql_1_1storage_1ae05b45a9b02a6b9290c9867f77f420b7a88c189a42c87aa49d667fc8ab76bc323" kindref="member">FREE</ref><sp/>=<sp/>0,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="30" refid="namespacelearnql_1_1storage_1ae05b45a9b02a6b9290c9867f77f420b7ae44f9e348e41cb272efa87387728571b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacelearnql_1_1storage_1ae05b45a9b02a6b9290c9867f77f420b7ae44f9e348e41cb272efa87387728571b" kindref="member">DATA</ref><sp/>=<sp/>1,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="31" refid="namespacelearnql_1_1storage_1ae05b45a9b02a6b9290c9867f77f420b7acb4ae3b37047fb4b2c0d16f8bf84f076" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacelearnql_1_1storage_1ae05b45a9b02a6b9290c9867f77f420b7acb4ae3b37047fb4b2c0d16f8bf84f076" kindref="member">INDEX</ref><sp/>=<sp/>2,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="32" refid="namespacelearnql_1_1storage_1ae05b45a9b02a6b9290c9867f77f420b7a8a9c0818e0622aadfcb2e59cfe5299b4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacelearnql_1_1storage_1ae05b45a9b02a6b9290c9867f77f420b7a8a9c0818e0622aadfcb2e59cfe5299b4" kindref="member">METADATA</ref><sp/>=<sp/>3,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="33" refid="namespacelearnql_1_1storage_1ae05b45a9b02a6b9290c9867f77f420b7a6019cbff128b1f75f0664d83ea8aefeb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacelearnql_1_1storage_1ae05b45a9b02a6b9290c9867f77f420b7a6019cbff128b1f75f0664d83ea8aefeb" kindref="member">OVERFLOW_DATA</ref><sp/>=<sp/>4<sp/></highlight></codeline>
+<codeline lineno="34"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>pack(push,<sp/>1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="structlearnql_1_1storage_1_1_page_header" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structlearnql_1_1storage_1_1_page_header_1a732ae3232b4112d4f424fe7e98ca9f87" kindref="member">PageHeader</ref><sp/>{</highlight></codeline>
+<codeline lineno="53" refid="structlearnql_1_1storage_1_1_page_header_1aadbb8e40cb25fc44d646d77025b33fc7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::array&lt;char,<sp/>4&gt;<sp/><ref refid="structlearnql_1_1storage_1_1_page_header_1aadbb8e40cb25fc44d646d77025b33fc7" kindref="member">magic</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="54" refid="structlearnql_1_1storage_1_1_page_header_1adc786de7a529a2daef38a4050470063a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/><ref refid="structlearnql_1_1storage_1_1_page_header_1adc786de7a529a2daef38a4050470063a" kindref="member">page_id</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="55" refid="structlearnql_1_1storage_1_1_page_header_1a797629c9327c6e763c4ec52c2b09e98e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacelearnql_1_1storage_1ae05b45a9b02a6b9290c9867f77f420b7" kindref="member">PageType</ref><sp/><ref refid="structlearnql_1_1storage_1_1_page_header_1a797629c9327c6e763c4ec52c2b09e98e" kindref="member">page_type</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="56" refid="structlearnql_1_1storage_1_1_page_header_1a51fec5c65482ac179bf2e10a83282fe6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structlearnql_1_1storage_1_1_page_header_1a51fec5c65482ac179bf2e10a83282fe6" kindref="member">version</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="57" refid="structlearnql_1_1storage_1_1_page_header_1a72fdae4510939af2ea445a458162eb7c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="structlearnql_1_1storage_1_1_page_header_1a72fdae4510939af2ea445a458162eb7c" kindref="member">record_count</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="58" refid="structlearnql_1_1storage_1_1_page_header_1a8da8fdbd8073bc478e54c2cc78f4c842" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="structlearnql_1_1storage_1_1_page_header_1a8da8fdbd8073bc478e54c2cc78f4c842" kindref="member">free_space_offset</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="59" refid="structlearnql_1_1storage_1_1_page_header_1a4904c0420cf8f4d2b78d6d67da9533c4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/><ref refid="structlearnql_1_1storage_1_1_page_header_1a4904c0420cf8f4d2b78d6d67da9533c4" kindref="member">next_page_id</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="60" refid="structlearnql_1_1storage_1_1_page_header_1ab51f1396a656b09ff2bde712df70d79b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structlearnql_1_1storage_1_1_page_header_1ab51f1396a656b09ff2bde712df70d79b" kindref="member">checksum</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="61" refid="structlearnql_1_1storage_1_1_page_header_1ac82f58cdd60556f330b3d7a94d8e90a9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::array&lt;uint8_t,<sp/>34&gt;<sp/><ref refid="structlearnql_1_1storage_1_1_page_header_1ac82f58cdd60556f330b3d7a94d8e90a9" kindref="member">reserved</ref>;<sp/></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="structlearnql_1_1storage_1_1_page_header_1a732ae3232b4112d4f424fe7e98ca9f87" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structlearnql_1_1storage_1_1_page_header_1a732ae3232b4112d4f424fe7e98ca9f87" kindref="member">PageHeader</ref>()<sp/>noexcept</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="structlearnql_1_1storage_1_1_page_header_1aadbb8e40cb25fc44d646d77025b33fc7" kindref="member">magic</ref>(<ref refid="namespacelearnql_1_1storage_1aa7e8d66da1715ae9da7740911fdfeac6" kindref="member">MAGIC_NUMBER</ref>),</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlearnql_1_1storage_1_1_page_header_1adc786de7a529a2daef38a4050470063a" kindref="member">page_id</ref>(0),</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlearnql_1_1storage_1_1_page_header_1a797629c9327c6e763c4ec52c2b09e98e" kindref="member">page_type</ref>(<ref refid="namespacelearnql_1_1storage_1ae05b45a9b02a6b9290c9867f77f420b7" kindref="member">PageType</ref>::<ref refid="namespacelearnql_1_1storage_1ae05b45a9b02a6b9290c9867f77f420b7a88c189a42c87aa49d667fc8ab76bc323" kindref="member">FREE</ref>),</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlearnql_1_1storage_1_1_page_header_1a51fec5c65482ac179bf2e10a83282fe6" kindref="member">version</ref>(1),</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlearnql_1_1storage_1_1_page_header_1a72fdae4510939af2ea445a458162eb7c" kindref="member">record_count</ref>(0),</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlearnql_1_1storage_1_1_page_header_1a8da8fdbd8073bc478e54c2cc78f4c842" kindref="member">free_space_offset</ref>(sizeof(<ref refid="structlearnql_1_1storage_1_1_page_header_1a732ae3232b4112d4f424fe7e98ca9f87" kindref="member">PageHeader</ref>)),</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlearnql_1_1storage_1_1_page_header_1a4904c0420cf8f4d2b78d6d67da9533c4" kindref="member">next_page_id</ref>(0),</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlearnql_1_1storage_1_1_page_header_1ab51f1396a656b09ff2bde712df70d79b" kindref="member">checksum</ref>(0),</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlearnql_1_1storage_1_1_page_header_1ac82f58cdd60556f330b3d7a94d8e90a9" kindref="member">reserved</ref>{}<sp/>{}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="structlearnql_1_1storage_1_1_page_header_1a60987033234dd199f8f9d51dfcf9a9a6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structlearnql_1_1storage_1_1_page_header_1a60987033234dd199f8f9d51dfcf9a9a6" kindref="member">is_valid</ref>()<sp/>const<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structlearnql_1_1storage_1_1_page_header_1aadbb8e40cb25fc44d646d77025b33fc7" kindref="member">magic</ref><sp/>==<sp/><ref refid="namespacelearnql_1_1storage_1aa7e8d66da1715ae9da7740911fdfeac6" kindref="member">MAGIC_NUMBER</ref>;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="structlearnql_1_1storage_1_1_page_header_1a001c77f89b8110e277ef6c4755e7aabf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="structlearnql_1_1storage_1_1_page_header_1a001c77f89b8110e277ef6c4755e7aabf" kindref="member">operator&lt;=&gt;</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlearnql_1_1storage_1_1_page_header_1a732ae3232b4112d4f424fe7e98ca9f87" kindref="member">PageHeader</ref>&amp;<sp/>other)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">noexcept</highlight><highlight class="normal"><sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>pack(pop)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Ensure<sp/>PageHeader<sp/>is<sp/>exactly<sp/>64<sp/>bytes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="keyword">static_assert</highlight><highlight class="normal">(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structlearnql_1_1storage_1_1_page_header" kindref="compound">PageHeader</ref>)<sp/>==<sp/>64,<sp/></highlight><highlight class="stringliteral">&quot;PageHeader<sp/>must<sp/>be<sp/>exactly<sp/>64<sp/>bytes&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109" refid="classlearnql_1_1storage_1_1_page" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classlearnql_1_1storage_1_1_page_1a7e2577f6318136044bbe678dabc6f968" kindref="member">Page</ref><sp/>{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="114" refid="classlearnql_1_1storage_1_1_page_1a037494cfeb8b70d99a80807b14a2705a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>std::size_t<sp/><ref refid="classlearnql_1_1storage_1_1_page_1a037494cfeb8b70d99a80807b14a2705a" kindref="member">DATA_SIZE</ref><sp/>=<sp/><ref refid="namespacelearnql_1_1storage_1ae36f10f66bb5104ebab3a7cd143e444a" kindref="member">PAGE_SIZE</ref><sp/>-<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structlearnql_1_1storage_1_1_page_header" kindref="compound">PageHeader</ref>);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="classlearnql_1_1storage_1_1_page_1a7e2577f6318136044bbe678dabc6f968" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlearnql_1_1storage_1_1_page_1a7e2577f6318136044bbe678dabc6f968" kindref="member">Page</ref>()<sp/>noexcept<sp/>:<sp/>header_{},<sp/>data_{}<sp/>{}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126" refid="classlearnql_1_1storage_1_1_page_1a24ff8e6651dac5e0dde09aaf77270894" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classlearnql_1_1storage_1_1_page_1a24ff8e6651dac5e0dde09aaf77270894" kindref="member">Page</ref>(uint64_t<sp/>page_id,<sp/><ref refid="namespacelearnql_1_1storage_1ae05b45a9b02a6b9290c9867f77f420b7" kindref="member">PageType</ref><sp/>type<sp/>=<sp/><ref refid="namespacelearnql_1_1storage_1ae05b45a9b02a6b9290c9867f77f420b7ae44f9e348e41cb272efa87387728571b" kindref="member">PageType::DATA</ref>)<sp/>noexcept</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>header_{},<sp/>data_{}<sp/>{</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>header_.<ref refid="structlearnql_1_1storage_1_1_page_header_1adc786de7a529a2daef38a4050470063a" kindref="member">page_id</ref><sp/>=<sp/>page_id;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>header_.<ref refid="structlearnql_1_1storage_1_1_page_header_1a797629c9327c6e763c4ec52c2b09e98e" kindref="member">page_type</ref><sp/>=<sp/>type;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Default<sp/>copy<sp/>operations<sp/>(needed<sp/>for<sp/>caching)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133" refid="classlearnql_1_1storage_1_1_page_1acbdd663d6cf727706a19fd1185aab4a5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlearnql_1_1storage_1_1_page_1acbdd663d6cf727706a19fd1185aab4a5" kindref="member">Page</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classlearnql_1_1storage_1_1_page_1a7e2577f6318136044bbe678dabc6f968" kindref="member">Page</ref>&amp;)<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="134" refid="classlearnql_1_1storage_1_1_page_1a28332f6163f4485eb04977f7b0164d3c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlearnql_1_1storage_1_1_page_1a7e2577f6318136044bbe678dabc6f968" kindref="member">Page</ref>&amp;<sp/><ref refid="classlearnql_1_1storage_1_1_page_1a28332f6163f4485eb04977f7b0164d3c" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classlearnql_1_1storage_1_1_page_1a7e2577f6318136044bbe678dabc6f968" kindref="member">Page</ref>&amp;)<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Default<sp/>move<sp/>operations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137" refid="classlearnql_1_1storage_1_1_page_1a1e92264f725a6e773d506f51d5c84949" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlearnql_1_1storage_1_1_page_1a1e92264f725a6e773d506f51d5c84949" kindref="member">Page</ref>(<ref refid="classlearnql_1_1storage_1_1_page_1a7e2577f6318136044bbe678dabc6f968" kindref="member">Page</ref>&amp;&amp;)<sp/>noexcept<sp/>=<sp/>default;</highlight></codeline>
+<codeline lineno="138" refid="classlearnql_1_1storage_1_1_page_1afdfde3962fb6ab42795b0fba9c4910bb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlearnql_1_1storage_1_1_page_1a7e2577f6318136044bbe678dabc6f968" kindref="member">Page</ref>&amp;<sp/>operator=(<ref refid="classlearnql_1_1storage_1_1_page_1a7e2577f6318136044bbe678dabc6f968" kindref="member">Page</ref>&amp;&amp;)<sp/>noexcept<sp/>=<sp/>default;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144" refid="classlearnql_1_1storage_1_1_page_1a968a9d7e20aedb1f9d45450758e147a9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/><ref refid="structlearnql_1_1storage_1_1_page_header" kindref="compound">PageHeader</ref>&amp;<sp/><ref refid="classlearnql_1_1storage_1_1_page_1a968a9d7e20aedb1f9d45450758e147a9" kindref="member">header</ref>()<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>header_;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152" refid="classlearnql_1_1storage_1_1_page_1a451adee85c63366ea62b69c7d2e2a5a6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlearnql_1_1storage_1_1_page_header" kindref="compound">PageHeader</ref>&amp;<sp/><ref refid="classlearnql_1_1storage_1_1_page_1a451adee85c63366ea62b69c7d2e2a5a6" kindref="member">header</ref>()<sp/>const<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>header_;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160" refid="classlearnql_1_1storage_1_1_page_1a9685692b30ac1ed39343b5a35798312b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/>std::span&lt;uint8_t&gt;<sp/><ref refid="classlearnql_1_1storage_1_1_page_1a9685692b30ac1ed39343b5a35798312b" kindref="member">data</ref>()<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::span&lt;uint8_t&gt;(data_.data(),<sp/>data_.size());</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168" refid="classlearnql_1_1storage_1_1_page_1af2b9c44f3c4ae656e68b12979f0692f1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/>std::span&lt;const<sp/>uint8_t&gt;<sp/><ref refid="classlearnql_1_1storage_1_1_page_1af2b9c44f3c4ae656e68b12979f0692f1" kindref="member">data</ref>()<sp/>const<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::span&lt;const<sp/>uint8_t&gt;(data_.data(),<sp/>data_.size());</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179" refid="classlearnql_1_1storage_1_1_page_1ad133e6780577b3d1d6f9ec20acb02e47" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlearnql_1_1storage_1_1_page_1ad133e6780577b3d1d6f9ec20acb02e47" kindref="member">write_data</ref>(std::size_t<sp/>offset,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>src,<sp/>std::size_t<sp/>size)<sp/>{</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(offset<sp/>+<sp/>size<sp/>&gt;<sp/><ref refid="classlearnql_1_1storage_1_1_page_1a037494cfeb8b70d99a80807b14a2705a" kindref="member">DATA_SIZE</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>std::out_of_range(</highlight><highlight class="stringliteral">&quot;Write<sp/>exceeds<sp/>page<sp/>boundary&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::memcpy(data_.data()<sp/>+<sp/>offset,<sp/>src,<sp/>size);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193" refid="classlearnql_1_1storage_1_1_page_1a6b22ac5bdc5dacf708984f33e5c6729d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlearnql_1_1storage_1_1_page_1a6b22ac5bdc5dacf708984f33e5c6729d" kindref="member">read_data</ref>(std::size_t<sp/>offset,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>dest,<sp/>std::size_t<sp/>size)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(offset<sp/>+<sp/>size<sp/>&gt;<sp/><ref refid="classlearnql_1_1storage_1_1_page_1a037494cfeb8b70d99a80807b14a2705a" kindref="member">DATA_SIZE</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>std::out_of_range(</highlight><highlight class="stringliteral">&quot;Read<sp/>exceeds<sp/>page<sp/>boundary&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::memcpy(dest,<sp/>data_.data()<sp/>+<sp/>offset,<sp/>size);</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203" refid="classlearnql_1_1storage_1_1_page_1a03549972dd82409dcdecd9a696ff3b31" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlearnql_1_1storage_1_1_page_1a03549972dd82409dcdecd9a696ff3b31" kindref="member">clear</ref>()<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>header_<sp/>=<sp/><ref refid="structlearnql_1_1storage_1_1_page_header" kindref="compound">PageHeader</ref>{};</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data_.fill(0);</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212" refid="classlearnql_1_1storage_1_1_page_1a089bf89139d2c70f381464edb404ffcc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/>std::size_t<sp/><ref refid="classlearnql_1_1storage_1_1_page_1a089bf89139d2c70f381464edb404ffcc" kindref="member">available_space</ref>()<sp/>const<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classlearnql_1_1storage_1_1_page_1a037494cfeb8b70d99a80807b14a2705a" kindref="member">DATA_SIZE</ref><sp/>-<sp/>header_.free_space_offset<sp/>+<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structlearnql_1_1storage_1_1_page_header" kindref="compound">PageHeader</ref>);</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221" refid="classlearnql_1_1storage_1_1_page_1a0aa3b1b9bf8b132b53058476c009ba4e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classlearnql_1_1storage_1_1_page_1a0aa3b1b9bf8b132b53058476c009ba4e" kindref="member">can_fit</ref>(std::size_t<sp/>size)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">noexcept</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classlearnql_1_1storage_1_1_page_1a089bf89139d2c70f381464edb404ffcc" kindref="member">available_space</ref>()<sp/>&gt;=<sp/>size;</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229" refid="classlearnql_1_1storage_1_1_page_1aa5eebaadb86eb2038f21fa250c427f4b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="classlearnql_1_1storage_1_1_page_1aa5eebaadb86eb2038f21fa250c427f4b" kindref="member">raw_data</ref>()<sp/>const<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;header_;</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237" refid="classlearnql_1_1storage_1_1_page_1abb823df1ee0752514ac42dbe27680998" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="classlearnql_1_1storage_1_1_page_1abb823df1ee0752514ac42dbe27680998" kindref="member">raw_data</ref>()<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;header_;</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245" refid="classlearnql_1_1storage_1_1_page_1a6394bb0e398884a3184309eb9ba82dd4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/>uint32_t<sp/><ref refid="classlearnql_1_1storage_1_1_page_1a6394bb0e398884a3184309eb9ba82dd4" kindref="member">compute_checksum</ref>()<sp/>const<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>checksum<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Simple<sp/>XOR-based<sp/>checksum<sp/>for<sp/>educational<sp/>purposes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>In<sp/>production,<sp/>use<sp/>proper<sp/>CRC32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/></highlight><highlight class="keywordtype">byte</highlight><highlight class="normal"><sp/>:<sp/>data_)<sp/>{</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>checksum<sp/>^=<sp/>byte;</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>checksum;</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight></codeline>
+<codeline lineno="258" refid="classlearnql_1_1storage_1_1_page_1a98e4779d7d00de208006037502883767" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlearnql_1_1storage_1_1_page_1a98e4779d7d00de208006037502883767" kindref="member">update_checksum</ref>()<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>header_.checksum<sp/>=<sp/><ref refid="classlearnql_1_1storage_1_1_page_1a6394bb0e398884a3184309eb9ba82dd4" kindref="member">compute_checksum</ref>();</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="266" refid="classlearnql_1_1storage_1_1_page_1a1f654677b1d5488288b5a0a83787f638" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classlearnql_1_1storage_1_1_page_1a1f654677b1d5488288b5a0a83787f638" kindref="member">validate_checksum</ref>()<sp/>const<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>header_.checksum<sp/>==<sp/><ref refid="classlearnql_1_1storage_1_1_page_1a6394bb0e398884a3184309eb9ba82dd4" kindref="member">compute_checksum</ref>();</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structlearnql_1_1storage_1_1_page_header" kindref="compound">PageHeader</ref><sp/>header_;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/>std::array&lt;uint8_t,<sp/>DATA_SIZE&gt;<sp/>data_;<sp/></highlight></codeline>
+<codeline lineno="273"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Ensure<sp/>Page<sp/>is<sp/>exactly<sp/>PAGE_SIZE<sp/>bytes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight><highlight class="keyword">static_assert</highlight><highlight class="normal">(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(Page)<sp/>==<sp/><ref refid="namespacelearnql_1_1storage_1ae36f10f66bb5104ebab3a7cd143e444a" kindref="member">PAGE_SIZE</ref>,<sp/></highlight><highlight class="stringliteral">&quot;Page<sp/>must<sp/>be<sp/>exactly<sp/>PAGE_SIZE<sp/>bytes&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>learnql::storage</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>LEARNQL_STORAGE_PAGE_HPP</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/storage/Page.hpp"/>
+  </compounddef>
+</doxygen>

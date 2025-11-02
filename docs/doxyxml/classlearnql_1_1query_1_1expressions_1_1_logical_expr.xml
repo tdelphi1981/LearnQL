@@ -1,0 +1,273 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classlearnql_1_1query_1_1expressions_1_1_logical_expr" kind="class" language="C++" prot="public">
+    <compoundname>learnql::query::expressions::LogicalExpr</compoundname>
+    <basecompoundref refid="classlearnql_1_1query_1_1expressions_1_1_expr" prot="public" virt="non-virtual">learnql::query::expressions::Expr&lt; LogicalExpr&lt; Op, Left, Right &gt; &gt;</basecompoundref>
+    <includes refid="_logical_expr_8hpp" local="no">LogicalExpr.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type><ref refid="namespacelearnql_1_1query_1_1expressions_1a2d9f720fdaedcc4810f4beeb2c5301a2" kindref="member">LogicalOp</ref></type>
+        <declname>Op</declname>
+        <defname>Op</defname>
+      </param>
+      <param>
+        <type>typename Left</type>
+      </param>
+      <param>
+        <type>typename Right</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classlearnql_1_1query_1_1expressions_1_1_logical_expr_1ac63897f508394a2ec11b061acaf11155" prot="private" static="no" mutable="no">
+        <type>Left</type>
+        <definition>Left learnql::query::expressions::LogicalExpr&lt; Op, Left, Right &gt;::left_</definition>
+        <argsstring></argsstring>
+        <name>left_</name>
+        <qualifiedname>learnql::query::expressions::LogicalExpr::left_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/LogicalExpr.hpp" line="79" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/LogicalExpr.hpp" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlearnql_1_1query_1_1expressions_1_1_logical_expr_1a5431e8dcc852949382a7c05aafd88b61" prot="private" static="no" mutable="no">
+        <type>Right</type>
+        <definition>Right learnql::query::expressions::LogicalExpr&lt; Op, Left, Right &gt;::right_</definition>
+        <argsstring></argsstring>
+        <name>right_</name>
+        <qualifiedname>learnql::query::expressions::LogicalExpr::right_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/LogicalExpr.hpp" line="80" column="11" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/LogicalExpr.hpp" bodystart="80" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlearnql_1_1query_1_1expressions_1_1_logical_expr_1a1dea6761c2de8461ed59ccb9fe4fcaad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>learnql::query::expressions::LogicalExpr&lt; Op, Left, Right &gt;::LogicalExpr</definition>
+        <argsstring>(Left left, Right right)</argsstring>
+        <name>LogicalExpr</name>
+        <qualifiedname>learnql::query::expressions::LogicalExpr::LogicalExpr</qualifiedname>
+        <param>
+          <type>Left</type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>Right</type>
+          <declname>right</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a logical expression. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>left</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Left operand </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>right</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Right operand </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/LogicalExpr.hpp" line="29" column="5" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/LogicalExpr.hpp" bodystart="29" bodyend="31"/>
+        <references refid="classlearnql_1_1query_1_1expressions_1_1_logical_expr_1af88fe5fffd70731b2f28c924d0080e32" compoundref="_logical_expr_8hpp" startline="67" endline="69">learnql::query::expressions::LogicalExpr&lt; Op, Left, Right &gt;::left</references>
+        <references refid="classlearnql_1_1query_1_1expressions_1_1_logical_expr_1a981044b44c92f7e3159f644562634043" compoundref="_logical_expr_8hpp" startline="74" endline="76">learnql::query::expressions::LogicalExpr&lt; Op, Left, Right &gt;::right</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1query_1_1expressions_1_1_logical_expr_1aec73288dcc164f00a60879af2c4c79dd" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool learnql::query::expressions::LogicalExpr&lt; Op, Left, Right &gt;::evaluate</definition>
+        <argsstring>(const T &amp;obj) const</argsstring>
+        <name>evaluate</name>
+        <qualifiedname>learnql::query::expressions::LogicalExpr::evaluate</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+<para>Evaluates the logical expression. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Object type </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Object to evaluate against </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result of logical operation </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/LogicalExpr.hpp" line="40" column="11" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/LogicalExpr.hpp" bodystart="40" bodyend="51"/>
+        <references refid="namespacelearnql_1_1query_1_1expressions_1a2d9f720fdaedcc4810f4beeb2c5301a2ac33315685a0cba3ce53be378b3c7874b" compoundref="_expr_8hpp" startline="83">learnql::query::expressions::And</references>
+        <references refid="namespacelearnql_1_1query_1_1expressions_1a2d9f720fdaedcc4810f4beeb2c5301a2a3a2d5fe857d8f9541136a124c2edec6c" compoundref="_expr_8hpp" startline="84">learnql::query::expressions::Or</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1query_1_1expressions_1_1_logical_expr_1ac717dd36ba697e57d2b042c3ec2dd13c" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string learnql::query::expressions::LogicalExpr&lt; Op, Left, Right &gt;::to_string</definition>
+        <argsstring>() const</argsstring>
+        <name>to_string</name>
+        <qualifiedname>learnql::query::expressions::LogicalExpr::to_string</qualifiedname>
+        <briefdescription>
+<para>Converts to string representation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/LogicalExpr.hpp" line="56" column="18" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/LogicalExpr.hpp" bodystart="56" bodyend="62"/>
+        <references refid="namespacelearnql_1_1query_1_1expressions_1aa2f02bac46bab2bbc8c534e792894bac" compoundref="_expr_8hpp" startline="90" endline="96">learnql::query::expressions::logical_op_to_string</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1query_1_1expressions_1_1_logical_expr_1af88fe5fffd70731b2f28c924d0080e32" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>const Left &amp;</type>
+        <definition>const Left &amp; learnql::query::expressions::LogicalExpr&lt; Op, Left, Right &gt;::left</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>left</name>
+        <qualifiedname>learnql::query::expressions::LogicalExpr::left</qualifiedname>
+        <briefdescription>
+<para>Gets the left operand. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/LogicalExpr.hpp" line="67" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/LogicalExpr.hpp" bodystart="67" bodyend="69"/>
+        <referencedby refid="classlearnql_1_1query_1_1expressions_1_1_logical_expr_1a1dea6761c2de8461ed59ccb9fe4fcaad" compoundref="_logical_expr_8hpp" startline="29" endline="31">learnql::query::expressions::LogicalExpr&lt; Op, Left, Right &gt;::LogicalExpr</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1query_1_1expressions_1_1_logical_expr_1a981044b44c92f7e3159f644562634043" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>const Right &amp;</type>
+        <definition>const Right &amp; learnql::query::expressions::LogicalExpr&lt; Op, Left, Right &gt;::right</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>right</name>
+        <qualifiedname>learnql::query::expressions::LogicalExpr::right</qualifiedname>
+        <briefdescription>
+<para>Gets the right operand. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/LogicalExpr.hpp" line="74" column="18" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/LogicalExpr.hpp" bodystart="74" bodyend="76"/>
+        <referencedby refid="classlearnql_1_1query_1_1expressions_1_1_logical_expr_1a1dea6761c2de8461ed59ccb9fe4fcaad" compoundref="_logical_expr_8hpp" startline="29" endline="31">learnql::query::expressions::LogicalExpr&lt; Op, Left, Right &gt;::LogicalExpr</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para><ref refid="conceptlearnql_1_1query_1_1expressions_1_1_expression" kindref="compound">Expression</ref> representing a logical operation (AND/OR). </para>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Op</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Logical operator type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Left</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Left expression type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Right</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Right expression type</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Example: <programlisting><codeline><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>expr<sp/>=<sp/><ref refid="classlearnql_1_1query_1_1expressions_1_1_logical_expr_1a1dea6761c2de8461ed59ccb9fe4fcaad" kindref="member">LogicalExpr</ref>&lt;<ref refid="namespacelearnql_1_1query_1_1expressions_1a2d9f720fdaedcc4810f4beeb2c5301a2ac33315685a0cba3ce53be378b3c7874b" kindref="member">LogicalOp::And</ref>,<sp/>BinaryExpr&lt;...&gt;,<sp/>BinaryExpr&lt;...&gt;&gt;{...};</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Represents:<sp/>(age<sp/>&gt;<sp/>18)<sp/>&amp;&amp;<sp/>(name<sp/>==<sp/>&quot;Alice&quot;)</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>learnql::query::expressions::Expr&lt; Derived &gt;</label>
+        <link refid="classlearnql_1_1query_1_1expressions_1_1_expr"/>
+      </node>
+      <node id="2">
+        <label>learnql::query::expressions::Expr&lt; LogicalExpr&lt; Op, Left, Right &gt; &gt;</label>
+        <link refid="classlearnql_1_1query_1_1expressions_1_1_expr"/>
+        <childnode refid="3" relation="template-instance">
+          <edgelabel>&lt; LogicalExpr&lt; Op, Left, Right &gt; &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>learnql::query::expressions::LogicalExpr&lt; Op, Left, Right &gt;</label>
+        <link refid="classlearnql_1_1query_1_1expressions_1_1_logical_expr"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>learnql::query::expressions::Expr&lt; Derived &gt;</label>
+        <link refid="classlearnql_1_1query_1_1expressions_1_1_expr"/>
+      </node>
+      <node id="2">
+        <label>learnql::query::expressions::Expr&lt; LogicalExpr&lt; Op, Left, Right &gt; &gt;</label>
+        <link refid="classlearnql_1_1query_1_1expressions_1_1_expr"/>
+        <childnode refid="3" relation="template-instance">
+          <edgelabel>&lt; LogicalExpr&lt; Op, Left, Right &gt; &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>learnql::query::expressions::LogicalExpr&lt; Op, Left, Right &gt;</label>
+        <link refid="classlearnql_1_1query_1_1expressions_1_1_logical_expr"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/LogicalExpr.hpp" line="22" column="1" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/expressions/LogicalExpr.hpp" bodystart="22" bodyend="81"/>
+    <listofallmembers>
+      <member refid="classlearnql_1_1query_1_1expressions_1_1_expr_1ab3afaf7bba10da4cd15df3713a77974f" prot="public" virt="non-virtual"><scope>learnql::query::expressions::LogicalExpr</scope><name>derived</name></member>
+      <member refid="classlearnql_1_1query_1_1expressions_1_1_logical_expr_1aec73288dcc164f00a60879af2c4c79dd" prot="public" virt="non-virtual"><scope>learnql::query::expressions::LogicalExpr</scope><name>evaluate</name></member>
+      <member refid="classlearnql_1_1query_1_1expressions_1_1_logical_expr_1af88fe5fffd70731b2f28c924d0080e32" prot="public" virt="non-virtual"><scope>learnql::query::expressions::LogicalExpr</scope><name>left</name></member>
+      <member refid="classlearnql_1_1query_1_1expressions_1_1_logical_expr_1ac63897f508394a2ec11b061acaf11155" prot="private" virt="non-virtual"><scope>learnql::query::expressions::LogicalExpr</scope><name>left_</name></member>
+      <member refid="classlearnql_1_1query_1_1expressions_1_1_logical_expr_1a1dea6761c2de8461ed59ccb9fe4fcaad" prot="public" virt="non-virtual"><scope>learnql::query::expressions::LogicalExpr</scope><name>LogicalExpr</name></member>
+      <member refid="classlearnql_1_1query_1_1expressions_1_1_logical_expr_1a981044b44c92f7e3159f644562634043" prot="public" virt="non-virtual"><scope>learnql::query::expressions::LogicalExpr</scope><name>right</name></member>
+      <member refid="classlearnql_1_1query_1_1expressions_1_1_logical_expr_1a5431e8dcc852949382a7c05aafd88b61" prot="private" virt="non-virtual"><scope>learnql::query::expressions::LogicalExpr</scope><name>right_</name></member>
+      <member refid="classlearnql_1_1query_1_1expressions_1_1_logical_expr_1ac717dd36ba697e57d2b042c3ec2dd13c" prot="public" virt="non-virtual"><scope>learnql::query::expressions::LogicalExpr</scope><name>to_string</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

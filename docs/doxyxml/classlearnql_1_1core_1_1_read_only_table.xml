@@ -1,0 +1,692 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classlearnql_1_1core_1_1_read_only_table" kind="class" language="C++" prot="public">
+    <compoundname>learnql::core::ReadOnlyTable</compoundname>
+    <includes refid="_read_only_table_8hpp" local="no">ReadOnlyTable.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+      <param>
+        <type>std::size_t</type>
+        <declname>BatchSize</declname>
+        <defname>BatchSize</defname>
+        <defval>10</defval>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classlearnql_1_1core_1_1_read_only_table_1a8dbe675c21bdc564980175f36af02982" prot="public" static="no">
+        <type>T</type>
+        <definition>using learnql::core::ReadOnlyTable&lt; T, BatchSize &gt;::value_type =  T</definition>
+        <argsstring></argsstring>
+        <name>value_type</name>
+        <qualifiedname>learnql::core::ReadOnlyTable::value_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/ReadOnlyTable.hpp" line="38" column="5" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/ReadOnlyTable.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classlearnql_1_1core_1_1_read_only_table_1a3a0a3d4526b891a3767c54775143ed06" prot="public" static="no">
+        <type>typename T::primary_key_type</type>
+        <definition>using learnql::core::ReadOnlyTable&lt; T, BatchSize &gt;::primary_key_type =  typename T::primary_key_type</definition>
+        <argsstring></argsstring>
+        <name>primary_key_type</name>
+        <qualifiedname>learnql::core::ReadOnlyTable::primary_key_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/ReadOnlyTable.hpp" line="39" column="5" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/ReadOnlyTable.hpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classlearnql_1_1core_1_1_read_only_table_1ae37bab75b39fd1450e5ae13bce8a60b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class catalog::SystemCatalog</definition>
+        <argsstring></argsstring>
+        <name>catalog::SystemCatalog</name>
+        <qualifiedname>learnql::core::ReadOnlyTable::SystemCatalog</qualifiedname>
+        <param>
+          <type><ref refid="classlearnql_1_1catalog_1_1_system_catalog" kindref="compound">catalog::SystemCatalog</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/ReadOnlyTable.hpp" line="175" column="18" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/ReadOnlyTable.hpp" bodystart="175" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classlearnql_1_1core_1_1_read_only_table_1a3f1a644bcb00ff74c72cc4c681c04bf9" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="classlearnql_1_1core_1_1_table" kindref="compound">Table</ref>&lt; T, BatchSize &gt; &gt;</type>
+        <definition>std::unique_ptr&lt;Table&lt;T, BatchSize&gt; &gt; learnql::core::ReadOnlyTable&lt; T, BatchSize &gt;::table_</definition>
+        <argsstring></argsstring>
+        <name>table_</name>
+        <qualifiedname>learnql::core::ReadOnlyTable::table_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/ReadOnlyTable.hpp" line="193" column="21" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/ReadOnlyTable.hpp" bodystart="193" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlearnql_1_1core_1_1_read_only_table_1a21ec44751585e1346654156528ec18bd" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>learnql::core::ReadOnlyTable&lt; T, BatchSize &gt;::ReadOnlyTable</definition>
+        <argsstring>(std::shared_ptr&lt; storage::StorageEngine &gt; storage, std::string table_name, uint64_t root_page_id=0)</argsstring>
+        <name>ReadOnlyTable</name>
+        <qualifiedname>learnql::core::ReadOnlyTable::ReadOnlyTable</qualifiedname>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classlearnql_1_1storage_1_1_storage_engine" kindref="compound">storage::StorageEngine</ref> &gt;</type>
+          <declname>storage</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>table_name</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>root_page_id</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Construct read-only table from storage parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>storage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Shared pointer to storage engine </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>table_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the table </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>root_page_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Root page ID for the B-tree index (0 for new table) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/ReadOnlyTable.hpp" line="47" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/ReadOnlyTable.hpp" bodystart="47" bodyend="50"/>
+        <referencedby refid="classlearnql_1_1core_1_1_read_only_table_1ab240ccedc8de66a071bcdf81f6485e28">learnql::core::ReadOnlyTable&lt; T, BatchSize &gt;::operator=</referencedby>
+        <referencedby refid="classlearnql_1_1core_1_1_read_only_table_1a6814f3460027330555177ff347487e7b">learnql::core::ReadOnlyTable&lt; T, BatchSize &gt;::operator=</referencedby>
+        <referencedby refid="classlearnql_1_1core_1_1_read_only_table_1ab2b496ad392be2ed45c366c6596b4f8d">learnql::core::ReadOnlyTable&lt; T, BatchSize &gt;::ReadOnlyTable</referencedby>
+        <referencedby refid="classlearnql_1_1core_1_1_read_only_table_1a87f0e660867e1fd5c2b573068acc6d11">learnql::core::ReadOnlyTable&lt; T, BatchSize &gt;::ReadOnlyTable</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1core_1_1_read_only_table_1ab2b496ad392be2ed45c366c6596b4f8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>learnql::core::ReadOnlyTable&lt; T, BatchSize &gt;::ReadOnlyTable</definition>
+        <argsstring>(const ReadOnlyTable &amp;)=delete</argsstring>
+        <name>ReadOnlyTable</name>
+        <qualifiedname>learnql::core::ReadOnlyTable::ReadOnlyTable</qualifiedname>
+        <param>
+          <type>const ReadOnlyTable &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/ReadOnlyTable.hpp" line="53" column="5"/>
+        <references refid="classlearnql_1_1core_1_1_read_only_table_1a21ec44751585e1346654156528ec18bd" compoundref="_read_only_table_8hpp" startline="47" endline="50">learnql::core::ReadOnlyTable&lt; T, BatchSize &gt;::ReadOnlyTable</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1core_1_1_read_only_table_1ab240ccedc8de66a071bcdf81f6485e28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classlearnql_1_1core_1_1_read_only_table_1a21ec44751585e1346654156528ec18bd" kindref="member">ReadOnlyTable</ref> &amp;</type>
+        <definition>ReadOnlyTable &amp; learnql::core::ReadOnlyTable&lt; T, BatchSize &gt;::operator=</definition>
+        <argsstring>(const ReadOnlyTable &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <qualifiedname>learnql::core::ReadOnlyTable::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classlearnql_1_1core_1_1_read_only_table_1a21ec44751585e1346654156528ec18bd" kindref="member">ReadOnlyTable</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/ReadOnlyTable.hpp" line="54" column="19"/>
+        <references refid="classlearnql_1_1core_1_1_read_only_table_1a21ec44751585e1346654156528ec18bd" compoundref="_read_only_table_8hpp" startline="47" endline="50">learnql::core::ReadOnlyTable&lt; T, BatchSize &gt;::ReadOnlyTable</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1core_1_1_read_only_table_1a87f0e660867e1fd5c2b573068acc6d11" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>learnql::core::ReadOnlyTable&lt; T, BatchSize &gt;::ReadOnlyTable</definition>
+        <argsstring>(ReadOnlyTable &amp;&amp;) noexcept=default</argsstring>
+        <name>ReadOnlyTable</name>
+        <qualifiedname>learnql::core::ReadOnlyTable::ReadOnlyTable</qualifiedname>
+        <param>
+          <type>ReadOnlyTable &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/ReadOnlyTable.hpp" line="57" column="5"/>
+        <references refid="classlearnql_1_1core_1_1_read_only_table_1a21ec44751585e1346654156528ec18bd" compoundref="_read_only_table_8hpp" startline="47" endline="50">learnql::core::ReadOnlyTable&lt; T, BatchSize &gt;::ReadOnlyTable</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1core_1_1_read_only_table_1a6814f3460027330555177ff347487e7b" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type><ref refid="classlearnql_1_1core_1_1_read_only_table_1a21ec44751585e1346654156528ec18bd" kindref="member">ReadOnlyTable</ref> &amp;</type>
+        <definition>ReadOnlyTable &amp; learnql::core::ReadOnlyTable&lt; T, BatchSize &gt;::operator=</definition>
+        <argsstring>(ReadOnlyTable &amp;&amp;) noexcept=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>learnql::core::ReadOnlyTable::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classlearnql_1_1core_1_1_read_only_table_1a21ec44751585e1346654156528ec18bd" kindref="member">ReadOnlyTable</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/ReadOnlyTable.hpp" line="58" column="19"/>
+        <references refid="classlearnql_1_1core_1_1_read_only_table_1a21ec44751585e1346654156528ec18bd" compoundref="_read_only_table_8hpp" startline="47" endline="50">learnql::core::ReadOnlyTable&lt; T, BatchSize &gt;::ReadOnlyTable</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1core_1_1_read_only_table_1af220009df7ce9154e5b81cd6cb44a782" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::optional&lt; T &gt;</type>
+        <definition>std::optional&lt; T &gt; learnql::core::ReadOnlyTable&lt; T, BatchSize &gt;::find</definition>
+        <argsstring>(const primary_key_type &amp;key) const</argsstring>
+        <name>find</name>
+        <qualifiedname>learnql::core::ReadOnlyTable::find</qualifiedname>
+        <param>
+          <type>const <ref refid="classlearnql_1_1core_1_1_read_only_table_1a3a0a3d4526b891a3767c54775143ed06" kindref="member">primary_key_type</ref> &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Find record by primary key. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Primary key to search for </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Optional containing record if found </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/ReadOnlyTable.hpp" line="65" column="19" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/ReadOnlyTable.hpp" bodystart="65" bodyend="67"/>
+        <references refid="classlearnql_1_1core_1_1_read_only_table_1af220009df7ce9154e5b81cd6cb44a782" compoundref="_read_only_table_8hpp" startline="65" endline="67">learnql::core::ReadOnlyTable&lt; T, BatchSize &gt;::find</references>
+        <referencedby refid="classlearnql_1_1core_1_1_read_only_table_1af220009df7ce9154e5b81cd6cb44a782" compoundref="_read_only_table_8hpp" startline="65" endline="67">learnql::core::ReadOnlyTable&lt; T, BatchSize &gt;::find</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1core_1_1_read_only_table_1af573accc6f4c4307c2ace6b5993e5f57" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool learnql::core::ReadOnlyTable&lt; T, BatchSize &gt;::contains</definition>
+        <argsstring>(const primary_key_type &amp;key) const</argsstring>
+        <name>contains</name>
+        <qualifiedname>learnql::core::ReadOnlyTable::contains</qualifiedname>
+        <param>
+          <type>const <ref refid="classlearnql_1_1core_1_1_read_only_table_1a3a0a3d4526b891a3767c54775143ed06" kindref="member">primary_key_type</ref> &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Check if record with given key exists. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Primary key to check </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if record exists </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/ReadOnlyTable.hpp" line="74" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/ReadOnlyTable.hpp" bodystart="74" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1core_1_1_read_only_table_1ac9ed24b787bc5582743693e38afddd9d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classlearnql_1_1ranges_1_1_proxy_vector" kindref="compound">ranges::ProxyVector</ref>&lt; T, BatchSize &gt;</type>
+        <definition>ranges::ProxyVector&lt; T, BatchSize &gt; learnql::core::ReadOnlyTable&lt; T, BatchSize &gt;::get_all</definition>
+        <argsstring>() const</argsstring>
+        <name>get_all</name>
+        <qualifiedname>learnql::core::ReadOnlyTable::get_all</qualifiedname>
+        <briefdescription>
+<para>Get all records with lazy batch loading. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>ProxyVector for memory-efficient iteration </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/ReadOnlyTable.hpp" line="82" column="25" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/ReadOnlyTable.hpp" bodystart="82" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1core_1_1_read_only_table_1a50007d2e9803bce64527744a1c030534" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Predicate</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classlearnql_1_1ranges_1_1_proxy_vector" kindref="compound">ranges::ProxyVector</ref>&lt; T, BatchSize &gt;</type>
+        <definition>ranges::ProxyVector&lt; T, BatchSize &gt; learnql::core::ReadOnlyTable&lt; T, BatchSize &gt;::find_if</definition>
+        <argsstring>(Predicate pred) const</argsstring>
+        <name>find_if</name>
+        <qualifiedname>learnql::core::ReadOnlyTable::find_if</qualifiedname>
+        <param>
+          <type>Predicate</type>
+          <declname>pred</declname>
+        </param>
+    <requiresclause>concepts::Predicate&lt;Predicate, T&gt;    </requiresclause>
+        <briefdescription>
+<para>Find records matching predicate (lambda function). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Predicate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Function type taking const T&amp; and returning bool </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pred</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Predicate function </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>ProxyVector of matching records </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/ReadOnlyTable.hpp" line="94" column="25" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/ReadOnlyTable.hpp" bodystart="94" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1core_1_1_read_only_table_1aeaccfbe0f983cdef639bf34a1d7f838d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename ExprType</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classlearnql_1_1ranges_1_1_proxy_vector" kindref="compound">ranges::ProxyVector</ref>&lt; T, BatchSize &gt;</type>
+        <definition>ranges::ProxyVector&lt; T, BatchSize &gt; learnql::core::ReadOnlyTable&lt; T, BatchSize &gt;::where</definition>
+        <argsstring>(const ExprType &amp;expr) const</argsstring>
+        <name>where</name>
+        <qualifiedname>learnql::core::ReadOnlyTable::where</qualifiedname>
+        <param>
+          <type>const ExprType &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+<para>Filter records using expression template. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>ExprType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Expression template type </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Expression to evaluate </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>ProxyVector of matching records </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/ReadOnlyTable.hpp" line="105" column="25" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/ReadOnlyTable.hpp" bodystart="105" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1core_1_1_read_only_table_1ad8a2dcf83222a13772cf953b46282a14" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classlearnql_1_1ranges_1_1_query_view" kindref="compound">ranges::QueryView</ref>&lt; T &gt;</type>
+        <definition>ranges::QueryView&lt; T &gt; learnql::core::ReadOnlyTable&lt; T, BatchSize &gt;::view</definition>
+        <argsstring>() const</argsstring>
+        <name>view</name>
+        <qualifiedname>learnql::core::ReadOnlyTable::view</qualifiedname>
+        <briefdescription>
+<para>Get range view of all records. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>QueryView for use with C++20 ranges </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/ReadOnlyTable.hpp" line="113" column="23" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/ReadOnlyTable.hpp" bodystart="113" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1core_1_1_read_only_table_1ad8f54ee0801ed840ea3856571c3e5f66" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename ExprType</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto learnql::core::ReadOnlyTable&lt; T, BatchSize &gt;::view_where</definition>
+        <argsstring>(const ExprType &amp;expr) const</argsstring>
+        <name>view_where</name>
+        <qualifiedname>learnql::core::ReadOnlyTable::view_where</qualifiedname>
+        <param>
+          <type>const ExprType &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+<para>Get range view of records matching expression. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>ExprType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Expression template type </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Expression to evaluate </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Filtered QueryView </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/ReadOnlyTable.hpp" line="124" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/ReadOnlyTable.hpp" bodystart="124" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1core_1_1_read_only_table_1add6794551a461049ec73b94cd3abd33d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classlearnql_1_1ranges_1_1_query_view" kindref="compound">ranges::QueryView</ref>&lt; T &gt;</type>
+        <definition>ranges::QueryView&lt; T &gt; learnql::core::ReadOnlyTable&lt; T, BatchSize &gt;::all</definition>
+        <argsstring>() const</argsstring>
+        <name>all</name>
+        <qualifiedname>learnql::core::ReadOnlyTable::all</qualifiedname>
+        <briefdescription>
+<para>Alias for <ref refid="classlearnql_1_1core_1_1_read_only_table_1ad8a2dcf83222a13772cf953b46282a14" kindref="member">view()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/ReadOnlyTable.hpp" line="131" column="23" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/ReadOnlyTable.hpp" bodystart="131" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1core_1_1_read_only_table_1a14b87d48f563f4fa3dfff956ad8b03c6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>std::size_t learnql::core::ReadOnlyTable&lt; T, BatchSize &gt;::size</definition>
+        <argsstring>() const</argsstring>
+        <name>size</name>
+        <qualifiedname>learnql::core::ReadOnlyTable::size</qualifiedname>
+        <briefdescription>
+<para>Get number of records in table. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Record count </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/ReadOnlyTable.hpp" line="139" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/ReadOnlyTable.hpp" bodystart="139" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1core_1_1_read_only_table_1a5d6c518412b2c266ba2643d2fe96867d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool learnql::core::ReadOnlyTable&lt; T, BatchSize &gt;::empty</definition>
+        <argsstring>() const</argsstring>
+        <name>empty</name>
+        <qualifiedname>learnql::core::ReadOnlyTable::empty</qualifiedname>
+        <briefdescription>
+<para>Check if table is empty. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if no records </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/ReadOnlyTable.hpp" line="147" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/ReadOnlyTable.hpp" bodystart="147" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1core_1_1_read_only_table_1a27e7936d3bc94f9c82add98b4118f800" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::core::ReadOnlyTable&lt; T, BatchSize &gt;::insert</definition>
+        <argsstring>(const T &amp;)=delete</argsstring>
+        <name>insert</name>
+        <qualifiedname>learnql::core::ReadOnlyTable::insert</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+        </param>
+        <briefdescription>
+<para>Insert is not allowed on read-only tables. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/ReadOnlyTable.hpp" line="156" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1core_1_1_read_only_table_1aff92e4cd5550a6e8cb0b995922e53101" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::core::ReadOnlyTable&lt; T, BatchSize &gt;::update</definition>
+        <argsstring>(const T &amp;)=delete</argsstring>
+        <name>update</name>
+        <qualifiedname>learnql::core::ReadOnlyTable::update</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+        </param>
+        <briefdescription>
+<para>Update is not allowed on read-only tables. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/ReadOnlyTable.hpp" line="161" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1core_1_1_read_only_table_1ad86572c4ec13295f3d8acd46de8e7224" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::core::ReadOnlyTable&lt; T, BatchSize &gt;::remove</definition>
+        <argsstring>(const primary_key_type &amp;)=delete</argsstring>
+        <name>remove</name>
+        <qualifiedname>learnql::core::ReadOnlyTable::remove</qualifiedname>
+        <param>
+          <type>const <ref refid="classlearnql_1_1core_1_1_read_only_table_1a3a0a3d4526b891a3767c54775143ed06" kindref="member">primary_key_type</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Remove is not allowed on read-only tables. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/ReadOnlyTable.hpp" line="166" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1core_1_1_read_only_table_1ada20d1d4e1199a74222fb4edf394dce8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::core::ReadOnlyTable&lt; T, BatchSize &gt;::clear</definition>
+        <argsstring>()=delete</argsstring>
+        <name>clear</name>
+        <qualifiedname>learnql::core::ReadOnlyTable::clear</qualifiedname>
+        <briefdescription>
+<para>Clear is not allowed on read-only tables. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/ReadOnlyTable.hpp" line="171" column="10"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classlearnql_1_1core_1_1_read_only_table_1a392dfa45c993e40adcca61f70aad0f63" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classlearnql_1_1core_1_1_table" kindref="compound">Table</ref>&lt; T, BatchSize &gt; &amp;</type>
+        <definition>Table&lt; T, BatchSize &gt; &amp; learnql::core::ReadOnlyTable&lt; T, BatchSize &gt;::internal_table</definition>
+        <argsstring>()</argsstring>
+        <name>internal_table</name>
+        <qualifiedname>learnql::core::ReadOnlyTable::internal_table</qualifiedname>
+        <briefdescription>
+<para>Get mutable access to internal table (SystemCatalog only). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Reference to wrapped table </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/ReadOnlyTable.hpp" line="181" column="11" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/ReadOnlyTable.hpp" bodystart="181" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1core_1_1_read_only_table_1aaf1cb81a5ed9a66e1491798108cf6286" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classlearnql_1_1core_1_1_table" kindref="compound">Table</ref>&lt; T, BatchSize &gt; &amp;</type>
+        <definition>const Table&lt; T, BatchSize &gt; &amp; learnql::core::ReadOnlyTable&lt; T, BatchSize &gt;::internal_table</definition>
+        <argsstring>() const</argsstring>
+        <name>internal_table</name>
+        <qualifiedname>learnql::core::ReadOnlyTable::internal_table</qualifiedname>
+        <briefdescription>
+<para>Get const access to internal table (SystemCatalog only). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Const reference to wrapped table </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/ReadOnlyTable.hpp" line="189" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/ReadOnlyTable.hpp" bodystart="189" bodyend="191"/>
+      </memberdef>
+    </sectiondef>
+    <requiresclause>concepts::Queryable&lt;T, <ref refid="classlearnql_1_1serialization_1_1_binary_writer" kindref="compound">serialization::BinaryWriter</ref>, <ref refid="classlearnql_1_1serialization_1_1_binary_reader" kindref="compound">serialization::BinaryReader</ref>&gt;    </requiresclause>
+    <briefdescription>
+<para>Read-only wrapper around <ref refid="classlearnql_1_1core_1_1_table" kindref="compound">Table&lt;T&gt;</ref> that prevents mutations. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of objects stored (must satisfy Queryable concept) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>BatchSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of records to load per batch (default: 10)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+This class provides a compile-time enforced read-only view of a table. All mutation methods (insert, update, remove, clear) are deleted. Used for system catalog tables to prevent accidental modification.</para>
+<para>Example: <programlisting><codeline><highlight class="normal"><ref refid="classlearnql_1_1core_1_1_read_only_table_1a21ec44751585e1346654156528ec18bd" kindref="member">ReadOnlyTable&lt;TableMetadata&gt;</ref><sp/>tables(std::move(sys_tables));</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>large<sp/>=<sp/>tables.where(TableMetadata::record_count<sp/>&gt;<sp/>1000);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>tables.insert(meta);<sp/>//<sp/>Compile<sp/>error!</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>learnql::core::ReadOnlyTable&lt; T, BatchSize &gt;</label>
+        <link refid="classlearnql_1_1core_1_1_read_only_table"/>
+      </node>
+      <node id="3">
+        <label>learnql::core::ReadOnlyTable&lt; learnql::catalog::FieldMetadata &gt;</label>
+        <link refid="classlearnql_1_1core_1_1_read_only_table"/>
+        <childnode refid="1" relation="template-instance">
+          <edgelabel>&lt; learnql::catalog::FieldMetadata &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>learnql::core::ReadOnlyTable&lt; learnql::catalog::IndexMetadata &gt;</label>
+        <link refid="classlearnql_1_1core_1_1_read_only_table"/>
+        <childnode refid="1" relation="template-instance">
+          <edgelabel>&lt; learnql::catalog::IndexMetadata &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>learnql::core::ReadOnlyTable&lt; learnql::catalog::TableMetadata &gt;</label>
+        <link refid="classlearnql_1_1core_1_1_read_only_table"/>
+        <childnode refid="1" relation="template-instance">
+          <edgelabel>&lt; learnql::catalog::TableMetadata &gt;</edgelabel>
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/ReadOnlyTable.hpp" line="36" column="1" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/ReadOnlyTable.hpp" bodystart="36" bodyend="194"/>
+    <listofallmembers>
+      <member refid="classlearnql_1_1core_1_1_read_only_table_1add6794551a461049ec73b94cd3abd33d" prot="public" virt="non-virtual"><scope>learnql::core::ReadOnlyTable</scope><name>all</name></member>
+      <member refid="classlearnql_1_1core_1_1_read_only_table_1ae37bab75b39fd1450e5ae13bce8a60b1" prot="public" virt="non-virtual"><scope>learnql::core::ReadOnlyTable</scope><name>catalog::SystemCatalog</name></member>
+      <member refid="classlearnql_1_1core_1_1_read_only_table_1ada20d1d4e1199a74222fb4edf394dce8" prot="public" virt="non-virtual"><scope>learnql::core::ReadOnlyTable</scope><name>clear</name></member>
+      <member refid="classlearnql_1_1core_1_1_read_only_table_1af573accc6f4c4307c2ace6b5993e5f57" prot="public" virt="non-virtual"><scope>learnql::core::ReadOnlyTable</scope><name>contains</name></member>
+      <member refid="classlearnql_1_1core_1_1_read_only_table_1a5d6c518412b2c266ba2643d2fe96867d" prot="public" virt="non-virtual"><scope>learnql::core::ReadOnlyTable</scope><name>empty</name></member>
+      <member refid="classlearnql_1_1core_1_1_read_only_table_1af220009df7ce9154e5b81cd6cb44a782" prot="public" virt="non-virtual"><scope>learnql::core::ReadOnlyTable</scope><name>find</name></member>
+      <member refid="classlearnql_1_1core_1_1_read_only_table_1a50007d2e9803bce64527744a1c030534" prot="public" virt="non-virtual"><scope>learnql::core::ReadOnlyTable</scope><name>find_if</name></member>
+      <member refid="classlearnql_1_1core_1_1_read_only_table_1ac9ed24b787bc5582743693e38afddd9d" prot="public" virt="non-virtual"><scope>learnql::core::ReadOnlyTable</scope><name>get_all</name></member>
+      <member refid="classlearnql_1_1core_1_1_read_only_table_1a27e7936d3bc94f9c82add98b4118f800" prot="public" virt="non-virtual"><scope>learnql::core::ReadOnlyTable</scope><name>insert</name></member>
+      <member refid="classlearnql_1_1core_1_1_read_only_table_1a392dfa45c993e40adcca61f70aad0f63" prot="private" virt="non-virtual"><scope>learnql::core::ReadOnlyTable</scope><name>internal_table</name></member>
+      <member refid="classlearnql_1_1core_1_1_read_only_table_1aaf1cb81a5ed9a66e1491798108cf6286" prot="private" virt="non-virtual"><scope>learnql::core::ReadOnlyTable</scope><name>internal_table</name></member>
+      <member refid="classlearnql_1_1core_1_1_read_only_table_1ab240ccedc8de66a071bcdf81f6485e28" prot="public" virt="non-virtual"><scope>learnql::core::ReadOnlyTable</scope><name>operator=</name></member>
+      <member refid="classlearnql_1_1core_1_1_read_only_table_1a6814f3460027330555177ff347487e7b" prot="public" virt="non-virtual"><scope>learnql::core::ReadOnlyTable</scope><name>operator=</name></member>
+      <member refid="classlearnql_1_1core_1_1_read_only_table_1a3a0a3d4526b891a3767c54775143ed06" prot="public" virt="non-virtual"><scope>learnql::core::ReadOnlyTable</scope><name>primary_key_type</name></member>
+      <member refid="classlearnql_1_1core_1_1_read_only_table_1a21ec44751585e1346654156528ec18bd" prot="public" virt="non-virtual"><scope>learnql::core::ReadOnlyTable</scope><name>ReadOnlyTable</name></member>
+      <member refid="classlearnql_1_1core_1_1_read_only_table_1ab2b496ad392be2ed45c366c6596b4f8d" prot="public" virt="non-virtual"><scope>learnql::core::ReadOnlyTable</scope><name>ReadOnlyTable</name></member>
+      <member refid="classlearnql_1_1core_1_1_read_only_table_1a87f0e660867e1fd5c2b573068acc6d11" prot="public" virt="non-virtual"><scope>learnql::core::ReadOnlyTable</scope><name>ReadOnlyTable</name></member>
+      <member refid="classlearnql_1_1core_1_1_read_only_table_1ad86572c4ec13295f3d8acd46de8e7224" prot="public" virt="non-virtual"><scope>learnql::core::ReadOnlyTable</scope><name>remove</name></member>
+      <member refid="classlearnql_1_1core_1_1_read_only_table_1a14b87d48f563f4fa3dfff956ad8b03c6" prot="public" virt="non-virtual"><scope>learnql::core::ReadOnlyTable</scope><name>size</name></member>
+      <member refid="classlearnql_1_1core_1_1_read_only_table_1a3f1a644bcb00ff74c72cc4c681c04bf9" prot="private" virt="non-virtual"><scope>learnql::core::ReadOnlyTable</scope><name>table_</name></member>
+      <member refid="classlearnql_1_1core_1_1_read_only_table_1aff92e4cd5550a6e8cb0b995922e53101" prot="public" virt="non-virtual"><scope>learnql::core::ReadOnlyTable</scope><name>update</name></member>
+      <member refid="classlearnql_1_1core_1_1_read_only_table_1a8dbe675c21bdc564980175f36af02982" prot="public" virt="non-virtual"><scope>learnql::core::ReadOnlyTable</scope><name>value_type</name></member>
+      <member refid="classlearnql_1_1core_1_1_read_only_table_1ad8a2dcf83222a13772cf953b46282a14" prot="public" virt="non-virtual"><scope>learnql::core::ReadOnlyTable</scope><name>view</name></member>
+      <member refid="classlearnql_1_1core_1_1_read_only_table_1ad8f54ee0801ed840ea3856571c3e5f66" prot="public" virt="non-virtual"><scope>learnql::core::ReadOnlyTable</scope><name>view_where</name></member>
+      <member refid="classlearnql_1_1core_1_1_read_only_table_1aeaccfbe0f983cdef639bf34a1d7f838d" prot="public" virt="non-virtual"><scope>learnql::core::ReadOnlyTable</scope><name>where</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

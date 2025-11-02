@@ -1,0 +1,266 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classlearnql_1_1ranges_1_1_query_view" kind="class" language="C++" prot="public">
+    <compoundname>learnql::ranges::QueryView</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">std::ranges::view_interface&lt; QueryView&lt; T &gt; &gt;</basecompoundref>
+    <includes refid="_query_view_8hpp" local="no">QueryView.hpp</includes>
+    <innerclass refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator" prot="public">learnql::ranges::QueryView::Iterator</innerclass>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classlearnql_1_1ranges_1_1_query_view_1aa04e8a8e6ec2a69c1f310229663f1351" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; std::vector&lt; T &gt; &gt;</type>
+        <definition>std::shared_ptr&lt;std::vector&lt;T&gt; &gt; learnql::ranges::QueryView&lt; T &gt;::data_</definition>
+        <argsstring></argsstring>
+        <name>data_</name>
+        <qualifiedname>learnql::ranges::QueryView::data_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/QueryView.hpp" line="146" column="21" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/QueryView.hpp" bodystart="146" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlearnql_1_1ranges_1_1_query_view_1a78f655105371811918dbe275d75cbfb7" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>learnql::ranges::QueryView&lt; T &gt;::QueryView</definition>
+        <argsstring>(std::vector&lt; T &gt; data)</argsstring>
+        <name>QueryView</name>
+        <qualifiedname>learnql::ranges::QueryView::QueryView</qualifiedname>
+        <param>
+          <type>std::vector&lt; T &gt;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a query view from a vector of results. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The query result data </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/QueryView.hpp" line="81" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/QueryView.hpp" bodystart="81" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1ranges_1_1_query_view_1a42e1e1e31d9464320d04a4fbd4198022" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>std::size_t</type>
+            <declname>BatchSize</declname>
+            <defname>BatchSize</defname>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>learnql::ranges::QueryView&lt; T &gt;::QueryView</definition>
+        <argsstring>(ProxyVector&lt; T, BatchSize &gt; proxy_data)</argsstring>
+        <name>QueryView</name>
+        <qualifiedname>learnql::ranges::QueryView::QueryView</qualifiedname>
+        <param>
+          <type><ref refid="classlearnql_1_1ranges_1_1_proxy_vector" kindref="compound">ProxyVector</ref>&lt; T, BatchSize &gt;</type>
+          <declname>proxy_data</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a query view from a <ref refid="classlearnql_1_1ranges_1_1_proxy_vector" kindref="compound">ProxyVector</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>BatchSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The batch size of the <ref refid="classlearnql_1_1ranges_1_1_proxy_vector" kindref="compound">ProxyVector</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>proxy_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The proxy vector to materialize</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Note: This materializes the <ref refid="classlearnql_1_1ranges_1_1_proxy_vector" kindref="compound">ProxyVector</ref> into memory. For large datasets, prefer iterating over the <ref refid="classlearnql_1_1ranges_1_1_proxy_vector" kindref="compound">ProxyVector</ref> directly. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/QueryView.hpp" line="93" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/QueryView.hpp" bodystart="93" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1ranges_1_1_query_view_1a90ffe2d3956ac4dfb7c7c32b4488f5dc" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator" kindref="compound">Iterator</ref></type>
+        <definition>Iterator learnql::ranges::QueryView&lt; T &gt;::begin</definition>
+        <argsstring>()</argsstring>
+        <name>begin</name>
+        <qualifiedname>learnql::ranges::QueryView::begin</qualifiedname>
+        <briefdescription>
+<para>Gets the begin iterator. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/QueryView.hpp" line="99" column="15" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/QueryView.hpp" bodystart="99" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1ranges_1_1_query_view_1a10c1c86b164c23a5108032f3d2a6c380" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator" kindref="compound">Iterator</ref></type>
+        <definition>Iterator learnql::ranges::QueryView&lt; T &gt;::end</definition>
+        <argsstring>()</argsstring>
+        <name>end</name>
+        <qualifiedname>learnql::ranges::QueryView::end</qualifiedname>
+        <briefdescription>
+<para>Gets the end iterator. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/QueryView.hpp" line="106" column="15" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/QueryView.hpp" bodystart="106" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1ranges_1_1_query_view_1a205f774918f1378671d4cccc4a7e8327" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator" kindref="compound">Iterator</ref></type>
+        <definition>Iterator learnql::ranges::QueryView&lt; T &gt;::begin</definition>
+        <argsstring>() const</argsstring>
+        <name>begin</name>
+        <qualifiedname>learnql::ranges::QueryView::begin</qualifiedname>
+        <briefdescription>
+<para>Gets the begin iterator (const version). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/QueryView.hpp" line="113" column="15" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/QueryView.hpp" bodystart="113" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1ranges_1_1_query_view_1a51ef32ad72df64d3c1f20d2cdb153c76" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classlearnql_1_1ranges_1_1_query_view_1_1_iterator" kindref="compound">Iterator</ref></type>
+        <definition>Iterator learnql::ranges::QueryView&lt; T &gt;::end</definition>
+        <argsstring>() const</argsstring>
+        <name>end</name>
+        <qualifiedname>learnql::ranges::QueryView::end</qualifiedname>
+        <briefdescription>
+<para>Gets the end iterator (const version). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/QueryView.hpp" line="120" column="15" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/QueryView.hpp" bodystart="120" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1ranges_1_1_query_view_1aa18830a956e21a93a25c3d00ea189b00" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool learnql::ranges::QueryView&lt; T &gt;::empty</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>empty</name>
+        <qualifiedname>learnql::ranges::QueryView::empty</qualifiedname>
+        <briefdescription>
+<para>Checks if the view is empty. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/QueryView.hpp" line="127" column="11" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/QueryView.hpp" bodystart="127" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1ranges_1_1_query_view_1ab49156b1cf5ddc0e84cc458a9434b2fd" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>std::size_t learnql::ranges::QueryView&lt; T &gt;::size</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>size</name>
+        <qualifiedname>learnql::ranges::QueryView::size</qualifiedname>
+        <briefdescription>
+<para>Gets the size of the view. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/QueryView.hpp" line="134" column="18" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/QueryView.hpp" bodystart="134" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1ranges_1_1_query_view_1a2353064a7c5f5b82eeeb79d52e91780d" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; T &gt;</type>
+        <definition>std::vector&lt; T &gt; learnql::ranges::QueryView&lt; T &gt;::to_vector</definition>
+        <argsstring>() const</argsstring>
+        <name>to_vector</name>
+        <qualifiedname>learnql::ranges::QueryView::to_vector</qualifiedname>
+        <briefdescription>
+<para>Materializes the view into a vector. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/QueryView.hpp" line="141" column="18" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/QueryView.hpp" bodystart="141" bodyend="143"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>A custom range view that wraps query results. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The element type</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+This view provides lazy access to query results and integrates seamlessly with C++20 ranges library.</para>
+<para>Example: <programlisting><codeline><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>view<sp/>=<sp/><ref refid="classlearnql_1_1ranges_1_1_query_view_1a78f655105371811918dbe275d75cbfb7" kindref="member">QueryView</ref>(students.all());</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>result<sp/>=<sp/>view</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>|<sp/>std::views::filter([](</highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>s)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>s.age<sp/>&gt;<sp/>20;<sp/>})</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>|<sp/>std::views::transform([](</highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>s)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>s.name;<sp/>});</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>learnql::ranges::QueryView&lt; T &gt;</label>
+        <link refid="classlearnql_1_1ranges_1_1_query_view"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>std::ranges::view_interface&lt; QueryView&lt; T &gt; &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>learnql::ranges::QueryView&lt; T &gt;</label>
+        <link refid="classlearnql_1_1ranges_1_1_query_view"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>std::ranges::view_interface&lt; QueryView&lt; T &gt; &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/QueryView.hpp" line="28" column="1" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/QueryView.hpp" bodystart="28" bodyend="147"/>
+    <listofallmembers>
+      <member refid="classlearnql_1_1ranges_1_1_query_view_1a90ffe2d3956ac4dfb7c7c32b4488f5dc" prot="public" virt="non-virtual"><scope>learnql::ranges::QueryView</scope><name>begin</name></member>
+      <member refid="classlearnql_1_1ranges_1_1_query_view_1a205f774918f1378671d4cccc4a7e8327" prot="public" virt="non-virtual"><scope>learnql::ranges::QueryView</scope><name>begin</name></member>
+      <member refid="classlearnql_1_1ranges_1_1_query_view_1aa04e8a8e6ec2a69c1f310229663f1351" prot="private" virt="non-virtual"><scope>learnql::ranges::QueryView</scope><name>data_</name></member>
+      <member refid="classlearnql_1_1ranges_1_1_query_view_1aa18830a956e21a93a25c3d00ea189b00" prot="public" virt="non-virtual"><scope>learnql::ranges::QueryView</scope><name>empty</name></member>
+      <member refid="classlearnql_1_1ranges_1_1_query_view_1a10c1c86b164c23a5108032f3d2a6c380" prot="public" virt="non-virtual"><scope>learnql::ranges::QueryView</scope><name>end</name></member>
+      <member refid="classlearnql_1_1ranges_1_1_query_view_1a51ef32ad72df64d3c1f20d2cdb153c76" prot="public" virt="non-virtual"><scope>learnql::ranges::QueryView</scope><name>end</name></member>
+      <member refid="classlearnql_1_1ranges_1_1_query_view_1a78f655105371811918dbe275d75cbfb7" prot="public" virt="non-virtual"><scope>learnql::ranges::QueryView</scope><name>QueryView</name></member>
+      <member refid="classlearnql_1_1ranges_1_1_query_view_1a42e1e1e31d9464320d04a4fbd4198022" prot="public" virt="non-virtual"><scope>learnql::ranges::QueryView</scope><name>QueryView</name></member>
+      <member refid="classlearnql_1_1ranges_1_1_query_view_1ab49156b1cf5ddc0e84cc458a9434b2fd" prot="public" virt="non-virtual"><scope>learnql::ranges::QueryView</scope><name>size</name></member>
+      <member refid="classlearnql_1_1ranges_1_1_query_view_1a2353064a7c5f5b82eeeb79d52e91780d" prot="public" virt="non-virtual"><scope>learnql::ranges::QueryView</scope><name>to_vector</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

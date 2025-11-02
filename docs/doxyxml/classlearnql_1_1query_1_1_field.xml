@@ -1,0 +1,659 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classlearnql_1_1query_1_1_field" kind="class" language="C++" prot="public">
+    <compoundname>learnql::query::Field</compoundname>
+    <includes refid="_field_8hpp" local="no">Field.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+      <param>
+        <type>typename FieldType</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classlearnql_1_1query_1_1_field_1a22f6e81d107db6e0409d2bd76147aa00" prot="public" static="no">
+        <type><ref refid="classlearnql_1_1query_1_1expressions_1_1_field_expr" kindref="compound">FieldExpr</ref>&lt; T, FieldType &gt;</type>
+        <definition>using learnql::query::Field&lt; T, FieldType &gt;::field_expr_type =  FieldExpr&lt;T, FieldType&gt;</definition>
+        <argsstring></argsstring>
+        <name>field_expr_type</name>
+        <qualifiedname>learnql::query::Field::field_expr_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Field.hpp" line="35" column="5" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Field.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classlearnql_1_1query_1_1_field_1a8221bd370df9bea78e687ee81421aa90" prot="private" static="no" mutable="no">
+        <type><ref refid="classlearnql_1_1query_1_1_field_1a22f6e81d107db6e0409d2bd76147aa00" kindref="member">field_expr_type</ref></type>
+        <definition>field_expr_type learnql::query::Field&lt; T, FieldType &gt;::expr_</definition>
+        <argsstring></argsstring>
+        <name>expr_</name>
+        <qualifiedname>learnql::query::Field::expr_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Field.hpp" line="211" column="21" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Field.hpp" bodystart="211" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlearnql_1_1query_1_1_field_1af971f7e227918f6112e3535ac6a80351" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename MemberFunc</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>learnql::query::Field&lt; T, FieldType &gt;::Field</definition>
+        <argsstring>(std::string name, MemberFunc getter)</argsstring>
+        <name>Field</name>
+        <qualifiedname>learnql::query::Field::Field</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>MemberFunc</type>
+          <declname>getter</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a field from a member function pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classlearnql_1_1query_1_1_field" kindref="compound">Field</ref> name (for debugging) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>getter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Member function pointer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Field.hpp" line="43" column="5" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Field.hpp" bodystart="43" bodyend="44"/>
+        <referencedby refid="classlearnql_1_1query_1_1_field_1a64d7bfb15bc8b8c3571350ef429552fb" compoundref="_field_8hpp" startline="124" endline="128">learnql::query::Field&lt; T, FieldType &gt;::operator!=</referencedby>
+        <referencedby refid="classlearnql_1_1query_1_1_field_1a7a5d3cc4503597337179e9b8f72868cb" compoundref="_field_8hpp" startline="144" endline="148">learnql::query::Field&lt; T, FieldType &gt;::operator&lt;</referencedby>
+        <referencedby refid="classlearnql_1_1query_1_1_field_1aa3aef24aa347bb1e63f08ce766b4ff7d" compoundref="_field_8hpp" startline="164" endline="168">learnql::query::Field&lt; T, FieldType &gt;::operator&lt;=</referencedby>
+        <referencedby refid="classlearnql_1_1query_1_1_field_1acc87f6d788f487ae75b03279c96b8bf4" compoundref="_field_8hpp" startline="94" endline="98">learnql::query::Field&lt; T, FieldType &gt;::operator==</referencedby>
+        <referencedby refid="classlearnql_1_1query_1_1_field_1a7610c8aca12e0b3df08efa009e9f3009" compoundref="_field_8hpp" startline="184" endline="188">learnql::query::Field&lt; T, FieldType &gt;::operator&gt;</referencedby>
+        <referencedby refid="classlearnql_1_1query_1_1_field_1a8391377f9cafd86751ae9b9fc5897360" compoundref="_field_8hpp" startline="204" endline="208">learnql::query::Field&lt; T, FieldType &gt;::operator&gt;=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1query_1_1_field_1ab43466cb9f572cb05b6def356d104eac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>learnql::query::Field&lt; T, FieldType &gt;::Field</definition>
+        <argsstring>(std::string name, std::function&lt; FieldType(const T &amp;)&gt; getter)</argsstring>
+        <name>Field</name>
+        <qualifiedname>learnql::query::Field::Field</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>std::function&lt; FieldType(const T &amp;)&gt;</type>
+          <declname>getter</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a field from a getter function. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classlearnql_1_1query_1_1_field" kindref="compound">Field</ref> name </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>getter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Getter function </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Field.hpp" line="51" column="5" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Field.hpp" bodystart="51" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1query_1_1_field_1a3b07a80f4cc7a476db80804638d4949e" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>const <ref refid="classlearnql_1_1query_1_1_field_1a22f6e81d107db6e0409d2bd76147aa00" kindref="member">field_expr_type</ref> &amp;</type>
+        <definition>const field_expr_type &amp; learnql::query::Field&lt; T, FieldType &gt;::expr</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>expr</name>
+        <qualifiedname>learnql::query::Field::expr</qualifiedname>
+        <briefdescription>
+<para>Gets the underlying field expression. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Field.hpp" line="57" column="28" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Field.hpp" bodystart="57" bodyend="59"/>
+        <referencedby refid="classlearnql_1_1core_1_1_table_1ac85baaf921b5cd20dc717375893edf3d" compoundref="_table_8hpp" startline="1056" endline="1118">learnql::core::Table&lt; T, BatchSize &gt;::add_index</referencedby>
+        <referencedby refid="classlearnql_1_1core_1_1_table_1a5a3bcddb65016955e9df1712cfc180f5" compoundref="_table_8hpp" startline="1127" endline="1148">learnql::core::Table&lt; T, BatchSize &gt;::drop_index</referencedby>
+        <referencedby refid="classlearnql_1_1core_1_1_table_1ad13285b25ac20eb2e6e2d6485c1448c6" compoundref="_table_8hpp" startline="504" endline="531">learnql::core::Table&lt; T, BatchSize &gt;::find_all_by</referencedby>
+        <referencedby refid="classlearnql_1_1core_1_1_table_1afc1c9919edc0c673294ac306a7a51842" compoundref="_table_8hpp" startline="464" endline="484">learnql::core::Table&lt; T, BatchSize &gt;::find_by</referencedby>
+        <referencedby refid="classlearnql_1_1core_1_1_table_1ab418b7c455cc0ffffc46b2343ad55254" compoundref="_table_8hpp" startline="548" endline="561">learnql::core::Table&lt; T, BatchSize &gt;::get_unique_values</referencedby>
+        <referencedby refid="classlearnql_1_1query_1_1_field_1a64d7bfb15bc8b8c3571350ef429552fb" compoundref="_field_8hpp" startline="124" endline="128">learnql::query::Field&lt; T, FieldType &gt;::operator!=</referencedby>
+        <referencedby refid="classlearnql_1_1query_1_1_field_1a7a5d3cc4503597337179e9b8f72868cb" compoundref="_field_8hpp" startline="144" endline="148">learnql::query::Field&lt; T, FieldType &gt;::operator&lt;</referencedby>
+        <referencedby refid="classlearnql_1_1query_1_1_field_1aa3aef24aa347bb1e63f08ce766b4ff7d" compoundref="_field_8hpp" startline="164" endline="168">learnql::query::Field&lt; T, FieldType &gt;::operator&lt;=</referencedby>
+        <referencedby refid="classlearnql_1_1query_1_1_field_1acc87f6d788f487ae75b03279c96b8bf4" compoundref="_field_8hpp" startline="94" endline="98">learnql::query::Field&lt; T, FieldType &gt;::operator==</referencedby>
+        <referencedby refid="classlearnql_1_1query_1_1_field_1a7610c8aca12e0b3df08efa009e9f3009" compoundref="_field_8hpp" startline="184" endline="188">learnql::query::Field&lt; T, FieldType &gt;::operator&gt;</referencedby>
+        <referencedby refid="classlearnql_1_1query_1_1_field_1a8391377f9cafd86751ae9b9fc5897360" compoundref="_field_8hpp" startline="204" endline="208">learnql::query::Field&lt; T, FieldType &gt;::operator&gt;=</referencedby>
+        <referencedby refid="classlearnql_1_1core_1_1_table_1a7bb0b9d084875fbbdeee7ae6152a3c7a" compoundref="_table_8hpp" startline="577" endline="608">learnql::core::Table&lt; T, BatchSize &gt;::range_query</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1query_1_1_field_1a818aef8239b3cc2287062933f8d298b1" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>learnql::query::Field&lt; T, FieldType &gt;::operator const field_expr_type &amp;</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>operator const field_expr_type &amp;</name>
+        <qualifiedname>learnql::query::Field::operator const field_expr_type &amp;</qualifiedname>
+        <briefdescription>
+<para>Implicit conversion to field expression. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Field.hpp" line="64" column="5" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Field.hpp" bodystart="64" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1query_1_1_field_1a1295c8c5303762eefa1554923cd14a49" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto learnql::query::Field&lt; T, FieldType &gt;::operator==</definition>
+        <argsstring>(const char *value) const</argsstring>
+        <name>operator==</name>
+        <qualifiedname>learnql::query::Field::operator==</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>value</declname>
+        </param>
+    <requiresclause>std::is_same_v&lt;FieldType, std::string&gt;    </requiresclause>
+        <briefdescription>
+<para>Equality comparison with C-string literal: field == &quot;value&quot;. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Field.hpp" line="73" column="11" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Field.hpp" bodystart="73" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1query_1_1_field_1a40e4c35e836564c72ab5f788f2ff9da4" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto learnql::query::Field&lt; T, FieldType &gt;::operator==</definition>
+        <argsstring>(const U &amp;value) const</argsstring>
+        <name>operator==</name>
+        <qualifiedname>learnql::query::Field::operator==</qualifiedname>
+        <param>
+          <type>const U &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Equality comparison: field == value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Field.hpp" line="84" column="11" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Field.hpp" bodystart="84" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1query_1_1_field_1acc87f6d788f487ae75b03279c96b8bf4" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto learnql::query::Field&lt; T, FieldType &gt;::operator==</definition>
+        <argsstring>(const Field&lt; T, U &gt; &amp;other) const</argsstring>
+        <name>operator==</name>
+        <qualifiedname>learnql::query::Field::operator==</qualifiedname>
+        <param>
+          <type>const <ref refid="classlearnql_1_1query_1_1_field_1af971f7e227918f6112e3535ac6a80351" kindref="member">Field</ref>&lt; T, U &gt; &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Field-to-field equality: field == other_field. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Field.hpp" line="94" column="11" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Field.hpp" bodystart="94" bodyend="98"/>
+        <references refid="classlearnql_1_1query_1_1_field_1a3b07a80f4cc7a476db80804638d4949e" compoundref="_field_8hpp" startline="57" endline="59">learnql::query::Field&lt; T, FieldType &gt;::expr</references>
+        <references refid="classlearnql_1_1query_1_1_field_1af971f7e227918f6112e3535ac6a80351" compoundref="_field_8hpp" startline="43" endline="44">learnql::query::Field&lt; T, FieldType &gt;::Field</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1query_1_1_field_1a29032915f809a7e05d3752b36bd177a0" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto learnql::query::Field&lt; T, FieldType &gt;::operator!=</definition>
+        <argsstring>(const char *value) const</argsstring>
+        <name>operator!=</name>
+        <qualifiedname>learnql::query::Field::operator!=</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>value</declname>
+        </param>
+    <requiresclause>std::is_same_v&lt;FieldType, std::string&gt;    </requiresclause>
+        <briefdescription>
+<para>Inequality comparison with C-string literal: field != &quot;value&quot;. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Field.hpp" line="103" column="11" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Field.hpp" bodystart="103" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1query_1_1_field_1a0df1ec77c43ee721acb1707322762582" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto learnql::query::Field&lt; T, FieldType &gt;::operator!=</definition>
+        <argsstring>(const U &amp;value) const</argsstring>
+        <name>operator!=</name>
+        <qualifiedname>learnql::query::Field::operator!=</qualifiedname>
+        <param>
+          <type>const U &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Inequality comparison: field != value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Field.hpp" line="114" column="11" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Field.hpp" bodystart="114" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1query_1_1_field_1a64d7bfb15bc8b8c3571350ef429552fb" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto learnql::query::Field&lt; T, FieldType &gt;::operator!=</definition>
+        <argsstring>(const Field&lt; T, U &gt; &amp;other) const</argsstring>
+        <name>operator!=</name>
+        <qualifiedname>learnql::query::Field::operator!=</qualifiedname>
+        <param>
+          <type>const <ref refid="classlearnql_1_1query_1_1_field_1af971f7e227918f6112e3535ac6a80351" kindref="member">Field</ref>&lt; T, U &gt; &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Field-to-field inequality: field != other_field. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Field.hpp" line="124" column="11" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Field.hpp" bodystart="124" bodyend="128"/>
+        <references refid="classlearnql_1_1query_1_1_field_1a3b07a80f4cc7a476db80804638d4949e" compoundref="_field_8hpp" startline="57" endline="59">learnql::query::Field&lt; T, FieldType &gt;::expr</references>
+        <references refid="classlearnql_1_1query_1_1_field_1af971f7e227918f6112e3535ac6a80351" compoundref="_field_8hpp" startline="43" endline="44">learnql::query::Field&lt; T, FieldType &gt;::Field</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1query_1_1_field_1af11b0199d64f5a27e38af161ed61e5f9" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto learnql::query::Field&lt; T, FieldType &gt;::operator&lt;</definition>
+        <argsstring>(const U &amp;value) const</argsstring>
+        <name>operator&lt;</name>
+        <qualifiedname>learnql::query::Field::operator&lt;</qualifiedname>
+        <param>
+          <type>const U &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Less-than comparison: field &lt; value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Field.hpp" line="134" column="6" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Field.hpp" bodystart="134" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1query_1_1_field_1a7a5d3cc4503597337179e9b8f72868cb" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto learnql::query::Field&lt; T, FieldType &gt;::operator&lt;</definition>
+        <argsstring>(const Field&lt; T, U &gt; &amp;other) const</argsstring>
+        <name>operator&lt;</name>
+        <qualifiedname>learnql::query::Field::operator&lt;</qualifiedname>
+        <param>
+          <type>const <ref refid="classlearnql_1_1query_1_1_field_1af971f7e227918f6112e3535ac6a80351" kindref="member">Field</ref>&lt; T, U &gt; &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Field-to-field less-than: field &lt; other_field. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Field.hpp" line="144" column="6" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Field.hpp" bodystart="144" bodyend="148"/>
+        <references refid="classlearnql_1_1query_1_1_field_1a3b07a80f4cc7a476db80804638d4949e" compoundref="_field_8hpp" startline="57" endline="59">learnql::query::Field&lt; T, FieldType &gt;::expr</references>
+        <references refid="classlearnql_1_1query_1_1_field_1af971f7e227918f6112e3535ac6a80351" compoundref="_field_8hpp" startline="43" endline="44">learnql::query::Field&lt; T, FieldType &gt;::Field</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1query_1_1_field_1a01d84f0ab38e158f831d08bdc88756a4" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto learnql::query::Field&lt; T, FieldType &gt;::operator&lt;=</definition>
+        <argsstring>(const U &amp;value) const</argsstring>
+        <name>operator&lt;=</name>
+        <qualifiedname>learnql::query::Field::operator&lt;=</qualifiedname>
+        <param>
+          <type>const U &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Less-than-or-equal comparison: field &lt;= value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Field.hpp" line="154" column="6" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Field.hpp" bodystart="154" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1query_1_1_field_1aa3aef24aa347bb1e63f08ce766b4ff7d" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto learnql::query::Field&lt; T, FieldType &gt;::operator&lt;=</definition>
+        <argsstring>(const Field&lt; T, U &gt; &amp;other) const</argsstring>
+        <name>operator&lt;=</name>
+        <qualifiedname>learnql::query::Field::operator&lt;=</qualifiedname>
+        <param>
+          <type>const <ref refid="classlearnql_1_1query_1_1_field_1af971f7e227918f6112e3535ac6a80351" kindref="member">Field</ref>&lt; T, U &gt; &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Field-to-field less-than-or-equal: field &lt;= other_field. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Field.hpp" line="164" column="6" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Field.hpp" bodystart="164" bodyend="168"/>
+        <references refid="classlearnql_1_1query_1_1_field_1a3b07a80f4cc7a476db80804638d4949e" compoundref="_field_8hpp" startline="57" endline="59">learnql::query::Field&lt; T, FieldType &gt;::expr</references>
+        <references refid="classlearnql_1_1query_1_1_field_1af971f7e227918f6112e3535ac6a80351" compoundref="_field_8hpp" startline="43" endline="44">learnql::query::Field&lt; T, FieldType &gt;::Field</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1query_1_1_field_1ab52884bb7ec0e30a0703f23336a0f112" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto learnql::query::Field&lt; T, FieldType &gt;::operator&gt;</definition>
+        <argsstring>(const U &amp;value) const</argsstring>
+        <name>operator&gt;</name>
+        <qualifiedname>learnql::query::Field::operator&gt;</qualifiedname>
+        <param>
+          <type>const U &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Greater-than comparison: field &gt; value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Field.hpp" line="174" column="11" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Field.hpp" bodystart="174" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1query_1_1_field_1a7610c8aca12e0b3df08efa009e9f3009" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto learnql::query::Field&lt; T, FieldType &gt;::operator&gt;</definition>
+        <argsstring>(const Field&lt; T, U &gt; &amp;other) const</argsstring>
+        <name>operator&gt;</name>
+        <qualifiedname>learnql::query::Field::operator&gt;</qualifiedname>
+        <param>
+          <type>const <ref refid="classlearnql_1_1query_1_1_field_1af971f7e227918f6112e3535ac6a80351" kindref="member">Field</ref>&lt; T, U &gt; &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Field-to-field greater-than: field &gt; other_field. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Field.hpp" line="184" column="11" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Field.hpp" bodystart="184" bodyend="188"/>
+        <references refid="classlearnql_1_1query_1_1_field_1a3b07a80f4cc7a476db80804638d4949e" compoundref="_field_8hpp" startline="57" endline="59">learnql::query::Field&lt; T, FieldType &gt;::expr</references>
+        <references refid="classlearnql_1_1query_1_1_field_1af971f7e227918f6112e3535ac6a80351" compoundref="_field_8hpp" startline="43" endline="44">learnql::query::Field&lt; T, FieldType &gt;::Field</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1query_1_1_field_1af9299f2f1785a375fb9f2b7247456d39" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto learnql::query::Field&lt; T, FieldType &gt;::operator&gt;=</definition>
+        <argsstring>(const U &amp;value) const</argsstring>
+        <name>operator&gt;=</name>
+        <qualifiedname>learnql::query::Field::operator&gt;=</qualifiedname>
+        <param>
+          <type>const U &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Greater-than-or-equal comparison: field &gt;= value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Field.hpp" line="194" column="11" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Field.hpp" bodystart="194" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1query_1_1_field_1a8391377f9cafd86751ae9b9fc5897360" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto learnql::query::Field&lt; T, FieldType &gt;::operator&gt;=</definition>
+        <argsstring>(const Field&lt; T, U &gt; &amp;other) const</argsstring>
+        <name>operator&gt;=</name>
+        <qualifiedname>learnql::query::Field::operator&gt;=</qualifiedname>
+        <param>
+          <type>const <ref refid="classlearnql_1_1query_1_1_field_1af971f7e227918f6112e3535ac6a80351" kindref="member">Field</ref>&lt; T, U &gt; &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Field-to-field greater-than-or-equal: field &gt;= other_field. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Field.hpp" line="204" column="11" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Field.hpp" bodystart="204" bodyend="208"/>
+        <references refid="classlearnql_1_1query_1_1_field_1a3b07a80f4cc7a476db80804638d4949e" compoundref="_field_8hpp" startline="57" endline="59">learnql::query::Field&lt; T, FieldType &gt;::expr</references>
+        <references refid="classlearnql_1_1query_1_1_field_1af971f7e227918f6112e3535ac6a80351" compoundref="_field_8hpp" startline="43" endline="44">learnql::query::Field&lt; T, FieldType &gt;::Field</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>User-facing field proxy for building queries. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Object type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>FieldType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of the field</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+This is the main API for building SQL-like queries. It provides operator overloads that create expression templates.</para>
+<para>Example: <programlisting><codeline><highlight class="normal"><ref refid="classlearnql_1_1query_1_1_field_1af971f7e227918f6112e3535ac6a80351" kindref="member">Field&lt;Student, int&gt;</ref><sp/>age{</highlight><highlight class="stringliteral">&quot;age&quot;</highlight><highlight class="normal">,<sp/>&amp;Student::getAge};</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="classlearnql_1_1query_1_1_field_1af971f7e227918f6112e3535ac6a80351" kindref="member">Field&lt;Student, std::string&gt;</ref><sp/>name{</highlight><highlight class="stringliteral">&quot;name&quot;</highlight><highlight class="normal">,<sp/>&amp;Student::getName};</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>query<sp/>=<sp/>(age<sp/>&gt;<sp/>18)<sp/>&amp;&amp;<sp/>(name<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;Alice&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Creates<sp/>an<sp/>expression<sp/>tree<sp/>without<sp/>evaluating</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>learnql::query::Field&lt; T, FieldType &gt;</label>
+        <link refid="classlearnql_1_1query_1_1_field"/>
+      </node>
+      <node id="5">
+        <label>learnql::query::Field&lt; learnql::catalog::FieldMetadata, bool &gt;</label>
+        <link refid="classlearnql_1_1query_1_1_field"/>
+        <childnode refid="1" relation="template-instance">
+          <edgelabel>&lt; learnql::catalog::FieldMetadata, bool &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>learnql::query::Field&lt; learnql::catalog::FieldMetadata, std::string &gt;</label>
+        <link refid="classlearnql_1_1query_1_1_field"/>
+        <childnode refid="1" relation="template-instance">
+          <edgelabel>&lt; learnql::catalog::FieldMetadata, std::string &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>learnql::query::Field&lt; learnql::catalog::FieldMetadata, uint16_t &gt;</label>
+        <link refid="classlearnql_1_1query_1_1_field"/>
+        <childnode refid="1" relation="template-instance">
+          <edgelabel>&lt; learnql::catalog::FieldMetadata, uint16_t &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>learnql::query::Field&lt; learnql::catalog::FieldMetadata, uint64_t &gt;</label>
+        <link refid="classlearnql_1_1query_1_1_field"/>
+        <childnode refid="1" relation="template-instance">
+          <edgelabel>&lt; learnql::catalog::FieldMetadata, uint64_t &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>learnql::query::Field&lt; learnql::catalog::IndexMetadata, bool &gt;</label>
+        <link refid="classlearnql_1_1query_1_1_field"/>
+        <childnode refid="1" relation="template-instance">
+          <edgelabel>&lt; learnql::catalog::IndexMetadata, bool &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>learnql::query::Field&lt; learnql::catalog::IndexMetadata, std::string &gt;</label>
+        <link refid="classlearnql_1_1query_1_1_field"/>
+        <childnode refid="1" relation="template-instance">
+          <edgelabel>&lt; learnql::catalog::IndexMetadata, std::string &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>learnql::query::Field&lt; learnql::catalog::IndexMetadata, uint64_t &gt;</label>
+        <link refid="classlearnql_1_1query_1_1_field"/>
+        <childnode refid="1" relation="template-instance">
+          <edgelabel>&lt; learnql::catalog::IndexMetadata, uint64_t &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>learnql::query::Field&lt; learnql::catalog::TableMetadata, bool &gt;</label>
+        <link refid="classlearnql_1_1query_1_1_field"/>
+        <childnode refid="1" relation="template-instance">
+          <edgelabel>&lt; learnql::catalog::TableMetadata, bool &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>learnql::query::Field&lt; learnql::catalog::TableMetadata, std::size_t &gt;</label>
+        <link refid="classlearnql_1_1query_1_1_field"/>
+        <childnode refid="1" relation="template-instance">
+          <edgelabel>&lt; learnql::catalog::TableMetadata, std::size_t &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>learnql::query::Field&lt; learnql::catalog::TableMetadata, std::string &gt;</label>
+        <link refid="classlearnql_1_1query_1_1_field"/>
+        <childnode refid="1" relation="template-instance">
+          <edgelabel>&lt; learnql::catalog::TableMetadata, std::string &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>learnql::query::Field&lt; learnql::catalog::TableMetadata, uint64_t &gt;</label>
+        <link refid="classlearnql_1_1query_1_1_field"/>
+        <childnode refid="1" relation="template-instance">
+          <edgelabel>&lt; learnql::catalog::TableMetadata, uint64_t &gt;</edgelabel>
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Field.hpp" line="33" column="1" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Field.hpp" bodystart="33" bodyend="212"/>
+    <listofallmembers>
+      <member refid="classlearnql_1_1query_1_1_field_1a3b07a80f4cc7a476db80804638d4949e" prot="public" virt="non-virtual"><scope>learnql::query::Field</scope><name>expr</name></member>
+      <member refid="classlearnql_1_1query_1_1_field_1a8221bd370df9bea78e687ee81421aa90" prot="private" virt="non-virtual"><scope>learnql::query::Field</scope><name>expr_</name></member>
+      <member refid="classlearnql_1_1query_1_1_field_1af971f7e227918f6112e3535ac6a80351" prot="public" virt="non-virtual"><scope>learnql::query::Field</scope><name>Field</name></member>
+      <member refid="classlearnql_1_1query_1_1_field_1ab43466cb9f572cb05b6def356d104eac" prot="public" virt="non-virtual"><scope>learnql::query::Field</scope><name>Field</name></member>
+      <member refid="classlearnql_1_1query_1_1_field_1a22f6e81d107db6e0409d2bd76147aa00" prot="public" virt="non-virtual"><scope>learnql::query::Field</scope><name>field_expr_type</name></member>
+      <member refid="classlearnql_1_1query_1_1_field_1a818aef8239b3cc2287062933f8d298b1" prot="public" virt="non-virtual"><scope>learnql::query::Field</scope><name>operator const field_expr_type &amp;</name></member>
+      <member refid="classlearnql_1_1query_1_1_field_1a29032915f809a7e05d3752b36bd177a0" prot="public" virt="non-virtual"><scope>learnql::query::Field</scope><name>operator!=</name></member>
+      <member refid="classlearnql_1_1query_1_1_field_1a0df1ec77c43ee721acb1707322762582" prot="public" virt="non-virtual"><scope>learnql::query::Field</scope><name>operator!=</name></member>
+      <member refid="classlearnql_1_1query_1_1_field_1a64d7bfb15bc8b8c3571350ef429552fb" prot="public" virt="non-virtual"><scope>learnql::query::Field</scope><name>operator!=</name></member>
+      <member refid="classlearnql_1_1query_1_1_field_1af11b0199d64f5a27e38af161ed61e5f9" prot="public" virt="non-virtual"><scope>learnql::query::Field</scope><name>operator&lt;</name></member>
+      <member refid="classlearnql_1_1query_1_1_field_1a7a5d3cc4503597337179e9b8f72868cb" prot="public" virt="non-virtual"><scope>learnql::query::Field</scope><name>operator&lt;</name></member>
+      <member refid="classlearnql_1_1query_1_1_field_1a01d84f0ab38e158f831d08bdc88756a4" prot="public" virt="non-virtual"><scope>learnql::query::Field</scope><name>operator&lt;=</name></member>
+      <member refid="classlearnql_1_1query_1_1_field_1aa3aef24aa347bb1e63f08ce766b4ff7d" prot="public" virt="non-virtual"><scope>learnql::query::Field</scope><name>operator&lt;=</name></member>
+      <member refid="classlearnql_1_1query_1_1_field_1a1295c8c5303762eefa1554923cd14a49" prot="public" virt="non-virtual"><scope>learnql::query::Field</scope><name>operator==</name></member>
+      <member refid="classlearnql_1_1query_1_1_field_1a40e4c35e836564c72ab5f788f2ff9da4" prot="public" virt="non-virtual"><scope>learnql::query::Field</scope><name>operator==</name></member>
+      <member refid="classlearnql_1_1query_1_1_field_1acc87f6d788f487ae75b03279c96b8bf4" prot="public" virt="non-virtual"><scope>learnql::query::Field</scope><name>operator==</name></member>
+      <member refid="classlearnql_1_1query_1_1_field_1ab52884bb7ec0e30a0703f23336a0f112" prot="public" virt="non-virtual"><scope>learnql::query::Field</scope><name>operator&gt;</name></member>
+      <member refid="classlearnql_1_1query_1_1_field_1a7610c8aca12e0b3df08efa009e9f3009" prot="public" virt="non-virtual"><scope>learnql::query::Field</scope><name>operator&gt;</name></member>
+      <member refid="classlearnql_1_1query_1_1_field_1af9299f2f1785a375fb9f2b7247456d39" prot="public" virt="non-virtual"><scope>learnql::query::Field</scope><name>operator&gt;=</name></member>
+      <member refid="classlearnql_1_1query_1_1_field_1a8391377f9cafd86751ae9b9fc5897360" prot="public" virt="non-virtual"><scope>learnql::query::Field</scope><name>operator&gt;=</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

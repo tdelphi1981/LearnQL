@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="namespacelearnql_1_1core" kind="namespace" language="C++">
+    <compoundname>learnql::core</compoundname>
+    <innerclass refid="classlearnql_1_1core_1_1_database" prot="public">learnql::core::Database</innerclass>
+    <innerclass refid="classlearnql_1_1core_1_1_read_only_table" prot="public">learnql::core::ReadOnlyTable</innerclass>
+    <innerclass refid="structlearnql_1_1core_1_1_record_id" prot="public">learnql::core::RecordId</innerclass>
+    <innerclass refid="classlearnql_1_1core_1_1_table" prot="public">learnql::core::Table</innerclass>
+    <innerclass refid="classlearnql_1_1core_1_1_query" prot="public">learnql::core::Query</innerclass>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespacelearnql_1_1core_1a4f22da0836f46f8e38c37d2db9f4c317" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>IndexType</name>
+        <qualifiedname>learnql::core::IndexType</qualifiedname>
+        <enumvalue id="namespacelearnql_1_1core_1a4f22da0836f46f8e38c37d2db9f4c317ad019979a29c88c8d69bab3a63388da97" prot="public">
+          <name>Unique</name>
+          <briefdescription>
+<para>One record per field value (uses PersistentSecondaryIndex). </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacelearnql_1_1core_1a4f22da0836f46f8e38c37d2db9f4c317a53bb6d143f96678b6a429b3bbda948ae" prot="public">
+          <name>MultiValue</name>
+          <briefdescription>
+<para>Multiple records per field value (uses PersistentMultiValueSecondaryIndex). </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Secondary index type specification. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="33" column="1" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="33" bodyend="36"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/SystemCatalog.hpp" line="17" column="5"/>
+  </compounddef>
+</doxygen>

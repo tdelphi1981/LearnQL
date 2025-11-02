@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="dir_8ad5c2d390164b76feb946693c32683c" kind="dir">
+    <compoundname>/Users/tolgaberber/Work/CPP/LearnQL/learnql/index</compoundname>
+    <innerfile refid="_batch_iterator_8hpp">BatchIterator.hpp</innerfile>
+    <innerfile refid="_b_tree_index_8hpp">BTreeIndex.hpp</innerfile>
+    <innerfile refid="_persistent_b_tree_index_8hpp">PersistentBTreeIndex.hpp</innerfile>
+    <innerfile refid="_persistent_multi_value_secondary_index_8hpp">PersistentMultiValueSecondaryIndex.hpp</innerfile>
+    <innerfile refid="_persistent_secondary_index_8hpp">PersistentSecondaryIndex.hpp</innerfile>
+    <innerfile refid="_secondary_index_8hpp">SecondaryIndex.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/"/>
+  </compounddef>
+</doxygen>

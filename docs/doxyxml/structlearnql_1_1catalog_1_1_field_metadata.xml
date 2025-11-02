@@ -1,0 +1,551 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="structlearnql_1_1catalog_1_1_field_metadata" kind="struct" language="C++" prot="public">
+    <compoundname>learnql::catalog::FieldMetadata</compoundname>
+    <includes refid="_field_metadata_8hpp" local="no">FieldMetadata.hpp</includes>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structlearnql_1_1catalog_1_1_field_metadata_1a886f47cc3c4eeb93cd3d4ab0edacea00" prot="public" static="no">
+        <type>uint64_t</type>
+        <definition>using learnql::catalog::FieldMetadata::primary_key_type =  uint64_t</definition>
+        <argsstring></argsstring>
+        <name>primary_key_type</name>
+        <qualifiedname>learnql::catalog::FieldMetadata::primary_key_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/FieldMetadata.hpp" line="28" column="5" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/FieldMetadata.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlearnql_1_1catalog_1_1_field_metadata_1afbd7dd5ab07a49babe4a9b8d92853715" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t learnql::catalog::FieldMetadata::field_id</definition>
+        <argsstring></argsstring>
+        <name>field_id</name>
+        <qualifiedname>learnql::catalog::FieldMetadata::field_id</qualifiedname>
+        <briefdescription>
+<para>Unique field ID (primary key). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/FieldMetadata.hpp" line="32" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/FieldMetadata.hpp" bodystart="32" bodyend="-1"/>
+        <referencedby refid="structlearnql_1_1catalog_1_1_field_metadata_1af9490982f31af015e014eef607f70993" compoundref="_field_metadata_8hpp" startline="115" endline="122">deserialize</referencedby>
+        <referencedby refid="structlearnql_1_1catalog_1_1_field_metadata_1a529e3641569a566fb39e7f79689e0479" compoundref="_field_metadata_8hpp" startline="41" endline="41">get_field_id</referencedby>
+        <referencedby refid="structlearnql_1_1catalog_1_1_field_metadata_1a63687ac2a6c9b71b3660d56364800629" compoundref="_field_metadata_8hpp" startline="100" endline="102">get_primary_key</referencedby>
+        <referencedby refid="structlearnql_1_1catalog_1_1_field_metadata_1a1f6d1ac35185259a4d1bd0eaa241461b" compoundref="_field_metadata_8hpp" startline="126" endline="133">operator==</referencedby>
+        <referencedby refid="structlearnql_1_1catalog_1_1_field_metadata_1adfc3c7531fcbdeb819a761625d78d18b" compoundref="_field_metadata_8hpp" startline="106" endline="113">serialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1catalog_1_1_field_metadata_1aef2ce1e18a3abff2e3bc6ef36ed6720a" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string learnql::catalog::FieldMetadata::table_name</definition>
+        <argsstring></argsstring>
+        <name>table_name</name>
+        <qualifiedname>learnql::catalog::FieldMetadata::table_name</qualifiedname>
+        <briefdescription>
+<para>Name of the table this field belongs to. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/FieldMetadata.hpp" line="33" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/FieldMetadata.hpp" bodystart="33" bodyend="-1"/>
+        <referencedby refid="structlearnql_1_1catalog_1_1_field_metadata_1af9490982f31af015e014eef607f70993" compoundref="_field_metadata_8hpp" startline="115" endline="122">deserialize</referencedby>
+        <referencedby refid="structlearnql_1_1catalog_1_1_field_metadata_1a987c61313bb4089cc3111b740bc06b8b" compoundref="_field_metadata_8hpp" startline="42" endline="42">get_table_name</referencedby>
+        <referencedby refid="structlearnql_1_1catalog_1_1_field_metadata_1a1f6d1ac35185259a4d1bd0eaa241461b" compoundref="_field_metadata_8hpp" startline="126" endline="133">operator==</referencedby>
+        <referencedby refid="structlearnql_1_1catalog_1_1_field_metadata_1adfc3c7531fcbdeb819a761625d78d18b" compoundref="_field_metadata_8hpp" startline="106" endline="113">serialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1catalog_1_1_field_metadata_1ae0363b9975d9c0a515a55adfba6fa5ba" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string learnql::catalog::FieldMetadata::field_name</definition>
+        <argsstring></argsstring>
+        <name>field_name</name>
+        <qualifiedname>learnql::catalog::FieldMetadata::field_name</qualifiedname>
+        <briefdescription>
+<para>Name of the field. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/FieldMetadata.hpp" line="34" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/FieldMetadata.hpp" bodystart="34" bodyend="-1"/>
+        <referencedby refid="structlearnql_1_1catalog_1_1_field_metadata_1af9490982f31af015e014eef607f70993" compoundref="_field_metadata_8hpp" startline="115" endline="122">deserialize</referencedby>
+        <referencedby refid="structlearnql_1_1catalog_1_1_field_metadata_1ad7ba01062b867e8f6dab20e2b789dc3f" compoundref="_field_metadata_8hpp" startline="43" endline="43">get_field_name</referencedby>
+        <referencedby refid="structlearnql_1_1catalog_1_1_field_metadata_1a1f6d1ac35185259a4d1bd0eaa241461b" compoundref="_field_metadata_8hpp" startline="126" endline="133">operator==</referencedby>
+        <referencedby refid="structlearnql_1_1catalog_1_1_field_metadata_1adfc3c7531fcbdeb819a761625d78d18b" compoundref="_field_metadata_8hpp" startline="106" endline="113">serialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1catalog_1_1_field_metadata_1a9b16815d288c9b8948e2f95b27dafe21" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string learnql::catalog::FieldMetadata::field_type</definition>
+        <argsstring></argsstring>
+        <name>field_type</name>
+        <qualifiedname>learnql::catalog::FieldMetadata::field_type</qualifiedname>
+        <briefdescription>
+<para>C++ type name (e.g., &quot;int&quot;, &quot;std::string&quot;). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/FieldMetadata.hpp" line="35" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/FieldMetadata.hpp" bodystart="35" bodyend="-1"/>
+        <referencedby refid="structlearnql_1_1catalog_1_1_field_metadata_1af9490982f31af015e014eef607f70993" compoundref="_field_metadata_8hpp" startline="115" endline="122">deserialize</referencedby>
+        <referencedby refid="structlearnql_1_1catalog_1_1_field_metadata_1a3731e2c0f8c7f317afa8b46fe401a736" compoundref="_field_metadata_8hpp" startline="44" endline="44">get_field_type</referencedby>
+        <referencedby refid="structlearnql_1_1catalog_1_1_field_metadata_1a1f6d1ac35185259a4d1bd0eaa241461b" compoundref="_field_metadata_8hpp" startline="126" endline="133">operator==</referencedby>
+        <referencedby refid="structlearnql_1_1catalog_1_1_field_metadata_1adfc3c7531fcbdeb819a761625d78d18b" compoundref="_field_metadata_8hpp" startline="106" endline="113">serialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1catalog_1_1_field_metadata_1a0dd8e10f468c8073701bdd390302ecbd" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t learnql::catalog::FieldMetadata::field_order</definition>
+        <argsstring></argsstring>
+        <name>field_order</name>
+        <qualifiedname>learnql::catalog::FieldMetadata::field_order</qualifiedname>
+        <briefdescription>
+<para>Position in struct (0-based). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/FieldMetadata.hpp" line="36" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/FieldMetadata.hpp" bodystart="36" bodyend="-1"/>
+        <referencedby refid="structlearnql_1_1catalog_1_1_field_metadata_1af9490982f31af015e014eef607f70993" compoundref="_field_metadata_8hpp" startline="115" endline="122">deserialize</referencedby>
+        <referencedby refid="structlearnql_1_1catalog_1_1_field_metadata_1a35185a0b82ecfe221836a40b2fdae482" compoundref="_field_metadata_8hpp" startline="45" endline="45">get_field_order</referencedby>
+        <referencedby refid="structlearnql_1_1catalog_1_1_field_metadata_1a1f6d1ac35185259a4d1bd0eaa241461b" compoundref="_field_metadata_8hpp" startline="126" endline="133">operator==</referencedby>
+        <referencedby refid="structlearnql_1_1catalog_1_1_field_metadata_1adfc3c7531fcbdeb819a761625d78d18b" compoundref="_field_metadata_8hpp" startline="106" endline="113">serialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1catalog_1_1_field_metadata_1a8972df5b97c94d650c2083162d7cff2a" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool learnql::catalog::FieldMetadata::is_primary_key</definition>
+        <argsstring></argsstring>
+        <name>is_primary_key</name>
+        <qualifiedname>learnql::catalog::FieldMetadata::is_primary_key</qualifiedname>
+        <briefdescription>
+<para>true if this is the primary key field </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/FieldMetadata.hpp" line="37" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/FieldMetadata.hpp" bodystart="37" bodyend="-1"/>
+        <referencedby refid="structlearnql_1_1catalog_1_1_field_metadata_1af9490982f31af015e014eef607f70993" compoundref="_field_metadata_8hpp" startline="115" endline="122">deserialize</referencedby>
+        <referencedby refid="structlearnql_1_1catalog_1_1_field_metadata_1ac62e785af8ae080e64c432a4052c4fd7" compoundref="_field_metadata_8hpp" startline="46" endline="46">get_is_primary_key</referencedby>
+        <referencedby refid="structlearnql_1_1catalog_1_1_field_metadata_1a1f6d1ac35185259a4d1bd0eaa241461b" compoundref="_field_metadata_8hpp" startline="126" endline="133">operator==</referencedby>
+        <referencedby refid="structlearnql_1_1catalog_1_1_field_metadata_1adfc3c7531fcbdeb819a761625d78d18b" compoundref="_field_metadata_8hpp" startline="106" endline="113">serialize</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structlearnql_1_1catalog_1_1_field_metadata_1aac4c2ecb4ef7e511a7a87b5f3a844b40" prot="public" static="yes" mutable="no">
+        <type><ref refid="classlearnql_1_1query_1_1_field" kindref="compound">query::Field</ref>&lt; <ref refid="structlearnql_1_1catalog_1_1_field_metadata" kindref="compound">FieldMetadata</ref>, uint64_t &gt;</type>
+        <definition>query::Field&lt;FieldMetadata, uint64_t&gt; learnql::catalog::FieldMetadata::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <qualifiedname>learnql::catalog::FieldMetadata::id</qualifiedname>
+        <initializer>{
+        &quot;field_id&quot;, &amp;<ref refid="structlearnql_1_1catalog_1_1_field_metadata_1a529e3641569a566fb39e7f79689e0479" kindref="member">FieldMetadata::get_field_id</ref>
+    }</initializer>
+        <briefdescription>
+<para>Field for field ID Usage: <ref refid="structlearnql_1_1catalog_1_1_field_metadata_1aac4c2ecb4ef7e511a7a87b5f3a844b40" kindref="member">FieldMetadata::id</ref> == 123. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/FieldMetadata.hpp" line="54" column="32" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/FieldMetadata.hpp" bodystart="54" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1catalog_1_1_field_metadata_1a16b715f3d28a8b3fa41ddd0c0ccb0f93" prot="public" static="yes" mutable="no">
+        <type><ref refid="classlearnql_1_1query_1_1_field" kindref="compound">query::Field</ref>&lt; <ref refid="structlearnql_1_1catalog_1_1_field_metadata" kindref="compound">FieldMetadata</ref>, std::string &gt;</type>
+        <definition>query::Field&lt;FieldMetadata, std::string&gt; learnql::catalog::FieldMetadata::table</definition>
+        <argsstring></argsstring>
+        <name>table</name>
+        <qualifiedname>learnql::catalog::FieldMetadata::table</qualifiedname>
+        <initializer>{
+        &quot;table_name&quot;, &amp;<ref refid="structlearnql_1_1catalog_1_1_field_metadata_1a987c61313bb4089cc3111b740bc06b8b" kindref="member">FieldMetadata::get_table_name</ref>
+    }</initializer>
+        <briefdescription>
+<para>Field for table name Usage: <ref refid="structlearnql_1_1catalog_1_1_field_metadata_1a16b715f3d28a8b3fa41ddd0c0ccb0f93" kindref="member">FieldMetadata::table</ref> == &quot;students&quot;. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/FieldMetadata.hpp" line="62" column="32" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/FieldMetadata.hpp" bodystart="62" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1catalog_1_1_field_metadata_1af0979a909a3f8fd82e32b2a27d69839e" prot="public" static="yes" mutable="no">
+        <type><ref refid="classlearnql_1_1query_1_1_field" kindref="compound">query::Field</ref>&lt; <ref refid="structlearnql_1_1catalog_1_1_field_metadata" kindref="compound">FieldMetadata</ref>, std::string &gt;</type>
+        <definition>query::Field&lt;FieldMetadata, std::string&gt; learnql::catalog::FieldMetadata::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>learnql::catalog::FieldMetadata::name</qualifiedname>
+        <initializer>{
+        &quot;field_name&quot;, &amp;<ref refid="structlearnql_1_1catalog_1_1_field_metadata_1ad7ba01062b867e8f6dab20e2b789dc3f" kindref="member">FieldMetadata::get_field_name</ref>
+    }</initializer>
+        <briefdescription>
+<para>Field for field name Usage: <ref refid="structlearnql_1_1catalog_1_1_field_metadata_1af0979a909a3f8fd82e32b2a27d69839e" kindref="member">FieldMetadata::name</ref> == &quot;id&quot;. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/FieldMetadata.hpp" line="70" column="32" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/FieldMetadata.hpp" bodystart="70" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1catalog_1_1_field_metadata_1aca2d26838c26a647f9fcccc6d968c118" prot="public" static="yes" mutable="no">
+        <type><ref refid="classlearnql_1_1query_1_1_field" kindref="compound">query::Field</ref>&lt; <ref refid="structlearnql_1_1catalog_1_1_field_metadata" kindref="compound">FieldMetadata</ref>, std::string &gt;</type>
+        <definition>query::Field&lt;FieldMetadata, std::string&gt; learnql::catalog::FieldMetadata::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <qualifiedname>learnql::catalog::FieldMetadata::type</qualifiedname>
+        <initializer>{
+        &quot;field_type&quot;, &amp;<ref refid="structlearnql_1_1catalog_1_1_field_metadata_1a3731e2c0f8c7f317afa8b46fe401a736" kindref="member">FieldMetadata::get_field_type</ref>
+    }</initializer>
+        <briefdescription>
+<para>Field for field type Usage: <ref refid="structlearnql_1_1catalog_1_1_field_metadata_1aca2d26838c26a647f9fcccc6d968c118" kindref="member">FieldMetadata::type</ref> == &quot;int&quot;. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/FieldMetadata.hpp" line="78" column="32" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/FieldMetadata.hpp" bodystart="78" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1catalog_1_1_field_metadata_1a060bec42b3bbf4db5463622370b02a20" prot="public" static="yes" mutable="no">
+        <type><ref refid="classlearnql_1_1query_1_1_field" kindref="compound">query::Field</ref>&lt; <ref refid="structlearnql_1_1catalog_1_1_field_metadata" kindref="compound">FieldMetadata</ref>, uint16_t &gt;</type>
+        <definition>query::Field&lt;FieldMetadata, uint16_t&gt; learnql::catalog::FieldMetadata::order</definition>
+        <argsstring></argsstring>
+        <name>order</name>
+        <qualifiedname>learnql::catalog::FieldMetadata::order</qualifiedname>
+        <initializer>{
+        &quot;field_order&quot;, &amp;<ref refid="structlearnql_1_1catalog_1_1_field_metadata_1a35185a0b82ecfe221836a40b2fdae482" kindref="member">FieldMetadata::get_field_order</ref>
+    }</initializer>
+        <briefdescription>
+<para>Field for field order Usage: <ref refid="structlearnql_1_1catalog_1_1_field_metadata_1a060bec42b3bbf4db5463622370b02a20" kindref="member">FieldMetadata::order</ref> &lt; 5. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/FieldMetadata.hpp" line="86" column="32" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/FieldMetadata.hpp" bodystart="86" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1catalog_1_1_field_metadata_1a605aa92f6e4f685c3fbdee7b1496b533" prot="public" static="yes" mutable="no">
+        <type><ref refid="classlearnql_1_1query_1_1_field" kindref="compound">query::Field</ref>&lt; <ref refid="structlearnql_1_1catalog_1_1_field_metadata" kindref="compound">FieldMetadata</ref>, bool &gt;</type>
+        <definition>query::Field&lt;FieldMetadata, bool&gt; learnql::catalog::FieldMetadata::is_pk</definition>
+        <argsstring></argsstring>
+        <name>is_pk</name>
+        <qualifiedname>learnql::catalog::FieldMetadata::is_pk</qualifiedname>
+        <initializer>{
+        &quot;is_primary_key&quot;, &amp;<ref refid="structlearnql_1_1catalog_1_1_field_metadata_1ac62e785af8ae080e64c432a4052c4fd7" kindref="member">FieldMetadata::get_is_primary_key</ref>
+    }</initializer>
+        <briefdescription>
+<para>Field for primary key flag Usage: <ref refid="structlearnql_1_1catalog_1_1_field_metadata_1a605aa92f6e4f685c3fbdee7b1496b533" kindref="member">FieldMetadata::is_pk</ref> == true. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/FieldMetadata.hpp" line="94" column="32" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/FieldMetadata.hpp" bodystart="94" bodyend="96"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structlearnql_1_1catalog_1_1_field_metadata_1a529e3641569a566fb39e7f79689e0479" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t learnql::catalog::FieldMetadata::get_field_id</definition>
+        <argsstring>() const</argsstring>
+        <name>get_field_id</name>
+        <qualifiedname>learnql::catalog::FieldMetadata::get_field_id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/FieldMetadata.hpp" line="41" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/FieldMetadata.hpp" bodystart="41" bodyend="41"/>
+        <references refid="structlearnql_1_1catalog_1_1_field_metadata_1afbd7dd5ab07a49babe4a9b8d92853715" compoundref="_field_metadata_8hpp" startline="32">field_id</references>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1catalog_1_1_field_metadata_1a987c61313bb4089cc3111b740bc06b8b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string &amp; learnql::catalog::FieldMetadata::get_table_name</definition>
+        <argsstring>() const</argsstring>
+        <name>get_table_name</name>
+        <qualifiedname>learnql::catalog::FieldMetadata::get_table_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/FieldMetadata.hpp" line="42" column="23" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/FieldMetadata.hpp" bodystart="42" bodyend="42"/>
+        <references refid="structlearnql_1_1catalog_1_1_field_metadata_1aef2ce1e18a3abff2e3bc6ef36ed6720a" compoundref="_field_metadata_8hpp" startline="33">table_name</references>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1catalog_1_1_field_metadata_1ad7ba01062b867e8f6dab20e2b789dc3f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string &amp; learnql::catalog::FieldMetadata::get_field_name</definition>
+        <argsstring>() const</argsstring>
+        <name>get_field_name</name>
+        <qualifiedname>learnql::catalog::FieldMetadata::get_field_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/FieldMetadata.hpp" line="43" column="23" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/FieldMetadata.hpp" bodystart="43" bodyend="43"/>
+        <references refid="structlearnql_1_1catalog_1_1_field_metadata_1ae0363b9975d9c0a515a55adfba6fa5ba" compoundref="_field_metadata_8hpp" startline="34">field_name</references>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1catalog_1_1_field_metadata_1a3731e2c0f8c7f317afa8b46fe401a736" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string &amp; learnql::catalog::FieldMetadata::get_field_type</definition>
+        <argsstring>() const</argsstring>
+        <name>get_field_type</name>
+        <qualifiedname>learnql::catalog::FieldMetadata::get_field_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/FieldMetadata.hpp" line="44" column="23" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/FieldMetadata.hpp" bodystart="44" bodyend="44"/>
+        <references refid="structlearnql_1_1catalog_1_1_field_metadata_1a9b16815d288c9b8948e2f95b27dafe21" compoundref="_field_metadata_8hpp" startline="35">field_type</references>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1catalog_1_1_field_metadata_1a35185a0b82ecfe221836a40b2fdae482" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t learnql::catalog::FieldMetadata::get_field_order</definition>
+        <argsstring>() const</argsstring>
+        <name>get_field_order</name>
+        <qualifiedname>learnql::catalog::FieldMetadata::get_field_order</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/FieldMetadata.hpp" line="45" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/FieldMetadata.hpp" bodystart="45" bodyend="45"/>
+        <references refid="structlearnql_1_1catalog_1_1_field_metadata_1a0dd8e10f468c8073701bdd390302ecbd" compoundref="_field_metadata_8hpp" startline="36">field_order</references>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1catalog_1_1_field_metadata_1ac62e785af8ae080e64c432a4052c4fd7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool learnql::catalog::FieldMetadata::get_is_primary_key</definition>
+        <argsstring>() const</argsstring>
+        <name>get_is_primary_key</name>
+        <qualifiedname>learnql::catalog::FieldMetadata::get_is_primary_key</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/FieldMetadata.hpp" line="46" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/FieldMetadata.hpp" bodystart="46" bodyend="46"/>
+        <references refid="structlearnql_1_1catalog_1_1_field_metadata_1a8972df5b97c94d650c2083162d7cff2a" compoundref="_field_metadata_8hpp" startline="37">is_primary_key</references>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1catalog_1_1_field_metadata_1a63687ac2a6c9b71b3660d56364800629" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t learnql::catalog::FieldMetadata::get_primary_key</definition>
+        <argsstring>() const</argsstring>
+        <name>get_primary_key</name>
+        <qualifiedname>learnql::catalog::FieldMetadata::get_primary_key</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/FieldMetadata.hpp" line="100" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/FieldMetadata.hpp" bodystart="100" bodyend="102"/>
+        <references refid="structlearnql_1_1catalog_1_1_field_metadata_1afbd7dd5ab07a49babe4a9b8d92853715" compoundref="_field_metadata_8hpp" startline="32">field_id</references>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1catalog_1_1_field_metadata_1adfc3c7531fcbdeb819a761625d78d18b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::catalog::FieldMetadata::serialize</definition>
+        <argsstring>(serialization::BinaryWriter &amp;writer) const</argsstring>
+        <name>serialize</name>
+        <qualifiedname>learnql::catalog::FieldMetadata::serialize</qualifiedname>
+        <param>
+          <type><ref refid="classlearnql_1_1serialization_1_1_binary_writer" kindref="compound">serialization::BinaryWriter</ref> &amp;</type>
+          <declname>writer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/FieldMetadata.hpp" line="106" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/FieldMetadata.hpp" bodystart="106" bodyend="113"/>
+        <references refid="structlearnql_1_1catalog_1_1_field_metadata_1afbd7dd5ab07a49babe4a9b8d92853715" compoundref="_field_metadata_8hpp" startline="32">field_id</references>
+        <references refid="structlearnql_1_1catalog_1_1_field_metadata_1ae0363b9975d9c0a515a55adfba6fa5ba" compoundref="_field_metadata_8hpp" startline="34">field_name</references>
+        <references refid="structlearnql_1_1catalog_1_1_field_metadata_1a0dd8e10f468c8073701bdd390302ecbd" compoundref="_field_metadata_8hpp" startline="36">field_order</references>
+        <references refid="structlearnql_1_1catalog_1_1_field_metadata_1a9b16815d288c9b8948e2f95b27dafe21" compoundref="_field_metadata_8hpp" startline="35">field_type</references>
+        <references refid="structlearnql_1_1catalog_1_1_field_metadata_1a8972df5b97c94d650c2083162d7cff2a" compoundref="_field_metadata_8hpp" startline="37">is_primary_key</references>
+        <references refid="structlearnql_1_1catalog_1_1_field_metadata_1aef2ce1e18a3abff2e3bc6ef36ed6720a" compoundref="_field_metadata_8hpp" startline="33">table_name</references>
+        <references refid="classlearnql_1_1serialization_1_1_binary_writer_1a7343d36f8a9adc28f9ab78826055cda7" compoundref="_binary_writer_8hpp" startline="52" endline="64">learnql::serialization::BinaryWriter::write</references>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1catalog_1_1_field_metadata_1af9490982f31af015e014eef607f70993" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::catalog::FieldMetadata::deserialize</definition>
+        <argsstring>(serialization::BinaryReader &amp;reader)</argsstring>
+        <name>deserialize</name>
+        <qualifiedname>learnql::catalog::FieldMetadata::deserialize</qualifiedname>
+        <param>
+          <type><ref refid="classlearnql_1_1serialization_1_1_binary_reader" kindref="compound">serialization::BinaryReader</ref> &amp;</type>
+          <declname>reader</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/FieldMetadata.hpp" line="115" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/FieldMetadata.hpp" bodystart="115" bodyend="122"/>
+        <references refid="structlearnql_1_1catalog_1_1_field_metadata_1afbd7dd5ab07a49babe4a9b8d92853715" compoundref="_field_metadata_8hpp" startline="32">field_id</references>
+        <references refid="structlearnql_1_1catalog_1_1_field_metadata_1ae0363b9975d9c0a515a55adfba6fa5ba" compoundref="_field_metadata_8hpp" startline="34">field_name</references>
+        <references refid="structlearnql_1_1catalog_1_1_field_metadata_1a0dd8e10f468c8073701bdd390302ecbd" compoundref="_field_metadata_8hpp" startline="36">field_order</references>
+        <references refid="structlearnql_1_1catalog_1_1_field_metadata_1a9b16815d288c9b8948e2f95b27dafe21" compoundref="_field_metadata_8hpp" startline="35">field_type</references>
+        <references refid="structlearnql_1_1catalog_1_1_field_metadata_1a8972df5b97c94d650c2083162d7cff2a" compoundref="_field_metadata_8hpp" startline="37">is_primary_key</references>
+        <references refid="classlearnql_1_1serialization_1_1_binary_reader_1a5a262266f478e4dd3e7db03c46eff1b6" compoundref="_binary_reader_8hpp" startline="58" endline="71">learnql::serialization::BinaryReader::read</references>
+        <references refid="classlearnql_1_1serialization_1_1_binary_reader_1a2982ba819ac5c8897835d497c41bd861" compoundref="_binary_reader_8hpp" startline="79" endline="95">learnql::serialization::BinaryReader::read_string</references>
+        <references refid="structlearnql_1_1catalog_1_1_field_metadata_1aef2ce1e18a3abff2e3bc6ef36ed6720a" compoundref="_field_metadata_8hpp" startline="33">table_name</references>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1catalog_1_1_field_metadata_1a1f6d1ac35185259a4d1bd0eaa241461b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool learnql::catalog::FieldMetadata::operator==</definition>
+        <argsstring>(const FieldMetadata &amp;other) const</argsstring>
+        <name>operator==</name>
+        <qualifiedname>learnql::catalog::FieldMetadata::operator==</qualifiedname>
+        <param>
+          <type>const <ref refid="structlearnql_1_1catalog_1_1_field_metadata" kindref="compound">FieldMetadata</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/FieldMetadata.hpp" line="126" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/FieldMetadata.hpp" bodystart="126" bodyend="133"/>
+        <references refid="structlearnql_1_1catalog_1_1_field_metadata_1afbd7dd5ab07a49babe4a9b8d92853715" compoundref="_field_metadata_8hpp" startline="32">field_id</references>
+        <references refid="structlearnql_1_1catalog_1_1_field_metadata_1ae0363b9975d9c0a515a55adfba6fa5ba" compoundref="_field_metadata_8hpp" startline="34">field_name</references>
+        <references refid="structlearnql_1_1catalog_1_1_field_metadata_1a0dd8e10f468c8073701bdd390302ecbd" compoundref="_field_metadata_8hpp" startline="36">field_order</references>
+        <references refid="structlearnql_1_1catalog_1_1_field_metadata_1a9b16815d288c9b8948e2f95b27dafe21" compoundref="_field_metadata_8hpp" startline="35">field_type</references>
+        <references refid="structlearnql_1_1catalog_1_1_field_metadata_1a8972df5b97c94d650c2083162d7cff2a" compoundref="_field_metadata_8hpp" startline="37">is_primary_key</references>
+        <references refid="structlearnql_1_1catalog_1_1_field_metadata_1aef2ce1e18a3abff2e3bc6ef36ed6720a" compoundref="_field_metadata_8hpp" startline="33">table_name</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structlearnql_1_1catalog_1_1_field_metadata_1a79046a1e9aae893703717bd6d4ce82c6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>static auto learnql::catalog::FieldMetadata::reflect_fields</definition>
+        <argsstring>()</argsstring>
+        <name>reflect_fields</name>
+        <qualifiedname>learnql::catalog::FieldMetadata::reflect_fields</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/FieldMetadata.hpp" line="137" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/FieldMetadata.hpp" bodystart="137" bodyend="147"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Metadata for a table field/column. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Stored in the _sys_fields system catalog table. Provides queryable information about all fields in all tables.</para>
+<para>Example usage: <programlisting><codeline><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>student_fields<sp/>=<sp/>catalog.fields()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.where(<ref refid="structlearnql_1_1catalog_1_1_field_metadata_1a16b715f3d28a8b3fa41ddd0c0ccb0f93" kindref="member">FieldMetadata::table</ref><sp/>==<sp/></highlight><highlight class="stringliteral">&quot;students&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>pk_fields<sp/>=<sp/>catalog.fields()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.where(<ref refid="structlearnql_1_1catalog_1_1_field_metadata_1a605aa92f6e4f685c3fbdee7b1496b533" kindref="member">FieldMetadata::is_pk</ref><sp/>==<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>learnql::catalog::FieldMetadata</label>
+        <link refid="structlearnql_1_1catalog_1_1_field_metadata"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>field_name</edgelabel>
+          <edgelabel>field_type</edgelabel>
+          <edgelabel>table_name</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>id</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>name</edgelabel>
+          <edgelabel>table</edgelabel>
+          <edgelabel>type</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>order</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>is_pk</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>learnql::query::Field&lt; T, FieldType &gt;</label>
+        <link refid="classlearnql_1_1query_1_1_field"/>
+      </node>
+      <node id="8">
+        <label>learnql::query::Field&lt; learnql::catalog::FieldMetadata, bool &gt;</label>
+        <link refid="classlearnql_1_1query_1_1_field"/>
+        <childnode refid="5" relation="template-instance">
+          <edgelabel>&lt; learnql::catalog::FieldMetadata, bool &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>learnql::query::Field&lt; learnql::catalog::FieldMetadata, std::string &gt;</label>
+        <link refid="classlearnql_1_1query_1_1_field"/>
+        <childnode refid="5" relation="template-instance">
+          <edgelabel>&lt; learnql::catalog::FieldMetadata, std::string &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>learnql::query::Field&lt; learnql::catalog::FieldMetadata, uint16_t &gt;</label>
+        <link refid="classlearnql_1_1query_1_1_field"/>
+        <childnode refid="5" relation="template-instance">
+          <edgelabel>&lt; learnql::catalog::FieldMetadata, uint16_t &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>learnql::query::Field&lt; learnql::catalog::FieldMetadata, uint64_t &gt;</label>
+        <link refid="classlearnql_1_1query_1_1_field"/>
+        <childnode refid="5" relation="template-instance">
+          <edgelabel>&lt; learnql::catalog::FieldMetadata, uint64_t &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="2">
+        <label>std::string</label>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/FieldMetadata.hpp" line="27" column="1" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/FieldMetadata.hpp" bodystart="27" bodyend="148"/>
+    <listofallmembers>
+      <member refid="structlearnql_1_1catalog_1_1_field_metadata_1af9490982f31af015e014eef607f70993" prot="public" virt="non-virtual"><scope>learnql::catalog::FieldMetadata</scope><name>deserialize</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_field_metadata_1afbd7dd5ab07a49babe4a9b8d92853715" prot="public" virt="non-virtual"><scope>learnql::catalog::FieldMetadata</scope><name>field_id</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_field_metadata_1ae0363b9975d9c0a515a55adfba6fa5ba" prot="public" virt="non-virtual"><scope>learnql::catalog::FieldMetadata</scope><name>field_name</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_field_metadata_1a0dd8e10f468c8073701bdd390302ecbd" prot="public" virt="non-virtual"><scope>learnql::catalog::FieldMetadata</scope><name>field_order</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_field_metadata_1a9b16815d288c9b8948e2f95b27dafe21" prot="public" virt="non-virtual"><scope>learnql::catalog::FieldMetadata</scope><name>field_type</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_field_metadata_1a529e3641569a566fb39e7f79689e0479" prot="public" virt="non-virtual"><scope>learnql::catalog::FieldMetadata</scope><name>get_field_id</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_field_metadata_1ad7ba01062b867e8f6dab20e2b789dc3f" prot="public" virt="non-virtual"><scope>learnql::catalog::FieldMetadata</scope><name>get_field_name</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_field_metadata_1a35185a0b82ecfe221836a40b2fdae482" prot="public" virt="non-virtual"><scope>learnql::catalog::FieldMetadata</scope><name>get_field_order</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_field_metadata_1a3731e2c0f8c7f317afa8b46fe401a736" prot="public" virt="non-virtual"><scope>learnql::catalog::FieldMetadata</scope><name>get_field_type</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_field_metadata_1ac62e785af8ae080e64c432a4052c4fd7" prot="public" virt="non-virtual"><scope>learnql::catalog::FieldMetadata</scope><name>get_is_primary_key</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_field_metadata_1a63687ac2a6c9b71b3660d56364800629" prot="public" virt="non-virtual"><scope>learnql::catalog::FieldMetadata</scope><name>get_primary_key</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_field_metadata_1a987c61313bb4089cc3111b740bc06b8b" prot="public" virt="non-virtual"><scope>learnql::catalog::FieldMetadata</scope><name>get_table_name</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_field_metadata_1aac4c2ecb4ef7e511a7a87b5f3a844b40" prot="public" virt="non-virtual"><scope>learnql::catalog::FieldMetadata</scope><name>id</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_field_metadata_1a605aa92f6e4f685c3fbdee7b1496b533" prot="public" virt="non-virtual"><scope>learnql::catalog::FieldMetadata</scope><name>is_pk</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_field_metadata_1a8972df5b97c94d650c2083162d7cff2a" prot="public" virt="non-virtual"><scope>learnql::catalog::FieldMetadata</scope><name>is_primary_key</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_field_metadata_1af0979a909a3f8fd82e32b2a27d69839e" prot="public" virt="non-virtual"><scope>learnql::catalog::FieldMetadata</scope><name>name</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_field_metadata_1a1f6d1ac35185259a4d1bd0eaa241461b" prot="public" virt="non-virtual"><scope>learnql::catalog::FieldMetadata</scope><name>operator==</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_field_metadata_1a060bec42b3bbf4db5463622370b02a20" prot="public" virt="non-virtual"><scope>learnql::catalog::FieldMetadata</scope><name>order</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_field_metadata_1a886f47cc3c4eeb93cd3d4ab0edacea00" prot="public" virt="non-virtual"><scope>learnql::catalog::FieldMetadata</scope><name>primary_key_type</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_field_metadata_1a79046a1e9aae893703717bd6d4ce82c6" prot="public" virt="non-virtual"><scope>learnql::catalog::FieldMetadata</scope><name>reflect_fields</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_field_metadata_1adfc3c7531fcbdeb819a761625d78d18b" prot="public" virt="non-virtual"><scope>learnql::catalog::FieldMetadata</scope><name>serialize</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_field_metadata_1a16b715f3d28a8b3fa41ddd0c0ccb0f93" prot="public" virt="non-virtual"><scope>learnql::catalog::FieldMetadata</scope><name>table</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_field_metadata_1aef2ce1e18a3abff2e3bc6ef36ed6720a" prot="public" virt="non-virtual"><scope>learnql::catalog::FieldMetadata</scope><name>table_name</name></member>
+      <member refid="structlearnql_1_1catalog_1_1_field_metadata_1aca2d26838c26a647f9fcccc6d968c118" prot="public" virt="non-virtual"><scope>learnql::catalog::FieldMetadata</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

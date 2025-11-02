@@ -1,0 +1,329 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="_execution_plan_8hpp" kind="file" language="C++">
+    <compoundname>ExecutionPlan.hpp</compoundname>
+    <includes local="no">string</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">memory</includes>
+    <includes local="no">sstream</includes>
+    <includes local="no">iomanip</includes>
+    <includedby refid="_learn_q_l_8hpp" local="yes">/Users/tolgaberber/Work/CPP/LearnQL/learnql/LearnQL.hpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/ExecutionPlan.hpp</label>
+        <link refid="_execution_plan_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>iomanip</label>
+      </node>
+      <node id="4">
+        <label>memory</label>
+      </node>
+      <node id="5">
+        <label>sstream</label>
+      </node>
+      <node id="2">
+        <label>string</label>
+      </node>
+      <node id="3">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/LearnQL.hpp</label>
+        <link refid="_learn_q_l_8hpp"/>
+      </node>
+      <node id="1">
+        <label>/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/ExecutionPlan.hpp</label>
+        <link refid="_execution_plan_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classlearnql_1_1debug_1_1_execution_plan_node" prot="public">learnql::debug::ExecutionPlanNode</innerclass>
+    <innerclass refid="classlearnql_1_1debug_1_1_execution_plan" prot="public">learnql::debug::ExecutionPlan</innerclass>
+    <innerclass refid="classlearnql_1_1debug_1_1_execution_plan_builder" prot="public">learnql::debug::ExecutionPlanBuilder</innerclass>
+    <innernamespace refid="namespacelearnql">learnql</innernamespace>
+    <innernamespace refid="namespacelearnql_1_1debug">learnql::debug</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>LEARNQL_DEBUG_EXECUTION_PLAN_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LEARNQL_DEBUG_EXECUTION_PLAN_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iomanip&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacelearnql_1_1debug" kindref="compound">learnql::debug</ref><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="namespacelearnql_1_1debug_1addc603b0bb6554acbb9d6848d90c5919" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="namespacelearnql_1_1debug_1addc603b0bb6554acbb9d6848d90c5919" kindref="member">OperationType</ref><sp/>{</highlight></codeline>
+<codeline lineno="16" refid="namespacelearnql_1_1debug_1addc603b0bb6554acbb9d6848d90c5919a8b14a48f86836edd1b23f78290c15b22" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacelearnql_1_1debug_1addc603b0bb6554acbb9d6848d90c5919a8b14a48f86836edd1b23f78290c15b22" kindref="member">TableScan</ref>,<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Full<sp/>table<sp/>scan</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="namespacelearnql_1_1debug_1addc603b0bb6554acbb9d6848d90c5919a2166606fa6ba860b6f6078448d501ab4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacelearnql_1_1debug_1addc603b0bb6554acbb9d6848d90c5919a2166606fa6ba860b6f6078448d501ab4" kindref="member">IndexScan</ref>,<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Index-based<sp/>scan</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="namespacelearnql_1_1debug_1addc603b0bb6554acbb9d6848d90c5919ad7778d0c64b6ba21494c97f77a66885a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacelearnql_1_1debug_1addc603b0bb6554acbb9d6848d90c5919ad7778d0c64b6ba21494c97f77a66885a" kindref="member">Filter</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Filter<sp/>operation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="namespacelearnql_1_1debug_1addc603b0bb6554acbb9d6848d90c5919aa286d9991c6a547ae25a5f5216164b8f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacelearnql_1_1debug_1addc603b0bb6554acbb9d6848d90c5919aa286d9991c6a547ae25a5f5216164b8f" kindref="member">Join</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Join<sp/>operation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="namespacelearnql_1_1debug_1addc603b0bb6554acbb9d6848d90c5919a04e1eaa7a23f66df19ea1396adf5ebec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacelearnql_1_1debug_1addc603b0bb6554acbb9d6848d90c5919a04e1eaa7a23f66df19ea1396adf5ebec" kindref="member">GroupBy</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Group-by<sp/>aggregation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="namespacelearnql_1_1debug_1addc603b0bb6554acbb9d6848d90c5919a6b46ae48421828d9973deec5fa9aa0c3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacelearnql_1_1debug_1addc603b0bb6554acbb9d6848d90c5919a6b46ae48421828d9973deec5fa9aa0c3" kindref="member">Sort</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Sorting<sp/>operation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="namespacelearnql_1_1debug_1addc603b0bb6554acbb9d6848d90c5919a80d2677cf518f4d04320042f4ea6c146" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacelearnql_1_1debug_1addc603b0bb6554acbb9d6848d90c5919a80d2677cf518f4d04320042f4ea6c146" kindref="member">Limit</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Limit<sp/>operation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="namespacelearnql_1_1debug_1addc603b0bb6554acbb9d6848d90c5919a2121e8333850befac5412d69d52306f7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacelearnql_1_1debug_1addc603b0bb6554acbb9d6848d90c5919a2121e8333850befac5412d69d52306f7" kindref="member">Projection</ref><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Projection<sp/>(select<sp/>specific<sp/>fields)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="namespacelearnql_1_1debug_1adbf8249fba89d7db766e5520be772d60" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="namespacelearnql_1_1debug_1adbf8249fba89d7db766e5520be772d60" kindref="member">operation_type_to_string</ref>(<ref refid="namespacelearnql_1_1debug_1addc603b0bb6554acbb9d6848d90c5919" kindref="member">OperationType</ref><sp/>type)<sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(type)<sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespacelearnql_1_1debug_1addc603b0bb6554acbb9d6848d90c5919a8b14a48f86836edd1b23f78290c15b22" kindref="member">OperationType::TableScan</ref>:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;TABLE_SCAN&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespacelearnql_1_1debug_1addc603b0bb6554acbb9d6848d90c5919a2166606fa6ba860b6f6078448d501ab4" kindref="member">OperationType::IndexScan</ref>:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;INDEX_SCAN&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespacelearnql_1_1debug_1addc603b0bb6554acbb9d6848d90c5919ad7778d0c64b6ba21494c97f77a66885a" kindref="member">OperationType::Filter</ref>:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;FILTER&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespacelearnql_1_1debug_1addc603b0bb6554acbb9d6848d90c5919aa286d9991c6a547ae25a5f5216164b8f" kindref="member">OperationType::Join</ref>:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;JOIN&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespacelearnql_1_1debug_1addc603b0bb6554acbb9d6848d90c5919a04e1eaa7a23f66df19ea1396adf5ebec" kindref="member">OperationType::GroupBy</ref>:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;GROUP_BY&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespacelearnql_1_1debug_1addc603b0bb6554acbb9d6848d90c5919a6b46ae48421828d9973deec5fa9aa0c3" kindref="member">OperationType::Sort</ref>:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;SORT&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespacelearnql_1_1debug_1addc603b0bb6554acbb9d6848d90c5919a80d2677cf518f4d04320042f4ea6c146" kindref="member">OperationType::Limit</ref>:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;LIMIT&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespacelearnql_1_1debug_1addc603b0bb6554acbb9d6848d90c5919a2121e8333850befac5412d69d52306f7" kindref="member">OperationType::Projection</ref>:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;PROJECTION&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;UNKNOWN&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="classlearnql_1_1debug_1_1_execution_plan_node" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classlearnql_1_1debug_1_1_execution_plan_node_1a21ee373271265b420b1414571cacbfa1" kindref="member">ExecutionPlanNode</ref><sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="55" refid="classlearnql_1_1debug_1_1_execution_plan_node_1a21ee373271265b420b1414571cacbfa1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlearnql_1_1debug_1_1_execution_plan_node_1a21ee373271265b420b1414571cacbfa1" kindref="member">ExecutionPlanNode</ref>(<ref refid="namespacelearnql_1_1debug_1addc603b0bb6554acbb9d6848d90c5919" kindref="member">OperationType</ref><sp/><ref refid="classlearnql_1_1debug_1_1_execution_plan_node_1a4696d3f7491ebce2868f7500fe431781" kindref="member">type</ref>,<sp/>std::string<sp/><ref refid="classlearnql_1_1debug_1_1_execution_plan_node_1a99104ccbacb813f00880749fc3414cab" kindref="member">description</ref>)</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>type_(<ref refid="classlearnql_1_1debug_1_1_execution_plan_node_1a4696d3f7491ebce2868f7500fe431781" kindref="member">type</ref>),<sp/>description_(std::move(<ref refid="classlearnql_1_1debug_1_1_execution_plan_node_1a99104ccbacb813f00880749fc3414cab" kindref="member">description</ref>)),</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>estimated_rows_(0),<sp/>estimated_cost_(0.0)<sp/>{}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="classlearnql_1_1debug_1_1_execution_plan_node_1a96068c557fad25aedb0d38792980a31e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlearnql_1_1debug_1_1_execution_plan_node_1a96068c557fad25aedb0d38792980a31e" kindref="member">set_estimated_rows</ref>(std::size_t<sp/>rows)<sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>estimated_rows_<sp/>=<sp/>rows;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="classlearnql_1_1debug_1_1_execution_plan_node_1a172f430ec3da7502250176a0025d332c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlearnql_1_1debug_1_1_execution_plan_node_1a172f430ec3da7502250176a0025d332c" kindref="member">set_estimated_cost</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>cost)<sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>estimated_cost_<sp/>=<sp/>cost;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="classlearnql_1_1debug_1_1_execution_plan_node_1a69db044e8475a3f410d048a01d9b1997" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlearnql_1_1debug_1_1_execution_plan_node_1a69db044e8475a3f410d048a01d9b1997" kindref="member">add_child</ref>(std::shared_ptr&lt;ExecutionPlanNode&gt;<sp/>child)<sp/>{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>children_.push_back(std::move(child));</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="classlearnql_1_1debug_1_1_execution_plan_node_1a4696d3f7491ebce2868f7500fe431781" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/><ref refid="namespacelearnql_1_1debug_1addc603b0bb6554acbb9d6848d90c5919" kindref="member">OperationType</ref><sp/><ref refid="classlearnql_1_1debug_1_1_execution_plan_node_1a4696d3f7491ebce2868f7500fe431781" kindref="member">type</ref>()<sp/>const<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>type_;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="classlearnql_1_1debug_1_1_execution_plan_node_1a99104ccbacb813f00880749fc3414cab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/><ref refid="classlearnql_1_1debug_1_1_execution_plan_node_1a99104ccbacb813f00880749fc3414cab" kindref="member">description</ref>()<sp/>const<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>description_;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="classlearnql_1_1debug_1_1_execution_plan_node_1a39766aabe5544fd1857d38d882e46e1b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;std::shared_ptr&lt;ExecutionPlanNode&gt;&gt;&amp;<sp/><ref refid="classlearnql_1_1debug_1_1_execution_plan_node_1a39766aabe5544fd1857d38d882e46e1b" kindref="member">children</ref>()<sp/>const<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>children_;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="classlearnql_1_1debug_1_1_execution_plan_node_1a7cf7e70ec871a6164dd744cbb671110b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/>std::string<sp/><ref refid="classlearnql_1_1debug_1_1_execution_plan_node_1a7cf7e70ec871a6164dd744cbb671110b" kindref="member">to_tree_string</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>prefix<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>is_last<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::ostringstream<sp/>oss;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Current<sp/>node</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>oss<sp/>&lt;&lt;<sp/>prefix;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>oss<sp/>&lt;&lt;<sp/>(is_last<sp/>?<sp/></highlight><highlight class="stringliteral">&quot;└──<sp/>&quot;</highlight><highlight class="normal"><sp/>:<sp/></highlight><highlight class="stringliteral">&quot;├──<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>oss<sp/>&lt;&lt;<sp/><ref refid="namespacelearnql_1_1debug_1adbf8249fba89d7db766e5520be772d60" kindref="member">operation_type_to_string</ref>(type_)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>description_;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(estimated_rows_<sp/>&gt;<sp/>0<sp/>||<sp/>estimated_cost_<sp/>&gt;<sp/>0.0)<sp/>{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>oss<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>(est.<sp/>rows:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>estimated_rows_</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>cost:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::fixed<sp/>&lt;&lt;<sp/>std::setprecision(2)<sp/>&lt;&lt;<sp/>estimated_cost_<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;)&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>oss<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Children</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(std::size_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>children_.size();<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>child_prefix<sp/>=<sp/>prefix<sp/>+<sp/>(is_last<sp/>?<sp/></highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/><sp/>&quot;</highlight><highlight class="normal"><sp/>:<sp/></highlight><highlight class="stringliteral">&quot;│<sp/><sp/><sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>child_is_last<sp/>=<sp/>(i<sp/>==<sp/>children_.size()<sp/>-<sp/>1);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>oss<sp/>&lt;&lt;<sp/>children_[i]-&gt;to_tree_string(child_prefix,<sp/>child_is_last);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>oss.str();</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacelearnql_1_1debug_1addc603b0bb6554acbb9d6848d90c5919" kindref="member">OperationType</ref><sp/>type_;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>description_;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::shared_ptr&lt;ExecutionPlanNode&gt;&gt;<sp/>children_;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>std::size_t<sp/>estimated_rows_;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>estimated_cost_;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142" refid="classlearnql_1_1debug_1_1_execution_plan" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classlearnql_1_1debug_1_1_execution_plan_1a27ae02d0db8c7da5bcfdb7e640a609c0" kindref="member">ExecutionPlan</ref><sp/>{</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="148" refid="classlearnql_1_1debug_1_1_execution_plan_1a27ae02d0db8c7da5bcfdb7e640a609c0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classlearnql_1_1debug_1_1_execution_plan_1a27ae02d0db8c7da5bcfdb7e640a609c0" kindref="member">ExecutionPlan</ref>(std::string<sp/>query_text)</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>query_text_(std::move(query_text)),<sp/>root_(nullptr)<sp/>{}</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154" refid="classlearnql_1_1debug_1_1_execution_plan_1accff2969c10c5a6ee0b2a82c78fabec5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlearnql_1_1debug_1_1_execution_plan_1accff2969c10c5a6ee0b2a82c78fabec5" kindref="member">set_root</ref>(std::shared_ptr&lt;ExecutionPlanNode&gt;<sp/><ref refid="classlearnql_1_1debug_1_1_execution_plan_1a2671777cfcbb2352b519692e83589be7" kindref="member">root</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>root_<sp/>=<sp/>std::move(<ref refid="classlearnql_1_1debug_1_1_execution_plan_1a2671777cfcbb2352b519692e83589be7" kindref="member">root</ref>);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161" refid="classlearnql_1_1debug_1_1_execution_plan_1a2671777cfcbb2352b519692e83589be7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::shared_ptr&lt;ExecutionPlanNode&gt;&amp;<sp/><ref refid="classlearnql_1_1debug_1_1_execution_plan_1a2671777cfcbb2352b519692e83589be7" kindref="member">root</ref>()<sp/>const<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>root_;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168" refid="classlearnql_1_1debug_1_1_execution_plan_1aefd69da0826c115d7e74b1b02a6f1ae3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classlearnql_1_1debug_1_1_execution_plan_1aefd69da0826c115d7e74b1b02a6f1ae3" kindref="member">print</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;===<sp/>Query<sp/>Execution<sp/>Plan<sp/>===\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Query:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>query_text_<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(root_)<sp/>{</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>root_-&gt;to_tree_string();</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;(Empty<sp/>plan)\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184" refid="classlearnql_1_1debug_1_1_execution_plan_1a52ffecbed3134c1b08ce9eca3f3dd19d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/>std::string<sp/><ref refid="classlearnql_1_1debug_1_1_execution_plan_1a52ffecbed3134c1b08ce9eca3f3dd19d" kindref="member">to_string</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(root_)<sp/>{</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>root_-&gt;to_tree_string();</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;(Empty<sp/>plan)\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>query_text_;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/>std::shared_ptr&lt;ExecutionPlanNode&gt;<sp/>root_;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199" refid="classlearnql_1_1debug_1_1_execution_plan_builder" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classlearnql_1_1debug_1_1_execution_plan_builder_1a54963196c21773504d2046812e42641e" kindref="member">ExecutionPlanBuilder</ref><sp/>{</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="205" refid="classlearnql_1_1debug_1_1_execution_plan_builder_1a54963196c21773504d2046812e42641e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classlearnql_1_1debug_1_1_execution_plan_builder_1a54963196c21773504d2046812e42641e" kindref="member">ExecutionPlanBuilder</ref>(std::string<sp/>query_text)</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>plan_(std::move(query_text))<sp/>{}</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211" refid="classlearnql_1_1debug_1_1_execution_plan_builder_1af01d1352ab1e479fec50652252aaed4f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::shared_ptr&lt;ExecutionPlanNode&gt;<sp/><ref refid="classlearnql_1_1debug_1_1_execution_plan_builder_1af01d1352ab1e479fec50652252aaed4f" kindref="member">table_scan</ref>(</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>table_name,</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::size_t<sp/>estimated_rows<sp/>=<sp/>0)</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>node<sp/>=<sp/>std::make_shared&lt;ExecutionPlanNode&gt;(</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacelearnql_1_1debug_1addc603b0bb6554acbb9d6848d90c5919a8b14a48f86836edd1b23f78290c15b22" kindref="member">OperationType::TableScan</ref>,</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Table:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>table_name</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>node-&gt;set_estimated_rows(estimated_rows);</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>node-&gt;set_estimated_cost(</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">double</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(estimated_rows));</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>node;</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227" refid="classlearnql_1_1debug_1_1_execution_plan_builder_1a7428d40c0689b7c2c8781b9f7bc30667" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::shared_ptr&lt;ExecutionPlanNode&gt;<sp/><ref refid="classlearnql_1_1debug_1_1_execution_plan_builder_1a7428d40c0689b7c2c8781b9f7bc30667" kindref="member">index_scan</ref>(</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>index_name,</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::size_t<sp/>estimated_rows<sp/>=<sp/>0)</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>node<sp/>=<sp/>std::make_shared&lt;ExecutionPlanNode&gt;(</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacelearnql_1_1debug_1addc603b0bb6554acbb9d6848d90c5919a2166606fa6ba860b6f6078448d501ab4" kindref="member">OperationType::IndexScan</ref>,</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Index:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>index_name</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>node-&gt;set_estimated_rows(estimated_rows);</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>node-&gt;set_estimated_cost(</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">double</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(estimated_rows)<sp/>*<sp/>0.1);<sp/></highlight><highlight class="comment">//<sp/>Index<sp/>is<sp/>cheaper</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>node;</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243" refid="classlearnql_1_1debug_1_1_execution_plan_builder_1aea2d2f9a471ca80cb76ea89376e388e8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::shared_ptr&lt;ExecutionPlanNode&gt;<sp/><ref refid="classlearnql_1_1debug_1_1_execution_plan_builder_1aea2d2f9a471ca80cb76ea89376e388e8" kindref="member">filter</ref>(</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>condition,</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::size_t<sp/>estimated_rows<sp/>=<sp/>0)</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>node<sp/>=<sp/>std::make_shared&lt;ExecutionPlanNode&gt;(</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacelearnql_1_1debug_1addc603b0bb6554acbb9d6848d90c5919ad7778d0c64b6ba21494c97f77a66885a" kindref="member">OperationType::Filter</ref>,</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Condition:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>condition</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>node-&gt;set_estimated_rows(estimated_rows);</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>node-&gt;set_estimated_cost(</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">double</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(estimated_rows)<sp/>*<sp/>0.5);</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>node;</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight></codeline>
+<codeline lineno="259" refid="classlearnql_1_1debug_1_1_execution_plan_builder_1af7d50f71dc09e499bcc6e67fa12ea4e5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::shared_ptr&lt;ExecutionPlanNode&gt;<sp/><ref refid="classlearnql_1_1debug_1_1_execution_plan_builder_1af7d50f71dc09e499bcc6e67fa12ea4e5" kindref="member">join</ref>(</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>join_type,</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>condition,</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::size_t<sp/>estimated_rows<sp/>=<sp/>0)</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>node<sp/>=<sp/>std::make_shared&lt;ExecutionPlanNode&gt;(</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacelearnql_1_1debug_1addc603b0bb6554acbb9d6848d90c5919aa286d9991c6a547ae25a5f5216164b8f" kindref="member">OperationType::Join</ref>,</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>join_type<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>ON<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>condition</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>node-&gt;set_estimated_rows(estimated_rows);</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>node-&gt;set_estimated_cost(</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">double</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(estimated_rows)<sp/>*<sp/>2.0);</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>node;</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight></codeline>
+<codeline lineno="276" refid="classlearnql_1_1debug_1_1_execution_plan_builder_1aa839a7a36e1d891f16650be399cf0231" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::shared_ptr&lt;ExecutionPlanNode&gt;<sp/><ref refid="classlearnql_1_1debug_1_1_execution_plan_builder_1aa839a7a36e1d891f16650be399cf0231" kindref="member">group_by</ref>(</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>fields,</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::size_t<sp/>estimated_rows<sp/>=<sp/>0)</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>node<sp/>=<sp/>std::make_shared&lt;ExecutionPlanNode&gt;(</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacelearnql_1_1debug_1addc603b0bb6554acbb9d6848d90c5919a04e1eaa7a23f66df19ea1396adf5ebec" kindref="member">OperationType::GroupBy</ref>,</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Fields:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>fields</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>node-&gt;set_estimated_rows(estimated_rows);</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>node-&gt;set_estimated_cost(</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">double</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(estimated_rows)<sp/>*<sp/>1.5);</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>node;</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight></codeline>
+<codeline lineno="292" refid="classlearnql_1_1debug_1_1_execution_plan_builder_1a27b112076f822414e0bbf171cdc80dfe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::shared_ptr&lt;ExecutionPlanNode&gt;<sp/><ref refid="classlearnql_1_1debug_1_1_execution_plan_builder_1a27b112076f822414e0bbf171cdc80dfe" kindref="member">sort</ref>(</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>fields,</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::size_t<sp/>estimated_rows<sp/>=<sp/>0)</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>node<sp/>=<sp/>std::make_shared&lt;ExecutionPlanNode&gt;(</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacelearnql_1_1debug_1addc603b0bb6554acbb9d6848d90c5919a6b46ae48421828d9973deec5fa9aa0c3" kindref="member">OperationType::Sort</ref>,</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Fields:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>fields</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>node-&gt;set_estimated_rows(estimated_rows);</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>node-&gt;set_estimated_cost(</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">double</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(estimated_rows)<sp/>*<sp/>std::log2(estimated_rows<sp/>+<sp/>1));</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>node;</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"></highlight></codeline>
+<codeline lineno="308" refid="classlearnql_1_1debug_1_1_execution_plan_builder_1a60ecb344faad29edbca49e0ed4ead1db" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::shared_ptr&lt;ExecutionPlanNode&gt;<sp/><ref refid="classlearnql_1_1debug_1_1_execution_plan_builder_1a60ecb344faad29edbca49e0ed4ead1db" kindref="member">limit</ref>(</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::size_t<sp/>limit_count)</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>node<sp/>=<sp/>std::make_shared&lt;ExecutionPlanNode&gt;(</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacelearnql_1_1debug_1addc603b0bb6554acbb9d6848d90c5919a80d2677cf518f4d04320042f4ea6c146" kindref="member">OperationType::Limit</ref>,</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Limit:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>std::to_string(limit_count)</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>node-&gt;set_estimated_rows(limit_count);</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>node-&gt;set_estimated_cost(1.0);</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>node;</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"></highlight></codeline>
+<codeline lineno="323" refid="classlearnql_1_1debug_1_1_execution_plan_builder_1a3beb072cf11a52360bed7bc33bba41cf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::shared_ptr&lt;ExecutionPlanNode&gt;<sp/><ref refid="classlearnql_1_1debug_1_1_execution_plan_builder_1a3beb072cf11a52360bed7bc33bba41cf" kindref="member">projection</ref>(</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>fields,</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::size_t<sp/>estimated_rows<sp/>=<sp/>0)</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>node<sp/>=<sp/>std::make_shared&lt;ExecutionPlanNode&gt;(</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacelearnql_1_1debug_1addc603b0bb6554acbb9d6848d90c5919a2121e8333850befac5412d69d52306f7" kindref="member">OperationType::Projection</ref>,</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Fields:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>fields</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>node-&gt;set_estimated_rows(estimated_rows);</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>node-&gt;set_estimated_cost(</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">double</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(estimated_rows)<sp/>*<sp/>0.2);</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>node;</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"></highlight></codeline>
+<codeline lineno="339" refid="classlearnql_1_1debug_1_1_execution_plan_builder_1af54e90be6665db7d81af23e501d50f1a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlearnql_1_1debug_1_1_execution_plan_builder_1a54963196c21773504d2046812e42641e" kindref="member">ExecutionPlanBuilder</ref>&amp;<sp/><ref refid="classlearnql_1_1debug_1_1_execution_plan_builder_1af54e90be6665db7d81af23e501d50f1a" kindref="member">set_root</ref>(std::shared_ptr&lt;ExecutionPlanNode&gt;<sp/>root)<sp/>{</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>plan_.<ref refid="classlearnql_1_1debug_1_1_execution_plan_builder_1af54e90be6665db7d81af23e501d50f1a" kindref="member">set_root</ref>(std::move(root));</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"></highlight></codeline>
+<codeline lineno="347" refid="classlearnql_1_1debug_1_1_execution_plan_builder_1a27014b65f33809a945e8d4e6fe86583b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlearnql_1_1debug_1_1_execution_plan" kindref="compound">ExecutionPlan</ref><sp/><ref refid="classlearnql_1_1debug_1_1_execution_plan_builder_1a27014b65f33809a945e8d4e6fe86583b" kindref="member">build</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::move(plan_);</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"></highlight></codeline>
+<codeline lineno="351"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlearnql_1_1debug_1_1_execution_plan" kindref="compound">ExecutionPlan</ref><sp/>plan_;</highlight></codeline>
+<codeline lineno="353"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"></highlight></codeline>
+<codeline lineno="355"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>learnql::debug</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="356"><highlight class="normal"></highlight></codeline>
+<codeline lineno="357"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>LEARNQL_DEBUG_EXECUTION_PLAN_HPP</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/ExecutionPlan.hpp"/>
+  </compounddef>
+</doxygen>

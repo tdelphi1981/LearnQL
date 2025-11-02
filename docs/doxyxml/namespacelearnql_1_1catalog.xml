@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="namespacelearnql_1_1catalog" kind="namespace" language="C++">
+    <compoundname>learnql::catalog</compoundname>
+    <innerclass refid="structlearnql_1_1catalog_1_1_field_metadata" prot="public">learnql::catalog::FieldMetadata</innerclass>
+    <innerclass refid="structlearnql_1_1catalog_1_1_index_metadata" prot="public">learnql::catalog::IndexMetadata</innerclass>
+    <innerclass refid="classlearnql_1_1catalog_1_1_system_catalog" prot="public">learnql::catalog::SystemCatalog</innerclass>
+    <innerclass refid="structlearnql_1_1catalog_1_1_table_metadata" prot="public">learnql::catalog::TableMetadata</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/catalog/FieldMetadata.hpp" line="11" column="1"/>
+  </compounddef>
+</doxygen>

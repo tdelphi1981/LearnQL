@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="structlearnql_1_1core_1_1_database_1_1_table_wrapper" kind="struct" language="C++" prot="private">
+    <compoundname>learnql::core::Database::TableWrapper</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">learnql::core::Database::TableBase</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlearnql_1_1core_1_1_database_1_1_table_wrapper_1a770d9dbf54d7b2a325c07aa5b6d3c28e" prot="public" static="no" mutable="no">
+        <type><ref refid="classlearnql_1_1core_1_1_table" kindref="compound">Table</ref>&lt; T &gt;</type>
+        <definition>Table&lt;T&gt; learnql::core::Database::TableWrapper&lt; T &gt;::table</definition>
+        <argsstring></argsstring>
+        <name>table</name>
+        <qualifiedname>learnql::core::Database::TableWrapper::table</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Database.hpp" line="374" column="15" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Database.hpp" bodystart="374" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structlearnql_1_1core_1_1_database_1_1_table_wrapper_1a4f60765b5d7d60025bc90dc4523d95d4" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>learnql::core::Database::TableWrapper&lt; T &gt;::TableWrapper</definition>
+        <argsstring>(std::shared_ptr&lt; storage::StorageEngine &gt; storage, std::string name)</argsstring>
+        <name>TableWrapper</name>
+        <qualifiedname>learnql::core::Database::TableWrapper::TableWrapper</qualifiedname>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classlearnql_1_1storage_1_1_storage_engine" kindref="compound">storage::StorageEngine</ref> &gt;</type>
+          <declname>storage</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Database.hpp" line="376" column="18" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Database.hpp" bodystart="376" bodyend="377"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Type-erased table wrapper. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>learnql::core::Database::TableBase</label>
+      </node>
+      <node id="1">
+        <label>learnql::core::Database::TableWrapper&lt; T &gt;</label>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>learnql::core::Database::TableBase</label>
+      </node>
+      <node id="1">
+        <label>learnql::core::Database::TableWrapper&lt; T &gt;</label>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Database.hpp" line="373" column="5" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Database.hpp" bodystart="373" bodyend="378"/>
+    <listofallmembers>
+      <member refid="structlearnql_1_1core_1_1_database_1_1_table_wrapper_1a770d9dbf54d7b2a325c07aa5b6d3c28e" prot="public" virt="non-virtual"><scope>learnql::core::Database::TableWrapper</scope><name>table</name></member>
+      <member refid="structlearnql_1_1core_1_1_database_1_1_table_wrapper_1a4f60765b5d7d60025bc90dc4523d95d4" prot="public" virt="non-virtual"><scope>learnql::core::Database::TableWrapper</scope><name>TableWrapper</name></member>
+      <member refid="structlearnql_1_1core_1_1_database_1_1_table_base_1a4b91c3102c00d305a2e6b01d57a26466" prot="public" virt="virtual"><scope>learnql::core::Database::TableWrapper</scope><name>~TableBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

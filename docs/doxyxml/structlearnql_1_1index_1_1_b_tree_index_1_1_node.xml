@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="structlearnql_1_1index_1_1_b_tree_index_1_1_node" kind="struct" language="C++" prot="private">
+    <compoundname>learnql::index::BTreeIndex::Node</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlearnql_1_1index_1_1_b_tree_index_1_1_node_1a8368cb16942d1006ba64ba0b063a1468" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; Key &gt;</type>
+        <definition>std::vector&lt;Key&gt; learnql::index::BTreeIndex&lt; Key, Value &gt;::Node::keys</definition>
+        <argsstring></argsstring>
+        <name>keys</name>
+        <qualifiedname>learnql::index::BTreeIndex::Node::keys</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BTreeIndex.hpp" line="49" column="21" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BTreeIndex.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1index_1_1_b_tree_index_1_1_node_1a57684b0fec7e302fddb53e1f05b5d40b" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; Value &gt;</type>
+        <definition>std::vector&lt;Value&gt; learnql::index::BTreeIndex&lt; Key, Value &gt;::Node::values</definition>
+        <argsstring></argsstring>
+        <name>values</name>
+        <qualifiedname>learnql::index::BTreeIndex::Node::values</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BTreeIndex.hpp" line="50" column="21" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BTreeIndex.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1index_1_1_b_tree_index_1_1_node_1a5c528521acc482be2779a6399eb9e41a" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::unique_ptr&lt; Node &gt; &gt;</type>
+        <definition>std::vector&lt;std::unique_ptr&lt;Node&gt; &gt; learnql::index::BTreeIndex&lt; Key, Value &gt;::Node::children</definition>
+        <argsstring></argsstring>
+        <name>children</name>
+        <qualifiedname>learnql::index::BTreeIndex::Node::children</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BTreeIndex.hpp" line="51" column="21" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BTreeIndex.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1index_1_1_b_tree_index_1_1_node_1a17953c1b3469478431df9a40885326d9" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool learnql::index::BTreeIndex&lt; Key, Value &gt;::Node::is_leaf</definition>
+        <argsstring></argsstring>
+        <name>is_leaf</name>
+        <qualifiedname>learnql::index::BTreeIndex::Node::is_leaf</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BTreeIndex.hpp" line="52" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BTreeIndex.hpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structlearnql_1_1index_1_1_b_tree_index_1_1_node_1aaed8a08711867aac94bcbff751281a68" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>learnql::index::BTreeIndex&lt; Key, Value &gt;::Node::Node</definition>
+        <argsstring>()</argsstring>
+        <name>Node</name>
+        <qualifiedname>learnql::index::BTreeIndex::Node::Node</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BTreeIndex.hpp" line="54" column="9" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BTreeIndex.hpp" bodystart="54" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1index_1_1_b_tree_index_1_1_node_1a52614657748acdec84aece7d6cf9510e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>std::size_t learnql::index::BTreeIndex&lt; Key, Value &gt;::Node::find_insert_pos</definition>
+        <argsstring>(const Key &amp;key) const</argsstring>
+        <name>find_insert_pos</name>
+        <qualifiedname>learnql::index::BTreeIndex::Node::find_insert_pos</qualifiedname>
+        <param>
+          <type>const Key &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Finds the index where a key should be inserted. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BTreeIndex.hpp" line="63" column="21" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BTreeIndex.hpp" bodystart="63" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1index_1_1_b_tree_index_1_1_node_1a7fba0341a5c6315147392676be141c92" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool learnql::index::BTreeIndex&lt; Key, Value &gt;::Node::is_full</definition>
+        <argsstring>() const</argsstring>
+        <name>is_full</name>
+        <qualifiedname>learnql::index::BTreeIndex::Node::is_full</qualifiedname>
+        <briefdescription>
+<para>Checks if node is full. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BTreeIndex.hpp" line="70" column="15" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BTreeIndex.hpp" bodystart="70" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1index_1_1_b_tree_index_1_1_node_1a41f1aae2abf62aa5beaf6efdcb4e9459" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool learnql::index::BTreeIndex&lt; Key, Value &gt;::Node::has_min_keys</definition>
+        <argsstring>() const</argsstring>
+        <name>has_min_keys</name>
+        <qualifiedname>learnql::index::BTreeIndex::Node::has_min_keys</qualifiedname>
+        <briefdescription>
+<para>Checks if node has minimum keys. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BTreeIndex.hpp" line="77" column="15" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BTreeIndex.hpp" bodystart="77" bodyend="79"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Node in the B-tree. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="4">
+        <label>T</label>
+      </node>
+      <node id="8">
+        <label>learnql::index::BTreeIndex&lt; Key, Value &gt;::Node</label>
+        <childnode refid="2" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>values</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>children</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>learnql::index::BTreeIndex&lt; Key, Value &gt;::Node</label>
+        <childnode refid="2" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>values</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>children</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>std::unique_ptr&lt; T &gt;</label>
+        <childnode refid="4" relation="usage">
+          <edgelabel>ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>std::unique_ptr&lt; Node &gt;</label>
+        <childnode refid="8" relation="usage">
+          <edgelabel>ptr</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="template-instance">
+          <edgelabel>&lt; Node &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>std::vector&lt; T &gt;</label>
+        <childnode refid="4" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>std::vector&lt; Key &gt;</label>
+        <childnode refid="3" relation="template-instance">
+          <edgelabel>&lt; Key &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>std::vector&lt; Value &gt;</label>
+        <childnode refid="3" relation="template-instance">
+          <edgelabel>&lt; Value &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>std::vector&lt; std::unique_ptr&lt; Node &gt; &gt;</label>
+        <childnode refid="7" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="template-instance">
+          <edgelabel>&lt; std::unique_ptr&lt; Node &gt; &gt;</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BTreeIndex.hpp" line="48" column="5" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BTreeIndex.hpp" bodystart="48" bodyend="80"/>
+    <listofallmembers>
+      <member refid="structlearnql_1_1index_1_1_b_tree_index_1_1_node_1a5c528521acc482be2779a6399eb9e41a" prot="public" virt="non-virtual"><scope>learnql::index::BTreeIndex::Node</scope><name>children</name></member>
+      <member refid="structlearnql_1_1index_1_1_b_tree_index_1_1_node_1a52614657748acdec84aece7d6cf9510e" prot="public" virt="non-virtual"><scope>learnql::index::BTreeIndex::Node</scope><name>find_insert_pos</name></member>
+      <member refid="structlearnql_1_1index_1_1_b_tree_index_1_1_node_1a41f1aae2abf62aa5beaf6efdcb4e9459" prot="public" virt="non-virtual"><scope>learnql::index::BTreeIndex::Node</scope><name>has_min_keys</name></member>
+      <member refid="structlearnql_1_1index_1_1_b_tree_index_1_1_node_1a7fba0341a5c6315147392676be141c92" prot="public" virt="non-virtual"><scope>learnql::index::BTreeIndex::Node</scope><name>is_full</name></member>
+      <member refid="structlearnql_1_1index_1_1_b_tree_index_1_1_node_1a17953c1b3469478431df9a40885326d9" prot="public" virt="non-virtual"><scope>learnql::index::BTreeIndex::Node</scope><name>is_leaf</name></member>
+      <member refid="structlearnql_1_1index_1_1_b_tree_index_1_1_node_1a8368cb16942d1006ba64ba0b063a1468" prot="public" virt="non-virtual"><scope>learnql::index::BTreeIndex::Node</scope><name>keys</name></member>
+      <member refid="structlearnql_1_1index_1_1_b_tree_index_1_1_node_1aaed8a08711867aac94bcbff751281a68" prot="public" virt="non-virtual"><scope>learnql::index::BTreeIndex::Node</scope><name>Node</name></member>
+      <member refid="structlearnql_1_1index_1_1_b_tree_index_1_1_node_1a57684b0fec7e302fddb53e1f05b5d40b" prot="public" virt="non-virtual"><scope>learnql::index::BTreeIndex::Node</scope><name>values</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

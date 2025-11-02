@@ -1,0 +1,167 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classlearnql_1_1debug_1_1_timer" kind="class" language="C++" prot="public">
+    <compoundname>learnql::debug::Timer</compoundname>
+    <includes refid="_profiler_8hpp" local="no">Profiler.hpp</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classlearnql_1_1debug_1_1_timer_1a04e5abdf027b5cc99a0b3accad4f8385" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string learnql::debug::Timer::name_</definition>
+        <argsstring></argsstring>
+        <name>name_</name>
+        <qualifiedname>learnql::debug::Timer::name_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" line="86" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlearnql_1_1debug_1_1_timer_1a063c02f9d488d6b83f733b44493178f4" prot="private" static="no" mutable="no">
+        <type>std::chrono::high_resolution_clock::time_point</type>
+        <definition>std::chrono::high_resolution_clock::time_point learnql::debug::Timer::start_</definition>
+        <argsstring></argsstring>
+        <name>start_</name>
+        <qualifiedname>learnql::debug::Timer::start_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" line="87" column="52" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlearnql_1_1debug_1_1_timer_1aadde536ac87564a55d90438f39f8e44e" prot="private" static="no" mutable="no">
+        <type>std::chrono::high_resolution_clock::time_point</type>
+        <definition>std::chrono::high_resolution_clock::time_point learnql::debug::Timer::end_</definition>
+        <argsstring></argsstring>
+        <name>end_</name>
+        <qualifiedname>learnql::debug::Timer::end_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" line="88" column="52" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlearnql_1_1debug_1_1_timer_1a0fce33f92ddac89c88775bd6396cb323" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool learnql::debug::Timer::stopped_</definition>
+        <argsstring></argsstring>
+        <name>stopped_</name>
+        <qualifiedname>learnql::debug::Timer::stopped_</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" line="89" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" bodystart="89" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlearnql_1_1debug_1_1_timer_1a7601997891baf94b4da323d302ff2b87" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>learnql::debug::Timer::Timer</definition>
+        <argsstring>(std::string name)</argsstring>
+        <name>Timer</name>
+        <qualifiedname>learnql::debug::Timer::Timer</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Constructs and starts the timer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the operation being timed </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" line="50" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" bodystart="50" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1debug_1_1_timer_1adedbb7943568ae2405b1bfd9d49ac136" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>learnql::debug::Timer::~Timer</definition>
+        <argsstring>()</argsstring>
+        <name>~Timer</name>
+        <qualifiedname>learnql::debug::Timer::~Timer</qualifiedname>
+        <briefdescription>
+<para>Destructor - prints elapsed time. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" line="57" column="5" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" bodystart="57" bodyend="62"/>
+        <references refid="classlearnql_1_1debug_1_1_timer_1a6785c15f65609f98d397bae0eb37790c" compoundref="_profiler_8hpp" startline="78" endline="83">print</references>
+        <references refid="classlearnql_1_1debug_1_1_timer_1a3c3e8ed839b5a11b1474b735147ff352" compoundref="_profiler_8hpp" startline="67" endline="73">stop</references>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1debug_1_1_timer_1a3c3e8ed839b5a11b1474b735147ff352" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::chrono::microseconds</type>
+        <definition>std::chrono::microseconds learnql::debug::Timer::stop</definition>
+        <argsstring>()</argsstring>
+        <name>stop</name>
+        <qualifiedname>learnql::debug::Timer::stop</qualifiedname>
+        <briefdescription>
+<para>Stops the timer and returns elapsed microseconds. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" line="67" column="31" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" bodystart="67" bodyend="73"/>
+        <referencedby refid="classlearnql_1_1debug_1_1_timer_1adedbb7943568ae2405b1bfd9d49ac136" compoundref="_profiler_8hpp" startline="57" endline="62">~Timer</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1debug_1_1_timer_1a6785c15f65609f98d397bae0eb37790c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::debug::Timer::print</definition>
+        <argsstring>() const</argsstring>
+        <name>print</name>
+        <qualifiedname>learnql::debug::Timer::print</qualifiedname>
+        <briefdescription>
+<para>Prints the elapsed time. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" line="78" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" bodystart="78" bodyend="83"/>
+        <referencedby refid="classlearnql_1_1debug_1_1_timer_1adedbb7943568ae2405b1bfd9d49ac136" compoundref="_profiler_8hpp" startline="57" endline="62">~Timer</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>RAII timer for profiling code blocks. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Example: <programlisting><codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlearnql_1_1debug_1_1_timer_1a7601997891baf94b4da323d302ff2b87" kindref="member">Timer</ref><sp/>timer(</highlight><highlight class="stringliteral">&quot;Query<sp/>execution&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>...<sp/>code<sp/>to<sp/>profile<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>Automatically<sp/>prints<sp/>duration<sp/>when<sp/>timer<sp/>goes<sp/>out<sp/>of<sp/>scope</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" line="44" column="1" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/debug/Profiler.hpp" bodystart="44" bodyend="90"/>
+    <listofallmembers>
+      <member refid="classlearnql_1_1debug_1_1_timer_1aadde536ac87564a55d90438f39f8e44e" prot="private" virt="non-virtual"><scope>learnql::debug::Timer</scope><name>end_</name></member>
+      <member refid="classlearnql_1_1debug_1_1_timer_1a04e5abdf027b5cc99a0b3accad4f8385" prot="private" virt="non-virtual"><scope>learnql::debug::Timer</scope><name>name_</name></member>
+      <member refid="classlearnql_1_1debug_1_1_timer_1a6785c15f65609f98d397bae0eb37790c" prot="public" virt="non-virtual"><scope>learnql::debug::Timer</scope><name>print</name></member>
+      <member refid="classlearnql_1_1debug_1_1_timer_1a063c02f9d488d6b83f733b44493178f4" prot="private" virt="non-virtual"><scope>learnql::debug::Timer</scope><name>start_</name></member>
+      <member refid="classlearnql_1_1debug_1_1_timer_1a3c3e8ed839b5a11b1474b735147ff352" prot="public" virt="non-virtual"><scope>learnql::debug::Timer</scope><name>stop</name></member>
+      <member refid="classlearnql_1_1debug_1_1_timer_1a0fce33f92ddac89c88775bd6396cb323" prot="private" virt="non-virtual"><scope>learnql::debug::Timer</scope><name>stopped_</name></member>
+      <member refid="classlearnql_1_1debug_1_1_timer_1a7601997891baf94b4da323d302ff2b87" prot="public" virt="non-virtual"><scope>learnql::debug::Timer</scope><name>Timer</name></member>
+      <member refid="classlearnql_1_1debug_1_1_timer_1adedbb7943568ae2405b1bfd9d49ac136" prot="public" virt="non-virtual"><scope>learnql::debug::Timer</scope><name>~Timer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

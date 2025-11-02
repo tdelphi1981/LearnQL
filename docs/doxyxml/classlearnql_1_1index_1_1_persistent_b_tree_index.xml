@@ -1,0 +1,1047 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classlearnql_1_1index_1_1_persistent_b_tree_index" kind="class" language="C++" prot="public">
+    <compoundname>learnql::index::PersistentBTreeIndex</compoundname>
+    <includes refid="_persistent_b_tree_index_8hpp" local="no">PersistentBTreeIndex.hpp</includes>
+    <innerclass refid="structlearnql_1_1index_1_1_persistent_b_tree_index_1_1_node" prot="private">learnql::index::PersistentBTreeIndex::Node</innerclass>
+    <templateparamlist>
+      <param>
+        <type>typename Key</type>
+      </param>
+      <param>
+        <type>typename Value</type>
+        <defval><ref refid="structlearnql_1_1core_1_1_record_id" kindref="compound">core::RecordId</ref></defval>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classlearnql_1_1index_1_1_persistent_b_tree_index_1a0dfd829319ecba90711ac06d14ff15b9" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t learnql::index::PersistentBTreeIndex&lt; Key, Value &gt;::ORDER</definition>
+        <argsstring></argsstring>
+        <name>ORDER</name>
+        <qualifiedname>learnql::index::PersistentBTreeIndex::ORDER</qualifiedname>
+        <initializer>= 4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" line="62" column="34" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlearnql_1_1index_1_1_persistent_b_tree_index_1a34cb7cbce3d28085f0e55eee02799c75" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t learnql::index::PersistentBTreeIndex&lt; Key, Value &gt;::MIN_KEYS</definition>
+        <argsstring></argsstring>
+        <name>MIN_KEYS</name>
+        <qualifiedname>learnql::index::PersistentBTreeIndex::MIN_KEYS</qualifiedname>
+        <initializer>= ORDER / 2 - 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" line="63" column="34" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlearnql_1_1index_1_1_persistent_b_tree_index_1a46f1ae9acf6febaee04b34baf9c976fe" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t learnql::index::PersistentBTreeIndex&lt; Key, Value &gt;::MAX_KEYS</definition>
+        <argsstring></argsstring>
+        <name>MAX_KEYS</name>
+        <qualifiedname>learnql::index::PersistentBTreeIndex::MAX_KEYS</qualifiedname>
+        <initializer>= ORDER - 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" line="64" column="34" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlearnql_1_1index_1_1_persistent_b_tree_index_1a9263542e8a0a2607781b8549742fb991" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t learnql::index::PersistentBTreeIndex&lt; Key, Value &gt;::CACHE_SIZE</definition>
+        <argsstring></argsstring>
+        <name>CACHE_SIZE</name>
+        <qualifiedname>learnql::index::PersistentBTreeIndex::CACHE_SIZE</qualifiedname>
+        <initializer>= 32</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" line="65" column="34" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" bodystart="65" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classlearnql_1_1index_1_1_persistent_b_tree_index_1ab6f7348905c00bdb5c1d34c9589d2dd0" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classlearnql_1_1storage_1_1_storage_engine" kindref="compound">storage::StorageEngine</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;storage::StorageEngine&gt; learnql::index::PersistentBTreeIndex&lt; Key, Value &gt;::storage_</definition>
+        <argsstring></argsstring>
+        <name>storage_</name>
+        <qualifiedname>learnql::index::PersistentBTreeIndex::storage_</qualifiedname>
+        <briefdescription>
+<para>Storage engine. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" line="872" column="21" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" bodystart="872" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlearnql_1_1index_1_1_persistent_b_tree_index_1a7a58c1a34b6d5f0feb1bd6e79ef890be" prot="private" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t learnql::index::PersistentBTreeIndex&lt; Key, Value &gt;::root_page_id_</definition>
+        <argsstring></argsstring>
+        <name>root_page_id_</name>
+        <qualifiedname>learnql::index::PersistentBTreeIndex::root_page_id_</qualifiedname>
+        <briefdescription>
+<para>Root node page ID. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" line="873" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" bodystart="873" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlearnql_1_1index_1_1_persistent_b_tree_index_1af0a91623f855879cb26cb5ed8dfd6088" prot="private" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t learnql::index::PersistentBTreeIndex&lt; Key, Value &gt;::size_</definition>
+        <argsstring></argsstring>
+        <name>size_</name>
+        <qualifiedname>learnql::index::PersistentBTreeIndex::size_</qualifiedname>
+        <briefdescription>
+<para>Number of entries. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" line="874" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" bodystart="874" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlearnql_1_1index_1_1_persistent_b_tree_index_1aad959f18e00107ebda2e4067430e284d" prot="private" static="no" mutable="yes">
+        <type>std::unordered_map&lt; uint64_t, Node &gt;</type>
+        <definition>std::unordered_map&lt;uint64_t, Node&gt; learnql::index::PersistentBTreeIndex&lt; Key, Value &gt;::node_cache_</definition>
+        <argsstring></argsstring>
+        <name>node_cache_</name>
+        <qualifiedname>learnql::index::PersistentBTreeIndex::node_cache_</qualifiedname>
+        <briefdescription>
+<para>Node cache. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" line="875" column="32" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" bodystart="875" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlearnql_1_1index_1_1_persistent_b_tree_index_1ac137fd3ea264fef6c1647f04e5242120" prot="private" static="no" mutable="yes">
+        <type>std::unordered_set&lt; uint64_t &gt;</type>
+        <definition>std::unordered_set&lt;uint64_t&gt; learnql::index::PersistentBTreeIndex&lt; Key, Value &gt;::dirty_nodes_</definition>
+        <argsstring></argsstring>
+        <name>dirty_nodes_</name>
+        <qualifiedname>learnql::index::PersistentBTreeIndex::dirty_nodes_</qualifiedname>
+        <briefdescription>
+<para>Dirty node tracking. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" line="876" column="32" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" bodystart="876" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_persistent_b_tree_index_1a18aef3d4cb63615f46505a31db92aae4" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>learnql::index::PersistentBTreeIndex&lt; Key, Value &gt;::PersistentBTreeIndex</definition>
+        <argsstring>(std::shared_ptr&lt; storage::StorageEngine &gt; storage, uint64_t root_page_id=0)</argsstring>
+        <name>PersistentBTreeIndex</name>
+        <qualifiedname>learnql::index::PersistentBTreeIndex::PersistentBTreeIndex</qualifiedname>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classlearnql_1_1storage_1_1_storage_engine" kindref="compound">storage::StorageEngine</ref> &gt;</type>
+          <declname>storage</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>root_page_id</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Constructs a persistent B-tree index. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>storage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Shared pointer to the storage engine </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>root_page_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional root page ID (for loading existing index) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" line="221" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" bodystart="221" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_persistent_b_tree_index_1aa5300a289858ccdebd68bb0e3c9fb146" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>learnql::index::PersistentBTreeIndex&lt; Key, Value &gt;::~PersistentBTreeIndex</definition>
+        <argsstring>()</argsstring>
+        <name>~PersistentBTreeIndex</name>
+        <qualifiedname>learnql::index::PersistentBTreeIndex::~PersistentBTreeIndex</qualifiedname>
+        <briefdescription>
+<para>Destructor - flushes all dirty nodes to disk. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" line="241" column="5" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" bodystart="241" bodyend="247"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_persistent_b_tree_index_1a61bbeaf93256e41122bcad17cd220dc3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool learnql::index::PersistentBTreeIndex&lt; Key, Value &gt;::insert</definition>
+        <argsstring>(const Key &amp;key, const Value &amp;value)</argsstring>
+        <name>insert</name>
+        <qualifiedname>learnql::index::PersistentBTreeIndex::insert</qualifiedname>
+        <param>
+          <type>const Key &amp;</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const Value &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Inserts a key-value pair. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if inserted, false if key already exists </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" line="255" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" bodystart="255" bodyend="274"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_persistent_b_tree_index_1ac271037cd3ef640ab23d4a81abfd1e46" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::optional&lt; Value &gt;</type>
+        <definition>std::optional&lt; Value &gt; learnql::index::PersistentBTreeIndex&lt; Key, Value &gt;::find</definition>
+        <argsstring>(const Key &amp;key) const</argsstring>
+        <name>find</name>
+        <qualifiedname>learnql::index::PersistentBTreeIndex::find</qualifiedname>
+        <param>
+          <type>const Key &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Finds a value by key. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key to search for </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Optional containing the value if found </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" line="281" column="20" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" bodystart="281" bodyend="283"/>
+        <referencedby refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1a985c96c1de263fcb00fcc32478e67220" compoundref="_persistent_b_tree_index_8hpp" startline="290" endline="292">learnql::index::PersistentBTreeIndex&lt; primary_key_type, RecordId &gt;::contains</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_persistent_b_tree_index_1a985c96c1de263fcb00fcc32478e67220" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool learnql::index::PersistentBTreeIndex&lt; Key, Value &gt;::contains</definition>
+        <argsstring>(const Key &amp;key) const</argsstring>
+        <name>contains</name>
+        <qualifiedname>learnql::index::PersistentBTreeIndex::contains</qualifiedname>
+        <param>
+          <type>const Key &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Checks if a key exists. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key to check </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if key exists </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" line="290" column="11" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" bodystart="290" bodyend="292"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_persistent_b_tree_index_1a0465e0b0bb942a6155a0f96cd54981ce" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool learnql::index::PersistentBTreeIndex&lt; Key, Value &gt;::remove</definition>
+        <argsstring>(const Key &amp;key)</argsstring>
+        <name>remove</name>
+        <qualifiedname>learnql::index::PersistentBTreeIndex::remove</qualifiedname>
+        <param>
+          <type>const Key &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Removes a key-value pair. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key to remove </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if removed, false if not found </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" line="299" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" bodystart="299" bodyend="317"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_persistent_b_tree_index_1a15b8849a7ada45f1311f3be57838524e" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; Value &gt;</type>
+        <definition>std::vector&lt; Value &gt; learnql::index::PersistentBTreeIndex&lt; Key, Value &gt;::range_query</definition>
+        <argsstring>(const Key &amp;min_key, const Key &amp;max_key) const</argsstring>
+        <name>range_query</name>
+        <qualifiedname>learnql::index::PersistentBTreeIndex::range_query</qualifiedname>
+        <param>
+          <type>const Key &amp;</type>
+          <declname>min_key</declname>
+        </param>
+        <param>
+          <type>const Key &amp;</type>
+          <declname>max_key</declname>
+        </param>
+        <briefdescription>
+<para>Finds all values in a range [min_key, max_key]. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>min_key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Minimum key (inclusive) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum key (inclusive) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Vector of values in range </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" line="325" column="18" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" bodystart="325" bodyend="329"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_persistent_b_tree_index_1aac3dc273c9b504ba6e3c820b104179e3" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>std::size_t learnql::index::PersistentBTreeIndex&lt; Key, Value &gt;::size</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>size</name>
+        <qualifiedname>learnql::index::PersistentBTreeIndex::size</qualifiedname>
+        <briefdescription>
+<para>Gets the number of entries in the index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" line="334" column="18" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" bodystart="334" bodyend="336"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_persistent_b_tree_index_1a2312e8ec73ea45f893667408ec546f2d" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool learnql::index::PersistentBTreeIndex&lt; Key, Value &gt;::empty</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>empty</name>
+        <qualifiedname>learnql::index::PersistentBTreeIndex::empty</qualifiedname>
+        <briefdescription>
+<para>Checks if the index is empty. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" line="341" column="11" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" bodystart="341" bodyend="343"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_persistent_b_tree_index_1a118c4c5f5fe412166c7e3e09b34b8784" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t learnql::index::PersistentBTreeIndex&lt; Key, Value &gt;::get_root_page_id</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>get_root_page_id</name>
+        <qualifiedname>learnql::index::PersistentBTreeIndex::get_root_page_id</qualifiedname>
+        <briefdescription>
+<para>Gets the root page ID (for persistence). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Root page ID </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" line="349" column="15" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" bodystart="349" bodyend="351"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_persistent_b_tree_index_1a1ea432162866e110e38ff561246aa712" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; std::pair&lt; Key, Value &gt; &gt;</type>
+        <definition>std::vector&lt; std::pair&lt; Key, Value &gt; &gt; learnql::index::PersistentBTreeIndex&lt; Key, Value &gt;::get_all</definition>
+        <argsstring>() const</argsstring>
+        <name>get_all</name>
+        <qualifiedname>learnql::index::PersistentBTreeIndex::get_all</qualifiedname>
+        <briefdescription>
+<para>Gets all key-value pairs in sorted order. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Vector of all key-value pairs </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" line="357" column="18" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" bodystart="357" bodyend="362"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_persistent_b_tree_index_1aa8e5a324bc5d3313d98e1600a655178d" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>std::size_t</type>
+            <declname>BatchSize</declname>
+            <defname>BatchSize</defname>
+            <defval>10</defval>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classlearnql_1_1index_1_1_batch_iterator" kindref="compound">BatchIterator</ref>&lt; Key, Value, BatchSize &gt;</type>
+        <definition>BatchIterator&lt; Key, Value, BatchSize &gt; learnql::index::PersistentBTreeIndex&lt; Key, Value &gt;::create_batch_iterator</definition>
+        <argsstring>() const</argsstring>
+        <name>create_batch_iterator</name>
+        <qualifiedname>learnql::index::PersistentBTreeIndex::create_batch_iterator</qualifiedname>
+        <briefdescription>
+<para>Creates a batch iterator for lazy traversal (B+Tree optimized). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>BatchSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of entries to fetch per batch </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classlearnql_1_1index_1_1_batch_iterator" kindref="compound">BatchIterator</ref> configured for this index</para>
+</simplesect>
+This method creates a stateful iterator that traverses the B+tree by walking the leaf linked list. This is much more efficient than tree traversal and loads only BatchSize entries at a time.</para>
+<para>Example: <programlisting><codeline><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>iter<sp/>=<sp/>index.create_batch_iterator&lt;10&gt;();</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(iter.has_more())<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>batch<sp/>=<sp/>iter.next_batch();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Process<sp/>batch...</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" line="383" column="20" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" bodystart="383" bodyend="401"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_persistent_b_tree_index_1ae47394af5601973c90565ec2cd514655" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::index::PersistentBTreeIndex&lt; Key, Value &gt;::flush</definition>
+        <argsstring>()</argsstring>
+        <name>flush</name>
+        <qualifiedname>learnql::index::PersistentBTreeIndex::flush</qualifiedname>
+        <briefdescription>
+<para>Flushes all dirty nodes to disk. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Must be called to persist changes </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" line="407" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" bodystart="407" bodyend="416"/>
+        <referencedby refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1a5f7043033f8bd1a6c5ae0061be9a1df6" compoundref="_persistent_b_tree_index_8hpp" startline="421" endline="424">learnql::index::PersistentBTreeIndex&lt; primary_key_type, RecordId &gt;::clear_cache</referencedby>
+        <referencedby refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1aa5300a289858ccdebd68bb0e3c9fb146" compoundref="_persistent_b_tree_index_8hpp" startline="241" endline="247">learnql::index::PersistentBTreeIndex&lt; primary_key_type, RecordId &gt;::~PersistentBTreeIndex</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_persistent_b_tree_index_1a5f7043033f8bd1a6c5ae0061be9a1df6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::index::PersistentBTreeIndex&lt; Key, Value &gt;::clear_cache</definition>
+        <argsstring>()</argsstring>
+        <name>clear_cache</name>
+        <qualifiedname>learnql::index::PersistentBTreeIndex::clear_cache</qualifiedname>
+        <briefdescription>
+<para>Clears the node cache and flushes to disk. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" line="421" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" bodystart="421" bodyend="424"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_persistent_b_tree_index_1a5b74053987e74a10edbfaf84af5c2511" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t learnql::index::PersistentBTreeIndex&lt; Key, Value &gt;::allocate_node</definition>
+        <argsstring>(bool is_leaf)</argsstring>
+        <name>allocate_node</name>
+        <qualifiedname>learnql::index::PersistentBTreeIndex::allocate_node</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>is_leaf</declname>
+        </param>
+        <briefdescription>
+<para>Allocates a new node page. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>is_leaf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether the node is a leaf </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Page ID of the allocated node </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" line="432" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" bodystart="432" bodyend="438"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_persistent_b_tree_index_1a6cb31769c47baa0f35accfbe363a2af3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::index::PersistentBTreeIndex&lt; Key, Value &gt;::deallocate_node</definition>
+        <argsstring>(uint64_t page_id)</argsstring>
+        <name>deallocate_node</name>
+        <qualifiedname>learnql::index::PersistentBTreeIndex::deallocate_node</qualifiedname>
+        <param>
+          <type>uint64_t</type>
+          <declname>page_id</declname>
+        </param>
+        <briefdescription>
+<para>Deallocates a node page. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>page_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Page ID to deallocate </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" line="444" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" bodystart="444" bodyend="448"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_persistent_b_tree_index_1a0c78005a8c5d9041a3d8a1faa8e453f5" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>Node</type>
+        <definition>Node learnql::index::PersistentBTreeIndex&lt; Key, Value &gt;::load_node</definition>
+        <argsstring>(uint64_t page_id) const</argsstring>
+        <name>load_node</name>
+        <qualifiedname>learnql::index::PersistentBTreeIndex::load_node</qualifiedname>
+        <param>
+          <type>uint64_t</type>
+          <declname>page_id</declname>
+        </param>
+        <briefdescription>
+<para>Loads a node from disk (with caching). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>page_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Page ID of the node </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The loaded node </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" line="455" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" bodystart="455" bodyend="478"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_persistent_b_tree_index_1a32a6707bdd44414439636b4a2d562102" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::index::PersistentBTreeIndex&lt; Key, Value &gt;::save_node</definition>
+        <argsstring>(const Node &amp;node)</argsstring>
+        <name>save_node</name>
+        <qualifiedname>learnql::index::PersistentBTreeIndex::save_node</qualifiedname>
+        <param>
+          <type>const Node &amp;</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>Saves a node to cache and marks it dirty. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Node to save </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" line="484" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" bodystart="484" bodyend="487"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_persistent_b_tree_index_1af29d7be52f6f78ec900f0f500afb655b" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::index::PersistentBTreeIndex&lt; Key, Value &gt;::write_node_to_page</definition>
+        <argsstring>(const Node &amp;node) const</argsstring>
+        <name>write_node_to_page</name>
+        <qualifiedname>learnql::index::PersistentBTreeIndex::write_node_to_page</qualifiedname>
+        <param>
+          <type>const Node &amp;</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>Writes a node to its page. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Node to write </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" line="493" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" bodystart="493" bodyend="510"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_persistent_b_tree_index_1a10c2d052b084abdaa4581eefe6d04379" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::index::PersistentBTreeIndex&lt; Key, Value &gt;::evict_node</definition>
+        <argsstring>() const</argsstring>
+        <name>evict_node</name>
+        <qualifiedname>learnql::index::PersistentBTreeIndex::evict_node</qualifiedname>
+        <briefdescription>
+<para>Evicts a node from the cache (LRU-like). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" line="515" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" bodystart="515" bodyend="533"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_persistent_b_tree_index_1af5b5ac153c663e65ed6d80a2e1527f93" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::optional&lt; Value &gt;</type>
+        <definition>std::optional&lt; Value &gt; learnql::index::PersistentBTreeIndex&lt; Key, Value &gt;::search</definition>
+        <argsstring>(uint64_t node_id, const Key &amp;key) const</argsstring>
+        <name>search</name>
+        <qualifiedname>learnql::index::PersistentBTreeIndex::search</qualifiedname>
+        <param>
+          <type>uint64_t</type>
+          <declname>node_id</declname>
+        </param>
+        <param>
+          <type>const Key &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Searches for a key starting from a node (B+Tree: always to leaf). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>In B+Tree, all values are stored in leaves, so we always traverse to the leaf level even if we encounter the key in an internal node. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" line="541" column="19" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" bodystart="541" bodyend="571"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_persistent_b_tree_index_1a732308c7c60cfacf1eacb1577dc46cc5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool learnql::index::PersistentBTreeIndex&lt; Key, Value &gt;::insert_non_full</definition>
+        <argsstring>(Node &amp;node, const Key &amp;key, const Value &amp;value)</argsstring>
+        <name>insert_non_full</name>
+        <qualifiedname>learnql::index::PersistentBTreeIndex::insert_non_full</qualifiedname>
+        <param>
+          <type>Node &amp;</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>const Key &amp;</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const Value &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Inserts into a non-full node (B+Tree: values only in leaves). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>In B+Tree, data is only stored in leaf nodes. Internal nodes contain routing keys copied from leaves. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" line="579" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" bodystart="579" bodyend="607"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_persistent_b_tree_index_1ab254efdb0a1a4ab58955a00ad785da50" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::index::PersistentBTreeIndex&lt; Key, Value &gt;::split_child</definition>
+        <argsstring>(Node &amp;parent, std::size_t index)</argsstring>
+        <name>split_child</name>
+        <qualifiedname>learnql::index::PersistentBTreeIndex::split_child</qualifiedname>
+        <param>
+          <type>Node &amp;</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Splits a full child node (B+Tree version). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>B+Tree split behavior:<itemizedlist>
+<listitem><para>Leaf split: Copy middle key up to parent, keep it in leaf, update leaf links</para>
+</listitem><listitem><para>Internal split: Push middle key up to parent (traditional B-tree behavior) </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" line="616" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" bodystart="616" bodyend="685"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_persistent_b_tree_index_1a649d356a94e3e0318b3707e637ed8d5d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool learnql::index::PersistentBTreeIndex&lt; Key, Value &gt;::remove_from_node</definition>
+        <argsstring>(Node &amp;node, const Key &amp;key)</argsstring>
+        <name>remove_from_node</name>
+        <qualifiedname>learnql::index::PersistentBTreeIndex::remove_from_node</qualifiedname>
+        <param>
+          <type>Node &amp;</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>const Key &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Removes a key from a node. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>In a B+Tree, all actual key-value pairs are stored in leaf nodes. Internal nodes only contain routing keys to guide traversal. Therefore, we should only remove from leaf nodes. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" line="694" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" bodystart="694" bodyend="727"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_persistent_b_tree_index_1a6aee2945b40c46cb35822f9ab10485d8" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::index::PersistentBTreeIndex&lt; Key, Value &gt;::range_query_helper</definition>
+        <argsstring>(uint64_t node_id, const Key &amp;min_key, const Key &amp;max_key, std::vector&lt; Value &gt; &amp;results) const</argsstring>
+        <name>range_query_helper</name>
+        <qualifiedname>learnql::index::PersistentBTreeIndex::range_query_helper</qualifiedname>
+        <param>
+          <type>uint64_t</type>
+          <declname>node_id</declname>
+        </param>
+        <param>
+          <type>const Key &amp;</type>
+          <declname>min_key</declname>
+        </param>
+        <param>
+          <type>const Key &amp;</type>
+          <declname>max_key</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; Value &gt; &amp;</type>
+          <declname>results</declname>
+        </param>
+        <briefdescription>
+<para>Helper for range queries (B+Tree optimized). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>In B+Tree, we traverse to the starting leaf, then walk the leaf linked list sequentially. This is much faster than tree traversal. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" line="735" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" bodystart="735" bodyend="765"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_persistent_b_tree_index_1a377838c822bc3a25a6d086247761cc08" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t learnql::index::PersistentBTreeIndex&lt; Key, Value &gt;::find_leaf_for_key</definition>
+        <argsstring>(uint64_t node_id, const Key &amp;key) const</argsstring>
+        <name>find_leaf_for_key</name>
+        <qualifiedname>learnql::index::PersistentBTreeIndex::find_leaf_for_key</qualifiedname>
+        <param>
+          <type>uint64_t</type>
+          <declname>node_id</declname>
+        </param>
+        <param>
+          <type>const Key &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Finds the leaf node that would contain the given key. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This helper traverses from a starting node to the leaf level, following the appropriate child pointers. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" line="773" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" bodystart="773" bodyend="792"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_persistent_b_tree_index_1af5d16bfdcda6c7dd4637a5f12f14c557" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::index::PersistentBTreeIndex&lt; Key, Value &gt;::traverse</definition>
+        <argsstring>(uint64_t node_id, std::vector&lt; std::pair&lt; Key, Value &gt; &gt; &amp;results) const</argsstring>
+        <name>traverse</name>
+        <qualifiedname>learnql::index::PersistentBTreeIndex::traverse</qualifiedname>
+        <param>
+          <type>uint64_t</type>
+          <declname>node_id</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::pair&lt; Key, Value &gt; &gt; &amp;</type>
+          <declname>results</declname>
+        </param>
+        <briefdescription>
+<para>Traverses all nodes in sorted order (B+Tree optimized). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>In B+Tree, all data is in leaves, so we find the leftmost leaf and walk the leaf linked list. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" line="800" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" bodystart="800" bodyend="822"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_persistent_b_tree_index_1a138f33ddbf06df517f29dccee57f28e0" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t learnql::index::PersistentBTreeIndex&lt; Key, Value &gt;::find_leftmost_leaf</definition>
+        <argsstring>(uint64_t node_id) const</argsstring>
+        <name>find_leftmost_leaf</name>
+        <qualifiedname>learnql::index::PersistentBTreeIndex::find_leftmost_leaf</qualifiedname>
+        <param>
+          <type>uint64_t</type>
+          <declname>node_id</declname>
+        </param>
+        <briefdescription>
+<para>Finds the leftmost (first) leaf node. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" line="827" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" bodystart="827" bodyend="841"/>
+      </memberdef>
+      <memberdef kind="function" id="classlearnql_1_1index_1_1_persistent_b_tree_index_1a3d996aec5cd8f01a0faf6dbc1afe87a6" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>std::size_t learnql::index::PersistentBTreeIndex&lt; Key, Value &gt;::count_entries</definition>
+        <argsstring>(uint64_t node_id) const</argsstring>
+        <name>count_entries</name>
+        <qualifiedname>learnql::index::PersistentBTreeIndex::count_entries</qualifiedname>
+        <param>
+          <type>uint64_t</type>
+          <declname>node_id</declname>
+        </param>
+        <briefdescription>
+<para>Counts the number of entries in the index (B+Tree optimized). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>In B+Tree, all data is in leaves, so we walk the leaf linked list and count entries in each leaf. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" line="849" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" bodystart="849" bodyend="869"/>
+      </memberdef>
+    </sectiondef>
+    <requiresclause>std::totally_ordered&lt;Key&gt;    </requiresclause>
+    <briefdescription>
+<para>Persistent B+tree index that stores nodes to disk. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key type (must be comparable and serializable) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value type (typically RecordId)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+This is a disk-based B+tree implementation that persists all nodes to INDEX pages. Unlike the in-memory <ref refid="classlearnql_1_1index_1_1_b_tree_index" kindref="compound">BTreeIndex</ref>, this version survives database restarts.</para>
+<para>B+Tree characteristics:<itemizedlist>
+<listitem><para>All data (values) stored in leaf nodes only</para>
+</listitem><listitem><para>Internal nodes contain only keys for routing</para>
+</listitem><listitem><para>Leaf nodes linked in sequential order for fast range scans</para>
+</listitem><listitem><para>Higher fanout than B-Tree (internal nodes smaller)</para>
+</listitem><listitem><para>Consistent O(log n) search (always to leaf level)</para>
+</listitem></itemizedlist>
+</para>
+<para>Features:<itemizedlist>
+<listitem><para>O(log n) search, insert, delete (with disk I/O)</para>
+</listitem><listitem><para>O(k) range queries via leaf linking (k = result size)</para>
+</listitem><listitem><para>Persistent storage using INDEX pages</para>
+</listitem><listitem><para>Node caching for performance</para>
+</listitem><listitem><para>Lazy loading of nodes</para>
+</listitem><listitem><para>Page-based serialization</para>
+</listitem></itemizedlist>
+</para>
+<para>Architecture:<itemizedlist>
+<listitem><para>Each B+tree node is stored in a separate INDEX page</para>
+</listitem><listitem><para>Nodes reference children by page ID instead of pointers</para>
+</listitem><listitem><para>Leaf nodes linked via next/prev page IDs</para>
+</listitem><listitem><para>Root page ID is stored in metadata for recovery</para>
+</listitem><listitem><para>LRU-like node cache reduces disk I/O</para>
+</listitem></itemizedlist>
+</para>
+<para>Example: <programlisting><codeline><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>storage<sp/>=<sp/>std::make_shared&lt;StorageEngine&gt;(</highlight><highlight class="stringliteral">&quot;data.db&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1a18aef3d4cb63615f46505a31db92aae4" kindref="member">PersistentBTreeIndex&lt;int, RecordId&gt;</ref><sp/>index(storage);</highlight></codeline>
+<codeline><highlight class="normal">index.insert(42,<sp/>RecordId{1,<sp/>0});</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>rid<sp/>=<sp/>index.find(42);</highlight></codeline>
+<codeline><highlight class="normal">index.flush();<sp/></highlight><highlight class="comment">//<sp/>Persist<sp/>all<sp/>changes</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>learnql::index::PersistentBTreeIndex&lt; FieldType, core::RecordId &gt;</label>
+        <link refid="classlearnql_1_1index_1_1_persistent_b_tree_index"/>
+        <childnode refid="1" relation="template-instance">
+          <edgelabel>&lt; FieldType, core::RecordId &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>learnql::index::PersistentBTreeIndex&lt; Key, Value &gt;</label>
+        <link refid="classlearnql_1_1index_1_1_persistent_b_tree_index"/>
+      </node>
+      <node id="3">
+        <label>learnql::index::PersistentBTreeIndex&lt; composite_key_type, core::RecordId &gt;</label>
+        <link refid="classlearnql_1_1index_1_1_persistent_b_tree_index"/>
+        <childnode refid="1" relation="template-instance">
+          <edgelabel>&lt; composite_key_type, core::RecordId &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>learnql::index::PersistentBTreeIndex&lt; primary_key_type, RecordId &gt;</label>
+        <link refid="classlearnql_1_1index_1_1_persistent_b_tree_index"/>
+        <childnode refid="1" relation="template-instance">
+          <edgelabel>&lt; primary_key_type, RecordId &gt;</edgelabel>
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" line="60" column="1" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/PersistentBTreeIndex.hpp" bodystart="60" bodyend="877"/>
+    <listofallmembers>
+      <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1a5b74053987e74a10edbfaf84af5c2511" prot="private" virt="non-virtual"><scope>learnql::index::PersistentBTreeIndex</scope><name>allocate_node</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1a9263542e8a0a2607781b8549742fb991" prot="private" virt="non-virtual"><scope>learnql::index::PersistentBTreeIndex</scope><name>CACHE_SIZE</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1a5f7043033f8bd1a6c5ae0061be9a1df6" prot="public" virt="non-virtual"><scope>learnql::index::PersistentBTreeIndex</scope><name>clear_cache</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1a985c96c1de263fcb00fcc32478e67220" prot="public" virt="non-virtual"><scope>learnql::index::PersistentBTreeIndex</scope><name>contains</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1a3d996aec5cd8f01a0faf6dbc1afe87a6" prot="private" virt="non-virtual"><scope>learnql::index::PersistentBTreeIndex</scope><name>count_entries</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1aa8e5a324bc5d3313d98e1600a655178d" prot="public" virt="non-virtual"><scope>learnql::index::PersistentBTreeIndex</scope><name>create_batch_iterator</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1a6cb31769c47baa0f35accfbe363a2af3" prot="private" virt="non-virtual"><scope>learnql::index::PersistentBTreeIndex</scope><name>deallocate_node</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1ac137fd3ea264fef6c1647f04e5242120" prot="private" virt="non-virtual"><scope>learnql::index::PersistentBTreeIndex</scope><name>dirty_nodes_</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1a2312e8ec73ea45f893667408ec546f2d" prot="public" virt="non-virtual"><scope>learnql::index::PersistentBTreeIndex</scope><name>empty</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1a10c2d052b084abdaa4581eefe6d04379" prot="private" virt="non-virtual"><scope>learnql::index::PersistentBTreeIndex</scope><name>evict_node</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1ac271037cd3ef640ab23d4a81abfd1e46" prot="public" virt="non-virtual"><scope>learnql::index::PersistentBTreeIndex</scope><name>find</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1a377838c822bc3a25a6d086247761cc08" prot="private" virt="non-virtual"><scope>learnql::index::PersistentBTreeIndex</scope><name>find_leaf_for_key</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1a138f33ddbf06df517f29dccee57f28e0" prot="private" virt="non-virtual"><scope>learnql::index::PersistentBTreeIndex</scope><name>find_leftmost_leaf</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1ae47394af5601973c90565ec2cd514655" prot="public" virt="non-virtual"><scope>learnql::index::PersistentBTreeIndex</scope><name>flush</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1a1ea432162866e110e38ff561246aa712" prot="public" virt="non-virtual"><scope>learnql::index::PersistentBTreeIndex</scope><name>get_all</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1a118c4c5f5fe412166c7e3e09b34b8784" prot="public" virt="non-virtual"><scope>learnql::index::PersistentBTreeIndex</scope><name>get_root_page_id</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1a61bbeaf93256e41122bcad17cd220dc3" prot="public" virt="non-virtual"><scope>learnql::index::PersistentBTreeIndex</scope><name>insert</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1a732308c7c60cfacf1eacb1577dc46cc5" prot="private" virt="non-virtual"><scope>learnql::index::PersistentBTreeIndex</scope><name>insert_non_full</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1a0c78005a8c5d9041a3d8a1faa8e453f5" prot="private" virt="non-virtual"><scope>learnql::index::PersistentBTreeIndex</scope><name>load_node</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1a46f1ae9acf6febaee04b34baf9c976fe" prot="private" virt="non-virtual"><scope>learnql::index::PersistentBTreeIndex</scope><name>MAX_KEYS</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1a34cb7cbce3d28085f0e55eee02799c75" prot="private" virt="non-virtual"><scope>learnql::index::PersistentBTreeIndex</scope><name>MIN_KEYS</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1aad959f18e00107ebda2e4067430e284d" prot="private" virt="non-virtual"><scope>learnql::index::PersistentBTreeIndex</scope><name>node_cache_</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1a0dfd829319ecba90711ac06d14ff15b9" prot="private" virt="non-virtual"><scope>learnql::index::PersistentBTreeIndex</scope><name>ORDER</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1a18aef3d4cb63615f46505a31db92aae4" prot="public" virt="non-virtual"><scope>learnql::index::PersistentBTreeIndex</scope><name>PersistentBTreeIndex</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1a15b8849a7ada45f1311f3be57838524e" prot="public" virt="non-virtual"><scope>learnql::index::PersistentBTreeIndex</scope><name>range_query</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1a6aee2945b40c46cb35822f9ab10485d8" prot="private" virt="non-virtual"><scope>learnql::index::PersistentBTreeIndex</scope><name>range_query_helper</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1a0465e0b0bb942a6155a0f96cd54981ce" prot="public" virt="non-virtual"><scope>learnql::index::PersistentBTreeIndex</scope><name>remove</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1a649d356a94e3e0318b3707e637ed8d5d" prot="private" virt="non-virtual"><scope>learnql::index::PersistentBTreeIndex</scope><name>remove_from_node</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1a7a58c1a34b6d5f0feb1bd6e79ef890be" prot="private" virt="non-virtual"><scope>learnql::index::PersistentBTreeIndex</scope><name>root_page_id_</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1a32a6707bdd44414439636b4a2d562102" prot="private" virt="non-virtual"><scope>learnql::index::PersistentBTreeIndex</scope><name>save_node</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1af5b5ac153c663e65ed6d80a2e1527f93" prot="private" virt="non-virtual"><scope>learnql::index::PersistentBTreeIndex</scope><name>search</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1aac3dc273c9b504ba6e3c820b104179e3" prot="public" virt="non-virtual"><scope>learnql::index::PersistentBTreeIndex</scope><name>size</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1af0a91623f855879cb26cb5ed8dfd6088" prot="private" virt="non-virtual"><scope>learnql::index::PersistentBTreeIndex</scope><name>size_</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1ab254efdb0a1a4ab58955a00ad785da50" prot="private" virt="non-virtual"><scope>learnql::index::PersistentBTreeIndex</scope><name>split_child</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1ab6f7348905c00bdb5c1d34c9589d2dd0" prot="private" virt="non-virtual"><scope>learnql::index::PersistentBTreeIndex</scope><name>storage_</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1af5d16bfdcda6c7dd4637a5f12f14c557" prot="private" virt="non-virtual"><scope>learnql::index::PersistentBTreeIndex</scope><name>traverse</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1af29d7be52f6f78ec900f0f500afb655b" prot="private" virt="non-virtual"><scope>learnql::index::PersistentBTreeIndex</scope><name>write_node_to_page</name></member>
+      <member refid="classlearnql_1_1index_1_1_persistent_b_tree_index_1aa5300a289858ccdebd68bb0e3c9fb146" prot="public" virt="non-virtual"><scope>learnql::index::PersistentBTreeIndex</scope><name>~PersistentBTreeIndex</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

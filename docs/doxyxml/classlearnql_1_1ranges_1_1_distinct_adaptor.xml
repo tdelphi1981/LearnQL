@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classlearnql_1_1ranges_1_1_distinct_adaptor" kind="class" language="C++" prot="public">
+    <compoundname>learnql::ranges::DistinctAdaptor</compoundname>
+    <includes refid="_adaptors_8hpp" local="no">Adaptors.hpp</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlearnql_1_1ranges_1_1_distinct_adaptor_1af1524ac91aa7d587b7e63408a0d73031" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>std::ranges::input_range</type>
+            <declname>R</declname>
+            <defname>R</defname>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto learnql::ranges::DistinctAdaptor::operator()</definition>
+        <argsstring>(R &amp;&amp;range) const</argsstring>
+        <name>operator()</name>
+        <qualifiedname>learnql::ranges::DistinctAdaptor::operator()</qualifiedname>
+        <param>
+          <type>R &amp;&amp;</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/Adaptors.hpp" line="117" column="11" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/Adaptors.hpp" bodystart="117" bodyend="125"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Custom range adaptor for distinct values. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Example: <programlisting><codeline><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>unique_ages<sp/>=<sp/>students.view()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>|<sp/><ref refid="namespacelearnql_1_1ranges_1a72fdab88d2d6ba44ce9ac39f3c3ce9c7" kindref="member">select</ref>(&amp;Student::get_age)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>|<sp/><ref refid="namespacelearnql_1_1ranges_1a19b2b5f954e6fd2c36ed43563c1bed6d" kindref="member">distinct</ref>();</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/Adaptors.hpp" line="114" column="1" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/ranges/Adaptors.hpp" bodystart="114" bodyend="126"/>
+    <listofallmembers>
+      <member refid="classlearnql_1_1ranges_1_1_distinct_adaptor_1af1524ac91aa7d587b7e63408a0d73031" prot="public" virt="non-virtual"><scope>learnql::ranges::DistinctAdaptor</scope><name>operator()</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

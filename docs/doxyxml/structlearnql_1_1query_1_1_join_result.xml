@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="structlearnql_1_1query_1_1_join_result" kind="struct" language="C++" prot="public">
+    <compoundname>learnql::query::JoinResult</compoundname>
+    <includes refid="_join_8hpp" local="no">Join.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename Left</type>
+      </param>
+      <param>
+        <type>typename Right</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlearnql_1_1query_1_1_join_result_1af7812594ab3ea3239bddd4584ddcb709" prot="public" static="no" mutable="no">
+        <type>Left</type>
+        <definition>Left learnql::query::JoinResult&lt; Left, Right &gt;::left</definition>
+        <argsstring></argsstring>
+        <name>left</name>
+        <qualifiedname>learnql::query::JoinResult::left</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Join.hpp" line="18" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Join.hpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1query_1_1_join_result_1a766c972d5c1a86d2d115df1e9e4b12b8" prot="public" static="no" mutable="no">
+        <type>std::optional&lt; Right &gt;</type>
+        <definition>std::optional&lt;Right&gt; learnql::query::JoinResult&lt; Left, Right &gt;::right</definition>
+        <argsstring></argsstring>
+        <name>right</name>
+        <qualifiedname>learnql::query::JoinResult::right</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Join.hpp" line="19" column="19" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Join.hpp" bodystart="19" bodyend="-1"/>
+        <referencedby refid="structlearnql_1_1query_1_1_join_result_1aed01b0efedcf3ca824e23a26961ed9e4" compoundref="_join_8hpp" startline="24" endline="26">learnql::query::JoinResult&lt; Left, Right &gt;::is_inner</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structlearnql_1_1query_1_1_join_result_1aed01b0efedcf3ca824e23a26961ed9e4" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool learnql::query::JoinResult&lt; Left, Right &gt;::is_inner</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>is_inner</name>
+        <qualifiedname>learnql::query::JoinResult::is_inner</qualifiedname>
+        <briefdescription>
+<para>Checks if this is an inner join result (both sides present). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Join.hpp" line="24" column="11" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Join.hpp" bodystart="24" bodyend="26"/>
+        <references refid="structlearnql_1_1query_1_1_join_result_1a766c972d5c1a86d2d115df1e9e4b12b8" compoundref="_join_8hpp" startline="19">learnql::query::JoinResult&lt; Left, Right &gt;::right</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Result of a join operation. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Left</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Left table record type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Right</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Right table record type </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+    </detaileddescription>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Join.hpp" line="17" column="1" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/query/Join.hpp" bodystart="17" bodyend="27"/>
+    <listofallmembers>
+      <member refid="structlearnql_1_1query_1_1_join_result_1aed01b0efedcf3ca824e23a26961ed9e4" prot="public" virt="non-virtual"><scope>learnql::query::JoinResult</scope><name>is_inner</name></member>
+      <member refid="structlearnql_1_1query_1_1_join_result_1af7812594ab3ea3239bddd4584ddcb709" prot="public" virt="non-virtual"><scope>learnql::query::JoinResult</scope><name>left</name></member>
+      <member refid="structlearnql_1_1query_1_1_join_result_1a766c972d5c1a86d2d115df1e9e4b12b8" prot="public" virt="non-virtual"><scope>learnql::query::JoinResult</scope><name>right</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

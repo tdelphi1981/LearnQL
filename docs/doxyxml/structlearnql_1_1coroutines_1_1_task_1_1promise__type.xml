@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="structlearnql_1_1coroutines_1_1_task_1_1promise__type" kind="struct" language="C++" prot="public">
+    <compoundname>learnql::coroutines::Task::promise_type</compoundname>
+    <includes refid="_async_query_8hpp" local="no">AsyncQuery.hpp</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlearnql_1_1coroutines_1_1_task_1_1promise__type_1aecd6136871cb01ea9b6b1edec7f312d0" prot="public" static="no" mutable="no">
+        <type>std::optional&lt; T &gt;</type>
+        <definition>std::optional&lt;T&gt; learnql::coroutines::Task&lt; T &gt;::promise_type::result</definition>
+        <argsstring></argsstring>
+        <name>result</name>
+        <qualifiedname>learnql::coroutines::Task::promise_type::result</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/AsyncQuery.hpp" line="36" column="23" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/AsyncQuery.hpp" bodystart="36" bodyend="-1"/>
+        <referencedby refid="structlearnql_1_1coroutines_1_1_task_1_1promise__type_1a22e4dbd6bf29dec8b203906cec20db79" compoundref="_async_query_8hpp" startline="51" endline="53">learnql::coroutines::Task&lt; T &gt;::promise_type::return_value</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1coroutines_1_1_task_1_1promise__type_1ac6ea0a5885713ce7c2237fdbbc025709" prot="public" static="no" mutable="no">
+        <type>std::exception_ptr</type>
+        <definition>std::exception_ptr learnql::coroutines::Task&lt; T &gt;::promise_type::exception</definition>
+        <argsstring></argsstring>
+        <name>exception</name>
+        <qualifiedname>learnql::coroutines::Task::promise_type::exception</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/AsyncQuery.hpp" line="37" column="28" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/AsyncQuery.hpp" bodystart="37" bodyend="-1"/>
+        <referencedby refid="structlearnql_1_1coroutines_1_1_task_1_1promise__type_1a79991e9c33f1296619ad68b68d954348" compoundref="_async_query_8hpp" startline="55" endline="57">learnql::coroutines::Task&lt; T &gt;::promise_type::unhandled_exception</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structlearnql_1_1coroutines_1_1_task_1_1promise__type_1a01e7dcf5d7b3c17173ac811dc53c691e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classlearnql_1_1coroutines_1_1_task_1a0681f42d73b3febcbc8123a7afe7b7c5" kindref="member">Task</ref></type>
+        <definition>Task learnql::coroutines::Task&lt; T &gt;::promise_type::get_return_object</definition>
+        <argsstring>()</argsstring>
+        <name>get_return_object</name>
+        <qualifiedname>learnql::coroutines::Task::promise_type::get_return_object</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/AsyncQuery.hpp" line="39" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/AsyncQuery.hpp" bodystart="39" bodyend="41"/>
+        <references refid="classlearnql_1_1coroutines_1_1_task_1a0681f42d73b3febcbc8123a7afe7b7c5" compoundref="_async_query_8hpp" startline="62" endline="62">learnql::coroutines::Task&lt; T &gt;::Task</references>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1coroutines_1_1_task_1_1promise__type_1a2d16b8caf141311849e1a147274f1b0e" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>std::suspend_never</type>
+        <definition>std::suspend_never learnql::coroutines::Task&lt; T &gt;::promise_type::initial_suspend</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>initial_suspend</name>
+        <qualifiedname>learnql::coroutines::Task::promise_type::initial_suspend</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/AsyncQuery.hpp" line="43" column="28" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/AsyncQuery.hpp" bodystart="43" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1coroutines_1_1_task_1_1promise__type_1a3b31216c784d6925be11ddc5b85db6ca" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>std::suspend_always</type>
+        <definition>std::suspend_always learnql::coroutines::Task&lt; T &gt;::promise_type::final_suspend</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>final_suspend</name>
+        <qualifiedname>learnql::coroutines::Task::promise_type::final_suspend</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/AsyncQuery.hpp" line="47" column="29" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/AsyncQuery.hpp" bodystart="47" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1coroutines_1_1_task_1_1promise__type_1a22e4dbd6bf29dec8b203906cec20db79" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::coroutines::Task&lt; T &gt;::promise_type::return_value</definition>
+        <argsstring>(T value)</argsstring>
+        <name>return_value</name>
+        <qualifiedname>learnql::coroutines::Task::promise_type::return_value</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/AsyncQuery.hpp" line="51" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/AsyncQuery.hpp" bodystart="51" bodyend="53"/>
+        <references refid="structlearnql_1_1coroutines_1_1_task_1_1promise__type_1aecd6136871cb01ea9b6b1edec7f312d0" compoundref="_async_query_8hpp" startline="36">learnql::coroutines::Task&lt; T &gt;::promise_type::result</references>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1coroutines_1_1_task_1_1promise__type_1a79991e9c33f1296619ad68b68d954348" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void learnql::coroutines::Task&lt; T &gt;::promise_type::unhandled_exception</definition>
+        <argsstring>()</argsstring>
+        <name>unhandled_exception</name>
+        <qualifiedname>learnql::coroutines::Task::promise_type::unhandled_exception</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/AsyncQuery.hpp" line="55" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/AsyncQuery.hpp" bodystart="55" bodyend="57"/>
+        <references refid="structlearnql_1_1coroutines_1_1_task_1_1promise__type_1ac6ea0a5885713ce7c2237fdbbc025709" compoundref="_async_query_8hpp" startline="37">learnql::coroutines::Task&lt; T &gt;::promise_type::exception</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Promise type for the <ref refid="classlearnql_1_1coroutines_1_1_task" kindref="compound">Task</ref> coroutine. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/AsyncQuery.hpp" line="35" column="5" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/coroutines/AsyncQuery.hpp" bodystart="35" bodyend="58"/>
+    <listofallmembers>
+      <member refid="structlearnql_1_1coroutines_1_1_task_1_1promise__type_1ac6ea0a5885713ce7c2237fdbbc025709" prot="public" virt="non-virtual"><scope>learnql::coroutines::Task::promise_type</scope><name>exception</name></member>
+      <member refid="structlearnql_1_1coroutines_1_1_task_1_1promise__type_1a3b31216c784d6925be11ddc5b85db6ca" prot="public" virt="non-virtual"><scope>learnql::coroutines::Task::promise_type</scope><name>final_suspend</name></member>
+      <member refid="structlearnql_1_1coroutines_1_1_task_1_1promise__type_1a01e7dcf5d7b3c17173ac811dc53c691e" prot="public" virt="non-virtual"><scope>learnql::coroutines::Task::promise_type</scope><name>get_return_object</name></member>
+      <member refid="structlearnql_1_1coroutines_1_1_task_1_1promise__type_1a2d16b8caf141311849e1a147274f1b0e" prot="public" virt="non-virtual"><scope>learnql::coroutines::Task::promise_type</scope><name>initial_suspend</name></member>
+      <member refid="structlearnql_1_1coroutines_1_1_task_1_1promise__type_1aecd6136871cb01ea9b6b1edec7f312d0" prot="public" virt="non-virtual"><scope>learnql::coroutines::Task::promise_type</scope><name>result</name></member>
+      <member refid="structlearnql_1_1coroutines_1_1_task_1_1promise__type_1a22e4dbd6bf29dec8b203906cec20db79" prot="public" virt="non-virtual"><scope>learnql::coroutines::Task::promise_type</scope><name>return_value</name></member>
+      <member refid="structlearnql_1_1coroutines_1_1_task_1_1promise__type_1a79991e9c33f1296619ad68b68d954348" prot="public" virt="non-virtual"><scope>learnql::coroutines::Task::promise_type</scope><name>unhandled_exception</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

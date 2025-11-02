@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="namespacelearnql_1_1index" kind="namespace" language="C++">
+    <compoundname>learnql::index</compoundname>
+    <innerclass refid="classlearnql_1_1index_1_1_batch_iterator" prot="public">learnql::index::BatchIterator</innerclass>
+    <innerclass refid="classlearnql_1_1index_1_1_b_tree_index" prot="public">learnql::index::BTreeIndex</innerclass>
+    <innerclass refid="classlearnql_1_1index_1_1_persistent_b_tree_index" prot="public">learnql::index::PersistentBTreeIndex</innerclass>
+    <innerclass refid="structlearnql_1_1index_1_1_composite_key" prot="public">learnql::index::CompositeKey</innerclass>
+    <innerclass refid="classlearnql_1_1index_1_1_persistent_multi_value_secondary_index" prot="public">learnql::index::PersistentMultiValueSecondaryIndex</innerclass>
+    <innerclass refid="classlearnql_1_1index_1_1_persistent_secondary_index" prot="public">learnql::index::PersistentSecondaryIndex</innerclass>
+    <innerclass refid="classlearnql_1_1index_1_1_secondary_index" prot="public">learnql::index::SecondaryIndex</innerclass>
+    <innerclass refid="classlearnql_1_1index_1_1_multi_value_secondary_index" prot="public">learnql::index::MultiValueSecondaryIndex</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/index/BatchIterator.hpp" line="9" column="1"/>
+  </compounddef>
+</doxygen>

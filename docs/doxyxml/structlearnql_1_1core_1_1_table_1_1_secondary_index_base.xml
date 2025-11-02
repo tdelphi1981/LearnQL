@@ -1,0 +1,188 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="structlearnql_1_1core_1_1_table_1_1_secondary_index_base" kind="struct" language="C++" prot="private" abstract="yes">
+    <compoundname>learnql::core::Table::SecondaryIndexBase</compoundname>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structlearnql_1_1core_1_1_table_1_1_secondary_index_base_1a54c39d1564ef9dd93c89845a71c41b5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual learnql::core::Table&lt; T, BatchSize &gt;::SecondaryIndexBase::~SecondaryIndexBase</definition>
+        <argsstring>()=default</argsstring>
+        <name>~SecondaryIndexBase</name>
+        <qualifiedname>learnql::core::Table::SecondaryIndexBase::~SecondaryIndexBase</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="820" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1core_1_1_table_1_1_secondary_index_base_1ae787d15d48bd09520a42c2508078b5a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void learnql::core::Table&lt; T, BatchSize &gt;::SecondaryIndexBase::insert_record</definition>
+        <argsstring>(const T &amp;record, const RecordId &amp;rid)=0</argsstring>
+        <name>insert_record</name>
+        <qualifiedname>learnql::core::Table::SecondaryIndexBase::insert_record</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>record</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structlearnql_1_1core_1_1_record_id" kindref="compound">RecordId</ref> &amp;</type>
+          <declname>rid</declname>
+        </param>
+        <briefdescription>
+<para>Insert a record into the index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="823" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1core_1_1_table_1_1_secondary_index_base_1a7c1a458b3fecd969df7698a31055e52f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void learnql::core::Table&lt; T, BatchSize &gt;::SecondaryIndexBase::remove_record</definition>
+        <argsstring>(const T &amp;record, const RecordId &amp;rid)=0</argsstring>
+        <name>remove_record</name>
+        <qualifiedname>learnql::core::Table::SecondaryIndexBase::remove_record</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>record</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structlearnql_1_1core_1_1_record_id" kindref="compound">RecordId</ref> &amp;</type>
+          <declname>rid</declname>
+        </param>
+        <briefdescription>
+<para>Remove a record from the index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="826" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1core_1_1_table_1_1_secondary_index_base_1a4c41ccb6ffe37d312345b71967815f9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void learnql::core::Table&lt; T, BatchSize &gt;::SecondaryIndexBase::update_record</definition>
+        <argsstring>(const T &amp;old_rec, const T &amp;new_rec, const RecordId &amp;rid)=0</argsstring>
+        <name>update_record</name>
+        <qualifiedname>learnql::core::Table::SecondaryIndexBase::update_record</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>old_rec</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>new_rec</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structlearnql_1_1core_1_1_record_id" kindref="compound">RecordId</ref> &amp;</type>
+          <declname>rid</declname>
+        </param>
+        <briefdescription>
+<para>Update a record in the index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="829" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1core_1_1_table_1_1_secondary_index_base_1ac73507efff3789367c58b3731529c559" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void learnql::core::Table&lt; T, BatchSize &gt;::SecondaryIndexBase::flush</definition>
+        <argsstring>()=0</argsstring>
+        <name>flush</name>
+        <qualifiedname>learnql::core::Table::SecondaryIndexBase::flush</qualifiedname>
+        <briefdescription>
+<para>Flush index to disk. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="832" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1core_1_1_table_1_1_secondary_index_base_1a9710d2ba02f2bd2400f7606f06cca3da" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>uint64_t</type>
+        <definition>virtual uint64_t learnql::core::Table&lt; T, BatchSize &gt;::SecondaryIndexBase::get_root_page_id</definition>
+        <argsstring>() const =0</argsstring>
+        <name>get_root_page_id</name>
+        <qualifiedname>learnql::core::Table::SecondaryIndexBase::get_root_page_id</qualifiedname>
+        <briefdescription>
+<para>Get the root page ID. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="835" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1core_1_1_table_1_1_secondary_index_base_1a55dfa5da69b900b1c36eb21198e7b3b0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::string</type>
+        <definition>virtual std::string learnql::core::Table&lt; T, BatchSize &gt;::SecondaryIndexBase::get_field_name</definition>
+        <argsstring>() const =0</argsstring>
+        <name>get_field_name</name>
+        <qualifiedname>learnql::core::Table::SecondaryIndexBase::get_field_name</qualifiedname>
+        <briefdescription>
+<para>Get the field name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="838" column="29"/>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1core_1_1_table_1_1_secondary_index_base_1a060ed01b8aa8f1bccf139dd92be0d8f7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool learnql::core::Table&lt; T, BatchSize &gt;::SecondaryIndexBase::is_unique</definition>
+        <argsstring>() const =0</argsstring>
+        <name>is_unique</name>
+        <qualifiedname>learnql::core::Table::SecondaryIndexBase::is_unique</qualifiedname>
+        <briefdescription>
+<para>Check if this is a unique index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="841" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="structlearnql_1_1core_1_1_table_1_1_secondary_index_base_1a92e49cff4fb3cb31a92dc1181c08b5b7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::string</type>
+        <definition>virtual std::string learnql::core::Table&lt; T, BatchSize &gt;::SecondaryIndexBase::get_field_type</definition>
+        <argsstring>() const =0</argsstring>
+        <name>get_field_type</name>
+        <qualifiedname>learnql::core::Table::SecondaryIndexBase::get_field_type</qualifiedname>
+        <briefdescription>
+<para>Get field type name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="844" column="29"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Type-erased base class for secondary indexes. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This allows us to store secondary indexes of different field types in a single container using polymorphism. </para>
+    </detaileddescription>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" line="819" column="5" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/core/Table.hpp" bodystart="819" bodyend="845"/>
+    <listofallmembers>
+      <member refid="structlearnql_1_1core_1_1_table_1_1_secondary_index_base_1ac73507efff3789367c58b3731529c559" prot="public" virt="pure-virtual"><scope>learnql::core::Table::SecondaryIndexBase</scope><name>flush</name></member>
+      <member refid="structlearnql_1_1core_1_1_table_1_1_secondary_index_base_1a55dfa5da69b900b1c36eb21198e7b3b0" prot="public" virt="pure-virtual"><scope>learnql::core::Table::SecondaryIndexBase</scope><name>get_field_name</name></member>
+      <member refid="structlearnql_1_1core_1_1_table_1_1_secondary_index_base_1a92e49cff4fb3cb31a92dc1181c08b5b7" prot="public" virt="pure-virtual"><scope>learnql::core::Table::SecondaryIndexBase</scope><name>get_field_type</name></member>
+      <member refid="structlearnql_1_1core_1_1_table_1_1_secondary_index_base_1a9710d2ba02f2bd2400f7606f06cca3da" prot="public" virt="pure-virtual"><scope>learnql::core::Table::SecondaryIndexBase</scope><name>get_root_page_id</name></member>
+      <member refid="structlearnql_1_1core_1_1_table_1_1_secondary_index_base_1ae787d15d48bd09520a42c2508078b5a1" prot="public" virt="pure-virtual"><scope>learnql::core::Table::SecondaryIndexBase</scope><name>insert_record</name></member>
+      <member refid="structlearnql_1_1core_1_1_table_1_1_secondary_index_base_1a060ed01b8aa8f1bccf139dd92be0d8f7" prot="public" virt="pure-virtual"><scope>learnql::core::Table::SecondaryIndexBase</scope><name>is_unique</name></member>
+      <member refid="structlearnql_1_1core_1_1_table_1_1_secondary_index_base_1a7c1a458b3fecd969df7698a31055e52f" prot="public" virt="pure-virtual"><scope>learnql::core::Table::SecondaryIndexBase</scope><name>remove_record</name></member>
+      <member refid="structlearnql_1_1core_1_1_table_1_1_secondary_index_base_1a4c41ccb6ffe37d312345b71967815f9b" prot="public" virt="pure-virtual"><scope>learnql::core::Table::SecondaryIndexBase</scope><name>update_record</name></member>
+      <member refid="structlearnql_1_1core_1_1_table_1_1_secondary_index_base_1a54c39d1564ef9dd93c89845a71c41b5d" prot="public" virt="virtual"><scope>learnql::core::Table::SecondaryIndexBase</scope><name>~SecondaryIndexBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

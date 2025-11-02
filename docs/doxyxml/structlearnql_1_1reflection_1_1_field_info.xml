@@ -1,0 +1,191 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="structlearnql_1_1reflection_1_1_field_info" kind="struct" language="C++" prot="public">
+    <compoundname>learnql::reflection::FieldInfo</compoundname>
+    <includes refid="_field_info_8hpp" local="no">FieldInfo.hpp</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlearnql_1_1reflection_1_1_field_info_1a148b13acc2eac3377a7cd4a6149bc494" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string learnql::reflection::FieldInfo::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>learnql::reflection::FieldInfo::name</qualifiedname>
+        <briefdescription>
+<para>Field name (e.g., &quot;id&quot;, &quot;name&quot;). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/reflection/FieldInfo.hpp" line="33" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/reflection/FieldInfo.hpp" bodystart="33" bodyend="-1"/>
+        <referencedby refid="structlearnql_1_1reflection_1_1_field_info_1a86aa63a8d07e68649890df025d3f33a3" compoundref="_field_info_8hpp" startline="45" endline="52">FieldInfo</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1reflection_1_1_field_info_1a7495b130b3360fc78185afc791fd66e2" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string learnql::reflection::FieldInfo::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <qualifiedname>learnql::reflection::FieldInfo::type</qualifiedname>
+        <briefdescription>
+<para>C++ type name (e.g., &quot;int&quot;, &quot;std::string&quot;). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/reflection/FieldInfo.hpp" line="34" column="17" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/reflection/FieldInfo.hpp" bodystart="34" bodyend="-1"/>
+        <referencedby refid="structlearnql_1_1reflection_1_1_field_info_1a86aa63a8d07e68649890df025d3f33a3" compoundref="_field_info_8hpp" startline="45" endline="52">FieldInfo</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1reflection_1_1_field_info_1a70dbfd3bbb2be4ffa91672cec1f5b9bc" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t learnql::reflection::FieldInfo::order</definition>
+        <argsstring></argsstring>
+        <name>order</name>
+        <qualifiedname>learnql::reflection::FieldInfo::order</qualifiedname>
+        <briefdescription>
+<para>Position in struct (0-based). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/reflection/FieldInfo.hpp" line="35" column="14" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/reflection/FieldInfo.hpp" bodystart="35" bodyend="-1"/>
+        <referencedby refid="structlearnql_1_1reflection_1_1_field_info_1a86aa63a8d07e68649890df025d3f33a3" compoundref="_field_info_8hpp" startline="45" endline="52">FieldInfo</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structlearnql_1_1reflection_1_1_field_info_1a6cbb7320d42090412aa79acf93da0a77" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool learnql::reflection::FieldInfo::is_primary_key</definition>
+        <argsstring></argsstring>
+        <name>is_primary_key</name>
+        <qualifiedname>learnql::reflection::FieldInfo::is_primary_key</qualifiedname>
+        <briefdescription>
+<para>true if this is the primary key field </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/reflection/FieldInfo.hpp" line="36" column="10" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/reflection/FieldInfo.hpp" bodystart="36" bodyend="-1"/>
+        <referencedby refid="structlearnql_1_1reflection_1_1_field_info_1a86aa63a8d07e68649890df025d3f33a3" compoundref="_field_info_8hpp" startline="45" endline="52">FieldInfo</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structlearnql_1_1reflection_1_1_field_info_1a86aa63a8d07e68649890df025d3f33a3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>learnql::reflection::FieldInfo::FieldInfo</definition>
+        <argsstring>(std::string field_name, std::string field_type, uint16_t field_order, bool is_pk=false)</argsstring>
+        <name>FieldInfo</name>
+        <qualifiedname>learnql::reflection::FieldInfo::FieldInfo</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>field_name</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>field_type</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>field_order</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>is_pk</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Construct field info. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>field_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the field </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>field_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>C++ type as string </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>field_order</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Position in struct </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>is_pk</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether this is the primary key </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/reflection/FieldInfo.hpp" line="45" column="5" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/reflection/FieldInfo.hpp" bodystart="45" bodyend="52"/>
+        <references refid="structlearnql_1_1reflection_1_1_field_info_1a6cbb7320d42090412aa79acf93da0a77" compoundref="_field_info_8hpp" startline="36">is_primary_key</references>
+        <references refid="structlearnql_1_1reflection_1_1_field_info_1a148b13acc2eac3377a7cd4a6149bc494" compoundref="_field_info_8hpp" startline="33">name</references>
+        <references refid="structlearnql_1_1reflection_1_1_field_info_1a70dbfd3bbb2be4ffa91672cec1f5b9bc" compoundref="_field_info_8hpp" startline="35">order</references>
+        <references refid="structlearnql_1_1reflection_1_1_field_info_1a7495b130b3360fc78185afc791fd66e2" compoundref="_field_info_8hpp" startline="34">type</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Information about a single field in a struct. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Used for field reflection to extract schema metadata from C++ types. Users provide this information via the reflect_fields() static method.</para>
+<para>Example: <programlisting><codeline><highlight class="keyword">struct<sp/></highlight><highlight class="normal">Student<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>id;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>name;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>gpa;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>reflect_fields()<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::make_tuple(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FieldInfo{</highlight><highlight class="stringliteral">&quot;id&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;int&quot;</highlight><highlight class="normal">,<sp/>0,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">},</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FieldInfo{</highlight><highlight class="stringliteral">&quot;name&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;std::string&quot;</highlight><highlight class="normal">,<sp/>1,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">},</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FieldInfo{</highlight><highlight class="stringliteral">&quot;gpa&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;double&quot;</highlight><highlight class="normal">,<sp/>2,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>learnql::reflection::FieldInfo</label>
+        <link refid="structlearnql_1_1reflection_1_1_field_info"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>name</edgelabel>
+          <edgelabel>type</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="2">
+        <label>std::string</label>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tolgaberber/Work/CPP/LearnQL/learnql/reflection/FieldInfo.hpp" line="32" column="1" bodyfile="/Users/tolgaberber/Work/CPP/LearnQL/learnql/reflection/FieldInfo.hpp" bodystart="32" bodyend="53"/>
+    <listofallmembers>
+      <member refid="structlearnql_1_1reflection_1_1_field_info_1a86aa63a8d07e68649890df025d3f33a3" prot="public" virt="non-virtual"><scope>learnql::reflection::FieldInfo</scope><name>FieldInfo</name></member>
+      <member refid="structlearnql_1_1reflection_1_1_field_info_1a6cbb7320d42090412aa79acf93da0a77" prot="public" virt="non-virtual"><scope>learnql::reflection::FieldInfo</scope><name>is_primary_key</name></member>
+      <member refid="structlearnql_1_1reflection_1_1_field_info_1a148b13acc2eac3377a7cd4a6149bc494" prot="public" virt="non-virtual"><scope>learnql::reflection::FieldInfo</scope><name>name</name></member>
+      <member refid="structlearnql_1_1reflection_1_1_field_info_1a70dbfd3bbb2be4ffa91672cec1f5b9bc" prot="public" virt="non-virtual"><scope>learnql::reflection::FieldInfo</scope><name>order</name></member>
+      <member refid="structlearnql_1_1reflection_1_1_field_info_1a7495b130b3360fc78185afc791fd66e2" prot="public" virt="non-virtual"><scope>learnql::reflection::FieldInfo</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
