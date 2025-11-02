@@ -1,0 +1,150 @@
+# Build directories
+build/
+cmake-build-*/
+out/
+
+# Compiled binaries and executables
+*.exe
+*.out
+*.app
+
+# Object files
+*.o
+*.obj
+*.lo
+*.slo
+*.ko
+*.elf
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
+*.a
+*.la
+*.so
+*.so.*
+*.dylib
+*.dll
+
+# Database files
+*.db
+*.db-shm
+*.db-wal
+university.db
+test.db
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+CTestTestfile.cmake
+_deps/
+install_manifest.txt
+compile_commands.json
+
+# IDEs and Editors
+## VSCode
+.vscode/
+*.code-workspace
+
+## CLion
+.idea/
+cmake-build-*/
+
+## Xcode
+*.xcodeproj
+*.xcworkspace
+xcuserdata/
+DerivedData/
+
+## Visual Studio
+.vs/
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.sln
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+## Eclipse
+.cproject
+.project
+.settings/
+
+## Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux
+*~
+.directory
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.*.swp
+
+# Core dumps
+core
+core.*
+*.core
+
+# Logs
+*.log
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# Package managers
+conan/
+vcpkg_installed/
+
+# Test outputs
+Testing/
+CTestTestfile.cmake
+DartConfiguration.tcl
+
+# Coverage
+*.gcda
+*.gcno
+*.gcov
+coverage/
+lcov.info
+coverage.info
+
+# Profiling
+*.prof
+gmon.out
+perf.data*
+
+# Valgrind
+*.memcheck
+vgcore.*
+
+# Documentation build
+docs/_build/
+docs/html/
+docs/latex/
+Doxygen/
