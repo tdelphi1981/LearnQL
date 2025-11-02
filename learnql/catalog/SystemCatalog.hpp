@@ -269,6 +269,12 @@ private:
      */
     std::vector<IndexMetadata> get_table_indexes(const std::string& table_name) const {
         std::vector<IndexMetadata> result;
+
+        // Early return if indexes table is empty (no indexes registered yet)
+        if (indexes_table_.empty()) {
+            return result;
+        }
+
         auto all_indexes = indexes_table_.internal_table().get_all();
 
         for (const auto& idx : all_indexes) {

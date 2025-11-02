@@ -848,6 +848,14 @@ int main() {
         std::cout << std::string(80, '-') << "\n";
         std::cout << "Creating table with seamless index declaration:\n\n";
 
+        // Drop table if it exists from previous run to ensure clean state
+        try {
+            db.drop_table("indexed_students");
+            std::cout << "  (Dropped existing table from previous run)\n";
+        } catch (...) {
+            // Table doesn't exist, which is fine
+        }
+
         // Create a fresh table with indexes
         auto& indexed_students = db.table<Student>("indexed_students")
             .add_index(Student::name, core::IndexType::Unique)

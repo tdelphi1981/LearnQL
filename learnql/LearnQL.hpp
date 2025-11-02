@@ -29,6 +29,7 @@
  * - Property macros for automatic code generation (70% less boilerplate)
  * - Compile-time reflection system
  * - Queryable system catalog for metadata introspection
+ * - Seamless secondary index API with fluent interface and auto-persistence
  * - B-tree indexing with batched loading
  * - Read-only tables for metadata protection
  * - C++20 ranges integration
@@ -93,6 +94,7 @@
 
 #include "catalog/TableMetadata.hpp"
 #include "catalog/FieldMetadata.hpp"
+#include "catalog/IndexMetadata.hpp"
 #include "catalog/SystemCatalog.hpp"
 
 // ============================================================================
