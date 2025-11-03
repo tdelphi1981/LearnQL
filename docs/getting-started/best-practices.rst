@@ -283,21 +283,24 @@ Encapsulate Database Logic
 Performance Tips
 ----------------
 
-Use In-Memory Databases for Testing
+Use Temporary Databases for Testing
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-✅ **Do: Use ``:memory:`` for fast unit tests**
+✅ **Do: Use temporary files for unit tests**
 
 .. code-block:: cpp
 
    TEST(StudentTest, InsertAndQuery) {
-       core::Database db(":memory:");  // Fast, no disk I/O
+       core::Database db("test_student.db");  // Use temp file for testing
        auto& students = db.table<Student>("students");
 
        students.insert(Student(1, "Alice", 20));
 
        auto result = students.find(1);
        ASSERT_TRUE(result.has_value());
+
+       // Clean up after test
+       std::remove("test_student.db");
    }
 
 Compile in Release Mode
@@ -439,7 +442,7 @@ Write Unit Tests
    #include "gtest/gtest.h"
 
    TEST(StudentTest, InsertAndQuery) {
-       core::Database db(":memory:");
+       core::Database db("test_student.db");
        auto& students = db.table<Student>("students");
 
        Student alice(1, "Alice", 20);
@@ -450,6 +453,8 @@ Write Unit Tests
 
        EXPECT_EQ(found->get_name(), "Alice");
        EXPECT_EQ(found->get_age(), 20);
+
+       std::remove("test_student.db");  // Clean up
    }
 
 Use Fixtures for Complex Tests
@@ -463,12 +468,17 @@ Use Fixtures for Complex Tests
        core::Table<Student>* students;
 
        void SetUp() override {
-           db = std::make_unique<core::Database>(":memory:");
+           db = std::make_unique<core::Database>("test_fixture.db");
            students = &db->table<Student>("students");
 
            // Seed test data
            students->insert(Student(1, "Alice", 20));
            students->insert(Student(2, "Bob", 22));
+       }
+
+       void TearDown() override {
+           db.reset();  // Close database
+           std::remove("test_fixture.db");  // Clean up
        }
    };
 
@@ -609,7 +619,7 @@ Summary
 1. Use integer primary keys for best performance
 2. Create indexes for frequently queried fields using ``.add_index()``
 3. Always check optional returns before accessing (``find()`` returns ``std::optional``)
-4. Use ``:memory:`` databases for testing
+4. Use temporary database files for testing (clean up with ``std::remove()``)
 5. Compile in Release mode for production
 6. Let RAII handle database cleanup
 7. Use getters and setters (``get_name()``, ``set_name()``)

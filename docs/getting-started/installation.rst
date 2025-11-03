@@ -147,7 +147,7 @@ Create a simple test program to verify your installation:
    int main() {
        std::cout << "LearnQL version: 1.0.0" << std::endl;
 
-       core::Database db(":memory:");
+       core::Database db("test.db");
        auto& people = db.table<Person>("people");
 
        people.insert(Person(1, "Alice"));

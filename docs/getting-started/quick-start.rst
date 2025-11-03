@@ -69,12 +69,6 @@ Create a database instance and a table:
        std::cout << "Database and table created successfully!" << std::endl;
    }
 
-You can also use an in-memory database for testing:
-
-.. code-block:: cpp
-
-   core::Database db(":memory:");  // Data won't persist
-
 Step 3: Insert Data
 ~~~~~~~~~~~~~~~~~~~
 
@@ -276,7 +270,7 @@ Key Concepts Learned
 
 ✅ **CRUD Operations**: ``insert()``, ``find()``, ``update()``, ``remove()``
 
-✅ **Persistence**: Data is automatically saved to disk (unless using ``:memory:``)
+✅ **Persistence**: Data is automatically saved to disk
 
 Common Patterns
 ---------------
@@ -323,14 +317,6 @@ Count Records Matching Condition
        count++;
    }
    std::cout << "CS majors: " << count << std::endl;
-
-In-Memory Databases for Testing
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. code-block:: cpp
-
-   core::Database db(":memory:");  // Fast, no disk I/O
-   // Perfect for unit tests!
 
 What's Next?
 ------------
