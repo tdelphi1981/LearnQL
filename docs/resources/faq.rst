@@ -291,7 +291,7 @@ Copy the ``learnql/`` directory to your include path:
 
 .. code-block:: bash
 
-   git submodule add https://github.com/yourusername/LearnQL.git external/LearnQL
+   git submodule add https://github.com/tdelphi1981/LearnQL.git external/LearnQL
    git submodule update --init --recursive
 
 Then in CMakeLists.txt:

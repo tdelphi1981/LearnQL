@@ -39,12 +39,12 @@ By participating in this project, you agree to maintain a respectful and inclusi
 1. Fork the repository on GitHub
 2. Clone your fork locally:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/LearnQL.git
+   git clone https://github.com/tdelphi1981/LearnQL.git
    cd LearnQL
    ```
 3. Add the upstream repository:
    ```bash
-   git remote add upstream https://github.com/ORIGINAL_OWNER/LearnQL.git
+   git remote add upstream https://github.com/tdelphi1981/LearnQL.git
    ```
 
 ## Development Setup

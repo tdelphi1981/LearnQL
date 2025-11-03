@@ -88,7 +88,7 @@ Before You Start
 
 **1. Check Existing Issues**
 
-Search the `issue tracker <https://github.com/yourusername/LearnQL/issues>`_ to see if your idea is already being discussed.
+Search the `issue tracker <https://github.com/tdelphi1981/LearnQL/issues>`_ to see if your idea is already being discussed.
 
 **2. Open an Issue First**
 
@@ -146,24 +146,24 @@ Click the "Fork" button on GitHub to create your own copy.
 
 .. code-block:: bash
 
-   git clone https://github.com/YOUR_USERNAME/LearnQL.git
+   git clone https://github.com/tdelphi1981/LearnQL.git
    cd LearnQL
 
 **3. Add Upstream Remote**
 
 .. code-block:: bash
 
-   git remote add upstream https://github.com/ORIGINAL_OWNER/LearnQL.git
+   git remote add upstream https://github.com/tdelphi1981/LearnQL.git
 
 **4. Verify Remotes**
 
 .. code-block:: bash
 
    git remote -v
-   # origin    https://github.com/YOUR_USERNAME/LearnQL.git (fetch)
-   # origin    https://github.com/YOUR_USERNAME/LearnQL.git (push)
-   # upstream  https://github.com/ORIGINAL_OWNER/LearnQL.git (fetch)
-   # upstream  https://github.com/ORIGINAL_OWNER/LearnQL.git (push)
+   # origin    https://github.com/tdelphi1981/LearnQL.git (fetch)
+   # origin    https://github.com/tdelphi1981/LearnQL.git (push)
+   # upstream  https://github.com/tdelphi1981/LearnQL.git (fetch)
+   # upstream  https://github.com/tdelphi1981/LearnQL.git (push)
 
 Development Setup
 -----------------
@@ -1083,7 +1083,7 @@ Next Steps
 
 **Ready to Contribute?**
 
-1. **Find an Issue**: Browse `issues <https://github.com/yourusername/LearnQL/issues>`_
+1. **Find an Issue**: Browse `issues <https://github.com/tdelphi1981/LearnQL/issues>`_
 2. **Or Create One**: Propose your idea first
 3. **Fork and Clone**: Set up your environment
 4. **Make Changes**: Follow the guidelines

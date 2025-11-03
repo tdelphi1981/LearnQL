@@ -2,7 +2,7 @@
 
 [![C++20](https://img.shields.io/badge/C%2B%2B-20-blue.svg)](https://en.cppreference.com/w/cpp/20)
 [![CMake](https://img.shields.io/badge/CMake-3.23+-064F8C.svg)](https://cmake.org/)
-[![Header-Only](https://img.shields.io/badge/library-header--only-orange.svg)](https://github.com/tolgaberber/LearnQL)
+[![Header-Only](https://img.shields.io/badge/library-header--only-orange.svg)](https://github.com/tdelphi1981/LearnQL)
 [![License](https://img.shields.io/badge/license-AFL--3.0-green.svg)](LICENSE)
 
 A modern, type-safe C++20 database library featuring expression template queries, compile-time reflection, and persistent storage - designed for learning and prototyping.
@@ -312,7 +312,7 @@ LearnQL is designed for **learning and prototyping**, not production use:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/LearnQL.git
+git clone https://github.com/tdelphi1981/LearnQL.git
 cd LearnQL
 
 # Build with CMake

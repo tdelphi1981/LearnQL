@@ -43,7 +43,7 @@ The easiest way to use LearnQL is to copy the ``learnql/`` directory directly in
 .. code-block:: bash
 
    # Clone the repository
-   git clone https://github.com/yourusername/LearnQL.git
+   git clone https://github.com/tdelphi1981/LearnQL.git
 
    # Copy the header-only library to your project
    cp -r LearnQL/learnql /path/to/your/project/include/
@@ -75,7 +75,7 @@ Add LearnQL to your ``CMakeLists.txt``:
    include(FetchContent)
    FetchContent_Declare(
        learnql
-       GIT_REPOSITORY https://github.com/yourusername/LearnQL.git
+       GIT_REPOSITORY https://github.com/tdelphi1981/LearnQL.git
        GIT_TAG main
    )
    FetchContent_MakeAvailable(learnql)
@@ -104,7 +104,7 @@ Install LearnQL system-wide using CMake:
 
 .. code-block:: bash
 
-   git clone https://github.com/yourusername/LearnQL.git
+   git clone https://github.com/tdelphi1981/LearnQL.git
    cd LearnQL
    mkdir build && cd build
    cmake ..

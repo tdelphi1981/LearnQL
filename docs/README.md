@@ -232,7 +232,7 @@ pip3 install sphinxcontrib-mermaid
 ## Links
 
 - **ReadTheDocs**: https://learnql.readthedocs.io/
-- **GitHub**: https://github.com/yourusername/LearnQL
+- **GitHub**: https://github.com/tdelphi1981/LearnQL
 - **Sphinx Documentation**: https://www.sphinx-doc.org/
 - **Doxygen Documentation**: https://www.doxygen.nl/
 
